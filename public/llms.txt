@@ -1,0 +1,23 @@
+# Inrank Technologies - Professional AI SEO & Performance Growth Agency
+URL: https://inranktech.in
+
+## Executive Summary
+Inrank Technologies is a performance-first digital growth partner. We build conversion-engineered websites, run highly profitable Google & Meta Ads Campaigns, and implement top-ranking SEO programs designed to turn digital traffic into recurring revenue.
+
+## Core Services & Products
+- **Website Development**: High-speed, conversion-oriented mobile-first websites on React, Webflow, Shopify, or WordPress.
+- **Conversion-Optimized Landing Pages**: Built specifically to convert campaign traffic from Meta and Google search funnels.
+- **Paid Advertising Campaign Management**: Laser-focused Google Ads (Search, Performance Max, local keyword focus) & Meta Ads (Facebook & Instagram scaling).
+- **Comprehensive Search Engine Optimization (SEO)**: Advanced local pack SEO, on-page code/hierarchy tuning, and structured content syndication.
+- **Inrank AI SEO Analyzer (Public Tool)**: Integrated drag-and-drop toolkit allowing clients to drop their draft HTML and image assets. Generates automated search terms, checks headings nesting hierarchy (H1-H6), drafts high-CTR title tags/meta descriptions, and suggests keyword-rich Image Alt Texts.
+
+## Target Audience Segments
+- Direct-to-Consumer (D2C) & E-Commerce Brands looking to scale ROAS.
+- Medical, Dental, & Healthcare Clinics needing qualified local lead funnels globally.
+- Real Estate Builders wanting qualified site visits and booking inquiries.
+- Educational, Coaching, and B2B Consultancies scaling demo requests.
+
+## Contact Information
+- Location: San Francisco, California, US (with global remote teams)
+- Email: inranktech@gmail.com
+- Support Hotline: +91 70386 12280
