@@ -66,6 +66,37 @@ export const SERVICES_SIDEBAR_CONFIG: Record<string, ServiceSidebarData> = {
       description: "Our technical lead brings over 8+ years of hands-on technical software engineering and SEO architecture experience, having directed enterprise search campaigns across India and North America."
     }
   },
+  "backlink-building": {
+    benchmarks: [
+      { label: "Referring Domains Lift", value: "+140 DR50+", sub: "Editorial contextual placements" },
+      { label: "DoFollow Link Ratio", value: "96.4%", sub: "Zero PBNs or link farms" },
+      { label: "Keyword Position Surge", value: "+18 Pos", sub: "Commercial intent rankings" }
+    ],
+    auditCta: {
+      tag: "Backlink Profile Audit",
+      title: "Get an Off-Page & Authority Gap Audit",
+      description: "Our off-page SEO team will crawl your existing backlink profile, identify toxic anchor text spam, and benchmark referring domains against your top 3 competitors.",
+      checklist: [
+        "Toxic Backlink & Spam Score Scan",
+        "DR50+ Referring Domain Competitor Gap Map",
+        "Editorial Digital PR & Outreach Roadmap"
+      ],
+      buttonText: "Request Backlink Audit"
+    },
+    outsourcing: {
+      badge: "Agency White-Label",
+      title: "Outsource Editorial Link Building",
+      description: "Agencies and SEO consultants outsource manual outreach, digital PR pitches and high-authority contextual link insertions under strict white-label agreements.",
+      buttonText: "White-Label Link Partner"
+    },
+    experience: {
+      badge: "Lead Off-Page Strategist",
+      name: "Senior Link Architect",
+      role: "Senior Off-Page Strategist",
+      years: "8+ Years",
+      description: "Our technical outreach lead brings over 8+ years executing manual digital PR, unlinked brand mention claims and high-authority Tier-1 editorial placements."
+    }
+  },
   "social-media-marketing": {
     benchmarks: [
       { label: "Average Engagement Lift", value: "4.6x", sub: "Organic community interaction" },
@@ -905,6 +936,37 @@ export const SERVICES_SIDEBAR_CONFIG: Record<string, ServiceSidebarData> = {
   }
 };
 
+const SLUG_TO_ID: Record<string, string> = {
+  "seo-company-pune": "seo",
+  "link-building-services": "backlink-building",
+  "google-my-business-services": "gmb-optimization",
+  "ai-seo-services": "ai-seo-agency",
+  "geo-seo-agency": "geo-seo-agency",
+  "ai-ranking-citations": "ai-ranking-citations",
+  "content-marketing-services": "content-marketing",
+  "google-ads-agency": "google-ads",
+  "meta-ads-agency": "meta-ads",
+  "social-media-marketing-services": "social-media-marketing",
+  "linkedin-marketing-agency": "linkedin-management",
+  "ppc-services": "pay-per-click-ppc",
+  "conversion-rate-optimization-services": "conversion-optimization",
+  "influencer-marketing-agency": "influencer-marketing",
+  "custom-website-development": "website-development",
+  "ui-ux-design-services": "custom-website-design",
+  "wordpress-development-services": "wordpress-development",
+  "shopify-store-development": "shopify-development",
+  "ecommerce-website-development-company": "e-commerce-development",
+  "landing-page-design-services": "landing-pages",
+  "mobile-app-development": "mobile-app-development",
+  "website-maintenance-services": "website-maintenance",
+  "brand-naming-agency": "brand-name",
+  "corporate-logo-design": "logo-design",
+  "luxury-business-card-design": "business-card-design",
+  "letterhead-stationery-design": "letterhead-design",
+  "brochure-design-services": "brochure-designing"
+};
+
 export function getServiceSidebarData(serviceId: string): ServiceSidebarData {
-  return SERVICES_SIDEBAR_CONFIG[serviceId] || SERVICES_SIDEBAR_CONFIG["seo"];
+  const normalizedId = SLUG_TO_ID[serviceId] || serviceId;
+  return SERVICES_SIDEBAR_CONFIG[normalizedId] || SERVICES_SIDEBAR_CONFIG[serviceId] || SERVICES_SIDEBAR_CONFIG["seo"];
 }

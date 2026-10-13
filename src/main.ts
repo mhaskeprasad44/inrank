@@ -292,16 +292,24 @@ function handleHashRouting() {
     if (servicesEl) {
       servicesEl.scrollIntoView({ behavior: "smooth" });
     }
-  } else if (path.startsWith("/service/") || path.startsWith("/services/") || hash.startsWith("#/service/")) {
-    let serviceId = "";
+  } else if (
+    path.startsWith("/service/") || 
+    path.startsWith("/services/") || 
+    hash.startsWith("#/service/") || 
+    hash.startsWith("#/services/")
+  ) {
+    let rawServiceId = "";
     if (path.startsWith("/service/")) {
-      serviceId = path.replace("/service/", "");
+      rawServiceId = path.replace("/service/", "");
     } else if (path.startsWith("/services/")) {
-      serviceId = path.replace("/services/", "");
+      rawServiceId = path.replace("/services/", "");
+    } else if (hash.startsWith("#/service/")) {
+      rawServiceId = hash.replace("#/service/", "");
     } else {
-      serviceId = hash.replace("#/service/", "");
+      rawServiceId = hash.replace("#/services/", "");
     }
-    const foundService = SERVICES_DETAILS.find((s) => s.id === serviceId);
+    const cleanId = rawServiceId.split("?")[0].split("#")[0].replace(/\/$/, "").trim();
+    const foundService = SERVICES_DETAILS.find((s) => s.id === cleanId || s.slug === cleanId);
 
     if (foundService) {
       renderServiceDetailView(foundService);
@@ -1142,6 +1150,20 @@ function renderMarkdownContent(content: string): string {
     }
   };
 
+  const formatInline = (str: string): string => {
+    // Bold
+    let out = str.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-foreground">$1</strong>');
+    // Markdown links: [text](url)
+    out = out.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_match, text, url) => {
+      const isInternal = url.startsWith("#") || url.startsWith("/");
+      if (isInternal) {
+        return `<a href="${url}" class="text-primary underline hover:text-primary/80 transition-colors font-medium">${text}</a>`;
+      }
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:text-primary/80 transition-colors font-medium">${text}</a>`;
+    });
+    return out;
+  };
+
   for (let i = 0; i < lines.length; i++) {
     const rawLine = lines[i].trim();
     if (!rawLine) {
@@ -1151,26 +1173,26 @@ function renderMarkdownContent(content: string): string {
 
     if (rawLine.startsWith("### ")) {
       flushList();
-      const text = rawLine.substring(4).replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-foreground">$1</strong>');
+      const text = formatInline(rawLine.substring(4));
       htmlParts.push(`<h4 class="font-display text-lg sm:text-xl font-bold text-foreground mt-6 mb-2 tracking-tight">${text}</h4>`);
     } else if (rawLine.startsWith("## ")) {
       flushList();
-      const text = rawLine.substring(3).replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-foreground">$1</strong>');
+      const text = formatInline(rawLine.substring(3));
       htmlParts.push(`<h3 class="font-display text-xl sm:text-2xl font-bold text-foreground mt-8 mb-3 pt-5 border-t border-border/40 tracking-tight">${text}</h3>`);
     } else if (rawLine.startsWith("> ")) {
       flushList();
-      const text = rawLine.substring(2).replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-foreground">$1</strong>');
+      const text = formatInline(rawLine.substring(2));
       htmlParts.push(`<blockquote class="border-l-4 border-primary bg-primary/5 pl-4 pr-3 py-3 my-4 rounded-r-md text-foreground italic text-sm sm:text-base leading-relaxed">${text}</blockquote>`);
     } else if (rawLine.startsWith("- ")) {
       if (!inList) {
         htmlParts.push('<ul class="space-y-2.5 my-4">');
         inList = true;
       }
-      const text = rawLine.substring(2).replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-foreground">$1</strong>');
+      const text = formatInline(rawLine.substring(2));
       htmlParts.push(`<li class="flex items-start gap-2.5 text-sm sm:text-base text-muted-foreground"><span class="h-2 w-2 rounded-full bg-primary shrink-0 mt-2"></span><span>${text}</span></li>`);
     } else {
       flushList();
-      const text = rawLine.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-foreground">$1</strong>');
+      const text = formatInline(rawLine);
       htmlParts.push(`<p class="text-muted-foreground text-sm sm:text-base leading-relaxed my-3.5">${text}</p>`);
     }
   }
@@ -2446,7 +2468,7 @@ function generateBlogCardHTML(blog: BlogPost): string {
   `;
 }
 
-// Mapping each of the 31 services to Inrank's 5 proprietary pillars
+// Mapping each of the 27 services to Inrank's 4 proprietary pillars
 const SERVICE_PILLAR_MAP: Record<string, { pillar: string; icon: string; badge: string }> = {
   // Pillar 1: Search & AI Discovery (7)
   "seo": { pillar: "Search & AI Discovery", icon: "search", badge: "12,100/mo Search Volume · KD 32" },
@@ -2481,12 +2503,7 @@ const SERVICE_PILLAR_MAP: Record<string, { pillar: string; icon: string; badge: 
   "logo-design": { pillar: "Branding", icon: "pen-tool", badge: "Vector Grid Mathematics & Brand Styleguides" },
   "business-card-design": { pillar: "Branding", icon: "credit-card", badge: "Luxury Tactile Finishes & Embossed Foil Specs" },
   "letterhead-design": { pillar: "Branding", icon: "file", badge: "Official Corporate Identity & Digital Templates" },
-  "brochure-designing": { pillar: "Branding", icon: "book-open", badge: "Sales Collateral & High-Resolution Print Ready" },
-
-  // Pillar 5: Direct Channels (3)
-  "email-marketing": { pillar: "Direct Channels", icon: "mail", badge: "Automated Klaviyo & HubSpot Lead Sequences" },
-  "sms-marketing": { pillar: "Direct Channels", icon: "message-square", badge: "TRAI DLT Approved & 98% Open Rate Broadcasts" },
-  "political-digital-marketing": { pillar: "Direct Channels", icon: "flag", badge: "Compliant Digital War Rooms & Voter Outreach" }
+  "brochure-designing": { pillar: "Branding", icon: "book-open", badge: "Sales Collateral & High-Resolution Print Ready" }
 };
 
 function generateServiceCardHTML(service: ServiceDetail) {
@@ -2547,10 +2564,10 @@ function generateServiceCardHTML(service: ServiceDetail) {
 
 // Renders the dedicated All Services Directory page under #all-services-view
 function renderAllServicesPage() {
-  document.title = "All 30 Growth Services & Engineering Capabilities | Inrank Technologies";
+  document.title = "All 27 Growth Services & Engineering Capabilities | Inrank Technologies";
   const metaDescEl = document.querySelector('meta[name="description"]');
   if (metaDescEl) {
-    metaDescEl.setAttribute("content", "Explore Inrank Technologies' 30 specialized growth services across Search, Paid Media, Web Development, Branding and Direct Channels. 8+ years experience and 100% white-label agency outsourcing.");
+    metaDescEl.setAttribute("content", "Explore Inrank Technologies' 27 specialized growth services across Search & AI Discovery, Paid Media & Social, Web & E-Commerce, and Branding. 8+ years experience and 100% white-label agency outsourcing.");
   }
 
   const container = document.getElementById("all-services-view");
@@ -2568,9 +2585,9 @@ function renderAllServicesPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": "https://inranktech.in/services/#services",
-    "name": "Inrank Technologies 30 Specialized Growth Services Directory",
+    "name": "Inrank Technologies 27 Specialized Growth Services Directory",
     "url": "https://inranktech.in/#/services",
-    "description": "Complete directory of 30 specialized digital growth disciplines, from Google My Business optimization and backlink building to custom web engineering and white-label outsourcing.",
+    "description": "Complete directory of 27 specialized digital growth disciplines, from Google My Business optimization and backlink building to custom web engineering and white-label outsourcing.",
     "publisher": {
       "@type": "Organization",
       "name": "Inrank Technologies",
@@ -2612,7 +2629,7 @@ function renderAllServicesPage() {
         <div class="space-y-5 max-w-4xl">
           <span class="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-600 dark:text-emerald-400 shadow-sm">
             <i data-lucide="layers" class="h-3.5 w-3.5"></i>
-            Proprietary 5-Pillar Architecture · 30 Specialized Disciplines
+            Proprietary 4-Pillar Architecture · 27 Specialized Disciplines
           </span>
           <h1 class="font-display font-bold text-3xl sm:text-5xl lg:text-6xl tracking-tight text-foreground leading-[1.08]">
             Comprehensive Growth Services & Technical Capabilities
@@ -2624,7 +2641,7 @@ function renderAllServicesPage() {
           <!-- Proof Metrics Bar -->
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 pt-4 border-t border-border/60">
             <div class="p-3.5 rounded-xl bg-white dark:bg-card border border-border/70">
-              <div class="font-display font-extrabold text-2xl text-emerald-600 dark:text-emerald-400">30</div>
+              <div class="font-display font-extrabold text-2xl text-emerald-600 dark:text-emerald-400">27</div>
               <div class="text-xs text-muted-foreground font-medium">Core Growth Services</div>
             </div>
             <div class="p-3.5 rounded-xl bg-card border border-border/70">
@@ -2649,7 +2666,7 @@ function renderAllServicesPage() {
             <!-- Category Pills -->
             <div class="flex flex-wrap gap-2 items-center" id="services-filter-buttons">
               <button class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-emerald-500 text-white shadow-sm transition-all" data-pillar="all">
-                All Disciplines (31)
+                All Disciplines (27)
               </button>
               <button class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-muted hover:bg-muted/80 text-foreground transition-all" data-pillar="Search & AI Discovery">
                 Search & AI Discovery (7)
@@ -2663,9 +2680,6 @@ function renderAllServicesPage() {
               <button class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-muted hover:bg-muted/80 text-foreground transition-all" data-pillar="Branding">
                 Branding (5)
               </button>
-              <button class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-muted hover:bg-muted/80 text-foreground transition-all" data-pillar="Direct Channels">
-                Direct Channels (4)
-              </button>
             </div>
 
             <!-- Live Search Input -->
@@ -2674,7 +2688,7 @@ function renderAllServicesPage() {
               <input 
                 id="services-search-input" 
                 type="text" 
-                placeholder="Search 31 services..." 
+                placeholder="Search 27 services..." 
                 class="w-full pl-9 pr-8 py-2 text-xs rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all"
               />
               <button id="services-search-clear" class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground">
