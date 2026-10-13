@@ -1581,7 +1581,7 @@ function renderServiceDetailView(service: ServiceDetail) {
                 <div class="pt-2">
                   <a
                     href="#contact"
-                    class="flex w-full items-center justify-center gap-2 px-3 py-2 text-xs font-semibold rounded-lg border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all text-center cursor-pointer"
+                    class="flex w-full items-center justify-center gap-2 px-3 py-2 text-xs font-semibold rounded-lg border border-primary bg-white dark:bg-card text-primary hover:bg-primary hover:text-primary-foreground transition-all text-center cursor-pointer shadow-xs"
                   >
                     <span>${sidebarData.outsourcing.buttonText}</span>
                     <i data-lucide="arrow-up-right" class="h-3.5 w-3.5"></i>
@@ -1868,7 +1868,7 @@ function renderAboutUsView() {
                 Book a Strategy Call
                 <i data-lucide="arrow-right" class="h-4 w-4"></i>
               </a>
-              <a href="#/service/seo" class="inline-flex items-center justify-center gap-1.5 px-6 h-11 text-sm font-semibold rounded-md border border-border bg-card hover:bg-accent text-foreground transition-all cursor-pointer">
+              <a href="#/service/seo" class="inline-flex items-center justify-center gap-1.5 px-6 h-11 text-sm font-semibold rounded-md border border-border bg-white dark:bg-card hover:bg-emerald-600 hover:text-white hover:border-emerald-600 text-foreground transition-all cursor-pointer">
                 Our Services
               </a>
             </div>
@@ -2088,7 +2088,7 @@ function renderAboutUsView() {
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           <!-- Pillar 1 -->
-          <div class="p-6 rounded-2xl border border-border bg-card/50 hover:border-primary/40 hover:bg-card transition-all flex flex-col justify-between space-y-4 shadow-sm">
+          <div class="p-6 rounded-2xl border border-border bg-white dark:bg-card hover:border-primary/40 hover:bg-white dark:hover:bg-card transition-all flex flex-col justify-between space-y-4 shadow-sm">
             <div class="space-y-3">
               <div class="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-mono font-bold text-sm border border-primary/20">01</div>
               <h3 class="font-display font-bold text-base sm:text-lg text-foreground">Revenue Architecture Over Vanity Metrics</h3>
@@ -2100,7 +2100,7 @@ function renderAboutUsView() {
           </div>
 
           <!-- Pillar 2 -->
-          <div class="p-6 rounded-2xl border border-border bg-card/50 hover:border-primary/40 hover:bg-card transition-all flex flex-col justify-between space-y-4 shadow-sm">
+          <div class="p-6 rounded-2xl border border-border bg-white dark:bg-card hover:border-primary/40 hover:bg-white dark:hover:bg-card transition-all flex flex-col justify-between space-y-4 shadow-sm">
             <div class="space-y-3">
               <div class="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-mono font-bold text-sm border border-primary/20">02</div>
               <h3 class="font-display font-bold text-base sm:text-lg text-foreground">Proof Before Adjectives</h3>
@@ -2112,7 +2112,7 @@ function renderAboutUsView() {
           </div>
 
           <!-- Pillar 3 -->
-          <div class="p-6 rounded-2xl border border-border bg-card/50 hover:border-primary/40 hover:bg-card transition-all flex flex-col justify-between space-y-4 shadow-sm">
+          <div class="p-6 rounded-2xl border border-border bg-white dark:bg-card hover:border-primary/40 hover:bg-white dark:hover:bg-card transition-all flex flex-col justify-between space-y-4 shadow-sm">
             <div class="space-y-3">
               <div class="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-mono font-bold text-sm border border-primary/20">03</div>
               <h3 class="font-display font-bold text-base sm:text-lg text-foreground">Hyper-Local Pune Commercial Authority</h3>
@@ -2124,7 +2124,7 @@ function renderAboutUsView() {
           </div>
 
           <!-- Pillar 4 -->
-          <div class="p-6 rounded-2xl border border-border bg-card/50 hover:border-primary/40 hover:bg-card transition-all flex flex-col justify-between space-y-4 shadow-sm">
+          <div class="p-6 rounded-2xl border border-border bg-white dark:bg-card hover:border-primary/40 hover:bg-white dark:hover:bg-card transition-all flex flex-col justify-between space-y-4 shadow-sm">
             <div class="space-y-3">
               <div class="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-mono font-bold text-sm border border-primary/20">04</div>
               <h3 class="font-display font-bold text-base sm:text-lg text-foreground">Dual-Engine Search &amp; AI Discovery (GEO/AEO)</h3>
@@ -2136,7 +2136,7 @@ function renderAboutUsView() {
           </div>
 
           <!-- Pillar 5 -->
-          <div class="p-6 rounded-2xl border border-border bg-card/50 hover:border-primary/40 hover:bg-card transition-all flex flex-col justify-between space-y-4 shadow-sm sm:col-span-2 lg:col-span-2">
+          <div class="p-6 rounded-2xl border border-border bg-white dark:bg-card hover:border-primary/40 hover:bg-white dark:hover:bg-card transition-all flex flex-col justify-between space-y-4 shadow-sm sm:col-span-2 lg:col-span-2">
             <div class="space-y-3">
               <div class="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-mono font-bold text-sm border border-primary/20">05</div>
               <h3 class="font-display font-bold text-base sm:text-lg text-foreground">Founder-Led Senior Partner Execution</h3>
@@ -2414,7 +2414,7 @@ function renderAboutUsView() {
 // Helper to generate a single blog card HTML
 function generateBlogCardHTML(blog: BlogPost): string {
   return `
-    <div id="blog-post-card-${blog.id}" class="group border border-border bg-card rounded-xl overflow-hidden hover:border-primary/40 hover:-translate-y-1 transition-all flex flex-col shadow-sm">
+    <div id="blog-post-card-${blog.id}" class="group border border-border bg-white dark:bg-card hover:bg-white dark:hover:bg-card rounded-xl overflow-hidden hover:border-primary/40 hover:-translate-y-1 transition-all flex flex-col shadow-sm">
       <div class="relative h-48 overflow-hidden bg-muted">
         <img src="${blog.image}" alt="${blog.focusKeyword}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
         <span class="absolute top-3 left-3 px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.14em] bg-zinc-900 text-stone-100 rounded-md font-sans">
@@ -2483,8 +2483,7 @@ const SERVICE_PILLAR_MAP: Record<string, { pillar: string; icon: string; badge: 
   "letterhead-design": { pillar: "Branding", icon: "file", badge: "Official Corporate Identity & Digital Templates" },
   "brochure-designing": { pillar: "Branding", icon: "book-open", badge: "Sales Collateral & High-Resolution Print Ready" },
 
-  // Pillar 5: Direct Channels (4)
-  "whatsapp-marketing": { pillar: "Direct Channels", icon: "message-circle", badge: "Official Cloud API & Verified Green Tick" },
+  // Pillar 5: Direct Channels (3)
   "email-marketing": { pillar: "Direct Channels", icon: "mail", badge: "Automated Klaviyo & HubSpot Lead Sequences" },
   "sms-marketing": { pillar: "Direct Channels", icon: "message-square", badge: "TRAI DLT Approved & 98% Open Rate Broadcasts" },
   "political-digital-marketing": { pillar: "Direct Channels", icon: "flag", badge: "Compliant Digital War Rooms & Voter Outreach" }
@@ -2495,7 +2494,7 @@ function generateServiceCardHTML(service: ServiceDetail) {
   const deliverables = service.detailedServices.slice(0, 3);
 
   return `
-    <div class="service-directory-card group relative flex flex-col justify-between p-6 rounded-2xl bg-card border border-border/70 hover:border-emerald-500/50 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-service-id="${service.id}" data-pillar="${meta.pillar}" data-title="${service.title.toLowerCase()}" data-desc="${service.shortDesc.toLowerCase()}">
+    <div class="service-directory-card group relative flex flex-col justify-between p-6 rounded-2xl bg-white dark:bg-card hover:bg-white dark:hover:bg-card border border-border/70 hover:border-emerald-500/50 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-service-id="${service.id}" data-pillar="${meta.pillar}" data-title="${service.title.toLowerCase()}" data-desc="${service.shortDesc.toLowerCase()}">
       <div class="space-y-4">
         <div class="flex items-center justify-between gap-2">
           <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
@@ -2548,10 +2547,10 @@ function generateServiceCardHTML(service: ServiceDetail) {
 
 // Renders the dedicated All Services Directory page under #all-services-view
 function renderAllServicesPage() {
-  document.title = "All 31 Growth Services & Engineering Capabilities | Inrank Technologies";
+  document.title = "All 30 Growth Services & Engineering Capabilities | Inrank Technologies";
   const metaDescEl = document.querySelector('meta[name="description"]');
   if (metaDescEl) {
-    metaDescEl.setAttribute("content", "Explore Inrank Technologies' 31 specialized growth services across Search, Paid Media, Web Development, Branding and Direct Channels. 8+ years experience and 100% white-label agency outsourcing.");
+    metaDescEl.setAttribute("content", "Explore Inrank Technologies' 30 specialized growth services across Search, Paid Media, Web Development, Branding and Direct Channels. 8+ years experience and 100% white-label agency outsourcing.");
   }
 
   const container = document.getElementById("all-services-view");
@@ -2569,9 +2568,9 @@ function renderAllServicesPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": "https://inranktech.in/services/#services",
-    "name": "Inrank Technologies 31 Specialized Growth Services Directory",
+    "name": "Inrank Technologies 30 Specialized Growth Services Directory",
     "url": "https://inranktech.in/#/services",
-    "description": "Complete directory of 31 specialized digital growth disciplines, from Google My Business optimization and backlink building to custom web engineering and white-label outsourcing.",
+    "description": "Complete directory of 30 specialized digital growth disciplines, from Google My Business optimization and backlink building to custom web engineering and white-label outsourcing.",
     "publisher": {
       "@type": "Organization",
       "name": "Inrank Technologies",
@@ -2613,7 +2612,7 @@ function renderAllServicesPage() {
         <div class="space-y-5 max-w-4xl">
           <span class="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-600 dark:text-emerald-400 shadow-sm">
             <i data-lucide="layers" class="h-3.5 w-3.5"></i>
-            Proprietary 5-Pillar Architecture · 31 Specialized Disciplines
+            Proprietary 5-Pillar Architecture · 30 Specialized Disciplines
           </span>
           <h1 class="font-display font-bold text-3xl sm:text-5xl lg:text-6xl tracking-tight text-foreground leading-[1.08]">
             Comprehensive Growth Services & Technical Capabilities
@@ -2624,8 +2623,8 @@ function renderAllServicesPage() {
 
           <!-- Proof Metrics Bar -->
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 pt-4 border-t border-border/60">
-            <div class="p-3.5 rounded-xl bg-card border border-border/70">
-              <div class="font-display font-extrabold text-2xl text-emerald-600 dark:text-emerald-400">31</div>
+            <div class="p-3.5 rounded-xl bg-white dark:bg-card border border-border/70">
+              <div class="font-display font-extrabold text-2xl text-emerald-600 dark:text-emerald-400">30</div>
               <div class="text-xs text-muted-foreground font-medium">Core Growth Services</div>
             </div>
             <div class="p-3.5 rounded-xl bg-card border border-border/70">
@@ -2767,7 +2766,7 @@ function renderAllServicesPage() {
                 <span>Inquire About Agency Outsourcing</span>
                 <i data-lucide="arrow-right" class="h-4 w-4"></i>
               </a>
-              <a href="https://wa.me/917038612280?text=Hi%20Inrank,%20I%20am%20interested%20in%20white-label%20agency%20outsourcing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-border bg-card hover:bg-muted text-foreground font-semibold text-sm transition-all">
+              <a href="https://wa.me/917038612280?text=Hi%20Inrank,%20I%20am%20interested%20in%20white-label%20agency%20outsourcing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-border bg-white dark:bg-card hover:bg-white dark:hover:bg-card text-foreground font-semibold text-sm transition-all">
                 <i data-lucide="message-circle" class="h-4 w-4 text-emerald-500"></i>
                 <span>Direct WhatsApp Partner Desk</span>
               </a>
@@ -2785,7 +2784,7 @@ function renderAllServicesPage() {
             <a href="#contact" class="px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-xs font-semibold shadow hover:opacity-90 transition-opacity">
               Request Growth Audit
             </a>
-            <a href="tel:+917038612280" class="px-5 py-2.5 rounded-lg border border-border text-foreground hover:bg-muted text-xs font-semibold transition-colors flex items-center gap-2">
+            <a href="tel:+917038612280" class="px-5 py-2.5 rounded-lg border border-border bg-white dark:bg-card text-foreground hover:bg-muted text-xs font-semibold transition-colors flex items-center gap-2">
               <i data-lucide="phone" class="h-3.5 w-3.5"></i> Call +91 70386 12280
             </a>
           </div>
@@ -2985,7 +2984,7 @@ function renderBlogHubView() {
   }).join("");
 
   const featuredHTML = featuredPosts.map(blog => `
-    <div id="featured-guide-${blog.id}" class="group border border-border bg-card/40 rounded-2xl p-6 sm:p-8 flex flex-col md:grid md:grid-cols-12 gap-6 sm:gap-8 hover:border-primary/50 hover:bg-card transition-all">
+    <div id="featured-guide-${blog.id}" class="group border border-border bg-white dark:bg-card hover:bg-white dark:hover:bg-card rounded-2xl p-6 sm:p-8 flex flex-col md:grid md:grid-cols-12 gap-6 sm:gap-8 hover:border-primary/50 transition-all">
       <div class="md:col-span-5 rounded-xl overflow-hidden h-52 md:h-full min-h-[180px] bg-muted relative">
         <img src="${blog.image}" alt="${blog.focusKeyword}" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" />
         <span class="absolute top-4 left-4 px-3 py-1 text-[10px] font-bold uppercase tracking-wider bg-primary text-primary-foreground rounded-md font-sans">
@@ -3142,7 +3141,7 @@ function renderBlogHubView() {
                 Digital marketing agencies worldwide outsource SEO campaigns, custom web development and paid ad tracking to Inrank under strict non-disclosure agreements.
               </p>
               <div class="pt-2">
-                <a href="#contact" class="flex w-full items-center justify-center gap-2 px-3 py-2 text-xs font-semibold rounded-lg border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all text-center cursor-pointer">
+                <a href="#contact" class="flex w-full items-center justify-center gap-2 px-3 py-2 text-xs font-semibold rounded-lg border border-primary bg-white dark:bg-card text-primary hover:bg-primary hover:text-primary-foreground transition-all text-center cursor-pointer shadow-xs">
                   <span>Partner With Inrank</span>
                   <i data-lucide="arrow-up-right" class="h-3.5 w-3.5"></i>
                 </a>
@@ -3526,7 +3525,7 @@ function renderBlogPostView(blog: BlogPost) {
                 </p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
                   ${otherBlogs.slice(0, 2).map(ob => `
-                    <a href="#/blog/${ob.slug}" class="block p-3 rounded-lg border border-border hover:border-primary/30 hover:bg-muted/20 transition-all group">
+                    <a href="#/blog/${ob.slug}" class="block p-3 rounded-lg border border-border bg-white dark:bg-card hover:bg-white dark:hover:bg-card hover:border-primary/40 hover:shadow-sm transition-all group">
                       <div class="text-[10px] font-bold uppercase tracking-wider text-primary mb-1">${ob.category}</div>
                       <h4 class="text-xs sm:text-sm font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">${ob.title}</h4>
                       <div class="text-[10px] text-muted-foreground mt-2 flex items-center gap-1.5">
@@ -3627,7 +3626,7 @@ function renderBlogPostView(blog: BlogPost) {
                   href="https://wa.me/917038612280"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="flex w-full items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold rounded-xl border border-border bg-muted/40 hover:bg-muted text-foreground transition-all text-center cursor-pointer"
+                  class="flex w-full items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold rounded-xl border border-border bg-white dark:bg-card hover:bg-emerald-600 hover:text-white hover:border-emerald-600 text-foreground transition-all text-center cursor-pointer"
                 >
                   <i data-lucide="message-circle" class="h-4 w-4 text-emerald-500"></i>
                   <span>Chat on WhatsApp (+91 70386 12280)</span>

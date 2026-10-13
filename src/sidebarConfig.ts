@@ -190,37 +190,6 @@ export const SERVICES_SIDEBAR_CONFIG: Record<string, ServiceSidebarData> = {
       description: "Our technical lead brings over 8+ years managing multi-million-rupee advertising budgets, conversion tracking architectures and programmatic bid modeling."
     }
   },
-  "whatsapp-marketing": {
-    benchmarks: [
-      { label: "Average Message Open Rate", value: "98%", sub: "Read within 15 minutes" },
-      { label: "Abandoned Cart Recovery", value: "31%", sub: "Interactive automated prompts" },
-      { label: "Conversational CTR", value: "45%+", sub: "Direct CTA button responses" }
-    ],
-    auditCta: {
-      tag: "WhatsApp Funnel Audit",
-      title: "Get a WhatsApp Conversational Audit",
-      description: "We will review your official Meta Business Cloud API setup, template message approval status and automated chatbot response sequences.",
-      checklist: [
-        "WhatsApp Business Cloud API Healthcheck",
-        "Meta Template Compliance & Quality Scan",
-        "Interactive Bot Flow & Drip Blueprint"
-      ],
-      buttonText: "Request WhatsApp Audit"
-    },
-    outsourcing: {
-      badge: "Agency White-Label",
-      title: "Outsource WhatsApp API Workflows",
-      description: "We engineer custom WhatsApp Cloud API integrations, webhook listeners and automated marketing sequences for agencies under white-label terms.",
-      buttonText: "White-Label WhatsApp Solutions"
-    },
-    experience: {
-      badge: "Lead Growth Engineer",
-      name: "Senior Growth Engineer",
-      role: "Senior Growth Engineer",
-      years: "8+ Years",
-      description: "Over 8+ years developing scalable API integrations, automated conversational bot logic and webhook notification architectures."
-    }
-  },
   "google-ads": {
     benchmarks: [
       { label: "Average Google Ads ROAS", value: "4.8x", sub: "Search & Performance Max" },

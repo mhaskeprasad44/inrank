@@ -383,3 +383,40 @@ h1, h2, h3, h4, h5, h6, .font-display, .font-sans {
   pointer-events: none;
 }
 
+/* Solid Card Background & Hover Enforcement */
+.service-directory-card,
+.card-solid,
+.border-border[class*="bg-card"],
+.border-border[class*="bg-white"] {
+  background-color: #ffffff;
+}
+
+.dark .service-directory-card,
+.dark .card-solid,
+.dark .border-border[class*="bg-card"],
+.dark .border-border[class*="bg-white"] {
+  background-color: hsl(var(--card));
+}
+
+/* Ensure no card becomes transparent on hover */
+.service-directory-card:hover,
+.border-border[class*="bg-card"]:hover,
+.border-border[class*="bg-white"]:hover {
+  background-color: #ffffff !important;
+}
+
+.dark .service-directory-card:hover,
+.dark .border-border[class*="bg-card"]:hover,
+.dark .border-border[class*="bg-white"]:hover {
+  background-color: hsl(var(--card)) !important;
+}
+
+/* Ensure dropdown menu has solid background */
+#services-dropdown-menu {
+  background-color: #ffffff !important;
+}
+.dark #services-dropdown-menu {
+  background-color: #09090b !important;
+}
+
+
