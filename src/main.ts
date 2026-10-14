@@ -1327,14 +1327,14 @@ function renderServiceDetailView(service: ServiceDetail) {
         <h3>
           <button
             type="button"
-            class="service-faq-trigger flex w-full items-center justify-between text-left font-display text-base sm:text-lg font-semibold py-4 text-foreground hover:text-primary transition-colors focus:outline-none cursor-pointer"
+            class="service-faq-trigger flex w-full items-center justify-between text-left font-display text-base sm:text-lg font-semibold py-4 text-foreground hover:text-emerald-600 transition-colors focus:outline-none cursor-pointer"
           >
             <span>${faq.q}</span>
-            <i data-lucide="chevron-down" class="service-faq-chevron h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-300"></i>
+            <i data-lucide="chevron-down" class="service-faq-chevron h-4 w-4 shrink-0 text-muted-foreground group-hover:text-emerald-600 transition-transform duration-300"></i>
           </button>
         </h3>
         <div class="service-faq-body overflow-hidden max-h-0 opacity-0 transition-all duration-300">
-          <p class="text-xs sm:text-sm text-muted-foreground pb-4 leading-relaxed">
+          <p class="text-xs sm:text-sm text-stone-700 dark:text-stone-300 pb-4 leading-relaxed font-normal">
             ${faq.a}
           </p>
         </div>
@@ -1649,18 +1649,19 @@ function renderServiceDetailView(service: ServiceDetail) {
         </div>
 
         <!-- Custom expert FAQs list -->
-        <section class="mt-20 border-t border-border pt-16">
+        <section id="service-faqs" class="mt-20 border-t border-border pt-16">
           <div class="max-w-3xl mx-auto">
             
-            <div class="text-center space-y-3 mb-10">
-              <div class="inline-flex items-center justify-center h-10 w-10 rounded-full bg-primary/10 text-primary">
-                <i data-lucide="help-circle" class="h-5 w-5"></i>
+            <div class="text-center space-y-3.5 mb-10">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 shadow-xs">
+                <i data-lucide="help-circle" class="h-3.5 w-3.5"></i>
+                <span>Frequently Asked Questions</span>
               </div>
-              <h2 class="font-display text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
-                Expert FAQs for ${service.title}
+              <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-foreground font-sans">
+                Frequently Asked Questions About ${service.title}
               </h2>
-              <p class="text-sm sm:text-base text-muted-foreground max-w-md mx-auto font-sans">
-                Everything you need to know about Inrank's workflow, speed benchmarks, tools and retention results.
+              <p class="text-sm sm:text-base text-stone-600 dark:text-stone-300 max-w-xl mx-auto font-sans leading-relaxed">
+                Everything you need to know about Inrank's ${service.title} deliverables, timelines, execution workflows and technical guarantees.
               </p>
             </div>
 
