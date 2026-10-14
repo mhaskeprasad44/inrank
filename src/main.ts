@@ -1742,9 +1742,9 @@ function renderAboutUsView() {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://inranktech.in/#organization",
+        "@id": "https://inranktech.com/#organization",
         "name": "Inrank Technologies",
-        "url": "https://inranktech.in/",
+        "url": "https://inranktech.com/",
         "logo": "/logo.png",
         "sameAs": [
           "https://www.instagram.com/inranktech",
@@ -1755,11 +1755,11 @@ function renderAboutUsView() {
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://inranktech.in/#localbusiness",
+        "@id": "https://inranktech.com/#localbusiness",
         "name": "Inrank Technologies",
-        "url": "https://inranktech.in/",
+        "url": "https://inranktech.com/",
         "telephone": "+917038612280",
-        "email": "hello@inranktech.in",
+        "email": "hello@inranktech.com",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Pune",
@@ -1770,48 +1770,48 @@ function renderAboutUsView() {
       },
       {
         "@type": "WebSite",
-        "@id": "https://inranktech.in/#website",
-        "url": "https://inranktech.in/",
+        "@id": "https://inranktech.com/#website",
+        "url": "https://inranktech.com/",
         "name": "Inrank Technologies",
         "publisher": {
-          "@id": "https://inranktech.in/#organization"
+          "@id": "https://inranktech.com/#organization"
         }
       },
       {
         "@type": "AboutPage",
-        "@id": "https://inranktech.in/about-us/#webpage",
-        "url": "https://inranktech.in/#/about-us",
+        "@id": "https://inranktech.com/about-us/#webpage",
+        "url": "https://inranktech.com/#/about-us",
         "name": "About Inrank Technologies",
         "description": "Learn about Inrank Technologies, a Pune-based digital growth team helping businesses worldwide with websites, SEO, paid ads, Shopify, WordPress and CRO.",
         "isPartOf": {
-          "@id": "https://inranktech.in/#website"
+          "@id": "https://inranktech.com/#website"
         },
         "about": {
-          "@id": "https://inranktech.in/#organization"
+          "@id": "https://inranktech.com/#organization"
         },
         "mainEntity": {
-          "@id": "https://inranktech.in/#organization"
+          "@id": "https://inranktech.com/#organization"
         },
         "breadcrumb": {
-          "@id": "https://inranktech.in/about-us/#breadcrumb"
+          "@id": "https://inranktech.com/about-us/#breadcrumb"
         },
         "inLanguage": "en"
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://inranktech.in/about-us/#breadcrumb",
+        "@id": "https://inranktech.com/about-us/#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://inranktech.in/"
+            "item": "https://inranktech.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "About Us",
-            "item": "https://inranktech.in/#/about-us"
+            "item": "https://inranktech.com/#/about-us"
           }
         ]
       }
@@ -1894,7 +1894,7 @@ function renderAboutUsView() {
                   <div class="mt-0.5 text-primary"><i data-lucide="mail" class="h-4.5 w-4.5"></i></div>
                   <div>
                     <span class="font-bold text-foreground block">Direct Contact</span>
-                    <a href="mailto:hello@inranktech.in" class="text-primary hover:underline">hello@inranktech.in</a>
+                    <a href="mailto:hello@inranktech.com" class="text-primary hover:underline">hello@inranktech.com</a>
                   </div>
                 </div>
               </div>
@@ -2552,9 +2552,9 @@ function renderAllServicesPage() {
   const schemaGraph = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "@id": "https://inranktech.in/services/#services",
+    "@id": "https://inranktech.com/services/#services",
     "name": "Inrank Technologies 27 Specialized Growth Services Directory",
-    "url": "https://inranktech.in/#/services",
+    "url": "https://inranktech.com/#/services",
     "description": "Complete directory of 27 specialized digital growth disciplines, from Google My Business optimization and backlink building to custom web engineering and white-label outsourcing.",
     "publisher": {
       "@type": "Organization",
@@ -2564,7 +2564,7 @@ function renderAllServicesPage() {
     "hasPart": SERVICES_DETAILS.map(s => ({
       "@type": "Service",
       "name": s.title,
-      "url": `https://inranktech.in/#/service/${s.id}`,
+      "url": `https://inranktech.com/#/service/${s.id}`,
       "description": s.shortDesc
     }))
   };
@@ -2916,9 +2916,9 @@ function renderBlogHubView() {
   const schemaGraph = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "@id": "https://inranktech.in/blog/#blog",
+    "@id": "https://inranktech.com/blog/#blog",
     "name": "Inrank Technologies Digital Growth Blog",
-    "url": "https://inranktech.in/#/blog",
+    "url": "https://inranktech.com/#/blog",
     "description": "Practical guides on SEO, AI search, web performance, paid ads, Shopify and CRO.",
     "publisher": {
       "@type": "Organization",
@@ -3236,24 +3236,24 @@ function renderBlogPostView(blog: BlogPost) {
   const schemaGraph = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "@id": `https://inranktech.in/blog/${blog.slug}/#blogposting`,
+    "@id": `https://inranktech.com/blog/${blog.slug}/#blogposting`,
     "headline": blog.title,
     "description": blog.metaDesc,
-    "image": `https://inranktech.in${blog.image}`,
+    "image": `https://inranktech.com${blog.image}`,
     "datePublished": "2026-07-15",
     "author": {
       "@type": "Person",
       "name": "Senior Growth Engineer",
-      "url": "https://inranktech.in/#/about-us"
+      "url": "https://inranktech.com/#/about-us"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Inrank Technologies",
-      "logo": "https://inranktech.in/logo.png"
+      "logo": "https://inranktech.com/logo.png"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://inranktech.in/#/blog/${blog.slug}`
+      "@id": `https://inranktech.com/#/blog/${blog.slug}`
     }
   };
 
@@ -3312,7 +3312,7 @@ function renderBlogPostView(blog: BlogPost) {
   const sitemapXmlPreview = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://inranktech.in/#/blog/${blog.slug}</loc>
+    <loc>https://inranktech.com/#/blog/${blog.slug}</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

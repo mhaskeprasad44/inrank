@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap integration
-Sitemap: https://inranktech.in/sitemap.xml
+Sitemap: https://inranktech.com/sitemap.xml
