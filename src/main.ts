@@ -1136,6 +1136,9 @@ function getServiceCtaConfig(serviceId: string): ServiceCtaConfig {
   }
 }
 
+// AI Search & SEO custom icon SVG (matching uploaded browser window + AI microchip design)
+const AI_SEARCH_ICON_SVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full"><rect x="2" y="3" width="20" height="18" rx="2.5" /><line x1="2" y1="8" x2="22" y2="8" /><circle cx="5" cy="5.5" r="0.75" fill="currentColor" stroke="none" /><circle cx="7.5" cy="5.5" r="0.75" fill="currentColor" stroke="none" /><circle cx="10" cy="5.5" r="0.75" fill="currentColor" stroke="none" /><rect x="7.5" y="11" width="9" height="7.5" rx="1.5" /><line x1="10" y1="9.2" x2="10" y2="11" /><line x1="14" y1="9.2" x2="14" y2="11" /><line x1="10" y1="18.5" x2="10" y2="20.3" /><line x1="14" y1="18.5" x2="14" y2="20.3" /><line x1="5.7" y1="13.2" x2="7.5" y2="13.2" /><line x1="5.7" y1="16.2" x2="7.5" y2="16.2" /><line x1="16.5" y1="13.2" x2="18.3" y2="13.2" /><line x1="16.5" y1="16.2" x2="18.3" y2="16.2" /><text x="12" y="16.1" font-size="4.4" font-family="system-ui, -apple-system, sans-serif" font-weight="800" text-anchor="middle" fill="currentColor" stroke="none" letter-spacing="-0.2px">AI</text></svg>`;
+
 // Markdown renderer helper for deep technical service descriptions
 function renderMarkdownContent(content: string): string {
   if (!content) return "";
@@ -1152,14 +1155,14 @@ function renderMarkdownContent(content: string): string {
 
   const formatInline = (str: string): string => {
     // Bold
-    let out = str.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-foreground">$1</strong>');
+    let out = str.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-stone-900 dark:text-stone-100">$1</strong>');
     // Markdown links: [text](url)
     out = out.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_match, text, url) => {
       const isInternal = url.startsWith("#") || url.startsWith("/");
       if (isInternal) {
-        return `<a href="${url}" class="text-primary underline hover:text-primary/80 transition-colors font-medium">${text}</a>`;
+        return `<a href="${url}" class="text-primary underline hover:text-primary/80 transition-colors font-semibold">${text}</a>`;
       }
-      return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:text-primary/80 transition-colors font-medium">${text}</a>`;
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:text-primary/80 transition-colors font-semibold">${text}</a>`;
     });
     return out;
   };
@@ -1174,26 +1177,26 @@ function renderMarkdownContent(content: string): string {
     if (rawLine.startsWith("### ")) {
       flushList();
       const text = formatInline(rawLine.substring(4));
-      htmlParts.push(`<h4 class="font-display text-lg sm:text-xl font-bold text-foreground mt-6 mb-2 tracking-tight">${text}</h4>`);
+      htmlParts.push(`<h4 class="font-display text-lg sm:text-xl font-bold text-stone-900 dark:text-stone-100 mt-6 mb-2 tracking-tight">${text}</h4>`);
     } else if (rawLine.startsWith("## ")) {
       flushList();
       const text = formatInline(rawLine.substring(3));
-      htmlParts.push(`<h3 class="font-display text-xl sm:text-2xl font-bold text-foreground mt-8 mb-3 pt-5 border-t border-border/40 tracking-tight">${text}</h3>`);
+      htmlParts.push(`<h3 class="font-display text-xl sm:text-2xl font-bold text-stone-900 dark:text-stone-100 mt-8 mb-3 pt-5 border-t border-border/40 tracking-tight">${text}</h3>`);
     } else if (rawLine.startsWith("> ")) {
       flushList();
       const text = formatInline(rawLine.substring(2));
-      htmlParts.push(`<blockquote class="border-l-4 border-primary bg-primary/5 pl-4 pr-3 py-3 my-4 rounded-r-md text-foreground italic text-sm sm:text-base leading-relaxed">${text}</blockquote>`);
+      htmlParts.push(`<blockquote class="border-l-4 border-emerald-500 bg-emerald-500/5 pl-4 pr-3 py-3 my-4 rounded-r-md text-stone-900 dark:text-stone-100 italic text-sm sm:text-base leading-relaxed font-normal">${text}</blockquote>`);
     } else if (rawLine.startsWith("- ")) {
       if (!inList) {
         htmlParts.push('<ul class="space-y-2.5 my-4">');
         inList = true;
       }
       const text = formatInline(rawLine.substring(2));
-      htmlParts.push(`<li class="flex items-start gap-2.5 text-sm sm:text-base text-muted-foreground"><span class="h-2 w-2 rounded-full bg-primary shrink-0 mt-2"></span><span>${text}</span></li>`);
+      htmlParts.push(`<li class="flex items-start gap-2.5 text-sm sm:text-base text-stone-800 dark:text-stone-200 font-normal"><span class="h-2 w-2 rounded-full bg-emerald-500 shrink-0 mt-2"></span><span>${text}</span></li>`);
     } else {
       flushList();
       const text = formatInline(rawLine);
-      htmlParts.push(`<p class="text-muted-foreground text-sm sm:text-base leading-relaxed my-3.5">${text}</p>`);
+      htmlParts.push(`<p class="text-stone-800 dark:text-stone-200 text-sm sm:text-base leading-relaxed my-3.5 font-normal">${text}</p>`);
     }
   }
   flushList();
@@ -1302,6 +1305,11 @@ function renderServiceDetailView(service: ServiceDetail) {
     case "google-ads": iconMarkup = `<i data-lucide="target" class="h-3.5 w-3.5 mr-2"></i>`; break;
     case "meta-ads": iconMarkup = `<i data-lucide="megaphone" class="h-3.5 w-3.5 mr-2"></i>`; break;
     case "seo": iconMarkup = `<i data-lucide="search" class="h-3.5 w-3.5 mr-2"></i>`; break;
+    case "ai-seo-agency":
+    case "geo-seo-agency":
+    case "ai-ranking-citations":
+      iconMarkup = `<span class="inline-block h-3.5 w-3.5 mr-2 text-emerald-500">${AI_SEARCH_ICON_SVG}</span>`;
+      break;
     case "conversion-optimization": iconMarkup = `<i data-lucide="mouse-pointer-click" class="h-3.5 w-3.5 mr-2"></i>`; break;
     case "shopify-development": iconMarkup = `<i data-lucide="shopping-bag" class="h-3.5 w-3.5 mr-2"></i>`; break;
     case "wordpress-development": iconMarkup = `<i data-lucide="file-code-2" class="h-3.5 w-3.5 mr-2"></i>`; break;
@@ -1401,7 +1409,7 @@ function renderServiceDetailView(service: ServiceDetail) {
               <h1 class="font-display font-bold text-3xl sm:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-foreground text-balance">
                 ${service.heroHeadline}
               </h1>
-              <p class="text-muted-foreground text-sm sm:text-base leading-relaxed text-balance">
+              <p class="text-stone-700 dark:text-stone-300 text-sm sm:text-base leading-relaxed text-balance font-normal">
                 ${service.shortDesc}
               </p>
             </div>
@@ -1481,11 +1489,11 @@ function renderServiceDetailView(service: ServiceDetail) {
             <div class="p-6 sm:p-8 rounded-xl border border-border bg-card/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
               <div class="space-y-1">
                 <h4 class="font-display font-bold text-lg text-foreground">Ready to accelerate growth?</h4>
-                <p class="text-muted-foreground text-xs sm:text-sm">Get a free live diagnostic audit of your performance funnels.</p>
+                <p class="text-stone-600 dark:text-stone-300 text-xs sm:text-sm">Get a free live diagnostic audit of your performance funnels.</p>
               </div>
               <a
                 href="#contact"
-                class="inline-flex items-center justify-center gap-1.5 px-5 h-11 text-xs sm:text-sm font-semibold rounded-md bg-primary text-primary-foreground shadow hover:bg-primary/95 transition-all text-center shrink-0 cursor-pointer"
+                class="inline-flex items-center justify-center gap-1.5 px-6 h-11 text-xs sm:text-sm font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white shadow-md hover:shadow-lg hover:shadow-emerald-600/25 active:scale-[0.98] transition-all duration-200 text-center shrink-0 cursor-pointer"
               >
                 Inquire now
                 <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
@@ -1546,7 +1554,7 @@ function renderServiceDetailView(service: ServiceDetail) {
               <div class="pt-2">
                 <a 
                   href="#contact" 
-                  class="flex w-full items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-all shadow-sm cursor-pointer text-center"
+                  class="flex w-full items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white hover:shadow-md hover:shadow-emerald-600/25 active:scale-[0.98] transition-all shadow-sm cursor-pointer text-center"
                 >
                   <span>${sidebarData.auditCta.buttonText}</span>
                   <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
@@ -1603,7 +1611,7 @@ function renderServiceDetailView(service: ServiceDetail) {
                 <div class="pt-2">
                   <a
                     href="#contact"
-                    class="flex w-full items-center justify-center gap-2 px-3 py-2 text-xs font-semibold rounded-lg border border-primary bg-white dark:bg-card text-primary hover:bg-primary hover:text-primary-foreground transition-all text-center cursor-pointer shadow-xs"
+                    class="flex w-full items-center justify-center gap-2 px-3 py-2 text-xs font-semibold rounded-lg border border-emerald-600 bg-white dark:bg-card text-emerald-600 hover:bg-emerald-600 hover:text-white active:scale-[0.98] transition-all text-center cursor-pointer shadow-xs"
                   >
                     <span>${sidebarData.outsourcing.buttonText}</span>
                     <i data-lucide="arrow-up-right" class="h-3.5 w-3.5"></i>
@@ -1635,49 +1643,6 @@ function renderServiceDetailView(service: ServiceDetail) {
                 </div>
               </div>
             ` : ""}
-
-            <!-- 6. Google SERP Simulator card -->
-            <div class="border border-border bg-card rounded-xl p-5 sm:p-6 shadow-sm">
-              <div class="flex items-center justify-between border-b border-border pb-3 mb-4">
-                <div class="flex items-center gap-2">
-                  <div class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></div>
-                  <span class="text-xs font-semibold uppercase tracking-[0.15em] text-muted-foreground font-sans">Google SERP Preview</span>
-                </div>
-                <span class="text-[9px] font-mono px-1.5 py-0.5 rounded border border-border bg-background">SEO Active</span>
-              </div>
-              
-              <div class="space-y-3 font-sans">
-                <div>
-                  <div class="flex items-center gap-1.5 text-xs text-stone-500 overflow-hidden text-ellipsis whitespace-nowrap">
-                    <span>https://inranktech.in</span>
-                    <span>›</span>
-                    <span class="text-primary font-medium">services</span>
-                    <span>›</span>
-                    <span>${service.id}</span>
-                  </div>
-                  <h3 class="text-[#1a0dab] dark:text-[#8ab4f8] text-sm sm:text-lg font-medium hover:underline cursor-pointer mt-1 font-sans leading-snug">
-                    ${service.metaTitle}
-                  </h3>
-                  <p class="text-stone-600 dark:text-stone-300 text-xs sm:text-sm leading-normal mt-1">
-                    ${service.metaDesc}
-                  </p>
-                </div>
-
-                <div class="flex items-center gap-4 text-xs text-muted-foreground pt-1 border-t border-dashed border-border mt-3">
-                  <div class="flex items-center gap-1 text-amber-500">
-                    <span class="font-bold">Rating:</span>
-                    <span>5.0</span>
-                    <span>★★★★★</span>
-                  </div>
-                  <div>
-                    <span class="font-bold">Reviews:</span> <span>38 votes</span>
-                  </div>
-                  <div>
-                    <span class="font-bold text-emerald-500">Indexed</span>
-                  </div>
-                </div>
-              </div>
-            </div>
 
           </div>
 
@@ -2509,39 +2474,41 @@ const SERVICE_PILLAR_MAP: Record<string, { pillar: string; icon: string; badge: 
 function generateServiceCardHTML(service: ServiceDetail) {
   const meta = SERVICE_PILLAR_MAP[service.id] || { pillar: "Search & AI Discovery", icon: "sparkles", badge: "Specialized Discipline" };
   const deliverables = service.detailedServices.slice(0, 3);
+  const isAiService = service.id === "ai-seo-agency" || service.id === "geo-seo-agency" || service.id === "ai-ranking-citations";
 
   return `
-    <div class="service-directory-card group relative flex flex-col justify-between p-6 rounded-2xl bg-white dark:bg-card hover:bg-white dark:hover:bg-card border border-border/70 hover:border-emerald-500/50 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-service-id="${service.id}" data-pillar="${meta.pillar}" data-title="${service.title.toLowerCase()}" data-desc="${service.shortDesc.toLowerCase()}">
+    <div class="service-directory-card group relative flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white dark:bg-zinc-900 border border-border/80 hover:border-emerald-500/60 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06),0_2px_6px_-2px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_35px_-8px_rgba(16,185,129,0.18),0_8px_16px_-4px_rgba(0,0,0,0.06)] hover:-translate-y-1.5 transition-all duration-300 overflow-hidden" data-service-id="${service.id}" data-pillar="${meta.pillar}" data-title="${service.title.toLowerCase()}" data-desc="${service.shortDesc.toLowerCase()}">
+      <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-emerald-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       <div class="space-y-4">
         <div class="flex items-center justify-between gap-2">
           <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-            <i data-lucide="${meta.icon}" class="h-3.5 w-3.5"></i>
+            ${isAiService ? `<span class="h-3.5 w-3.5 inline-block shrink-0">${AI_SEARCH_ICON_SVG}</span>` : `<i data-lucide="${meta.icon}" class="h-3.5 w-3.5"></i>`}
             ${meta.pillar}
           </span>
-          <span class="text-[10px] font-mono text-muted-foreground bg-muted/60 px-2 py-0.5 rounded">ID: ${service.id}</span>
+          <span class="text-[10px] font-mono text-stone-500 dark:text-stone-400 bg-stone-100 dark:bg-stone-800 px-2 py-0.5 rounded font-semibold">ID: ${service.id}</span>
         </div>
 
         <div>
-          <h3 class="font-display font-bold text-lg sm:text-xl text-foreground group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+          <h3 class="font-display font-bold text-lg sm:text-xl text-stone-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
             <a href="#/service/${service.id}" class="hover:underline">
               ${service.title}
             </a>
           </h3>
           <div class="mt-2">
-            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-semibold bg-muted/70 text-foreground/90 border border-border/60">
+            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-semibold bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 border border-border/80">
               <i data-lucide="trending-up" class="h-3 w-3 text-emerald-500"></i>
               ${meta.badge}
             </span>
           </div>
         </div>
 
-        <p class="text-xs sm:text-sm text-muted-foreground leading-relaxed line-clamp-3">
+        <p class="text-[13px] text-stone-600 dark:text-stone-300 leading-relaxed line-clamp-3 font-normal">
           ${service.shortDesc}
         </p>
 
-        <div class="pt-3 border-t border-border/50 space-y-1.5">
-          <div class="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Deliverables & Scope:</div>
-          <ul class="text-xs text-foreground/80 space-y-1">
+        <div class="pt-3 border-t border-border/60 space-y-1.5">
+          <div class="text-[10px] font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400">Deliverables & Scope:</div>
+          <ul class="text-xs text-stone-700 dark:text-stone-300 space-y-1 font-medium">
             ${deliverables.map(d => `
               <li class="flex items-start gap-1.5">
                 <i data-lucide="check" class="h-3.5 w-3.5 text-emerald-500 shrink-0 mt-0.5"></i>
@@ -2552,10 +2519,10 @@ function generateServiceCardHTML(service: ServiceDetail) {
         </div>
       </div>
 
-      <div class="pt-5 mt-4 border-t border-border/40">
-        <a href="#/service/${service.id}" class="flex items-center justify-between w-full px-4 py-2.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-600 text-emerald-600 dark:text-emerald-400 hover:text-white font-semibold text-xs transition-all duration-200">
+      <div class="pt-5 mt-4 border-t border-border/60">
+        <a href="#/service/${service.id}" class="flex items-center justify-between w-full px-4 py-2.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-600 text-emerald-600 dark:text-emerald-400 hover:text-white font-semibold text-xs transition-all duration-200 group/btn shadow-xs active:scale-[0.98]">
           <span>Explore Architecture & Guide</span>
-          <i data-lucide="arrow-right" class="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform"></i>
+          <i data-lucide="arrow-right" class="h-3.5 w-3.5 group-hover/btn:translate-x-1 transition-transform"></i>
         </a>
       </div>
     </div>
@@ -2665,19 +2632,19 @@ function renderAllServicesPage() {
             
             <!-- Category Pills -->
             <div class="flex flex-wrap gap-2 items-center" id="services-filter-buttons">
-              <button class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-emerald-500 text-white shadow-sm transition-all" data-pillar="all">
+              <button class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 text-white shadow-sm active:scale-95 transition-all" data-pillar="all">
                 All Disciplines (27)
               </button>
-              <button class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-muted hover:bg-muted/80 text-foreground transition-all" data-pillar="Search & AI Discovery">
+              <button class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-muted hover:bg-emerald-600 hover:text-white text-foreground active:scale-95 transition-all" data-pillar="Search & AI Discovery">
                 Search & AI Discovery (7)
               </button>
-              <button class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-muted hover:bg-muted/80 text-foreground transition-all" data-pillar="Paid Media & Social">
+              <button class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-muted hover:bg-emerald-600 hover:text-white text-foreground active:scale-95 transition-all" data-pillar="Paid Media & Social">
                 Paid Media & Social (7)
               </button>
-              <button class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-muted hover:bg-muted/80 text-foreground transition-all" data-pillar="Web & E-Commerce">
+              <button class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-muted hover:bg-emerald-600 hover:text-white text-foreground active:scale-95 transition-all" data-pillar="Web & E-Commerce">
                 Web & E-Commerce (8)
               </button>
-              <button class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-muted hover:bg-muted/80 text-foreground transition-all" data-pillar="Branding">
+              <button class="service-filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-muted hover:bg-emerald-600 hover:text-white text-foreground active:scale-95 transition-all" data-pillar="Branding">
                 Branding (5)
               </button>
             </div>
@@ -2699,7 +2666,7 @@ function renderAllServicesPage() {
 
           <!-- Dynamic Results Counter -->
           <div class="flex items-center justify-between text-xs text-muted-foreground pt-2 border-t border-border/40">
-            <span id="services-results-counter">Displaying 31 of 31 specialized growth services</span>
+            <span id="services-results-counter">Displaying ${SERVICES_DETAILS.length} of ${SERVICES_DETAILS.length} specialized growth services</span>
             <span class="text-[11px]">Click any card to inspect deliverables and technical specifications</span>
           </div>
         </div>
@@ -2718,7 +2685,7 @@ function renderAllServicesPage() {
           <p class="text-xs text-muted-foreground max-w-md mx-auto">
             We could not find any services matching your search. Try searching for "Backlinks", "GMB", "SEO", "Shopify", "Meta Ads" or "WhatsApp".
           </p>
-          <button id="services-reset-search-btn" class="px-4 py-2 text-xs font-semibold rounded-lg bg-emerald-500 text-white hover:bg-emerald-600 transition-colors">
+          <button id="services-reset-search-btn" class="px-4 py-2 text-xs font-semibold rounded-lg bg-emerald-600 text-white hover:bg-emerald-700 active:scale-[0.98] shadow transition-all">
             Reset Filters & View All
           </button>
         </div>
@@ -2776,12 +2743,12 @@ function renderAllServicesPage() {
             </div>
 
             <div class="pt-2 flex flex-col sm:flex-row gap-3">
-              <a href="#contact" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm shadow-lg transition-all">
+              <a href="#contact" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md hover:shadow-lg hover:shadow-emerald-600/25 active:scale-[0.98] transition-all">
                 <span>Inquire About Agency Outsourcing</span>
                 <i data-lucide="arrow-right" class="h-4 w-4"></i>
               </a>
-              <a href="https://wa.me/917038612280?text=Hi%20Inrank,%20I%20am%20interested%20in%20white-label%20agency%20outsourcing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-border bg-white dark:bg-card hover:bg-white dark:hover:bg-card text-foreground font-semibold text-sm transition-all">
-                <i data-lucide="message-circle" class="h-4 w-4 text-emerald-500"></i>
+              <a href="https://wa.me/917038612280?text=Hi%20Inrank,%20I%20am%20interested%20in%20white-label%20agency%20outsourcing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-border bg-white dark:bg-card hover:bg-emerald-600 hover:text-white hover:border-emerald-600 text-foreground font-semibold text-sm shadow-sm active:scale-[0.98] transition-all group">
+                <i data-lucide="message-circle" class="h-4 w-4 text-emerald-500 group-hover:text-white transition-colors"></i>
                 <span>Direct WhatsApp Partner Desk</span>
               </a>
             </div>
@@ -2795,11 +2762,11 @@ function renderAllServicesPage() {
             Whether you require an individual high-impact service or an integrated multi-channel growth engine, our engineering team is ready to analyze your current baseline and architect an actionable roadmap.
           </p>
           <div class="flex items-center justify-center gap-4 pt-2">
-            <a href="#contact" class="px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-xs font-semibold shadow hover:opacity-90 transition-opacity">
+            <a href="#contact" class="px-5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold shadow hover:shadow-lg hover:shadow-emerald-600/25 active:scale-[0.98] transition-all">
               Request Growth Audit
             </a>
-            <a href="tel:+917038612280" class="px-5 py-2.5 rounded-lg border border-border bg-white dark:bg-card text-foreground hover:bg-muted text-xs font-semibold transition-colors flex items-center gap-2">
-              <i data-lucide="phone" class="h-3.5 w-3.5"></i> Call +91 70386 12280
+            <a href="tel:+917038612280" class="px-5 py-2.5 rounded-lg border border-border bg-white dark:bg-card text-foreground hover:bg-emerald-600 hover:text-white hover:border-emerald-600 text-xs font-semibold shadow-sm active:scale-[0.98] transition-all flex items-center gap-2 group">
+              <i data-lucide="phone" class="h-3.5 w-3.5 text-emerald-500 group-hover:text-white transition-colors"></i> Call +91 70386 12280
             </a>
           </div>
         </div>
@@ -2869,11 +2836,11 @@ function renderAllServicesPage() {
 
       // Update active button state
       filterButtons.forEach(b => {
-        b.classList.remove("bg-emerald-500", "text-white", "shadow-sm");
+        b.classList.remove("bg-emerald-600", "text-white", "shadow-sm");
         b.classList.add("bg-muted", "text-foreground");
       });
       btn.classList.remove("bg-muted", "text-foreground");
-      btn.classList.add("bg-emerald-500", "text-white", "shadow-sm");
+      btn.classList.add("bg-emerald-600", "text-white", "shadow-sm");
 
       updateCardVisibility();
     });
