@@ -7,7 +7,7 @@ import { GoogleGenAI } from "@google/genai";
 import dotenv from "dotenv";
 dotenv.config();
 var app = express();
-var PORT = process.env.PORT || 3e3;
+var PORT = Number(process.env.PORT) || 3e3;
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 var getGeminiClient = () => {
@@ -263,6 +263,36 @@ Inrank Technologies is a premium, performance-first digital growth agency. We sp
 - Email: inranktech@gmail.com
 - Phone/WhatsApp: +91 70386 12280
 `);
+});
+app.get(["/homepage-2", "/homepage-2.html"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "homepage-2.html");
+  const localPage = path.join(process.cwd(), "homepage-2.html");
+  if (fs.existsSync(distPage)) {
+    return res.sendFile(distPage);
+  }
+  if (fs.existsSync(localPage)) {
+    return res.sendFile(localPage);
+  }
+  const distIndex = path.join(process.cwd(), "dist", "index.html");
+  if (fs.existsSync(distIndex)) {
+    return res.sendFile(distIndex);
+  }
+  return res.sendFile(path.join(process.cwd(), "index.html"));
+});
+app.get(["/homepage-3", "/homepage-3.html"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "homepage-3.html");
+  const localPage = path.join(process.cwd(), "homepage-3.html");
+  if (fs.existsSync(distPage)) {
+    return res.sendFile(distPage);
+  }
+  if (fs.existsSync(localPage)) {
+    return res.sendFile(localPage);
+  }
+  const distIndex = path.join(process.cwd(), "dist", "index.html");
+  if (fs.existsSync(distIndex)) {
+    return res.sendFile(distIndex);
+  }
+  return res.sendFile(path.join(process.cwd(), "index.html"));
 });
 async function startServer() {
   const distPath = path.join(process.cwd(), "dist");

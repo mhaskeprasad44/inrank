@@ -1,4 +1,6 @@
 import "./index.css";
+import { renderHomepage2View } from "./homepage2.ts";
+import { renderHomepage3View } from "./homepage3.ts";
 import { SERVICES_DETAILS, ServiceDetail } from "./servicesData.ts";
 import { BLOG_POSTS, BlogPost } from "./blogsData.ts";
 import { getServiceSidebarData } from "./sidebarConfig.ts";
@@ -119,6 +121,24 @@ function initNavigation() {
       }
     });
   }
+
+  // Mobile About & Editions menu toggle
+  const mobileAboutTrigger = document.getElementById("mobile-about-trigger") as HTMLButtonElement | null;
+  const mobileAboutSubmenu = document.getElementById("mobile-about-submenu") as HTMLDivElement | null;
+  const mobileAboutChevron = document.getElementById("mobile-about-chevron") as HTMLElement | null;
+
+  if (mobileAboutTrigger && mobileAboutSubmenu) {
+    mobileAboutTrigger.addEventListener("click", () => {
+      const isHidden = mobileAboutSubmenu.classList.contains("hidden");
+      if (isHidden) {
+        mobileAboutSubmenu.classList.remove("hidden");
+        if (mobileAboutChevron) mobileAboutChevron.classList.add("rotate-180", "text-primary");
+      } else {
+        mobileAboutSubmenu.classList.add("hidden");
+        if (mobileAboutChevron) mobileAboutChevron.classList.remove("rotate-180", "text-primary");
+      }
+    });
+  }
 }
 
 // Expandable FAQs accordions handler
@@ -236,10 +256,44 @@ function handleHashRouting() {
   const allServicesView = document.getElementById("all-services-view") as HTMLDivElement | null;
   const aboutUsView = document.getElementById("about-us-view") as HTMLDivElement | null;
   const blogView = document.getElementById("blog-view") as HTMLDivElement | null;
+  const homepage2View = document.getElementById("homepage-2-view") as HTMLDivElement | null;
+  const homepage3View = document.getElementById("homepage-3-view") as HTMLDivElement | null;
 
   if (!mainSections || !serviceDetailView || !aboutUsView || !blogView) return;
 
-  if (path === "/about-us" || hash === "#/about-us" || hash === "#about-us") {
+  if (
+    path === "/homepage-3" || 
+    path === "/homepage-3.html" || 
+    hash === "#/homepage-3" || 
+    hash === "#homepage-3"
+  ) {
+    renderHomepage3View();
+    mainSections.classList.add("hidden");
+    serviceDetailView.classList.add("hidden");
+    if (allServicesView) allServicesView.classList.add("hidden");
+    aboutUsView.classList.add("hidden");
+    blogView.classList.add("hidden");
+    if (homepage2View) homepage2View.classList.add("hidden");
+    if (homepage3View) homepage3View.classList.remove("hidden");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else if (
+    path === "/homepage-2" || 
+    path === "/homepage-2.html" || 
+    hash === "#/homepage-2" || 
+    hash === "#homepage-2"
+  ) {
+    renderHomepage2View();
+    mainSections.classList.add("hidden");
+    serviceDetailView.classList.add("hidden");
+    if (allServicesView) allServicesView.classList.add("hidden");
+    aboutUsView.classList.add("hidden");
+    blogView.classList.add("hidden");
+    if (homepage3View) homepage3View.classList.add("hidden");
+    if (homepage2View) homepage2View.classList.remove("hidden");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else if (path === "/about-us" || hash === "#/about-us" || hash === "#about-us") {
+    if (homepage2View) homepage2View.classList.add("hidden");
+    if (homepage3View) homepage3View.classList.add("hidden");
     renderAboutUsView();
     mainSections.classList.add("hidden");
     serviceDetailView.classList.add("hidden");
@@ -248,6 +302,8 @@ function handleHashRouting() {
     blogView.classList.add("hidden");
     window.scrollTo({ top: 0, behavior: "smooth" });
   } else if (path === "/blog" || hash === "#/blog" || hash === "#blog") {
+    if (homepage2View) homepage2View.classList.add("hidden");
+    if (homepage3View) homepage3View.classList.add("hidden");
     renderBlogHubView();
     mainSections.classList.add("hidden");
     serviceDetailView.classList.add("hidden");
@@ -258,6 +314,9 @@ function handleHashRouting() {
   } else if (path.startsWith("/blog/") || hash.startsWith("#/blog/")) {
     const blogSlug = path.startsWith("/blog/") ? path.replace("/blog/", "") : hash.replace("#/blog/", "");
     const foundBlog = BLOG_POSTS.find((b) => b.slug === blogSlug);
+
+    if (homepage2View) homepage2View.classList.add("hidden");
+    if (homepage3View) homepage3View.classList.add("hidden");
 
     if (foundBlog) {
       renderBlogPostView(foundBlog);
@@ -275,6 +334,8 @@ function handleHashRouting() {
       blogView.classList.add("hidden");
     }
   } else if (path === "/services" || path === "/services.html" || hash === "#/services") {
+    if (homepage2View) homepage2View.classList.add("hidden");
+    if (homepage3View) homepage3View.classList.add("hidden");
     renderAllServicesPage();
     mainSections.classList.add("hidden");
     serviceDetailView.classList.add("hidden");
@@ -283,6 +344,8 @@ function handleHashRouting() {
     if (allServicesView) allServicesView.classList.remove("hidden");
     window.scrollTo({ top: 0, behavior: "smooth" });
   } else if (hash === "#services") {
+    if (homepage2View) homepage2View.classList.add("hidden");
+    if (homepage3View) homepage3View.classList.add("hidden");
     serviceDetailView.classList.add("hidden");
     aboutUsView.classList.add("hidden");
     blogView.classList.add("hidden");
@@ -298,6 +361,8 @@ function handleHashRouting() {
     hash.startsWith("#/service/") || 
     hash.startsWith("#/services/")
   ) {
+    if (homepage2View) homepage2View.classList.add("hidden");
+    if (homepage3View) homepage3View.classList.add("hidden");
     let rawServiceId = "";
     if (path.startsWith("/service/")) {
       rawServiceId = path.replace("/service/", "");
@@ -329,6 +394,8 @@ function handleHashRouting() {
     }
   } else {
     // Standard Homepage view
+    if (homepage2View) homepage2View.classList.add("hidden");
+    if (homepage3View) homepage3View.classList.add("hidden");
     serviceDetailView.classList.add("hidden");
     if (allServicesView) allServicesView.classList.add("hidden");
     aboutUsView.classList.add("hidden");
@@ -1828,17 +1895,29 @@ function renderAboutUsView() {
       <div class="absolute inset-0 opacity-40 dark:opacity-20 pointer-events-none" style="background-image: radial-gradient(circle, var(--color-border) 1.2px, transparent 1.2px); background-size: 24px 24px;"></div>
       <div class="absolute top-1/4 -left-32 w-[450px] h-[450px] rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
 
-      <!-- Breadcrumbs navigation header -->
+      <!-- Breadcrumbs navigation header & Agency Editions Selector -->
       <div class="relative max-w-7xl mx-auto px-5 sm:px-8 mb-6 sm:mb-8">
-        <div class="flex items-center gap-2">
-          <a href="#" class="text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer">Home</a>
-          <span class="text-stone-500">/</span>
-          <span class="text-xs sm:text-sm font-semibold uppercase tracking-[0.16em] text-primary">About Us</span>
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div class="flex items-center gap-2">
+            <a href="#" class="text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer">Home</a>
+            <span class="text-stone-500">/</span>
+            <span class="text-xs sm:text-sm font-semibold uppercase tracking-[0.16em] text-primary">About Us</span>
+          </div>
+
+          <!-- Agency Editions Dropdown Selector on About Page -->
+          <div class="relative inline-block text-left" id="about-page-editions-selector">
+            <div class="inline-flex items-center gap-1.5 p-1 bg-stone-100 dark:bg-zinc-900 border border-border rounded-xl">
+              <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-muted-foreground pl-2 hidden sm:inline">Explore Agency Editions:</span>
+              <a href="#" class="text-xs font-semibold px-2.5 py-1 rounded-lg text-muted-foreground hover:text-foreground transition-all">Home-1 (Organic)</a>
+              <a href="#/homepage-2" class="text-xs font-bold px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 hover:bg-emerald-600 hover:text-white transition-all flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>Homepage-2 (Ads)</a>
+              <a href="#/homepage-3" class="text-xs font-bold px-2.5 py-1 rounded-lg bg-[#00b755] text-black border border-black hover:bg-[#13d66b] transition-all flex items-center gap-1"><span>✨</span>Homepage-3 (Brand Craft)</a>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- Hero Header Section -->
-      <div class="relative max-w-7xl mx-auto px-5 sm:px-8 mb-16 sm:mb-24">
+      <div class="relative max-w-7xl mx-auto px-5 sm:px-8 mb-12 sm:mb-16">
         <div class="grid lg:grid-cols-12 gap-10 items-center">
           <div class="lg:col-span-7 space-y-6">
             <span class="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground shadow-sm">
@@ -1898,6 +1977,44 @@ function renderAboutUsView() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Three Inrank Digital Editions Callout Banner -->
+      <div class="relative max-w-7xl mx-auto px-5 sm:px-8 mb-16 sm:mb-20">
+        <div class="rounded-2xl border border-border bg-gradient-to-r from-stone-50 via-white to-stone-50 dark:from-zinc-900/60 dark:via-zinc-950 dark:to-zinc-900/60 p-6 sm:p-8 shadow-sm">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <span class="h-2 w-2 rounded-full bg-emerald-500 animate-ping"></span>
+                <span class="text-xs font-mono font-bold uppercase tracking-wider text-muted-foreground">Tailored Agency Experiences</span>
+              </div>
+              <h3 class="font-display font-bold text-xl sm:text-2xl text-foreground">
+                Three Distinct Ways to Experience Inrank Technologies
+              </h3>
+              <p class="text-xs sm:text-sm text-muted-foreground max-w-xl">
+                Depending on your commercial goal, explore our three specialized digital flagships:
+              </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full md:w-auto">
+              <a href="#" class="p-3.5 rounded-xl border border-border bg-white dark:bg-zinc-900 hover:border-primary transition-all group">
+                <div class="text-[10px] font-mono uppercase tracking-wider text-muted-foreground">Edition 01</div>
+                <div class="font-bold text-xs text-foreground group-hover:text-primary mt-0.5">Homepage-1 (Organic)</div>
+                <div class="text-[11px] text-muted-foreground mt-1">Full 27-service directory &amp; engineering foundation.</div>
+              </a>
+              <a href="#/homepage-2" class="p-3.5 rounded-xl border border-emerald-500/30 bg-emerald-500/5 hover:bg-emerald-500/10 transition-all group">
+                <div class="text-[10px] font-mono uppercase tracking-wider text-emerald-600 font-bold">Edition 02 (AdAnt)</div>
+                <div class="font-bold text-xs text-foreground group-hover:text-emerald-600 mt-0.5">Homepage-2 (Performance Ads)</div>
+                <div class="text-[11px] text-muted-foreground mt-1">AI crawler audit tool, ROI slider &amp; dedicated pod.</div>
+              </a>
+              <a href="#/homepage-3" class="p-3.5 rounded-xl border border-emerald-500/40 bg-emerald-500/10 hover:bg-emerald-500/15 transition-all group">
+                <div class="text-[10px] font-mono uppercase tracking-wider text-emerald-600 dark:text-emerald-400 font-bold">Edition 03 (Brand Craft)</div>
+                <div class="font-bold text-xs text-foreground group-hover:text-emerald-600 mt-0.5">Homepage-3 (Brand Art &amp; Craft)</div>
+                <div class="text-[11px] text-muted-foreground mt-1">Ting-inspired craft UI with Inrank brand colors &amp; typography.</div>
+              </a>
             </div>
           </div>
         </div>

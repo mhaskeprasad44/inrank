@@ -217,7 +217,7 @@
           </a>
 
           <!-- Desktop Navigation Link Elements -->
-          <nav class="hidden md:flex items-center gap-7 lg:gap-8">
+          <nav class="hidden md:flex items-center gap-6 lg:gap-7">
             <a href="#" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors">Home</a>
             
             <!-- Services Nav trigger option with drop-panel list -->
@@ -350,7 +350,56 @@
             <a href="#process" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors">Process</a>
             <a href="#industries" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors">Industries</a>
             <a href="#results" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors">Results</a>
-            <a href="#/about-us" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors">About</a>
+            
+            <!-- About Dropdown Menu with About Us, Homepage-2, and Homepage-3 -->
+            <div class="relative group" id="about-nav-dropdown-group">
+              <button id="about-nav-dropdown-btn" class="flex items-center gap-1 text-sm font-medium text-muted-foreground group-hover:text-foreground hover:text-primary transition-colors py-2 focus:outline-none cursor-pointer">
+                <span>About</span>
+                <i data-lucide="chevron-down" class="h-4 w-4 text-muted-foreground transition-transform duration-200 group-hover:rotate-180"></i>
+              </button>
+              
+              <div class="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-80 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                <div class="rounded-xl border border-border bg-white dark:bg-zinc-950 p-2.5 shadow-2xl space-y-1">
+                  <div class="px-3 py-1.5 text-[10px] font-mono font-bold uppercase tracking-wider text-muted-foreground border-b border-border/60 mb-1">
+                    Agency Profiles &amp; Editions
+                  </div>
+                  <a href="#/about-us" class="flex items-start gap-2.5 p-2 rounded-lg hover:bg-muted/70 transition-colors">
+                    <div class="h-8 w-8 rounded-md bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                      <i data-lucide="info" class="h-4 w-4"></i>
+                    </div>
+                    <div>
+                      <div class="text-xs font-bold text-foreground">About Inrank Overview</div>
+                      <div class="text-[11px] text-muted-foreground">Founding story, 45+ team &amp; engineering ethos</div>
+                    </div>
+                  </a>
+                  <a href="#/homepage-2" class="flex items-start gap-2.5 p-2 rounded-lg hover:bg-emerald-500/10 transition-colors border border-transparent hover:border-emerald-500/20">
+                    <div class="h-8 w-8 rounded-md bg-emerald-500/15 text-emerald-600 flex items-center justify-center shrink-0">
+                      <i data-lucide="target" class="h-4 w-4"></i>
+                    </div>
+                    <div>
+                      <div class="flex items-center gap-1.5">
+                        <span class="text-xs font-bold text-foreground">Homepage-2</span>
+                        <span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-emerald-100 text-emerald-700">Ads Engine</span>
+                      </div>
+                      <div class="text-[11px] text-muted-foreground">AdAnt-inspired performance pod &amp; live AI audit</div>
+                    </div>
+                  </a>
+                  <a href="#/homepage-3" class="flex items-start gap-2.5 p-2 rounded-lg hover:bg-emerald-500/10 dark:hover:bg-zinc-900 transition-colors border border-transparent hover:border-emerald-500/30">
+                    <div class="h-8 w-8 rounded-md bg-[#00b755] text-black flex items-center justify-center shrink-0 font-bold">
+                      <i data-lucide="sparkles" class="h-4 w-4"></i>
+                    </div>
+                    <div>
+                      <div class="flex items-center gap-1.5">
+                        <span class="text-xs font-bold text-foreground">Homepage-3</span>
+                        <span class="px-1.5 py-0.2 rounded text-[9px] font-bold bg-[#00b755] text-black">Brand Craft</span>
+                      </div>
+                      <div class="text-[11px] text-muted-foreground">Ting-inspired craft UI with Inrank brand colors &amp; typography</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
             <a href="#/blog" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors font-semibold text-primary">Blog</a>
             <a href="#faq" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors">FAQ</a>
             <a href="#contact" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors">Contact</a>
@@ -515,8 +564,27 @@
 
             <a href="#process" class="block text-base font-semibold py-3 border-t border-border/50 text-foreground hover:text-primary">Process Map</a>
             <a href="#industries" class="block text-base font-semibold py-3 border-t border-border/50 text-foreground hover:text-primary">Industries</a>
-            <a href="#results" class="block text-base font-semibold py-3 border-t border-border/50 text-foreground hover:text-primary">Results</a>
-            <a href="#/about-us" class="block text-base font-semibold py-3 border-t border-border/50 text-foreground hover:text-primary">About</a>
+            <!-- Mobile About & Editions collapsible -->
+            <div class="border-t border-border/50">
+              <button id="mobile-about-trigger" class="flex w-full items-center justify-between text-left text-base font-semibold py-3 text-foreground hover:text-primary transition-colors focus:outline-none">
+                <span>About &amp; Home Editions</span>
+                <i data-lucide="chevron-down" id="mobile-about-chevron" class="h-5 w-5 transition-transform duration-200"></i>
+              </button>
+              <div id="mobile-about-submenu" class="hidden pl-3 border-l border-border/80 mt-1 space-y-2 pb-3 text-xs">
+                <a href="#/about-us" class="block py-1.5 text-foreground hover:text-primary font-medium flex items-center gap-1.5">
+                  <i data-lucide="info" class="h-3.5 w-3.5 text-primary"></i> About Inrank Technologies
+                </a>
+                <a href="#/homepage-2" class="block py-1.5 text-emerald-600 font-semibold flex items-center justify-between">
+                  <span class="flex items-center gap-1.5"><i data-lucide="target" class="h-3.5 w-3.5"></i> Homepage-2 (Performance Ads)</span>
+                  <span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-emerald-100 text-emerald-800">AdAnt Style</span>
+                </a>
+                <a href="#/homepage-3" class="block py-1.5 text-stone-900 dark:text-stone-100 font-semibold flex items-center justify-between">
+                  <span class="flex items-center gap-1.5"><i data-lucide="sparkles" class="h-3.5 w-3.5 text-emerald-500"></i> Homepage-3 (Brand Art &amp; Craft)</span>
+                  <span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-[#00b755] text-black">Brand Craft</span>
+                </a>
+              </div>
+            </div>
+
             <a href="#/blog" class="block text-base font-semibold py-3 border-t border-border/50 text-primary hover:text-primary font-bold">Blog Hub</a>
             <a href="#faq" class="block text-base font-semibold py-3 border-t border-border/50 text-foreground hover:text-primary">FAQ Directory</a>
             <a href="#contact" class="block text-base font-semibold py-3 border-t border-border/50 text-foreground hover:text-primary">Contact</a>
@@ -547,6 +615,12 @@
 
         <!-- BLOG DYNAMIC INJECTION TARGET FRAME -->
         <div id="blog-view" class="hidden"></div>
+
+        <!-- HOMEPAGE-2 ADVERTISING EXPERIENCE INJECTION FRAME -->
+        <div id="homepage-2-view" class="hidden"></div>
+
+        <!-- HOMEPAGE-3 CREATIVE CRAFT & BRAND ART EXPERIENCE INJECTION FRAME -->
+        <div id="homepage-3-view" class="hidden"></div>
 
         <!-- MAIN INTERACTIVE HOMEPAGE CONTENT BUNDLE -->
         <div id="main-sections">

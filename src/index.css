@@ -419,4 +419,310 @@ h1, h2, h3, h4, h5, h6, .font-display, .font-sans {
   background-color: #09090b !important;
 }
 
+/* ==========================================================================
+   HOMEPAGE-2 & ADANT INFLUENCED DESIGN SYSTEM TOKENS & UTILITIES
+   ========================================================================== */
+
+/* Metal-FX iridescent border rings */
+.metal-fx-box {
+  position: relative;
+  isolation: isolate;
+  background: #ffffff;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 20px 40px -15px rgba(100, 116, 139, 0.08);
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.metal-fx-box::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: calc(1.5rem + 1.5px);
+  background: linear-gradient(135deg, #c3ccd8 0%, #66b0ff 35%, #00b755 70%, #c3ccd8 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+}
+
+.metal-fx-box:focus-within::before,
+.metal-fx-box:hover::before {
+  opacity: 1;
+}
+
+.metal-fx-box:focus-within {
+  box-shadow: 0 0 0 4px rgba(102, 176, 255, 0.15), 0 25px 50px -12px rgba(16, 185, 129, 0.15);
+}
+
+/* Ambient Radial Glow for Hero */
+.ambient-glow-hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  max-width: 900px;
+  height: 380px;
+  background: radial-gradient(ellipse at center, rgba(102, 176, 255, 0.18) 0%, rgba(0, 183, 85, 0.12) 45%, transparent 75%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Platform Sticker Pill */
+.platform-sticker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.85rem;
+  background: #ffffff;
+  border: 1.5px solid #ffffff;
+  border-radius: 9999px;
+  box-shadow: 0 4px 14px -2px rgba(15, 23, 42, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1e293b;
+  transform: rotate(var(--tilt, 0deg));
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+  cursor: default;
+  user-select: none;
+}
+
+.platform-sticker:hover {
+  transform: rotate(0deg) scale(1.08) translateY(-2px);
+  box-shadow: 0 12px 24px -4px rgba(15, 23, 42, 0.12), 0 0 0 2px rgba(0, 183, 85, 0.2);
+  z-index: 10;
+}
+
+/* 3D Fanned Growth Cards Deck */
+.deck-stage {
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+
+.fanned-card {
+  transform-origin: 50% 120%;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, border-color 0.35s ease, filter 0.35s ease;
+  will-change: transform;
+}
+
+.fanned-card:hover {
+  transform: translateY(-24px) scale(1.06) rotate(0deg) !important;
+  z-index: 40 !important;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25), 0 0 30px rgba(0, 183, 85, 0.2) !important;
+  border-color: rgba(0, 183, 85, 0.5) !important;
+}
+
+/* Radar pulse animation for deep-dive pillars */
+@keyframes radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-radar {
+  animation: radar-sweep 5s linear infinite;
+  transform-origin: center;
+}
+
+/* Typewriter cursor */
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter-cursor {
+  animation: blink-cursor 0.9s infinite;
+}
+
+/* Range slider custom styling */
+input[type="range"].adant-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 9999px;
+  outline: none;
+}
+
+input[type="range"].adant-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #00b755;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(0, 183, 85, 0.3);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="range"].adant-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 14px rgba(0, 183, 85, 0.35);
+}
+
+/* =========================================================================
+   INRANK BRAND CRAFT TOKENS (HOMEPAGE-3: TING CRAFT UI × INRANK BRAND)
+   ========================================================================= */
+.ting-yellow,
+.inrank-craft-emerald {
+  background-color: #00b755;
+  color: #09090b;
+}
+
+.ting-yellow-text,
+.inrank-craft-text {
+  color: #00b755;
+}
+
+.ting-stamp {
+  display: inline-block;
+  background-color: #00b755;
+  color: #09090b;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  padding: 0.35rem 0.85rem;
+  line-height: 1;
+  border-radius: 2px;
+}
+
+.ting-stamp-black {
+  display: inline-block;
+  background-color: #09090b;
+  color: #00b755;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  padding: 0.35rem 0.85rem;
+  line-height: 1;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 183, 85, 0.3);
+}
+
+.ting-hazard-line {
+  height: 6px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    #00b755,
+    #00b755 12px,
+    #09090b 12px,
+    #09090b 24px
+  );
+}
+
+.ting-hazard-line-sm {
+  height: 3px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    #00b755,
+    #00b755 8px,
+    #09090b 8px,
+    #09090b 16px
+  );
+}
+
+/* Authentic craft card with crisp offset brutalist shadow */
+.ting-craft-card {
+  background: #ffffff;
+  border: 1.5px solid #18181b;
+  box-shadow: 4px 4px 0px #18181b;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ting-craft-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px #00b755;
+  border-color: #00b755;
+}
+
+.ting-craft-card-yellow,
+.ting-craft-card-emerald {
+  background: #f0fdf4;
+  border: 1.5px solid #18181b;
+  box-shadow: 4px 4px 0px #00b755;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ting-craft-card-yellow:hover,
+.ting-craft-card-emerald:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px #00b755;
+}
+
+.ting-award-frame {
+  position: relative;
+  border: 1px solid #e4e4e7;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.ting-award-frame:hover {
+  border-color: #00b755;
+  box-shadow: 0 12px 30px -10px rgba(0, 183, 85, 0.25);
+  transform: translateY(-3px);
+}
+
+.ting-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #09090b;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.75rem 1.4rem;
+  border: 1.5px solid #09090b;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.ting-button:hover {
+  background-color: #00b755;
+  color: #09090b;
+  border-color: #00b755;
+  box-shadow: 3px 3px 0px #09090b;
+}
+
+.ting-button-yellow,
+.ting-button-emerald {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #00b755;
+  color: #09090b;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.75rem 1.4rem;
+  border: 1.5px solid #09090b;
+  box-shadow: 3px 3px 0px #09090b;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.ting-button-yellow:hover,
+.ting-button-emerald:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px #09090b;
+  background-color: #13d66b;
+}
+
 

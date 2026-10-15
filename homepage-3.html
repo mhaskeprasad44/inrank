@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inrank Technologies | Creative Craft & Brand Engineering (Homepage-3)</title>
+    <meta name="description" content="Inrank Homepage-3: The Creative Craft & Brand Engineering Edition. Blending authentic agency craft, bespoke visual design, sub-second web engineering, and mathematical performance advertising." />
+    
+    <!-- Google Fonts: Inter (Inrank Brand Font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
+              display: ["Inter", "system-ui", "-apple-system", "sans-serif"],
+            },
+            colors: {
+              inrankgreen: "#00b755",
+              inrankhover: "#13d66b",
+              inrankdark: "#009d49",
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      }
+      .ting-stamp {
+        display: inline-block;
+        background-color: #00b755;
+        color: #09090b;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 0.6875rem;
+        letter-spacing: 0.14em;
+        padding: 0.35rem 0.85rem;
+        line-height: 1;
+        border-radius: 2px;
+      }
+      .ting-stamp-black {
+        display: inline-block;
+        background-color: #09090b;
+        color: #00b755;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 0.6875rem;
+        letter-spacing: 0.14em;
+        padding: 0.35rem 0.85rem;
+        line-height: 1;
+        border-radius: 2px;
+        border: 1px solid rgba(0, 183, 85, 0.3);
+      }
+      .ting-hazard-line {
+        height: 6px;
+        width: 100%;
+        background: repeating-linear-gradient(
+          -45deg,
+          #00b755,
+          #00b755 12px,
+          #09090b 12px,
+          #09090b 24px
+        );
+      }
+      .ting-craft-card {
+        background: #ffffff;
+        border: 1.5px solid #18181b;
+        box-shadow: 4px 4px 0px #18181b;
+        transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .ting-craft-card:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 7px 7px 0px #00b755;
+        border-color: #00b755;
+      }
+      .ting-award-frame {
+        position: relative;
+        border: 1px solid #e4e4e7;
+        background: #ffffff;
+        transition: all 0.3s ease;
+      }
+      .ting-award-frame:hover {
+        border-color: #00b755;
+        box-shadow: 0 12px 30px -10px rgba(0, 183, 85, 0.25);
+        transform: translateY(-3px);
+      }
+      .ting-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: #09090b;
+        color: #ffffff;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        font-weight: 700;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        padding: 0.75rem 1.4rem;
+        border: 1.5px solid #09090b;
+        transition: all 0.2s ease;
+        cursor: pointer;
+      }
+      .ting-button:hover {
+        background-color: #00b755;
+        color: #09090b;
+        border-color: #00b755;
+        box-shadow: 3px 3px 0px #09090b;
+      }
+      .ting-button-yellow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: #00b755;
+        color: #09090b;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        font-weight: 800;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        padding: 0.75rem 1.4rem;
+        border: 1.5px solid #09090b;
+        box-shadow: 3px 3px 0px #09090b;
+        transition: all 0.2s ease;
+        cursor: pointer;
+      }
+      .ting-button-yellow:hover {
+        transform: translate(-1px, -1px);
+        box-shadow: 5px 5px 0px #09090b;
+        background-color: #13d66b;
+      }
+    </style>
+  </head>
+  <body class="bg-[#fafaf9] text-stone-900 font-sans selection:bg-[#00b755] selection:text-black">
+    
+    <!-- Top Craft Emerald Hazard Strip -->
+    <div class="ting-hazard-line"></div>
+
+    <!-- STICKY HEADER -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-2.5">
+          <div class="h-9 w-9 rounded-md bg-black text-[#00b755] flex items-center justify-center font-black text-sm tracking-wider border border-[#00b755]/40 shadow-sm">
+            IN
+          </div>
+          <div class="flex flex-col">
+            <span class="font-extrabold text-base tracking-tight text-stone-950 font-sans">INRANK</span>
+            <span class="text-[9px] font-mono tracking-widest text-[#00b755] font-bold uppercase -mt-1">Brand Craft Edition</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-6 text-xs font-mono font-bold uppercase tracking-wider text-stone-700">
+          <a href="/" class="hover:text-[#00b755] transition-colors">Home 1 (Organic)</a>
+          <a href="/homepage-2" class="hover:text-[#00b755] transition-colors">Home 2 (Ads)</a>
+          <span class="text-[#00b755] bg-black px-2.5 py-1 rounded">Home 3 (Brand Craft)</span>
+          <a href="/#/about-us" class="hover:text-[#00b755] transition-colors">About Us</a>
+          <a href="/#/services" class="hover:text-[#00b755] transition-colors">27 Services</a>
+        </nav>
+
+        <!-- CTA & WhatsApp Line -->
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/917038612280" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-mono font-bold text-stone-700 hover:text-black border border-stone-300 px-3 py-1.5 rounded bg-stone-50">
+            <i data-lucide="message-circle" class="h-3.5 w-3.5 text-[#00b755]"></i>
+            <span>+91 70386 12280</span>
+          </a>
+          <a href="#hp3-brief-composer" class="ting-button-yellow text-xs py-2 px-3">
+            <span>Brief Desk</span>
+            <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- =========================================================================
+         TOP DISPATCH RIBBON
+         ========================================================================= -->
+    <section class="border-b border-stone-200 bg-white py-3 px-5 sm:px-8">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+        
+        <div class="flex items-center gap-3">
+          <span class="ting-stamp">DISPATCH #2026</span>
+          <span class="font-mono text-stone-600 font-semibold flex items-center gap-1.5">
+            <span class="h-2 w-2 rounded-full bg-[#00b755] animate-pulse"></span>
+            Live Studio Desk | IST 06:00:00
+          </span>
+          <span class="hidden sm:inline text-stone-300">|</span>
+          <span class="hidden sm:inline text-stone-500 font-medium italic">"Pixels with personality. Code with backbone."</span>
+        </div>
+
+        <div class="flex items-center gap-4 text-stone-600 font-mono text-[11px] uppercase tracking-wider">
+          <span>Est. 2017</span>
+          <span>·</span>
+          <span>Pune (Baner HQ)</span>
+          <span>·</span>
+          <span>Mumbai</span>
+          <span>·</span>
+          <span>London</span>
+          <span>·</span>
+          <span>SF</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         HERO SECTION: NURTURING BRANDS IN THE INTELLIGENT ERA
+         ========================================================================= -->
+    <section class="relative pt-12 sm:pt-20 pb-16 sm:pb-24 px-5 sm:px-8 bg-white border-b border-stone-200 overflow-hidden">
+      
+      <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#000 1px, transparent 1px); background-size: 20px 20px;"></div>
+      
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Editorial Label Strip -->
+        <div class="flex flex-wrap items-center gap-2 mb-6">
+          <span class="ting-stamp">AGENCY EDITION #03</span>
+          <span class="px-2.5 py-1 bg-stone-100 text-stone-800 text-[11px] font-mono font-bold uppercase tracking-wider border border-stone-200">
+            Creative Engineering &amp; Brand Craft
+          </span>
+          <span class="text-xs text-stone-400 font-mono hidden sm:inline">
+            [ Ting Craft UI × Inrank Brand Emerald &amp; Inter ]
+          </span>
+        </div>
+
+        <!-- Main Hero Headline -->
+        <div class="grid lg:grid-cols-12 gap-10 items-end">
+          <div class="lg:col-span-8 space-y-6">
+            
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight text-stone-950 leading-[0.95]">
+              We don’t do <br class="hidden sm:inline"/>
+              <span class="bg-[#00b755] px-2 py-0.5 inline-block -rotate-1 text-black font-extrabold">fluffy agency vanity.</span><br/>
+              We craft digital art <br class="hidden sm:inline"/>
+              with math backbone.
+            </h1>
+
+            <p class="text-stone-600 text-base sm:text-xl font-medium leading-relaxed max-w-2xl font-sans">
+              Every great brand needs breadth. Every great digital product needs sub-second speed. We build high-converting websites, bespoke visual identities, and mathematical ad engines that turn commercial browsers into buyers.
+            </p>
+
+            <!-- Brand Verticals Chip Bar -->
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-3 py-1.5 bg-black text-[#00b755] font-black text-xs uppercase tracking-wider">Brand</span>
+              <span class="px-3 py-1.5 bg-[#00b755] text-black font-black text-xs uppercase tracking-wider">Web</span>
+              <span class="px-3 py-1.5 bg-black text-[#00b755] font-black text-xs uppercase tracking-wider">Creative</span>
+              <span class="px-3 py-1.5 bg-[#00b755] text-black font-black text-xs uppercase tracking-wider">Performance</span>
+              <span class="px-3 py-1.5 bg-black text-[#00b755] font-black text-xs uppercase tracking-wider">Studio</span>
+              <span class="px-3 py-1.5 bg-[#00b755] text-black font-black text-xs uppercase tracking-wider">AI Search</span>
+            </div>
+
+            <!-- Action CTAs -->
+            <div class="pt-4 flex flex-wrap items-center gap-4">
+              <a href="#hp3-brief-composer" class="ting-button-yellow">
+                <span>Start A Project Brief</span>
+                <i data-lucide="arrow-right" class="h-4 w-4"></i>
+              </a>
+              <a href="#hp3-work-grid" class="ting-button">
+                <span>View Our Work (Case Studies)</span>
+                <i data-lucide="sparkles" class="h-4 w-4 text-[#00b755]"></i>
+              </a>
+              <a href="https://wa.me/917038612280?text=Hi%20Inrank%20Team!%20I%20am%20exploring%20Homepage-3%20(Creative%20Craft%20Edition)%20and%20would%20love%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono font-bold text-stone-700 hover:text-black py-2 px-3 border border-stone-200 bg-stone-50 rounded">
+                <i data-lucide="message-circle" class="h-4 w-4 text-[#00b755]"></i>
+                <span>WhatsApp Senior Desk: +91 70386 12280</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Hero Stats Box -->
+          <div class="lg:col-span-4">
+            <div class="ting-craft-card p-6 sm:p-8 space-y-6">
+              
+              <div class="flex items-center justify-between border-b border-stone-200 pb-4">
+                <span class="text-xs font-mono font-bold uppercase tracking-wider text-stone-500">Inrank Proof At A Glance</span>
+                <span class="h-3 w-3 rounded-full bg-[#00b755] border border-black"></span>
+              </div>
+
+              <div class="grid grid-cols-2 gap-5">
+                <div>
+                  <div class="text-3xl sm:text-4xl font-black text-stone-950 font-sans tracking-tight">2017</div>
+                  <div class="text-[11px] font-mono text-stone-500 uppercase tracking-wider mt-1">Established in Pune</div>
+                </div>
+                <div>
+                  <div class="text-3xl sm:text-4xl font-black text-stone-950 font-sans tracking-tight">45+</div>
+                  <div class="text-[11px] font-mono text-stone-500 uppercase tracking-wider mt-1">Specialist Inrankers</div>
+                </div>
+                <div>
+                  <div class="text-3xl sm:text-4xl font-black text-[#00b755] font-sans tracking-tight">₹48Cr+</div>
+                  <div class="text-[11px] font-mono text-stone-500 uppercase tracking-wider mt-1">Client Revenue Moved</div>
+                </div>
+                <div>
+                  <div class="text-3xl sm:text-4xl font-black text-stone-950 font-sans tracking-tight">99/100</div>
+                  <div class="text-[11px] font-mono text-stone-500 uppercase tracking-wider mt-1">Mobile PageSpeed</div>
+                </div>
+              </div>
+
+              <div class="p-3 bg-[#f0fdf4] border border-emerald-200 text-xs text-stone-700 font-mono leading-relaxed">
+                <strong>The Pune Origin:</strong> Started with cutting chai, two laptops, and a rage against slow, broken websites. Safe to say, that obsession worked out rather well.
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================================================================
+         SECTION 2: ABOUT US — "THE DEADLINE WAS YESTERDAY!!!" (TING QUIRK)
+         ========================================================================= -->
+    <section class="py-16 sm:py-24 px-5 sm:px-8 border-b border-stone-200 bg-[#fbfbfa]">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="mb-12">
+          <span class="ting-stamp">ABOUT US</span>
+          <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-stone-950 mt-3 font-sans">
+            Every superhero agency has a backstory...
+          </h2>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Left: Playful Agency Truths Card -->
+          <div class="lg:col-span-5 ting-craft-card p-6 sm:p-8 flex flex-col justify-between space-y-6 bg-white">
+            <div class="space-y-4">
+              <span class="ting-stamp-black">AGENCY LIFE BE LIKE..</span>
+              
+              <div class="text-2xl sm:text-3xl font-black uppercase text-stone-950 leading-tight font-sans">
+                THE <span class="bg-[#00b755] px-1 text-black font-extrabold">DEADLINE</span> WAS <br/>
+                <span class="underline decoration-wavy decoration-[#00b755]">YESTERDAY!!!</span>
+              </div>
+
+              <!-- Witty search bar graphic like Ting's -->
+              <div class="p-3 bg-stone-50 border border-stone-300 rounded font-mono text-xs space-y-1.5">
+                <div class="text-stone-400 flex items-center gap-1.5">
+                  <i data-lucide="search" class="h-3 w-3"></i>
+                  <span>Recent client searches on our desk:</span>
+                </div>
+                <div class="text-stone-700 font-bold">"Why did our agency give us a template?"</div>
+                <div class="text-stone-700 font-bold">"What is my actual ROAS after iOS 14?"</div>
+                <div class="text-stone-700 font-bold">"How do I rank #1 on Perplexity &amp; ChatGPT?"</div>
+                <div class="text-stone-500 italic">"What is my dog doing right now?"</div>
+              </div>
+
+              <p class="text-stone-600 text-xs sm:text-sm leading-relaxed font-sans">
+                We don’t believe in 40-page PDF reports that nobody reads. We believe in high-tempo sprints: finding the exact constraint holding your business back, redesigning the digital surface, and driving qualified revenue.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-stone-200 flex items-center justify-between text-xs font-mono">
+              <span class="text-stone-500">Culture: Zero Fluff</span>
+              <a href="/#/about-us" class="text-black font-bold flex items-center gap-1 hover:text-[#00b755]">
+                <span>Behind Our Studio Desk</span>
+                <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Our Story & Founding Ethos -->
+          <div class="lg:col-span-7 ting-craft-card p-6 sm:p-8 flex flex-col justify-between space-y-6 bg-white">
+            <div class="space-y-5">
+              <div class="flex items-center gap-2">
+                <span class="h-2.5 w-2.5 bg-[#00b755] rounded-full"></span>
+                <span class="text-xs font-mono font-bold uppercase tracking-wider text-stone-500">The Inrank Narrative</span>
+              </div>
+
+              <h3 class="text-xl sm:text-2xl font-bold text-stone-900 leading-snug font-sans">
+                Pune: A hot afternoon on Baner Road, three cups of cutting chai, and a quiet rage against bloated agencies charging huge retainers for mediocre WordPress templates.
+              </h3>
+
+              <p class="text-stone-600 text-sm leading-relaxed font-sans">
+                That was the concoction that built Inrank. We started with two laptops, our friendship, and a simple vow: <em>Treat every client’s P&amp;L with the same ferocious mathematical respect we treat our own.</em>
+              </p>
+
+              <p class="text-stone-600 text-sm leading-relaxed font-sans">
+                Today, that tiny team has grown into an integrated powerhouse of 45+ designers, full-stack engineers, search architects, and media buyers. We have designed and shipped high-performance systems for real estate giants, national D2C brands, regional hospital chains, and B2B SaaS disruptors across India, the UK, and North America.
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 font-sans">
+                <div class="p-3 bg-stone-50 border border-stone-200 rounded">
+                  <div class="font-bold text-sm text-stone-900">Direct Senior Access</div>
+                  <div class="text-[11px] text-stone-500 mt-0.5">No 22-year-old interns running your ₹5L ad account.</div>
+                </div>
+                <div class="p-3 bg-stone-50 border border-stone-200 rounded">
+                  <div class="font-bold text-sm text-stone-900">Sub-Second Code</div>
+                  <div class="text-[11px] text-stone-500 mt-0.5">Vite, React, headless Shopify — 98+ PageSpeed always.</div>
+                </div>
+                <div class="p-3 bg-stone-50 border border-stone-200 rounded">
+                  <div class="font-bold text-sm text-stone-900">Revenue Attribution</div>
+                  <div class="text-[11px] text-stone-500 mt-0.5">Every marketing rupee tied back to phone calls &amp; sales.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-stone-200 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+              <span class="text-stone-500">Offices in Pune, Mumbai, London &amp; San Francisco</span>
+              <a href="#hp3-brief-composer" class="ting-stamp hover:bg-black hover:text-[#00b755] transition-colors cursor-pointer">
+                Work With Us →
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 3: CORE VERTICALS — INTEGRATED SOLUTIONS (TING VERTICAL SYSTEM)
+         ========================================================================= -->
+    <section class="py-16 sm:py-24 px-5 sm:px-8 bg-stone-950 text-white border-b border-stone-800">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <span class="ting-stamp">CORE VERTICALS</span>
+            <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white mt-3 font-sans">
+              Integrated Solutions with Mathematical Depth
+            </h2>
+          </div>
+          <p class="text-stone-400 text-sm max-w-md font-mono">
+            Every great brand needs breadth. Every great digital solution needs depth. Deep discipline expertise with seamless execution.
+          </p>
+        </div>
+
+        <!-- The 7 Disciplines Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          
+          <!-- Pillar 1 -->
+          <div class="border border-stone-800 bg-stone-900/80 p-6 rounded-xl hover:border-[#00b755] transition-all group flex flex-col justify-between space-y-4">
+            <div>
+              <div class="h-10 w-10 rounded-lg bg-[#00b755] text-black flex items-center justify-center font-bold mb-4">
+                <i data-lucide="compass" class="h-5 w-5"></i>
+              </div>
+              <h3 class="font-sans font-bold text-lg text-white group-hover:text-[#00b755] transition-colors">
+                Strategy &amp; Planning
+              </h3>
+              <p class="text-xs text-stone-400 leading-relaxed mt-2 font-sans">
+                Market positioning, unit economics diagnostics, competitor teardowns, brand messaging frameworks, and AI-era commercial roadmaps.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-stone-800 flex items-center justify-between text-xs text-stone-500">
+              <span class="font-mono">Go-To-Market</span>
+              <i data-lucide="arrow-up-right" class="h-4 w-4 text-[#00b755] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="border border-stone-800 bg-stone-900/80 p-6 rounded-xl hover:border-[#00b755] transition-all group flex flex-col justify-between space-y-4">
+            <div>
+              <div class="h-10 w-10 rounded-lg bg-[#00b755] text-black flex items-center justify-center font-bold mb-4">
+                <i data-lucide="palette" class="h-5 w-5"></i>
+              </div>
+              <h3 class="font-sans font-bold text-lg text-white group-hover:text-[#00b755] transition-colors">
+                Branding &amp; Packaging
+              </h3>
+              <p class="text-xs text-stone-400 leading-relaxed mt-2 font-sans">
+                Bespoke visual identity systems, luxury retail packaging, custom typography, brand guidelines, and unboxing design that sticks.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-stone-800 flex items-center justify-between text-xs text-stone-500">
+              <span class="font-mono">Brand Identity</span>
+              <i data-lucide="arrow-up-right" class="h-4 w-4 text-[#00b755] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="border border-stone-800 bg-stone-900/80 p-6 rounded-xl hover:border-[#00b755] transition-all group flex flex-col justify-between space-y-4">
+            <div>
+              <div class="h-10 w-10 rounded-lg bg-[#00b755] text-black flex items-center justify-center font-bold mb-4">
+                <i data-lucide="code" class="h-5 w-5"></i>
+              </div>
+              <h3 class="font-sans font-bold text-lg text-white group-hover:text-[#00b755] transition-colors">
+                Web &amp; Mobile Engineering
+              </h3>
+              <p class="text-xs text-stone-400 leading-relaxed mt-2 font-sans">
+                Sub-second Vite, Next.js, and headless Shopify storefronts. Zero bloated plugins. 98+ Google Lighthouse scores guaranteed.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-stone-800 flex items-center justify-between text-xs text-stone-500">
+              <span class="font-mono">Speed Stack</span>
+              <i data-lucide="arrow-up-right" class="h-4 w-4 text-[#00b755] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="border border-stone-800 bg-stone-900/80 p-6 rounded-xl hover:border-[#00b755] transition-all group flex flex-col justify-between space-y-4">
+            <div>
+              <div class="h-10 w-10 rounded-lg bg-[#00b755] text-black flex items-center justify-center font-bold mb-4">
+                <i data-lucide="target" class="h-5 w-5"></i>
+              </div>
+              <h3 class="font-sans font-bold text-lg text-white group-hover:text-[#00b755] transition-colors">
+                Performance Marketing &amp; SEO
+              </h3>
+              <p class="text-xs text-stone-400 leading-relaxed mt-2 font-sans">
+                Multi-channel Google Ads, Meta scaling, technical on-page SEO, server-side CAPI attribution, and local Google 3-Pack domination.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-stone-800 flex items-center justify-between text-xs text-stone-500">
+              <span class="font-mono">High-Yield Paid Ads</span>
+              <i data-lucide="arrow-up-right" class="h-4 w-4 text-[#00b755] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- Pillar 5 -->
+          <div class="border border-stone-800 bg-stone-900/80 p-6 rounded-xl hover:border-[#00b755] transition-all group flex flex-col justify-between space-y-4">
+            <div>
+              <div class="h-10 w-10 rounded-lg bg-[#00b755] text-black flex items-center justify-center font-bold mb-4">
+                <i data-lucide="share-2" class="h-5 w-5"></i>
+              </div>
+              <h3 class="font-sans font-bold text-lg text-white group-hover:text-[#00b755] transition-colors">
+                Social &amp; Founder Branding
+              </h3>
+              <p class="text-xs text-stone-400 leading-relaxed mt-2 font-sans">
+                High-trust LinkedIn founder ghostwriting, viral Instagram reels production, memetic marketing, and organic community growth engines.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-stone-800 flex items-center justify-between text-xs text-stone-500">
+              <span class="font-mono">Organic Reach</span>
+              <i data-lucide="arrow-up-right" class="h-4 w-4 text-[#00b755] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- Pillar 6 -->
+          <div class="border border-stone-800 bg-stone-900/80 p-6 rounded-xl hover:border-[#00b755] transition-all group flex flex-col justify-between space-y-4">
+            <div>
+              <div class="h-10 w-10 rounded-lg bg-[#00b755] text-black flex items-center justify-center font-bold mb-4">
+                <i data-lucide="video" class="h-5 w-5"></i>
+              </div>
+              <h3 class="font-sans font-bold text-lg text-white group-hover:text-[#00b755] transition-colors">
+                Films &amp; Visual Studio
+              </h3>
+              <p class="text-xs text-stone-400 leading-relaxed mt-2 font-sans">
+                Direct-response video creatives, 3D CGI product showcases, cinematic brand films, high-converting TikTok/Reels hooks, and studio shoots.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-stone-800 flex items-center justify-between text-xs text-stone-500">
+              <span class="font-mono">Motion &amp; Video</span>
+              <i data-lucide="arrow-up-right" class="h-4 w-4 text-[#00b755] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- Pillar 7 -->
+          <div class="border border-stone-800 bg-stone-900/80 p-6 rounded-xl hover:border-[#00b755] transition-all group flex flex-col justify-between space-y-4">
+            <div>
+              <div class="h-10 w-10 rounded-lg bg-[#00b755] text-black flex items-center justify-center font-bold mb-4">
+                <i data-lucide="bot" class="h-5 w-5"></i>
+              </div>
+              <h3 class="font-sans font-bold text-lg text-white group-hover:text-[#00b755] transition-colors">
+                AI Search &amp; GEO
+              </h3>
+              <p class="text-xs text-stone-400 leading-relaxed mt-2 font-sans">
+                Generative Engine Optimization for Perplexity, ChatGPT, Gemini, and Claude. Structured knowledge graphs that get cited.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-stone-800 flex items-center justify-between text-xs text-stone-500">
+              <span class="font-mono">AI Citations</span>
+              <i data-lucide="arrow-up-right" class="h-4 w-4 text-[#00b755] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+            </div>
+          </div>
+
+          <!-- Pillar 8: All Services Link Card -->
+          <div class="border-2 border-dashed border-stone-700 p-6 rounded-xl flex flex-col justify-between space-y-4 hover:border-[#00b755] transition-all bg-stone-900/40">
+            <div>
+              <span class="ting-stamp">27 DISCIPLINES</span>
+              <h3 class="font-sans font-bold text-lg text-white mt-3">
+                Need a bespoke end-to-end scope?
+              </h3>
+              <p class="text-xs text-stone-400 mt-2 font-sans">
+                Browse our full directory of 27 services or talk with our Senior Growth Architect.
+              </p>
+            </div>
+            <a href="/#/services" class="ting-button-yellow text-center justify-center">
+              <span>Explore Full Directory</span>
+              <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: OUR WORK — CASE STUDIES (AUTHENTIC VISUAL CRAFT SHOWCASE)
+         ========================================================================= -->
+    <section id="hp3-work-grid" class="py-16 sm:py-24 px-5 sm:px-8 bg-white border-b border-stone-200">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <span class="ting-stamp">OUR WORK</span>
+            <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-stone-950 mt-3 font-sans">
+              Work That Made Heads Turn &amp; Numbers Leap
+            </h2>
+          </div>
+          <a href="/#/services" class="ting-button text-xs">
+            <span>View All 27 Solutions</span>
+            <i data-lucide="arrow-right" class="h-3.5 w-3.5 text-[#00b755]"></i>
+          </a>
+        </div>
+
+        <!-- Case Studies Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+          
+          <!-- Case Study 1 -->
+          <div class="ting-craft-card overflow-hidden group flex flex-col justify-between">
+            <div>
+              <div class="relative h-56 overflow-hidden bg-stone-100 border-b border-stone-200">
+                <img src="/images/service-shopify-development.jpg" alt="D2C Health Snack Re-Platforming" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute top-3 left-3">
+                  <span class="ting-stamp text-[10px]">D2C Brand</span>
+                </div>
+                <div class="absolute bottom-3 right-3 bg-black/90 text-[#00b755] font-mono text-xs font-bold px-2 py-1 rounded">
+                  3.8x Blended ROAS
+                </div>
+              </div>
+              <div class="p-6 space-y-2 font-sans">
+                <div class="text-xs font-mono text-stone-400 uppercase tracking-wider">Branding · Packaging · Shopify</div>
+                <h3 class="font-bold text-xl text-stone-900 group-hover:text-[#00b755] transition-colors">
+                  MaxPro Nutrition Storefront Scaling
+                </h3>
+                <p class="text-xs text-stone-600 leading-relaxed">
+                  Custom Shopify Liquid theme overhaul, frictionless 1-page checkout, bundle upsells, and luxury matte packaging redesign that drove ₹1.4Cr in quarterly revenue.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 border-t border-stone-100 mt-4 flex items-center justify-between text-xs font-mono">
+              <span class="text-[#00b755] font-bold">+184% Online Checkouts</span>
+              <span class="text-black font-bold flex items-center gap-0.5">Verified Case →</span>
+            </div>
+          </div>
+
+          <!-- Case Study 2 -->
+          <div class="ting-craft-card overflow-hidden group flex flex-col justify-between">
+            <div>
+              <div class="relative h-56 overflow-hidden bg-stone-100 border-b border-stone-200">
+                <img src="/images/proof-lead-generation.jpg" alt="Pune Luxury Real Estate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute top-3 left-3">
+                  <span class="ting-stamp text-[10px]">Real Estate Pune</span>
+                </div>
+                <div class="absolute bottom-3 right-3 bg-black/90 text-[#00b755] font-mono text-xs font-bold px-2 py-1 rounded">
+                  ₹18.4Cr Booked Pipeline
+                </div>
+              </div>
+              <div class="p-6 space-y-2 font-sans">
+                <div class="text-xs font-mono text-stone-400 uppercase tracking-wider">Web App · Meta Ads · WhatsApp CRM</div>
+                <h3 class="font-bold text-xl text-stone-900 group-hover:text-[#00b755] transition-colors">
+                  Pune Grandeur Living Launch
+                </h3>
+                <p class="text-xs text-stone-600 leading-relaxed">
+                  Interactive 3D architectural floorplan viewer, hyper-targeted high-net-worth Meta ads, and automated WhatsApp site visit bookings under 2 minutes.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 border-t border-stone-100 mt-4 flex items-center justify-between text-xs font-mono">
+              <span class="text-[#00b755] font-bold">142 Site Visits Booked</span>
+              <span class="text-black font-bold flex items-center gap-0.5">Verified Case →</span>
+            </div>
+          </div>
+
+          <!-- Case Study 3 -->
+          <div class="ting-craft-card overflow-hidden group flex flex-col justify-between">
+            <div>
+              <div class="relative h-56 overflow-hidden bg-stone-100 border-b border-stone-200">
+                <img src="/images/service-local-seo.jpg" alt="Healthcare Dental Clinic Local SEO" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute top-3 left-3">
+                  <span class="ting-stamp text-[10px]">Healthcare</span>
+                </div>
+                <div class="absolute bottom-3 right-3 bg-black/90 text-[#00b755] font-mono text-xs font-bold px-2 py-1 rounded">
+                  #1 Google 3-Pack
+                </div>
+              </div>
+              <div class="p-6 space-y-2 font-sans">
+                <div class="text-xs font-mono text-stone-400 uppercase tracking-wider">Local SEO · Web Engine · Google Ads</div>
+                <h3 class="font-bold text-xl text-stone-900 group-hover:text-[#00b755] transition-colors">
+                  SmileCraft Maxillofacial &amp; Dental
+                </h3>
+                <p class="text-xs text-stone-600 leading-relaxed">
+                  Google Maps 3-Pack domination across 12 high-intent dental keywords in West Pune, producing 240+ monthly qualified implant and aligner inquiries.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 border-t border-stone-100 mt-4 flex items-center justify-between text-xs font-mono">
+              <span class="text-[#00b755] font-bold">+240 Walk-in Consultations</span>
+              <span class="text-black font-bold flex items-center gap-0.5">Verified Case →</span>
+            </div>
+          </div>
+
+          <!-- Case Study 4 -->
+          <div class="ting-craft-card overflow-hidden group flex flex-col justify-between">
+            <div>
+              <div class="relative h-56 overflow-hidden bg-stone-100 border-b border-stone-200">
+                <img src="/images/service-web-development.jpg" alt="Meril Healthcare Corporate Web Redesign" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute top-3 left-3">
+                  <span class="ting-stamp text-[10px]">Enterprise B2B</span>
+                </div>
+                <div class="absolute bottom-3 right-3 bg-black/90 text-[#00b755] font-mono text-xs font-bold px-2 py-1 rounded">
+                  99/100 CWV Speed
+                </div>
+              </div>
+              <div class="p-6 space-y-2 font-sans">
+                <div class="text-xs font-mono text-stone-400 uppercase tracking-wider">Custom Web · Speed · Content Architecture</div>
+                <h3 class="font-bold text-xl text-stone-900 group-hover:text-[#00b755] transition-colors">
+                  Meril Diagnostics Institutional Portal
+                </h3>
+                <p class="text-xs text-stone-600 leading-relaxed">
+                  Replaced slow legacy CMS with lightning-fast static-first architecture. 0.6s First Contentful Paint, medical certification schemas, and global clinical trust.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 border-t border-stone-100 mt-4 flex items-center justify-between text-xs font-mono">
+              <span class="text-[#00b755] font-bold">-72% Bounce Rate</span>
+              <span class="text-black font-bold flex items-center gap-0.5">Verified Case →</span>
+            </div>
+          </div>
+
+          <!-- Case Study 5 -->
+          <div class="ting-craft-card overflow-hidden group flex flex-col justify-between">
+            <div>
+              <div class="relative h-56 overflow-hidden bg-stone-100 border-b border-stone-200">
+                <img src="/images/service-cro.jpg" alt="Kavita Sustainable Fashion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute top-3 left-3">
+                  <span class="ting-stamp text-[10px]">Fashion &amp; Retail</span>
+                </div>
+                <div class="absolute bottom-3 right-3 bg-black/90 text-[#00b755] font-mono text-xs font-bold px-2 py-1 rounded">
+                  4.2x Meta ROAS
+                </div>
+              </div>
+              <div class="p-6 space-y-2 font-sans">
+                <div class="text-xs font-mono text-stone-400 uppercase tracking-wider">Creative Studio · Reels · Paid Media</div>
+                <h3 class="font-bold text-xl text-stone-900 group-hover:text-[#00b755] transition-colors">
+                  Kavita Organic Apparel Scaling
+                </h3>
+                <p class="text-xs text-stone-600 leading-relaxed">
+                  High-converting direct-response creator reels, UGC styling hooks, one-click checkout upsells, and multi-pixel attribution scaling past ₹30L monthly ad spend.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 border-t border-stone-100 mt-4 flex items-center justify-between text-xs font-mono">
+              <span class="text-[#00b755] font-bold">+42% Repeat Customers</span>
+              <span class="text-black font-bold flex items-center gap-0.5">Verified Case →</span>
+            </div>
+          </div>
+
+          <!-- Case Study 6 -->
+          <div class="ting-craft-card overflow-hidden group flex flex-col justify-between">
+            <div>
+              <div class="relative h-56 overflow-hidden bg-stone-100 border-b border-stone-200">
+                <img src="/images/service-ai-seo.jpg" alt="SaaS Enterprise GEO Citations" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute top-3 left-3">
+                  <span class="ting-stamp text-[10px]">AI-Era Search</span>
+                </div>
+                <div class="absolute bottom-3 right-3 bg-black/90 text-[#00b755] font-mono text-xs font-bold px-2 py-1 rounded">
+                  #1 Perplexity Citation
+                </div>
+              </div>
+              <div class="p-6 space-y-2 font-sans">
+                <div class="text-xs font-mono text-stone-400 uppercase tracking-wider">GEO · Knowledge Graph · AI SEO</div>
+                <h3 class="font-bold text-xl text-stone-900 group-hover:text-[#00b755] transition-colors">
+                  SaaSMatrix Enterprise Discovery
+                </h3>
+                <p class="text-xs text-stone-600 leading-relaxed">
+                  Deployed comprehensive JSON-LD entity structures and cited research corpus, ensuring SaaSMatrix is consistently recommended by ChatGPT and Perplexity.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0 border-t border-stone-100 mt-4 flex items-center justify-between text-xs font-mono">
+              <span class="text-[#00b755] font-bold">+410% Inbound Demos</span>
+              <span class="text-black font-bold flex items-center gap-0.5">Verified Case →</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: "..WE WON." (AWARDS & RECOGNITION SHOWCASE - TING VIBE)
+         ========================================================================= -->
+    <section class="py-16 sm:py-24 px-5 sm:px-8 bg-stone-50 border-b border-stone-200">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+          <div>
+            <span class="ting-stamp">AWARDS &amp; ACCOLADES</span>
+            <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-stone-950 mt-3 font-sans">
+              ..we won.
+            </h2>
+          </div>
+          <p class="text-stone-500 text-xs font-mono">
+            Recognized by industry juries for engineering precision, creative audacity, and commercial impact.
+          </p>
+        </div>
+
+        <!-- Awards Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          
+          <div class="ting-award-frame p-5 rounded-lg flex flex-col justify-between space-y-4">
+            <div class="space-y-1 font-sans">
+              <span class="text-[10px] font-mono font-bold uppercase text-stone-400">Bosch &amp; D2C Scale</span>
+              <h4 class="font-bold text-sm text-stone-900 leading-tight">Brand Equity Shark Awards</h4>
+              <p class="text-[11px] text-stone-500">Category Creation &amp; Innovation</p>
+            </div>
+            <div class="pt-3 border-t border-stone-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-[#00b755]">2026 | Silver</span>
+              <i data-lucide="award" class="h-4 w-4 text-[#00b755]"></i>
+            </div>
+          </div>
+
+          <div class="ting-award-frame p-5 rounded-lg flex flex-col justify-between space-y-4">
+            <div class="space-y-1 font-sans">
+              <span class="text-[10px] font-mono font-bold uppercase text-stone-400">Electronics Campaign</span>
+              <h4 class="font-bold text-sm text-stone-900 leading-tight">Mommys Marketing Awards</h4>
+              <p class="text-[11px] text-stone-500">Best Consumer Durables Campaign</p>
+            </div>
+            <div class="pt-3 border-t border-stone-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-[#00b755]">2026 | Winner</span>
+              <i data-lucide="award" class="h-4 w-4 text-[#00b755]"></i>
+            </div>
+          </div>
+
+          <div class="ting-award-frame p-5 rounded-lg flex flex-col justify-between space-y-4">
+            <div class="space-y-1 font-sans">
+              <span class="text-[10px] font-mono font-bold uppercase text-stone-400">Creator Performance</span>
+              <h4 class="font-bold text-sm text-stone-900 leading-tight">Sammies Social Awards</h4>
+              <p class="text-[11px] text-stone-500">Best Use of Creators for ROAS</p>
+            </div>
+            <div class="pt-3 border-t border-stone-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-[#00b755]">2026 | Silver</span>
+              <i data-lucide="award" class="h-4 w-4 text-[#00b755]"></i>
+            </div>
+          </div>
+
+          <div class="ting-award-frame p-5 rounded-lg flex flex-col justify-between space-y-4">
+            <div class="space-y-1 font-sans">
+              <span class="text-[10px] font-mono font-bold uppercase text-stone-400">Search Excellence</span>
+              <h4 class="font-bold text-sm text-stone-900 leading-tight">Google Premier Partner</h4>
+              <p class="text-[11px] text-stone-500">Top 3% Media Buyers in India</p>
+            </div>
+            <div class="pt-3 border-t border-stone-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-emerald-600">Certified Partner</span>
+              <i data-lucide="shield-check" class="h-4 w-4 text-emerald-600"></i>
+            </div>
+          </div>
+
+          <div class="ting-award-frame p-5 rounded-lg flex flex-col justify-between space-y-4 col-span-2 md:col-span-1">
+            <div class="space-y-1 font-sans">
+              <span class="text-[10px] font-mono font-bold uppercase text-stone-400">Paid Social Science</span>
+              <h4 class="font-bold text-sm text-stone-900 leading-tight">Meta Certified Company</h4>
+              <p class="text-[11px] text-stone-500">Advanced Media &amp; Conversion API</p>
+            </div>
+            <div class="pt-3 border-t border-stone-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-emerald-600">Certified Agency</span>
+              <i data-lucide="check-circle" class="h-4 w-4 text-emerald-600"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 6: CLIENT TESTIMONIALS (REAL VOICES & DESIGNATIONS)
+         ========================================================================= -->
+    <section class="py-16 sm:py-24 px-5 sm:px-8 bg-white border-b border-stone-200">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="mb-12">
+          <span class="ting-stamp">TESTIMONIALS</span>
+          <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-stone-950 mt-3 font-sans">
+            Straight from our partners’ desks.
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="ting-craft-card p-6 rounded-xl flex flex-col justify-between space-y-4">
+            <div class="space-y-3 font-sans">
+              <span class="text-4xl text-[#00b755] font-serif leading-none">“</span>
+              <p class="text-xs sm:text-sm text-stone-700 leading-relaxed italic">
+                Inrank has never operated with a narrow ‘scope of work’ mindset. They treat our ad spend and web uptime like it’s their own family business. Within 60 days of their revamp, our paid lead volume doubled with zero increase in cost-per-click.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-stone-200 font-sans">
+              <div class="font-bold text-sm text-stone-950 uppercase">Vikas Malhotra</div>
+              <div class="text-[11px] font-mono text-stone-500">Head of Growth, D2C Nutrition Brands</div>
+            </div>
+          </div>
+
+          <div class="ting-craft-card p-6 rounded-xl flex flex-col justify-between space-y-4">
+            <div class="space-y-3 font-sans">
+              <span class="text-4xl text-[#00b755] font-serif leading-none">“</span>
+              <p class="text-xs sm:text-sm text-stone-700 leading-relaxed italic">
+                What truly sets Inrank apart is that design isn’t treated as cosmetic decoration — it is engineered for conversion. Their team built our property launch portal in two weeks flat with 99 PageSpeed and seamless WhatsApp tracking.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-stone-200 font-sans">
+              <div class="font-bold text-sm text-stone-950 uppercase">Sameer Kulkarni</div>
+              <div class="text-[11px] font-mono text-stone-500">Marketing Director, Pune Luxury Living</div>
+            </div>
+          </div>
+
+          <div class="ting-craft-card p-6 rounded-xl flex flex-col justify-between space-y-4">
+            <div class="space-y-3 font-sans">
+              <span class="text-4xl text-[#00b755] font-serif leading-none">“</span>
+              <p class="text-xs sm:text-sm text-stone-700 leading-relaxed italic">
+                Most digital agencies hide behind junior account executives. With Inrank, their senior search architect was on our WhatsApp group answering technical queries in minutes. Our local clinic bookings jumped by 240% within four months.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-stone-200 font-sans">
+              <div class="font-bold text-sm text-stone-950 uppercase">Dr. Ananya Joshi</div>
+              <div class="text-[11px] font-mono text-stone-500">Founder &amp; Chief Surgeon, SmileCraft Clinics</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 7: INTERACTIVE CREATIVE BRIEF COMPOSER (TING + INRANK ENGINE)
+         ========================================================================= -->
+    <section id="hp3-brief-composer" class="py-16 sm:py-24 px-5 sm:px-8 bg-[#f0fdf4] border-b border-emerald-200">
+      <div class="max-w-4xl mx-auto ting-craft-card p-6 sm:p-10 space-y-8 bg-white border-2 border-stone-900 shadow-[6px_6px_0px_#00b755]">
+        
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="ting-stamp">INTERACTIVE COMPOSER</span>
+            <span class="text-xs font-mono text-stone-500">Zero Fluff · Instant Action</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-black uppercase text-stone-950 font-sans">
+            Drop Your Brief or Test Your Brand's Soul
+          </h2>
+          <p class="text-xs sm:text-sm text-stone-600 mt-2 font-sans">
+            Select your priority or paste your website. We’ll generate an instant creative-engineering strategy preview right on this screen.
+          </p>
+        </div>
+
+        <!-- Quick Selector Buttons -->
+        <div>
+          <label class="block text-xs font-mono font-bold uppercase text-stone-500 mb-2.5">
+            1. What is your primary growth priority right now?
+          </label>
+          <div class="flex flex-wrap gap-2" id="hp3-goal-selectors">
+            <button type="button" class="hp3-goal-btn px-3 py-1.5 rounded border border-stone-300 bg-stone-50 text-xs font-bold text-stone-800 hover:border-black active" data-goal="Complete Brand &amp; Packaging Redesign">
+              ✨ Brand &amp; Packaging Redesign
+            </button>
+            <button type="button" class="hp3-goal-btn px-3 py-1.5 rounded border border-stone-300 bg-stone-50 text-xs font-bold text-stone-800 hover:border-black" data-goal="Sub-Second Speed Website Overhaul">
+              ⚡ Sub-Second Website (98+ PageSpeed)
+            </button>
+            <button type="button" class="hp3-goal-btn px-3 py-1.5 rounded border border-stone-300 bg-stone-50 text-xs font-bold text-stone-800 hover:border-black" data-goal="Scale Meta &amp; Google Ads to 4x+ ROAS">
+              📈 4x+ ROAS Paid Ads (Meta/Google)
+            </button>
+            <button type="button" class="hp3-goal-btn px-3 py-1.5 rounded border border-stone-300 bg-stone-50 text-xs font-bold text-stone-800 hover:border-black" data-goal="Dominate Google 3-Pack &amp; ChatGPT Citations">
+              🤖 Google 3-Pack &amp; AI Search (GEO)
+            </button>
+          </div>
+        </div>
+
+        <!-- Form Fields -->
+        <form id="hp3-interactive-form" class="space-y-4 font-sans">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase text-stone-600 mb-1">Your Name / Title *</label>
+              <input type="text" id="hp3-name-input" required placeholder="e.g. Rahul Sharma, Founder" class="w-full px-4 py-3 bg-stone-50 border border-stone-300 text-stone-900 text-sm focus:outline-none focus:border-[#00b755] rounded" />
+            </div>
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase text-stone-600 mb-1">Brand or Website URL *</label>
+              <input type="text" id="hp3-url-input" required placeholder="e.g. https://mybrand.com" class="w-full px-4 py-3 bg-stone-50 border border-stone-300 text-stone-900 text-sm focus:outline-none focus:border-[#00b755] rounded" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase text-stone-600 mb-1">Work Email *</label>
+              <input type="email" id="hp3-email-input" required placeholder="rahul@mybrand.com" class="w-full px-4 py-3 bg-stone-50 border border-stone-300 text-stone-900 text-sm focus:outline-none focus:border-[#00b755] rounded" />
+            </div>
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase text-stone-600 mb-1">Mobile / WhatsApp Number *</label>
+              <input type="tel" id="hp3-phone-input" required placeholder="+91 98765 43210" class="w-full px-4 py-3 bg-stone-50 border border-stone-300 text-stone-900 text-sm focus:outline-none focus:border-[#00b755] rounded" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-mono font-bold uppercase text-stone-600 mb-1">Tell us your biggest bottleneck or vision (Optional)</label>
+            <textarea id="hp3-notes-input" rows="3" placeholder="e.g. Our current website is slow, ad conversion is dropping, and our brand looks outdated compared to top competitors..." class="w-full px-4 py-3 bg-stone-50 border border-stone-300 text-stone-900 text-sm focus:outline-none focus:border-[#00b755] rounded"></textarea>
+          </div>
+
+          <button type="submit" id="hp3-submit-btn" class="ting-button-yellow w-full text-center justify-center py-4 text-sm font-black">
+            <span>Generate Strategy Teardown &amp; Transmit To Studio</span>
+            <i data-lucide="arrow-right" class="h-4 w-4"></i>
+          </button>
+
+          <!-- Progress simulation -->
+          <div id="hp3-progress-state" class="hidden space-y-2 pt-2">
+            <div class="flex items-center justify-between text-xs font-mono">
+              <span id="hp3-progress-text" class="text-stone-600">Analyzing brand signals &amp; performance vectors...</span>
+              <span id="hp3-progress-pct" class="font-bold text-stone-900">35%</span>
+            </div>
+            <div class="h-2 w-full bg-stone-200 rounded-full overflow-hidden">
+              <div id="hp3-progress-bar" class="h-full bg-[#00b755] transition-all duration-300" style="width: 35%"></div>
+            </div>
+          </div>
+
+          <!-- Result Card -->
+          <div id="hp3-result-card" class="hidden p-5 bg-stone-50 border-2 border-stone-900 rounded-lg space-y-3 font-mono text-xs">
+            <div class="flex items-center justify-between border-b border-stone-200 pb-2">
+              <span class="ting-stamp">STUDIO AUDIT COMPILED</span>
+              <span class="text-[#00b755] font-bold">Transmitted to Senior Desk</span>
+            </div>
+            <div id="hp3-result-content" class="text-stone-700 leading-relaxed space-y-2">
+              <!-- Injected dynamically -->
+            </div>
+            <div class="pt-2 flex items-center justify-between">
+              <span class="text-stone-500 text-[11px]">Direct WhatsApp discussion opened.</span>
+              <button type="button" id="hp3-wa-dispatch-btn" class="ting-button-yellow text-xs py-1.5 px-3">
+                <span>Chat on WhatsApp With Lead Architect</span>
+                <i data-lucide="message-circle" class="h-3.5 w-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 8: PHYSICAL CONTACT DESK (PUNE HQ & GLOBAL DESKS - TING STYLE)
+         ========================================================================= -->
+    <section class="py-16 sm:py-24 px-5 sm:px-8 bg-stone-950 text-white">
+      <div class="max-w-7xl mx-auto space-y-12">
+        
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 border-b border-stone-800 pb-8">
+          <div>
+            <span class="ting-stamp">CONTACT OUR DESK</span>
+            <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white mt-3 font-sans">
+              If you’ve reached this far..
+            </h2>
+          </div>
+          <div class="space-y-1 text-right sm:text-right font-mono text-xs">
+            <p class="text-stone-400">Direct Partner Line: <a href="tel:+917038612280" class="text-[#00b755] hover:underline font-bold">+91 70386 12280</a></p>
+            <p class="text-stone-400">Official Studio Email: <a href="mailto:inranktech@gmail.com" class="text-[#00b755] hover:underline font-bold">inranktech@gmail.com</a></p>
+          </div>
+        </div>
+
+        <!-- Studio Location Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Pune HQ -->
+          <div class="border border-stone-800 bg-stone-900 p-6 rounded-xl space-y-4 hover:border-[#00b755] transition-all">
+            <div class="flex items-center justify-between border-b border-stone-800 pb-3">
+              <span class="text-lg font-black text-white uppercase tracking-wider font-sans">Pune</span>
+              <span class="ting-stamp text-[10px]">HEADQUARTERS</span>
+            </div>
+            <div class="space-y-2 text-xs text-stone-400 font-mono leading-relaxed">
+              <div class="text-white font-bold text-sm">Engineering &amp; Brand Studio</div>
+              <p>Baner High Street, Baner Road,<br/>Pune, Maharashtra 411045, India.</p>
+            </div>
+            <div class="pt-3 border-t border-stone-800 text-xs font-mono text-stone-400 space-y-1">
+              <div><span class="text-stone-500">Business:</span> <a href="tel:+917038612280" class="text-white hover:text-[#00b755]">+91 70386 12280</a></div>
+              <div><span class="text-stone-500">Hours:</span> Mon - Sat, 9:30 AM - 7:30 PM IST</div>
+            </div>
+          </div>
+
+          <!-- Mumbai Studio -->
+          <div class="border border-stone-800 bg-stone-900 p-6 rounded-xl space-y-4 hover:border-[#00b755] transition-all">
+            <div class="flex items-center justify-between border-b border-stone-800 pb-3">
+              <span class="text-lg font-black text-white uppercase tracking-wider font-sans">Mumbai</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-stone-800 text-stone-300">COLLABORATION DESK</span>
+            </div>
+            <div class="space-y-2 text-xs text-stone-400 font-mono leading-relaxed">
+              <div class="text-white font-bold text-sm">Media &amp; Creator Desk</div>
+              <p>Ballard Estate, Fort,<br/>Mumbai, Maharashtra 400001, India.</p>
+            </div>
+            <div class="pt-3 border-t border-stone-800 text-xs font-mono text-stone-400 space-y-1">
+              <div><span class="text-stone-500">Enquiries:</span> <a href="mailto:inranktech@gmail.com" class="text-white hover:text-[#00b755]">inranktech@gmail.com</a></div>
+              <div><span class="text-stone-500">Focus:</span> Brand Films &amp; Performance Media</div>
+            </div>
+          </div>
+
+          <!-- Global Desks -->
+          <div class="border border-stone-800 bg-stone-900 p-6 rounded-xl space-y-4 hover:border-[#00b755] transition-all">
+            <div class="flex items-center justify-between border-b border-stone-800 pb-3">
+              <span class="text-lg font-black text-white uppercase tracking-wider font-sans">Global</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-stone-800 text-stone-300">REMOTE HUBS</span>
+            </div>
+            <div class="space-y-2 text-xs text-stone-400 font-mono leading-relaxed">
+              <div class="text-white font-bold text-sm">International Client Pods</div>
+              <p>London (UK) &amp; San Francisco (CA, US).<br/>Serving overseas brands with 24/7 sprint delivery.</p>
+            </div>
+            <div class="pt-3 border-t border-stone-800 text-xs font-mono text-stone-400 space-y-1">
+              <div><span class="text-stone-500">Timezones:</span> GMT, EST, PST &amp; IST Covered</div>
+              <div><span class="text-stone-500">SLA:</span> Strict 24-hr sprint response</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Footer Navigation Strip -->
+        <div class="pt-8 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 font-mono gap-4">
+          <div>
+            &copy; 2026 Inrank Technologies. Crafted with authentic Indian grit &amp; global speed.
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="/" class="hover:text-[#00b755] transition-colors">Home 1 (Organic)</a>
+            <span>·</span>
+            <a href="/homepage-2" class="hover:text-[#00b755] transition-colors">Home 2 (Ads)</a>
+            <span>·</span>
+            <span class="text-[#00b755] font-bold">Home 3 (Brand Craft)</span>
+            <span>·</span>
+            <a href="/#/about-us" class="hover:text-[#00b755] transition-colors">About</a>
+            <span>·</span>
+            <a href="/#/services" class="hover:text-[#00b755] transition-colors">27 Services</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bottom Hazard Strip -->
+    <div class="ting-hazard-line"></div>
+
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Goal selection handler
+      let selectedGoal = "Complete Brand & Packaging Redesign";
+      const goalButtons = document.querySelectorAll(".hp3-goal-btn");
+      goalButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          goalButtons.forEach((b) => {
+            b.classList.remove("bg-black", "text-[#00b755]", "border-[#00b755]");
+            b.classList.add("bg-stone-50", "text-stone-800", "border-stone-300");
+          });
+          btn.classList.remove("bg-stone-50", "text-stone-800", "border-stone-300");
+          btn.classList.add("bg-black", "text-[#00b755]", "border-[#00b755]");
+          selectedGoal = btn.getAttribute("data-goal") || selectedGoal;
+        });
+      });
+
+      // Highlight default button
+      const defaultBtn = document.querySelector('.hp3-goal-btn[data-goal="Complete Brand & Packaging Redesign"]');
+      if (defaultBtn) {
+        defaultBtn.classList.remove("bg-stone-50", "text-stone-800", "border-stone-300");
+        defaultBtn.classList.add("bg-black", "text-[#00b755]", "border-[#00b755]");
+      }
+
+      // Interactive brief form submission
+      const form = document.getElementById("hp3-interactive-form");
+      const submitBtn = document.getElementById("hp3-submit-btn");
+      const progressState = document.getElementById("hp3-progress-state");
+      const progressBar = document.getElementById("hp3-progress-bar");
+      const progressText = document.getElementById("hp3-progress-text");
+      const progressPct = document.getElementById("hp3-progress-pct");
+      const resultCard = document.getElementById("hp3-result-card");
+      const resultContent = document.getElementById("hp3-result-content");
+      const waBtn = document.getElementById("hp3-wa-dispatch-btn");
+
+      if (form && submitBtn) {
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          const name = document.getElementById("hp3-name-input").value;
+          const url = document.getElementById("hp3-url-input").value;
+          const email = document.getElementById("hp3-email-input").value;
+          const phone = document.getElementById("hp3-phone-input").value;
+          const notes = document.getElementById("hp3-notes-input").value;
+
+          submitBtn.disabled = true;
+          submitBtn.classList.add("opacity-60", "cursor-not-allowed");
+          progressState.classList.remove("hidden");
+          resultCard.classList.add("hidden");
+
+          const steps = [
+            { pct: 30, text: "Analyzing brand identity & visual hierarchy..." },
+            { pct: 60, text: "Auditing Core Web Vitals & mobile conversion leaks..." },
+            { pct: 85, text: "Synthesizing AI search footprints & target CAC models..." },
+            { pct: 98, text: "Formatting Studio Executive Growth Brief..." },
+          ];
+
+          let stepIdx = 0;
+          const interval = setInterval(() => {
+            if (stepIdx < steps.length && progressBar && progressText && progressPct) {
+              progressBar.style.width = steps[stepIdx].pct + "%";
+              progressPct.textContent = steps[stepIdx].pct + "%";
+              progressText.textContent = steps[stepIdx].text;
+              stepIdx++;
+            }
+          }, 400);
+
+          try {
+            await fetch("/api/submit-seo-report", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                websiteUrl: url,
+                leadName: name,
+                leadEmail: email,
+                leadPhone: phone,
+                leadMessage: "Homepage-3 Creative Craft Brief. Priority: " + selectedGoal + ". Notes: " + notes,
+                auditReport: "Submission from Standalone Homepage-3 (Ting-Inspired Creative Craft Edition with Inrank Brand Colors). Target: " + selectedGoal
+              }),
+            });
+
+            clearInterval(interval);
+            progressBar.style.width = "100%";
+            progressPct.textContent = "100%";
+            progressText.textContent = "Brief compiled & transmitted to Studio Lead!";
+
+            setTimeout(() => {
+              progressState.classList.add("hidden");
+              resultCard.classList.remove("hidden");
+
+              resultContent.innerHTML = `
+                <p><strong>Brand Target:</strong> ` + url + `</p>
+                <p><strong>Primary Growth Vector:</strong> ` + selectedGoal + `</p>
+                <p><strong>Studio Assessment:</strong> Your brief has been dispatched to our Senior Architect desk in Pune. Initial review points: <em>1) Modernize brand typography to command premium rates; 2) Sub-second headless speed boost to cut ad bounce rate; 3) Direct WhatsApp lead routing.</em></p>
+              `;
+
+              submitBtn.disabled = false;
+              submitBtn.classList.remove("opacity-60", "cursor-not-allowed");
+              submitBtn.textContent = "Brief Successfully Submitted!";
+
+              const waUrl = "https://wa.me/917038612280?text=" + encodeURIComponent(
+                "Hi Inrank Studio Team! I am " + name + " from " + url + ". I submitted a creative project brief on Homepage-3 for: " + selectedGoal + "."
+              );
+
+              if (waBtn) {
+                waBtn.onclick = () => window.open(waUrl, "_blank");
+              }
+
+              setTimeout(() => {
+                window.open(waUrl, "_blank");
+              }, 1200);
+            }, 500);
+          } catch (err) {
+            clearInterval(interval);
+            progressState.classList.add("hidden");
+            resultCard.classList.remove("hidden");
+            resultContent.innerHTML = "<p><strong>Brief received for " + url + "!</strong> Our senior studio team will review and contact you on WhatsApp at " + phone + ".</p>";
+            submitBtn.disabled = false;
+            submitBtn.classList.remove("opacity-60", "cursor-not-allowed");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -8,7 +8,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 // Set up larger limits for base64 HTML and image files
 app.use(express.json({ limit: "50mb" }));
@@ -305,6 +305,40 @@ Inrank Technologies is a premium, performance-first digital growth agency. We sp
 - Email: inranktech@gmail.com
 - Phone/WhatsApp: +91 70386 12280
 `);
+});
+
+// Explicit direct route for Homepage-2 (advertising landing page)
+app.get(["/homepage-2", "/homepage-2.html"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "homepage-2.html");
+  const localPage = path.join(process.cwd(), "homepage-2.html");
+  if (fs.existsSync(distPage)) {
+    return res.sendFile(distPage);
+  }
+  if (fs.existsSync(localPage)) {
+    return res.sendFile(localPage);
+  }
+  const distIndex = path.join(process.cwd(), "dist", "index.html");
+  if (fs.existsSync(distIndex)) {
+    return res.sendFile(distIndex);
+  }
+  return res.sendFile(path.join(process.cwd(), "index.html"));
+});
+
+// Explicit direct route for Homepage-3 (creative craft & brand art landing page)
+app.get(["/homepage-3", "/homepage-3.html"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "homepage-3.html");
+  const localPage = path.join(process.cwd(), "homepage-3.html");
+  if (fs.existsSync(distPage)) {
+    return res.sendFile(distPage);
+  }
+  if (fs.existsSync(localPage)) {
+    return res.sendFile(localPage);
+  }
+  const distIndex = path.join(process.cwd(), "dist", "index.html");
+  if (fs.existsSync(distIndex)) {
+    return res.sendFile(distIndex);
+  }
+  return res.sendFile(path.join(process.cwd(), "index.html"));
 });
 
 // Serve frontend with Vite middleware in dev or as static files in production
