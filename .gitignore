@@ -7,3 +7,9 @@ coverage/
 *.map
 .env*
 !.env.example
+
+# Competitor Scrape Caches
+awrange_*
+awrange_pages/
+webvantik_*
+webvantik_pages/

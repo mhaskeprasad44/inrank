@@ -173,6 +173,80 @@ function initFaqs() {
 }
 
 // Standard contact enquiry form handler
+// Interactive Pricing Switcher Tabs
+function initPricingTabs() {
+  const tabsContainer = document.getElementById("pricing-tabs");
+  if (!tabsContainer) return;
+
+  const tabBtns = tabsContainer.querySelectorAll(".pricing-tab-btn");
+  const panels = document.querySelectorAll(".pricing-content-panel");
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const tabId = btn.getAttribute("data-tab");
+      if (!tabId) return;
+
+      tabBtns.forEach(b => {
+        b.classList.remove("active", "bg-primary", "text-primary-foreground", "shadow-sm");
+        b.classList.add("text-muted-foreground");
+      });
+
+      btn.classList.add("active", "bg-primary", "text-primary-foreground", "shadow-sm");
+      btn.classList.remove("text-muted-foreground");
+
+      panels.forEach(p => {
+        if (p.id === `tab-${tabId}`) {
+          p.classList.remove("hidden");
+        } else {
+          p.classList.add("hidden");
+        }
+      });
+    });
+  });
+}
+
+// Smart Plan Selection & Pre-fill Handler
+function initPlanSelectButtons() {
+  const planBtns = document.querySelectorAll(".plan-select-btn");
+  const contactSection = document.getElementById("contact");
+  const messageInput = document.getElementById("form-message") as HTMLTextAreaElement | null;
+
+  planBtns.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      const plan = btn.getAttribute("data-plan") || "Custom Plan";
+      const service = btn.getAttribute("data-service") || "Website Development";
+      const price = btn.getAttribute("data-price") || "";
+
+      // 1. Auto-check matching service chip
+      const serviceChips = document.querySelectorAll<HTMLInputElement>('input[name="services"]');
+      serviceChips.forEach(chip => {
+        if (chip.value.toLowerCase().includes(service.toLowerCase()) || service.toLowerCase().includes(chip.value.toLowerCase())) {
+          chip.checked = true;
+        }
+      });
+
+      // 2. Select matching budget radio
+      const budgetRadios = document.querySelectorAll<HTMLInputElement>('input[name="budget"]');
+      budgetRadios.forEach(radio => {
+        if (Number(price) < 20000 && radio.value.includes("Under")) radio.checked = true;
+        else if (Number(price) >= 20000 && Number(price) <= 50000 && radio.value.includes("20,000")) radio.checked = true;
+        else if (Number(price) > 50000 && radio.value.includes("50,000")) radio.checked = true;
+      });
+
+      // 3. Pre-populate project notes
+      if (messageInput) {
+        messageInput.value = `I am interested in the ${plan} plan${price ? ` (₹${Number(price).toLocaleString('en-IN')})` : ''} for ${service}. Please share full project proposal, deliverables checklist, and launch timeline.`;
+      }
+
+      // 4. Smooth scroll to contact
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+}
+
+// Upgraded Multi-Select Chip Contact Form Handler
 function initContactForm() {
   const contactForm = document.getElementById("consultation-form") as HTMLFormElement | null;
   const formBox = document.getElementById("form-fields-container") as HTMLDivElement | null;
@@ -186,55 +260,102 @@ function initContactForm() {
     contactForm.addEventListener("submit", (e) => {
       e.preventDefault();
 
-      const name = (document.getElementById("form-name") as HTMLInputElement).value.trim();
-      const email = (document.getElementById("form-email") as HTMLInputElement).value.trim();
-      const phone = (document.getElementById("form-phone") as HTMLInputElement).value.trim();
-      const company = (document.getElementById("form-company") as HTMLInputElement).value.trim();
-      const service = (document.getElementById("form-service") as HTMLSelectElement).value;
-      const budget = (document.getElementById("form-budget") as HTMLSelectElement).value;
-      const message = (document.getElementById("form-message") as HTMLTextAreaElement).value.trim();
+      // Botcheck honeypot verification
+      const botCheck = (contactForm.querySelector('input[name="botcheck"]') as HTMLInputElement)?.checked;
+      if (botCheck) {
+        console.warn("[Inrank] Bot caught in honeypot trap.");
+        return;
+      }
 
-      // Fire asynchronous transmission to the server log endpoint
+      const name = (document.getElementById("form-name") as HTMLInputElement)?.value.trim() || "";
+      const email = (document.getElementById("form-email") as HTMLInputElement)?.value.trim() || "";
+      const phone = (document.getElementById("form-phone") as HTMLInputElement)?.value.trim() || "";
+      const company = (document.getElementById("form-company") as HTMLInputElement)?.value.trim() || "N/A";
+      const website = (document.getElementById("form-website") as HTMLInputElement)?.value.trim() || "";
+      const message = (document.getElementById("form-message") as HTMLTextAreaElement)?.value.trim() || "Free growth consultation & quote requested.";
+
+      // Extract checked service chips
+      const checkedServices = Array.from(contactForm.querySelectorAll<HTMLInputElement>('input[name="services"]:checked'))
+        .map(el => el.value);
+      const servicesList = checkedServices.length > 0 ? checkedServices.join(", ") : "Website & Growth Consulting";
+
+      // Extract selected budget radio
+      const selectedBudget = (contactForm.querySelector<HTMLInputElement>('input[name="budget"]:checked'))?.value || "Standard";
+
+      // 1. Vault lead locally so zero client data is ever lost
+      try {
+        const stored = JSON.parse(localStorage.getItem("inrank_leads") || "[]");
+        stored.push({
+          timestamp: new Date().toISOString(),
+          name,
+          email,
+          phone,
+          company,
+          website,
+          services: servicesList,
+          budget: selectedBudget,
+          message
+        });
+        localStorage.setItem("inrank_leads", JSON.stringify(stored));
+      } catch (err) {
+        console.warn("[Inrank] Local lead vault note:", err);
+      }
+
+      // 2. Fire background AJAX logging
       fetch("/api/submit-seo-report", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          websiteUrl: company || "Direct Lead Inquiry",
+          websiteUrl: website || company || "Direct Inrank Lead",
           leadName: name,
           leadEmail: email,
           leadPhone: phone,
-          leadMessage: `Service Requested: ${service}. Budget Tier: ${budget}. Goals: ${message}`,
+          leadMessage: `Services: ${servicesList} | Budget: ${selectedBudget} | Notes: ${message}`,
           auditReport: "Direct organic form submission to Inrank Team."
         })
       }).catch(err => console.error("Logged submission background issue:", err));
 
-      // Build personalized success fields
+      // 3. Structured WhatsApp Message
+      const waText = encodeURIComponent(
+        `*New Consultation Request for Inrank Technologies*\n\n` +
+        `• *Client Name:* ${name}\n` +
+        `• *Company / Brand:* ${company}\n` +
+        `• *Phone / WhatsApp:* ${phone}\n` +
+        `• *Email:* ${email}\n` +
+        `• *Website:* ${website || 'N/A'}\n` +
+        `• *Services Needed:* ${servicesList}\n` +
+        `• *Budget Range:* ${selectedBudget}\n` +
+        `• *Project Goals:* ${message}\n\n` +
+        `_Transmitted via inranktech.in Strategic Portal_`
+      );
+      const waUrl = `https://wa.me/918788823182?text=${waText}`;
+
+      // 4. Update Success View
       if (successUserPlaceholder) successUserPlaceholder.textContent = name;
       if (successPhonePlaceholder) successPhonePlaceholder.textContent = phone;
       if (successEmailPlaceholder) successEmailPlaceholder.textContent = email;
 
-      // Hide form fields and show the beautiful checked success view
       formBox.classList.add("hidden");
       successBox.classList.remove("hidden");
 
-      // Redirect directly to the mailto trigger
-      const subject = encodeURIComponent(`Inrank Growth Inquiry: ${service}`);
-      const mailtoBody = encodeURIComponent(
-        `Hi Inrank team,\n\n` +
-        `Here is a new consultation request:\n` +
-        `- Name: ${name}\n` +
-        `- Email: ${email}\n` +
-        `- Phone: ${phone}\n` +
-        `- Company/Website: ${company}\n` +
-        `- Service: ${service}\n` +
-        `- Budget: ${budget}\n\n` +
-        `Goals/Message:\n${message}\n`
-      );
+      // Replace or update success view with direct WhatsApp button
+      let waLink = successBox.querySelector(".success-whatsapp-btn");
+      if (!waLink) {
+        waLink = document.createElement("a");
+        waLink.className = "success-whatsapp-btn mt-4 inline-flex items-center justify-center gap-2 h-11 px-6 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm shadow-md transition-colors";
+        (waLink as HTMLAnchorElement).target = "_blank";
+        (waLink as HTMLAnchorElement).rel = "noopener noreferrer";
+        waLink.innerHTML = `<i data-lucide="message-circle" class="h-4 w-4"></i><span>Open Priority WhatsApp Chat (+91 87888 23182)</span>`;
+        successBox.insertBefore(waLink, submitAnotherBtn);
+      }
+      (waLink as HTMLAnchorElement).href = waUrl;
 
-      // Trigger mail client after 1.5 seconds so they see the success card state
-      setTimeout(() => {
-        window.location.href = `mailto:inranktech@gmail.com?subject=${subject}&body=${mailtoBody}`;
-      }, 1500);
+      // Automatically launch WhatsApp tab
+      try {
+        window.open(waUrl, "_blank");
+      } catch (e) {
+        console.log("[Inrank] Popup blocked, link available on success card");
+      }
     });
   }
 
@@ -1825,7 +1946,7 @@ function renderAboutUsView() {
         "@id": "https://inranktech.com/#localbusiness",
         "name": "Inrank Technologies",
         "url": "https://inranktech.com/",
-        "telephone": "+917038612280",
+        "telephone": "+91 87888 23182",
         "email": "hello@inranktech.com",
         "address": {
           "@type": "PostalAddress",
@@ -2865,7 +2986,7 @@ function renderAllServicesPage() {
                 <span>Inquire About Agency Outsourcing</span>
                 <i data-lucide="arrow-right" class="h-4 w-4"></i>
               </a>
-              <a href="https://wa.me/917038612280?text=Hi%20Inrank,%20I%20am%20interested%20in%20white-label%20agency%20outsourcing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-border bg-white dark:bg-card hover:bg-emerald-600 hover:text-white hover:border-emerald-600 text-foreground font-semibold text-sm shadow-sm active:scale-[0.98] transition-all group">
+              <a href="https://wa.me/918788823182?text=Hi%20Inrank,%20I%20am%20interested%20in%20white-label%20agency%20outsourcing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-border bg-white dark:bg-card hover:bg-emerald-600 hover:text-white hover:border-emerald-600 text-foreground font-semibold text-sm shadow-sm active:scale-[0.98] transition-all group">
                 <i data-lucide="message-circle" class="h-4 w-4 text-emerald-500 group-hover:text-white transition-colors"></i>
                 <span>Direct WhatsApp Partner Desk</span>
               </a>
@@ -2883,8 +3004,8 @@ function renderAllServicesPage() {
             <a href="#contact" class="px-5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold shadow hover:shadow-lg hover:shadow-emerald-600/25 active:scale-[0.98] transition-all">
               Request Growth Audit
             </a>
-            <a href="tel:+917038612280" class="px-5 py-2.5 rounded-lg border border-border bg-white dark:bg-card text-foreground hover:bg-emerald-600 hover:text-white hover:border-emerald-600 text-xs font-semibold shadow-sm active:scale-[0.98] transition-all flex items-center gap-2 group">
-              <i data-lucide="phone" class="h-3.5 w-3.5 text-emerald-500 group-hover:text-white transition-colors"></i> Call +91 70386 12280
+            <a href="tel:+918788823182" class="px-5 py-2.5 rounded-lg border border-border bg-white dark:bg-card text-foreground hover:bg-emerald-600 hover:text-white hover:border-emerald-600 text-xs font-semibold shadow-sm active:scale-[0.98] transition-all flex items-center gap-2 group">
+              <i data-lucide="phone" class="h-3.5 w-3.5 text-emerald-500 group-hover:text-white transition-colors"></i> Call +91 87888 23182
             </a>
           </div>
         </div>
@@ -3722,13 +3843,13 @@ function renderBlogPostView(blog: BlogPost) {
                 </a>
 
                 <a
-                  href="https://wa.me/917038612280"
+                  href="https://wa.me/918788823182"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="flex w-full items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold rounded-xl border border-border bg-white dark:bg-card hover:bg-emerald-600 hover:text-white hover:border-emerald-600 text-foreground transition-all text-center cursor-pointer"
                 >
                   <i data-lucide="message-circle" class="h-4 w-4 text-emerald-500"></i>
-                  <span>Chat on WhatsApp (+91 70386 12280)</span>
+                  <span>Chat on WhatsApp (+91 87888 23182)</span>
                 </a>
               </div>
 
@@ -3809,6 +3930,8 @@ window.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   initFaqs();
   initContactForm();
+  initPricingTabs();
+  initPlanSelectButtons();
 
   // Modern UI Magic & Interactive Features
   initGlobalScrollProgress();

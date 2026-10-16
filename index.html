@@ -26,34 +26,151 @@
     <meta property="twitter:description" content="Inrank Technologies is Pune's leading digital marketing agency & web development company. We deliver SEO in Pune, website development, PPC and AI SEO." />
     <meta property="twitter:image" content="/images/service-seo.jpg" />
 
-    <!-- Schema.org / LocalBusiness JSON-LD -->
+    <!-- Schema.org / LocalBusiness & Organization JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Inrank Technologies Pune",
-      "image": "https://inranktech.com/logo.png",
-      "@id": "https://inranktech.com",
-      "url": "https://inranktech.com",
-      "telephone": "+91 7038612280",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "FC Road, Shivaji Nagar",
-        "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "postalCode": "411005",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 18.5204,
-        "longitude": 73.8567
-      },
-      "priceRange": "₹₹",
-      "description": "Leading Digital Marketing Agency & Web Development Company in Pune. Specializing in Digital marketing in Pune, Web development services in Pune, SEO and AI SEO.",
-      "sameAs": [
-        "https://www.instagram.com/inranktech",
-        "https://www.linkedin.com/company/inranktech"
+      "@graph": [
+        {
+          "@type": ["LocalBusiness", "ProfessionalService"],
+          "@id": "https://inranktech.com/#organization",
+          "name": "Inrank Technologies",
+          "alternateName": "Inrank Tech Pune",
+          "image": "https://inranktech.com/logo.png",
+          "url": "https://inranktech.com",
+          "telephone": "+91 87888 23182",
+          "priceRange": "₹11,999 - ₹35,000",
+          "description": "Pune's #1 Performance Digital Marketing Agency & Web Development Company. Transparent fixed-price websites from ₹11,999, data-driven SEO, Generative Engine Optimization (GEO), and ROI-driven paid ads.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "FC Road, Shivaji Nagar",
+            "addressLocality": "Pune",
+            "addressRegion": "Maharashtra",
+            "postalCode": "411005",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 18.5204,
+            "longitude": 73.8567
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Pune" },
+            { "@type": "Place", "name": "Baner, Pune" },
+            { "@type": "Place", "name": "Hinjewadi, Pune" },
+            { "@type": "Place", "name": "Wakad, Pune" },
+            { "@type": "Place", "name": "Kharadi, Pune" },
+            { "@type": "Place", "name": "Hadapsar, Pune" },
+            { "@type": "Place", "name": "Viman Nagar, Pune" },
+            { "@type": "Place", "name": "Kothrud, Pune" },
+            { "@type": "Place", "name": "Pimpri-Chinchwad, Pune" },
+            { "@type": "State", "name": "Maharashtra" }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "214",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Vikram Shinde" },
+              "datePublished": "2026-09-12",
+              "reviewBody": "Inrank built our corporate real estate portal in 6 days flat for ₹16,999. In two months our Google organic inquiries tripled in Baner and Wakad. Incomparable ROI compared to traditional Pune agencies.",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Dr. Snehal Kulkarni" },
+              "datePublished": "2026-08-28",
+              "reviewBody": "Our clinic ranks #1 on Google Maps in Kothrud thanks to Inrank's local SEO and GMB optimization. Transparent pricing and zero hidden fees. Highly recommend!",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Amit Deshmukh" },
+              "datePublished": "2026-07-15",
+              "reviewBody": "Best web development company in Pune. Their interactive consultation and WhatsApp communication made the launch seamless. The site loads in 0.8 seconds.",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+            }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Website Development & SEO Packages",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Starter Launch Website Package"
+                },
+                "price": "11999",
+                "priceCurrency": "INR"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Business Growth Website Package"
+                },
+                "price": "16999",
+                "priceCurrency": "INR"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "E-Commerce Scale Website Package"
+                },
+                "price": "21999",
+                "priceCurrency": "INR"
+              }
+            ]
+          },
+          "sameAs": [
+            "https://www.instagram.com/inranktech",
+            "https://www.linkedin.com/company/inranktech"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://inranktech.com/#website",
+          "url": "https://inranktech.com",
+          "name": "Inrank Technologies",
+          "publisher": { "@id": "https://inranktech.com/#organization" }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://inranktech.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a website cost in Pune with Inrank?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Inrank offers 100% transparent website packages starting from ₹11,999 for Starter Launch (up to 5 pages with 365-day support), ₹16,999 for Business Growth (up to 10 pages, CMS & deep Schema), and ₹21,999 for full E-Commerce setups with 0% transaction commission."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does it take to deliver a custom website in Pune?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Standard business websites are delivered within 5 to 7 business days with complete responsive styling, Core Web Vitals optimization, and Google Business Profile integration."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is Generative Engine Optimization (GEO) and why does Inrank specialize in it?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "GEO is the new frontier of search optimization ensuring your business is directly cited and recommended by AI engines like Google AI Overviews, ChatGPT Search, and Perplexity when potential buyers search for your services."
+              }
+            }
+          ]
+        }
       ]
     }
     </script>
@@ -400,9 +517,10 @@
               </div>
             </div>
 
+            <a href="/pricing.html" class="text-sm font-bold text-amber-600 hover:text-amber-500 transition-colors">Pricing</a>
             <a href="#/blog" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors font-semibold text-primary">Blog</a>
             <a href="#faq" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors">FAQ</a>
-            <a href="#contact" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors">Contact</a>
+            <a href="/contact.html" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-primary transition-colors">Contact</a>
           </nav>
 
           <!-- Action buttons block -->
@@ -424,7 +542,7 @@
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
               </a>
-              <a href="https://wa.me/917038612280" target="_blank" rel="noopener noreferrer" class="h-10 w-10 rounded-lg border border-border bg-white dark:bg-card text-foreground flex items-center justify-center hover:bg-emerald-600 hover:text-white hover:border-emerald-600 shadow-sm active:scale-95 transition-all duration-200" aria-label="WhatsApp">
+              <a href="https://wa.me/918788823182" target="_blank" rel="noopener noreferrer" class="h-10 w-10 rounded-lg border border-border bg-white dark:bg-card text-foreground flex items-center justify-center hover:bg-emerald-600 hover:text-white hover:border-emerald-600 shadow-sm active:scale-95 transition-all duration-200" aria-label="WhatsApp">
                 <svg class="h-5 w-5 fill-current text-inherit" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
                 </svg>
@@ -432,8 +550,8 @@
             </div>
 
             <!-- CTA Call link -->
-            <a href="#contact" class="hidden sm:inline-flex h-10 items-center justify-center font-semibold text-xs border border-border bg-white dark:bg-card text-foreground hover:bg-emerald-600 hover:text-white hover:border-emerald-600 rounded-lg px-5 transition-all duration-200 shadow-sm active:scale-[0.98] cursor-pointer">
-              Book Call
+            <a href="/contact.html" class="hidden sm:inline-flex h-10 items-center justify-center font-bold text-xs bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-lg px-5 transition-all duration-200 shadow-sm shadow-amber-500/20 active:scale-[0.98] cursor-pointer">
+              Contact &amp; Audit
             </a>
 
             <!-- Mobile Hamburger Toggle Icon Button -->
@@ -591,7 +709,7 @@
           </div>
 
           <div class="pt-4 border-t border-border/50 flex flex-col gap-3">
-            <a href="tel:+917038612280" class="flex h-11 items-center justify-center rounded-md border border-border bg-white dark:bg-card text-foreground hover:bg-muted text-sm font-semibold gap-2">
+            <a href="tel:+918788823182" class="flex h-11 items-center justify-center rounded-md border border-border bg-white dark:bg-card text-foreground hover:bg-muted text-sm font-semibold gap-2">
               <i data-lucide="phone" class="h-4 w-4"></i> Call Our Team
             </a>
             <a href="#contact" class="flex h-11 items-center justify-center rounded-md bg-primary text-primary-foreground text-sm font-semibold">
@@ -777,6 +895,33 @@
                   </div>
                 </div>
 
+              </div>
+
+              <!-- QUICK ANSWER AI & VISITOR OVERVIEW CARD -->
+              <div id="quick-answer-overview" class="mt-12 mb-4 border border-emerald-500/25 bg-emerald-500/[0.04] dark:bg-emerald-950/20 backdrop-blur-sm rounded-2xl p-6 sm:p-8 relative overflow-hidden shadow-sm text-left">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
+                    <i data-lucide="zap" class="h-3.5 w-3.5"></i> Quick Answer &amp; Overview
+                  </span>
+                  <span class="text-xs text-muted-foreground">· Answer-first summary for business owners &amp; AI search</span>
+                </div>
+                <p class="text-sm sm:text-base text-foreground/90 leading-relaxed">
+                  <strong>Inrank Technologies</strong> is a performance web development, SEO, and digital growth agency in Pune. We build custom, ultra-fast business websites engineered to rank on Google and convert local searchers into phone calls and WhatsApp inquiries. Fixed-price website packages start at <strong>₹11,999</strong> (live in 5–7 days) with free 1st-year cloud hosting, domain, SSL, business emails, and 365 days of included post-launch support. Monthly SEO retainers start at <strong>₹11,999/month</strong>.
+                </p>
+                <div class="mt-4 flex flex-wrap items-center gap-y-2 gap-x-5 text-xs text-muted-foreground pt-3 border-t border-border/60">
+                  <span class="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-medium">
+                    <i data-lucide="check" class="h-3.5 w-3.5"></i> Fixed Pricing Guarantee
+                  </span>
+                  <span class="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-medium">
+                    <i data-lucide="check" class="h-3.5 w-3.5"></i> 95+ PageSpeed Score
+                  </span>
+                  <span class="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-medium">
+                    <i data-lucide="check" class="h-3.5 w-3.5"></i> 365 Days Support Included
+                  </span>
+                  <span class="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-medium">
+                    <i data-lucide="check" class="h-3.5 w-3.5"></i> 100% Client Code &amp; Domain Ownership
+                  </span>
+                </div>
               </div>
 
               <!-- Big Results Grid -->
@@ -2191,6 +2336,465 @@
           </section>
 
           <!-- FAQ SECTION -->
+          
+          <!-- TRANSPARENT PACKAGES & PRICING SECTION -->
+          <section id="pricing" class="relative py-24 sm:py-32 border-t border-border bg-card/30">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8">
+              
+              <!-- Section Header -->
+              <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="text-xs uppercase tracking-[0.22em] font-semibold text-primary mb-3">
+                  [08] : Transparent Packages &amp; Pricing
+                </div>
+                <h2 class="font-display text-4xl sm:text-5xl font-bold tracking-tight leading-[1.08] text-foreground">
+                  Fixed-Price Websites &amp; Growth Retainers. <span class="text-primary block sm:inline">No Surprises.</span>
+                </h2>
+                <p class="mt-4 text-muted-foreground text-sm sm:text-base leading-relaxed">
+                  Every website includes free cloud hosting, SSL, domain, business emails, and 365 days of post-launch support. SEO and social media plans are simple monthly retainers with zero lock-in contracts.
+                </p>
+
+                <!-- Category Switcher Tabs -->
+                <div class="mt-8 inline-flex p-1.5 rounded-xl border border-border bg-card shadow-sm gap-1 max-w-full overflow-x-auto" id="pricing-tabs">
+                  <button type="button" class="pricing-tab-btn active px-4 sm:px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all cursor-pointer bg-primary text-primary-foreground shadow-sm" data-tab="web">
+                    Website Development
+                  </button>
+                  <button type="button" class="pricing-tab-btn px-4 sm:px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all cursor-pointer text-muted-foreground hover:text-foreground" data-tab="seo">
+                    SEO Retainers
+                  </button>
+                  <button type="button" class="pricing-tab-btn px-4 sm:px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all cursor-pointer text-muted-foreground hover:text-foreground" data-tab="social">
+                    Social Media &amp; Reels
+                  </button>
+                </div>
+              </div>
+
+              <!-- TAB 1: WEBSITE DEVELOPMENT PACKAGES -->
+              <div id="tab-web" class="pricing-content-panel grid md:grid-cols-3 gap-8">
+                
+                <!-- Starter Plan -->
+                <div class="border border-border bg-card rounded-2xl p-7 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition-all relative">
+                  <div>
+                    <div class="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">Starter Website</div>
+                    <div class="flex items-baseline gap-1 mb-3">
+                      <span class="font-display text-4xl font-extrabold text-foreground">₹11,999</span>
+                      <span class="text-xs text-muted-foreground">one-time</span>
+                    </div>
+                    <div class="inline-flex items-center gap-1.5 text-xs text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md mb-5 font-semibold">
+                      <i data-lucide="clock" class="h-3.5 w-3.5"></i> Live in about 5–7 days
+                    </div>
+                    <p class="text-xs text-muted-foreground mb-6 leading-relaxed">
+                      Ideal for new and local service businesses needing a professional, Google-ready online presence quickly.
+                    </p>
+
+                    <ul class="space-y-3 text-xs sm:text-sm text-foreground/90 border-t border-border pt-6 mb-8">
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Up to <strong>10 custom mobile-first pages</strong></span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span><strong>Free 1st-year NVMe Cloud Hosting</strong> &amp; SSL</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span><strong>2 Business Email Addresses</strong> included</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Google Business Profile local map sync</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>WhatsApp chat &amp; click-to-call buttons</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Speed-optimized build (<strong>95+ PageSpeed</strong>)</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span><strong>365 Days of Post-Launch Support</strong></span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <a href="#contact" data-plan="Starter" data-service="Website Development" data-price="11999" class="plan-select-btn inline-flex items-center justify-center w-full h-11 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-semibold text-xs uppercase tracking-wider transition-colors">
+                    Get Started with Starter ❯
+                  </a>
+                </div>
+
+                <!-- Business Growth Plan (Most Popular) -->
+                <div class="border-2 border-primary bg-card rounded-2xl p-7 sm:p-8 flex flex-col justify-between shadow-lg relative transform md:-translate-y-2">
+                  <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-[10px] uppercase font-extrabold tracking-widest px-3.5 py-1 rounded-full shadow-sm">
+                    Most Popular · Best Value
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold uppercase tracking-wider text-primary mb-2">Business Growth</div>
+                    <div class="flex items-baseline gap-1 mb-3">
+                      <span class="font-display text-4xl font-extrabold text-foreground">₹16,999</span>
+                      <span class="text-xs text-muted-foreground">one-time</span>
+                    </div>
+                    <div class="inline-flex items-center gap-1.5 text-xs text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md mb-5 font-semibold">
+                      <i data-lucide="clock" class="h-3.5 w-3.5"></i> Live in about 10–12 days
+                    </div>
+                    <p class="text-xs text-muted-foreground mb-6 leading-relaxed">
+                      For growing businesses that want to rank for competitive keywords, capture leads, and edit pages easily.
+                    </p>
+
+                    <ul class="space-y-3 text-xs sm:text-sm text-foreground/90 border-t border-border pt-6 mb-8">
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span><strong>Everything in Starter plan</strong></span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span>Up to <strong>30 custom pages</strong></span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span><strong>5 Business Email Addresses</strong></span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span><strong>Admin Dashboard / CMS</strong> to edit pages &amp; blogs</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span><strong>AI Search (GEO) &amp; Schema</strong> entity markup</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span>Search Console &amp; Analytics with lead goal tracking</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span><strong>365 Days Priority Support</strong></span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <a href="#contact" data-plan="Business Growth" data-service="Website Development" data-price="16999" class="plan-select-btn inline-flex items-center justify-center w-full h-11 rounded-lg bg-primary hover:bg-emerald-700 text-white font-semibold text-xs uppercase tracking-wider transition-colors shadow-md">
+                    Get Started with Business ❯
+                  </a>
+                </div>
+
+                <!-- E-Commerce Scale Plan -->
+                <div class="border border-border bg-card rounded-2xl p-7 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition-all relative">
+                  <div>
+                    <div class="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">E-Commerce Scale</div>
+                    <div class="flex items-baseline gap-1 mb-3">
+                      <span class="font-display text-4xl font-extrabold text-foreground">₹21,999</span>
+                      <span class="text-xs text-muted-foreground">one-time</span>
+                    </div>
+                    <div class="inline-flex items-center gap-1.5 text-xs text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md mb-5 font-semibold">
+                      <i data-lucide="clock" class="h-3.5 w-3.5"></i> Live in about 20–25 days
+                    </div>
+                    <p class="text-xs text-muted-foreground mb-6 leading-relaxed">
+                      For brands selling online with secure payment gateways, inventory control, and cart recovery.
+                    </p>
+
+                    <ul class="space-y-3 text-xs sm:text-sm text-foreground/90 border-t border-border pt-6 mb-8">
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span><strong>Everything in Business Growth</strong></span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span><strong>Unlimited Products &amp; Categories</strong></span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Razorpay, PhonePe, UPI &amp; Cash on Delivery</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Order &amp; Inventory Management Dashboard</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Automated WhatsApp Order Alerts</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Product Schema markup &amp; Abandoned Cart recovery</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span><strong>365 Days Dedicated Webmaster Support</strong></span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <a href="#contact" data-plan="E-Commerce Scale" data-service="Website Development" data-price="21999" class="plan-select-btn inline-flex items-center justify-center w-full h-11 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-semibold text-xs uppercase tracking-wider transition-colors">
+                    Get Started with E-Commerce ❯
+                  </a>
+                </div>
+
+              </div>
+
+              <!-- TAB 2: SEO PACKAGES (Hidden by default) -->
+              <div id="tab-seo" class="pricing-content-panel hidden grid md:grid-cols-3 gap-8">
+                
+                <!-- Local SEO Plan -->
+                <div class="border border-border bg-card rounded-2xl p-7 sm:p-8 flex flex-col justify-between shadow-sm">
+                  <div>
+                    <div class="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">Local SEO</div>
+                    <div class="flex items-baseline gap-1 mb-3">
+                      <span class="font-display text-4xl font-extrabold text-foreground">₹11,999</span>
+                      <span class="text-xs text-muted-foreground">/ month</span>
+                    </div>
+                    <p class="text-xs text-muted-foreground mb-6 leading-relaxed">
+                      For clinics, retail stores, and service companies looking to dominate local Google Maps &amp; "near me" searches.
+                    </p>
+                    <ul class="space-y-3 text-xs sm:text-sm text-foreground/90 border-t border-border pt-6 mb-8">
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Google Business Profile (GBP) 3-Pack Optimization</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Target <strong>15 Local Commercial Keywords</strong></span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>50+ Local Directory &amp; NAP Citations</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Customer Review Response Management</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Monthly Rankings &amp; Direct Call Report</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#contact" data-plan="Local SEO" data-service="SEO Services" data-price="11999" class="plan-select-btn inline-flex items-center justify-center w-full h-11 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-semibold text-xs uppercase tracking-wider transition-colors">
+                    Start Local SEO ❯
+                  </a>
+                </div>
+
+                <!-- Growth SEO Plan (Popular) -->
+                <div class="border-2 border-primary bg-card rounded-2xl p-7 sm:p-8 flex flex-col justify-between shadow-lg relative transform md:-translate-y-2">
+                  <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-[10px] uppercase font-extrabold tracking-widest px-3.5 py-1 rounded-full shadow-sm">
+                    Most Popular Retainer
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold uppercase tracking-wider text-primary mb-2">Growth SEO</div>
+                    <div class="flex items-baseline gap-1 mb-3">
+                      <span class="font-display text-4xl font-extrabold text-foreground">₹18,999</span>
+                      <span class="text-xs text-muted-foreground">/ month</span>
+                    </div>
+                    <p class="text-xs text-muted-foreground mb-6 leading-relaxed">
+                      For businesses wanting top Google rankings across competitive service categories and AI search overviews.
+                    </p>
+                    <ul class="space-y-3 text-xs sm:text-sm text-foreground/90 border-t border-border pt-6 mb-8">
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span>Technical Site Audit &amp; Crawl Error Fixes</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span>Target <strong>30 High-Intent Keywords</strong></span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span><strong>4 Answer-First AI Articles</strong> per month</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span>Schema Markup &amp; Perplexity / ChatGPT Optimization</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span>Quality Backlinks &amp; Monthly Strategy Call</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#contact" data-plan="Growth SEO" data-service="SEO Services" data-price="18999" class="plan-select-btn inline-flex items-center justify-center w-full h-11 rounded-lg bg-primary hover:bg-emerald-700 text-white font-semibold text-xs uppercase tracking-wider transition-colors shadow-md">
+                    Start Growth SEO ❯
+                  </a>
+                </div>
+
+                <!-- Authority SEO Plan -->
+                <div class="border border-border bg-card rounded-2xl p-7 sm:p-8 flex flex-col justify-between shadow-sm">
+                  <div>
+                    <div class="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">Market Authority SEO</div>
+                    <div class="flex items-baseline gap-1 mb-3">
+                      <span class="font-display text-4xl font-extrabold text-foreground">₹27,999</span>
+                      <span class="text-xs text-muted-foreground">/ month</span>
+                    </div>
+                    <p class="text-xs text-muted-foreground mb-6 leading-relaxed">
+                      For multi-location or high-competition enterprises wanting absolute market leadership and digital PR.
+                    </p>
+                    <ul class="space-y-3 text-xs sm:text-sm text-foreground/90 border-t border-border pt-6 mb-8">
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Everything in Growth SEO</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Target <strong>60+ Commercial Keywords</strong></span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span><strong>8 Authority Articles</strong> &amp; Industry Guides</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Digital PR &amp; High-Authority Media Backlinks</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Conversion Rate Optimization (CRO) on Landing Pages</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#contact" data-plan="Market Authority SEO" data-service="SEO Services" data-price="27999" class="plan-select-btn inline-flex items-center justify-center w-full h-11 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-semibold text-xs uppercase tracking-wider transition-colors">
+                    Start Authority SEO ❯
+                  </a>
+                </div>
+
+              </div>
+
+              <!-- TAB 3: SOCIAL MEDIA PACKAGES (Hidden by default) -->
+              <div id="tab-social" class="pricing-content-panel hidden grid md:grid-cols-3 gap-8">
+                
+                <!-- Social Starter -->
+                <div class="border border-border bg-card rounded-2xl p-7 sm:p-8 flex flex-col justify-between shadow-sm">
+                  <div>
+                    <div class="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">Social Launch</div>
+                    <div class="flex items-baseline gap-1 mb-3">
+                      <span class="font-display text-4xl font-extrabold text-foreground">₹11,499</span>
+                      <span class="text-xs text-muted-foreground">/ month</span>
+                    </div>
+                    <p class="text-xs text-muted-foreground mb-6 leading-relaxed">
+                      For businesses wanting an active, professional presence across Instagram and Facebook.
+                    </p>
+                    <ul class="space-y-3 text-xs sm:text-sm text-foreground/90 border-t border-border pt-6 mb-8">
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span><strong>12 Custom On-Brand Creatives</strong> / month</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Monthly Content Calendar &amp; Researched Hashtags</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Profile &amp; Bio Conversion Audit</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Monthly Performance &amp; Engagement Report</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#contact" data-plan="Social Launch" data-service="Social Media" data-price="11499" class="plan-select-btn inline-flex items-center justify-center w-full h-11 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-semibold text-xs uppercase tracking-wider transition-colors">
+                    Start Social Launch ❯
+                  </a>
+                </div>
+
+                <!-- Social & Reels Growth (Popular) -->
+                <div class="border-2 border-primary bg-card rounded-2xl p-7 sm:p-8 flex flex-col justify-between shadow-lg relative transform md:-translate-y-2">
+                  <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-[10px] uppercase font-extrabold tracking-widest px-3.5 py-1 rounded-full shadow-sm">
+                    Most Popular Retainer
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold uppercase tracking-wider text-primary mb-2">Social &amp; Reels Growth</div>
+                    <div class="flex items-baseline gap-1 mb-3">
+                      <span class="font-display text-4xl font-extrabold text-foreground">₹16,999</span>
+                      <span class="text-xs text-muted-foreground">/ month</span>
+                    </div>
+                    <p class="text-xs text-muted-foreground mb-6 leading-relaxed">
+                      For brands wanting consistent organic customer inquiries and high-reach Instagram Reels.
+                    </p>
+                    <ul class="space-y-3 text-xs sm:text-sm text-foreground/90 border-t border-border pt-6 mb-8">
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span><strong>15 Custom Posts + 6 Trending Reels</strong> / mo</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span>Hook Writing, Video Editing &amp; Audio Selection</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span>Google Business Profile SEO updates</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span>Community DM &amp; Comment response setup</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-primary mt-0.5 shrink-0"></i>
+                        <span>Paid Ad Campaign setup &amp; A/B testing (ad spend extra)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#contact" data-plan="Social & Reels Growth" data-service="Social Media" data-price="16999" class="plan-select-btn inline-flex items-center justify-center w-full h-11 rounded-lg bg-primary hover:bg-emerald-700 text-white font-semibold text-xs uppercase tracking-wider transition-colors shadow-md">
+                    Start Reels Growth ❯
+                  </a>
+                </div>
+
+                <!-- Brand Scale -->
+                <div class="border border-border bg-card rounded-2xl p-7 sm:p-8 flex flex-col justify-between shadow-sm">
+                  <div>
+                    <div class="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">Brand Scale</div>
+                    <div class="flex items-baseline gap-1 mb-3">
+                      <span class="font-display text-4xl font-extrabold text-foreground">₹26,999</span>
+                      <span class="text-xs text-muted-foreground">/ month</span>
+                    </div>
+                    <p class="text-xs text-muted-foreground mb-6 leading-relaxed">
+                      Full multi-channel management across Instagram, LinkedIn, Facebook, and YouTube Shorts.
+                    </p>
+                    <ul class="space-y-3 text-xs sm:text-sm text-foreground/90 border-t border-border pt-6 mb-8">
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span><strong>22 Custom Posts + 10 High-Retention Reels</strong> / mo</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Multi-channel posting (Instagram, LinkedIn, FB, Shorts)</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Full Meta &amp; LinkedIn Ad Strategy Execution</span>
+                      </li>
+                      <li class="flex items-start gap-2.5">
+                        <i data-lucide="check" class="h-4 w-4 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Fortnightly Growth &amp; Creative Strategy Call</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#contact" data-plan="Brand Scale" data-service="Social Media" data-price="26999" class="plan-select-btn inline-flex items-center justify-center w-full h-11 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-semibold text-xs uppercase tracking-wider transition-colors">
+                    Start Brand Scale ❯
+                  </a>
+                </div>
+
+              </div>
+
+              <!-- Value Guarantee & Add-Ons Bar -->
+              <div class="mt-16 bg-card border border-border rounded-xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+                <div>
+                  <h4 class="font-display text-lg font-bold text-foreground">Transparent Add-Ons &amp; Renewals</h4>
+                  <p class="text-xs sm:text-sm text-muted-foreground mt-1">
+                    Extra pages: <strong>₹999/page</strong> · Hosting &amp; SSL renewal after year 1: <strong>₹3,999/year</strong> · 100% Client Code &amp; Domain Ownership.
+                  </p>
+                </div>
+                <div class="flex items-center gap-3 shrink-0">
+                  <a href="tel:+918788823182" class="inline-flex items-center gap-2 text-xs font-semibold px-4 py-2.5 rounded-lg border border-border text-foreground hover:bg-secondary transition-colors">
+                    <i data-lucide="phone" class="h-4 w-4 text-primary"></i> Call +91 87888 23182
+                  </a>
+                  <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2.5 rounded-lg bg-primary hover:bg-emerald-700 text-white transition-colors">
+                    Request Custom Quote ❯
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+
           <section id="faq" class="relative py-24 sm:py-32 border-t border-border">
             <div class="max-w-5xl mx-auto px-5 sm:px-8">
               
@@ -2314,7 +2918,7 @@
                     
                     <!-- WhatsApp Desk Link -->
                     <a
-                      href="https://wa.me/917038612280?text=Hi%20Inrank%2C%20I'd%20like%20to%20discuss%20growth%20for%20my%20business."
+                      href="https://wa.me/918788823182?text=Hi%20Inrank%2C%20I'd%20like%20to%20discuss%20growth%20for%20my%20business."
                       target="_blank"
                       rel="noopener noreferrer"
                       class="flex items-center gap-4 group"
@@ -2324,18 +2928,18 @@
                       </div>
                       <div>
                         <div class="text-xs uppercase tracking-[0.18em] font-semibold text-muted-foreground">WhatsApp Desk</div>
-                        <div class="font-display text-lg font-semibold text-foreground group-hover:text-primary transition-colors">+91 70386 12280</div>
+                        <div class="font-display text-lg font-semibold text-foreground group-hover:text-primary transition-colors">+91 87888 23182</div>
                       </div>
                     </a>
 
                     <!-- Direct Call Desk Link -->
-                    <a href="tel:+917038612280" class="flex items-center gap-4 group">
+                    <a href="tel:+918788823182" class="flex items-center gap-4 group">
                       <div class="h-11 w-11 rounded-md bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                         <i data-lucide="phone" class="h-5 w-5"></i>
                       </div>
                       <div>
                         <div class="text-xs uppercase tracking-[0.18em] font-semibold text-muted-foreground">Call Direct</div>
-                        <div class="font-display text-lg font-semibold text-foreground group-hover:text-primary transition-colors">+91 70386 12280</div>
+                        <div class="font-display text-lg font-semibold text-foreground group-hover:text-primary transition-colors">+91 87888 23182</div>
                       </div>
                     </a>
 
@@ -2370,120 +2974,150 @@
                     
                     <!-- Form Interactive inputs slot -->
                     <div id="form-fields-container">
-                      <form id="consultation-form" class="space-y-5">
+                      <form id="consultation-form" class="space-y-6">
                         
+                        <!-- Anti-Spam Honeypot -->
+                        <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off">
+
+                        <!-- Client Identity Fields -->
                         <div class="grid sm:grid-cols-2 gap-5">
-                          <!-- Name Field -->
                           <div class="space-y-2">
-                            <label for="form-name" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Full Name</label>
+                            <label for="form-name" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Full Name <span class="text-primary">*</span></label>
                             <input
                               type="text"
                               id="form-name"
                               required
-                              placeholder="Dr. Aditya Shah"
-                              class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring mt-2 h-11 rounded-md"
+                              placeholder="e.g. Rahul Deshmukh"
+                              class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3.5 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary mt-1.5 h-11 rounded-lg"
                             />
                           </div>
 
-                          <!-- Email Field -->
                           <div class="space-y-2">
-                            <label for="form-email" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Business Email</label>
+                            <label for="form-company" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Business / Brand Name <span class="text-primary">*</span></label>
+                            <input
+                              type="text"
+                              id="form-company"
+                              required
+                              placeholder="e.g. Precision Engineering Ltd"
+                              class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3.5 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary mt-1.5 h-11 rounded-lg"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-5">
+                          <div class="space-y-2">
+                            <label for="form-email" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Business Email <span class="text-primary">*</span></label>
                             <input
                               type="email"
                               id="form-email"
                               required
                               placeholder="name@company.com"
-                              class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring mt-2 h-11 rounded-md"
+                              class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3.5 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary mt-1.5 h-11 rounded-lg"
                             />
                           </div>
-                        </div>
 
-                        <div class="grid sm:grid-cols-2 gap-5">
-                          <!-- Phone Field -->
                           <div class="space-y-2">
-                            <label for="form-phone" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Phone / WhatsApp</label>
+                            <label for="form-phone" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Phone / WhatsApp Number <span class="text-primary">*</span></label>
                             <input
                               type="tel"
                               id="form-phone"
                               required
-                              placeholder="+91 70386 12280"
-                              class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring mt-2 h-11 rounded-md"
-                            />
-                          </div>
-
-                          <!-- Company Name Field -->
-                          <div class="space-y-2">
-                            <label for="form-company" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Company Name / URL</label>
-                            <input
-                              type="text"
-                              id="form-company"
-                              placeholder="(optional)"
-                              class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring mt-2 h-11 rounded-md"
+                              placeholder="+91 98765 43210"
+                              class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3.5 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary mt-1.5 h-11 rounded-lg"
                             />
                           </div>
                         </div>
 
-                        <div class="grid sm:grid-cols-2 gap-5">
-                          <!-- Service Required Select -->
-                          <div class="space-y-2">
-                            <label for="form-service" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Service Required</label>
-                            <select
-                              id="form-service"
-                              class="flex w-full border border-input bg-background text-foreground px-3 py-1 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring mt-2 h-11 rounded-md"
-                            >
-                              <option value="Website Development">Website Development</option>
-                              <option value="Landing Pages">Landing Pages</option>
-                              <option value="Google Ads">Google Ads</option>
-                              <option value="Meta Ads">Meta Ads</option>
-                              <option value="SEO">SEO Solutions</option>
-                              <option value="GMB Optimization">Google My Business / GMB Optimization</option>
-                              <option value="Conversion Optimization">Conversion Optimization</option>
-                              <option value="Shopify Development">Shopify Development</option>
-                              <option value="WordPress Development">WordPress Development</option>
-                              <option value="Not sure yet">Not sure yet</option>
-                            </select>
-                          </div>
-
-                          <!-- Marketing budget selectivity -->
-                          <div class="space-y-2">
-                            <label for="form-budget" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Monthly Marketing Budget</label>
-                            <select
-                              id="form-budget"
-                              class="flex w-full border border-input bg-background text-foreground px-3 py-1 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring mt-2 h-11 rounded-md"
-                            >
-                              <option value="< ₹50k / month">&lt; ₹50k / month</option>
-                              <option value="₹50k – ₹1.5L / month" selected>₹50k – ₹1.5L / month</option>
-                              <option value="₹1.5L – ₹4L / month">₹1.5L – ₹4L / month</option>
-                              <option value="₹4L+ / month">₹4L+ / month</option>
-                              <option value="One-time project">One-time project</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <!-- Message Field text block -->
+                        <!-- Current Website (Optional) -->
                         <div class="space-y-2">
-                          <label for="form-message" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Tell us about your business goals</label>
+                          <label for="form-website" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Current Website URL (if any)</label>
+                          <input
+                            type="text"
+                            id="form-website"
+                            placeholder="yourbusiness.com"
+                            class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3.5 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary mt-1.5 h-11 rounded-lg"
+                          />
+                        </div>
+
+                        <!-- TACTILE MULTI-SELECT SERVICE CHIPS -->
+                        <div class="space-y-2.5 pt-1">
+                          <label class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground block">What services do you need? (Select all that apply)</label>
+                          <div class="flex flex-wrap gap-2" id="service-chips-container">
+                            <label class="chip-item">
+                              <input type="checkbox" name="services" value="Website Development" checked>
+                              <span>Website Development</span>
+                            </label>
+                            <label class="chip-item">
+                              <input type="checkbox" name="services" value="E-Commerce Store">
+                              <span>E-Commerce Store</span>
+                            </label>
+                            <label class="chip-item">
+                              <input type="checkbox" name="services" value="SEO & AI Search">
+                              <span>SEO &amp; AI Search</span>
+                            </label>
+                            <label class="chip-item">
+                              <input type="checkbox" name="services" value="Social Media & Reels">
+                              <span>Social Media &amp; Reels</span>
+                            </label>
+                            <label class="chip-item">
+                              <input type="checkbox" name="services" value="Google & Meta Ads">
+                              <span>Google &amp; Meta Ads</span>
+                            </label>
+                            <label class="chip-item">
+                              <input type="checkbox" name="services" value="Website Redesign">
+                              <span>Website Redesign</span>
+                            </label>
+                          </div>
+                        </div>
+
+                        <!-- BUDGET SELECTOR CHIPS -->
+                        <div class="space-y-2.5 pt-1">
+                          <label class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground block">Estimated Budget Range</label>
+                          <div class="flex flex-wrap gap-2" id="budget-chips-container">
+                            <label class="chip-item">
+                              <input type="radio" name="budget" value="Under ₹20,000">
+                              <span>Under ₹20,000</span>
+                            </label>
+                            <label class="chip-item">
+                              <input type="radio" name="budget" value="₹20,000 – ₹50,000" checked>
+                              <span>₹20,000 – ₹50,000</span>
+                            </label>
+                            <label class="chip-item">
+                              <input type="radio" name="budget" value="₹50,000 – ₹1,00,000">
+                              <span>₹50,000 – ₹1,00,000</span>
+                            </label>
+                            <label class="chip-item">
+                              <input type="radio" name="budget" value="₹1,00,000+ Enterprise">
+                              <span>₹1,00,000+ Enterprise</span>
+                            </label>
+                          </div>
+                        </div>
+
+                        <!-- Project Goals / Notes -->
+                        <div class="space-y-2 pt-1">
+                          <label for="form-message" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Project Details &amp; Target Timeline</label>
                           <textarea
                             id="form-message"
-                            required
-                            rows="4"
-                            placeholder="Where are you stuck? Describe the main target metrics you want to optimize."
-                            class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring mt-2 min-h-[120px] rounded-md"
+                            rows="3"
+                            placeholder="Tell us about your target launch date, primary competitors, or specific features you need..."
+                            class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3.5 py-2.5 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary mt-1.5 min-h-[90px] rounded-lg"
                           ></textarea>
                         </div>
 
-                        <!-- CTAs Submit -->
-                        <div class="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center pt-2">
+                        <!-- Action Submit & Direct Alternative -->
+                        <div class="space-y-3.5 pt-2">
                           <button
                             type="submit"
-                            class="inline-flex items-center justify-center gap-1.5 whitespace-nowrap text-sm bg-emerald-600 hover:bg-emerald-700 text-white shadow-md hover:shadow-lg hover:shadow-emerald-600/25 active:scale-[0.98] h-12 rounded-lg font-semibold px-7 transition-all duration-200 cursor-pointer"
+                            id="submit-proposal-btn"
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm bg-primary hover:bg-emerald-700 text-white shadow-md hover:shadow-lg hover:shadow-emerald-600/25 active:scale-[0.98] h-12 rounded-lg font-semibold px-8 w-full transition-all duration-200 cursor-pointer"
                           >
-                            Send consultation request
-                            <i data-lucide="arrow-up-right" class="h-5 w-5 ml-1.5"></i>
+                            <span>Get My Free Proposal &amp; Strategy Call</span>
+                            <i data-lucide="arrow-right" class="h-4 w-4"></i>
                           </button>
-                          <span class="text-[11px] text-muted-foreground sm:ml-2">
-                            We respond within 1 business day. Your details stay public-safe.
-                          </span>
+                          
+                          <p class="text-xs text-muted-foreground text-center">
+                            Prefer to talk right now? <a href="tel:+918788823182" class="text-primary font-semibold hover:underline">Call +91 87888 23182</a> or <a href="https://wa.me/918788823182?text=Hi%20Inrank%2C%20I'd%20like%20to%20discuss%20a%20website%20and%20growth%20plan." target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-semibold hover:underline">Chat on WhatsApp</a>. 🔒 Your business details are strictly protected under NDA.
+                          </p>
                         </div>
 
                       </form>
@@ -2553,7 +3187,7 @@
                     <circle cx="4" cy="4" r="2"></circle>
                   </svg>
                 </a>
-                <a href="https://wa.me/917038612280" target="_blank" rel="noopener noreferrer" class="h-11 w-11 rounded-lg border border-border bg-white dark:bg-card text-foreground flex items-center justify-center hover:bg-emerald-600 hover:text-white hover:border-emerald-600 shadow-sm active:scale-95 transition-all duration-200" aria-label="WhatsApp link">
+                <a href="https://wa.me/918788823182" target="_blank" rel="noopener noreferrer" class="h-11 w-11 rounded-lg border border-border bg-white dark:bg-card text-foreground flex items-center justify-center hover:bg-emerald-600 hover:text-white hover:border-emerald-600 shadow-sm active:scale-95 transition-all duration-200" aria-label="WhatsApp link">
                   <svg class="h-5 w-5 fill-current text-inherit" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
                   </svg>
@@ -2601,7 +3235,7 @@
               <div class="text-xs uppercase tracking-[0.2em] font-semibold text-muted-foreground mb-4">Get in touch</div>
               <ul class="space-y-2.5 text-sm">
                 <li><a href="mailto:hello@inranktech.com" class="text-muted-foreground hover:text-primary transition-colors block overflow-hidden text-ellipsis">hello@inranktech.com</a></li>
-                <li><a href="tel:+917038612280" class="text-muted-foreground hover:text-primary transition-colors">+91 70386 12280</a></li>
+                <li><a href="tel:+918788823182" class="text-muted-foreground hover:text-primary transition-colors">+91 87888 23182</a></li>
                 <li class="text-muted-foreground leading-normal">
                   Pune, Maharashtra<br>
                   India (Serving Global Brands)
@@ -2632,7 +3266,7 @@
 
       <!-- WHATSAPP FAB BUTTON BLOCK -->
       <a
-        href="https://wa.me/917038612280?text=Hi%20Inrank%20Technologies%2C%20I'd%20like%20to%20discuss%20a%20project."
+        href="https://wa.me/918788823182?text=Hi%20Inrank%20Technologies%2C%20I'd%20like%20to%20discuss%20a%20project."
         target="_blank"
         rel="noopener noreferrer"
         class="fixed z-40 bottom-6 right-6 sm:bottom-8 sm:right-8 h-14 w-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg hover:scale-105 transition-transform"
@@ -2647,7 +3281,7 @@
       <!-- MOBILE BOTTOM STICKY CTA BAR BANNER (Hidden on desktop) -->
       <div class="fixed sm:hidden bottom-0 inset-x-0 z-40 border-t border-border bg-background/90 backdrop-blur-md p-3 grid grid-cols-2 gap-2 shadow-lg">
         <a
-          href="https://wa.me/917038612280"
+          href="https://wa.me/918788823182"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center justify-center gap-1.5 h-11 rounded-md border border-border bg-card text-sm font-semibold text-foreground cursor-pointer"
@@ -2762,5 +3396,23 @@
         setupTiltEvents();
       });
     </script>
-  </body>
+  
+  <!-- STICKY MOBILE CONVERSION BAR (Visible on Mobile only) -->
+  <div class="block md:hidden fixed bottom-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-t border-border px-4 py-2.5 shadow-2xl">
+    <div class="flex items-center gap-2.5">
+      <a href="tel:+918788823182" class="flex-1 inline-flex items-center justify-center gap-2 h-11 rounded-lg bg-card border border-border text-foreground font-semibold text-xs shadow-sm hover:bg-secondary transition-colors">
+        <i data-lucide="phone" class="h-4 w-4 text-primary"></i>
+        <span>Call Desk</span>
+      </a>
+      <a href="https://wa.me/918788823182?text=Hi%20Inrank%2C%20I%20visited%20your%20website%20and%20would%20like%20a%20free%20consultation." target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 h-11 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-md transition-colors">
+        <i data-lucide="message-circle" class="h-4 w-4"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="#contact" class="inline-flex items-center justify-center h-11 px-3.5 rounded-lg bg-primary text-white text-xs font-semibold shadow-sm">
+        Quote
+      </a>
+    </div>
+  </div>
+
+</body>
 </html>

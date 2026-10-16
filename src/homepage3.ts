@@ -121,9 +121,9 @@ export function renderHomepage3View(): void {
                   <span>View Our Work (Case Studies)</span>
                   <i data-lucide="sparkles" class="h-4 w-4 text-[#00b755]"></i>
                 </a>
-                <a href="https://wa.me/917038612280?text=Hi%20Inrank%20Team!%20I%20am%20exploring%20Homepage-3%20(Creative%20Craft%20Edition)%20and%20would%20love%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono font-bold text-stone-700 hover:text-black py-2 px-3 border border-stone-200 bg-stone-50 rounded">
+                <a href="https://wa.me/918788823182?text=Hi%20Inrank%20Team!%20I%20am%20exploring%20Homepage-3%20(Creative%20Craft%20Edition)%20and%20would%20love%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono font-bold text-stone-700 hover:text-black py-2 px-3 border border-stone-200 bg-stone-50 rounded">
                   <i data-lucide="message-circle" class="h-4 w-4 text-[#00b755]"></i>
-                  <span>WhatsApp Senior Desk: +91 70386 12280</span>
+                  <span>WhatsApp Senior Desk: +91 87888 23182</span>
                 </a>
               </div>
 
@@ -909,7 +909,7 @@ export function renderHomepage3View(): void {
               </h2>
             </div>
             <div class="space-y-1 text-right sm:text-right font-mono text-xs">
-              <p class="text-stone-400">Direct Partner Line: <a href="tel:+917038612280" class="text-[#00b755] hover:underline font-bold">+91 70386 12280</a></p>
+              <p class="text-stone-400">Direct Partner Line: <a href="tel:+918788823182" class="text-[#00b755] hover:underline font-bold">+91 87888 23182</a></p>
               <p class="text-stone-400">Official Studio Email: <a href="mailto:inranktech@gmail.com" class="text-[#00b755] hover:underline font-bold">inranktech@gmail.com</a></p>
             </div>
           </div>
@@ -928,7 +928,7 @@ export function renderHomepage3View(): void {
                 <p>Baner High Street, Baner Road,<br/>Pune, Maharashtra 411045, India.</p>
               </div>
               <div class="pt-3 border-t border-stone-800 text-xs font-mono text-stone-400 space-y-1">
-                <div><span class="text-stone-500">Business:</span> <a href="tel:+917038612280" class="text-white hover:text-[#00b755]">+91 70386 12280</a></div>
+                <div><span class="text-stone-500">Business:</span> <a href="tel:+918788823182" class="text-white hover:text-[#00b755]">+91 87888 23182</a></div>
                 <div><span class="text-stone-500">Hours:</span> Mon - Sat, 9:30 AM - 7:30 PM IST</div>
               </div>
             </div>
@@ -1107,7 +1107,7 @@ function bindHomepage3Events(): void {
           submitBtn.textContent = "Brief Successfully Submitted!";
 
           // Auto-trigger WhatsApp dispatch
-          const waUrl = `https://wa.me/917038612280?text=${encodeURIComponent(
+          const waUrl = `https://wa.me/918788823182?text=${encodeURIComponent(
             `Hi Inrank Studio Team! I am ${name} from ${url}. I submitted a project brief on Homepage-3 for "${selectedGoal}". Let's discuss!`
           )}`;
 

@@ -261,7 +261,7 @@ Inrank Technologies is a premium, performance-first digital growth agency. We sp
 ## Contact & Location
 - San Francisco, California, US (with global remote teams).
 - Email: inranktech@gmail.com
-- Phone/WhatsApp: +91 70386 12280
+- Phone/WhatsApp: +91 87888 23182
 `);
 });
 app.get(["/homepage-2", "/homepage-2.html"], (req, res) => {
@@ -292,6 +292,50 @@ app.get(["/homepage-3", "/homepage-3.html"], (req, res) => {
   if (fs.existsSync(distIndex)) {
     return res.sendFile(distIndex);
   }
+  return res.sendFile(path.join(process.cwd(), "index.html"));
+});
+app.get(["/pricing", "/pricing.html"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "pricing.html");
+  const localPage = path.join(process.cwd(), "pricing.html");
+  if (fs.existsSync(distPage)) {
+    return res.sendFile(distPage);
+  }
+  if (fs.existsSync(localPage)) {
+    return res.sendFile(localPage);
+  }
+  const distIndex = path.join(process.cwd(), "dist", "index.html");
+  if (fs.existsSync(distIndex)) {
+    return res.sendFile(distIndex);
+  }
+  return res.sendFile(path.join(process.cwd(), "index.html"));
+});
+app.get(["/contact", "/contact.html"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "contact.html");
+  const localPage = path.join(process.cwd(), "contact.html");
+  if (fs.existsSync(distPage)) {
+    return res.sendFile(distPage);
+  }
+  if (fs.existsSync(localPage)) {
+    return res.sendFile(localPage);
+  }
+  const distIndex = path.join(process.cwd(), "dist", "index.html");
+  if (fs.existsSync(distIndex)) {
+    return res.sendFile(distIndex);
+  }
+  return res.sendFile(path.join(process.cwd(), "index.html"));
+});
+app.get(["/website-design-company-in-pune", "/website-design-company-in-pune.html"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "website-design-company-in-pune.html");
+  const localPage = path.join(process.cwd(), "website-design-company-in-pune.html");
+  if (fs.existsSync(distPage)) return res.sendFile(distPage);
+  if (fs.existsSync(localPage)) return res.sendFile(localPage);
+  return res.sendFile(path.join(process.cwd(), "index.html"));
+});
+app.get(["/digital-marketing-agency-in-pune", "/digital-marketing-agency-in-pune.html"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "digital-marketing-agency-in-pune.html");
+  const localPage = path.join(process.cwd(), "digital-marketing-agency-in-pune.html");
+  if (fs.existsSync(distPage)) return res.sendFile(distPage);
+  if (fs.existsSync(localPage)) return res.sendFile(localPage);
   return res.sendFile(path.join(process.cwd(), "index.html"));
 });
 async function startServer() {

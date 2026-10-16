@@ -726,3 +726,70 @@ input[type="range"].adant-slider::-webkit-slider-thumb:hover {
 }
 
 
+
+
+/* ==========================================================================
+   Tactile Multi-Select Chips & Pricing UI System
+   ========================================================================== */
+.chip-item {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.chip-item input[type="checkbox"],
+.chip-item input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.chip-item span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1.05rem;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border: 1px solid var(--color-border, #e2e8f0);
+  background: var(--color-card, #ffffff);
+  color: var(--color-foreground, #0f172a);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.chip-item:hover span {
+  border-color: #10b981;
+  color: #047857;
+}
+
+.chip-item input:checked + span {
+  background: #047857 !important;
+  color: #ffffff !important;
+  border-color: #047857 !important;
+  box-shadow: 0 4px 12px rgba(4, 120, 87, 0.25) !important;
+  transform: translateY(-1px);
+  font-weight: 600;
+}
+
+/* Pricing Switcher Tabs */
+.pricing-tab-btn {
+  transition: all 0.2s ease;
+}
+
+.pricing-tab-btn.active {
+  background: #009d49 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 157, 73, 0.3) !important;
+}
+
+/* Mobile Sticky Bar Safe Area */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 64px;
+  }
+}

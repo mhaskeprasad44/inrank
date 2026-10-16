@@ -947,7 +947,7 @@ export function renderHomepage2View() {
                 <li class="flex items-center gap-2"><i data-lucide="check" class="h-4 w-4 text-emerald-500"></i> Dedicated Growth Engineering Lead On-Call</li>
               </ul>
             </div>
-            <a href="https://wa.me/917038612280?text=Hi%20Inrank,%20I%20am%20interested%20in%20Enterprise%20White-Label%20Growth%20Pod" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl border border-stone-300 text-stone-800 hover:bg-stone-900 hover:text-white font-bold text-xs text-center transition-all cursor-pointer">
+            <a href="https://wa.me/918788823182?text=Hi%20Inrank,%20I%20am%20interested%20in%20Enterprise%20White-Label%20Growth%20Pod" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl border border-stone-300 text-stone-800 hover:bg-stone-900 hover:text-white font-bold text-xs text-center transition-all cursor-pointer">
               Talk to Lead Engineer
             </a>
           </div>
@@ -1060,17 +1060,17 @@ export function renderHomepage2View() {
             <!-- Direct Contact links -->
             <div class="pt-4 flex flex-wrap gap-4">
               <a 
-                href="https://wa.me/917038612280?text=Hi%20Inrank,%20I%20want%20to%20discuss%20our%20advertising%20and%20growth%20roadmap" 
+                href="https://wa.me/918788823182?text=Hi%20Inrank,%20I%20want%20to%20discuss%20our%20advertising%20and%20growth%20roadmap" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs tracking-wide shadow-md transition-all cursor-pointer"
               >
                 <i data-lucide="message-circle" class="h-4 w-4"></i>
-                <span>WhatsApp Partner Desk (+91 70386 12280)</span>
+                <span>WhatsApp Partner Desk (+91 87888 23182)</span>
               </a>
 
               <a 
-                href="tel:+917038612280" 
+                href="tel:+918788823182" 
                 class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-stone-800 bg-stone-900 hover:bg-stone-800 text-stone-200 font-semibold text-xs tracking-wide transition-all cursor-pointer"
               >
                 <i data-lucide="phone" class="h-4 w-4 text-emerald-400"></i>
@@ -1406,7 +1406,7 @@ function initHomepage2Interactions(container: HTMLElement) {
 
         // Redirect to WhatsApp desk after short delay
         setTimeout(() => {
-          const waUrl = `https://wa.me/917038612280?text=${encodeURIComponent(
+          const waUrl = `https://wa.me/918788823182?text=${encodeURIComponent(
             `Hi Inrank team! I am ${name} from ${website}. I submitted a strategy audit request on Homepage-2 for ${goal}.`
           )}`;
           window.open(waUrl, "_blank");
