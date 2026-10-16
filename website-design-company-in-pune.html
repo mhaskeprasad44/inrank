@@ -174,56 +174,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
-  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-500 selection:text-white pb-20 md:pb-0">
+  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-600 selection:text-white pb-20 md:pb-0">
 
-    <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-border bg-background/80 backdrop-blur-md">
+    <!-- HEADER SECTION -->
+      <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-border bg-background/80 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-16 sm:h-20">
             
-            <!-- Site Identity Logo -->
+            <!-- Site Identity Logo (Official Inrank Logo Image) -->
             <a href="/" class="flex items-center gap-2.5 group">
-              <div class="h-9 w-9 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-400 text-slate-950 flex items-center justify-center font-black text-base shadow-sm group-hover:scale-105 transition-transform">
-                IN
-              </div>
+              <img src="/logo.png" class="h-8 w-8 sm:h-9 sm:w-9 object-contain group-hover:scale-105 transition-transform" alt="Inrank Technologies logo" />
               <div class="flex flex-col leading-none">
-                <span class="font-display font-bold text-[15px] tracking-tight">Inrank</span>
-                <span class="font-display font-medium text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Technologies</span>
+                <span class="font-display font-bold text-[15px] sm:text-[16px] tracking-tight text-foreground">Inrank</span>
+                <span class="font-display font-semibold text-[9px] uppercase tracking-[0.22em] text-emerald-600">Technologies</span>
               </div>
             </a>
 
-            <!-- Compact Desktop Navigation (6 Focused Links) -->
+            <!-- Compact Desktop Navigation (Root-Relative Links) -->
             <nav class="hidden md:flex items-center gap-6 lg:gap-8">
               
               <!-- Services with Compact Dropdown Panel -->
               <div class="relative group" id="services-nav-group">
-                <button id="services-dropdown-trigger" class="flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-foreground hover:text-amber-600 transition-colors py-2 focus:outline-none cursor-pointer">
+                <button id="services-dropdown-trigger" class="flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors py-2 focus:outline-none cursor-pointer">
                   <span>Services</span>
                   <i data-lucide="chevron-down" id="services-dropdown-chevron" class="h-4 w-4 text-muted-foreground transition-transform duration-200 group-hover:rotate-180"></i>
                 </button>
                 
                 <!-- Compact 4-Pillar Dropdown Menu -->
-                <div id="services-dropdown-menu" class="fixed md:absolute left-1/2 -translate-x-1/2 top-16 md:top-full md:pt-2 w-[94vw] md:w-[720px] max-w-4xl opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                <div id="services-dropdown-menu" class="fixed md:absolute left-1/2 -translate-x-1/2 top-16 md:top-full md:pt-2 w-[94vw] md:w-[740px] max-w-4xl opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
                   <div class="rounded-2xl border border-border bg-white dark:bg-zinc-950 p-6 shadow-2xl">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-left">
                       
                       <!-- Pillar 1: Web & E-Commerce -->
                       <div class="space-y-1.5">
-                        <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-600 pb-1 border-b border-border/50">
+                        <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600 pb-1 border-b border-border/50">
                           <i data-lucide="code-xml" class="w-4 h-4"></i>
                           <span>Web &amp; E-Commerce</span>
                         </div>
                         <div class="space-y-0.5">
-                          <a href="#/service/website-development" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <a href="/#/service/website-development" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
                             <div class="text-xs font-bold text-foreground">Custom Website Development</div>
                             <div class="text-[11px] text-muted-foreground">High-speed React/Vite/HTML5 websites</div>
                           </a>
-                          <a href="#/service/shopify-development" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <a href="/#/service/shopify-development" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
                             <div class="text-xs font-bold text-foreground">Shopify &amp; E-Commerce Stores</div>
                             <div class="text-[11px] text-muted-foreground">0% transaction commission, WhatsApp cart</div>
                           </a>
-                          <a href="#/service/wordpress-development" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <a href="/#/service/wordpress-development" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
                             <div class="text-xs font-bold text-foreground">WordPress Development</div>
                             <div class="text-[11px] text-muted-foreground">Custom themes &amp; speed optimization</div>
+                          </a>
+                          <a href="/website-design-company-in-pune.html" class="block p-2 rounded-lg bg-emerald-50/50 dark:bg-emerald-950/20 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 transition-colors border border-emerald-100 dark:border-emerald-900/30">
+                            <div class="text-xs font-bold text-emerald-700 dark:text-emerald-400 flex items-center justify-between">
+                              <span>Web Designing in Pune (Local Hub)</span>
+                              <span class="text-[9px] uppercase px-1.5 py-0.2 bg-emerald-600 text-white rounded font-bold">Pune</span>
+                            </div>
+                            <div class="text-[11px] text-muted-foreground">Fixed pricing, 5-7 days turnaround</div>
                           </a>
                         </div>
                       </div>
@@ -235,17 +241,21 @@
                           <span>AI Search &amp; SEO</span>
                         </div>
                         <div class="space-y-0.5">
-                          <a href="#/service/seo" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <a href="/#/service/seo" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
                             <div class="text-xs font-bold text-foreground">Local SEO &amp; Google Rankings</div>
                             <div class="text-[11px] text-muted-foreground">Top Google 3-Pack rankings in Pune</div>
                           </a>
-                          <a href="#/service/geo-seo-agency" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <a href="/#/service/geo-seo-agency" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
                             <div class="text-xs font-bold text-foreground">Generative Engine Optimization (GEO)</div>
                             <div class="text-[11px] text-muted-foreground">Get cited in ChatGPT &amp; AI Overviews</div>
                           </a>
-                          <a href="#/service/gmb-optimization" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <a href="/#/service/gmb-optimization" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
                             <div class="text-xs font-bold text-foreground">Google My Business (GMB)</div>
                             <div class="text-[11px] text-muted-foreground">Direct customer calls &amp; inquiries</div>
+                          </a>
+                          <a href="/#/service/backlink-building" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                            <div class="text-xs font-bold text-foreground">Backlink &amp; Authority Building</div>
+                            <div class="text-[11px] text-muted-foreground">High DA contextual editorial links</div>
                           </a>
                         </div>
                       </div>
@@ -257,13 +267,24 @@
                           <span>Paid Ads &amp; Growth</span>
                         </div>
                         <div class="space-y-0.5">
-                          <a href="#/service/google-ads" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <a href="/#/service/google-ads" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
                             <div class="text-xs font-bold text-foreground">Google Ads Management (PPC)</div>
                             <div class="text-[11px] text-muted-foreground">High-ROAS search &amp; Performance Max</div>
                           </a>
-                          <a href="#/service/meta-ads" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <a href="/#/service/meta-ads" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
                             <div class="text-xs font-bold text-foreground">Meta &amp; Instagram Ads Funnels</div>
                             <div class="text-[11px] text-muted-foreground">Laser-targeted customer acquisition</div>
+                          </a>
+                          <a href="/#/service/social-media-marketing" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                            <div class="text-xs font-bold text-foreground">Social Media Marketing</div>
+                            <div class="text-[11px] text-muted-foreground">Viral reels &amp; organic brand authority</div>
+                          </a>
+                          <a href="/digital-marketing-agency-in-pune.html" class="block p-2 rounded-lg bg-indigo-50/50 dark:bg-indigo-950/20 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 transition-colors border border-indigo-100 dark:border-indigo-900/30">
+                            <div class="text-xs font-bold text-indigo-700 dark:text-indigo-400 flex items-center justify-between">
+                              <span>Digital Marketing in Pune (Local Hub)</span>
+                              <span class="text-[9px] uppercase px-1.5 py-0.2 bg-indigo-600 text-white rounded font-bold">Pune</span>
+                            </div>
+                            <div class="text-[11px] text-muted-foreground">Multi-channel revenue generation</div>
                           </a>
                         </div>
                       </div>
@@ -275,13 +296,21 @@
                           <span>Brand &amp; Creative</span>
                         </div>
                         <div class="space-y-0.5">
-                          <a href="#/service/logo-design" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <a href="/#/service/logo-design" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
                             <div class="text-xs font-bold text-foreground">Corporate Logo &amp; Identity</div>
                             <div class="text-[11px] text-muted-foreground">Trademark-ready vector brand kits</div>
                           </a>
-                          <a href="#/service/brochure-designing" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <a href="/#/service/brand-name" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                            <div class="text-xs font-bold text-foreground">Brand Strategy &amp; Naming</div>
+                            <div class="text-[11px] text-muted-foreground">Linguistic checks &amp; .com acquisition</div>
+                          </a>
+                          <a href="/#/service/brochure-designing" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
                             <div class="text-xs font-bold text-foreground">Brochure &amp; Sales Collaterals</div>
                             <div class="text-[11px] text-muted-foreground">Corporate profiles &amp; catalogues</div>
+                          </a>
+                          <a href="/#/service/conversion-optimization" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                            <div class="text-xs font-bold text-foreground">Conversion Rate Optimization (CRO)</div>
+                            <div class="text-[11px] text-muted-foreground">A/B tested UX &amp; lead funnels</div>
                           </a>
                         </div>
                       </div>
@@ -291,7 +320,7 @@
                     <!-- Bottom strip -->
                     <div class="mt-4 pt-3 border-t border-border/60 flex items-center justify-between text-xs text-muted-foreground">
                       <span><strong>27 Growth Disciplines</strong> · 365 Days Support</span>
-                      <a href="#/services" class="font-bold text-amber-600 hover:text-amber-500 inline-flex items-center gap-1">
+                      <a href="/#/services" class="font-bold text-emerald-600 hover:text-emerald-500 inline-flex items-center gap-1">
                         <span>Explore Complete 27 Services Directory</span>
                         <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
                       </a>
@@ -300,43 +329,43 @@
                 </div>
               </div>
 
-              <!-- Pricing with Highlight Badge -->
-              <a href="/pricing.html" class="flex items-center gap-1.5 text-sm font-bold text-foreground hover:text-amber-600 transition-colors">
+              <!-- Pricing with Inrank Brand Highlight Badge -->
+              <a href="/pricing.html" class="flex items-center gap-1.5 text-sm font-bold text-foreground hover:text-emerald-600 transition-colors">
                 <span>Pricing</span>
-                <span class="px-1.5 py-0.5 rounded text-[10px] font-black bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300">from ₹11k</span>
+                <span class="px-1.5 py-0.5 rounded text-[10px] font-black bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">from ₹11k</span>
               </a>
 
               <!-- Results / Work -->
-              <a href="#results" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-amber-600 transition-colors">Results</a>
+              <a href="/#results" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors">Results</a>
 
               <!-- About Dropdown -->
               <div class="relative group" id="about-nav-group">
-                <button class="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground hover:text-amber-600 transition-colors py-2 focus:outline-none cursor-pointer">
+                <button class="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors py-2 focus:outline-none cursor-pointer">
                   <span>About</span>
                   <i data-lucide="chevron-down" class="h-4 w-4 text-muted-foreground transition-transform duration-200 group-hover:rotate-180"></i>
                 </button>
                 <div class="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-64 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
                   <div class="rounded-xl border border-border bg-white dark:bg-zinc-950 p-2 shadow-xl space-y-1 text-xs">
-                    <a href="#/about-us" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 font-semibold text-foreground">About Inrank Overview</a>
+                    <a href="/#/about-us" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 font-semibold text-foreground">About Inrank Overview</a>
                     <a href="/website-design-company-in-pune.html" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 text-muted-foreground hover:text-foreground">&bull; Web Designing in Pune</a>
                     <a href="/digital-marketing-agency-in-pune.html" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 text-muted-foreground hover:text-foreground">&bull; Digital Marketing in Pune</a>
-                    <a href="#faq" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 text-muted-foreground hover:text-foreground">FAQ Directory</a>
+                    <a href="/#faq" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 text-muted-foreground hover:text-foreground">FAQ Directory</a>
                   </div>
                 </div>
               </div>
 
               <!-- Blog -->
-              <a href="#/blog" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-amber-600 transition-colors font-semibold text-primary">Blog</a>
+              <a href="/#/blog" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors font-semibold text-primary">Blog</a>
 
               <!-- Contact -->
-              <a href="/contact.html" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-amber-600 transition-colors">Contact</a>
+              <a href="/contact.html" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors">Contact</a>
             </nav>
 
             <!-- Right Action CTA Buttons -->
             <div class="flex items-center gap-2 sm:gap-3">
-              <!-- Call Link -->
-              <a href="tel:+918788823182" class="hidden lg:inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-200 hover:text-amber-600 transition-colors">
-                <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-500"></i>
+              <!-- Direct Call Link -->
+              <a href="tel:+918788823182" class="hidden lg:inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-200 hover:text-emerald-600 transition-colors">
+                <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-600"></i>
                 <span>+91 87888 23182</span>
               </a>
 
@@ -345,8 +374,8 @@
                 <i data-lucide="message-circle" class="w-4 h-4"></i>
               </a>
 
-              <!-- Primary CTA Button -->
-              <a href="/contact.html" class="inline-flex h-9 sm:h-10 items-center justify-center font-bold text-xs bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-xl px-4 sm:px-5 transition-all shadow-sm shadow-amber-500/20 active:scale-[0.98]">
+              <!-- Primary CTA Button (Emerald) -->
+              <a href="/contact.html" class="inline-flex h-9 sm:h-10 items-center justify-center font-bold text-xs bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl px-4 sm:px-5 transition-all shadow-sm shadow-emerald-600/20 active:scale-[0.98]">
                 Get Free Audit
               </a>
 
@@ -365,15 +394,15 @@
           <div class="space-y-1 text-sm font-semibold">
             <a href="/" class="block py-2.5 px-3 rounded-lg hover:bg-muted text-foreground">Home</a>
             
-            <a href="#/services" class="flex items-center justify-between py-2.5 px-3 rounded-lg hover:bg-muted text-foreground">
+            <a href="/#/services" class="flex items-center justify-between py-2.5 px-3 rounded-lg hover:bg-muted text-foreground">
               <span>Services Directory (27 Services)</span>
               <i data-lucide="chevron-right" class="w-4 h-4 text-muted-foreground"></i>
             </a>
 
-            <!-- Pricing with Highlight Badge -->
-            <a href="/pricing.html" class="flex items-center justify-between py-2.5 px-3 rounded-lg bg-amber-50/60 dark:bg-amber-950/20 text-amber-700 dark:text-amber-400 font-bold">
+            <!-- Pricing with Emerald Highlight Badge -->
+            <a href="/pricing.html" class="flex items-center justify-between py-2.5 px-3 rounded-lg bg-emerald-50/60 dark:bg-emerald-950/20 text-emerald-800 dark:text-emerald-400 font-bold">
               <span>Pricing Packages</span>
-              <span class="text-xs bg-amber-500 text-slate-950 px-2 py-0.5 rounded font-black">from ₹11,999</span>
+              <span class="text-xs bg-emerald-600 text-white px-2 py-0.5 rounded font-black">from ₹11,999</span>
             </a>
 
             <!-- Local Pune Hubs -->
@@ -382,16 +411,16 @@
               <a href="/digital-marketing-agency-in-pune.html" class="block py-1.5 text-muted-foreground hover:text-foreground">&bull; Digital Marketing in Pune</a>
             </div>
 
-            <a href="#results" class="block py-2.5 px-3 rounded-lg hover:bg-muted text-foreground">Results &amp; Case Studies</a>
-            <a href="#/about-us" class="block py-2.5 px-3 rounded-lg hover:bg-muted text-foreground">About Inrank</a>
-            <a href="#/blog" class="block py-2.5 px-3 rounded-lg hover:bg-muted text-foreground">Growth Blog</a>
+            <a href="/#results" class="block py-2.5 px-3 rounded-lg hover:bg-muted text-foreground">Results &amp; Case Studies</a>
+            <a href="/#/about-us" class="block py-2.5 px-3 rounded-lg hover:bg-muted text-foreground">About Inrank</a>
+            <a href="/#/blog" class="block py-2.5 px-3 rounded-lg hover:bg-muted text-foreground">Growth Blog</a>
             <a href="/contact.html" class="block py-2.5 px-3 rounded-lg hover:bg-muted text-foreground">Contact Us</a>
           </div>
 
           <!-- Quick Actions -->
           <div class="pt-3 border-t border-border/60 grid grid-cols-2 gap-2">
             <a href="tel:+918788823182" class="flex items-center justify-center gap-1.5 py-2.5 rounded-xl border border-slate-200 dark:border-zinc-800 text-xs font-bold text-slate-800 dark:text-slate-200 hover:bg-muted transition-all">
-              <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-500"></i>
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-600"></i>
               <span>Call Now</span>
             </a>
             <a href="https://wa.me/918788823182" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 py-2.5 rounded-xl bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-500 transition-all shadow-sm">
@@ -406,32 +435,32 @@
       <!-- Breadcrumb Bar -->
       <nav class="bg-slate-900 border-b border-slate-800 pt-24 pb-3 px-4 sm:px-6 lg:px-8 text-xs text-slate-400">
         <div class="max-w-7xl mx-auto flex items-center gap-2">
-          <a href="/" class="hover:text-amber-400 transition-colors">Home</a>
+          <a href="/" class="hover:text-emerald-400 transition-colors">Home</a>
           <span>/</span>
-          <a href="/pricing.html" class="hover:text-amber-400 transition-colors">Pricing</a>
+          <a href="/pricing.html" class="hover:text-emerald-400 transition-colors">Pricing</a>
           <span>/</span>
-          <span class="text-amber-400 font-medium">Web Designing Company in Pune</span>
+          <span class="text-emerald-400 font-medium">Web Designing Company in Pune</span>
         </div>
       </nav>
 
       <!-- Hero Section -->
       <section class="relative py-20 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800 text-white overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div class="max-w-3xl">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-600/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-6">
               <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
               #1 Rated Web Design Company in Pune
             </div>
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-              Web Designing Company in Pune That <span class="bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">Turns Visitors Into Enquiries</span>
+              Web Designing Company in Pune That <span class="bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">Turns Visitors Into Enquiries</span>
             </h1>
             <p class="text-lg text-slate-300 leading-relaxed mb-8">
               Fast, high-converting, mobile-responsive websites engineered for Pune businesses, startups, and manufacturers. Transparent packages starting from <strong>₹11,999</strong> with rapid 5-7 day delivery, full SEO architecture, and 365 days of free support.
             </p>
 
             <div class="flex flex-wrap items-center gap-4 mb-10">
-              <a href="#consult-form" class="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-sm transition-all shadow-xl shadow-amber-500/25">
+              <a href="#consult-form" class="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold text-sm transition-all shadow-xl shadow-emerald-600/25">
                 <span>Get Free Website Quote</span>
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
               </a>
@@ -440,7 +469,7 @@
                 WhatsApp (+91 87888 23182)
               </a>
               <a href="tel:+918788823182" class="inline-flex items-center gap-2 px-5 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-sm border border-slate-700 transition-all">
-                <i data-lucide="phone-call" class="w-4 h-4 text-amber-400"></i>
+                <i data-lucide="phone-call" class="w-4 h-4 text-emerald-400"></i>
                 Call Us
               </a>
             </div>
@@ -448,7 +477,7 @@
             <!-- Trust Bar Pills -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-800 text-center">
               <div>
-                <div class="text-2xl font-black text-amber-400">200+</div>
+                <div class="text-2xl font-black text-emerald-400">200+</div>
                 <div class="text-xs text-slate-400 mt-0.5">Pune Sites Delivered</div>
               </div>
               <div>
@@ -470,13 +499,13 @@
 
       <!-- AI Overview Quick Answer Box -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 relative z-20">
-        <div class="bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent border border-amber-500/30 rounded-2xl p-6 bg-white shadow-lg">
+        <div class="bg-gradient-to-r from-emerald-500/10 via-emerald-500/5 to-transparent border border-emerald-500/30 rounded-2xl p-6 bg-white shadow-lg">
           <div class="flex items-start gap-4">
-            <div class="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-700 flex-shrink-0 mt-1">
-              <i data-lucide="bot" class="w-5 h-5 text-amber-600"></i>
+            <div class="w-10 h-10 rounded-xl bg-emerald-600/20 flex items-center justify-center text-emerald-700 flex-shrink-0 mt-1">
+              <i data-lucide="bot" class="w-5 h-5 text-emerald-600"></i>
             </div>
             <div>
-              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Quick Answer &bull; Pune Web Design Summary</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">Quick Answer &bull; Pune Web Design Summary</span>
               <h2 class="text-lg font-bold text-slate-900 mt-1.5">What makes Inrank the premier web designing company in Pune?</h2>
               <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
                 Unlike traditional agencies that hide pricing and take 6 to 8 weeks, <strong>Inrank Technologies</strong> delivers conversion-optimized, responsive websites in <strong>5 to 7 days starting from ₹11,999</strong>. Every site includes modern HTML5/Vite/React architecture, 95+ PageSpeed scores, Schema.org rich snippets, Google Business Profile integration, and 365 days of ongoing technical support.
@@ -489,49 +518,49 @@
       <!-- Pune Locality Coverage Section -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div class="text-center max-w-3xl mx-auto mb-12">
-          <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-md border border-amber-200">Local Presence &amp; IT Hubs</span>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-md border border-emerald-200">Local Presence &amp; IT Hubs</span>
           <h2 class="text-3xl font-extrabold text-slate-900 mt-3 tracking-tight">Serving Businesses Across All Pune Corridors</h2>
           <p class="text-slate-600 text-sm mt-2">Whether you are a B2B manufacturer in PCMC, a startup in Baner, or a clinic in Kothrud, we provide tailored digital web architecture.</p>
         </div>
 
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 text-center">
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-amber-400 hover:shadow-md transition-all">
+          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
             <div class="text-sm font-bold text-slate-900">Baner &amp; Balewadi</div>
             <p class="text-xs text-slate-500 mt-1">High Street &amp; D2C</p>
           </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-amber-400 hover:shadow-md transition-all">
+          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
             <div class="text-sm font-bold text-slate-900">Hinjewadi (Ph 1-3)</div>
             <p class="text-xs text-slate-500 mt-1">IT Parks &amp; SaaS</p>
           </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-amber-400 hover:shadow-md transition-all">
+          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
             <div class="text-sm font-bold text-slate-900">Wakad &amp; Pimple Saudagar</div>
             <p class="text-xs text-slate-500 mt-1">Retail &amp; Real Estate</p>
           </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-amber-400 hover:shadow-md transition-all">
+          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
             <div class="text-sm font-bold text-slate-900">Kharadi &amp; Viman Nagar</div>
             <p class="text-xs text-slate-500 mt-1">Corporate &amp; FinTech</p>
           </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-amber-400 hover:shadow-md transition-all">
+          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
             <div class="text-sm font-bold text-slate-900">Hadapsar &amp; Magarpatta</div>
             <p class="text-xs text-slate-500 mt-1">Cybercity Enterprises</p>
           </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-amber-400 hover:shadow-md transition-all">
+          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
             <div class="text-sm font-bold text-slate-900">Kothrud &amp; Karve Nagar</div>
             <p class="text-xs text-slate-500 mt-1">Healthcare &amp; Education</p>
           </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-amber-400 hover:shadow-md transition-all">
+          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
             <div class="text-sm font-bold text-slate-900">FC Road &amp; Shivaji Nagar</div>
             <p class="text-xs text-slate-500 mt-1">Our Central HQ</p>
           </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-amber-400 hover:shadow-md transition-all">
+          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
             <div class="text-sm font-bold text-slate-900">PCMC &amp; Bhosari</div>
             <p class="text-xs text-slate-500 mt-1">Industrial &amp; Engineering</p>
           </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-amber-400 hover:shadow-md transition-all">
+          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
             <div class="text-sm font-bold text-slate-900">Aundh &amp; Sangvi</div>
             <p class="text-xs text-slate-500 mt-1">Commercial Services</p>
           </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-amber-400 hover:shadow-md transition-all">
+          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
             <div class="text-sm font-bold text-slate-900">Camp &amp; Kalyani Nagar</div>
             <p class="text-xs text-slate-500 mt-1">Hospitality &amp; Luxury</p>
           </div>
@@ -563,7 +592,7 @@
                 <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Free Business Email (Google Workspace compatible)</li>
                 <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Direct Click-to-WhatsApp Integration</li>
                 <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Google Search Console &amp; Maps Indexing</li>
-                <li class="flex items-center gap-2 font-semibold text-slate-900"><i data-lucide="shield-check" class="w-4 h-4 text-amber-500"></i> 365 Days Extended Support</li>
+                <li class="flex items-center gap-2 font-semibold text-slate-900"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i> 365 Days Extended Support</li>
               </ul>
             </div>
             <a href="https://wa.me/918788823182?text=Hi%20Inrank,%20I%20want%20the%20Starter%20Launch%20Package%20(₹11,999)" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs text-center transition-all">
@@ -572,28 +601,28 @@
           </div>
 
           <!-- Tier 2 (Featured) -->
-          <div class="rounded-2xl p-6 border-2 border-amber-500 shadow-xl shadow-amber-500/10 flex flex-col justify-between relative bg-amber-50/20">
-            <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-amber-500 text-slate-950 font-black text-[10px] uppercase tracking-wider rounded-full">
+          <div class="rounded-2xl p-6 border-2 border-emerald-500 shadow-xl shadow-emerald-500/10 flex flex-col justify-between relative bg-emerald-50/20">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-emerald-600 text-white font-black text-[10px] uppercase tracking-wider rounded-full">
               Most Popular in Pune
             </div>
             <div>
               <div class="flex justify-between items-center mb-4">
-                <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Business Growth</span>
-                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-200/80 text-amber-900">6-8 Days</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Business Growth</span>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-200/80 text-emerald-900">6-8 Days</span>
               </div>
               <div class="text-3xl font-extrabold text-slate-900 mb-2">₹16,999 <span class="text-xs font-normal text-slate-500">one-time</span></div>
               <p class="text-xs text-slate-600 mb-6">Built for Pune manufacturers, clinics, real estate firms, and growing service brands.</p>
               
               <ul class="space-y-3 text-xs text-slate-700 mb-8">
-                <li class="flex items-center gap-2 font-semibold text-slate-900"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Up to 10 Richly Designed Pages</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Content Management System (CMS)</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Full On-Page SEO &amp; Schema.org Markup</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Google My Business (GMB) Optimization</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Dynamic Lead Capture Form with WhatsApp Routing</li>
-                <li class="flex items-center gap-2 font-semibold text-slate-900"><i data-lucide="shield-check" class="w-4 h-4 text-amber-600"></i> 365 Days Extended Support</li>
+                <li class="flex items-center gap-2 font-semibold text-slate-900"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Up to 10 Richly Designed Pages</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Content Management System (CMS)</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Full On-Page SEO &amp; Schema.org Markup</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Google My Business (GMB) Optimization</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Dynamic Lead Capture Form with WhatsApp Routing</li>
+                <li class="flex items-center gap-2 font-semibold text-slate-900"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i> 365 Days Extended Support</li>
               </ul>
             </div>
-            <a href="https://wa.me/918788823182?text=Hi%20Inrank,%20I%20want%20the%20Business%20Growth%20Package%20(₹16,999)" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs text-center transition-all shadow-md shadow-amber-500/20">
+            <a href="https://wa.me/918788823182?text=Hi%20Inrank,%20I%20want%20the%20Business%20Growth%20Package%20(₹16,999)" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-black text-xs text-center transition-all shadow-md shadow-emerald-600/20">
               Choose Business Growth
             </a>
           </div>
@@ -614,7 +643,7 @@
                 <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Direct WhatsApp 1-Click Order System</li>
                 <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> 0% Transaction Commission (Keep 100% Profits)</li>
                 <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Automated Order Confirmation Emails</li>
-                <li class="flex items-center gap-2 font-semibold text-slate-900"><i data-lucide="shield-check" class="w-4 h-4 text-amber-500"></i> 365 Days Extended Support</li>
+                <li class="flex items-center gap-2 font-semibold text-slate-900"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i> 365 Days Extended Support</li>
               </ul>
             </div>
             <a href="https://wa.me/918788823182?text=Hi%20Inrank,%20I%20want%20the%20E-Commerce%20Scale%20Package%20(₹21,999)" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs text-center transition-all">
@@ -627,7 +656,7 @@
       <!-- Why Inrank Outperforms Competitors -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div class="text-center max-w-3xl mx-auto mb-12">
-          <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-md border border-amber-200">The Honest Truth</span>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-md border border-emerald-200">The Honest Truth</span>
           <h2 class="text-3xl font-extrabold text-slate-900 mt-3 tracking-tight">How Inrank Compares Against Other Pune Agencies</h2>
         </div>
 
@@ -636,7 +665,7 @@
             <thead class="bg-slate-900 text-white text-[11px] uppercase tracking-wider">
               <tr>
                 <th class="p-4">Feature / Deliverable</th>
-                <th class="p-4 bg-amber-500 text-slate-950 font-black">Inrank Technologies</th>
+                <th class="p-4 bg-emerald-600 text-white font-black">Inrank Technologies</th>
                 <th class="p-4">Traditional Pune Agencies (e.g. Awrange)</th>
                 <th class="p-4">Freelance Developers</th>
               </tr>
@@ -644,31 +673,31 @@
             <tbody class="divide-y divide-slate-100 text-slate-700">
               <tr>
                 <td class="p-4 font-bold text-slate-900">Pricing Transparency</td>
-                <td class="p-4 bg-amber-50/50 font-bold text-emerald-700">100% Upfront from ₹11,999</td>
+                <td class="p-4 bg-emerald-50/50 font-bold text-emerald-700">100% Upfront from ₹11,999</td>
                 <td class="p-4 text-rose-600">Hidden / High Retainers (₹35k–₹60k+)</td>
-                <td class="p-4 text-amber-600">Variable / Unpredictable</td>
+                <td class="p-4 text-emerald-600">Variable / Unpredictable</td>
               </tr>
               <tr>
                 <td class="p-4 font-bold text-slate-900">Delivery Timeline</td>
-                <td class="p-4 bg-amber-50/50 font-bold text-slate-900">5 to 7 Days Guaranteed</td>
+                <td class="p-4 bg-emerald-50/50 font-bold text-slate-900">5 to 7 Days Guaranteed</td>
                 <td class="p-4 text-slate-500">4 to 8 Weeks</td>
                 <td class="p-4 text-slate-500">Often Delayed</td>
               </tr>
               <tr>
                 <td class="p-4 font-bold text-slate-900">Technical Post-Launch Support</td>
-                <td class="p-4 bg-amber-50/50 font-bold text-slate-900">365 Days Included Free</td>
+                <td class="p-4 bg-emerald-50/50 font-bold text-slate-900">365 Days Included Free</td>
                 <td class="p-4 text-slate-500">30 Days (Then Monthly Retainer)</td>
                 <td class="p-4 text-slate-500">Often Unavailable</td>
               </tr>
               <tr>
                 <td class="p-4 font-bold text-slate-900">Search &amp; Schema Engineering</td>
-                <td class="p-4 bg-amber-50/50 font-bold text-slate-900">Full JSON-LD LocalBusiness &amp; GEO</td>
+                <td class="p-4 bg-emerald-50/50 font-bold text-slate-900">Full JSON-LD LocalBusiness &amp; GEO</td>
                 <td class="p-4 text-slate-500">Extra Charge</td>
                 <td class="p-4 text-slate-500">Rarely Included</td>
               </tr>
               <tr>
                 <td class="p-4 font-bold text-slate-900">Communication Access</td>
-                <td class="p-4 bg-amber-50/50 font-bold text-slate-900">Direct WhatsApp with Senior Devs</td>
+                <td class="p-4 bg-emerald-50/50 font-bold text-slate-900">Direct WhatsApp with Senior Devs</td>
                 <td class="p-4 text-slate-500">Junior Account Executives</td>
                 <td class="p-4 text-slate-500">Inconsistent</td>
               </tr>
@@ -681,7 +710,7 @@
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="consult-form-section">
         <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
           <div class="max-w-2xl">
-            <span class="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-3 py-1 rounded border border-amber-500/20 inline-block mb-3">Instant Consultation</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-600/10 px-3 py-1 rounded border border-emerald-500/20 inline-block mb-3">Instant Consultation</span>
             <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-3">Ready to Build Your Website in Pune?</h2>
             <p class="text-slate-300 text-sm mb-8">Tell us what you need. We'll formulate a complete technical architecture and respond on WhatsApp within 15 minutes.</p>
           </div>
@@ -692,22 +721,22 @@
             <!-- Service Chips -->
             <div>
               <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2.5">
-                Select Your Requirement <span class="text-amber-400">*</span>
+                Select Your Requirement <span class="text-emerald-400">*</span>
               </label>
               <div class="flex flex-wrap gap-2" id="service-chips-container">
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-amber-400 hover:bg-slate-700 transition-all cursor-pointer active-chip" data-value="Custom Business Website (Pune)">
+                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer active-chip" data-value="Custom Business Website (Pune)">
                   Custom Business Website
                 </button>
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-amber-400 hover:bg-slate-700 transition-all cursor-pointer" data-value="E-Commerce Store Setup">
+                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer" data-value="E-Commerce Store Setup">
                   E-Commerce Store
                 </button>
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-amber-400 hover:bg-slate-700 transition-all cursor-pointer" data-value="Website Redesign &amp; Speed Boost">
+                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer" data-value="Website Redesign &amp; Speed Boost">
                   Website Redesign
                 </button>
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-amber-400 hover:bg-slate-700 transition-all cursor-pointer" data-value="Local SEO &amp; Google Maps">
+                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer" data-value="Local SEO &amp; Google Maps">
                   Local SEO &amp; Maps
                 </button>
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-amber-400 hover:bg-slate-700 transition-all cursor-pointer" data-value="GEO &amp; AI Citations">
+                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer" data-value="GEO &amp; AI Citations">
                   GEO &amp; AI Citations
                 </button>
               </div>
@@ -716,19 +745,19 @@
             <!-- Budget Chips -->
             <div>
               <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2.5">
-                Expected Budget <span class="text-amber-400">*</span>
+                Expected Budget <span class="text-emerald-400">*</span>
               </label>
               <div class="flex flex-wrap gap-2" id="budget-chips-container">
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-amber-400 hover:bg-slate-700 transition-all cursor-pointer" data-value="₹11,999 (Starter Launch)">
+                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer" data-value="₹11,999 (Starter Launch)">
                   ₹11,999 (Starter)
                 </button>
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-amber-400 hover:bg-slate-700 transition-all cursor-pointer active-chip" data-value="₹16,999 (Business Growth)">
+                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer active-chip" data-value="₹16,999 (Business Growth)">
                   ₹16,999 (Business Growth)
                 </button>
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-amber-400 hover:bg-slate-700 transition-all cursor-pointer" data-value="₹21,999 (E-Commerce Scale)">
+                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer" data-value="₹21,999 (E-Commerce Scale)">
                   ₹21,999 (E-Commerce)
                 </button>
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-amber-400 hover:bg-slate-700 transition-all cursor-pointer" data-value="Custom / Enterprise">
+                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer" data-value="Custom / Enterprise">
                   Custom / Enterprise
                 </button>
               </div>
@@ -738,26 +767,26 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label for="pune-name" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Your Name *</label>
-                <input type="text" id="pune-name" name="name" required placeholder="e.g. Rahul Sharma" class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-800/80 text-white text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-slate-800 transition-all" />
+                <input type="text" id="pune-name" name="name" required placeholder="e.g. Rahul Sharma" class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-800/80 text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-slate-800 transition-all" />
               </div>
               <div>
                 <label for="pune-phone" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">WhatsApp Number *</label>
-                <input type="tel" id="pune-phone" name="phone" required placeholder="e.g. +91 87888 23182" class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-800/80 text-white text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-slate-800 transition-all" />
+                <input type="tel" id="pune-phone" name="phone" required placeholder="e.g. +91 87888 23182" class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-800/80 text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-slate-800 transition-all" />
               </div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label for="pune-email" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Business Email *</label>
-                <input type="email" id="pune-email" name="email" required placeholder="e.g. rahul@company.com" class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-800/80 text-white text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-slate-800 transition-all" />
+                <input type="email" id="pune-email" name="email" required placeholder="e.g. rahul@company.com" class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-800/80 text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-slate-800 transition-all" />
               </div>
               <div>
                 <label for="pune-locality" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Pune Locality / Area</label>
-                <input type="text" id="pune-locality" name="locality" placeholder="e.g. Baner, Hinjewadi, Kharadi..." class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-800/80 text-white text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-slate-800 transition-all" />
+                <input type="text" id="pune-locality" name="locality" placeholder="e.g. Baner, Hinjewadi, Kharadi..." class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-800/80 text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-slate-800 transition-all" />
               </div>
             </div>
 
-            <button type="submit" id="consult-submit-btn" class="w-full py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-base transition-all shadow-xl shadow-amber-500/25 flex items-center justify-center gap-2 cursor-pointer">
+            <button type="submit" id="consult-submit-btn" class="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold text-base transition-all shadow-xl shadow-emerald-600/25 flex items-center justify-center gap-2 cursor-pointer">
               <span>Send Requirement &amp; Connect On WhatsApp</span>
               <i data-lucide="arrow-right" class="w-5 h-5"></i>
             </button>
@@ -768,7 +797,7 @@
       <!-- FAQs Section -->
       <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div class="text-center mb-10">
-          <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-md border border-amber-200">Got Questions?</span>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-md border border-emerald-200">Got Questions?</span>
           <h2 class="text-3xl font-extrabold text-slate-900 mt-2">Frequently Asked Questions</h2>
         </div>
 
@@ -857,13 +886,13 @@
             <div class="lg:col-span-3">
               <div class="text-xs uppercase tracking-[0.2em] font-semibold text-muted-foreground mb-4">Quick Links</div>
               <ul class="space-y-2.5 text-sm">
-                <li><a href="#services" class="text-muted-foreground hover:text-primary transition-colors">Services</a></li>
-                <li><a href="#process" class="text-muted-foreground hover:text-primary transition-colors">Process Map</a></li>
-                <li><a href="#industries" class="text-muted-foreground hover:text-primary transition-colors">Industries</a></li>
-                <li><a href="#/about-us" class="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
-                <li><a href="#/blog" class="text-muted-foreground hover:text-primary transition-colors font-semibold text-primary">Digital Growth Blog</a></li>
-                <li><a href="#faq" class="text-muted-foreground hover:text-primary transition-colors">FAQ Directory</a></li>
-                <li><a href="#contact" class="text-muted-foreground hover:text-primary transition-colors">Audit Consultation</a></li>
+                <li><a href="/#services" class="text-muted-foreground hover:text-primary transition-colors">Services</a></li>
+                <li><a href="/#process" class="text-muted-foreground hover:text-primary transition-colors">Process Map</a></li>
+                <li><a href="/#industries" class="text-muted-foreground hover:text-primary transition-colors">Industries</a></li>
+                <li><a href="/#/about-us" class="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
+                <li><a href="/#/blog" class="text-muted-foreground hover:text-primary transition-colors font-semibold text-primary">Digital Growth Blog</a></li>
+                <li><a href="/#faq" class="text-muted-foreground hover:text-primary transition-colors">FAQ Directory</a></li>
+                <li><a href="/contact.html" class="text-muted-foreground hover:text-primary transition-colors">Audit Consultation</a></li>
               </ul>
             </div>
 
@@ -871,15 +900,15 @@
             <div class="lg:col-span-2">
               <div class="text-xs uppercase tracking-[0.2em] font-semibold text-muted-foreground mb-4">Services</div>
               <ul class="space-y-2.5 text-sm">
-                <li><a href="#/service/website-development" class="text-muted-foreground hover:text-primary transition-colors">Website Development</a></li>
-                <li><a href="#/service/landing-pages" class="text-muted-foreground hover:text-primary transition-colors">Landing Pages</a></li>
-                <li><a href="#/service/google-ads" class="text-muted-foreground hover:text-primary transition-colors">Google Ads</a></li>
-                <li><a href="#/service/meta-ads" class="text-muted-foreground hover:text-primary transition-colors">Meta Ads</a></li>
-                <li><a href="#/service/seo" class="text-muted-foreground hover:text-primary transition-colors">SEO Solutions</a></li>
-                <li><a href="#/service/gmb-optimization" class="text-muted-foreground hover:text-primary transition-colors">GMB / Google Business Profile</a></li>
-                <li><a href="#/service/conversion-optimization" class="text-muted-foreground hover:text-primary transition-colors">Conversion optimization</a></li>
-                <li><a href="#/service/shopify-development" class="text-muted-foreground hover:text-primary transition-colors">Shopify setups</a></li>
-                <li><a href="#/service/wordpress-development" class="text-muted-foreground hover:text-primary transition-colors">Wordpress design</a></li>
+                <li><a href="/#/service/website-development" class="text-muted-foreground hover:text-primary transition-colors">Website Development</a></li>
+                <li><a href="/#/service/landing-pages" class="text-muted-foreground hover:text-primary transition-colors">Landing Pages</a></li>
+                <li><a href="/#/service/google-ads" class="text-muted-foreground hover:text-primary transition-colors">Google Ads</a></li>
+                <li><a href="/#/service/meta-ads" class="text-muted-foreground hover:text-primary transition-colors">Meta Ads</a></li>
+                <li><a href="/#/service/seo" class="text-muted-foreground hover:text-primary transition-colors">SEO Solutions</a></li>
+                <li><a href="/#/service/gmb-optimization" class="text-muted-foreground hover:text-primary transition-colors">GMB / Google Business Profile</a></li>
+                <li><a href="/#/service/conversion-optimization" class="text-muted-foreground hover:text-primary transition-colors">Conversion optimization</a></li>
+                <li><a href="/#/service/shopify-development" class="text-muted-foreground hover:text-primary transition-colors">Shopify setups</a></li>
+                <li><a href="/#/service/wordpress-development" class="text-muted-foreground hover:text-primary transition-colors">Wordpress design</a></li>
               </ul>
             </div>
 
