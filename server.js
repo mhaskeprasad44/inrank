@@ -8,8 +8,8 @@ import dotenv from "dotenv";
 dotenv.config();
 var app = express();
 var PORT = Number(process.env.PORT) || 3e3;
-app.use(express.json({ limit: "50mb" }));
-app.use(express.urlencoded({ limit: "50mb", extended: true }));
+app.use(express.json({ limit: "50mb", inflate: false }));
+app.use(express.urlencoded({ limit: "50mb", extended: true, inflate: false }));
 app.use(express.static(path.join(process.cwd(), "public")));
 var getGeminiClient = () => {
   const apiKey = process.env.GEMINI_API_KEY;

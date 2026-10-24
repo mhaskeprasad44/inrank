@@ -11,8 +11,8 @@ const app = express();
 const PORT = Number(process.env.PORT) || 3000;
 
 // Set up larger limits for base64 HTML and image files
-app.use(express.json({ limit: "50mb" }));
-app.use(express.urlencoded({ limit: "50mb", extended: true }));
+app.use(express.json({ limit: "50mb", inflate: false }));
+app.use(express.urlencoded({ limit: "50mb", extended: true, inflate: false }));
 app.use(express.static(path.join(process.cwd(), "public")));
 
 // Initialize the modern @google/genai client (Optional)
