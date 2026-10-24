@@ -173,10 +173,83 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <script src="https://unpkg.com/lucide@latest"></script>
-  </head>
-  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-600 selection:text-white pb-20 md:pb-0">
+    
+    <style>
 
-    <!-- HEADER SECTION -->
+/* Strict Universal Inter Font Enforcement */
+*, html, body, h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea, select, blockquote, label, li, ul, ol, td, th, .font-display, .font-sans, .font-serif {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+      @keyframes scroll-marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      @keyframes whatsapp-pulse {
+        0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+        70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+      }
+      @keyframes pulse-ring {
+        0% { transform: scale(0.9); opacity: 0.8; }
+        100% { transform: scale(1.4); opacity: 0; }
+      }
+      .animate-pulse-ring-slow {
+        animation: pulse-ring 3s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+      }
+      @keyframes cursor-blink {
+        0%, 100% { opacity: 0; }
+        50% { opacity: 1; }
+      }
+      .cursor-blink {
+        animation: cursor-blink 1s step-end infinite;
+      }
+
+      /* Dynamic Card Hover Styles */
+      .tilt-card {
+        transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+      }
+      .tilt-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px -15px rgba(0, 183, 85, 0.12);
+        border-color: rgba(0, 183, 85, 0.35) !important;
+      }
+
+      /* Chip selection active states */
+      .chip-item.active-chip {
+        background-color: #059669 !important;
+        color: #ffffff !important;
+        border-color: #059669 !important;
+        box-shadow: 0 2px 8px rgba(5, 150, 105, 0.25);
+      }
+    </style>
+
+  </head>
+  <body class="min-h-screen bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary pb-20 md:pb-0">
+
+    
+    <!-- Top Viewport Global Reading Progress Bar -->
+    <div id="global-scroll-progress"></div>
+
+    <!-- GLOBAL MULTI-LAYERED AMBIENT BACKGROUND CANVAS (Light-Mode Architectural Slate Pearl) -->
+    <div id="site-ambient-canvas" class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+      <!-- Dynamic Floating Aurora Glows -->
+      <div class="absolute -top-[10%] left-[5%] w-[55vw] h-[55vw] rounded-full bg-gradient-to-br from-emerald-500/12 via-teal-400/8 to-transparent blur-[130px] animate-aurora-1"></div>
+      <div class="absolute top-[25%] -right-[15%] w-[50vw] h-[50vw] rounded-full bg-gradient-to-bl from-emerald-600/10 via-emerald-400/6 to-transparent blur-[140px] animate-aurora-2"></div>
+      <div class="absolute top-[55%] -left-[15%] w-[45vw] h-[45vw] rounded-full bg-gradient-to-tr from-cyan-500/8 via-emerald-500/6 to-transparent blur-[120px] animate-aurora-1"></div>
+      <div class="absolute top-[80%] right-[0%] w-[55vw] h-[55vw] rounded-full bg-gradient-to-tl from-emerald-500/10 via-teal-500/6 to-transparent blur-[140px] animate-aurora-2"></div>
+      
+      <!-- Architectural Precision Matrix Grid Overlay -->
+      <div class="absolute inset-0 bg-site-pattern"></div>
+      
+      <!-- Subtle Film Grain -->
+      <div class="absolute inset-0 bg-noise-subtle opacity-40 mix-blend-multiply"></div>
+    </div>
+
+
+    <!-- Global Layout Wrapper -->
+    <div class="min-h-screen flex flex-col relative z-1">
+
       <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-border bg-background/80 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-16 sm:h-20">
@@ -336,6 +409,7 @@
               </a>
 
               <!-- Results / Work -->
+              <a href="/our-work.html" class="flex items-center gap-1.5 text-sm font-semibold text-foreground hover:text-emerald-600 transition-colors"><span>Our Work</span><span class="px-1.5 py-0.2 rounded text-[10px] font-bold bg-primary/10 text-primary border border-primary/20">10 Works</span></a>
               <a href="/#results" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors">Results</a>
 
               <!-- About Dropdown -->
@@ -392,6 +466,7 @@
         <!-- Mobile Drawer Menu (Fast, Compact & 1-Screen) -->
         <div id="mobile-menu-drawer" class="hidden md:hidden border-t border-border bg-white/95 dark:bg-zinc-950/95 backdrop-blur-xl w-full absolute top-full left-0 p-5 shadow-2xl space-y-3">
           <div class="space-y-1 text-sm font-semibold">
+            <a href="/our-work.html" class="block py-2.5 px-3 rounded-lg bg-emerald-50/70 text-emerald-800 font-bold text-sm">Our Work (10 Works)</a>
             <a href="/" class="block py-2.5 px-3 rounded-lg hover:bg-muted text-foreground">Home</a>
             
             <a href="/#/services" class="flex items-center justify-between py-2.5 px-3 rounded-lg hover:bg-muted text-foreground">
@@ -431,411 +506,423 @@
         </div>
       </header>
 
-    <main class="min-h-screen">
-      <!-- Breadcrumb Bar -->
-      <nav class="bg-slate-900 border-b border-slate-800 pt-24 pb-3 px-4 sm:px-6 lg:px-8 text-xs text-slate-400">
-        <div class="max-w-7xl mx-auto flex items-center gap-2">
-          <a href="/" class="hover:text-emerald-400 transition-colors">Home</a>
-          <span>/</span>
-          <a href="/pricing.html" class="hover:text-emerald-400 transition-colors">Pricing</a>
-          <span>/</span>
-          <span class="text-emerald-400 font-medium">Web Designing Company in Pune</span>
-        </div>
-      </nav>
-
-      <!-- Hero Section -->
-      <section class="relative py-20 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800 text-white overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div class="max-w-3xl">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-600/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-6">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              #1 Rated Web Design Company in Pune
-            </div>
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-              Web Designing Company in Pune That <span class="bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">Turns Visitors Into Enquiries</span>
-            </h1>
-            <p class="text-lg text-slate-300 leading-relaxed mb-8">
-              Fast, high-converting, mobile-responsive websites engineered for Pune businesses, startups, and manufacturers. Transparent packages starting from <strong>₹11,999</strong> with rapid 5-7 day delivery, full SEO architecture, and 365 days of free support.
-            </p>
-
-            <div class="flex flex-wrap items-center gap-4 mb-10">
-              <a href="#consult-form" class="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold text-sm transition-all shadow-xl shadow-emerald-600/25">
-                <span>Get Free Website Quote</span>
-                <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-              <a href="https://wa.me/918788823182?text=Hello%20Inrank,%20I%20need%20a%20website%20design%20in%20Pune" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all shadow-lg shadow-emerald-600/20">
-                <i data-lucide="message-circle" class="w-4 h-4"></i>
-                WhatsApp (+91 87888 23182)
-              </a>
-              <a href="tel:+918788823182" class="inline-flex items-center gap-2 px-5 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-sm border border-slate-700 transition-all">
-                <i data-lucide="phone-call" class="w-4 h-4 text-emerald-400"></i>
-                Call Us
-              </a>
-            </div>
-
-            <!-- Trust Bar Pills -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-800 text-center">
-              <div>
-                <div class="text-2xl font-black text-emerald-400">200+</div>
-                <div class="text-xs text-slate-400 mt-0.5">Pune Sites Delivered</div>
-              </div>
-              <div>
-                <div class="text-2xl font-black text-white">0.8s</div>
-                <div class="text-xs text-slate-400 mt-0.5">Avg Load Time</div>
-              </div>
-              <div>
-                <div class="text-2xl font-black text-emerald-400">4.9 ★</div>
-                <div class="text-xs text-slate-400 mt-0.5">214 Google Reviews</div>
-              </div>
-              <div>
-                <div class="text-2xl font-black text-white">5-7 Days</div>
-                <div class="text-xs text-slate-400 mt-0.5">Guaranteed Delivery</div>
-              </div>
-            </div>
+      <main class="flex-grow">
+        <!-- Breadcrumb Bar -->
+        <nav class="border-b border-border bg-card/60 backdrop-blur-sm pt-24 sm:pt-28 pb-3.5 px-4 sm:px-6 lg:px-8 text-xs text-muted-foreground">
+          <div class="max-w-7xl mx-auto flex items-center gap-2">
+            <a href="/" class="hover:text-primary transition-colors">Home</a>
+            <span class="text-border">/</span>
+            <a href="/pricing.html" class="hover:text-primary transition-colors">Pricing</a>
+            <span class="text-border">/</span>
+            <span class="text-primary font-semibold">Web Designing Company in Pune</span>
           </div>
-        </div>
-      </section>
+        </nav>
 
-      <!-- AI Overview Quick Answer Box -->
-      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 relative z-20">
-        <div class="bg-gradient-to-r from-emerald-500/10 via-emerald-500/5 to-transparent border border-emerald-500/30 rounded-2xl p-6 bg-white shadow-lg">
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 rounded-xl bg-emerald-600/20 flex items-center justify-center text-emerald-700 flex-shrink-0 mt-1">
-              <i data-lucide="bot" class="w-5 h-5 text-emerald-600"></i>
-            </div>
-            <div>
-              <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">Quick Answer &bull; Pune Web Design Summary</span>
-              <h2 class="text-lg font-bold text-slate-900 mt-1.5">What makes Inrank the premier web designing company in Pune?</h2>
-              <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                Unlike traditional agencies that hide pricing and take 6 to 8 weeks, <strong>Inrank Technologies</strong> delivers conversion-optimized, responsive websites in <strong>5 to 7 days starting from ₹11,999</strong>. Every site includes modern HTML5/Vite/React architecture, 95+ PageSpeed scores, Schema.org rich snippets, Google Business Profile integration, and 365 days of ongoing technical support.
+        <!-- Hero Section (Light-Mode Architectural Style) -->
+        <section class="relative pt-12 sm:pt-16 md:pt-20 pb-16 sm:pb-24 overflow-hidden">
+          <!-- Radial Dot Matrix Overlay -->
+          <div class="absolute inset-0 opacity-60 dark:opacity-30 pointer-events-none" style="background-image: radial-gradient(circle, var(--color-border) 1.2px, transparent 1.2px); background-size: 24px 24px;"></div>
+          <div class="absolute -top-24 -right-24 w-[480px] h-[480px] rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+
+          <div class="relative max-w-7xl mx-auto px-5 sm:px-8">
+            <div class="max-w-4xl">
+              <!-- Pill Badge -->
+              <div class="inline-flex items-center gap-2 mb-5">
+                <span class="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3.5 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground shadow-sm">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  #1 Rated Web Design Company in Pune
+                </span>
+              </div>
+
+              <!-- Main Title -->
+              <h1 class="font-display font-bold text-4xl sm:text-6xl lg:text-7xl leading-[1.08] sm:leading-[1.0] tracking-tight text-foreground text-balance">
+                Web Designing Company in Pune That
+                <span class="text-primary block sm:inline">Turns Visitors Into Enquiries</span>
+              </h1>
+
+              <!-- Subtitle Statement -->
+              <p class="mt-5 max-w-3xl text-base sm:text-lg text-muted-foreground leading-relaxed">
+                Fast, high-converting, mobile-responsive websites engineered for Pune businesses, startups, and manufacturers. Transparent packages starting from <strong class="text-foreground font-semibold">₹11,999</strong> with rapid 5-7 day delivery, full SEO architecture, and 365 days of free support.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- Pune Locality Coverage Section -->
-      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-md border border-emerald-200">Local Presence &amp; IT Hubs</span>
-          <h2 class="text-3xl font-extrabold text-slate-900 mt-3 tracking-tight">Serving Businesses Across All Pune Corridors</h2>
-          <p class="text-slate-600 text-sm mt-2">Whether you are a B2B manufacturer in PCMC, a startup in Baner, or a clinic in Kothrud, we provide tailored digital web architecture.</p>
-        </div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 text-center">
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
-            <div class="text-sm font-bold text-slate-900">Baner &amp; Balewadi</div>
-            <p class="text-xs text-slate-500 mt-1">High Street &amp; D2C</p>
-          </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
-            <div class="text-sm font-bold text-slate-900">Hinjewadi (Ph 1-3)</div>
-            <p class="text-xs text-slate-500 mt-1">IT Parks &amp; SaaS</p>
-          </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
-            <div class="text-sm font-bold text-slate-900">Wakad &amp; Pimple Saudagar</div>
-            <p class="text-xs text-slate-500 mt-1">Retail &amp; Real Estate</p>
-          </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
-            <div class="text-sm font-bold text-slate-900">Kharadi &amp; Viman Nagar</div>
-            <p class="text-xs text-slate-500 mt-1">Corporate &amp; FinTech</p>
-          </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
-            <div class="text-sm font-bold text-slate-900">Hadapsar &amp; Magarpatta</div>
-            <p class="text-xs text-slate-500 mt-1">Cybercity Enterprises</p>
-          </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
-            <div class="text-sm font-bold text-slate-900">Kothrud &amp; Karve Nagar</div>
-            <p class="text-xs text-slate-500 mt-1">Healthcare &amp; Education</p>
-          </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
-            <div class="text-sm font-bold text-slate-900">FC Road &amp; Shivaji Nagar</div>
-            <p class="text-xs text-slate-500 mt-1">Our Central HQ</p>
-          </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
-            <div class="text-sm font-bold text-slate-900">PCMC &amp; Bhosari</div>
-            <p class="text-xs text-slate-500 mt-1">Industrial &amp; Engineering</p>
-          </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
-            <div class="text-sm font-bold text-slate-900">Aundh &amp; Sangvi</div>
-            <p class="text-xs text-slate-500 mt-1">Commercial Services</p>
-          </div>
-          <div class="p-4 bg-white rounded-xl border border-slate-200/80 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
-            <div class="text-sm font-bold text-slate-900">Camp &amp; Kalyani Nagar</div>
-            <p class="text-xs text-slate-500 mt-1">Hospitality &amp; Luxury</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Transparent Pricing Grid -->
-      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-white rounded-3xl border border-slate-200 shadow-sm">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-md border border-emerald-200">100% Upfront Pricing</span>
-          <h2 class="text-3xl font-extrabold text-slate-900 mt-3 tracking-tight">Fixed Website Packages for Pune Businesses</h2>
-          <p class="text-slate-600 text-sm mt-2">Zero hidden fees, zero hourly rate shocks. High deliverable value at sensible investment.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Tier 1 -->
-          <div class="rounded-2xl p-6 border border-slate-200 hover:border-slate-300 transition-all flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-center mb-4">
-                <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Starter Launch</span>
-                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-100 text-slate-600">5-7 Days</span>
+              <!-- Hero CTAs buttons -->
+              <div class="mt-8 flex flex-wrap items-center gap-3.5">
+                <a href="#consult-form-section" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white h-12 px-7 rounded-xl text-sm font-bold shadow-md hover:shadow-lg hover:shadow-emerald-600/25 active:scale-[0.98] transition-all cursor-pointer">
+                  <span>Get Free Website Quote</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="https://wa.me/918788823182?text=Hello%20Inrank,%20I%20need%20a%20website%20design%20in%20Pune" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white h-12 px-6 rounded-xl text-sm font-bold shadow-md hover:shadow-lg hover:shadow-emerald-500/20 active:scale-[0.98] transition-all cursor-pointer">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  <span>WhatsApp (+91 87888 23182)</span>
+                </a>
+                <a href="tel:+918788823182" class="inline-flex items-center justify-center gap-2 border border-border bg-card hover:bg-secondary text-foreground h-12 px-5 rounded-xl text-sm font-semibold shadow-sm transition-all cursor-pointer">
+                  <i data-lucide="phone-call" class="w-4 h-4 text-emerald-600"></i>
+                  <span>Call Us</span>
+                </a>
               </div>
-              <div class="text-3xl font-extrabold text-slate-900 mb-2">₹11,999 <span class="text-xs font-normal text-slate-500">one-time</span></div>
-              <p class="text-xs text-slate-500 mb-6">Ideal for Pune startups, consultants, and local professionals needing a solid digital presence.</p>
-              
-              <ul class="space-y-3 text-xs text-slate-600 mb-8">
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Up to 5 Responsive Custom Pages</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> 1 Free Custom Business Domain (.com/.in)</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Free Business Email (Google Workspace compatible)</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Direct Click-to-WhatsApp Integration</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Google Search Console &amp; Maps Indexing</li>
-                <li class="flex items-center gap-2 font-semibold text-slate-900"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i> 365 Days Extended Support</li>
-              </ul>
-            </div>
-            <a href="https://wa.me/918788823182?text=Hi%20Inrank,%20I%20want%20the%20Starter%20Launch%20Package%20(₹11,999)" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs text-center transition-all">
-              Choose Starter Launch
-            </a>
-          </div>
 
-          <!-- Tier 2 (Featured) -->
-          <div class="rounded-2xl p-6 border-2 border-emerald-500 shadow-xl shadow-emerald-500/10 flex flex-col justify-between relative bg-emerald-50/20">
-            <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-emerald-600 text-white font-black text-[10px] uppercase tracking-wider rounded-full">
-              Most Popular in Pune
-            </div>
-            <div>
-              <div class="flex justify-between items-center mb-4">
-                <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Business Growth</span>
-                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-200/80 text-emerald-900">6-8 Days</span>
-              </div>
-              <div class="text-3xl font-extrabold text-slate-900 mb-2">₹16,999 <span class="text-xs font-normal text-slate-500">one-time</span></div>
-              <p class="text-xs text-slate-600 mb-6">Built for Pune manufacturers, clinics, real estate firms, and growing service brands.</p>
-              
-              <ul class="space-y-3 text-xs text-slate-700 mb-8">
-                <li class="flex items-center gap-2 font-semibold text-slate-900"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Up to 10 Richly Designed Pages</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Content Management System (CMS)</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Full On-Page SEO &amp; Schema.org Markup</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Google My Business (GMB) Optimization</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Dynamic Lead Capture Form with WhatsApp Routing</li>
-                <li class="flex items-center gap-2 font-semibold text-slate-900"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i> 365 Days Extended Support</li>
-              </ul>
-            </div>
-            <a href="https://wa.me/918788823182?text=Hi%20Inrank,%20I%20want%20the%20Business%20Growth%20Package%20(₹16,999)" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-black text-xs text-center transition-all shadow-md shadow-emerald-600/20">
-              Choose Business Growth
-            </a>
-          </div>
-
-          <!-- Tier 3 -->
-          <div class="rounded-2xl p-6 border border-slate-200 hover:border-slate-300 transition-all flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-center mb-4">
-                <span class="text-xs font-bold uppercase tracking-wider text-slate-500">E-Commerce Scale</span>
-                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-100 text-slate-600">10-12 Days</span>
-              </div>
-              <div class="text-3xl font-extrabold text-slate-900 mb-2">₹21,999 <span class="text-xs font-normal text-slate-500">one-time</span></div>
-              <p class="text-xs text-slate-500 mb-6">Complete online store on Shopify or WooCommerce with payment gateway and WhatsApp orders.</p>
-              
-              <ul class="space-y-3 text-xs text-slate-600 mb-8">
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Up to 50 Products Initial Upload</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Razorpay / UPI / PhonePe / Card Gateway</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Direct WhatsApp 1-Click Order System</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> 0% Transaction Commission (Keep 100% Profits)</li>
-                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i> Automated Order Confirmation Emails</li>
-                <li class="flex items-center gap-2 font-semibold text-slate-900"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i> 365 Days Extended Support</li>
-              </ul>
-            </div>
-            <a href="https://wa.me/918788823182?text=Hi%20Inrank,%20I%20want%20the%20E-Commerce%20Scale%20Package%20(₹21,999)" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs text-center transition-all">
-              Choose E-Commerce Scale
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Why Inrank Outperforms Competitors -->
-      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-md border border-emerald-200">The Honest Truth</span>
-          <h2 class="text-3xl font-extrabold text-slate-900 mt-3 tracking-tight">How Inrank Compares Against Other Pune Agencies</h2>
-        </div>
-
-        <div class="overflow-x-auto">
-          <table class="w-full text-left text-xs bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-            <thead class="bg-slate-900 text-white text-[11px] uppercase tracking-wider">
-              <tr>
-                <th class="p-4">Feature / Deliverable</th>
-                <th class="p-4 bg-emerald-600 text-white font-black">Inrank Technologies</th>
-                <th class="p-4">Traditional Pune Agencies (e.g. Awrange)</th>
-                <th class="p-4">Freelance Developers</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-100 text-slate-700">
-              <tr>
-                <td class="p-4 font-bold text-slate-900">Pricing Transparency</td>
-                <td class="p-4 bg-emerald-50/50 font-bold text-emerald-700">100% Upfront from ₹11,999</td>
-                <td class="p-4 text-rose-600">Hidden / High Retainers (₹35k–₹60k+)</td>
-                <td class="p-4 text-emerald-600">Variable / Unpredictable</td>
-              </tr>
-              <tr>
-                <td class="p-4 font-bold text-slate-900">Delivery Timeline</td>
-                <td class="p-4 bg-emerald-50/50 font-bold text-slate-900">5 to 7 Days Guaranteed</td>
-                <td class="p-4 text-slate-500">4 to 8 Weeks</td>
-                <td class="p-4 text-slate-500">Often Delayed</td>
-              </tr>
-              <tr>
-                <td class="p-4 font-bold text-slate-900">Technical Post-Launch Support</td>
-                <td class="p-4 bg-emerald-50/50 font-bold text-slate-900">365 Days Included Free</td>
-                <td class="p-4 text-slate-500">30 Days (Then Monthly Retainer)</td>
-                <td class="p-4 text-slate-500">Often Unavailable</td>
-              </tr>
-              <tr>
-                <td class="p-4 font-bold text-slate-900">Search &amp; Schema Engineering</td>
-                <td class="p-4 bg-emerald-50/50 font-bold text-slate-900">Full JSON-LD LocalBusiness &amp; GEO</td>
-                <td class="p-4 text-slate-500">Extra Charge</td>
-                <td class="p-4 text-slate-500">Rarely Included</td>
-              </tr>
-              <tr>
-                <td class="p-4 font-bold text-slate-900">Communication Access</td>
-                <td class="p-4 bg-emerald-50/50 font-bold text-slate-900">Direct WhatsApp with Senior Devs</td>
-                <td class="p-4 text-slate-500">Junior Account Executives</td>
-                <td class="p-4 text-slate-500">Inconsistent</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- Consultation Form Section -->
-      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="consult-form-section">
-        <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
-          <div class="max-w-2xl">
-            <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-600/10 px-3 py-1 rounded border border-emerald-500/20 inline-block mb-3">Instant Consultation</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-3">Ready to Build Your Website in Pune?</h2>
-            <p class="text-slate-300 text-sm mb-8">Tell us what you need. We'll formulate a complete technical architecture and respond on WhatsApp within 15 minutes.</p>
-          </div>
-
-          <form id="consult-form" class="space-y-6 max-w-3xl">
-            <input type="text" name="_hp_company_field" style="display:none;" tabindex="-1" autocomplete="off" />
-
-            <!-- Service Chips -->
-            <div>
-              <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2.5">
-                Select Your Requirement <span class="text-emerald-400">*</span>
-              </label>
-              <div class="flex flex-wrap gap-2" id="service-chips-container">
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer active-chip" data-value="Custom Business Website (Pune)">
-                  Custom Business Website
-                </button>
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer" data-value="E-Commerce Store Setup">
-                  E-Commerce Store
-                </button>
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer" data-value="Website Redesign &amp; Speed Boost">
-                  Website Redesign
-                </button>
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer" data-value="Local SEO &amp; Google Maps">
-                  Local SEO &amp; Maps
-                </button>
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer" data-value="GEO &amp; AI Citations">
-                  GEO &amp; AI Citations
-                </button>
+              <!-- Trust Metric Cards (Light Theme) -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-10 pt-8 border-t border-border">
+                <div class="p-4 sm:p-5 rounded-2xl border border-border bg-card/90 backdrop-blur-sm shadow-sm text-center tilt-card">
+                  <div class="font-display text-2xl sm:text-3xl font-extrabold text-foreground">200+</div>
+                  <div class="text-xs text-muted-foreground mt-0.5 font-medium">Pune Sites Delivered</div>
+                </div>
+                <div class="p-4 sm:p-5 rounded-2xl border border-border bg-card/90 backdrop-blur-sm shadow-sm text-center tilt-card">
+                  <div class="font-display text-2xl sm:text-3xl font-extrabold text-emerald-600">0.8s</div>
+                  <div class="text-xs text-muted-foreground mt-0.5 font-medium">Avg Load Time</div>
+                </div>
+                <div class="p-4 sm:p-5 rounded-2xl border border-border bg-card/90 backdrop-blur-sm shadow-sm text-center tilt-card">
+                  <div class="font-display text-2xl sm:text-3xl font-extrabold text-foreground">4.9 ★</div>
+                  <div class="text-xs text-muted-foreground mt-0.5 font-medium">214 Google Reviews</div>
+                </div>
+                <div class="p-4 sm:p-5 rounded-2xl border border-border bg-card/90 backdrop-blur-sm shadow-sm text-center tilt-card">
+                  <div class="font-display text-2xl sm:text-3xl font-extrabold text-emerald-600">5-7 Days</div>
+                  <div class="text-xs text-muted-foreground mt-0.5 font-medium">Guaranteed Delivery</div>
+                </div>
               </div>
             </div>
+          </div>
+        </section>
 
-            <!-- Budget Chips -->
-            <div>
-              <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2.5">
-                Expected Budget <span class="text-emerald-400">*</span>
-              </label>
-              <div class="flex flex-wrap gap-2" id="budget-chips-container">
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer" data-value="₹11,999 (Starter Launch)">
-                  ₹11,999 (Starter)
-                </button>
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer active-chip" data-value="₹16,999 (Business Growth)">
-                  ₹16,999 (Business Growth)
-                </button>
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer" data-value="₹21,999 (E-Commerce Scale)">
-                  ₹21,999 (E-Commerce)
-                </button>
-                <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-medium border border-slate-700 bg-slate-800 text-slate-200 hover:border-emerald-500 hover:bg-slate-700 transition-all cursor-pointer" data-value="Custom / Enterprise">
-                  Custom / Enterprise
-                </button>
-              </div>
-            </div>
-
-            <!-- Fields Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="pune-name" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Your Name *</label>
-                <input type="text" id="pune-name" name="name" required placeholder="e.g. Rahul Sharma" class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-800/80 text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-slate-800 transition-all" />
+        <!-- AI Overview Quick Answer Box (Light Mode with Emerald Accent) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-4 mb-12 relative z-20">
+          <div class="bg-card border border-emerald-500/25 rounded-2xl p-6 sm:p-7 shadow-sm bg-gradient-to-r from-emerald-500/5 via-teal-500/5 to-transparent">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950/40 border border-emerald-200/60 flex items-center justify-center text-emerald-700 flex-shrink-0 mt-0.5">
+                <i data-lucide="bot" class="w-5 h-5 text-emerald-600"></i>
               </div>
               <div>
-                <label for="pune-phone" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">WhatsApp Number *</label>
-                <input type="tel" id="pune-phone" name="phone" required placeholder="e.g. +91 87888 23182" class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-800/80 text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-slate-800 transition-all" />
+                <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100 dark:bg-emerald-950/40 px-2.5 py-0.5 rounded">Quick Answer &bull; Pune Web Design Summary</span>
+                <h2 class="text-lg font-bold text-foreground mt-1.5">What makes Inrank the premier web designing company in Pune?</h2>
+                <p class="text-xs sm:text-sm text-muted-foreground mt-2 leading-relaxed">
+                  Unlike traditional agencies that hide pricing and take 6 to 8 weeks, <strong class="text-foreground">Inrank Technologies</strong> delivers conversion-optimized, responsive websites in <strong class="text-foreground">5 to 7 days starting from ₹11,999</strong>. Every site includes modern HTML5/Vite/React architecture, 95+ PageSpeed scores, Schema.org rich snippets, Google Business Profile integration, and 365 days of ongoing technical support.
+                </p>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Pune Locality Coverage Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+          <div class="text-center max-w-3xl mx-auto mb-10">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-md border border-emerald-200/70 inline-block">Local Presence &amp; IT Hubs</span>
+            <h2 class="text-3xl font-extrabold text-foreground mt-3 tracking-tight">Serving Businesses Across All Pune Corridors</h2>
+            <p class="text-muted-foreground text-sm mt-2">Whether you are a B2B manufacturer in PCMC, a startup in Baner, or a clinic in Kothrud, we provide tailored digital web architecture.</p>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5 text-center">
+            <div class="p-4 bg-card rounded-2xl border border-border shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
+              <div class="text-sm font-bold text-foreground">Baner &amp; Balewadi</div>
+              <p class="text-xs text-muted-foreground mt-1">High Street &amp; D2C</p>
+            </div>
+            <div class="p-4 bg-card rounded-2xl border border-border shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
+              <div class="text-sm font-bold text-foreground">Hinjewadi (Ph 1-3)</div>
+              <p class="text-xs text-muted-foreground mt-1">IT Parks &amp; SaaS</p>
+            </div>
+            <div class="p-4 bg-card rounded-2xl border border-border shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
+              <div class="text-sm font-bold text-foreground">Wakad &amp; Pimple Saudagar</div>
+              <p class="text-xs text-muted-foreground mt-1">Retail &amp; Real Estate</p>
+            </div>
+            <div class="p-4 bg-card rounded-2xl border border-border shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
+              <div class="text-sm font-bold text-foreground">Kharadi &amp; Viman Nagar</div>
+              <p class="text-xs text-muted-foreground mt-1">Corporate &amp; FinTech</p>
+            </div>
+            <div class="p-4 bg-card rounded-2xl border border-border shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
+              <div class="text-sm font-bold text-foreground">Hadapsar &amp; Magarpatta</div>
+              <p class="text-xs text-muted-foreground mt-1">Cybercity Enterprises</p>
+            </div>
+            <div class="p-4 bg-card rounded-2xl border border-border shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
+              <div class="text-sm font-bold text-foreground">Kothrud &amp; Karve Nagar</div>
+              <p class="text-xs text-muted-foreground mt-1">Healthcare &amp; Education</p>
+            </div>
+            <div class="p-4 bg-card rounded-2xl border border-border shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
+              <div class="text-sm font-bold text-foreground">FC Road &amp; Shivaji Nagar</div>
+              <p class="text-xs text-muted-foreground mt-1 font-semibold text-emerald-600">Our Central HQ</p>
+            </div>
+            <div class="p-4 bg-card rounded-2xl border border-border shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
+              <div class="text-sm font-bold text-foreground">PCMC &amp; Bhosari</div>
+              <p class="text-xs text-muted-foreground mt-1">Industrial &amp; Auto</p>
+            </div>
+            <div class="p-4 bg-card rounded-2xl border border-border shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
+              <div class="text-sm font-bold text-foreground">Aundh &amp; Sangvi</div>
+              <p class="text-xs text-muted-foreground mt-1">Commercial Services</p>
+            </div>
+            <div class="p-4 bg-card rounded-2xl border border-border shadow-sm hover:border-emerald-500 hover:shadow-md transition-all">
+              <div class="text-sm font-bold text-foreground">Camp &amp; Kalyani Nagar</div>
+              <p class="text-xs text-muted-foreground mt-1">Hospitality &amp; Luxury</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Transparent Pricing Grid (Light Mode) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="pricing-packages">
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-md border border-emerald-200/70 inline-block">100% Upfront Pricing</span>
+            <h2 class="text-3xl font-extrabold text-foreground mt-3 tracking-tight">Fixed Website Packages for Pune Businesses</h2>
+            <p class="text-muted-foreground text-sm mt-2">Zero hidden fees, zero hourly rate shocks. High deliverable value at sensible investment.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Tier 1 -->
+            <div class="bg-card rounded-2xl p-7 border border-border hover:border-border/80 transition-all flex flex-col justify-between shadow-sm">
               <div>
-                <label for="pune-email" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Business Email *</label>
-                <input type="email" id="pune-email" name="email" required placeholder="e.g. rahul@company.com" class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-800/80 text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-slate-800 transition-all" />
+                <div class="flex justify-between items-center mb-4">
+                  <span class="text-xs font-bold uppercase tracking-wider text-muted-foreground">Starter Launch</span>
+                  <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-secondary text-foreground">5-7 Days</span>
+                </div>
+                <div class="text-3xl font-extrabold text-foreground mb-2">₹11,999 <span class="text-xs font-normal text-muted-foreground">one-time</span></div>
+                <p class="text-xs text-muted-foreground mb-6">Ideal for Pune startups, consultants, and local professionals needing a solid digital presence.</p>
+                
+                <ul class="space-y-3 text-xs text-muted-foreground mb-8">
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Up to 5 Responsive Custom Pages</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> 1 Free Custom Business Domain (.com/.in)</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Free Business Email (Google Workspace compatible)</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Direct Click-to-WhatsApp Integration</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Google Search Console &amp; Maps Indexing</li>
+                  <li class="flex items-center gap-2 font-semibold text-foreground"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-600 shrink-0"></i> 365 Days Extended Support</li>
+                </ul>
               </div>
-              <div>
-                <label for="pune-locality" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Pune Locality / Area</label>
-                <input type="text" id="pune-locality" name="locality" placeholder="e.g. Baner, Hinjewadi, Kharadi..." class="w-full px-4 py-3 rounded-xl border border-slate-700 bg-slate-800/80 text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-slate-800 transition-all" />
-              </div>
+              <a href="https://wa.me/918788823182?text=Hi%20Inrank,%20I%20want%20the%20Starter%20Launch%20Package%20(₹11,999)" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-secondary hover:bg-secondary/80 text-foreground font-bold text-xs text-center transition-all">
+                Choose Starter Launch
+              </a>
             </div>
 
-            <button type="submit" id="consult-submit-btn" class="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold text-base transition-all shadow-xl shadow-emerald-600/25 flex items-center justify-center gap-2 cursor-pointer">
-              <span>Send Requirement &amp; Connect On WhatsApp</span>
-              <i data-lucide="arrow-right" class="w-5 h-5"></i>
-            </button>
-          </form>
-        </div>
-      </section>
+            <!-- Tier 2 (Featured) -->
+            <div class="bg-emerald-50/25 rounded-2xl p-7 border-2 border-emerald-600 shadow-xl shadow-emerald-600/10 flex flex-col justify-between relative">
+              <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3.5 py-1 bg-emerald-600 text-white font-extrabold text-[10px] uppercase tracking-wider rounded-full shadow-sm">
+                Most Popular in Pune
+              </div>
+              <div>
+                <div class="flex justify-between items-center mb-4">
+                  <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Business Growth</span>
+                  <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">6-8 Days</span>
+                </div>
+                <div class="text-3xl font-extrabold text-foreground mb-2">₹16,999 <span class="text-xs font-normal text-muted-foreground">one-time</span></div>
+                <p class="text-xs text-muted-foreground mb-6">Built for Pune manufacturers, clinics, real estate firms, and growing service brands.</p>
+                
+                <ul class="space-y-3 text-xs text-foreground mb-8">
+                  <li class="flex items-center gap-2 font-semibold"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Up to 10 Richly Designed Pages</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Content Management System (CMS)</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Full On-Page SEO &amp; Schema.org Markup</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Google My Business (GMB) Optimization</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Dynamic Lead Capture Form with WhatsApp Routing</li>
+                  <li class="flex items-center gap-2 font-semibold text-emerald-700"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-600 shrink-0"></i> 365 Days Extended Support</li>
+                </ul>
+              </div>
+              <a href="https://wa.me/918788823182?text=Hi%20Inrank,%20I%20want%20the%20Business%20Growth%20Package%20(₹16,999)" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs text-center transition-all shadow-md shadow-emerald-600/20">
+                Choose Business Growth
+              </a>
+            </div>
 
-      <!-- FAQs Section -->
-      <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="text-center mb-10">
-          <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-md border border-emerald-200">Got Questions?</span>
-          <h2 class="text-3xl font-extrabold text-slate-900 mt-2">Frequently Asked Questions</h2>
-        </div>
+            <!-- Tier 3 -->
+            <div class="bg-card rounded-2xl p-7 border border-border hover:border-border/80 transition-all flex flex-col justify-between shadow-sm">
+              <div>
+                <div class="flex justify-between items-center mb-4">
+                  <span class="text-xs font-bold uppercase tracking-wider text-muted-foreground">E-Commerce Scale</span>
+                  <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-secondary text-foreground">10-12 Days</span>
+                </div>
+                <div class="text-3xl font-extrabold text-foreground mb-2">₹21,999 <span class="text-xs font-normal text-muted-foreground">one-time</span></div>
+                <p class="text-xs text-muted-foreground mb-6">Complete online store on Shopify or WooCommerce with payment gateway and WhatsApp orders.</p>
+                
+                <ul class="space-y-3 text-xs text-muted-foreground mb-8">
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Up to 50 Products Initial Upload</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Razorpay / UPI / PhonePe / Card Gateway</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Direct WhatsApp 1-Click Order System</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> 0% Transaction Commission (Keep 100% Profits)</li>
+                  <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Automated Order Confirmation Emails</li>
+                  <li class="flex items-center gap-2 font-semibold text-foreground"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-600 shrink-0"></i> 365 Days Extended Support</li>
+                </ul>
+              </div>
+              <a href="https://wa.me/918788823182?text=Hi%20Inrank,%20I%20want%20the%20E-Commerce%20Scale%20Package%20(₹21,999)" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-secondary hover:bg-secondary/80 text-foreground font-bold text-xs text-center transition-all">
+                Choose E-Commerce Scale
+              </a>
+            </div>
+          </div>
+        </section>
 
-        <div class="space-y-4">
-          <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer" open>
-            <summary class="flex justify-between items-center text-slate-900 font-bold text-sm">
-              <span>How much does website development cost in Pune with Inrank?</span>
-              <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-4 h-4"></i></span>
-            </summary>
-            <p class="text-xs text-slate-600 mt-3 leading-relaxed">
-              We offer 100% transparent website packages starting from ₹11,999 for Starter Launch (up to 5 pages), ₹16,999 for Business Growth (up to 10 pages with CMS & Schema), and ₹21,999 for E-Commerce Scale. All packages include free domain, business email, and 365 days of ongoing technical support.
-            </p>
-          </details>
+        <!-- Why Inrank Outperforms Competitors (Light Mode Table) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div class="text-center max-w-3xl mx-auto mb-10">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-md border border-emerald-200/70 inline-block">The Honest Truth</span>
+            <h2 class="text-3xl font-extrabold text-foreground mt-3 tracking-tight">How Inrank Compares Against Other Pune Agencies</h2>
+          </div>
 
-          <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
-            <summary class="flex justify-between items-center text-slate-900 font-bold text-sm">
-              <span>How fast will our website be launched?</span>
-              <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-4 h-4"></i></span>
-            </summary>
-            <p class="text-xs text-slate-600 mt-3 leading-relaxed">
-              Standard business websites are delivered within 5 to 7 business days. E-Commerce stores and custom applications typically take 10 to 14 days with full payment gateway and SMS testing.
-            </p>
-          </details>
+          <div class="overflow-x-auto rounded-2xl border border-border shadow-sm">
+            <table class="w-full text-left text-xs bg-card">
+              <thead class="bg-secondary/60 text-foreground border-b border-border text-[11px] uppercase tracking-wider">
+                <tr>
+                  <th class="p-4 font-bold">Feature / Deliverable</th>
+                  <th class="p-4 bg-emerald-600 text-white font-extrabold">Inrank Technologies</th>
+                  <th class="p-4 font-semibold text-muted-foreground">Traditional Pune Agencies</th>
+                  <th class="p-4 font-semibold text-muted-foreground">Freelance Developers</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-border text-foreground">
+                <tr>
+                  <td class="p-4 font-bold">Pricing Transparency</td>
+                  <td class="p-4 bg-emerald-50/50 font-bold text-emerald-700">100% Upfront from ₹11,999</td>
+                  <td class="p-4 text-rose-600 font-medium">Hidden / High Retainers (₹35k–₹60k+)</td>
+                  <td class="p-4 text-muted-foreground">Variable / Unpredictable</td>
+                </tr>
+                <tr>
+                  <td class="p-4 font-bold">Delivery Timeline</td>
+                  <td class="p-4 bg-emerald-50/50 font-bold text-emerald-700">5 to 7 Days Guaranteed</td>
+                  <td class="p-4 text-muted-foreground">4 to 8 Weeks</td>
+                  <td class="p-4 text-muted-foreground">Often Delayed</td>
+                </tr>
+                <tr>
+                  <td class="p-4 font-bold">Technical Post-Launch Support</td>
+                  <td class="p-4 bg-emerald-50/50 font-bold text-emerald-700">365 Days Included Free</td>
+                  <td class="p-4 text-muted-foreground">30 Days (Then Monthly Retainer)</td>
+                  <td class="p-4 text-muted-foreground">Often Unavailable</td>
+                </tr>
+                <tr>
+                  <td class="p-4 font-bold">Search &amp; Schema Engineering</td>
+                  <td class="p-4 bg-emerald-50/50 font-bold text-emerald-700">Full JSON-LD LocalBusiness &amp; GEO</td>
+                  <td class="p-4 text-muted-foreground">Extra Charge</td>
+                  <td class="p-4 text-muted-foreground">Rarely Included</td>
+                </tr>
+                <tr>
+                  <td class="p-4 font-bold">Communication Access</td>
+                  <td class="p-4 bg-emerald-50/50 font-bold text-emerald-700">Direct WhatsApp with Senior Devs</td>
+                  <td class="p-4 text-muted-foreground">Junior Account Executives</td>
+                  <td class="p-4 text-muted-foreground">Inconsistent</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-          <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
-            <summary class="flex justify-between items-center text-slate-900 font-bold text-sm">
-              <span>Can we meet in person in Pune before starting?</span>
-              <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-4 h-4"></i></span>
-            </summary>
-            <p class="text-xs text-slate-600 mt-3 leading-relaxed">
-              Absolutely. Our team is located on FC Road, Shivaji Nagar, Pune. We frequently conduct in-person consultations with founders and business owners across Baner, Hinjewadi, Kharadi, and PCMC.
-            </p>
-          </details>
-        </div>
-      </section>
-    </main>
+        <!-- Consultation Form Section (Light Mode High-Conversion Form) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="consult-form-section">
+          <div class="bg-card rounded-3xl p-8 sm:p-12 border border-border shadow-xl relative overflow-hidden">
+            <div class="max-w-2xl">
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded border border-emerald-200/70 inline-block mb-3">Instant Consultation</span>
+              <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground mb-3">Ready to Build Your Website in Pune?</h2>
+              <p class="text-muted-foreground text-sm mb-8">Tell us what you need. We'll formulate a complete technical architecture and respond on WhatsApp within 15 minutes.</p>
+            </div>
 
-    <footer class="border-t border-border bg-card/50">
+            <form id="consult-form" class="space-y-6 max-w-3xl">
+              <input type="text" name="_hp_company_field" style="display:none;" tabindex="-1" autocomplete="off" />
+
+              <!-- Service Chips -->
+              <div>
+                <label class="block text-xs font-bold text-foreground uppercase tracking-wider mb-2.5">
+                  Select Your Requirement <span class="text-emerald-600">*</span>
+                </label>
+                <div class="flex flex-wrap gap-2" id="service-chips-container">
+                  <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-semibold border border-border bg-secondary/40 text-foreground hover:border-emerald-500 hover:bg-emerald-50/50 transition-all cursor-pointer active-chip" data-value="Custom Business Website (Pune)">
+                    Custom Business Website
+                  </button>
+                  <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-semibold border border-border bg-secondary/40 text-foreground hover:border-emerald-500 hover:bg-emerald-50/50 transition-all cursor-pointer" data-value="E-Commerce Store Setup">
+                    E-Commerce Store
+                  </button>
+                  <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-semibold border border-border bg-secondary/40 text-foreground hover:border-emerald-500 hover:bg-emerald-50/50 transition-all cursor-pointer" data-value="Website Redesign &amp; Speed Boost">
+                    Website Redesign
+                  </button>
+                  <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-semibold border border-border bg-secondary/40 text-foreground hover:border-emerald-500 hover:bg-emerald-50/50 transition-all cursor-pointer" data-value="Local SEO &amp; Google Maps">
+                    Local SEO &amp; Maps
+                  </button>
+                  <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-semibold border border-border bg-secondary/40 text-foreground hover:border-emerald-500 hover:bg-emerald-50/50 transition-all cursor-pointer" data-value="GEO &amp; AI Citations">
+                    GEO &amp; AI Citations
+                  </button>
+                </div>
+              </div>
+
+              <!-- Budget Chips -->
+              <div>
+                <label class="block text-xs font-bold text-foreground uppercase tracking-wider mb-2.5">
+                  Expected Budget <span class="text-emerald-600">*</span>
+                </label>
+                <div class="flex flex-wrap gap-2" id="budget-chips-container">
+                  <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-semibold border border-border bg-secondary/40 text-foreground hover:border-emerald-500 hover:bg-emerald-50/50 transition-all cursor-pointer" data-value="₹11,999 (Starter Launch)">
+                    ₹11,999 (Starter)
+                  </button>
+                  <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-semibold border border-border bg-secondary/40 text-foreground hover:border-emerald-500 hover:bg-emerald-50/50 transition-all cursor-pointer active-chip" data-value="₹16,999 (Business Growth)">
+                    ₹16,999 (Business Growth)
+                  </button>
+                  <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-semibold border border-border bg-secondary/40 text-foreground hover:border-emerald-500 hover:bg-emerald-50/50 transition-all cursor-pointer" data-value="₹21,999 (E-Commerce Scale)">
+                    ₹21,999 (E-Commerce)
+                  </button>
+                  <button type="button" class="chip-item px-3.5 py-2 rounded-xl text-xs font-semibold border border-border bg-secondary/40 text-foreground hover:border-emerald-500 hover:bg-emerald-50/50 transition-all cursor-pointer" data-value="Custom / Enterprise">
+                    Custom / Enterprise
+                  </button>
+                </div>
+              </div>
+
+              <!-- Fields Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="pune-name" class="block text-xs font-bold text-foreground uppercase tracking-wider mb-1.5">Your Name *</label>
+                  <input type="text" id="pune-name" name="name" required placeholder="e.g. Rahul Sharma" class="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all placeholder:text-muted-foreground" />
+                </div>
+                <div>
+                  <label for="pune-phone" class="block text-xs font-bold text-foreground uppercase tracking-wider mb-1.5">WhatsApp Number *</label>
+                  <input type="tel" id="pune-phone" name="phone" required placeholder="e.g. +91 87888 23182" class="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all placeholder:text-muted-foreground" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="pune-email" class="block text-xs font-bold text-foreground uppercase tracking-wider mb-1.5">Business Email *</label>
+                  <input type="email" id="pune-email" name="email" required placeholder="e.g. rahul@company.com" class="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all placeholder:text-muted-foreground" />
+                </div>
+                <div>
+                  <label for="pune-locality" class="block text-xs font-bold text-foreground uppercase tracking-wider mb-1.5">Pune Locality / Area</label>
+                  <input type="text" id="pune-locality" name="locality" placeholder="e.g. Baner, Hinjewadi, Kharadi..." class="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all placeholder:text-muted-foreground" />
+                </div>
+              </div>
+
+              <button type="submit" id="consult-submit-btn" class="w-full py-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-base transition-all shadow-lg shadow-emerald-600/25 flex items-center justify-center gap-2 cursor-pointer">
+                <span>Send Requirement &amp; Connect On WhatsApp</span>
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!-- FAQs Section (Light Accordion) -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div class="text-center mb-10">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-md border border-emerald-200/70 inline-block">Got Questions?</span>
+            <h2 class="text-3xl font-extrabold text-foreground mt-2">Frequently Asked Questions</h2>
+          </div>
+
+          <div class="space-y-4">
+            <details class="group bg-card rounded-2xl border border-border p-5 sm:p-6 shadow-sm hover:border-border/80 transition-all [&_summary::-webkit-details-marker]:hidden cursor-pointer" open>
+              <summary class="flex justify-between items-center text-foreground font-bold text-sm sm:text-base">
+                <span>How much does website development cost in Pune with Inrank?</span>
+                <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-4 h-4 text-muted-foreground"></i></span>
+              </summary>
+              <p class="text-xs sm:text-sm text-muted-foreground mt-3 leading-relaxed">
+                We offer 100% transparent website packages starting from ₹11,999 for Starter Launch (up to 5 pages), ₹16,999 for Business Growth (up to 10 pages with CMS & Schema), and ₹21,999 for E-Commerce Scale. All packages include free domain, business email, and 365 days of ongoing technical support.
+              </p>
+            </details>
+
+            <details class="group bg-card rounded-2xl border border-border p-5 sm:p-6 shadow-sm hover:border-border/80 transition-all [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+              <summary class="flex justify-between items-center text-foreground font-bold text-sm sm:text-base">
+                <span>How fast will our website be launched?</span>
+                <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-4 h-4 text-muted-foreground"></i></span>
+              </summary>
+              <p class="text-xs sm:text-sm text-muted-foreground mt-3 leading-relaxed">
+                Standard business websites are delivered within 5 to 7 business days. E-Commerce stores and custom applications typically take 10 to 14 days with full payment gateway and SMS testing.
+              </p>
+            </details>
+
+            <details class="group bg-card rounded-2xl border border-border p-5 sm:p-6 shadow-sm hover:border-border/80 transition-all [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+              <summary class="flex justify-between items-center text-foreground font-bold text-sm sm:text-base">
+                <span>Can we meet in person in Pune before starting?</span>
+                <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-4 h-4 text-muted-foreground"></i></span>
+              </summary>
+              <p class="text-xs sm:text-sm text-muted-foreground mt-3 leading-relaxed">
+                Absolutely. Our team is located on FC Road, Shivaji Nagar, Pune. We frequently conduct in-person consultations with founders and business owners across Baner, Hinjewadi, Kharadi, and PCMC.
+              </p>
+            </details>
+          </div>
+        </section>
+      </main>
+
+      <footer class="border-t border-border bg-card/50">
         <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
           
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
@@ -886,13 +973,13 @@
             <div class="lg:col-span-3">
               <div class="text-xs uppercase tracking-[0.2em] font-semibold text-muted-foreground mb-4">Quick Links</div>
               <ul class="space-y-2.5 text-sm">
-                <li><a href="/#services" class="text-muted-foreground hover:text-primary transition-colors">Services</a></li>
-                <li><a href="/#process" class="text-muted-foreground hover:text-primary transition-colors">Process Map</a></li>
-                <li><a href="/#industries" class="text-muted-foreground hover:text-primary transition-colors">Industries</a></li>
-                <li><a href="/#/about-us" class="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
-                <li><a href="/#/blog" class="text-muted-foreground hover:text-primary transition-colors font-semibold text-primary">Digital Growth Blog</a></li>
-                <li><a href="/#faq" class="text-muted-foreground hover:text-primary transition-colors">FAQ Directory</a></li>
-                <li><a href="/contact.html" class="text-muted-foreground hover:text-primary transition-colors">Audit Consultation</a></li>
+                <li><a href="#services" class="text-muted-foreground hover:text-primary transition-colors">Services</a></li>
+                <li><a href="#process" class="text-muted-foreground hover:text-primary transition-colors">Process Map</a></li>
+                <li><a href="#industries" class="text-muted-foreground hover:text-primary transition-colors">Industries</a></li>
+                <li><a href="#/about-us" class="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
+                <li><a href="#/blog" class="text-muted-foreground hover:text-primary transition-colors font-semibold text-primary">Digital Growth Blog</a></li>
+                <li><a href="#faq" class="text-muted-foreground hover:text-primary transition-colors">FAQ Directory</a></li>
+                <li><a href="#contact" class="text-muted-foreground hover:text-primary transition-colors">Audit Consultation</a></li>
               </ul>
             </div>
 
@@ -900,15 +987,15 @@
             <div class="lg:col-span-2">
               <div class="text-xs uppercase tracking-[0.2em] font-semibold text-muted-foreground mb-4">Services</div>
               <ul class="space-y-2.5 text-sm">
-                <li><a href="/#/service/website-development" class="text-muted-foreground hover:text-primary transition-colors">Website Development</a></li>
-                <li><a href="/#/service/landing-pages" class="text-muted-foreground hover:text-primary transition-colors">Landing Pages</a></li>
-                <li><a href="/#/service/google-ads" class="text-muted-foreground hover:text-primary transition-colors">Google Ads</a></li>
-                <li><a href="/#/service/meta-ads" class="text-muted-foreground hover:text-primary transition-colors">Meta Ads</a></li>
-                <li><a href="/#/service/seo" class="text-muted-foreground hover:text-primary transition-colors">SEO Solutions</a></li>
-                <li><a href="/#/service/gmb-optimization" class="text-muted-foreground hover:text-primary transition-colors">GMB / Google Business Profile</a></li>
-                <li><a href="/#/service/conversion-optimization" class="text-muted-foreground hover:text-primary transition-colors">Conversion optimization</a></li>
-                <li><a href="/#/service/shopify-development" class="text-muted-foreground hover:text-primary transition-colors">Shopify setups</a></li>
-                <li><a href="/#/service/wordpress-development" class="text-muted-foreground hover:text-primary transition-colors">Wordpress design</a></li>
+                <li><a href="#/service/website-development" class="text-muted-foreground hover:text-primary transition-colors">Website Development</a></li>
+                <li><a href="#/service/landing-pages" class="text-muted-foreground hover:text-primary transition-colors">Landing Pages</a></li>
+                <li><a href="#/service/google-ads" class="text-muted-foreground hover:text-primary transition-colors">Google Ads</a></li>
+                <li><a href="#/service/meta-ads" class="text-muted-foreground hover:text-primary transition-colors">Meta Ads</a></li>
+                <li><a href="#/service/seo" class="text-muted-foreground hover:text-primary transition-colors">SEO Solutions</a></li>
+                <li><a href="#/service/gmb-optimization" class="text-muted-foreground hover:text-primary transition-colors">GMB / Google Business Profile</a></li>
+                <li><a href="#/service/conversion-optimization" class="text-muted-foreground hover:text-primary transition-colors">Conversion optimization</a></li>
+                <li><a href="#/service/shopify-development" class="text-muted-foreground hover:text-primary transition-colors">Shopify setups</a></li>
+                <li><a href="#/service/wordpress-development" class="text-muted-foreground hover:text-primary transition-colors">Wordpress design</a></li>
               </ul>
             </div>
 
@@ -946,12 +1033,85 @@
         </div>
       </footer>
 
-    
+      <!-- WHATSAPP FAB BUTTON BLOCK -->
+      <a
+        href="https://wa.me/918788823182?text=Hi%20Inrank%20Technologies%2C%20I'd%20like%20to%20discuss%20a%20project."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="fixed z-40 bottom-6 right-6 sm:bottom-8 sm:right-8 h-14 w-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg hover:scale-105 transition-transform"
+        aria-label="Chat on WhatsApp"
+        style="box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); animation: whatsapp-pulse 1.8s infinite;"
+      >
+        <svg class="h-6 w-6 fill-current text-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+        </svg>
+      </a>
+
+      <!-- STICKY MOBILE CONVERSION BAR (Visible on Mobile only) -->
+  <div class="block md:hidden fixed bottom-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-t border-border px-4 py-2.5 shadow-2xl">
+    <div class="flex items-center gap-2.5">
+      <a href="tel:+918788823182" class="flex-1 inline-flex items-center justify-center gap-2 h-11 rounded-lg bg-card border border-border text-foreground font-semibold text-xs shadow-sm hover:bg-secondary transition-colors">
+        <i data-lucide="phone" class="h-4 w-4 text-primary"></i>
+        <span>Call Desk</span>
+      </a>
+      <a href="https://wa.me/918788823182?text=Hi%20Inrank%2C%20I%20visited%20your%20website%20and%20would%20like%20a%20free%20consultation." target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 h-11 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-md transition-colors">
+        <i data-lucide="message-circle" class="h-4 w-4"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="#contact" class="inline-flex items-center justify-center h-11 px-3.5 rounded-lg bg-primary text-white text-xs font-semibold shadow-sm">
+        Quote
+      </a>
+    </div>
+  </div>
+
+    </div>
 
     <script type="module" src="/src/main.ts"></script>
     <script>
+      // Initialize Lucide Icons
       if (window.lucide) {
         window.lucide.createIcons();
+      }
+
+      // Interactive Chip Selection
+      document.querySelectorAll('#service-chips-container .chip-item').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('#service-chips-container .chip-item').forEach(b => b.classList.remove('active-chip'));
+          btn.classList.add('active-chip');
+        });
+      });
+
+      document.querySelectorAll('#budget-chips-container .chip-item').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('#budget-chips-container .chip-item').forEach(b => b.classList.remove('active-chip'));
+          btn.classList.add('active-chip');
+        });
+      });
+
+      // Form submission handler
+      const form = document.getElementById('consult-form');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const selectedService = document.querySelector('#service-chips-container .active-chip')?.getAttribute('data-value') || 'Custom Business Website';
+          const selectedBudget = document.querySelector('#budget-chips-container .active-chip')?.getAttribute('data-value') || '₹16,999 (Business Growth)';
+          const name = document.getElementById('pune-name')?.value || '';
+          const phone = document.getElementById('pune-phone')?.value || '';
+          const email = document.getElementById('pune-email')?.value || '';
+          const locality = document.getElementById('pune-locality')?.value || 'Pune';
+
+          const message = encodeURIComponent(
+            `Hello Inrank Technologies, I would like to request a website consultation in Pune:\n\n` +
+            `*Name:* ${name}\n` +
+            `*Phone:* ${phone}\n` +
+            `*Email:* ${email}\n` +
+            `*Locality:* ${locality}\n` +
+            `*Service:* ${selectedService}\n` +
+            `*Budget:* ${selectedBudget}`
+          );
+
+          window.open(`https://wa.me/918788823182?text=${message}`, '_blank');
+        });
       }
     </script>
   </body>

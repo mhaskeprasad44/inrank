@@ -744,7 +744,7 @@ export function renderHomepage3View(): void {
             
             <div class="ting-craft-card p-6 rounded-xl flex flex-col justify-between space-y-4">
               <div class="space-y-3">
-                <span class="text-4xl text-[#00b755] font-serif leading-none">“</span>
+                <span class="text-4xl text-[#00b755] font-sans leading-none">“</span>
                 <p class="text-xs sm:text-sm text-stone-700 leading-relaxed italic">
                   Inrank has never operated with a narrow ‘scope of work’ mindset. They treat our ad spend and web uptime like it’s their own family business. Within 60 days of their revamp, our paid lead volume doubled with zero increase in cost-per-click.
                 </p>
@@ -757,7 +757,7 @@ export function renderHomepage3View(): void {
 
             <div class="ting-craft-card p-6 rounded-xl flex flex-col justify-between space-y-4">
               <div class="space-y-3">
-                <span class="text-4xl text-[#00b755] font-serif leading-none">“</span>
+                <span class="text-4xl text-[#00b755] font-sans leading-none">“</span>
                 <p class="text-xs sm:text-sm text-stone-700 leading-relaxed italic">
                   What truly sets Inrank apart is that design isn’t treated as cosmetic decoration — it is engineered for conversion. Their team built our property launch portal in two weeks flat with 99 PageSpeed and seamless WhatsApp tracking.
                 </p>
@@ -770,7 +770,7 @@ export function renderHomepage3View(): void {
 
             <div class="ting-craft-card p-6 rounded-xl flex flex-col justify-between space-y-4">
               <div class="space-y-3">
-                <span class="text-4xl text-[#00b755] font-serif leading-none">“</span>
+                <span class="text-4xl text-[#00b755] font-sans leading-none">“</span>
                 <p class="text-xs sm:text-sm text-stone-700 leading-relaxed italic">
                   Most digital agencies hide behind junior account executives. With Inrank, their senior search architect was on our WhatsApp group answering technical queries in minutes. Our local clinic bookings jumped by 240% within four months.
                 </p>

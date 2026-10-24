@@ -33,6 +33,7 @@
             fontFamily: {
               sans: ['Inter', 'system-ui', 'sans-serif'],
               display: ['Inter', 'system-ui', 'sans-serif'],
+              serif: ['Inter', 'system-ui', 'sans-serif'],
             },
             colors: {
               primary: '#00b755',
@@ -43,6 +44,12 @@
     </script>
 
     <style>
+
+/* Strict Universal Inter Font Enforcement */
+*, html, body, h1, h2, h3, h4, h5, h6, p, span, a, div, button, input, textarea, select, blockquote, label, li, ul, ol, td, th, .font-display, .font-sans, .font-serif {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
       /* Metal-FX iridescent border rings (AdAnt style) */
       .metal-fx-box {
         position: relative;

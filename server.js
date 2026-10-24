@@ -10,6 +10,7 @@ var app = express();
 var PORT = Number(process.env.PORT) || 3e3;
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
+app.use(express.static(path.join(process.cwd(), "public")));
 var getGeminiClient = () => {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
@@ -337,6 +338,55 @@ app.get(["/digital-marketing-agency-in-pune", "/digital-marketing-agency-in-pune
   if (fs.existsSync(distPage)) return res.sendFile(distPage);
   if (fs.existsSync(localPage)) return res.sendFile(localPage);
   return res.sendFile(path.join(process.cwd(), "index.html"));
+});
+app.get(["/justdial-profile", "/justdial-profile.html"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "justdial-profile.html");
+  const localPage = path.join(process.cwd(), "justdial-profile.html");
+  if (fs.existsSync(distPage)) return res.sendFile(distPage);
+  if (fs.existsSync(localPage)) return res.sendFile(localPage);
+  return res.sendFile(path.join(process.cwd(), "index.html"));
+});
+app.get(["/google-business-profile-top3", "/google-business-profile-top3.html", "/gbp-blueprint"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "google-business-profile-top3.html");
+  const localPage = path.join(process.cwd(), "google-business-profile-top3.html");
+  if (fs.existsSync(distPage)) return res.sendFile(distPage);
+  if (fs.existsSync(localPage)) return res.sendFile(localPage);
+  return res.sendFile(path.join(process.cwd(), "index.html"));
+});
+app.get(["/our-work", "/our-work.html"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "our-work.html");
+  const localPage = path.join(process.cwd(), "our-work.html");
+  if (fs.existsSync(distPage)) return res.sendFile(distPage);
+  if (fs.existsSync(localPage)) return res.sendFile(localPage);
+  const distPort = path.join(process.cwd(), "dist", "portfolio.html");
+  const localPort = path.join(process.cwd(), "portfolio.html");
+  if (fs.existsSync(distPort)) return res.sendFile(distPort);
+  if (fs.existsSync(localPort)) return res.sendFile(localPort);
+  return res.sendFile(path.join(process.cwd(), "index.html"));
+});
+app.get(["/portfolio", "/portfolio.html"], (req, res) => {
+  const ourWorkDist = path.join(process.cwd(), "dist", "our-work.html");
+  const ourWorkLocal = path.join(process.cwd(), "our-work.html");
+  if (fs.existsSync(ourWorkDist)) return res.sendFile(ourWorkDist);
+  if (fs.existsSync(ourWorkLocal)) return res.sendFile(ourWorkLocal);
+  const distPage = path.join(process.cwd(), "dist", "portfolio.html");
+  const localPage = path.join(process.cwd(), "portfolio.html");
+  if (fs.existsSync(distPage)) return res.sendFile(distPage);
+  if (fs.existsSync(localPage)) return res.sendFile(localPage);
+  return res.sendFile(path.join(process.cwd(), "index.html"));
+});
+app.get(["/our-work/:id", "/our-work/:id.html", "/case-studies/:id", "/case-studies/:id.html"], (req, res) => {
+  const rawId = req.params.id.replace(/\.html$/, "");
+  const candidates = [
+    path.join(process.cwd(), "dist", "our-work", `${rawId}.html`),
+    path.join(process.cwd(), "our-work", `${rawId}.html`),
+    path.join(process.cwd(), "dist", "case-studies", `${rawId}.html`),
+    path.join(process.cwd(), "case-studies", `${rawId}.html`)
+  ];
+  for (const c of candidates) {
+    if (fs.existsSync(c)) return res.sendFile(c);
+  }
+  return res.redirect("/our-work.html");
 });
 async function startServer() {
   const distPath = path.join(process.cwd(), "dist");

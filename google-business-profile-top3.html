@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Business Profile (GBP) Top 3 Domination Blueprint | Inrank Technologies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #059669;
+      --primary-dark: #065f46;
+      --primary-light: #ecfdf5;
+      --primary-border: #a7f3d0;
+      --slate-900: #0f172a;
+      --slate-800: #1e293b;
+      --slate-700: #334155;
+      --slate-600: #475569;
+      --slate-500: #64748b;
+      --slate-200: #e2e8f0;
+      --slate-100: #f1f5f9;
+      --slate-50: #f8fafc;
+      --amber-600: #d97706;
+      --red-600: #dc2626;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #f8fafc;
+      color: var(--slate-900);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      border: 1px solid var(--slate-200);
+      overflow: hidden;
+    }
+
+    .header-banner {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: white;
+      padding: 48px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+      border-bottom: 4px solid var(--primary-border);
+    }
+
+    .header-text h1 {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+
+    .header-text p {
+      font-size: 15px;
+      color: #d1fae5;
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+
+    .header-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      backdrop-filter: blur(4px);
+    }
+
+    .badge.active {
+      background: white;
+      color: var(--primary-dark);
+    }
+
+    .header-logo {
+      width: 80px;
+      height: 80px;
+      background: white;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      flex-shrink: 0;
+      padding: 8px;
+    }
+
+    .header-logo img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .quick-actions {
+      display: flex;
+      background: var(--slate-100);
+      padding: 16px 40px;
+      border-bottom: 1px solid var(--slate-200);
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .quick-actions-info {
+      font-size: 13px;
+      color: var(--slate-600);
+    }
+
+    .quick-actions-info strong {
+      color: var(--slate-900);
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-outline {
+      background: white;
+      border-color: var(--slate-200);
+      color: var(--slate-700);
+    }
+
+    .btn-outline:hover {
+      background: var(--slate-50);
+      border-color: var(--slate-300);
+    }
+
+    .content {
+      padding: 40px;
+    }
+
+    .callout {
+      background: var(--primary-light);
+      border-left: 4px solid var(--primary);
+      padding: 20px 24px;
+      border-radius: 0 12px 12px 0;
+      margin-bottom: 32px;
+    }
+
+    .callout h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .callout p {
+      font-size: 14px;
+      color: var(--slate-700);
+      line-height: 1.6;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--slate-900);
+      margin: 40px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--slate-200);
+    }
+
+    .section-title .number-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--primary);
+      color: white;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 28px;
+      font-size: 13.5px;
+    }
+
+    th {
+      background: var(--primary-dark);
+      color: white;
+      text-align: left;
+      padding: 12px 16px;
+      font-weight: 600;
+      border: 1px solid var(--slate-200);
+    }
+
+    td {
+      padding: 12px 16px;
+      border: 1px solid var(--slate-200);
+      vertical-align: top;
+      color: var(--slate-700);
+    }
+
+    tr:nth-child(even) td {
+      background: var(--slate-50);
+    }
+
+    .highlight-cell {
+      background: var(--primary-light) !important;
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+
+    .copy-block {
+      position: relative;
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      font-size: 13.5px;
+      color: var(--slate-800);
+      white-space: pre-wrap;
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: white;
+      border: 1px solid var(--slate-200);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--slate-700);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .copy-btn:hover {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    .chip-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .chip {
+      background: white;
+      border: 1px solid var(--slate-200);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--slate-700);
+    }
+
+    .chip.primary {
+      background: var(--primary-light);
+      border-color: var(--primary-border);
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+
+    .footer-signoff {
+      background: var(--primary-light);
+      border: 1px solid var(--primary-border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 40px;
+    }
+
+    .footer-signoff h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+    }
+
+    .footer-signoff p {
+      font-size: 13.5px;
+      color: var(--slate-700);
+      margin-bottom: 6px;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        background: white;
+      }
+      .container {
+        box-shadow: none;
+        border: none;
+        max-width: 100%;
+      }
+      .quick-actions, .copy-btn {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header Banner -->
+    <div class="header-banner">
+      <div class="header-text">
+        <h1>GOOGLE BUSINESS PROFILE (GBP) TOP 3 BLUEPRINT</h1>
+        <p>Comprehensive Local SEO Domination Strategy for Inrank Technologies (inranktech.com)</p>
+        <div class="header-badges">
+          <span class="badge active">Target: Google Local 3-Pack</span>
+          <span class="badge">Headquarters: Baner, Pune</span>
+          <span class="badge">Phone: +91 87888 23182</span>
+          <span class="badge">Category: Website Designer</span>
+        </div>
+      </div>
+      <div class="header-logo">
+        <img src="/Logo.png" alt="Inrank Technologies Logo">
+      </div>
+    </div>
+
+    <!-- Quick Action Bar -->
+    <div class="quick-actions">
+      <div class="quick-actions-info">
+        <strong>Verified Entity:</strong> Inrank Technologies • Office No. 11, Shree Bhagwati Suvarna Complex, Baner, Pune 411045
+      </div>
+      <div class="btn-group">
+        <a href="/Inrank_Technologies_Google_Business_Profile_Optimization_Blueprint_Top_3.docx" class="btn btn-primary" download>
+          ⬇ Download Word (.docx)
+        </a>
+        <button onclick="window.print()" class="btn btn-outline">
+          🖨 Print / Save as PDF
+        </button>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Executive Goal -->
+      <div class="callout">
+        <h3>Executive Objective: Overtaking Pune Competitors in 30–45 Days</h3>
+        <p>The Google Local 3-Pack captures over <strong>67.4% of high-intent clicks</strong> for search terms like <em>"website development company in pune"</em>, <em>"web design in baner"</em>, and <em>"digital marketing agency in pune"</em>. This blueprint exposes the weaknesses of legacy competitors (Awrange, WebVantik, local agencies) and outlines the exact copy, categories, 20 service areas, product catalog cards, and review velocity protocol to lock Inrank Technologies into the Top 3 map pack.</p>
+      </div>
+
+      <!-- Section 1 -->
+      <div class="section-title">
+        <span class="number-badge">1</span>
+        <span>Core Business Identity & NAP Synchronization</span>
+      </div>
+      <p style="font-size: 13.5px; color: var(--slate-600); margin-bottom: 14px;">
+        Name, Address, and Phone (NAP) consistency across Google, Justdial, and your website is the foundational algorithm signal for local trust:
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 28%;">Profile Parameter</th>
+            <th style="width: 44%;">Recommended Configuration</th>
+            <th style="width: 28%;">Algorithmic Impact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Business Title</strong></td>
+            <td>
+              <strong>Option A:</strong> Inrank Technologies<br>
+              <strong>Option B (Augmented):</strong> Inrank Technologies - Website Development & Digital Marketing Pune
+            </td>
+            <td>Highest single algorithmic weighting factor. Option B gives immediate relevance if signage exists.</td>
+          </tr>
+          <tr>
+            <td><strong>Primary Category</strong></td>
+            <td class="highlight-cell">Website Designer</td>
+            <td><strong>CRITICAL #1 FACTOR.</strong> Accounts for 65% of visibility for all web design & website builder searches.</td>
+          </tr>
+          <tr>
+            <td><strong>Secondary Categories</strong></td>
+            <td>
+              1. Internet Marketing Service<br>
+              2. Marketing Agency<br>
+              3. Advertising Agency<br>
+              4. Software Company<br>
+              5. Web Hosting Company<br>
+              6. Graphic Designer<br>
+              7. E-Commerce Service
+            </td>
+            <td>Enables secondary query triggers for SEO, PPC, Google Ads, and e-commerce stores across Pune.</td>
+          </tr>
+          <tr>
+            <td><strong>Physical Address</strong></td>
+            <td>
+              <strong>Office No. 11, Shree Bhagwati Suvarna Complex, Pancard Club Rd, Baner Gaon, Baner, Pune, Maharashtra 411045, India</strong><br>
+              <span style="font-size: 12px; color: var(--slate-500);">Landmark: Near Pancard Club, Baner Gaon</span>
+            </td>
+            <td>Baner is West Pune's tech corridor, providing direct proximity signals into Hinjewadi, Wakad, Balewadi, and Aundh.</td>
+          </tr>
+          <tr>
+            <td><strong>Phone / WhatsApp</strong></td>
+            <td class="highlight-cell">+91 87888 23182 (8788823182)</td>
+            <td>Enables click-to-call mobile buttons, SMS automation, and direct WhatsApp lead routing.</td>
+          </tr>
+          <tr>
+            <td><strong>Website Link</strong></td>
+            <td>https://inranktech.com?utm_source=google&utm_medium=organic&utm_campaign=gbp_pune</td>
+            <td>UTM tracking separates map pack organic clicks inside Google Analytics 4 (GA4).</td>
+          </tr>
+          <tr>
+            <td><strong>Appointment Link</strong></td>
+            <td>https://inranktech.com/contact.html</td>
+            <td>Direct conversion booking link for client consultations and instant price estimations.</td>
+          </tr>
+          <tr>
+            <td><strong>Hours of Operation</strong></td>
+            <td>Mon–Sat: 9:00 AM – 8:00 PM | Sun: 10:00 AM – 4:00 PM (or "Open 24 Hours")</td>
+            <td>Boosts rank in mobile "Open Now" filter searches when prospects search during evening hours.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Section 2 -->
+      <div class="section-title">
+        <span class="number-badge">2</span>
+        <span>Competitor Vulnerability Gap (How Inrank Wins)</span>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 25%;">Factor</th>
+            <th style="width: 37%;">Competitors (Awrange, WebVantik)</th>
+            <th style="width: 38%;">Inrank Technologies Advantage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Page Load Speed</strong></td>
+            <td>Heavy bloated WordPress themes (3.5s – 6.2s load time). Failing Core Web Vitals.</td>
+            <td class="highlight-cell"><strong>0.72s Sub-Second React 18 / Vite.</strong> Google algorithms reward fast destination pages with higher map ranks.</td>
+          </tr>
+          <tr>
+            <td><strong>Price Transparency</strong></td>
+            <td>Zero pricing visible. Friction-heavy "Request a Quote" forms that deter price-sensitive buyers.</td>
+            <td class="highlight-cell"><strong>Transparent packages starting at ₹11,999.</strong> 4x higher CTR from SMBs and local startups.</td>
+          </tr>
+          <tr>
+            <td><strong>AI Search & GEO</strong></td>
+            <td>Targeting outdated 2021 SEO keywords. Invisible on ChatGPT & Perplexity search.</td>
+            <td class="highlight-cell"><strong>Generative Engine Optimization (GEO).</strong> Structured schema positions Inrank in AI Overviews.</td>
+          </tr>
+          <tr>
+            <td><strong>GBP Product Catalog</strong></td>
+            <td>Empty or neglected product catalog with stale promotional graphics.</td>
+            <td class="highlight-cell"><strong>5 Full Interactive Product Cards</strong> with fixed pricing and instant CTA buttons.</td>
+          </tr>
+          <tr>
+            <td><strong>Review Quality</strong></td>
+            <td>Generic 1-line reviews ("Good service", "Nice team") with no keyword entity depth.</td>
+            <td class="highlight-cell"><strong>Keyword-rich NLP customer reviews</strong> citing "React 18 website in Baner" creating map justifications.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Section 3 -->
+      <div class="section-title">
+        <span class="number-badge">3</span>
+        <span>Ready-to-Paste Business Description (750 Characters)</span>
+      </div>
+      <p style="font-size: 13.5px; color: var(--slate-600); margin-bottom: 10px;">
+        The first 250 characters contain primary keywords and direct phone contact before the "Read more" fold:
+      </p>
+
+      <div class="copy-block" id="gbp-description">Inrank Technologies is Pune’s premier performance web development company & digital marketing agency headquartered in Baner (Off Pancard Club Rd). Call/WhatsApp: 8788823182.
+
+We engineer sub-second loading business websites, high-converting React 18/Vite web apps, and Shopify e-commerce storefronts with 98+ Google PageSpeed scores. Unlike bloated WordPress agencies, Inrank guarantees fixed-price web packages starting from ₹11,999 with 5-7 days turnaround.
+
+Our full-funnel digital growth services include Generative Engine Optimization (GEO), Google Business Profile Local SEO (Top 3-Pack domination), Google Ads (PPC), Meta Ads, and brand identity design. Serving Baner, Balewadi, Hinjewadi, Wakad, Kothrud, Viman Nagar, and across Pune & international clients.<button class="copy-btn" onclick="copyText('gbp-description')">Copy Description</button></div>
+
+      <!-- Section 4 -->
+      <div class="section-title">
+        <span class="number-badge">4</span>
+        <span>20 High-Converting Service Areas in Pune</span>
+      </div>
+      <p style="font-size: 13.5px; color: var(--slate-600); margin-bottom: 12px;">
+        Add all 20 localities in your GBP under <strong>Edit Profile > Location & Areas > Service Area</strong>:
+      </p>
+
+      <div class="chip-cloud">
+        <span class="chip primary">Baner, Pune (411045)</span>
+        <span class="chip primary">Balewadi, Pune</span>
+        <span class="chip primary">Hinjewadi Phase 1, 2, 3</span>
+        <span class="chip primary">Wakad, Pune</span>
+        <span class="chip primary">Aundh, Pune</span>
+        <span class="chip primary">Pashan, Pune</span>
+        <span class="chip primary">Bavdhan, Pune</span>
+        <span class="chip primary">Pimple Saudagar, Pune</span>
+        <span class="chip primary">Pimple Nilakh, Pune</span>
+        <span class="chip primary">Punawale & Tathawade</span>
+        <span class="chip">Shivaji Nagar, Pune</span>
+        <span class="chip">FC Road & JM Road</span>
+        <span class="chip">Kothrud, Pune</span>
+        <span class="chip">Viman Nagar, Pune</span>
+        <span class="chip">Kharadi (EON IT Park)</span>
+        <span class="chip">Kalyani Nagar</span>
+        <span class="chip">Koregaon Park</span>
+        <span class="chip">Hadapsar & Magarpatta</span>
+        <span class="chip">Pimpri-Chinchwad (PCMC)</span>
+        <span class="chip">Bhosari MIDC</span>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="section-title">
+        <span class="number-badge">5</span>
+        <span>Ready-to-Paste Product Catalog (5 Offerings)</span>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 25%;">Product Name & Category</th>
+            <th style="width: 22%;">Price & CTA Button</th>
+            <th style="width: 53%;">Description to Paste in GMB</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Starter Launch Website</strong><br>
+              <span style="font-size: 12px; color: var(--slate-500);">Category: Web Development</span>
+            </td>
+            <td>
+              <strong style="color: var(--primary-dark);">₹11,999 (Fixed)</strong><br>
+              Button: Order Online<br>
+              <span style="font-size: 11px; color: var(--slate-500);">URL: inranktech.com/pricing.html</span>
+            </td>
+            <td>Complete 5-page custom mobile-responsive business website. Includes free 1-year cloud hosting, domain, SSL certificate, WhatsApp lead button, Google Maps integration, and 365-day technical support. Rapid delivery in 5–7 days. Perfect for startups, clinics, and Pune local businesses.</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Business Growth Web Portal</strong><br>
+              <span style="font-size: 12px; color: var(--slate-500);">Category: Custom Web Development</span>
+            </td>
+            <td>
+              <strong style="color: var(--primary-dark);">₹24,999 (Fixed)</strong><br>
+              Button: Learn More<br>
+              <span style="font-size: 11px; color: var(--slate-500);">URL: inranktech.com/website-design-company-in-pune.html</span>
+            </td>
+            <td>Up to 12 pages engineered on ultra-fast React 18 & Vite architecture. Features 0.8s load times, interactive quotation wizard, high-ticket lead forms, advanced JSON-LD Schema markup, and 1 year of free priority maintenance. Built for manufacturers, corporate consultants, and real estate firms.</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>E-Commerce & Online Storefront</strong><br>
+              <span style="font-size: 12px; color: var(--slate-500);">Category: E-Commerce Services</span>
+            </td>
+            <td>
+              <strong style="color: var(--primary-dark);">₹34,999 – ₹49,999</strong><br>
+              Button: Get Offer<br>
+              <span style="font-size: 11px; color: var(--slate-500);">URL: inranktech.com/pricing.html</span>
+            </td>
+            <td>Full-scale Shopify or Custom React e-commerce store with 0% transaction commission. Unlimited products, Razorpay/Stripe integration, automated WhatsApp cart abandonment recovery, courier shipping API, and mobile-optimized checkout. Built for high conversion and repeat orders.</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Local SEO & GMB Domination</strong><br>
+              <span style="font-size: 12px; color: var(--slate-500);">Category: Internet Marketing</span>
+            </td>
+            <td>
+              <strong style="color: var(--primary-dark);">₹8,999 / month</strong><br>
+              Button: Buy<br>
+              <span style="font-size: 11px; color: var(--slate-500);">URL: inranktech.com/contact.html</span>
+            </td>
+            <td>Guaranteed Google Local 3-Pack map rankings in Pune. Includes 100% profile optimization, 50+ high-authority Pune local citations, keyword-rich review generation strategy, spam competitor removal, and monthly ranking & phone inquiry reports. Outrank local competitors effortlessly.</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>360° Digital Marketing & Paid Ads</strong><br>
+              <span style="font-size: 12px; color: var(--slate-500);">Category: Advertising Agency</span>
+            </td>
+            <td>
+              <strong style="color: var(--primary-dark);">₹18,000 – ₹35,000 / mo</strong><br>
+              Button: Call Now<br>
+              <span style="font-size: 11px; color: var(--slate-500);">URL: inranktech.com/digital-marketing-agency-in-pune.html</span>
+            </td>
+            <td>Full-funnel digital marketing engine: High-ROAS Google Ads (Search & Performance Max) + Meta (Instagram/Facebook) lead funnels + SEO + 12 monthly viral reels/posts. Includes weekly performance analytics and dedicated account manager. Proven to triple qualified inbound leads.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Section 6 -->
+      <div class="section-title">
+        <span class="number-badge">6</span>
+        <span>Review Velocity & NLP Keyword Justifications</span>
+      </div>
+
+      <div class="callout" style="background: var(--slate-50); border-left-color: var(--amber-600);">
+        <h3 style="color: var(--amber-600);">The NLP Client Review Formula (5 Reviews / Week Target)</h3>
+        <p>Google highlights exact customer words in search results. Send this WhatsApp template to past and current clients (CyTOS, Fludio, HIRAGRAFIX, etc.):</p>
+        <div class="copy-block" id="whatsapp-review-template" style="margin-top: 10px; background: white;">“Hi [Client Name], it was a pleasure engineering the new website for [Client Business]! Could you take 60 seconds to share your experience on our Google Profile? It helps local businesses find us. Here is the direct link: [Your Review Link]
+
+PS: Feel free to mention how fast the site loads and our support in Pune!”<button class="copy-btn" onclick="copyText('whatsapp-review-template')">Copy Template</button></div>
+        
+        <p style="margin-top: 10px;"><strong>Owner Reply Formula (Always Reply Within 24 Hours):</strong></p>
+        <div class="copy-block" id="owner-reply-template" style="margin-top: 8px; background: white;">“Thank you [Client Name]! We loved building the custom React website for [Client Business] here in Baner, Pune. Ensuring sub-second load times and top Google rankings was our top priority!”<button class="copy-btn" onclick="copyText('owner-reply-template')">Copy Reply</button></div>
+      </div>
+
+      <!-- Section 7 -->
+      <div class="section-title">
+        <span class="number-badge">7</span>
+        <span>30-Day Step-by-Step Top 3 Execution Roadmap</span>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 20%;">Week / Phase</th>
+            <th style="width: 52%;">Action Items & Deliverables</th>
+            <th style="width: 28%;">Milestone Target</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Week 1 (Days 1–7)</strong></td>
+            <td>
+              • Set Primary Category to <strong>Website Designer</strong><br>
+              • Add 7 secondary categories<br>
+              • Paste 750-character optimized description<br>
+              • Add all 20 Pune service areas<br>
+              • Upload 15 geotagged office & project photos
+            </td>
+            <td>Profile 100% complete. Immediate visibility lift in Baner.</td>
+          </tr>
+          <tr>
+            <td><strong>Week 2 (Days 8–14)</strong></td>
+            <td>
+              • Publish all 5 products with fixed ₹ prices<br>
+              • Add all 12 services with detailed descriptions<br>
+              • Sync LocalBusiness JSON-LD schema on inranktech.com<br>
+              • Embed Google Maps iframe on contact.html
+            </td>
+            <td>Product catalog active. Mobile CTR increases by ~35%.</td>
+          </tr>
+          <tr>
+            <td><strong>Week 3 (Days 15–21)</strong></td>
+            <td>
+              • Acquire 10 verified customer reviews using WhatsApp template<br>
+              • Post 2 Google Updates showcasing 0.7s web speed scores<br>
+              • Publish 1 Offer Post (Starter Website from ₹11,999)<br>
+              • Reply to all reviews within 24h with NLP keywords
+            </td>
+            <td>15+ reviews reached. Google review justification badges appear.</td>
+          </tr>
+          <tr>
+            <td><strong>Week 4 (Days 22–30)</strong></td>
+            <td>
+              • Synchronize NAP citations across Justdial, IndiaMART, Sulekha<br>
+              • Seed 5 community Q&A questions with keyword-rich answers<br>
+              • Report competitor spam / fake addresses in Baner<br>
+              • Monitor geo-grid ranking report
+            </td>
+            <td class="highlight-cell"><strong>TOP 3 LOCAL PACK ENTRY</strong> across Baner, Balewadi, Hinjewadi & Wakad.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Verification Card -->
+      <div class="footer-signoff">
+        <h4>INRANK TECHNOLOGIES — LOCAL SEARCH DOMINATION DESK</h4>
+        <p><strong>Official Entity:</strong> Inrank Technologies</p>
+        <p><strong>Hotline & WhatsApp:</strong> <a href="tel:+918788823182" style="color: var(--primary-dark); font-weight: 700; text-decoration: none;">+91 87888 23182</a> (8788823182)</p>
+        <p><strong>Official Website:</strong> <a href="https://inranktech.com" target="_blank" style="color: var(--primary); font-weight: 600;">https://inranktech.com</a></p>
+        <p><strong>Physical Address:</strong> Office No. 11, Shree Bhagwati Suvarna Complex, Pancard Club Rd, Baner Gaon, Baner, Pune, Maharashtra 411045, India</p>
+        <p style="margin-top: 12px; font-weight: 600; color: var(--primary-dark);">
+          ✓ Blueprint Approved & Ready for Immediate Implementation. Executing this step-by-step optimization ensures Inrank Technologies achieves undisputed Top 3 placement on Google Maps across Pune.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function copyText(id) {
+      const el = document.getElementById(id);
+      // Remove button text from copy
+      const clone = el.cloneNode(true);
+      const btn = clone.querySelector('button');
+      if (btn) btn.remove();
+      const text = clone.innerText.trim();
+      navigator.clipboard.writeText(text).then(() => {
+        const origBtn = el.querySelector('button');
+        if (origBtn) {
+          const oldText = origBtn.innerText;
+          origBtn.innerText = '✓ Copied!';
+          origBtn.style.background = '#059669';
+          origBtn.style.color = '#fff';
+          setTimeout(() => {
+            origBtn.innerText = oldText;
+            origBtn.style.background = '';
+            origBtn.style.color = '';
+          }, 2000);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
