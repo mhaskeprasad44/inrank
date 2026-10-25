@@ -1720,7 +1720,7 @@ function renderServiceDetailView(service: ServiceDetail) {
               <div class="absolute -right-8 -top-8 w-24 h-24 bg-primary/10 rounded-full blur-xl pointer-events-none"></div>
               
               <div class="flex items-center gap-2 border-b border-border/80 pb-3">
-                <i data-lucide="sparkles" class="h-4 w-4 text-primary animate-pulse"></i>
+                <i data-lucide="shield-check" class="h-4 w-4 text-primary"></i>
                 <h3 class="text-xs font-semibold uppercase tracking-[0.15em] text-foreground">Inrank Strategy Audit</h3>
               </div>
               
@@ -2680,7 +2680,7 @@ const SERVICE_PILLAR_MAP: Record<string, { pillar: string; icon: string; badge: 
   "seo": { pillar: "Search & AI Discovery", icon: "search", badge: "12,100/mo Search Volume · KD 32" },
   "backlink-building": { pillar: "Search & AI Discovery", icon: "link-2", badge: "DR 50-85+ Editorial Links · Zero PBNs" },
   "gmb-optimization": { pillar: "Search & AI Discovery", icon: "map-pin", badge: "Google 3-Pack Maps Leader · High Intent Calls" },
-  "ai-seo-agency": { pillar: "Search & AI Discovery", icon: "sparkles", badge: "SearchGPT & Perplexity Engine Optimization" },
+  "ai-seo-agency": { pillar: "Search & AI Discovery", icon: "cpu", badge: "SearchGPT & Perplexity Engine Optimization" },
   "geo-seo-agency": { pillar: "Search & AI Discovery", icon: "compass", badge: "Generative Engine Optimization Architecture" },
   "ai-ranking-citations": { pillar: "Search & AI Discovery", icon: "share-2", badge: "AI Knowledge Graph & Entity Citations" },
   "content-marketing": { pillar: "Search & AI Discovery", icon: "file-text", badge: "Topic Clusters & High Authority Backlinks" },
@@ -2713,7 +2713,7 @@ const SERVICE_PILLAR_MAP: Record<string, { pillar: string; icon: string; badge: 
 };
 
 function generateServiceCardHTML(service: ServiceDetail) {
-  const meta = SERVICE_PILLAR_MAP[service.id] || { pillar: "Search & AI Discovery", icon: "sparkles", badge: "Specialized Discipline" };
+  const meta = SERVICE_PILLAR_MAP[service.id] || { pillar: "Search & AI Discovery", icon: "cpu", badge: "Specialized Discipline" };
   const deliverables = service.detailedServices.slice(0, 3);
   const isAiService = service.id === "ai-seo-agency" || service.id === "geo-seo-agency" || service.id === "ai-ranking-citations";
 
@@ -3176,7 +3176,7 @@ function renderBlogHubView() {
     { name: "Google Ads & Meta Ads", icon: "target" },
     { name: "Web Development & Website Performance", icon: "code-xml" },
     { name: "Shopify, WordPress & Conversion Optimization", icon: "mouse-pointer-click" },
-    { name: "AI Solutions & Modern Search Architecture", icon: "sparkles" },
+    { name: "AI Solutions & Modern Search Architecture", icon: "cpu" },
     { name: "Brand Identity & Corporate Design", icon: "palette" },
     { name: "Strategic Growth & Inbound Marketing", icon: "trending-up" }
   ];
@@ -3639,27 +3639,27 @@ function renderBlogPostView(blog: BlogPost) {
 
               <!-- Why Matters H2 -->
               <section class="space-y-3">
-                <h2 class="font-display font-bold text-xl sm:text-2xl text-foreground tracking-tight flex items-center gap-2 border-b border-border pb-2 mt-8">
-                  <span class="text-primary font-mono text-base font-semibold">#1 :</span>
-                  ${blog.whyMattersHeading}
+                <h2 class="font-display font-bold text-xl sm:text-2xl text-foreground tracking-tight flex items-start gap-2.5 border-b border-border pb-2 mt-8 leading-snug">
+                  <span class="text-primary font-mono text-base sm:text-lg font-semibold shrink-0 select-none whitespace-nowrap mt-0.5">#1:</span>
+                  <span class="flex-1">${blog.whyMattersHeading}</span>
                 </h2>
                 ${renderParagraphs(blog.whyMatters)}
               </section>
 
               <!-- Mistakes H2 -->
               <section class="space-y-3">
-                <h2 class="font-display font-bold text-xl sm:text-2xl text-foreground tracking-tight flex items-center gap-2 border-b border-border pb-2 mt-8">
-                  <span class="text-primary font-mono text-base font-semibold">#2 :</span>
-                  ${blog.mistakesHeading}
+                <h2 class="font-display font-bold text-xl sm:text-2xl text-foreground tracking-tight flex items-start gap-2.5 border-b border-border pb-2 mt-8 leading-snug">
+                  <span class="text-primary font-mono text-base sm:text-lg font-semibold shrink-0 select-none whitespace-nowrap mt-0.5">#2:</span>
+                  <span class="flex-1">${blog.mistakesHeading}</span>
                 </h2>
                 ${renderParagraphs(blog.mistakes)}
               </section>
 
               <!-- What to do instead H2 -->
               <section class="space-y-3">
-                <h2 class="font-display font-bold text-xl sm:text-2xl text-foreground tracking-tight flex items-center gap-2 border-b border-border pb-2 mt-8">
-                  <span class="text-primary font-mono text-base font-semibold">#3 :</span>
-                  ${blog.whatToDoHeading}
+                <h2 class="font-display font-bold text-xl sm:text-2xl text-foreground tracking-tight flex items-start gap-2.5 border-b border-border pb-2 mt-8 leading-snug">
+                  <span class="text-primary font-mono text-base sm:text-lg font-semibold shrink-0 select-none whitespace-nowrap mt-0.5">#3:</span>
+                  <span class="flex-1">${blog.whatToDoHeading}</span>
                 </h2>
                 ${renderParagraphs(blog.whatToDo)}
               </section>
@@ -3690,9 +3690,9 @@ function renderBlogPostView(blog: BlogPost) {
               <!-- In-Depth Technical Deep Dives (Sections) -->
               ${blog.sections && blog.sections.length > 0 ? blog.sections.map((sec, secIdx) => `
                 <section class="space-y-3">
-                  <h2 class="font-display font-bold text-xl sm:text-2xl text-foreground tracking-tight flex items-center gap-2 border-b border-border pb-2 mt-8">
-                    <span class="text-primary font-mono text-base font-semibold">#3.${secIdx + 1} :</span>
-                    ${sec.heading}
+                  <h2 class="font-display font-bold text-xl sm:text-2xl text-foreground tracking-tight flex items-start gap-2.5 border-b border-border pb-2 mt-8 leading-snug">
+                    <span class="text-primary font-mono text-base sm:text-lg font-semibold shrink-0 select-none whitespace-nowrap mt-0.5">#3.${secIdx + 1}:</span>
+                    <span class="flex-1">${sec.heading}</span>
                   </h2>
                   ${renderParagraphs(sec.content)}
                 </section>
@@ -3703,9 +3703,9 @@ function renderBlogPostView(blog: BlogPost) {
 
               <!-- Action Checklist / Resources H2 -->
               <section class="space-y-4">
-                <h2 class="font-display font-bold text-xl sm:text-2xl text-foreground tracking-tight flex items-center gap-2 border-b border-border pb-2 mt-8">
-                  <span class="text-primary font-mono text-base font-semibold">#4 :</span>
-                  ${blog.checklistHeading}
+                <h2 class="font-display font-bold text-xl sm:text-2xl text-foreground tracking-tight flex items-start gap-2.5 border-b border-border pb-2 mt-8 leading-snug">
+                  <span class="text-primary font-mono text-base sm:text-lg font-semibold shrink-0 select-none whitespace-nowrap mt-0.5">#4:</span>
+                  <span class="flex-1">${blog.checklistHeading}</span>
                 </h2>
                 <ul class="space-y-3">
                   ${blog.checklistItems.map(item => `
@@ -3718,22 +3718,7 @@ function renderBlogPostView(blog: BlogPost) {
                   `).join("")}
                 </ul>
 
-                <!-- High-Authority Outbound Links Box -->
-                <div class="bg-muted/40 border border-border rounded-xl p-5 mt-6 space-y-3">
-                  <h4 class="font-bold text-sm text-foreground flex items-center gap-2">
-                    <i data-lucide="external-link" class="h-4 w-4 text-primary"></i>
-                    High-Authority Outbound References (Dofollow Verified):
-                  </h4>
-                  <ul class="space-y-1.5 text-xs sm:text-sm">
-                    ${blog.usefulResources.map(res => `
-                      <li>
-                        <a href="${res.url}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline inline-flex items-center gap-1.5 font-medium">
-                          ${res.name} <span class="text-[9px] px-1 bg-emerald-500/10 text-emerald-500 rounded border border-emerald-500/20 font-mono">dofollow</span>
-                        </a>
-                      </li>
-                    `).join("")}
-                  </ul>
-                </div>
+                
               </section>
 
               <!-- Older Posts / Topic Cluster Internal Links -->
@@ -3761,9 +3746,9 @@ function renderBlogPostView(blog: BlogPost) {
 
               <!-- Accordion FAQ section -->
               <section class="space-y-4 border-t border-border pt-8 mt-12">
-                <h2 class="font-display font-bold text-xl sm:text-2xl text-foreground tracking-tight flex items-center gap-2 border-b border-border pb-2">
-                  <span class="text-primary font-mono text-base font-semibold">#5 :</span>
-                  Expert FAQs
+                <h2 class="font-display font-bold text-xl sm:text-2xl text-foreground tracking-tight flex items-start gap-2.5 border-b border-border pb-2 mt-8 leading-snug">
+                  <span class="text-primary font-mono text-base sm:text-lg font-semibold shrink-0 select-none whitespace-nowrap mt-0.5">#5:</span>
+                  <span class="flex-1">Expert FAQs</span>
                 </h2>
                 <div class="space-y-3">
                   ${blogFaqsHTML}
@@ -3774,9 +3759,7 @@ function renderBlogPostView(blog: BlogPost) {
 
             <!-- Elegant Commercial Conversion CTA Component -->
             <section class="border border-slate-200 bg-gradient-to-br from-indigo-50/50 via-white to-emerald-50/50 rounded-2xl p-6 sm:p-10 text-center shadow-md space-y-5 max-w-2xl mx-auto mt-16">
-              <div class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-primary/10 text-primary">
-                <i data-lucide="sparkles" class="h-6 w-6"></i>
-              </div>
+              
               <div class="space-y-2">
                 <h3 class="font-display font-bold text-2xl text-slate-900">Let's Build Growth That Converts</h3>
                 <p class="text-slate-600 text-sm max-w-md mx-auto leading-relaxed font-sans">
@@ -3803,7 +3786,7 @@ function renderBlogPostView(blog: BlogPost) {
               
               <div class="flex items-center justify-between border-b border-border/80 pb-3">
                 <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary border border-primary/20">
-                  <i data-lucide="sparkles" class="h-3 w-3"></i>
+                  
                   ${matchingService.title} Audit
                 </span>
                 <span class="text-[9px] font-mono px-2 py-0.5 rounded border border-emerald-500/20 bg-emerald-500/10 text-emerald-600 font-bold">100% Free</span>

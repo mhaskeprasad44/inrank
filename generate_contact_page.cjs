@@ -126,7 +126,7 @@ const contactHtml = `<!DOCTYPE html>
               WhatsApp Direct (+91 70386 12280)
             </a>
             <a href="#consult-form" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-200 font-semibold text-sm border border-slate-700 transition-all">
-              <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i>
+              <i data-lucide="clock" class="w-4 h-4 text-emerald-600"></i>
               Request Project Quote
             </a>
           </div>

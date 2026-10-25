@@ -689,7 +689,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       {
             "title": "A 360° Minimalist High-Fashion UX",
             "description": "Editorial product photography layouts, sleek typography, and uncluttered visual hierarchy inspired by world-class streetwear houses.",
-            "icon": "sparkles"
+            "icon": "palette"
       },
       {
             "title": "Dynamic Coupon & Conversion Acceleration",
@@ -751,7 +751,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
         {
           title: "Direct WhatsApp Styling Desk",
           description: "Implemented a personal stylist consultation desk via WhatsApp, allowing customers to ask styling questions and request custom tailoring.",
-          icon: "sparkles"
+          icon: "zap"
         }
       ]
     },
@@ -794,7 +794,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       { title: "Mobile Touch Carousel", description: "Ultra-smooth image sliders with 1-tap quick view and color swatches.", icon: "smartphone" },
       { title: "Personal Stylist WhatsApp Desk", description: "Direct VIP styling consultation linking buyers with fashion advisors.", icon: "message-circle" },
       { title: "E-Commerce SEO Schema", description: "Rich product snippets for Google Shopping and visual discovery.", icon: "tag" },
-      { title: "Influencer Landing Templates", description: "High-speed landing pages engineered for paid Instagram ad campaigns.", icon: "sparkles" }
+      { title: "Influencer Landing Templates", description: "High-speed landing pages engineered for paid Instagram ad campaigns.", icon: "zap" }
     ],
     testimonial: {
       quote: "Fashion e-commerce lives and dies by visual aesthetics and speed. If a page takes more than 2 seconds to load, the buyer is gone. Inrank built a digital storefront that looks like Vogue and loads instantly. Our customers constantly compliment the design, and our sizing returns dropped dramatically.",

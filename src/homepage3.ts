@@ -119,7 +119,7 @@ export function renderHomepage3View(): void {
                 </a>
                 <a href="#hp3-work-grid" class="ting-button">
                   <span>View Our Work (Case Studies)</span>
-                  <i data-lucide="sparkles" class="h-4 w-4 text-[#00b755]"></i>
+                  <i data-lucide="zap" class="h-4 w-4 text-[#00b755]"></i>
                 </a>
                 <a href="https://wa.me/918788823182?text=Hi%20Inrank%20Team!%20I%20am%20exploring%20Homepage-3%20(Creative%20Craft%20Edition)%20and%20would%20love%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono font-bold text-stone-700 hover:text-black py-2 px-3 border border-stone-200 bg-stone-50 rounded">
                   <i data-lucide="message-circle" class="h-4 w-4 text-[#00b755]"></i>
