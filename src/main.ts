@@ -91,6 +91,8 @@ function initNavigation() {
 
     servicesDropdownTrigger.parentElement?.addEventListener("mouseenter", showMenu);
     servicesDropdownTrigger.parentElement?.addEventListener("mouseleave", hideMenu);
+    servicesDropdownMenu.addEventListener("mouseenter", showMenu);
+    servicesDropdownMenu.addEventListener("mouseleave", hideMenu);
     servicesDropdownTrigger.addEventListener("click", (e) => {
       e.stopPropagation();
       const isClosed = servicesDropdownMenu.classList.contains("pointer-events-none");
@@ -3506,7 +3508,7 @@ function renderBlogPostView(blog: BlogPost) {
         return str
           .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_match, anchor, url) => {
             const isExt = url.startsWith("http");
-            return `<a href="${url}" ${isExt ? 'target="_blank" rel="noopener noreferrer"' : ""} class="text-primary font-medium hover:underline inline-flex items-center gap-0.5">${anchor}${isExt ? ' <i data-lucide="arrow-up-right" class="inline h-3 w-3"></i>' : ""}</a>`;
+            return `<a href="${url}" ${isExt ? 'target="_blank" rel="noopener noreferrer"' : ""} class="text-primary font-medium hover:underline inline-flex items-center">${anchor}</a>`;
           })
           .replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold text-foreground">$1</strong>');
       };
@@ -3726,7 +3728,7 @@ function renderBlogPostView(blog: BlogPost) {
                     ${blog.usefulResources.map(res => `
                       <li>
                         <a href="${res.url}" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline inline-flex items-center gap-1.5 font-medium">
-                          ${res.name} <span class="text-[9px] px-1 bg-emerald-500/10 text-emerald-500 rounded border border-emerald-500/20 font-mono">dofollow</span> <i data-lucide="arrow-up-right" class="h-3.5 w-3.5"></i>
+                          ${res.name} <span class="text-[9px] px-1 bg-emerald-500/10 text-emerald-500 rounded border border-emerald-500/20 font-mono">dofollow</span>
                         </a>
                       </li>
                     `).join("")}

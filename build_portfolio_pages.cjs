@@ -41,18 +41,18 @@ function getHeaderHTML(activeNav = 'portfolio') {
                 <i data-lucide="chevron-down" id="services-dropdown-chevron" class="h-4 w-4 text-muted-foreground transition-transform duration-200 group-hover:rotate-180"></i>
               </button>
               
-              <!-- 4-Pillar Dropdown Menu -->
-              <div id="services-dropdown-menu" class="fixed md:absolute left-1/2 -translate-x-1/2 top-16 md:top-full md:pt-2 w-[94vw] md:w-[740px] max-w-4xl opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
-                <div class="rounded-2xl border border-border bg-white dark:bg-zinc-950 p-6 shadow-2xl">
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-left">
+              <!-- Full-Width 4-Pillar Mega Dropdown Menu -->
+              <div id="services-dropdown-menu" class="fixed left-0 right-0 top-16 sm:top-20 w-full bg-white dark:bg-zinc-950 border-b border-border shadow-2xl opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 sm:py-8">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 text-left">
                     
-                    <!-- Web & E-Commerce -->
-                    <div class="space-y-1.5">
-                      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600 pb-1 border-b border-border/50">
+                    <!-- Pillar 1: Web & E-Commerce -->
+                    <div class="space-y-2">
+                      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600 pb-2 border-b border-border/60">
                         <i data-lucide="code-xml" class="w-4 h-4"></i>
                         <span>Web &amp; E-Commerce</span>
                       </div>
-                      <div class="space-y-0.5">
+                      <div class="space-y-1">
                         <a href="/#/service/website-development" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
                           <div class="text-xs font-bold text-foreground">Custom Website Development</div>
                           <div class="text-[11px] text-muted-foreground">High-speed React/Vite/HTML5 websites</div>
@@ -61,8 +61,12 @@ function getHeaderHTML(activeNav = 'portfolio') {
                           <div class="text-xs font-bold text-foreground">Shopify &amp; E-Commerce Stores</div>
                           <div class="text-[11px] text-muted-foreground">0% transaction commission, WhatsApp cart</div>
                         </a>
-                        <a href="/website-design-company-in-pune.html" class="block p-2 rounded-lg bg-emerald-50/50 hover:bg-emerald-50 transition-colors border border-emerald-100">
-                          <div class="text-xs font-bold text-emerald-700 flex items-center justify-between">
+                        <a href="/#/service/wordpress-development" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <div class="text-xs font-bold text-foreground">WordPress Development</div>
+                          <div class="text-[11px] text-muted-foreground">Custom themes &amp; speed optimization</div>
+                        </a>
+                        <a href="/website-design-company-in-pune.html" class="block p-2 rounded-lg bg-emerald-50/50 dark:bg-emerald-950/20 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 transition-colors border border-emerald-100 dark:border-emerald-900/30">
+                          <div class="text-xs font-bold text-emerald-700 dark:text-emerald-400 flex items-center justify-between">
                             <span>Web Designing in Pune (Local Hub)</span>
                             <span class="text-[9px] uppercase px-1.5 py-0.2 bg-emerald-600 text-white rounded font-bold">Pune</span>
                           </div>
@@ -71,13 +75,13 @@ function getHeaderHTML(activeNav = 'portfolio') {
                       </div>
                     </div>
 
-                    <!-- AI Search & SEO -->
-                    <div class="space-y-1.5">
-                      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600 pb-1 border-b border-border/50">
+                    <!-- Pillar 2: AI Search & SEO -->
+                    <div class="space-y-2">
+                      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600 pb-2 border-b border-border/60">
                         <i data-lucide="search" class="w-4 h-4"></i>
                         <span>AI Search &amp; SEO</span>
                       </div>
-                      <div class="space-y-0.5">
+                      <div class="space-y-1">
                         <a href="/#/service/seo" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
                           <div class="text-xs font-bold text-foreground">Local SEO &amp; Google Rankings</div>
                           <div class="text-[11px] text-muted-foreground">Top Google 3-Pack rankings in Pune</div>
@@ -86,8 +90,38 @@ function getHeaderHTML(activeNav = 'portfolio') {
                           <div class="text-xs font-bold text-foreground">Generative Engine Optimization (GEO)</div>
                           <div class="text-[11px] text-muted-foreground">Get cited in ChatGPT &amp; AI Overviews</div>
                         </a>
-                        <a href="/digital-marketing-agency-in-pune.html" class="block p-2 rounded-lg bg-indigo-50/50 hover:bg-indigo-50 transition-colors border border-indigo-100">
-                          <div class="text-xs font-bold text-indigo-700 flex items-center justify-between">
+                        <a href="/#/service/gmb-optimization" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Google My Business (GMB)</div>
+                          <div class="text-[11px] text-muted-foreground">Direct customer calls &amp; inquiries</div>
+                        </a>
+                        <a href="/#/service/backlink-building" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Backlink &amp; Authority Building</div>
+                          <div class="text-[11px] text-muted-foreground">High DA contextual editorial links</div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- Pillar 3: Paid Ads & Growth -->
+                    <div class="space-y-2">
+                      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-indigo-600 pb-2 border-b border-border/60">
+                        <i data-lucide="target" class="w-4 h-4"></i>
+                        <span>Paid Ads &amp; Growth</span>
+                      </div>
+                      <div class="space-y-1">
+                        <a href="/#/service/google-ads" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Google Ads Management (PPC)</div>
+                          <div class="text-[11px] text-muted-foreground">High-ROAS search &amp; Performance Max</div>
+                        </a>
+                        <a href="/#/service/meta-ads" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Meta &amp; Instagram Ads Funnels</div>
+                          <div class="text-[11px] text-muted-foreground">Laser-targeted customer acquisition</div>
+                        </a>
+                        <a href="/#/service/social-media-marketing" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Social Media Marketing</div>
+                          <div class="text-[11px] text-muted-foreground">Viral reels &amp; organic brand authority</div>
+                        </a>
+                        <a href="/digital-marketing-agency-in-pune.html" class="block p-2 rounded-lg bg-indigo-50/50 dark:bg-indigo-950/20 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 transition-colors border border-indigo-100 dark:border-indigo-900/30">
+                          <div class="text-xs font-bold text-indigo-700 dark:text-indigo-400 flex items-center justify-between">
                             <span>Digital Marketing in Pune (Local Hub)</span>
                             <span class="text-[9px] uppercase px-1.5 py-0.2 bg-indigo-600 text-white rounded font-bold">Pune</span>
                           </div>
@@ -96,7 +130,47 @@ function getHeaderHTML(activeNav = 'portfolio') {
                       </div>
                     </div>
 
+                    <!-- Pillar 4: Brand & Creative -->
+                    <div class="space-y-2">
+                      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-rose-600 pb-2 border-b border-border/60">
+                        <i data-lucide="palette" class="w-4 h-4"></i>
+                        <span>Brand &amp; Creative</span>
+                      </div>
+                      <div class="space-y-1">
+                        <a href="/#/service/logo-design" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Corporate Logo &amp; Identity</div>
+                          <div class="text-[11px] text-muted-foreground">Trademark-ready vector brand kits</div>
+                        </a>
+                        <a href="/#/service/brand-name" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Brand Strategy &amp; Naming</div>
+                          <div class="text-[11px] text-muted-foreground">Linguistic checks &amp; .com acquisition</div>
+                        </a>
+                        <a href="/#/service/brochure-designing" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Brochure &amp; Sales Collaterals</div>
+                          <div class="text-[11px] text-muted-foreground">Corporate profiles &amp; catalogues</div>
+                        </a>
+                        <a href="/#/service/conversion-optimization" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Conversion Rate Optimization (CRO)</div>
+                          <div class="text-[11px] text-muted-foreground">A/B tested UX &amp; lead funnels</div>
+                        </a>
+                      </div>
+                    </div>
+
                   </div>
+
+                  <!-- Full-Width Bottom Bar -->
+                  <div class="mt-6 pt-4 border-t border-border/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
+                    <span class="flex items-center gap-2">
+                      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                      <span><strong class="text-foreground font-semibold">27 Growth Disciplines</strong> · Fixed-Fee Delivery · 365 Days Direct Support</span>
+                    </span>
+                    <a href="/#/services" class="font-bold text-emerald-600 hover:text-emerald-500 inline-flex items-center gap-1.5 transition-colors group/link">
+                      <span>Explore Complete 27 Services Directory</span>
+                      <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
 
                   <div class="mt-4 pt-3 border-t border-border/60 flex items-center justify-between text-xs text-muted-foreground">
                     <span><strong>27 Growth Disciplines</strong> · 365 Days Support</span>
