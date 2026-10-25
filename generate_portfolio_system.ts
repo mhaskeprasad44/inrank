@@ -357,7 +357,7 @@ function generateMasterWorkHTML(): string {
         "@id": "https://inranktech.com/our-work.html#webpage",
         "url": "https://inranktech.com/our-work.html",
         "name": "Our Work | Inrank Technologies Web Engineering & Search Case Studies",
-        "description": "where all the action happens! Explore Inrank Technologies' client work: 10 production websites with hero section screenshots, performance metrics, and in-depth case studies.",
+        "description": "Explore Inrank Technologies' client work: 10 production websites with hero section screenshots, performance metrics, and in-depth case studies.",
         "isPartOf": {
           "@type": "WebSite",
           "@id": "https://inranktech.com/#website",
@@ -379,7 +379,7 @@ function generateMasterWorkHTML(): string {
 
   const head = getCommonHead(
     "Our Work | Inrank Technologies Web Development & Digital Growth",
-    "where all the action happens! Explore 10 production deployments engineered by Inrank Technologies. High-speed React SPAs, luxury portals, agro export SEO & AI search optimization.",
+    "Explore 10 production deployments engineered by Inrank Technologies. High-speed React SPAs, luxury portals, agro export SEO & AI search optimization.",
     "/our-work.html",
     schemaJSON
   );
@@ -397,16 +397,19 @@ function generateMasterWorkHTML(): string {
         <div>
           <!-- Hero Section Screenshot Showcase (Edge-to-Edge Agency Design) -->
           <div class="relative bg-slate-950 overflow-hidden group/thumb aspect-[16/10] sm:aspect-[16/9] border-b border-border/70">
-            <!-- Floating Clean Domain & Category Tags -->
+            <!-- Gradient Scrim for Guaranteed Tag Visibility -->
+            <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+
+            <!-- Floating High-Contrast Domain & Category Tags -->
             <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/85 backdrop-blur-md text-[11px] font-medium text-slate-100 border border-white/15 shadow-md">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span>${project.domain}</span>
               </span>
             </div>
 
             <div class="absolute top-3 right-3 z-20">
-              <span class="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider backdrop-blur-md border shadow-md ${isCollab ? 'bg-amber-500/25 text-amber-200 border-amber-400/30' : 'bg-emerald-500/25 text-emerald-200 border-emerald-400/30'}">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg ${isCollab ? 'text-amber-300 border border-amber-400/50' : 'text-emerald-300 border border-emerald-400/50'}">
                 ${isCollab ? 'Outsourcing / Collab' : 'Direct Project'}
               </span>
             </div>
@@ -503,16 +506,19 @@ function generateMasterWorkHTML(): string {
 
     <main class="relative pt-24 sm:pt-28 md:pt-36 pb-24 overflow-hidden">
       
-      <!-- HERO SECTION (Ting.in style "our work - where all the action happens!") -->
+      <!-- HERO SECTION -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
         
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 border border-emerald-500/20">
-          <i data-lucide="sparkles" class="h-3.5 w-3.5 text-emerald-600"></i>
-          <span>Where All The Action Happens</span>
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-secondary/80 text-foreground text-xs font-semibold shadow-xs">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          <span>10 Verified Client Deployments</span>
         </div>
 
-        <h1 class="font-display font-black text-4xl sm:text-6xl lg:text-7xl text-foreground tracking-tight max-w-4xl mx-auto leading-[1.05] lowercase">
-          our work
+        <h1 class="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl text-foreground tracking-tight max-w-4xl mx-auto leading-[1.1]">
+          Our Work
         </h1>
 
         <p class="text-lg sm:text-2xl font-bold text-emerald-700 max-w-3xl mx-auto leading-snug">
@@ -617,8 +623,8 @@ function generateMasterWorkHTML(): string {
       <!-- 4-STAGE ENGINEERING FRAMEWORK -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 border-t border-border pt-16">
         <div class="text-center max-w-3xl mx-auto space-y-3">
-          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 border border-emerald-500/20">
-            <i data-lucide="layers" class="h-3 w-3 text-emerald-600"></i>
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-secondary/80 text-foreground border border-border shadow-xs">
+            <i data-lucide="layers" class="h-3.5 w-3.5 text-primary"></i>
             <span>The Inrank Methodology</span>
           </div>
           <h2 class="font-display font-bold text-2xl sm:text-3xl text-foreground">How We Build Category-Dominant Assets</h2>
@@ -1081,8 +1087,8 @@ function generateIndividualWorkHTML(project: PortfolioProject, prevProject: Port
 
         <!-- FULL-WIDTH BIG IMPACT TITLE BANNER (Exact Ting Vedanta Pattern) -->
         <section class="rounded-3xl bg-gradient-to-r from-slate-900 via-zinc-900 to-slate-900 text-white p-8 sm:p-14 shadow-2xl text-center space-y-4">
-          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest bg-emerald-400/20 text-emerald-300 border border-emerald-400/30">
-            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white/10 text-white border border-white/20 shadow-xs">
+            <i data-lucide="compass" class="w-3.5 h-3.5 text-emerald-400"></i>
             <span>Strategic Philosophy &amp; Impact</span>
           </div>
 
