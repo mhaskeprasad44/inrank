@@ -403,17 +403,19 @@ h1, h2, h3, h4, h5, h6, .font-display, .font-sans {
   background-color: hsl(var(--card));
 }
 
-/* Ensure no card becomes transparent on hover */
-.service-directory-card:hover,
-.border-border[class*="bg-card"]:hover,
-.border-border[class*="bg-white"]:hover {
+/* Ensure service directory cards stay solid on hover */
+.service-directory-card:hover {
   background-color: #ffffff !important;
 }
 
-.dark .service-directory-card:hover,
-.dark .border-border[class*="bg-card"]:hover,
-.dark .border-border[class*="bg-white"]:hover {
+.dark .service-directory-card:hover {
   background-color: hsl(var(--card)) !important;
+}
+
+/* Ensure button text never fades or becomes unreadable on hover */
+a[class*="hover:bg-emerald"]:hover,
+button[class*="hover:bg-emerald"]:hover {
+  color: #ffffff !important;
 }
 
 /* Ensure dropdown menu has solid background */

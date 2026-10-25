@@ -178,8 +178,8 @@ function getHeaderHTML(activeNav: string = "our-work") {
               Our Work
             </a>
 
-            <!-- Results -->
-            <a href="/#results" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors">Results</a>
+            <!-- Case Studies -->
+            <a href="/case-studies.html" class="text-sm font-semibold ${activeNav === 'case-studies' ? 'text-emerald-600 font-bold' : 'text-muted-foreground hover:text-foreground hover:text-emerald-600'} transition-colors">Case Studies</a>
 
             <!-- Blog -->
             <a href="/#/blog" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors">Blog</a>
@@ -432,68 +432,35 @@ function generateMasterWorkHTML(): string {
           </div>
 
           <!-- Card Content Body -->
-          <div class="p-6 space-y-4">
+          <div class="p-6 space-y-3">
             <!-- Metadata Row -->
-            <div class="flex items-center justify-between text-xs text-muted-foreground border-b border-border/50 pb-2.5">
+            <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
               <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px] truncate max-w-[200px]">${project.sector || project.industry}</span>
-              <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-slate-600 hover:text-emerald-600 font-mono text-[11px] font-semibold" title="Visit live site">
-                <span>${project.domain}</span>
-                <i data-lucide="arrow-up-right" class="w-3 h-3 text-muted-foreground"></i>
-              </a>
+              <span class="font-medium text-slate-500 text-xs">${project.clientName}</span>
             </div>
 
             <!-- Client & Title -->
-            <div class="space-y-1">
-              <div class="text-xs font-semibold text-slate-500">${project.clientName}</div>
-              <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
-                <a href="/our-work/${project.id}.html">${project.title}</a>
-              </h3>
-            </div>
+            <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
+              <a href="/our-work/${project.id}.html">${project.title}</a>
+            </h3>
 
             <!-- Summary -->
-            <p class="text-xs sm:text-sm text-muted-foreground line-clamp-3 leading-relaxed">
+            <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
               ${project.heroSummary}
             </p>
-
-            <!-- Metrics Strip -->
-            <div class="pt-2 grid grid-cols-2 gap-2 text-left">
-              ${project.results.metrics.slice(0, 2).map(m => `
-                <div class="p-2.5 rounded-lg bg-slate-50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">${m.label}</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">${m.after}</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(${m.change})</span>
-                  </div>
-                </div>
-              `).join("")}
-            </div>
-
-            <!-- Services Pills -->
-            <div class="flex flex-wrap gap-1.5 pt-1">
-              ${project.services.slice(0, 3).map(s => `
-                <span class="px-2 py-0.5 rounded text-[10px] font-medium bg-slate-100 text-slate-700 border border-slate-200">
-                  ${s}
-                </span>
-              `).join("")}
-              ${project.services.length > 3 ? `
-                <span class="px-2 py-0.5 rounded text-[10px] font-medium bg-slate-50 text-slate-500">
-                  +${project.services.length - 3} more
-                </span>
-              ` : ""}
-            </div>
           </div>
         </div>
 
-        <!-- Card Footer Action Buttons -->
-        <div class="p-6 pt-0 flex items-center justify-between gap-2.5 border-t border-border/60 mt-4">
-          <a href="/our-work/${project.id}.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-10 px-4 rounded-xl bg-primary text-primary-foreground font-semibold text-xs shadow-sm hover:bg-primary/95 transition-all text-center">
-            <span>Read Case Study</span>
+        <!-- Optimized Action Buttons (Clean spacing, matching heights, NO dividing line!) -->
+        <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
+          <a href="/our-work/${project.id}.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
+            <span>View Project</span>
             <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
           </a>
 
-          <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1 h-10 px-3.5 rounded-xl border border-border bg-card text-foreground font-semibold text-xs hover:bg-secondary transition-colors text-center" title="Visit ${project.domain}">
+          <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl border border-border bg-card text-foreground font-semibold text-xs hover:bg-secondary transition-colors text-center" title="Visit ${project.domain}">
             <span>Live Site</span>
-            <i data-lucide="external-link" class="h-3 w-3 text-muted-foreground"></i>
+            <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
           </a>
         </div>
 
@@ -964,46 +931,16 @@ function generateIndividualWorkHTML(project: PortfolioProject, prevProject: Port
 
         </header>
 
-        <!-- FULL-WIDTH HERO SECTION SCREENSHOT MOCKUP (Exact User Request) -->
-        <section class="rounded-2xl border border-slate-300 dark:border-border bg-slate-900 shadow-2xl overflow-hidden">
-          
-          <!-- Clean Production Status Bar -->
-          <div class="flex items-center justify-between px-5 py-3.5 bg-slate-900 border-b border-white/10 text-xs text-slate-300">
-            <div class="flex items-center gap-2.5 font-medium text-slate-200">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span class="font-semibold text-slate-100">Live Production Deployment</span>
-              <span class="text-slate-500 hidden sm:inline">·</span>
-              <span class="text-slate-400 font-mono text-[11px] hidden sm:inline">${project.domain}</span>
-            </div>
-            
-            <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition-colors shadow-sm" title="Visit live website">
-              <span>Visit Live Website</span>
-              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-            </a>
-          </div>
-
-          <!-- Hero Section Screenshot Image -->
-          <div class="relative bg-slate-950 overflow-hidden">
+        <!-- HUMAN-CRAFTED ELEMENTOR AGENCY WEBSITE SHOWCASE -->
+        <section class="rounded-2xl border border-border bg-card shadow-2xl overflow-hidden p-2.5 sm:p-4">
+          <div class="rounded-xl overflow-hidden border border-border/70 shadow-sm">
             <img 
               src="${project.screenshot}" 
-              alt="${project.clientName} live website hero section screenshot" 
+              alt="${project.clientName} live website design by Inrank Technologies" 
               class="w-full h-auto object-cover object-top block" 
               loading="eager"
             />
           </div>
-
-          <!-- Screenshot Footer Bar -->
-          <div class="px-6 py-3.5 bg-slate-900 text-xs text-slate-300 flex flex-wrap items-center justify-between gap-3 border-t border-slate-800">
-            <div class="flex items-center gap-2 font-mono text-[11px]">
-              <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span>Live Production Snapshot · Verified 100% Core Web Vitals</span>
-            </div>
-            <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold inline-flex items-center gap-1">
-              <span>Inspect Live URL (${project.domain})</span>
-              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-            </a>
-          </div>
-
         </section>
 
         <!-- THE PROBLEM STATEMENT (TING VEDANTA QUESTION & ANSWER SPLIT) -->
@@ -1338,6 +1275,152 @@ function generateIndividualWorkHTML(project: PortfolioProject, prevProject: Port
 // -------------------------------------------------------------
 // EXECUTION PIPELINE
 // -------------------------------------------------------------
+
+function generateCaseStudiesHubHTML(): string {
+  const schemaJSON = JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://inranktech.com/case-studies.html#webpage",
+        "url": "https://inranktech.com/case-studies.html",
+        "name": "Case Studies & Client ROI Breakdowns | Inrank Technologies",
+        "description": "Explore verified client case studies by Inrank Technologies. Data-driven growth, search rankings, CPL reduction, and commercial results.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://inranktech.com/#website",
+          "name": "Inrank Technologies",
+          "url": "https://inranktech.com"
+        }
+      }
+    ]
+  }, null, 2);
+
+  const head = getCommonHead(
+    "Case Studies & Verified Client Growth | Inrank Technologies",
+    "Explore verified client case studies by Inrank Technologies: measurable conversion growth, SEO ranking leaps, and proven lead generation ROI.",
+    "/case-studies.html",
+    schemaJSON
+  );
+
+  const caseCardsHTML = PORTFOLIO_PROJECTS.map((project) => {
+    return `
+      <!-- Case Study Card: ${project.id} -->
+      <article class="group relative flex flex-col justify-between rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+        <div>
+          <!-- Screenshot Preview -->
+          <div class="relative bg-slate-950 overflow-hidden aspect-[16/10] border-b border-border/70">
+            <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+            <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>${project.domain}</span>
+              </span>
+            </div>
+            <div class="absolute top-3 right-3 z-20">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg text-emerald-300 border border-emerald-400/50">
+                Case Study
+              </span>
+            </div>
+            <a href="/case-studies/${project.id}.html" class="block w-full h-full relative overflow-hidden" title="Read ${project.clientName} case study">
+              <img 
+                src="${project.screenshot}" 
+                alt="${project.clientName} case study screenshot" 
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 ease-out" 
+                loading="lazy" 
+              />
+            </a>
+          </div>
+
+          <!-- Card Content Body -->
+          <div class="p-6 space-y-3">
+            <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
+              <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px]">${project.sector || project.industry}</span>
+              <span class="font-medium text-slate-500 text-xs">${project.clientName}</span>
+            </div>
+
+            <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
+              <a href="/case-studies/${project.id}.html">${project.title}</a>
+            </h3>
+
+            <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
+              ${project.heroSummary}
+            </p>
+
+            <!-- Metrics Preview -->
+            <div class="grid grid-cols-2 gap-2 pt-2 text-left">
+              ${project.results.metrics.slice(0, 2).map(m => `
+                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
+                  <div class="text-[10px] text-muted-foreground truncate">${m.label}</div>
+                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
+                    <span class="text-emerald-600 font-mono">${m.after}</span>
+                    <span class="text-[10px] font-normal text-muted-foreground">(${m.change})</span>
+                  </div>
+                </div>
+              `).join("")}
+            </div>
+          </div>
+        </div>
+
+        <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
+          <a href="/case-studies/${project.id}.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
+            <span>Read Case Study</span>
+            <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+          </a>
+          <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl border border-border bg-card text-foreground font-semibold text-xs hover:bg-secondary transition-colors text-center" title="Visit live site">
+            <span>Live Site</span>
+            <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
+          </a>
+        </div>
+      </article>
+    `;
+  }).join("\n");
+
+  const bodyContent = `
+    ${getHeaderHTML('case-studies')}
+
+    <main class="relative pt-24 sm:pt-28 md:pt-36 pb-24 overflow-hidden">
+      <!-- HERO SECTION -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-secondary/80 text-foreground text-xs font-semibold shadow-xs">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          <span>Verified Commercial Case Studies</span>
+        </div>
+
+        <h1 class="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl text-foreground tracking-tight max-w-4xl mx-auto leading-[1.1]">
+          Case Studies
+        </h1>
+
+        <p class="text-lg sm:text-2xl font-bold text-emerald-700 max-w-3xl mx-auto leading-snug">
+          Data-driven commercial outcomes, substantiated ROI, and measurable business growth.
+        </p>
+
+        <p class="text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          Deconstruct how Inrank Technologies engineers performance websites, organic search authority, and high-conversion funnels for B2B industrial leaders, healthcare practices, and high-growth brands.
+        </p>
+
+        <!-- Case Studies Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left pt-10">
+          ${caseCardsHTML}
+        </div>
+      </section>
+    </main>
+
+    ${getFooterHTML()}
+  `;
+
+  return `<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+${head}
+<body class="bg-background text-foreground antialiased selection:bg-emerald-500 selection:text-white">
+${bodyContent}
+</body>
+</html>`;
+}
+
 function buildAll() {
   const rootDir = process.cwd();
   const ourWorkDir = path.join(rootDir, "our-work");
@@ -1354,6 +1437,9 @@ function buildAll() {
   console.log("Generating master our-work.html and portfolio.html...");
   const masterHTML = generateMasterWorkHTML();
   fs.writeFileSync(path.join(rootDir, "our-work.html"), masterHTML, "utf-8");
+  const caseStudiesHTML = generateCaseStudiesHubHTML();
+  fs.writeFileSync(path.join(rootDir, "case-studies.html"), caseStudiesHTML, "utf-8");
+  console.log("✓ case-studies.html successfully created!");
   fs.writeFileSync(path.join(rootDir, "portfolio.html"), masterHTML, "utf-8");
   console.log("✓ our-work.html & portfolio.html successfully created!");
 

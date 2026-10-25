@@ -613,15 +613,10 @@
                 
                 <!-- Hero Left Side Content -->
                 <div class="lg:col-span-7 flex flex-col items-start text-left">
-                  <!-- Executive Eyebrow Tag -->
-                  <div class="inline-flex items-center gap-2 mb-4 sm:mb-6">
-                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border bg-secondary/80 text-foreground text-xs font-semibold shadow-xs">
-                      <span class="relative flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                      </span>
-                      <span>Performance Web Engineering &amp; Growth Partner</span>
-                    </div>
+                  <!-- Human Agency Editorial Kicker -->
+                  <p class="text-xs sm:text-sm font-bold tracking-widest uppercase text-emerald-600 mb-3 sm:mb-4">
+                    Pune's Premier Digital Growth &amp; Performance Web Partner
+                  </p>
                   </div>
 
                   <!-- Primary Title -->
@@ -1505,97 +1500,6 @@
 
               </div>
 
-              <!-- INTERACTIVE GROWTH ROI & REVENUE FORECASTER -->
-              <div class="mt-14 p-6 sm:p-10 rounded-2xl border border-border bg-card/80 backdrop-blur-md shadow-lg">
-                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-8 pb-6 border-b border-border">
-                  <div>
-                    <div class="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-emerald-600 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20 mb-2">
-                      <i data-lucide="calculator" class="h-3.5 w-3.5"></i>
-                      Growth Simulator
-                    </div>
-                    <h3 class="font-display text-2xl sm:text-3xl font-bold tracking-tight">Interactive Pipeline & ROAS Forecaster</h3>
-                    <p class="text-xs sm:text-sm text-muted-foreground mt-1">Estimate your targeted reach, leads and pipeline return based on verified agency benchmarks.</p>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <span class="text-xs text-muted-foreground">Select Industry:</span>
-                    <select id="roi-industry-select" class="h-10 px-3 rounded-lg border border-input bg-background text-xs sm:text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer">
-                      <option value="clinic">Healthcare & Dental Clinics</option>
-                      <option value="d2c">E-Commerce & D2C Brands</option>
-                      <option value="b2b">Local Services & Real Estate</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="grid lg:grid-cols-12 gap-8 items-center">
-                  <!-- Controls Left -->
-                  <div class="lg:col-span-6 space-y-6">
-                    <div>
-                      <div class="flex justify-between text-xs sm:text-sm font-semibold mb-2">
-                        <span class="text-muted-foreground">Planned Monthly Marketing Investment:</span>
-                        <span id="roi-budget-display" class="font-mono text-primary font-bold text-base">₹50,000 / month</span>
-                      </div>
-                      <input 
-                        type="range" 
-                        id="roi-budget-slider" 
-                        min="25000" 
-                        max="300000" 
-                        step="5000" 
-                        value="50000" 
-                        class="w-full h-2 bg-secondary rounded-lg appearance-none cursor-pointer accent-primary"
-                      />
-                      <div class="flex justify-between text-[11px] text-muted-foreground mt-1 font-mono">
-                        <span>₹25k (Starter)</span>
-                        <span>₹1.5L (Growth)</span>
-                        <span>₹3L+ (Scale)</span>
-                      </div>
-                    </div>
-
-                    <div class="p-4 rounded-xl bg-secondary/40 border border-border text-xs text-muted-foreground space-y-1">
-                      <div class="font-semibold text-foreground flex items-center gap-1.5">
-                        <i data-lucide="shield-check" class="h-4 w-4 text-emerald-600"></i>
-                        Inrank Growth Guarantee
-                      </div>
-                      <p>All campaigns include full conversion tracking setup, weekly creative optimizations and zero multi-month contract lock-ins.</p>
-                    </div>
-                  </div>
-
-                  <!-- Forecast Projections Right -->
-                  <div class="lg:col-span-6 grid grid-cols-2 gap-4">
-                    <div class="p-4 sm:p-5 rounded-xl border border-border bg-background flex flex-col justify-between">
-                      <span class="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">Est. Search Reach</span>
-                      <div id="roi-reach-val" class="font-display text-2xl sm:text-3xl font-bold text-foreground my-2">28,000+</div>
-                      <span class="text-[11px] text-muted-foreground">High-intent impressions</span>
-                    </div>
-
-                    <div class="p-4 sm:p-5 rounded-xl border border-border bg-background flex flex-col justify-between">
-                      <span class="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">Est. Targeted Traffic</span>
-                      <div id="roi-clicks-val" class="font-display text-2xl sm:text-3xl font-bold text-foreground my-2">2,100+</div>
-                      <span class="text-[11px] text-muted-foreground">Commercial visits</span>
-                    </div>
-
-                    <div class="p-4 sm:p-5 rounded-xl border border-emerald-500/30 bg-emerald-500/5 flex flex-col justify-between">
-                      <span class="text-[11px] font-semibold uppercase tracking-wider text-emerald-700">Projected Inquiries</span>
-                      <div id="roi-leads-val" class="font-display text-2xl sm:text-3xl font-bold text-emerald-600 my-2">65 - 85</div>
-                      <span class="text-[11px] text-emerald-700/80">Direct calls & bookings</span>
-                    </div>
-
-                    <div class="p-4 sm:p-5 rounded-xl border border-emerald-500/30 bg-emerald-500/5 flex flex-col justify-between">
-                      <span class="text-[11px] font-semibold uppercase tracking-wider text-emerald-700">Expected ROAS</span>
-                      <div id="roi-multiple-val" class="font-display text-2xl sm:text-3xl font-bold text-emerald-600 my-2">3.2x - 4.1x</div>
-                      <span class="text-[11px] text-emerald-700/80">Pipeline return</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="mt-8 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
-                  <span class="text-xs text-muted-foreground text-center sm:text-left">
-                    Ready to build this model for your exact business domain?
-                  </span>
-                  <button id="roi-lock-btn" class="w-full sm:w-auto h-11 px-7 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 cursor-pointer shadow-md hover:shadow-lg hover:shadow-emerald-600/25 active:scale-[0.98] transition-all duration-200">
-                    <span>Apply This Growth Target to My Call</span>
-                    <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
-                  </button>
-                </div>
               </div>
               
               <div class="mt-10 sm:mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-6">
@@ -1609,6 +1513,171 @@
           </section>
 
           <!-- [05B] EVIDENCE & VERIFIABLE CASE STUDIES SECTION -->
+          <!-- [05A] SELECTED WORK & PRODUCTION DEPLOYMENTS -->
+          <section id="our-work" class="relative py-24 sm:py-32 border-t border-border bg-background">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8">
+              
+              <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+                <div class="max-w-2xl">
+                  <div class="text-xs uppercase tracking-[0.22em] font-bold text-emerald-600 mb-3">
+                    [05A] : Selected Work &amp; Portfolio
+                  </div>
+                  <h2 class="font-display text-4xl sm:text-5xl font-bold tracking-tight leading-[1.08]">
+                    Real websites.<br><span class="text-primary">Engineered for commercial dominance.</span>
+                  </h2>
+                  <p class="mt-4 text-muted-foreground text-sm sm:text-base leading-relaxed">
+                    Explore verified production web applications and growth systems engineered by Inrank Technologies for Pune, India and international clients.
+                  </p>
+                </div>
+                <div>
+                  <a href="/our-work.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all cursor-pointer">
+                    <span>Explore All 10 Projects</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- 3 Top Projects Grid -->
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1: CyTOS Machines -->
+                <article class="group relative flex flex-col justify-between rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+                  <div>
+                    <div class="relative bg-slate-950 overflow-hidden aspect-[16/10] border-b border-border/70">
+                      <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+                      <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
+                          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                          <span>cytos.in</span>
+                        </span>
+                      </div>
+                      <div class="absolute top-3 right-3 z-20">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg text-emerald-300 border border-emerald-400/50">
+                          Direct Project
+                        </span>
+                      </div>
+                      <a href="/our-work/cytos.html" class="block w-full h-full relative overflow-hidden" title="View CyTOS project details">
+                        <img src="/images/portfolio-screenshots/cytos.webp" alt="CyTOS Machines website screenshot" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
+                      </a>
+                    </div>
+                    <div class="p-6 space-y-3">
+                      <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
+                        <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px]">Industrial CNC Machinery</span>
+                        <span class="font-medium text-slate-500 text-xs">CyTOS Machines Pune</span>
+                      </div>
+                      <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
+                        <a href="/our-work/cytos.html">CyTOS Machines Pune - High-Speed Industrial Machinery &amp; CNC Portal</a>
+                      </h3>
+                      <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
+                        Architected a custom React 18 single page application with an interactive 3-step Machine Recommendation Wizard and direct WhatsApp RFQ flow.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
+                    <a href="/our-work/cytos.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-10 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
+                      <span>View Project</span>
+                      <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+                    </a>
+                    <a href="https://cytos.in" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-10 px-4 rounded-xl border border-border bg-card hover:bg-secondary text-foreground font-semibold text-xs transition-colors text-center" title="Visit cytos.in">
+                      <span>Live Site</span>
+                      <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
+                    </a>
+                  </div>
+                </article>
+
+                <!-- Project 2: Fludio Water Solutions -->
+                <article class="group relative flex flex-col justify-between rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+                  <div>
+                    <div class="relative bg-slate-950 overflow-hidden aspect-[16/10] border-b border-border/70">
+                      <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+                      <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
+                          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                          <span>fludio.in</span>
+                        </span>
+                      </div>
+                      <div class="absolute top-3 right-3 z-20">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg text-emerald-300 border border-emerald-400/50">
+                          Direct Project
+                        </span>
+                      </div>
+                      <a href="/our-work/fludio.html" class="block w-full h-full relative overflow-hidden" title="View Fludio project details">
+                        <img src="/images/portfolio-screenshots/fludio.webp" alt="Fludio Water Solutions website screenshot" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
+                      </a>
+                    </div>
+                    <div class="p-6 space-y-3">
+                      <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
+                        <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px]">Luxury Architectural Fountains</span>
+                        <span class="font-medium text-slate-500 text-xs">Fludio Water Solutions</span>
+                      </div>
+                      <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
+                        <a href="/our-work/fludio.html">Fludio Water Solutions - Architectural Fountains &amp; Aquatic Engineering</a>
+                      </h3>
+                      <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
+                        Designed and engineered an immersive digital showcase for Fludio Water Solutions with interactive product spec matrices and WhatsApp consultation.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
+                    <a href="/our-work/fludio.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-10 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
+                      <span>View Project</span>
+                      <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+                    </a>
+                    <a href="https://fludio.in" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-10 px-4 rounded-xl border border-border bg-card hover:bg-secondary text-foreground font-semibold text-xs transition-colors text-center" title="Visit fludio.in">
+                      <span>Live Site</span>
+                      <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
+                    </a>
+                  </div>
+                </article>
+
+                <!-- Project 3: HIRAGRAFIX -->
+                <article class="group relative flex flex-col justify-between rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+                  <div>
+                    <div class="relative bg-slate-950 overflow-hidden aspect-[16/10] border-b border-border/70">
+                      <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+                      <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
+                          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                          <span>hiragrafix.com</span>
+                        </span>
+                      </div>
+                      <div class="absolute top-3 right-3 z-20">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg text-emerald-300 border border-emerald-400/50">
+                          Direct Project
+                        </span>
+                      </div>
+                      <a href="/our-work/hiragrafix.html" class="block w-full h-full relative overflow-hidden" title="View HIRAGRAFIX project details">
+                        <img src="/images/portfolio-screenshots/hiragrafix.webp" alt="HIRAGRAFIX website screenshot" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
+                      </a>
+                    </div>
+                    <div class="p-6 space-y-3">
+                      <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
+                        <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px]">Corporate Printing &amp; Packaging</span>
+                        <span class="font-medium text-slate-500 text-xs">HIRAGRAFIX™ Mumbai</span>
+                      </div>
+                      <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
+                        <a href="/our-work/hiragrafix.html">HIRAGRAFIX™ - Corporate Printing, Packaging &amp; Merchandising</a>
+                      </h3>
+                      <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
+                        Digital brand transformation for HIRAGRAFIX (founded 1970 in Mumbai), launching a corporate web presence with instant sample calculator.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
+                    <a href="/our-work/hiragrafix.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-10 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
+                      <span>View Project</span>
+                      <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+                    </a>
+                    <a href="https://hiragrafix.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-10 px-4 rounded-xl border border-border bg-card hover:bg-secondary text-foreground font-semibold text-xs transition-colors text-center" title="Visit hiragrafix.com">
+                      <span>Live Site</span>
+                      <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+            </div>
+          </section>
+
           <section id="case-studies" class="relative py-24 sm:py-32 border-t border-border bg-card/20">
             <div class="max-w-7xl mx-auto px-5 sm:px-8">
               
