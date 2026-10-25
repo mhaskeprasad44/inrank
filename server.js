@@ -364,6 +364,13 @@ app.get(["/our-work", "/our-work.html"], (req, res) => {
   if (fs.existsSync(localPort)) return res.sendFile(localPort);
   return res.sendFile(path.join(process.cwd(), "index.html"));
 });
+app.get(["/case-studies", "/case-studies.html"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "case-studies.html");
+  const localPage = path.join(process.cwd(), "case-studies.html");
+  if (fs.existsSync(distPage)) return res.sendFile(distPage);
+  if (fs.existsSync(localPage)) return res.sendFile(localPage);
+  return res.redirect("/our-work.html");
+});
 app.get(["/portfolio", "/portfolio.html"], (req, res) => {
   const ourWorkDist = path.join(process.cwd(), "dist", "our-work.html");
   const ourWorkLocal = path.join(process.cwd(), "our-work.html");

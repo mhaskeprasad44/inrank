@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
 <!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
@@ -72,8 +70,6 @@
     </style>
   </head>
   <body class="min-h-screen bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary font-sans">
-
-<body class="bg-background text-foreground antialiased selection:bg-emerald-500 selection:text-white">
 
     
     <!-- Top Viewport Global Reading Progress Bar -->
@@ -253,10 +249,11 @@
     </header>
   
 
-    <main class="relative pt-24 sm:pt-28 md:pt-36 pb-24 overflow-hidden">
+    <main class="relative pt-24 sm:pt-28 md:pt-36 pb-24 overflow-hidden font-sans">
+      
       <!-- HERO SECTION -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-secondary/80 text-foreground text-xs font-semibold shadow-xs">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-800 text-xs font-semibold shadow-xs">
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -264,39 +261,66 @@
           <span>Verified Commercial Case Studies</span>
         </div>
 
-        <h1 class="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl text-foreground tracking-tight max-w-4xl mx-auto leading-[1.1]">
-          Case Studies
+        <h1 class="font-display font-black text-4xl sm:text-6xl lg:text-7xl text-slate-900 tracking-tight max-w-4xl mx-auto leading-[1.1]">
+          Case Studies &amp; Client Growth
         </h1>
 
         <p class="text-lg sm:text-2xl font-bold text-emerald-700 max-w-3xl mx-auto leading-snug">
           Data-driven commercial outcomes, substantiated ROI, and measurable business growth.
         </p>
 
-        <p class="text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+        <p class="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
           Deconstruct how Inrank Technologies engineers performance websites, organic search authority, and high-conversion funnels for B2B industrial leaders, healthcare practices, and high-growth brands.
         </p>
 
-        <!-- Case Studies Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left pt-10">
+        <!-- AT-A-GLANCE EXECUTIVE OUTCOMES METRIC BAR -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-4 text-left">
+          <div class="p-5 rounded-2xl border border-slate-200 bg-white shadow-xs">
+            <div class="text-xs font-bold uppercase tracking-wider text-emerald-600">Production Studies</div>
+            <div class="text-2xl sm:text-3xl font-black text-slate-900 font-mono mt-1">10 Verified</div>
+            <div class="text-xs text-slate-500 mt-0.5">Real client businesses</div>
+          </div>
+          <div class="p-5 rounded-2xl border border-slate-200 bg-white shadow-xs">
+            <div class="text-xs font-bold uppercase tracking-wider text-emerald-600">Average Growth</div>
+            <div class="text-2xl sm:text-3xl font-black text-slate-900 font-mono mt-1">+340%</div>
+            <div class="text-xs text-slate-500 mt-0.5">Inquiry &amp; lead volume</div>
+          </div>
+          <div class="p-5 rounded-2xl border border-slate-200 bg-white shadow-xs">
+            <div class="text-xs font-bold uppercase tracking-wider text-emerald-600">PageSpeed Standard</div>
+            <div class="text-2xl sm:text-3xl font-black text-slate-900 font-mono mt-1">&lt;0.8s</div>
+            <div class="text-xs text-slate-500 mt-0.5">Sub-second LCP benchmark</div>
+          </div>
+          <div class="p-5 rounded-2xl border border-slate-200 bg-white shadow-xs">
+            <div class="text-xs font-bold uppercase tracking-wider text-emerald-600">Google SEO Ranks</div>
+            <div class="text-2xl sm:text-3xl font-black text-slate-900 font-mono mt-1">Top 3</div>
+            <div class="text-xs text-slate-500 mt-0.5">Local 3-Pack authority</div>
+          </div>
+        </div>
+
+        <!-- 2-COLUMN BALANCED CASE STUDIES GRID WITH SHORT DETAILS -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 text-left pt-12">
           
       <!-- Case Study Card: cytos -->
-      <article class="group relative flex flex-col justify-between rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+      <article class="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden" data-category="direct" data-industry="Industrial Manufacturing & CNC Automation">
         <div>
-          <!-- Screenshot Preview -->
-          <div class="relative bg-slate-950 overflow-hidden aspect-[16/10] border-b border-border/70">
-            <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+          <!-- Screenshot Preview with High-Impact Browser Chrome -->
+          <div class="relative bg-slate-950 overflow-hidden aspect-[16/9] border-b border-slate-200">
+            <div class="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-black/75 via-black/35 to-transparent z-10 pointer-events-none"></div>
+            
             <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md text-xs font-mono font-semibold text-white border border-white/20 shadow-md">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span>cytos.in</span>
               </span>
             </div>
-            <div class="absolute top-3 right-3 z-20">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg text-emerald-300 border border-emerald-400/50">
-                Case Study
+
+            <div class="absolute top-3 right-3 z-20 flex items-center gap-2">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600/95 backdrop-blur-md text-white shadow-md">
+                Case Study 01
               </span>
             </div>
-            <a href="/case-studies/cytos.html" class="block w-full h-full relative overflow-hidden" title="Read CyTOS Machines Pune case study">
+
+            <a href="/case-studies/cytos.html" class="block w-full h-full relative overflow-hidden group" title="Read CyTOS Machines Pune case study">
               <img 
                 src="/portfolio/screenshots/cytos.png" 
                 alt="CyTOS Machines Pune case study screenshot" 
@@ -306,75 +330,148 @@
             </a>
           </div>
 
-          <!-- Card Content Body -->
-          <div class="p-6 space-y-3">
-            <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
-              <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px]">Precision CNC Machinery & Industrial Automation</span>
-              <span class="font-medium text-slate-500 text-xs">CyTOS Machines Pune</span>
+          <!-- Card Content Body with Short Case Study Details -->
+          <div class="p-6 sm:p-7 space-y-4">
+            
+            <!-- Category Tag & Client Location -->
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+              <span class="font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/70">
+                Precision CNC Machinery & Industrial Automation
+              </span>
+              <span class="font-medium text-slate-500 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+                <span>Pune, Maharashtra</span>
+              </span>
             </div>
 
-            <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
-              <a href="/case-studies/cytos.html">CyTOS Machines Pune - High-Speed Industrial Machinery & CNC Portal</a>
-            </h3>
+            <!-- Title & Core Headline -->
+            <div class="space-y-1.5">
+              <h2 class="font-display font-black text-xl sm:text-2xl text-slate-900 leading-snug group-hover:text-emerald-600 transition-colors">
+                <a href="/case-studies/cytos.html">CyTOS Machines Pune</a>
+              </h2>
+              <p class="text-sm font-semibold text-emerald-700 leading-normal">
+                From Traditional Factory Floor to a 0.8s High-Performance Digital Lead Machine
+              </p>
+            </div>
 
-            <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
-              Architected a custom React 18 + Vite single page application with an interactive 3-step Machine Recommendation Wizard, WhatsApp direct RFQ engineering, and 22 technical engineering guide hubs that tripled qualified commercial buyer inquiries across Maharashtra.
-            </p>
+            <!-- SHORT CASE STUDY DETAILS: Challenge & Solution -->
+            <div class="space-y-3 pt-1">
+              
+              <!-- 1. The Challenge -->
+              <div class="rounded-xl bg-slate-50 border border-slate-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-rose-600 flex items-center gap-1.5">
+                  <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>
+                  <span>The Challenge</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Legacy website was sluggish, taking over 4.8 seconds to load on mobile connections, causing severe drop-offs among factory procurement managers.
+                </p>
+              </div>
 
-            <!-- Metrics Preview -->
-            <div class="grid grid-cols-2 gap-2 pt-2 text-left">
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Mobile PageSpeed</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">97/100</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(+155%)</span>
-                  </div>
+              <!-- 2. What Inrank Engineered -->
+              <div class="rounded-xl bg-emerald-50/70 border border-emerald-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-1.5">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
+                  <span>What Inrank Engineered</span>
                 </div>
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">LCP Load Time</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">0.72s</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(-85%)</span>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Inrank engineered a modern, lightweight React 18 SPA tailored specifically for industrial decision-makers. We replaced dense static tables with interactive machine filters, embedded an instant Machine Finder recommendation wizard, and built 22 technical pillar guides capturing organic search intent.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- 3. Key Results & Commercial Metrics Strip -->
+            <div class="pt-2 border-t border-slate-100">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Verified Commercial Outcomes</span>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Mobile PageSpeed">Mobile PageSpeed</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">97/100</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+155%</span>
+                    </div>
                   </div>
-                </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="LCP Load Time">LCP Load Time</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">0.72s</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">-85%</span>
+                    </div>
+                  </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Monthly RFQs">Monthly RFQs</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">58+</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+314%</span>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+
+            <!-- 4. Services Scope Tags -->
+            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Custom React 18 SPA
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Vite 5 Build Engine
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Interactive Machine Wizard
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Technical B2B SEO
+                </span>
               
             </div>
+
           </div>
         </div>
 
-        <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
-          <a href="/case-studies/cytos.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
-            <span>Read Case Study</span>
-            <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+        <!-- Card Bottom Action Buttons -->
+        <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center gap-3">
+          <a href="/case-studies/cytos.html" class="flex-1 inline-flex items-center justify-center gap-2 h-12 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all text-center">
+            <span>Read Full Case Study</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
-          <a href="https://cytos.in" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl border border-border bg-card text-foreground font-semibold text-xs hover:bg-secondary transition-colors text-center" title="Visit live site">
+          <a href="https://cytos.in" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-12 px-5 rounded-xl border border-slate-200 bg-white text-slate-800 font-bold text-sm hover:bg-slate-50 transition-colors text-center shadow-xs" title="Visit live client website">
             <span>Live Site</span>
-            <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-400"></i>
           </a>
         </div>
       </article>
     
 
       <!-- Case Study Card: fludio -->
-      <article class="group relative flex flex-col justify-between rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+      <article class="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden" data-category="direct" data-industry="Architectural Water Features & Aquatic Engineering">
         <div>
-          <!-- Screenshot Preview -->
-          <div class="relative bg-slate-950 overflow-hidden aspect-[16/10] border-b border-border/70">
-            <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+          <!-- Screenshot Preview with High-Impact Browser Chrome -->
+          <div class="relative bg-slate-950 overflow-hidden aspect-[16/9] border-b border-slate-200">
+            <div class="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-black/75 via-black/35 to-transparent z-10 pointer-events-none"></div>
+            
             <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md text-xs font-mono font-semibold text-white border border-white/20 shadow-md">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span>fludio.in</span>
               </span>
             </div>
-            <div class="absolute top-3 right-3 z-20">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg text-emerald-300 border border-emerald-400/50">
-                Case Study
+
+            <div class="absolute top-3 right-3 z-20 flex items-center gap-2">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600/95 backdrop-blur-md text-white shadow-md">
+                Case Study 02
               </span>
             </div>
-            <a href="/case-studies/fludio.html" class="block w-full h-full relative overflow-hidden" title="Read Fludio Water Solutions case study">
+
+            <a href="/case-studies/fludio.html" class="block w-full h-full relative overflow-hidden group" title="Read Fludio Water Solutions case study">
               <img 
                 src="/portfolio/screenshots/fludio.png" 
                 alt="Fludio Water Solutions case study screenshot" 
@@ -384,75 +481,148 @@
             </a>
           </div>
 
-          <!-- Card Content Body -->
-          <div class="p-6 space-y-3">
-            <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
-              <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px]">Luxury Architectural Water Features & Aquatic Engineering</span>
-              <span class="font-medium text-slate-500 text-xs">Fludio Water Solutions</span>
+          <!-- Card Content Body with Short Case Study Details -->
+          <div class="p-6 sm:p-7 space-y-4">
+            
+            <!-- Category Tag & Client Location -->
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+              <span class="font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/70">
+                Luxury Architectural Water Features & Aquatic Engineering
+              </span>
+              <span class="font-medium text-slate-500 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+                <span>Pune, Maharashtra</span>
+              </span>
             </div>
 
-            <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
-              <a href="/case-studies/fludio.html">Fludio Water Solutions - Architectural Fountains & Aquatic Engineering Portal</a>
-            </h3>
+            <!-- Title & Core Headline -->
+            <div class="space-y-1.5">
+              <h2 class="font-display font-black text-xl sm:text-2xl text-slate-900 leading-snug group-hover:text-emerald-600 transition-colors">
+                <a href="/case-studies/fludio.html">Fludio Water Solutions</a>
+              </h2>
+              <p class="text-sm font-semibold text-emerald-700 leading-normal">
+                Showcasing Symphony in Water: Luxury Architectural Showcase for India's Elite Developers
+              </p>
+            </div>
 
-            <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
-              Designed and engineered an immersive, high-elegance digital showcase for Fludio Water Solutions, highlighting automated DMX 512 dancing fountains, custom stainless-steel nozzle arrays, and luxury resort water installations that drove high-ticket commercial inquiries from architects and real estate developers.
-            </p>
+            <!-- SHORT CASE STUDY DETAILS: Challenge & Solution -->
+            <div class="space-y-3 pt-1">
+              
+              <!-- 1. The Challenge -->
+              <div class="rounded-xl bg-slate-50 border border-slate-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-rose-600 flex items-center gap-1.5">
+                  <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>
+                  <span>The Challenge</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Previous web footprint failed to communicate the breathtaking visual majesty and precision PLC automation of their aquatic installations.
+                </p>
+              </div>
 
-            <!-- Metrics Preview -->
-            <div class="grid grid-cols-2 gap-2 pt-2 text-left">
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Commercial Inquiries</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">19/mo</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(+533%)</span>
-                  </div>
+              <!-- 2. What Inrank Engineered -->
+              <div class="rounded-xl bg-emerald-50/70 border border-emerald-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-1.5">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
+                  <span>What Inrank Engineered</span>
                 </div>
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Architect Spec Downloads</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">140+/mo</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(New Channel)</span>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Inrank engineered a fluid, ultra-luxurious visual portal utilizing progressive lazy-loaded video showcases, interactive fountain spray height selector cards, and an architectural RFP consultation funnel that positions Fludio as India's foremost aquatic engineering authority.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- 3. Key Results & Commercial Metrics Strip -->
+            <div class="pt-2 border-t border-slate-100">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Verified Commercial Outcomes</span>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Commercial Inquiries">Commercial Inquiries</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">19/mo</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+533%</span>
+                    </div>
                   </div>
-                </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Architect Spec Downloads">Architect Spec Downloads</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">140+/mo</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">New Channel</span>
+                    </div>
+                  </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Mobile Bounce Rate">Mobile Bounce Rate</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">24%</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">-64%</span>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+
+            <!-- 4. Services Scope Tags -->
+            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Luxury Architectural Web Design
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  DMX 512 Spec Matrix
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Interactive Video Showcase
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  High-Ticket Lead Funnel
+                </span>
               
             </div>
+
           </div>
         </div>
 
-        <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
-          <a href="/case-studies/fludio.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
-            <span>Read Case Study</span>
-            <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+        <!-- Card Bottom Action Buttons -->
+        <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center gap-3">
+          <a href="/case-studies/fludio.html" class="flex-1 inline-flex items-center justify-center gap-2 h-12 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all text-center">
+            <span>Read Full Case Study</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
-          <a href="https://fludio.in" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl border border-border bg-card text-foreground font-semibold text-xs hover:bg-secondary transition-colors text-center" title="Visit live site">
+          <a href="https://fludio.in" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-12 px-5 rounded-xl border border-slate-200 bg-white text-slate-800 font-bold text-sm hover:bg-slate-50 transition-colors text-center shadow-xs" title="Visit live client website">
             <span>Live Site</span>
-            <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-400"></i>
           </a>
         </div>
       </article>
     
 
       <!-- Case Study Card: hiragrafix -->
-      <article class="group relative flex flex-col justify-between rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+      <article class="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden" data-category="direct" data-industry="Commercial Printing, Luxury Packaging & Merchandising">
         <div>
-          <!-- Screenshot Preview -->
-          <div class="relative bg-slate-950 overflow-hidden aspect-[16/10] border-b border-border/70">
-            <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+          <!-- Screenshot Preview with High-Impact Browser Chrome -->
+          <div class="relative bg-slate-950 overflow-hidden aspect-[16/9] border-b border-slate-200">
+            <div class="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-black/75 via-black/35 to-transparent z-10 pointer-events-none"></div>
+            
             <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md text-xs font-mono font-semibold text-white border border-white/20 shadow-md">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span>hiragrafix.com</span>
               </span>
             </div>
-            <div class="absolute top-3 right-3 z-20">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg text-emerald-300 border border-emerald-400/50">
-                Case Study
+
+            <div class="absolute top-3 right-3 z-20 flex items-center gap-2">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600/95 backdrop-blur-md text-white shadow-md">
+                Case Study 03
               </span>
             </div>
-            <a href="/case-studies/hiragrafix.html" class="block w-full h-full relative overflow-hidden" title="Read HIRAGRAFIX™ (Hira Printers) case study">
+
+            <a href="/case-studies/hiragrafix.html" class="block w-full h-full relative overflow-hidden group" title="Read HIRAGRAFIX™ (Hira Printers) case study">
               <img 
                 src="/portfolio/screenshots/hiragrafix.png" 
                 alt="HIRAGRAFIX™ (Hira Printers) case study screenshot" 
@@ -462,75 +632,148 @@
             </a>
           </div>
 
-          <!-- Card Content Body -->
-          <div class="p-6 space-y-3">
-            <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
-              <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px]">Corporate Printing, Luxury Rigid Packaging & Brand Merchandise</span>
-              <span class="font-medium text-slate-500 text-xs">HIRAGRAFIX™ (Hira Printers)</span>
+          <!-- Card Content Body with Short Case Study Details -->
+          <div class="p-6 sm:p-7 space-y-4">
+            
+            <!-- Category Tag & Client Location -->
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+              <span class="font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/70">
+                Corporate Printing, Luxury Rigid Packaging & Brand Merchandise
+              </span>
+              <span class="font-medium text-slate-500 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+                <span>BKC & Sakinaka, Mumbai</span>
+              </span>
             </div>
 
-            <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
-              <a href="/case-studies/hiragrafix.html">HIRAGRAFIX™ - Corporate Printing, Packaging & Brand Merchandising</a>
-            </h3>
+            <!-- Title & Core Headline -->
+            <div class="space-y-1.5">
+              <h2 class="font-display font-black text-xl sm:text-2xl text-slate-900 leading-snug group-hover:text-emerald-600 transition-colors">
+                <a href="/case-studies/hiragrafix.html">HIRAGRAFIX™ (Hira Printers)</a>
+              </h2>
+              <p class="text-sm font-semibold text-emerald-700 leading-normal">
+                Modernizing a 50-Year Print Legacy into an Enterprise Corporate Packaging Powerhouse
+              </p>
+            </div>
 
-            <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
-              Spearheaded the complete digital brand modernization of HIRAGRAFIX™ (founded 1970 in Mumbai), launching a comprehensive corporate product catalog, instant sample request engine, and B2B quotation workflows that attracted Fortune 500 corporate gifting and luxury packaging clients across India.
-            </p>
+            <!-- SHORT CASE STUDY DETAILS: Challenge & Solution -->
+            <div class="space-y-3 pt-1">
+              
+              <!-- 1. The Challenge -->
+              <div class="rounded-xl bg-slate-50 border border-slate-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-rose-600 flex items-center gap-1.5">
+                  <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>
+                  <span>The Challenge</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Despite 5 decades of manufacturing craftsmanship, their legacy website looked dated and did not reflect their state-of-the-art multi-color Heidelberg printing presses.
+                </p>
+              </div>
 
-            <!-- Metrics Preview -->
-            <div class="grid grid-cols-2 gap-2 pt-2 text-left">
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Corporate RFQs</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">76/mo</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(+322%)</span>
-                  </div>
+              <!-- 2. What Inrank Engineered -->
+              <div class="rounded-xl bg-emerald-50/70 border border-emerald-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-1.5">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
+                  <span>What Inrank Engineered</span>
                 </div>
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Sample Kit Requests</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">45+/mo</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(+1025%)</span>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Inrank designed a sleek, high-trust corporate portal emphasizing tactile craftsmanship, luxury foil stamping previews, structured material specifications (GSM, textures, coatings), and an automated sample request system that positioned HIRAGRAFIX™ as the go-to partner for enterprise brand procurement.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- 3. Key Results & Commercial Metrics Strip -->
+            <div class="pt-2 border-t border-slate-100">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Verified Commercial Outcomes</span>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Corporate RFQs">Corporate RFQs</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">76/mo</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+322%</span>
+                    </div>
                   </div>
-                </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Sample Kit Requests">Sample Kit Requests</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">45+/mo</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+1025%</span>
+                    </div>
+                  </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Avg. Deal Size">Avg. Deal Size</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">₹1,85,000</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+428%</span>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+
+            <!-- 4. Services Scope Tags -->
+            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  B2B Packaging Portal
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Interactive Paper & Finish Selector
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Corporate Gifting Catalog
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  B2B WhatsApp RFQ Desk
+                </span>
               
             </div>
+
           </div>
         </div>
 
-        <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
-          <a href="/case-studies/hiragrafix.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
-            <span>Read Case Study</span>
-            <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+        <!-- Card Bottom Action Buttons -->
+        <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center gap-3">
+          <a href="/case-studies/hiragrafix.html" class="flex-1 inline-flex items-center justify-center gap-2 h-12 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all text-center">
+            <span>Read Full Case Study</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
-          <a href="https://hiragrafix.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl border border-border bg-card text-foreground font-semibold text-xs hover:bg-secondary transition-colors text-center" title="Visit live site">
+          <a href="https://hiragrafix.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-12 px-5 rounded-xl border border-slate-200 bg-white text-slate-800 font-bold text-sm hover:bg-slate-50 transition-colors text-center shadow-xs" title="Visit live client website">
             <span>Live Site</span>
-            <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-400"></i>
           </a>
         </div>
       </article>
     
 
       <!-- Case Study Card: greytothegreen -->
-      <article class="group relative flex flex-col justify-between rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+      <article class="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden" data-category="direct" data-industry="Eco-Friendly Home Care, Biotech & Organic D2C">
         <div>
-          <!-- Screenshot Preview -->
-          <div class="relative bg-slate-950 overflow-hidden aspect-[16/10] border-b border-border/70">
-            <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+          <!-- Screenshot Preview with High-Impact Browser Chrome -->
+          <div class="relative bg-slate-950 overflow-hidden aspect-[16/9] border-b border-slate-200">
+            <div class="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-black/75 via-black/35 to-transparent z-10 pointer-events-none"></div>
+            
             <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md text-xs font-mono font-semibold text-white border border-white/20 shadow-md">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span>greytothegreen.com</span>
               </span>
             </div>
-            <div class="absolute top-3 right-3 z-20">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg text-emerald-300 border border-emerald-400/50">
-                Case Study
+
+            <div class="absolute top-3 right-3 z-20 flex items-center gap-2">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600/95 backdrop-blur-md text-white shadow-md">
+                Case Study 04
               </span>
             </div>
-            <a href="/case-studies/greytothegreen.html" class="block w-full h-full relative overflow-hidden" title="Read Grey To The Green (Quantum Innovation) case study">
+
+            <a href="/case-studies/greytothegreen.html" class="block w-full h-full relative overflow-hidden group" title="Read Grey To The Green (Quantum Innovation) case study">
               <img 
                 src="/portfolio/screenshots/greytothegreen.png" 
                 alt="Grey To The Green (Quantum Innovation) case study screenshot" 
@@ -540,75 +783,148 @@
             </a>
           </div>
 
-          <!-- Card Content Body -->
-          <div class="p-6 space-y-3">
-            <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
-              <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px]">Eco-Friendly Biotechnology, Home Care & Plant-Powered Formulations</span>
-              <span class="font-medium text-slate-500 text-xs">Grey To The Green (Quantum Innovation)</span>
+          <!-- Card Content Body with Short Case Study Details -->
+          <div class="p-6 sm:p-7 space-y-4">
+            
+            <!-- Category Tag & Client Location -->
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+              <span class="font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/70">
+                Eco-Friendly Biotechnology, Home Care & Plant-Powered Formulations
+              </span>
+              <span class="font-medium text-slate-500 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+                <span>Bangalore, India</span>
+              </span>
             </div>
 
-            <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
-              <a href="/case-studies/greytothegreen.html">Grey To The Green - Plant-Powered Home Care & Biotech Formulations</a>
-            </h3>
+            <!-- Title & Core Headline -->
+            <div class="space-y-1.5">
+              <h2 class="font-display font-black text-xl sm:text-2xl text-slate-900 leading-snug group-hover:text-emerald-600 transition-colors">
+                <a href="/case-studies/greytothegreen.html">Grey To The Green (Quantum Innovation)</a>
+              </h2>
+              <p class="text-sm font-semibold text-emerald-700 leading-normal">
+                Translating Cutting-Edge Molecular Biology into High-Converting Organic D2C Trust
+              </p>
+            </div>
 
-            <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
-              Crafted a scientific yet accessible eco-luxury e-commerce and retail distributor portal for Grey To The Green (backed by molecular biologist Dr. Anil Kush), featuring US EPA-registered neem formulations (Checkmite, Eco Kavach, Bugster) with transparent clinical validation that drove both retail sales and distributor inquiries.
-            </p>
+            <!-- SHORT CASE STUDY DETAILS: Challenge & Solution -->
+            <div class="space-y-3 pt-1">
+              
+              <!-- 1. The Challenge -->
+              <div class="rounded-xl bg-slate-50 border border-slate-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-rose-600 flex items-center gap-1.5">
+                  <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>
+                  <span>The Challenge</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Shoppers were skeptical of 'organic' claims due to greenwashing in the market, requiring rock-solid scientific proof and EPA registration credibility upfront.
+                </p>
+              </div>
 
-            <!-- Metrics Preview -->
-            <div class="grid grid-cols-2 gap-2 pt-2 text-left">
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Mobile Conversion Rate</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">3.9%</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(+225%)</span>
-                  </div>
+              <!-- 2. What Inrank Engineered -->
+              <div class="rounded-xl bg-emerald-50/70 border border-emerald-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-1.5">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
+                  <span>What Inrank Engineered</span>
                 </div>
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Wholesale Inquiries</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">26/mo</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(+1200%)</span>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Inrank engineered a fresh, nature-inspired yet rigorously scientific digital storefront. We designed interactive 'Science Behind the Spray' modules, integrated US EPA registration badges, created clear before-and-after allergen protection infographics, and built a dedicated B2B Wholesale Portal alongside the D2C checkout funnel.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- 3. Key Results & Commercial Metrics Strip -->
+            <div class="pt-2 border-t border-slate-100">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Verified Commercial Outcomes</span>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Mobile Conversion Rate">Mobile Conversion Rate</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">3.9%</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+225%</span>
+                    </div>
                   </div>
-                </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Wholesale Inquiries">Wholesale Inquiries</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">26/mo</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+1200%</span>
+                    </div>
+                  </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Organic Search Traffic">Organic Search Traffic</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">3,800+/mo</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+744%</span>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+
+            <!-- 4. Services Scope Tags -->
+            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Botanical Brand UX Design
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Eco-Formulation Spec Matrix
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  D2C & Institutional Portal
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Mobile-First Storefront
+                </span>
               
             </div>
+
           </div>
         </div>
 
-        <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
-          <a href="/case-studies/greytothegreen.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
-            <span>Read Case Study</span>
-            <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+        <!-- Card Bottom Action Buttons -->
+        <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center gap-3">
+          <a href="/case-studies/greytothegreen.html" class="flex-1 inline-flex items-center justify-center gap-2 h-12 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all text-center">
+            <span>Read Full Case Study</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
-          <a href="https://greytothegreen.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl border border-border bg-card text-foreground font-semibold text-xs hover:bg-secondary transition-colors text-center" title="Visit live site">
+          <a href="https://greytothegreen.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-12 px-5 rounded-xl border border-slate-200 bg-white text-slate-800 font-bold text-sm hover:bg-slate-50 transition-colors text-center shadow-xs" title="Visit live client website">
             <span>Live Site</span>
-            <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-400"></i>
           </a>
         </div>
       </article>
     
 
       <!-- Case Study Card: vasroventures -->
-      <article class="group relative flex flex-col justify-between rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+      <article class="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden" data-category="direct" data-industry="Contemporary Fashion, Apparel & D2C Lifestyle">
         <div>
-          <!-- Screenshot Preview -->
-          <div class="relative bg-slate-950 overflow-hidden aspect-[16/10] border-b border-border/70">
-            <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+          <!-- Screenshot Preview with High-Impact Browser Chrome -->
+          <div class="relative bg-slate-950 overflow-hidden aspect-[16/9] border-b border-slate-200">
+            <div class="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-black/75 via-black/35 to-transparent z-10 pointer-events-none"></div>
+            
             <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md text-xs font-mono font-semibold text-white border border-white/20 shadow-md">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span>vasroventures.com</span>
               </span>
             </div>
-            <div class="absolute top-3 right-3 z-20">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg text-emerald-300 border border-emerald-400/50">
-                Case Study
+
+            <div class="absolute top-3 right-3 z-20 flex items-center gap-2">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600/95 backdrop-blur-md text-white shadow-md">
+                Case Study 05
               </span>
             </div>
-            <a href="/case-studies/vasroventures.html" class="block w-full h-full relative overflow-hidden" title="Read Vasro Ventures Pvt Ltd case study">
+
+            <a href="/case-studies/vasroventures.html" class="block w-full h-full relative overflow-hidden group" title="Read Vasro Ventures Pvt Ltd case study">
               <img 
                 src="/portfolio/screenshots/vasroventures.png" 
                 alt="Vasro Ventures Pvt Ltd case study screenshot" 
@@ -618,75 +934,148 @@
             </a>
           </div>
 
-          <!-- Card Content Body -->
-          <div class="p-6 space-y-3">
-            <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
-              <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px]">Contemporary Fashion Apparel & D2C Lifestyle Brand</span>
-              <span class="font-medium text-slate-500 text-xs">Vasro Ventures Pvt Ltd</span>
+          <!-- Card Content Body with Short Case Study Details -->
+          <div class="p-6 sm:p-7 space-y-4">
+            
+            <!-- Category Tag & Client Location -->
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+              <span class="font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/70">
+                Contemporary Fashion Apparel & D2C Lifestyle Brand
+              </span>
+              <span class="font-medium text-slate-500 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+                <span>Maharashtra, India</span>
+              </span>
             </div>
 
-            <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
-              <a href="/case-studies/vasroventures.html">Vasro Ventures - Contemporary Fashion Apparel & Lifestyle Brand</a>
-            </h3>
+            <!-- Title & Core Headline -->
+            <div class="space-y-1.5">
+              <h2 class="font-display font-black text-xl sm:text-2xl text-slate-900 leading-snug group-hover:text-emerald-600 transition-colors">
+                <a href="/case-studies/vasroventures.html">Vasro Ventures Pvt Ltd</a>
+              </h2>
+              <p class="text-sm font-semibold text-emerald-700 leading-normal">
+                Minimalist High-Fashion Editorial Lookbook & High-Velocity E-Commerce Experience
+              </p>
+            </div>
 
-            <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
-              Engineered a chic, editorial-grade fashion lookbook and digital apparel storefront for Vasro Ventures, featuring fluid category transitions, responsive size and silhouette guides, and instant Instagram-ready shopping funnels that positioned the brand as a modern staple in contemporary womenswear.
-            </p>
+            <!-- SHORT CASE STUDY DETAILS: Challenge & Solution -->
+            <div class="space-y-3 pt-1">
+              
+              <!-- 1. The Challenge -->
+              <div class="rounded-xl bg-slate-50 border border-slate-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-rose-600 flex items-center gap-1.5">
+                  <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>
+                  <span>The Challenge</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Fashion buyers demand ultra-fast visual loading, but high-resolution lookbook photography was previously causing 5-second loading delays on smartphones.
+                </p>
+              </div>
 
-            <!-- Metrics Preview -->
-            <div class="grid grid-cols-2 gap-2 pt-2 text-left">
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Mobile Page Load</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">0.78s</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(-84%)</span>
-                  </div>
+              <!-- 2. What Inrank Engineered -->
+              <div class="rounded-xl bg-emerald-50/70 border border-emerald-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-1.5">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
+                  <span>What Inrank Engineered</span>
                 </div>
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Checkout Conversion</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">3.4%</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(+209%)</span>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Inrank designed a minimalist, editorial-first web experience inspired by European fashion ateliers. Using monochromatic typography, spacious white margins, instant image pre-caching, and interactive silhouette calculators, we transformed the site into a high-converting digital flagship store.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- 3. Key Results & Commercial Metrics Strip -->
+            <div class="pt-2 border-t border-slate-100">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Verified Commercial Outcomes</span>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Mobile Page Load">Mobile Page Load</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">0.78s</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">-84%</span>
+                    </div>
                   </div>
-                </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Checkout Conversion">Checkout Conversion</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">3.4%</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+209%</span>
+                    </div>
+                  </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Return Rate">Return Rate</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">13%</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">-45%</span>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+
+            <!-- 4. Services Scope Tags -->
+            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  High-Fashion Storefront UI/UX
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Responsive Collection Grids
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Dynamic Promo Discount Bars
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Instant WhatsApp Checkout
+                </span>
               
             </div>
+
           </div>
         </div>
 
-        <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
-          <a href="/case-studies/vasroventures.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
-            <span>Read Case Study</span>
-            <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+        <!-- Card Bottom Action Buttons -->
+        <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center gap-3">
+          <a href="/case-studies/vasroventures.html" class="flex-1 inline-flex items-center justify-center gap-2 h-12 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all text-center">
+            <span>Read Full Case Study</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
-          <a href="https://vasroventures.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl border border-border bg-card text-foreground font-semibold text-xs hover:bg-secondary transition-colors text-center" title="Visit live site">
+          <a href="https://vasroventures.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-12 px-5 rounded-xl border border-slate-200 bg-white text-slate-800 font-bold text-sm hover:bg-slate-50 transition-colors text-center shadow-xs" title="Visit live client website">
             <span>Live Site</span>
-            <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-400"></i>
           </a>
         </div>
       </article>
     
 
       <!-- Case Study Card: hcpnest -->
-      <article class="group relative flex flex-col justify-between rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+      <article class="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden" data-category="direct" data-industry="Healthcare Staffing, Medical Recruitment & Clinical Job Board">
         <div>
-          <!-- Screenshot Preview -->
-          <div class="relative bg-slate-950 overflow-hidden aspect-[16/10] border-b border-border/70">
-            <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+          <!-- Screenshot Preview with High-Impact Browser Chrome -->
+          <div class="relative bg-slate-950 overflow-hidden aspect-[16/9] border-b border-slate-200">
+            <div class="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-black/75 via-black/35 to-transparent z-10 pointer-events-none"></div>
+            
             <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md text-xs font-mono font-semibold text-white border border-white/20 shadow-md">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span>hcpnest.com</span>
               </span>
             </div>
-            <div class="absolute top-3 right-3 z-20">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg text-emerald-300 border border-emerald-400/50">
-                Case Study
+
+            <div class="absolute top-3 right-3 z-20 flex items-center gap-2">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600/95 backdrop-blur-md text-white shadow-md">
+                Case Study 06
               </span>
             </div>
-            <a href="/case-studies/hcpnest.html" class="block w-full h-full relative overflow-hidden" title="Read HCPNest (HCP Network) case study">
+
+            <a href="/case-studies/hcpnest.html" class="block w-full h-full relative overflow-hidden group" title="Read HCPNest (HCP Network) case study">
               <img 
                 src="/portfolio/screenshots/hcpnest.png" 
                 alt="HCPNest (HCP Network) case study screenshot" 
@@ -696,75 +1085,148 @@
             </a>
           </div>
 
-          <!-- Card Content Body -->
-          <div class="p-6 space-y-3">
-            <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
-              <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px]">Healthcare Talent Recruitment & Clinical Staffing Network</span>
-              <span class="font-medium text-slate-500 text-xs">HCPNest (HCP Network)</span>
+          <!-- Card Content Body with Short Case Study Details -->
+          <div class="p-6 sm:p-7 space-y-4">
+            
+            <!-- Category Tag & Client Location -->
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+              <span class="font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/70">
+                Healthcare Talent Recruitment & Clinical Staffing Network
+              </span>
+              <span class="font-medium text-slate-500 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+                <span>Pan-India & Global Healthcare</span>
+              </span>
             </div>
 
-            <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
-              <a href="/case-studies/hcpnest.html">HCPNest - Healthcare Recruitment & Medical Clinical Staffing Network</a>
-            </h3>
+            <!-- Title & Core Headline -->
+            <div class="space-y-1.5">
+              <h2 class="font-display font-black text-xl sm:text-2xl text-slate-900 leading-snug group-hover:text-emerald-600 transition-colors">
+                <a href="/case-studies/hcpnest.html">HCPNest (HCP Network)</a>
+              </h2>
+              <p class="text-sm font-semibold text-emerald-700 leading-normal">
+                Bridging Premier Hospitals and Healthcare Professionals via an Intuitive Clinical Talent Exchange
+              </p>
+            </div>
 
-            <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
-              Architected a dual-sided healthcare recruitment and medical staffing portal for HCPNest, allowing hospitals to publish clinical openings and medical professionals (physicians, nurses, specialists) to submit verified credentials, reducing clinical placement turnaround times from 3 weeks to under 4 days.
-            </p>
+            <!-- SHORT CASE STUDY DETAILS: Challenge & Solution -->
+            <div class="space-y-3 pt-1">
+              
+              <!-- 1. The Challenge -->
+              <div class="rounded-xl bg-slate-50 border border-slate-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-rose-600 flex items-center gap-1.5">
+                  <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>
+                  <span>The Challenge</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Traditional healthcare staffing relied on disorganized WhatsApp groups and manual Excel spreadsheets, causing slow placement times.
+                </p>
+              </div>
 
-            <!-- Metrics Preview -->
-            <div class="grid grid-cols-2 gap-2 pt-2 text-left">
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Active Job Applications</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">380+/mo</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(+985%)</span>
-                  </div>
+              <!-- 2. What Inrank Engineered -->
+              <div class="rounded-xl bg-emerald-50/70 border border-emerald-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-1.5">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
+                  <span>What Inrank Engineered</span>
                 </div>
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Hospital Inquiries</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">28/mo</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(+600%)</span>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Inrank designed a trustworthy, high-efficiency dual-sided talent marketplace. We built dedicated workflows for hospital HR directors to publish requisitions and clinical professionals to filter openings by specialty, shift type, and geography with 1-click credential submission.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- 3. Key Results & Commercial Metrics Strip -->
+            <div class="pt-2 border-t border-slate-100">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Verified Commercial Outcomes</span>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Active Job Applications">Active Job Applications</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">380+/mo</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+985%</span>
+                    </div>
                   </div>
-                </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Hospital Inquiries">Hospital Inquiries</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">28/mo</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+600%</span>
+                    </div>
+                  </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Placement Time">Placement Time</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">3.5 Days</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">-83%</span>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+
+            <!-- 4. Services Scope Tags -->
+            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  HIPAA-Conscious Web Portal
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Dual Hospital & Clinician Flows
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Interactive Job Search Matrix
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  1-Click Resume Ingestion
+                </span>
               
             </div>
+
           </div>
         </div>
 
-        <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
-          <a href="/case-studies/hcpnest.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
-            <span>Read Case Study</span>
-            <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+        <!-- Card Bottom Action Buttons -->
+        <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center gap-3">
+          <a href="/case-studies/hcpnest.html" class="flex-1 inline-flex items-center justify-center gap-2 h-12 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all text-center">
+            <span>Read Full Case Study</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
-          <a href="https://hcpnest.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl border border-border bg-card text-foreground font-semibold text-xs hover:bg-secondary transition-colors text-center" title="Visit live site">
+          <a href="https://hcpnest.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-12 px-5 rounded-xl border border-slate-200 bg-white text-slate-800 font-bold text-sm hover:bg-slate-50 transition-colors text-center shadow-xs" title="Visit live client website">
             <span>Live Site</span>
-            <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-400"></i>
           </a>
         </div>
       </article>
     
 
       <!-- Case Study Card: riituinstitution -->
-      <article class="group relative flex flex-col justify-between rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+      <article class="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden" data-category="direct" data-industry="Professional Commerce Coaching & Higher Education">
         <div>
-          <!-- Screenshot Preview -->
-          <div class="relative bg-slate-950 overflow-hidden aspect-[16/10] border-b border-border/70">
-            <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+          <!-- Screenshot Preview with High-Impact Browser Chrome -->
+          <div class="relative bg-slate-950 overflow-hidden aspect-[16/9] border-b border-slate-200">
+            <div class="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-black/75 via-black/35 to-transparent z-10 pointer-events-none"></div>
+            
             <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md text-xs font-mono font-semibold text-white border border-white/20 shadow-md">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span>riituinstitution.com</span>
               </span>
             </div>
-            <div class="absolute top-3 right-3 z-20">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg text-emerald-300 border border-emerald-400/50">
-                Case Study
+
+            <div class="absolute top-3 right-3 z-20 flex items-center gap-2">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600/95 backdrop-blur-md text-white shadow-md">
+                Case Study 07
               </span>
             </div>
-            <a href="/case-studies/riituinstitution.html" class="block w-full h-full relative overflow-hidden" title="Read Riitu Institution (Ritu Academy) case study">
+
+            <a href="/case-studies/riituinstitution.html" class="block w-full h-full relative overflow-hidden group" title="Read Riitu Institution (Ritu Academy) case study">
               <img 
                 src="/portfolio/screenshots/riituinstitution.png" 
                 alt="Riitu Institution (Ritu Academy) case study screenshot" 
@@ -774,75 +1236,148 @@
             </a>
           </div>
 
-          <!-- Card Content Body -->
-          <div class="p-6 space-y-3">
-            <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
-              <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px]">CA, Commerce & K-12 Academic Mentorship Academy</span>
-              <span class="font-medium text-slate-500 text-xs">Riitu Institution (Ritu Academy)</span>
+          <!-- Card Content Body with Short Case Study Details -->
+          <div class="p-6 sm:p-7 space-y-4">
+            
+            <!-- Category Tag & Client Location -->
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+              <span class="font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/70">
+                CA, Commerce & K-12 Academic Mentorship Academy
+              </span>
+              <span class="font-medium text-slate-500 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+                <span>Kharghar, Navi Mumbai</span>
+              </span>
             </div>
 
-            <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
-              <a href="/case-studies/riituinstitution.html">Riitu Institution - Premier CA, Commerce & Professional Coaching Academy</a>
-            </h3>
+            <!-- Title & Core Headline -->
+            <div class="space-y-1.5">
+              <h2 class="font-display font-black text-xl sm:text-2xl text-slate-900 leading-snug group-hover:text-emerald-600 transition-colors">
+                <a href="/case-studies/riituinstitution.html">Riitu Institution (Ritu Academy)</a>
+              </h2>
+              <p class="text-sm font-semibold text-emerald-700 leading-normal">
+                Establishing Navi Mumbai's Benchmark in CA Foundation, Intermediate & Commerce Coaching
+              </p>
+            </div>
 
-            <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
-              Developed a high-converting academic portal for Riitu Institution in Kharghar, Navi Mumbai, showcasing professional CA, CS, and CMA curricula, faculty achievements, and interactive syllabus downloads that drove a 340% increase in student admissions and WhatsApp parent consultations.
-            </p>
+            <!-- SHORT CASE STUDY DETAILS: Challenge & Solution -->
+            <div class="space-y-3 pt-1">
+              
+              <!-- 1. The Challenge -->
+              <div class="rounded-xl bg-slate-50 border border-slate-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-rose-600 flex items-center gap-1.5">
+                  <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>
+                  <span>The Challenge</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Local parents and students were finding legacy coaching websites that failed to showcase Riitu's top-ranking CA pass rates and experienced faculty.
+                </p>
+              </div>
 
-            <!-- Metrics Preview -->
-            <div class="grid grid-cols-2 gap-2 pt-2 text-left">
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">WhatsApp Inquiries</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">65+/mo</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(+441%)</span>
-                  </div>
+              <!-- 2. What Inrank Engineered -->
+              <div class="rounded-xl bg-emerald-50/70 border border-emerald-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-1.5">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
+                  <span>What Inrank Engineered</span>
                 </div>
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Syllabus Downloads</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">210+/mo</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(New Channel)</span>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Inrank engineered a modern, inspiring academic destination emphasizing academic excellence, faculty credentials, student success stories, and an interactive Course Directory with 1-click syllabus previews and instant admission counseling.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- 3. Key Results & Commercial Metrics Strip -->
+            <div class="pt-2 border-t border-slate-100">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Verified Commercial Outcomes</span>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="WhatsApp Inquiries">WhatsApp Inquiries</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">65+/mo</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+441%</span>
+                    </div>
                   </div>
-                </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Syllabus Downloads">Syllabus Downloads</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">210+/mo</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">New Channel</span>
+                    </div>
+                  </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Batch Enrollment">Batch Enrollment</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">+85%</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+85%</span>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+
+            <!-- 4. Services Scope Tags -->
+            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Educational Academy Portal
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Course & Batch Management UI
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  1-Click Free Demo Booking
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Faculty & Toppers Showcase
+                </span>
               
             </div>
+
           </div>
         </div>
 
-        <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
-          <a href="/case-studies/riituinstitution.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
-            <span>Read Case Study</span>
-            <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+        <!-- Card Bottom Action Buttons -->
+        <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center gap-3">
+          <a href="/case-studies/riituinstitution.html" class="flex-1 inline-flex items-center justify-center gap-2 h-12 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all text-center">
+            <span>Read Full Case Study</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
-          <a href="https://riituinstitution.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl border border-border bg-card text-foreground font-semibold text-xs hover:bg-secondary transition-colors text-center" title="Visit live site">
+          <a href="https://riituinstitution.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-12 px-5 rounded-xl border border-slate-200 bg-white text-slate-800 font-bold text-sm hover:bg-slate-50 transition-colors text-center shadow-xs" title="Visit live client website">
             <span>Live Site</span>
-            <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-400"></i>
           </a>
         </div>
       </article>
     
 
       <!-- Case Study Card: shetkarifoodstuff -->
-      <article class="group relative flex flex-col justify-between rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+      <article class="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden" data-category="collaboration" data-industry="International Agricultural Commodities & Foodstuff Export (GCC / UAE)">
         <div>
-          <!-- Screenshot Preview -->
-          <div class="relative bg-slate-950 overflow-hidden aspect-[16/10] border-b border-border/70">
-            <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+          <!-- Screenshot Preview with High-Impact Browser Chrome -->
+          <div class="relative bg-slate-950 overflow-hidden aspect-[16/9] border-b border-slate-200">
+            <div class="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-black/75 via-black/35 to-transparent z-10 pointer-events-none"></div>
+            
             <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md text-xs font-mono font-semibold text-white border border-white/20 shadow-md">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span>shetkarifoodstuff.com</span>
               </span>
             </div>
-            <div class="absolute top-3 right-3 z-20">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg text-emerald-300 border border-emerald-400/50">
-                Case Study
+
+            <div class="absolute top-3 right-3 z-20 flex items-center gap-2">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600/95 backdrop-blur-md text-white shadow-md">
+                Case Study 08
               </span>
             </div>
-            <a href="/case-studies/shetkarifoodstuff.html" class="block w-full h-full relative overflow-hidden" title="Read Shetkari Foodstuff Trading LLC (Jaas Global) case study">
+
+            <a href="/case-studies/shetkarifoodstuff.html" class="block w-full h-full relative overflow-hidden group" title="Read Shetkari Foodstuff Trading LLC (Jaas Global) case study">
               <img 
                 src="/portfolio/screenshots/shetkarifoodstuff.png" 
                 alt="Shetkari Foodstuff Trading LLC (Jaas Global) case study screenshot" 
@@ -852,75 +1387,148 @@
             </a>
           </div>
 
-          <!-- Card Content Body -->
-          <div class="p-6 space-y-3">
-            <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
-              <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px]">International Agro Commodity Export & GCC B2B Food Trading</span>
-              <span class="font-medium text-slate-500 text-xs">Shetkari Foodstuff Trading LLC (Jaas Global)</span>
+          <!-- Card Content Body with Short Case Study Details -->
+          <div class="p-6 sm:p-7 space-y-4">
+            
+            <!-- Category Tag & Client Location -->
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+              <span class="font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/70">
+                International Agro Commodity Export & GCC B2B Food Trading
+              </span>
+              <span class="font-medium text-slate-500 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+                <span>Dubai, UAE & India</span>
+              </span>
             </div>
 
-            <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
-              <a href="/case-studies/shetkarifoodstuff.html">Shetkari Foodstuff Trading LLC - Global Agro Commodity Export SEO & AI GEO</a>
-            </h3>
+            <!-- Title & Core Headline -->
+            <div class="space-y-1.5">
+              <h2 class="font-display font-black text-xl sm:text-2xl text-slate-900 leading-snug group-hover:text-emerald-600 transition-colors">
+                <a href="/case-studies/shetkarifoodstuff.html">Shetkari Foodstuff Trading LLC (Jaas Global)</a>
+              </h2>
+              <p class="text-sm font-semibold text-emerald-700 leading-normal">
+                Dominating International Agro-Export Search & Generative AI Engines Across the GCC
+              </p>
+            </div>
 
-            <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
-              Executed an international B2B SEO and Generative Engine Optimization (GEO/AEO) campaign for Shetkari Foodstuff Trading LLC (Dubai UAE & Jaas Global India), establishing search dominance across the UAE, Saudi Arabia, Qatar, and Oman for bulk exports of Cavendish Bananas, Bhagwa Pomegranates, Guntur Chillies, and Basmati Rice.
-            </p>
+            <!-- SHORT CASE STUDY DETAILS: Challenge & Solution -->
+            <div class="space-y-3 pt-1">
+              
+              <!-- 1. The Challenge -->
+              <div class="rounded-xl bg-slate-50 border border-slate-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-rose-600 flex items-center gap-1.5">
+                  <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>
+                  <span>The Challenge</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  High competition from established wholesale traders in Dubai's Al Aweer fruit market and international trading houses.
+                </p>
+              </div>
 
-            <!-- Metrics Preview -->
-            <div class="grid grid-cols-2 gap-2 pt-2 text-left">
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Container RFQs</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">22+/mo</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(+633%)</span>
-                  </div>
+              <!-- 2. What Inrank Engineered -->
+              <div class="rounded-xl bg-emerald-50/70 border border-emerald-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-1.5">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
+                  <span>What Inrank Engineered</span>
                 </div>
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">AI Search Citations</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">34+</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(Category Leader)</span>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Inrank deployed our proprietary Generative Engine Optimization (GEO) and international B2B SEO framework. We structured commodity entity knowledge graphs, authored comprehensive export procurement specifications, and built citation authority across agricultural supply-chain registries, making Shetkari the top recommended exporter in AI search responses.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- 3. Key Results & Commercial Metrics Strip -->
+            <div class="pt-2 border-t border-slate-100">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Verified Commercial Outcomes</span>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Container RFQs">Container RFQs</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">22+/mo</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+633%</span>
+                    </div>
                   </div>
-                </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="AI Search Citations">AI Search Citations</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">34+</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">Category Leader</span>
+                    </div>
+                  </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="GCC Organic Traffic">GCC Organic Traffic</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">2,400+/mo</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+1042%</span>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+
+            <!-- 4. Services Scope Tags -->
+            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  International Agro Export SEO
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Generative Engine Optimization (GEO)
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  APEDA & FSSAI Entity Schema
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Bilingual Middle East Content Hub
+                </span>
               
             </div>
+
           </div>
         </div>
 
-        <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
-          <a href="/case-studies/shetkarifoodstuff.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
-            <span>Read Case Study</span>
-            <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+        <!-- Card Bottom Action Buttons -->
+        <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center gap-3">
+          <a href="/case-studies/shetkarifoodstuff.html" class="flex-1 inline-flex items-center justify-center gap-2 h-12 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all text-center">
+            <span>Read Full Case Study</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
-          <a href="https://shetkarifoodstuff.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl border border-border bg-card text-foreground font-semibold text-xs hover:bg-secondary transition-colors text-center" title="Visit live site">
+          <a href="https://shetkarifoodstuff.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-12 px-5 rounded-xl border border-slate-200 bg-white text-slate-800 font-bold text-sm hover:bg-slate-50 transition-colors text-center shadow-xs" title="Visit live client website">
             <span>Live Site</span>
-            <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-400"></i>
           </a>
         </div>
       </article>
     
 
       <!-- Case Study Card: orthopedicanklefootspecialist -->
-      <article class="group relative flex flex-col justify-between rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+      <article class="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden" data-category="collaboration" data-industry="Specialized Orthopedic Surgery, Sports Medicine & Biomechanical Orthotics">
         <div>
-          <!-- Screenshot Preview -->
-          <div class="relative bg-slate-950 overflow-hidden aspect-[16/10] border-b border-border/70">
-            <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+          <!-- Screenshot Preview with High-Impact Browser Chrome -->
+          <div class="relative bg-slate-950 overflow-hidden aspect-[16/9] border-b border-slate-200">
+            <div class="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-black/75 via-black/35 to-transparent z-10 pointer-events-none"></div>
+            
             <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md text-xs font-mono font-semibold text-white border border-white/20 shadow-md">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span>orthopedicanklefootspecialist.com</span>
               </span>
             </div>
-            <div class="absolute top-3 right-3 z-20">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg text-emerald-300 border border-emerald-400/50">
-                Case Study
+
+            <div class="absolute top-3 right-3 z-20 flex items-center gap-2">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600/95 backdrop-blur-md text-white shadow-md">
+                Case Study 09
               </span>
             </div>
-            <a href="/case-studies/orthopedicanklefootspecialist.html" class="block w-full h-full relative overflow-hidden" title="Read Dr. Shyam Thakkar (ARTICUL8 Clinic) case study">
+
+            <a href="/case-studies/orthopedicanklefootspecialist.html" class="block w-full h-full relative overflow-hidden group" title="Read Dr. Shyam Thakkar (ARTICUL8 Clinic) case study">
               <img 
                 src="/portfolio/screenshots/orthopedicanklefootspecialist.png" 
                 alt="Dr. Shyam Thakkar (ARTICUL8 Clinic) case study screenshot" 
@@ -930,75 +1538,148 @@
             </a>
           </div>
 
-          <!-- Card Content Body -->
-          <div class="p-6 space-y-3">
-            <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
-              <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px]">Super-Specialized Orthopedic Foot & Ankle Surgery</span>
-              <span class="font-medium text-slate-500 text-xs">Dr. Shyam Thakkar (ARTICUL8 Clinic)</span>
+          <!-- Card Content Body with Short Case Study Details -->
+          <div class="p-6 sm:p-7 space-y-4">
+            
+            <!-- Category Tag & Client Location -->
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+              <span class="font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/70">
+                Super-Specialized Orthopedic Foot & Ankle Surgery
+              </span>
+              <span class="font-medium text-slate-500 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+                <span>Pune & Maharashtra Network</span>
+              </span>
             </div>
 
-            <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
-              <a href="/case-studies/orthopedicanklefootspecialist.html">Dr. Shyam Thakkar - Specialized Orthopedic Foot, Ankle & Sports Injury Clinic</a>
-            </h3>
+            <!-- Title & Core Headline -->
+            <div class="space-y-1.5">
+              <h2 class="font-display font-black text-xl sm:text-2xl text-slate-900 leading-snug group-hover:text-emerald-600 transition-colors">
+                <a href="/case-studies/orthopedicanklefootspecialist.html">Dr. Shyam Thakkar (ARTICUL8 Clinic)</a>
+              </h2>
+              <p class="text-sm font-semibold text-emerald-700 leading-normal">
+                Building Maharashtra's Premier Specialized Orthopedic Patient Acquisition Funnel
+              </p>
+            </div>
 
-            <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
-              Collaborated on the strategic digital expansion, clinical E-E-A-T architecture, and local medical SEO for Dr. Shyam Thakkar (USA/Europe fellowship-trained foot and ankle specialist at ARTICUL8 Clinic, Pune), expanding patient consultation inquiries across Pune, Mumbai, Solapur, Baramati, and Nanded.
-            </p>
+            <!-- SHORT CASE STUDY DETAILS: Challenge & Solution -->
+            <div class="space-y-3 pt-1">
+              
+              <!-- 1. The Challenge -->
+              <div class="rounded-xl bg-slate-50 border border-slate-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-rose-600 flex items-center gap-1.5">
+                  <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>
+                  <span>The Challenge</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Patients suffering from complex ankle ligament tears, Achilles tendonitis, or flatfoot deformities were visiting general orthopedic surgeons rather than a dedicated fellowship specialist.
+                </p>
+              </div>
 
-            <!-- Metrics Preview -->
-            <div class="grid grid-cols-2 gap-2 pt-2 text-left">
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Monthly Patient Bookings</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">95+</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(+331%)</span>
-                  </div>
+              <!-- 2. What Inrank Engineered -->
+              <div class="rounded-xl bg-emerald-50/70 border border-emerald-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-1.5">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
+                  <span>What Inrank Engineered</span>
                 </div>
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Regional City Inquiries</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">38/mo</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(+660%)</span>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Inrank engineered a clinical authority ecosystem centered on patient education and transparent surgical credentials. We built deep clinical condition guides, integrated MedicalProcedure and Physician schemas, and created an effortless multi-city appointment scheduling funnel.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- 3. Key Results & Commercial Metrics Strip -->
+            <div class="pt-2 border-t border-slate-100">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Verified Commercial Outcomes</span>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Monthly Patient Bookings">Monthly Patient Bookings</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">95+</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+331%</span>
+                    </div>
                   </div>
-                </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Regional City Inquiries">Regional City Inquiries</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">38/mo</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+660%</span>
+                    </div>
+                  </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Specialty Google Rankings">Specialty Google Rankings</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">#1</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">#1 Rank</span>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+
+            <!-- 4. Services Scope Tags -->
+            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Clinical Foot & Ankle Web Architecture
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Interactive Symptom Helper Tool
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Surgeon Milestone Verification
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  HIPAA & Patient Privacy Protocols
+                </span>
               
             </div>
+
           </div>
         </div>
 
-        <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
-          <a href="/case-studies/orthopedicanklefootspecialist.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
-            <span>Read Case Study</span>
-            <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+        <!-- Card Bottom Action Buttons -->
+        <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center gap-3">
+          <a href="/case-studies/orthopedicanklefootspecialist.html" class="flex-1 inline-flex items-center justify-center gap-2 h-12 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all text-center">
+            <span>Read Full Case Study</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
-          <a href="https://orthopedicanklefootspecialist.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl border border-border bg-card text-foreground font-semibold text-xs hover:bg-secondary transition-colors text-center" title="Visit live site">
+          <a href="https://orthopedicanklefootspecialist.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-12 px-5 rounded-xl border border-slate-200 bg-white text-slate-800 font-bold text-sm hover:bg-slate-50 transition-colors text-center shadow-xs" title="Visit live client website">
             <span>Live Site</span>
-            <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-400"></i>
           </a>
         </div>
       </article>
     
 
       <!-- Case Study Card: dravyafinancial -->
-      <article class="group relative flex flex-col justify-between rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+      <article class="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden" data-category="collaboration" data-industry="Corporate Financial Services, Debt Syndication & Real Estate Funding">
         <div>
-          <!-- Screenshot Preview -->
-          <div class="relative bg-slate-950 overflow-hidden aspect-[16/10] border-b border-border/70">
-            <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+          <!-- Screenshot Preview with High-Impact Browser Chrome -->
+          <div class="relative bg-slate-950 overflow-hidden aspect-[16/9] border-b border-slate-200">
+            <div class="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-black/75 via-black/35 to-transparent z-10 pointer-events-none"></div>
+            
             <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md text-xs font-mono font-semibold text-white border border-white/20 shadow-md">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span>dravyafinancial.com</span>
               </span>
             </div>
-            <div class="absolute top-3 right-3 z-20">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg text-emerald-300 border border-emerald-400/50">
-                Case Study
+
+            <div class="absolute top-3 right-3 z-20 flex items-center gap-2">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600/95 backdrop-blur-md text-white shadow-md">
+                Case Study 010
               </span>
             </div>
-            <a href="/case-studies/dravyafinancial.html" class="block w-full h-full relative overflow-hidden" title="Read Dravya Financial Solutions Pvt Ltd case study">
+
+            <a href="/case-studies/dravyafinancial.html" class="block w-full h-full relative overflow-hidden group" title="Read Dravya Financial Solutions Pvt Ltd case study">
               <img 
                 src="/portfolio/screenshots/dravyafinancial.png" 
                 alt="Dravya Financial Solutions Pvt Ltd case study screenshot" 
@@ -1008,56 +1689,162 @@
             </a>
           </div>
 
-          <!-- Card Content Body -->
-          <div class="p-6 space-y-3">
-            <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
-              <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px]">Corporate Debt Syndication, Structured Finance & SME Advisory</span>
-              <span class="font-medium text-slate-500 text-xs">Dravya Financial Solutions Pvt Ltd</span>
+          <!-- Card Content Body with Short Case Study Details -->
+          <div class="p-6 sm:p-7 space-y-4">
+            
+            <!-- Category Tag & Client Location -->
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+              <span class="font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/70">
+                Corporate Debt Syndication, Structured Finance & SME Advisory
+              </span>
+              <span class="font-medium text-slate-500 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+                <span>Mumbai, Maharashtra</span>
+              </span>
             </div>
 
-            <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
-              <a href="/case-studies/dravyafinancial.html">Dravya Financial Solutions - Enterprise Debt Syndication & Corporate Advisory</a>
-            </h3>
+            <!-- Title & Core Headline -->
+            <div class="space-y-1.5">
+              <h2 class="font-display font-black text-xl sm:text-2xl text-slate-900 leading-snug group-hover:text-emerald-600 transition-colors">
+                <a href="/case-studies/dravyafinancial.html">Dravya Financial Solutions Pvt Ltd</a>
+              </h2>
+              <p class="text-sm font-semibold text-emerald-700 leading-normal">
+                Establishing High-Stakes Institutional Credibility for Multi-Crore Corporate Capital
+              </p>
+            </div>
 
-            <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
-              Collaborated on the strategic web architecture, brand positioning, and enterprise lead qualification funnels for Dravya Financial Solutions (Mumbai), structuring high-ticket corporate debt syndication, real estate JDA funding, and working capital advisory solutions that generated over ₹45Cr+ in qualified deal pipelines.
-            </p>
+            <!-- SHORT CASE STUDY DETAILS: Challenge & Solution -->
+            <div class="space-y-3 pt-1">
+              
+              <!-- 1. The Challenge -->
+              <div class="rounded-xl bg-slate-50 border border-slate-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-rose-600 flex items-center gap-1.5">
+                  <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>
+                  <span>The Challenge</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  High-net-worth developers and corporate CFOs demand rigorous institutional credibility; previous web touchpoints did not communicate their banking relationships.
+                </p>
+              </div>
 
-            <!-- Metrics Preview -->
-            <div class="grid grid-cols-2 gap-2 pt-2 text-left">
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Qualified Deal Intake</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">₹45Cr+/mo</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(+650%)</span>
-                  </div>
+              <!-- 2. What Inrank Engineered -->
+              <div class="rounded-xl bg-emerald-50/70 border border-emerald-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-1.5">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
+                  <span>What Inrank Engineered</span>
                 </div>
-              
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">Unqualified Retail Noise</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">Under 5%</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(-93%)</span>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  Inrank designed a dignified, institutional corporate finance portal conveying the solemnity of an elite investment bank. We built structured capital solution matrices, automated deal qualification filters, and a confidential transaction desk that immediately positions Dravya as a premier financial partner.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- 3. Key Results & Commercial Metrics Strip -->
+            <div class="pt-2 border-t border-slate-100">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Verified Commercial Outcomes</span>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Qualified Deal Intake">Qualified Deal Intake</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">₹45Cr+/mo</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+650%</span>
+                    </div>
                   </div>
-                </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Unqualified Retail Noise">Unqualified Retail Noise</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">Under 5%</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">-93%</span>
+                    </div>
+                  </div>
+                
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="Institutional Inquiries">Institutional Inquiries</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">16/mo</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">+700%</span>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+
+            <!-- 4. Services Scope Tags -->
+            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Institutional Advisory Web Architecture
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Corporate Debt Eligibility Calculator
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  Transaction Tombstones Showcase
+                </span>
+              
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  High-Ticket Lead Qualification
+                </span>
               
             </div>
+
           </div>
         </div>
 
-        <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
-          <a href="/case-studies/dravyafinancial.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
-            <span>Read Case Study</span>
-            <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+        <!-- Card Bottom Action Buttons -->
+        <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center gap-3">
+          <a href="/case-studies/dravyafinancial.html" class="flex-1 inline-flex items-center justify-center gap-2 h-12 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all text-center">
+            <span>Read Full Case Study</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
-          <a href="https://dravyafinancial.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl border border-border bg-card text-foreground font-semibold text-xs hover:bg-secondary transition-colors text-center" title="Visit live site">
+          <a href="https://dravyafinancial.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-12 px-5 rounded-xl border border-slate-200 bg-white text-slate-800 font-bold text-sm hover:bg-slate-50 transition-colors text-center shadow-xs" title="Visit live client website">
             <span>Live Site</span>
-            <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-400"></i>
           </a>
         </div>
       </article>
     
+        </div>
+
+        <!-- BOTTOM CONVERSION CTA BANNER -->
+        <div class="mt-16 rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-white via-white to-emerald-50/30 p-8 sm:p-14 shadow-xl text-center space-y-6">
+          <div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 border border-emerald-500/20">
+            <i data-lucide="zap" class="h-4 w-4 text-emerald-600"></i>
+            <span>Ready For Measurable Growth?</span>
+          </div>
+          
+          <h2 class="font-display font-extrabold text-2xl sm:text-4xl lg:text-5xl text-slate-900 max-w-2xl mx-auto leading-tight">
+            Want Results Like These for Your Business?
+          </h2>
+
+          <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+            Get a tailored technical, SEO, and conversion audit for your business. Sub-second speed and category dominance engineered from Day 1.
+          </p>
+
+          <div class="pt-3 flex flex-col sm:flex-row items-center justify-center gap-3.5">
+            <a href="/contact.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-12 px-7 rounded-xl bg-emerald-600 text-white font-bold text-sm shadow-md hover:bg-emerald-700 transition-all">
+              <span>Request Free Growth Audit</span>
+              <i data-lucide="arrow-right" class="h-4 w-4"></i>
+            </a>
+
+            <a href="https://wa.me/918788823182?text=Hi%20Inrank%2C%20I%20reviewed%20your%20case%20studies%20and%20want%20to%20discuss%20a%20strategy%20audit." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-12 px-7 rounded-xl border border-slate-200 bg-white hover:bg-emerald-50 hover:text-emerald-700 hover:border-emerald-300 text-slate-800 font-bold text-sm transition-all shadow-sm">
+              <i data-lucide="message-circle" class="h-4 w-4 text-emerald-600"></i>
+              <span>WhatsApp Strategy Desk (+91 87888 23182)</span>
+            </a>
+          </div>
+
+          <div class="text-xs text-slate-500 flex flex-wrap items-center justify-center gap-4 pt-2">
+            <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="h-4 w-4 text-emerald-600"></i> 100% Strict NDA</span>
+            <span>&bull;</span>
+            <span>48-Hour Turnaround</span>
+            <span>&bull;</span>
+            <span>Fixed-Price Roadmaps</span>
+          </div>
         </div>
       </section>
     </main>
@@ -1163,6 +1950,7 @@
       </div>
     </div>
   
-  
-</body>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>

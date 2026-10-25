@@ -24,6 +24,7 @@ export default defineConfig(() => {
           digitalMarketingPune: path.resolve(__dirname, 'digital-marketing-agency-in-pune.html'),
           portfolio: path.resolve(__dirname, 'portfolio.html'),
           ourWork: path.resolve(__dirname, 'our-work.html'),
+          caseStudies: path.resolve(__dirname, 'case-studies.html'),
           ourWorkCytos: path.resolve(__dirname, 'our-work/cytos.html'),
           ourWorkFludio: path.resolve(__dirname, 'our-work/fludio.html'),
           ourWorkHiragrafix: path.resolve(__dirname, 'our-work/hiragrafix.html'),

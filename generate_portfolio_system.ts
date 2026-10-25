@@ -1263,26 +1263,29 @@ function generateCaseStudiesHubHTML(): string {
     schemaJSON
   );
 
-  const caseCardsHTML = PORTFOLIO_PROJECTS.map((project) => {
+  const caseCardsHTML = PORTFOLIO_PROJECTS.map((project, idx) => {
     return `
       <!-- Case Study Card: ${project.id} -->
-      <article class="group relative flex flex-col justify-between rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden">
+      <article class="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 overflow-hidden" data-category="${project.category}" data-industry="${project.industry}">
         <div>
-          <!-- Screenshot Preview -->
-          <div class="relative bg-slate-950 overflow-hidden aspect-[16/10] border-b border-border/70">
-            <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
+          <!-- Screenshot Preview with High-Impact Browser Chrome -->
+          <div class="relative bg-slate-950 overflow-hidden aspect-[16/9] border-b border-slate-200">
+            <div class="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-black/75 via-black/35 to-transparent z-10 pointer-events-none"></div>
+            
             <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md text-xs font-mono font-semibold text-white border border-white/20 shadow-md">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span>${project.domain}</span>
               </span>
             </div>
-            <div class="absolute top-3 right-3 z-20">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg text-emerald-300 border border-emerald-400/50">
-                Case Study
+
+            <div class="absolute top-3 right-3 z-20 flex items-center gap-2">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600/95 backdrop-blur-md text-white shadow-md">
+                Case Study 0${idx + 1}
               </span>
             </div>
-            <a href="/case-studies/${project.id}.html" class="block w-full h-full relative overflow-hidden" title="Read ${project.clientName} case study">
+
+            <a href="/case-studies/${project.id}.html" class="block w-full h-full relative overflow-hidden group" title="Read ${project.clientName} case study">
               <img 
                 src="${project.screenshot}" 
                 alt="${project.clientName} case study screenshot" 
@@ -1292,44 +1295,94 @@ function generateCaseStudiesHubHTML(): string {
             </a>
           </div>
 
-          <!-- Card Content Body -->
-          <div class="p-6 space-y-3">
-            <div class="flex items-center justify-between text-xs text-muted-foreground pb-1">
-              <span class="font-bold uppercase tracking-wider text-emerald-600 text-[11px]">${project.sector || project.industry}</span>
-              <span class="font-medium text-slate-500 text-xs">${project.clientName}</span>
+          <!-- Card Content Body with Short Case Study Details -->
+          <div class="p-6 sm:p-7 space-y-4">
+            
+            <!-- Category Tag & Client Location -->
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+              <span class="font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/70">
+                ${project.sector || project.industry}
+              </span>
+              <span class="font-medium text-slate-500 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
+                <span>${project.location}</span>
+              </span>
             </div>
 
-            <h3 class="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-emerald-600 transition-colors">
-              <a href="/case-studies/${project.id}.html">${project.title}</a>
-            </h3>
+            <!-- Title & Core Headline -->
+            <div class="space-y-1.5">
+              <h2 class="font-display font-black text-xl sm:text-2xl text-slate-900 leading-snug group-hover:text-emerald-600 transition-colors">
+                <a href="/case-studies/${project.id}.html">${project.clientName}</a>
+              </h2>
+              <p class="text-sm font-semibold text-emerald-700 leading-normal">
+                ${project.heroHeadline}
+              </p>
+            </div>
 
-            <p class="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
-              ${project.heroSummary}
-            </p>
-
-            <!-- Metrics Preview -->
-            <div class="grid grid-cols-2 gap-2 pt-2 text-left">
-              ${project.results.metrics.slice(0, 2).map(m => `
-                <div class="p-2.5 rounded-lg bg-secondary/50 border border-border/60">
-                  <div class="text-[10px] text-muted-foreground truncate">${m.label}</div>
-                  <div class="text-xs font-bold text-foreground flex items-center gap-1 mt-0.5">
-                    <span class="text-emerald-600 font-mono">${m.after}</span>
-                    <span class="text-[10px] font-normal text-muted-foreground">(${m.change})</span>
-                  </div>
+            <!-- SHORT CASE STUDY DETAILS: Challenge & Solution -->
+            <div class="space-y-3 pt-1">
+              
+              <!-- 1. The Challenge -->
+              <div class="rounded-xl bg-slate-50 border border-slate-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-rose-600 flex items-center gap-1.5">
+                  <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>
+                  <span>The Challenge</span>
                 </div>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  ${project.challenges[0]}
+                </p>
+              </div>
+
+              <!-- 2. What Inrank Engineered -->
+              <div class="rounded-xl bg-emerald-50/70 border border-emerald-200/80 p-4 space-y-1">
+                <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-1.5">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
+                  <span>What Inrank Engineered</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  ${project.strategicSolution.overview}
+                </p>
+              </div>
+
+            </div>
+
+            <!-- 3. Key Results & Commercial Metrics Strip -->
+            <div class="pt-2 border-t border-slate-100">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-2">Verified Commercial Outcomes</span>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                ${project.results.metrics.slice(0, 3).map(m => `
+                  <div class="p-3 rounded-xl bg-slate-50/90 border border-slate-200/70">
+                    <div class="text-xs font-medium text-slate-500 truncate" title="${m.label}">${m.label}</div>
+                    <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
+                      <span class="text-emerald-600">${m.after}</span>
+                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">${m.change}</span>
+                    </div>
+                  </div>
+                `).join("")}
+              </div>
+            </div>
+
+            <!-- 4. Services Scope Tags -->
+            <div class="flex flex-wrap items-center gap-1.5 pt-1">
+              ${(project.metaServices ? project.metaServices.slice(0, 4) : project.services.slice(0, 4)).map(s => `
+                <span class="text-xs font-medium px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 border border-slate-200/60">
+                  ${s}
+                </span>
               `).join("")}
             </div>
+
           </div>
         </div>
 
-        <div class="px-6 pb-6 pt-2 flex items-center gap-2.5">
-          <a href="/case-studies/${project.id}.html" class="flex-1 inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm hover:shadow-md transition-all text-center">
-            <span>Read Case Study</span>
-            <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i>
+        <!-- Card Bottom Action Buttons -->
+        <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center gap-3">
+          <a href="/case-studies/${project.id}.html" class="flex-1 inline-flex items-center justify-center gap-2 h-12 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all text-center">
+            <span>Read Full Case Study</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
-          <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl border border-border bg-card text-foreground font-semibold text-xs hover:bg-secondary transition-colors text-center" title="Visit live site">
+          <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-12 px-5 rounded-xl border border-slate-200 bg-white text-slate-800 font-bold text-sm hover:bg-slate-50 transition-colors text-center shadow-xs" title="Visit live client website">
             <span>Live Site</span>
-            <i data-lucide="external-link" class="h-3.5 w-3.5 text-muted-foreground"></i>
+            <i data-lucide="external-link" class="w-4 h-4 text-slate-400"></i>
           </a>
         </div>
       </article>
@@ -1339,10 +1392,11 @@ function generateCaseStudiesHubHTML(): string {
   const bodyContent = `
     ${getHeaderHTML('case-studies')}
 
-    <main class="relative pt-24 sm:pt-28 md:pt-36 pb-24 overflow-hidden">
+    <main class="relative pt-24 sm:pt-28 md:pt-36 pb-24 overflow-hidden font-sans">
+      
       <!-- HERO SECTION -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-secondary/80 text-foreground text-xs font-semibold shadow-xs">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-800 text-xs font-semibold shadow-xs">
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -1350,35 +1404,92 @@ function generateCaseStudiesHubHTML(): string {
           <span>Verified Commercial Case Studies</span>
         </div>
 
-        <h1 class="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl text-foreground tracking-tight max-w-4xl mx-auto leading-[1.1]">
-          Case Studies
+        <h1 class="font-display font-black text-4xl sm:text-6xl lg:text-7xl text-slate-900 tracking-tight max-w-4xl mx-auto leading-[1.1]">
+          Case Studies &amp; Client Growth
         </h1>
 
         <p class="text-lg sm:text-2xl font-bold text-emerald-700 max-w-3xl mx-auto leading-snug">
           Data-driven commercial outcomes, substantiated ROI, and measurable business growth.
         </p>
 
-        <p class="text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+        <p class="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
           Deconstruct how Inrank Technologies engineers performance websites, organic search authority, and high-conversion funnels for B2B industrial leaders, healthcare practices, and high-growth brands.
         </p>
 
-        <!-- Case Studies Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left pt-10">
+        <!-- AT-A-GLANCE EXECUTIVE OUTCOMES METRIC BAR -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-4 text-left">
+          <div class="p-5 rounded-2xl border border-slate-200 bg-white shadow-xs">
+            <div class="text-xs font-bold uppercase tracking-wider text-emerald-600">Production Studies</div>
+            <div class="text-2xl sm:text-3xl font-black text-slate-900 font-mono mt-1">10 Verified</div>
+            <div class="text-xs text-slate-500 mt-0.5">Real client businesses</div>
+          </div>
+          <div class="p-5 rounded-2xl border border-slate-200 bg-white shadow-xs">
+            <div class="text-xs font-bold uppercase tracking-wider text-emerald-600">Average Growth</div>
+            <div class="text-2xl sm:text-3xl font-black text-slate-900 font-mono mt-1">+340%</div>
+            <div class="text-xs text-slate-500 mt-0.5">Inquiry &amp; lead volume</div>
+          </div>
+          <div class="p-5 rounded-2xl border border-slate-200 bg-white shadow-xs">
+            <div class="text-xs font-bold uppercase tracking-wider text-emerald-600">PageSpeed Standard</div>
+            <div class="text-2xl sm:text-3xl font-black text-slate-900 font-mono mt-1">&lt;0.8s</div>
+            <div class="text-xs text-slate-500 mt-0.5">Sub-second LCP benchmark</div>
+          </div>
+          <div class="p-5 rounded-2xl border border-slate-200 bg-white shadow-xs">
+            <div class="text-xs font-bold uppercase tracking-wider text-emerald-600">Google SEO Ranks</div>
+            <div class="text-2xl sm:text-3xl font-black text-slate-900 font-mono mt-1">Top 3</div>
+            <div class="text-xs text-slate-500 mt-0.5">Local 3-Pack authority</div>
+          </div>
+        </div>
+
+        <!-- 2-COLUMN BALANCED CASE STUDIES GRID WITH SHORT DETAILS -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 text-left pt-12">
           ${caseCardsHTML}
+        </div>
+
+        <!-- BOTTOM CONVERSION CTA BANNER -->
+        <div class="mt-16 rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-white via-white to-emerald-50/30 p-8 sm:p-14 shadow-xl text-center space-y-6">
+          <div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 border border-emerald-500/20">
+            <i data-lucide="zap" class="h-4 w-4 text-emerald-600"></i>
+            <span>Ready For Measurable Growth?</span>
+          </div>
+          
+          <h2 class="font-display font-extrabold text-2xl sm:text-4xl lg:text-5xl text-slate-900 max-w-2xl mx-auto leading-tight">
+            Want Results Like These for Your Business?
+          </h2>
+
+          <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+            Get a tailored technical, SEO, and conversion audit for your business. Sub-second speed and category dominance engineered from Day 1.
+          </p>
+
+          <div class="pt-3 flex flex-col sm:flex-row items-center justify-center gap-3.5">
+            <a href="/contact.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-12 px-7 rounded-xl bg-emerald-600 text-white font-bold text-sm shadow-md hover:bg-emerald-700 transition-all">
+              <span>Request Free Growth Audit</span>
+              <i data-lucide="arrow-right" class="h-4 w-4"></i>
+            </a>
+
+            <a href="https://wa.me/918788823182?text=Hi%20Inrank%2C%20I%20reviewed%20your%20case%20studies%20and%20want%20to%20discuss%20a%20strategy%20audit." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-12 px-7 rounded-xl border border-slate-200 bg-white hover:bg-emerald-50 hover:text-emerald-700 hover:border-emerald-300 text-slate-800 font-bold text-sm transition-all shadow-sm">
+              <i data-lucide="message-circle" class="h-4 w-4 text-emerald-600"></i>
+              <span>WhatsApp Strategy Desk (+91 87888 23182)</span>
+            </a>
+          </div>
+
+          <div class="text-xs text-slate-500 flex flex-wrap items-center justify-center gap-4 pt-2">
+            <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="h-4 w-4 text-emerald-600"></i> 100% Strict NDA</span>
+            <span>&bull;</span>
+            <span>48-Hour Turnaround</span>
+            <span>&bull;</span>
+            <span>Fixed-Price Roadmaps</span>
+          </div>
         </div>
       </section>
     </main>
 
     ${getFooterHTML()}
-  `;
 
-  return `<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-${head}
-<body class="bg-background text-foreground antialiased selection:bg-emerald-500 selection:text-white">
-${bodyContent}
-</body>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>`;
+
+  return head + bodyContent;
 }
 
 function buildAll() {
