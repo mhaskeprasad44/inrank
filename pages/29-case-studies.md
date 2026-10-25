@@ -1,4 +1,4 @@
-# Case Studies — Page Content
+# Case Studies - Page Content
 
 ## SEO settings
 
@@ -6,9 +6,9 @@
 |---|---|
 | URL | `/case-studies/` |
 | SEO title (62 chars) | Digital Marketing & Website Case Studies | Inrank Technologies |
-| Meta description (136 chars) | Real SEO, Google Ads, social media and website results from Inrank Technologies clients—with baselines, actions, timelines and outcomes. |
+| Meta description (136 chars) | Real SEO, Google Ads, social media and website results from Inrank Technologies clients - with baselines, actions, timelines and outcomes. |
 | H1 | Case Studies |
-| Primary keyword | `digital marketing case studies pune` — (no Semrush India volume returned; long-tail/brand) |
+| Primary keyword | `digital marketing case studies pune` - (no Semrush India volume returned; long-tail/brand) |
 | Opportunity tier | Long-tail / unmeasured |
 | Canonical | `https://www.inranktechnologies.com/case-studies/` |
 | OG image | `/images/og/case-studies-og.jpg` (1200×630) |
@@ -21,7 +21,7 @@ Each Inrank case study documents the client's starting point, objective, the wor
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Case Studies – Inrank Technologies team in Pune](/images/case-studies/case-studies-hero.webp)
+![Case Studies - Inrank Technologies team in Pune](/images/case-studies/case-studies-hero.webp)
 
 ## How to browse
 
@@ -85,6 +85,6 @@ Book a free, no-obligation audit with Inrank Technologies. We'll show you the to
 
 | File | Alt text | Brief |
 |---|---|---|
-| `case-studies-hero.webp` 1600×900 | Case Studies – Inrank Technologies team in Pune | Real team/work photo relevant to case studies |
+| `case-studies-hero.webp` 1600×900 | Case Studies - Inrank Technologies team in Pune | Real team/work photo relevant to case studies |
 | `case-studies-process.webp` 1200×800 | Case Studies process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/case-studies-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/case-studies-og.jpg` 1200×630 | - | Social share card with H1 + logo |

@@ -1,4 +1,4 @@
-# Brand Name — Page Content
+# Brand Name - Page Content
 
 ## SEO settings
 
@@ -8,15 +8,15 @@
 | SEO title (63 chars) | Brand Naming Agency in Pune | Business & Product Names | Inrank |
 | Meta description (141 chars) | Brand naming agency in Pune: research-led business and product names with positioning, linguistic checks, domain and trademark pre-screening. |
 | H1 | Brand Naming Agency in Pune |
-| Primary keyword | `brand naming agency` — 210/mo, KD 31 |
-| Opportunity tier | Achievable (KD 21–35) |
+| Primary keyword | `brand naming agency` - 210/mo, KD 31 |
+| Opportunity tier | Achievable (KD 21-35) |
 | Canonical | `https://www.inranktechnologies.com/services/brand-naming-pune/` |
 | OG image | `/images/og/brand-naming-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `business name ideas` — (no Semrush India volume returned; long-tail/brand)
-- `company naming services` — (no Semrush India volume returned; long-tail/brand)
+- `business name ideas` - (no Semrush India volume returned; long-tail/brand)
+- `company naming services` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
@@ -26,7 +26,7 @@ Inrank creates memorable, available brand names for Pune startups and businesses
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Brand Naming Agency in Pune – Inrank Technologies team in Pune](/images/brand-naming/brand-naming-hero.webp)
+![Brand Naming Agency in Pune - Inrank Technologies team in Pune](/images/brand-naming/brand-naming-hero.webp)
 
 ## Who this service is for
 
@@ -47,11 +47,11 @@ Inrank creates memorable, available brand names for Pune startups and businesses
 
 ## Our process
 
-1. **Brief** — Audience, values, competitors.
-2. **Explore** — Generate names across territories.
-3. **Screen** — Linguistic, domain and trademark checks.
-4. **Present** — Shortlist with mock-ups.
-5. **Finalise** — Selection and next steps for registration.
+1. **Brief** - Audience, values, competitors.
+2. **Explore** - Generate names across territories.
+3. **Screen** - Linguistic, domain and trademark checks.
+4. **Present** - Shortlist with mock-ups.
+5. **Finalise** - Selection and next steps for registration.
 
 ![Brand Name process at Inrank Technologies](/images/brand-naming/brand-naming-process.webp)
 
@@ -69,10 +69,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -184,6 +184,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `brand-naming-hero.webp` 1600×900 | Brand Naming Agency in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to brand name |
+| `brand-naming-hero.webp` 1600×900 | Brand Naming Agency in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to brand name |
 | `brand-naming-process.webp` 1200×800 | Brand Name process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/brand-naming-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/brand-naming-og.jpg` 1200×630 | - | Social share card with H1 + logo |

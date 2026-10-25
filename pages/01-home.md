@@ -1,4 +1,4 @@
-# Home — Page Content
+# Home - Page Content
 
 ## SEO settings
 
@@ -8,17 +8,17 @@
 | SEO title (54 chars) | Digital Marketing Agency in Pune | Inrank Technologies |
 | Meta description (150 chars) | Performance-first digital marketing agency in Pune for SEO, Google & Meta Ads, social media and conversion-focused websites. Book a free growth audit. |
 | H1 | Digital Marketing Agency in Pune That Turns Traffic Into Enquiries |
-| Primary keyword | `digital marketing agency in pune` — 5,400/mo, KD 28 |
-| Opportunity tier | Achievable (KD 21–35) |
+| Primary keyword | `digital marketing agency in pune` - 5,400/mo, KD 28 |
+| Opportunity tier | Achievable (KD 21-35) |
 | Canonical | `https://www.inranktechnologies.com/` |
 | OG image | `/images/og/home-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `best digital marketing services in pune` — 5,400/mo, KD 43
-- `digital marketing company in pune` — 2,400/mo, KD 40
-- `digital marketing consultant in pune` — 880/mo, KD 31
-- `digital marketing in pune` — 390/mo, KD 38
+- `best digital marketing services in pune` - 5,400/mo, KD 43
+- `digital marketing company in pune` - 2,400/mo, KD 40
+- `digital marketing consultant in pune` - 880/mo, KD 31
+- `digital marketing in pune` - 390/mo, KD 38
 
 ---
 
@@ -28,7 +28,7 @@ Inrank Technologies is a Pune-based digital marketing agency that connects SEO, 
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Digital Marketing Agency in Pune That Turns Traffic Into Enquiries – Inrank Technologies team in Pune](/images/home/home-hero.webp)
+![Digital Marketing Agency in Pune That Turns Traffic Into Enquiries - Inrank Technologies team in Pune](/images/home/home-hero.webp)
 
 ## Who this agency is for
 
@@ -48,11 +48,11 @@ Inrank Technologies is a Pune-based digital marketing agency that connects SEO, 
 
 ## Our process
 
-1. **Diagnose** — Audit your website, Google Business Profile, ad accounts, tracking and top three competitors.
-2. **Prioritise** — Rank opportunities by expected lead impact, cost and time-to-result.
-3. **Build** — Fix tracking and conversion paths first, then scale traffic.
-4. **Grow** — Run SEO, ads and content in 30-day sprints with clear owners.
-5. **Report** — Share a monthly scorecard: leads, cost per lead, rankings and next actions.
+1. **Diagnose** - Audit your website, Google Business Profile, ad accounts, tracking and top three competitors.
+2. **Prioritise** - Rank opportunities by expected lead impact, cost and time-to-result.
+3. **Build** - Fix tracking and conversion paths first, then scale traffic.
+4. **Grow** - Run SEO, ads and content in 30-day sprints with clear owners.
+5. **Report** - Share a monthly scorecard: leads, cost per lead, rankings and next actions.
 
 ![Home process at Inrank Technologies](/images/home/home-process.webp)
 
@@ -72,15 +72,15 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
 ### How much does digital marketing cost in Pune?
-Retainers depend on channels and scope. Most Pune SMEs start with one or two channels—typically SEO plus Google Ads or social—then add channels once tracking proves what works. We share a written scope and fixed monthly fee before work begins.
+Retainers depend on channels and scope. Most Pune SMEs start with one or two channels - typically SEO plus Google Ads or social - then add channels once tracking proves what works. We share a written scope and fixed monthly fee before work begins.
 
 ### How long does it take to see results?
 Paid ads can generate enquiries within the first weeks once tracking and landing pages are ready. SEO usually needs three to six months for competitive Pune keywords, and longer for new domains. We do not promise guaranteed rankings.
@@ -176,7 +176,7 @@ Optional FAQPage markup (only if FAQs are visible on the page):
       "name": "How much does digital marketing cost in Pune?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Retainers depend on channels and scope. Most Pune SMEs start with one or two channels—typically SEO plus Google Ads or social—then add channels once tracking proves what works. We share a written scope and fixed monthly fee before work begins."
+        "text": "Retainers depend on channels and scope. Most Pune SMEs start with one or two channels - typically SEO plus Google Ads or social - then add channels once tracking proves what works. We share a written scope and fixed monthly fee before work begins."
       }
     },
     {
@@ -227,6 +227,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `home-hero.webp` 1600×900 | Digital Marketing Agency in Pune That Turns Traffic Into Enquiries – Inrank Technologies team in Pune | Real team/work photo relevant to home |
+| `home-hero.webp` 1600×900 | Digital Marketing Agency in Pune That Turns Traffic Into Enquiries - Inrank Technologies team in Pune | Real team/work photo relevant to home |
 | `home-process.webp` 1200×800 | Home process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/home-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/home-og.jpg` 1200×630 | - | Social share card with H1 + logo |

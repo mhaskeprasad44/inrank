@@ -1,4 +1,4 @@
-# WhatsApp Marketing — Page Content
+# WhatsApp Marketing - Page Content
 
 ## SEO settings
 
@@ -8,25 +8,25 @@
 | SEO title (59 chars) | WhatsApp Marketing Services in Pune | Business API | Inrank |
 | Meta description (151 chars) | WhatsApp marketing in Pune using the official WhatsApp Business API: opt-in broadcasts, chatbots, catalogues, click-to-WhatsApp ads and CRM automation. |
 | H1 | WhatsApp Marketing Services in Pune |
-| Primary keyword | `whatsapp marketing` — 5,400/mo, KD 39 |
-| Opportunity tier | Competitive (KD 36–50) |
+| Primary keyword | `whatsapp marketing` - 5,400/mo, KD 39 |
+| Opportunity tier | Competitive (KD 36-50) |
 | Canonical | `https://www.inranktechnologies.com/services/whatsapp-marketing-pune/` |
 | OG image | `/images/og/whatsapp-marketing-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `bulk whatsapp marketing` — 720/mo, KD 42
-- `whatsapp business api pune` — (no Semrush India volume returned; long-tail/brand)
+- `bulk whatsapp marketing` - 720/mo, KD 42
+- `whatsapp business api pune` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
 # WhatsApp Marketing Services in Pune
 
-Inrank sets up consent-based WhatsApp marketing for Pune businesses on the official WhatsApp Business Platform—broadcasts, chatbots, catalogues and click-to-WhatsApp ads—so you reach customers where they reply fastest without risking number bans.
+Inrank sets up consent-based WhatsApp marketing for Pune businesses on the official WhatsApp Business Platform - broadcasts, chatbots, catalogues and click-to-WhatsApp ads - so you reach customers where they reply fastest without risking number bans.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![WhatsApp Marketing Services in Pune – Inrank Technologies team in Pune](/images/whatsapp-marketing/whatsapp-marketing-hero.webp)
+![WhatsApp Marketing Services in Pune - Inrank Technologies team in Pune](/images/whatsapp-marketing/whatsapp-marketing-hero.webp)
 
 ## Who this service is for
 
@@ -48,11 +48,11 @@ Inrank sets up consent-based WhatsApp marketing for Pune businesses on the offic
 
 ## Our process
 
-1. **Setup** — Verify business and connect API number.
-2. **Opt-in** — Build compliant opt-in from website, ads and store.
-3. **Automate** — Create welcome, FAQ and qualification flows.
-4. **Broadcast** — Send segmented, approved templates.
-5. **Measure** — Track replies, conversions and opt-outs.
+1. **Setup** - Verify business and connect API number.
+2. **Opt-in** - Build compliant opt-in from website, ads and store.
+3. **Automate** - Create welcome, FAQ and qualification flows.
+4. **Broadcast** - Send segmented, approved templates.
+5. **Measure** - Track replies, conversions and opt-outs.
 
 ![WhatsApp Marketing process at Inrank Technologies](/images/whatsapp-marketing/whatsapp-marketing-process.webp)
 
@@ -71,10 +71,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -186,6 +186,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `whatsapp-marketing-hero.webp` 1600×900 | WhatsApp Marketing Services in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to whatsapp marketing |
+| `whatsapp-marketing-hero.webp` 1600×900 | WhatsApp Marketing Services in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to whatsapp marketing |
 | `whatsapp-marketing-process.webp` 1200×800 | WhatsApp Marketing process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/whatsapp-marketing-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/whatsapp-marketing-og.jpg` 1200×630 | - | Social share card with H1 + logo |

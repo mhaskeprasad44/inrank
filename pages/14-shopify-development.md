@@ -1,4 +1,4 @@
-# Shopify Development — Page Content
+# Shopify Development - Page Content
 
 ## SEO settings
 
@@ -8,25 +8,25 @@
 | SEO title (66 chars) | Shopify Development Company in Pune | Store Design & Apps | Inrank |
 | Meta description (143 chars) | Shopify development in Pune: custom theme design, store setup, migrations, apps, speed optimisation and conversion improvements for D2C brands. |
 | H1 | Shopify Development Company in Pune |
-| Primary keyword | `shopify development company in pune` — (no Semrush India volume returned; long-tail/brand) |
+| Primary keyword | `shopify development company in pune` - (no Semrush India volume returned; long-tail/brand) |
 | Opportunity tier | Long-tail / unmeasured |
 | Canonical | `https://www.inranktechnologies.com/services/shopify-development-pune/` |
 | OG image | `/images/og/shopify-development-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `shopify developer pune` — (no Semrush India volume returned; long-tail/brand)
-- `shopify store design` — (no Semrush India volume returned; long-tail/brand)
+- `shopify developer pune` - (no Semrush India volume returned; long-tail/brand)
+- `shopify store design` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
 # Shopify Development Company in Pune
 
-Inrank builds and optimises Shopify stores for Pune and Indian D2C brands—custom theme design, store setup, migrations, app integrations and speed optimisation—focused on conversion rate and average order value.
+Inrank builds and optimises Shopify stores for Pune and Indian D2C brands - custom theme design, store setup, migrations, app integrations and speed optimisation - focused on conversion rate and average order value.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Shopify Development Company in Pune – Inrank Technologies team in Pune](/images/shopify-development/shopify-development-hero.webp)
+![Shopify Development Company in Pune - Inrank Technologies team in Pune](/images/shopify-development/shopify-development-hero.webp)
 
 ## Who this service is for
 
@@ -48,11 +48,11 @@ Inrank builds and optimises Shopify stores for Pune and Indian D2C brands—cust
 
 ## Our process
 
-1. **Audit** — Store, theme and app review.
-2. **Design** — Brand-led theme sections.
-3. **Build** — Setup, apps, integrations.
-4. **Optimise** — Speed, SEO, conversion.
-5. **Support** — Ongoing changes and campaigns.
+1. **Audit** - Store, theme and app review.
+2. **Design** - Brand-led theme sections.
+3. **Build** - Setup, apps, integrations.
+4. **Optimise** - Speed, SEO, conversion.
+5. **Support** - Ongoing changes and campaigns.
 
 ![Shopify Development process at Inrank Technologies](/images/shopify-development/shopify-development-process.webp)
 
@@ -71,10 +71,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -186,6 +186,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `shopify-development-hero.webp` 1600×900 | Shopify Development Company in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to shopify development |
+| `shopify-development-hero.webp` 1600×900 | Shopify Development Company in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to shopify development |
 | `shopify-development-process.webp` 1200×800 | Shopify Development process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/shopify-development-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/shopify-development-og.jpg` 1200×630 | - | Social share card with H1 + logo |

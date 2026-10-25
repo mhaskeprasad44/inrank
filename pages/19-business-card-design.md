@@ -1,4 +1,4 @@
-# Business Card Design — Page Content
+# Business Card Design - Page Content
 
 ## SEO settings
 
@@ -8,25 +8,25 @@
 | SEO title (53 chars) | Business Card & Visiting Card Design in Pune | Inrank |
 | Meta description (125 chars) | Business card and visiting card design in Pune: brand-aligned, print-ready designs with QR codes and premium finish guidance. |
 | H1 | Business Card and Visiting Card Design in Pune |
-| Primary keyword | `business card design` — 14,800/mo, KD 64 |
+| Primary keyword | `business card design` - 14,800/mo, KD 64 |
 | Opportunity tier | Hard (KD >50) |
 | Canonical | `https://www.inranktechnologies.com/services/business-card-design-pune/` |
 | OG image | `/images/og/business-card-design-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `visiting card design in pune` — (no Semrush India volume returned; long-tail/brand)
-- `digital business card` — (no Semrush India volume returned; long-tail/brand)
+- `visiting card design in pune` - (no Semrush India volume returned; long-tail/brand)
+- `digital business card` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
 # Business Card and Visiting Card Design in Pune
 
-Inrank designs business and visiting cards in Pune that match your brand identity and are ready for print—with QR codes linking to your website, WhatsApp or Google Business Profile, and guidance on paper and premium finishes.
+Inrank designs business and visiting cards in Pune that match your brand identity and are ready for print - with QR codes linking to your website, WhatsApp or Google Business Profile, and guidance on paper and premium finishes.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Business Card and Visiting Card Design in Pune – Inrank Technologies team in Pune](/images/business-card-design/business-card-design-hero.webp)
+![Business Card and Visiting Card Design in Pune - Inrank Technologies team in Pune](/images/business-card-design/business-card-design-hero.webp)
 
 ## Who this service is for
 
@@ -47,10 +47,10 @@ Inrank designs business and visiting cards in Pune that match your brand identit
 
 ## Our process
 
-1. **Brief** — Brand, contact details, use.
-2. **Design** — Two concepts.
-3. **Refine** — Revisions.
-4. **Deliver** — Print files and templates.
+1. **Brief** - Brand, contact details, use.
+2. **Design** - Two concepts.
+3. **Refine** - Revisions.
+4. **Deliver** - Print files and templates.
 
 ![Business Card Design process at Inrank Technologies](/images/business-card-design/business-card-design-process.webp)
 
@@ -68,10 +68,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -79,7 +79,7 @@ We share a written scope and fixed fee before any work begins.
 We provide print-ready files and can coordinate with trusted Pune printers.
 
 ### Can you add a QR code?
-Yes—to your website, vCard, WhatsApp or Google review link.
+Yes - to your website, vCard, WhatsApp or Google review link.
 
 ### What size is standard in India?
 Common sizes are 3.5 × 2 inches and 85 × 55 mm.
@@ -164,7 +164,7 @@ Optional FAQPage markup (only if FAQs are visible on the page):
       "name": "Can you add a QR code?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes—to your website, vCard, WhatsApp or Google review link."
+        "text": "Yes - to your website, vCard, WhatsApp or Google review link."
       }
     },
     {
@@ -183,6 +183,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `business-card-design-hero.webp` 1600×900 | Business Card and Visiting Card Design in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to business card design |
+| `business-card-design-hero.webp` 1600×900 | Business Card and Visiting Card Design in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to business card design |
 | `business-card-design-process.webp` 1200×800 | Business Card Design process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/business-card-design-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/business-card-design-og.jpg` 1200×630 | - | Social share card with H1 + logo |

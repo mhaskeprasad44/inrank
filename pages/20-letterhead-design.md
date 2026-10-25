@@ -1,4 +1,4 @@
-# Letterhead Design — Page Content
+# Letterhead Design - Page Content
 
 ## SEO settings
 
@@ -8,25 +8,25 @@
 | SEO title (68 chars) | Letterhead Design Services in Pune | Editable & Print-Ready | Inrank |
 | Meta description (131 chars) | Corporate letterhead design in Pune: brand-aligned, print-ready layouts with editable Word and Google Docs templates for daily use. |
 | H1 | Letterhead Design Services in Pune |
-| Primary keyword | `letterhead design` — 14,800/mo, KD 37 |
-| Opportunity tier | Competitive (KD 36–50) |
+| Primary keyword | `letterhead design` - 14,800/mo, KD 37 |
+| Opportunity tier | Competitive (KD 36-50) |
 | Canonical | `https://www.inranktechnologies.com/services/letterhead-design-pune/` |
 | OG image | `/images/og/letterhead-design-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `corporate letterhead design pune` — (no Semrush India volume returned; long-tail/brand)
-- `letterhead template` — (no Semrush India volume returned; long-tail/brand)
+- `corporate letterhead design pune` - (no Semrush India volume returned; long-tail/brand)
+- `letterhead template` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
 # Letterhead Design Services in Pune
 
-Inrank designs professional letterheads for Pune businesses that look consistent in print and on screen—delivered as print-ready files plus editable Word and Google Docs templates your team can use every day.
+Inrank designs professional letterheads for Pune businesses that look consistent in print and on screen - delivered as print-ready files plus editable Word and Google Docs templates your team can use every day.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Letterhead Design Services in Pune – Inrank Technologies team in Pune](/images/letterhead-design/letterhead-design-hero.webp)
+![Letterhead Design Services in Pune - Inrank Technologies team in Pune](/images/letterhead-design/letterhead-design-hero.webp)
 
 ## Who this service is for
 
@@ -46,10 +46,10 @@ Inrank designs professional letterheads for Pune businesses that look consistent
 
 ## Our process
 
-1. **Brief** — Brand and required details.
-2. **Design** — Concepts.
-3. **Refine** — Revisions.
-4. **Template** — Editable files tested for printing.
+1. **Brief** - Brand and required details.
+2. **Design** - Concepts.
+3. **Refine** - Revisions.
+4. **Template** - Editable files tested for printing.
 
 ![Letterhead Design process at Inrank Technologies](/images/letterhead-design/letterhead-design-process.webp)
 
@@ -66,10 +66,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -170,6 +170,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `letterhead-design-hero.webp` 1600×900 | Letterhead Design Services in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to letterhead design |
+| `letterhead-design-hero.webp` 1600×900 | Letterhead Design Services in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to letterhead design |
 | `letterhead-design-process.webp` 1200×800 | Letterhead Design process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/letterhead-design-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/letterhead-design-og.jpg` 1200×630 | - | Social share card with H1 + logo |

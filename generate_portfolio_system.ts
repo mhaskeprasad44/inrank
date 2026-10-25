@@ -169,15 +169,13 @@ function getHeaderHTML(activeNav: string = "our-work") {
             </div>
 
             <!-- Pricing -->
-            <a href="/pricing.html" class="flex items-center gap-1.5 text-sm font-semibold ${activeNav === 'pricing' ? 'text-emerald-600 font-bold' : 'text-muted-foreground hover:text-foreground hover:text-emerald-600'} transition-colors">
-              <span>Pricing</span>
-              <span class="px-1.5 py-0.5 rounded text-[10px] font-black bg-emerald-100 text-emerald-800">from ₹11k</span>
+            <a href="/pricing.html" class="text-sm font-semibold ${activeNav === 'pricing' ? 'text-emerald-600 font-bold' : 'text-muted-foreground hover:text-foreground hover:text-emerald-600'} transition-colors">
+              Pricing
             </a>
 
-            <!-- Our Work (Active Highlight) -->
-            <a href="/our-work.html" class="flex items-center gap-1.5 text-sm font-semibold ${activeNav === 'our-work' ? 'text-emerald-600 font-bold' : 'text-muted-foreground hover:text-foreground hover:text-emerald-600'} transition-colors">
-              <span>Our Work</span>
-              <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-primary/10 text-primary border border-primary/20">10 Works</span>
+            <!-- Our Work -->
+            <a href="/our-work.html" class="text-sm font-semibold ${activeNav === 'our-work' ? 'text-emerald-600 font-bold' : 'text-muted-foreground hover:text-foreground hover:text-emerald-600'} transition-colors">
+              Our Work
             </a>
 
             <!-- Results -->
@@ -220,8 +218,8 @@ function getHeaderHTML(activeNav: string = "our-work") {
       <div id="mobile-menu-drawer" class="hidden md:hidden border-b border-border bg-background/95 backdrop-blur-xl px-4 pt-3 pb-6 space-y-4">
         <div class="space-y-1">
           <a href="/" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Home</a>
-          <a href="/our-work.html" class="block px-3 py-2 rounded-lg text-sm font-bold bg-primary/10 text-primary">Our Work (10 Client Deployments)</a>
-          <a href="/pricing.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Pricing Packages (from ₹11,999)</a>
+          <a href="/our-work.html" class="block px-3 py-2 rounded-lg text-sm font-semibold ${activeNav === 'our-work' ? 'bg-primary/10 text-primary' : 'hover:bg-secondary'}">Our Work</a>
+          <a href="/pricing.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Pricing</a>
           <a href="/website-design-company-in-pune.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Web Designing in Pune</a>
           <a href="/digital-marketing-agency-in-pune.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Digital Marketing in Pune</a>
           <a href="/#/services" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">All 27 Services</a>
@@ -397,36 +395,34 @@ function generateMasterWorkHTML(): string {
       <article class="portfolio-item group relative flex flex-col justify-between rounded-2xl border border-border bg-card/90 backdrop-blur-sm shadow-sm hover:shadow-2xl hover:border-primary/40 transition-all duration-300 overflow-hidden ${categoryFilterClass} ${seoFilterClass} ${techFilterClass}" data-category="${project.category}" data-title="${project.title.toLowerCase()}" data-domain="${project.domain.toLowerCase()}" data-industry="${project.industry.toLowerCase()}">
         
         <div>
-          <!-- Browser Frame Mockup with Real Screenshot -->
-          <div class="relative bg-slate-900 border-b border-border/70 overflow-hidden group/thumb">
-            <!-- Browser Chrome Header -->
-            <div class="flex items-center justify-between px-3.5 py-2 bg-slate-800/90 text-[11px] font-mono text-slate-400">
-              <div class="flex items-center gap-1.5">
-                <span class="h-2.5 w-2.5 rounded-full bg-rose-400"></span>
-                <span class="h-2.5 w-2.5 rounded-full bg-amber-400"></span>
-                <span class="h-2.5 w-2.5 rounded-full bg-emerald-400"></span>
-              </div>
-              <div class="flex items-center gap-1 px-3 py-0.5 rounded-md bg-slate-900 border border-slate-700 text-[10px] text-slate-300 truncate max-w-[220px]">
-                <i data-lucide="lock" class="h-2.5 w-2.5 text-emerald-400 shrink-0"></i>
-                <span class="truncate">${project.liveUrl}</span>
-              </div>
-              <span class="inline-flex items-center gap-1 text-[9px] uppercase px-1.5 py-0.5 rounded font-bold ${isCollab ? 'bg-amber-400/20 text-amber-300' : 'bg-emerald-400/20 text-emerald-300'}">
-                ${isCollab ? 'Collab' : 'Direct'}
+          <!-- Hero Section Screenshot Showcase (Edge-to-Edge Agency Design) -->
+          <div class="relative bg-slate-950 overflow-hidden group/thumb aspect-[16/10] sm:aspect-[16/9] border-b border-border/70">
+            <!-- Floating Clean Domain & Category Tags -->
+            <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/85 backdrop-blur-md text-[11px] font-medium text-slate-100 border border-white/15 shadow-md">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>${project.domain}</span>
+              </span>
+            </div>
+
+            <div class="absolute top-3 right-3 z-20">
+              <span class="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider backdrop-blur-md border shadow-md ${isCollab ? 'bg-amber-500/25 text-amber-200 border-amber-400/30' : 'bg-emerald-500/25 text-emerald-200 border-emerald-400/30'}">
+                ${isCollab ? 'Outsourcing / Collab' : 'Direct Project'}
               </span>
             </div>
 
             <!-- Authentic Hero Section Screenshot -->
-            <a href="/our-work/${project.id}.html" class="block relative overflow-hidden bg-slate-950 aspect-[16/10] sm:aspect-[16/9]">
+            <a href="/our-work/${project.id}.html" class="block w-full h-full relative overflow-hidden" title="Explore ${project.clientName} case study">
               <img 
                 src="${project.screenshot}" 
                 alt="${project.clientName} website hero section screenshot" 
                 class="w-full h-full object-cover object-top group-hover/thumb:scale-105 transition-transform duration-500 ease-out" 
                 loading="lazy" 
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/thumb:opacity-100 transition-opacity flex items-end p-4">
-                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 text-white font-semibold text-xs shadow-lg">
-                  <span>View Case Study</span>
-                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-0 group-hover/thumb:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 text-white font-bold text-xs shadow-xl transform translate-y-2 group-hover/thumb:translate-y-0 transition-transform duration-300">
+                  <span>Explore Case Study</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </span>
               </div>
             </a>
@@ -524,7 +520,7 @@ function generateMasterWorkHTML(): string {
         </p>
 
         <p class="text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Explore 10 production deployments engineered for revenue, sub-second speed, and category authority—from high-velocity React 18 single page applications and B2B industrial catalogs to international agro-export SEO and AI search (GEO) domination.
+          Explore 10 production deployments engineered for revenue, sub-second speed, and category authority - from high-velocity React 18 single page applications and B2B industrial catalogs to international agro-export SEO and AI search (GEO) domination.
         </p>
 
         <!-- Telemetry Metrics Strip -->
@@ -689,7 +685,7 @@ function generateMasterWorkHTML(): string {
           </h2>
 
           <p class="text-xs sm:text-sm text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            We will review your existing website, competitor search visibility, and mobile conversion bottlenecks—100% free with zero sales talk.
+            We will review your existing website, competitor search visibility, and mobile conversion bottlenecks - 100% free with zero sales talk.
           </p>
 
           <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -965,23 +961,19 @@ function generateIndividualWorkHTML(project: PortfolioProject, prevProject: Port
         <!-- FULL-WIDTH HERO SECTION SCREENSHOT MOCKUP (Exact User Request) -->
         <section class="rounded-2xl border border-slate-300 dark:border-border bg-slate-900 shadow-2xl overflow-hidden">
           
-          <!-- Browser Frame Window Bar -->
-          <div class="flex items-center justify-between px-4 py-3 bg-slate-800 text-xs font-mono text-slate-300 border-b border-slate-700">
-            <div class="flex items-center gap-2">
-              <span class="h-3 w-3 rounded-full bg-rose-400 inline-block"></span>
-              <span class="h-3 w-3 rounded-full bg-amber-400 inline-block"></span>
-              <span class="h-3 w-3 rounded-full bg-emerald-400 inline-block"></span>
+          <!-- Clean Production Status Bar -->
+          <div class="flex items-center justify-between px-5 py-3.5 bg-slate-900 border-b border-white/10 text-xs text-slate-300">
+            <div class="flex items-center gap-2.5 font-medium text-slate-200">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span class="font-semibold text-slate-100">Live Production Deployment</span>
+              <span class="text-slate-500 hidden sm:inline">·</span>
+              <span class="text-slate-400 font-mono text-[11px] hidden sm:inline">${project.domain}</span>
             </div>
             
-            <div class="flex items-center gap-1.5 px-4 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200 shadow-inner max-w-sm sm:max-w-md truncate">
-              <i data-lucide="lock" class="h-3 w-3 text-emerald-400 shrink-0"></i>
-              <span class="font-mono text-[11px] truncate">${project.liveUrl}</span>
-            </div>
-
-            <div class="flex items-center gap-2 text-[11px] text-slate-400 font-sans">
-              <span class="hidden sm:inline">Production Verified</span>
-              <i data-lucide="shield-check" class="h-3.5 w-3.5 text-emerald-400"></i>
-            </div>
+            <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition-colors shadow-sm" title="Visit live website">
+              <span>Visit Live Website</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
           </div>
 
           <!-- Hero Section Screenshot Image -->

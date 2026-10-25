@@ -23,7 +23,7 @@
 | **Office Location & Address** | **Office No. 11, Shree Bhagwati Suvarna Complex, Pancard Club Rd, Baner Gaon, Baner, Pune, Maharashtra 411045, India** |
 | **Landmark** | Near Pancard Club / Baner Gaon, Off Baner Main Road |
 | **Primary Service Coverage** | Pune (Baner, Balewadi, Hinjewadi, Wakad, Aundh, Pashan, FC Road, Shivaji Nagar, Kothrud, Viman Nagar, Hadapsar, Magarpatta, Camp, Pimpri-Chinchwad), Mumbai, Maharashtra, PAN-India, and International Clients (GCC / US / UK) |
-| **Working Hours** | **Monday to Saturday:** 9:00 AM – 8:00 PM  <br>**Sunday:** Emergency Web Support / By Prior Appointment |
+| **Working Hours** | **Monday to Saturday:** 9:00 AM - 8:00 PM  <br>**Sunday:** Emergency Web Support / By Prior Appointment |
 | **Payment Modes Accepted** | UPI (Google Pay, PhonePe, Paytm, BHIM), Net Banking (NEFT / RTGS / IMPS), Credit Cards, Debit Cards, Cheque, Bank Wire Transfer |
 
 ---
@@ -38,7 +38,7 @@
 >
 > Unlike generic agencies that deliver slow, bloated templates, Inrank develops modern, lightweight React 18, Vite, and semantic HTML5 web architectures boasting 98+ Google PageSpeed scores and zero layout shift. With over 100+ completed deployments across manufacturing, healthcare, e-commerce, real estate, architecture, and professional education, we help local Pune businesses and global brands achieve category dominance.
 >
-> In addition to cutting-edge web design, Inrank is a pioneer in **Generative Engine Optimization (GEO)**—ensuring businesses rank not only on Google Top 3-Pack, but also get cited in next-generation AI engines including ChatGPT Search, Perplexity AI, and Google AI Overviews.
+> In addition to cutting-edge web design, Inrank is a pioneer in **Generative Engine Optimization (GEO)** - ensuring businesses rank not only on Google Top 3-Pack, but also get cited in next-generation AI engines including ChatGPT Search, Perplexity AI, and Google AI Overviews.
 
 ---
 
@@ -78,11 +78,11 @@ Please map Inrank Technologies under the following **Justdial Primary & Secondar
 
 | Package Name | Price | Delivery Time | Included Deliverables |
 |---|---|---|---|
-| **Starter Business Web Package** | **₹11,999** *(Fixed)* | **5 – 7 Days** | • 5 Custom Pages (Home, About, Services, Gallery, Contact)<br>• Mobile Responsive Design<br>• Free 1-Year Cloud Hosting & SSL Certificate<br>• Click-to-Call & WhatsApp Direct Lead Button<br>• Google Maps Integration & Basic SEO Setup |
-| **Professional Growth Portal** | **₹24,999** *(Fixed)* | **10 – 14 Days** | • Up to 12 Pages with Custom UI/UX<br>• Ultra-Fast React 18 / Vite Architecture (0.8s load time)<br>• Interactive Lead Wizard or Quotation Form<br>• Advanced On-Page Technical SEO & JSON-LD Schema<br>• 1 Year Free Maintenance & Security Updates |
-| **E-Commerce & Online Storefront** | **₹34,999 – ₹49,999** | **2 – 3 Weeks** | • Complete Shopify or Custom React E-Commerce Store<br>• Unlimited Product Upload Architecture<br>• Payment Gateway Integration (Razorpay, Stripe, Cashfree)<br>• WhatsApp Cart Recovery & Instant Order Notification<br>• Courier API Integration & Customer Account Portal |
+| **Starter Business Web Package** | **₹11,999** *(Fixed)* | **5 - 7 Days** | • 5 Custom Pages (Home, About, Services, Gallery, Contact)<br>• Mobile Responsive Design<br>• Free 1-Year Cloud Hosting & SSL Certificate<br>• Click-to-Call & WhatsApp Direct Lead Button<br>• Google Maps Integration & Basic SEO Setup |
+| **Professional Growth Portal** | **₹24,999** *(Fixed)* | **10 - 14 Days** | • Up to 12 Pages with Custom UI/UX<br>• Ultra-Fast React 18 / Vite Architecture (0.8s load time)<br>• Interactive Lead Wizard or Quotation Form<br>• Advanced On-Page Technical SEO & JSON-LD Schema<br>• 1 Year Free Maintenance & Security Updates |
+| **E-Commerce & Online Storefront** | **₹34,999 - ₹49,999** | **2 - 3 Weeks** | • Complete Shopify or Custom React E-Commerce Store<br>• Unlimited Product Upload Architecture<br>• Payment Gateway Integration (Razorpay, Stripe, Cashfree)<br>• WhatsApp Cart Recovery & Instant Order Notification<br>• Courier API Integration & Customer Account Portal |
 | **Local SEO & GMB Domination** | **₹8,999 / month** | **Ongoing Retainer** | • Google Business Profile Setup & 100% Verification<br>• Top 3-Pack Local Map Optimization in Pune<br>• 50+ High-Authority Local Pune Citations<br>• Review Generation Strategy & Negative Review Mitigation<br>• Monthly Keyword Ranking & Traffic Growth Report |
-| **360° Full-Service Digital Marketing** | **₹18,000 – ₹35,000 / mo** | **Monthly Retainer** | • Complete SEO + Google Ads + Meta (Instagram/FB) Ads<br>• 12 Monthly High-Quality Social Media Posts & Reels<br>• Ad Spend Management & Lead Verification<br>• Dedicated Account Manager with Weekly Analytics Desk |
+| **360° Full-Service Digital Marketing** | **₹18,000 - ₹35,000 / mo** | **Monthly Retainer** | • Complete SEO + Google Ads + Meta (Instagram/FB) Ads<br>• 12 Monthly High-Quality Social Media Posts & Reels<br>• Ad Spend Management & Lead Verification<br>• Dedicated Account Manager with Weekly Analytics Desk |
 
 ---
 
@@ -114,7 +114,7 @@ The Justdial team can inspect or showcase these 10 live client deployments engin
 8. **Shetkari Foodstuff Trading LLC (`shetkarifoodstuff.com`)** *(Collaboration)*  
    *Sector:* International Agro-Commodity Export (India & Dubai)  
    *Deliverable:* Multi-market SEO & Generative Engine Optimization (GEO), APEDA/FSSAI entity schema, #1 rankings across UAE/GCC.
-9. **Dr. Shyam Thakkar — ARTICUL8 Clinic (`orthopedicanklefootspecialist.com`)** *(Collaboration)*  
+9. **Dr. Shyam Thakkar - ARTICUL8 Clinic (`orthopedicanklefootspecialist.com`)** *(Collaboration)*  
    *Sector:* Specialized Orthopedic Foot & Ankle Surgery  
    *Deliverable:* Clinical self-triage Symptom Helper, Hintermann H3 TAR surgeon authority verification, WhatsApp appointment booking.
 10. **Dravya Financial Advisory (`dravyafinancial.com`)** *(Collaboration)*  

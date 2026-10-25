@@ -1,4 +1,4 @@
-# Email Marketing — Page Content
+# Email Marketing - Page Content
 
 ## SEO settings
 
@@ -8,15 +8,15 @@
 | SEO title (68 chars) | Email Marketing Services in Pune | Automation & Newsletters | Inrank |
 | Meta description (132 chars) | Email marketing services in Pune: newsletters, automation flows, segmentation and deliverability setup for B2B and ecommerce brands. |
 | H1 | Email Marketing Services in Pune |
-| Primary keyword | `email marketing services in pune` — 210/mo, KD 10 |
+| Primary keyword | `email marketing services in pune` - 210/mo, KD 10 |
 | Opportunity tier | Quick-win (KD ≤20) |
 | Canonical | `https://www.inranktechnologies.com/services/email-marketing-pune/` |
 | OG image | `/images/og/email-marketing-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `email marketing agency in pune` — 20/mo
-- `email automation` — (no Semrush India volume returned; long-tail/brand)
+- `email marketing agency in pune` - 20/mo
+- `email automation` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
@@ -26,7 +26,7 @@ Inrank's email marketing services help Pune businesses nurture leads and drive r
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Email Marketing Services in Pune – Inrank Technologies team in Pune](/images/email-marketing/email-marketing-hero.webp)
+![Email Marketing Services in Pune - Inrank Technologies team in Pune](/images/email-marketing/email-marketing-hero.webp)
 
 ## Who this service is for
 
@@ -47,11 +47,11 @@ Inrank's email marketing services help Pune businesses nurture leads and drive r
 
 ## Our process
 
-1. **Audit** — List, platform, deliverability.
-2. **Authenticate** — Domain records.
-3. **Automate** — Core flows.
-4. **Campaign** — Regular newsletters.
-5. **Optimise** — Opens, clicks, revenue.
+1. **Audit** - List, platform, deliverability.
+2. **Authenticate** - Domain records.
+3. **Automate** - Core flows.
+4. **Campaign** - Regular newsletters.
+5. **Optimise** - Opens, clicks, revenue.
 
 ![Email Marketing process at Inrank Technologies](/images/email-marketing/email-marketing-process.webp)
 
@@ -70,10 +70,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -174,6 +174,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `email-marketing-hero.webp` 1600×900 | Email Marketing Services in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to email marketing |
+| `email-marketing-hero.webp` 1600×900 | Email Marketing Services in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to email marketing |
 | `email-marketing-process.webp` 1200×800 | Email Marketing process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/email-marketing-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/email-marketing-og.jpg` 1200×630 | - | Social share card with H1 + logo |

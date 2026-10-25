@@ -1,4 +1,4 @@
-# LinkedIn Management — Page Content
+# LinkedIn Management - Page Content
 
 ## SEO settings
 
@@ -8,15 +8,15 @@
 | SEO title (61 chars) | LinkedIn Management Services in Pune | Founder & B2B | Inrank |
 | Meta description (140 chars) | LinkedIn profile and page management in Pune for founders and B2B teams: positioning, ghostwritten posts, engagement and qualified outreach. |
 | H1 | LinkedIn Management Services for Founders and B2B Brands |
-| Primary keyword | `linkedin management services` — 70/mo |
+| Primary keyword | `linkedin management services` - 70/mo |
 | Opportunity tier | Long-tail / unmeasured |
 | Canonical | `https://www.inranktechnologies.com/services/linkedin-management-pune/` |
 | OG image | `/images/og/linkedin-management-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `linkedin profile management` — (no Semrush India volume returned; long-tail/brand)
-- `linkedin marketing agency pune` — (no Semrush India volume returned; long-tail/brand)
+- `linkedin profile management` - (no Semrush India volume returned; long-tail/brand)
+- `linkedin marketing agency pune` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
@@ -26,7 +26,7 @@ Inrank's LinkedIn management helps Pune founders, consultants and B2B companies 
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![LinkedIn Management Services for Founders and B2B Brands – Inrank Technologies team in Pune](/images/linkedin-management/linkedin-management-hero.webp)
+![LinkedIn Management Services for Founders and B2B Brands - Inrank Technologies team in Pune](/images/linkedin-management/linkedin-management-hero.webp)
 
 ## Who this service is for
 
@@ -39,7 +39,7 @@ Inrank's LinkedIn management helps Pune founders, consultants and B2B companies 
 
 - Profile and company page optimisation
 - Positioning and content pillars
-- 8–12 ghostwritten posts per month
+- 8-12 ghostwritten posts per month
 - Carousel and document designs
 - Daily engagement on target accounts
 - Connection and outreach strategy
@@ -47,11 +47,11 @@ Inrank's LinkedIn management helps Pune founders, consultants and B2B companies 
 
 ## Our process
 
-1. **Interview** — Capture your expertise, stories and opinions.
-2. **Position** — Define audience, topics and tone.
-3. **Publish** — Write and schedule posts for approval.
-4. **Engage** — Comment on target prospects and peers.
-5. **Convert** — Turn engagement into calls with soft, relevant outreach.
+1. **Interview** - Capture your expertise, stories and opinions.
+2. **Position** - Define audience, topics and tone.
+3. **Publish** - Write and schedule posts for approval.
+4. **Engage** - Comment on target prospects and peers.
+5. **Convert** - Turn engagement into calls with soft, relevant outreach.
 
 ![LinkedIn Management process at Inrank Technologies](/images/linkedin-management/linkedin-management-process.webp)
 
@@ -70,10 +70,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -185,6 +185,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `linkedin-management-hero.webp` 1600×900 | LinkedIn Management Services for Founders and B2B Brands – Inrank Technologies team in Pune | Real team/work photo relevant to linkedin management |
+| `linkedin-management-hero.webp` 1600×900 | LinkedIn Management Services for Founders and B2B Brands - Inrank Technologies team in Pune | Real team/work photo relevant to linkedin management |
 | `linkedin-management-process.webp` 1200×800 | LinkedIn Management process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/linkedin-management-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/linkedin-management-og.jpg` 1200×630 | - | Social share card with H1 + logo |

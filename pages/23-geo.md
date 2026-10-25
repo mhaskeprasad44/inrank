@@ -1,4 +1,4 @@
-# GEO SEO Agency — Page Content
+# GEO SEO Agency - Page Content
 
 ## SEO settings
 
@@ -8,25 +8,25 @@
 | SEO title (60 chars) | GEO Agency in Pune | Generative Engine Optimization | Inrank |
 | Meta description (154 chars) | Generative Engine Optimization (GEO) in Pune: earn mentions and citations in AI answers with citation-ready content, original data and authority building. |
 | H1 | Generative Engine Optimization (GEO) Agency in Pune |
-| Primary keyword | `generative engine optimization` — 2,400/mo, KD 70 |
+| Primary keyword | `generative engine optimization` - 2,400/mo, KD 70 |
 | Opportunity tier | Hard (KD >50) |
 | Canonical | `https://www.inranktechnologies.com/services/generative-engine-optimization-pune/` |
 | OG image | `/images/og/geo-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `geo seo agency` — (no Semrush India volume returned; long-tail/brand)
-- `geo agency` — (no Semrush India volume returned; long-tail/brand)
+- `geo seo agency` - (no Semrush India volume returned; long-tail/brand)
+- `geo agency` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
 # Generative Engine Optimization (GEO) Agency in Pune
 
-Generative Engine Optimization (GEO) helps your brand get mentioned and cited inside AI-generated answers. Inrank's GEO service focuses on citation-ready content, original data, third-party mentions and consistent entity information—the signals generative engines rely on when choosing sources.
+Generative Engine Optimization (GEO) helps your brand get mentioned and cited inside AI-generated answers. Inrank's GEO service focuses on citation-ready content, original data, third-party mentions and consistent entity information - the signals generative engines rely on when choosing sources.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Generative Engine Optimization (GEO) Agency in Pune – Inrank Technologies team in Pune](/images/geo/geo-hero.webp)
+![Generative Engine Optimization (GEO) Agency in Pune - Inrank Technologies team in Pune](/images/geo/geo-hero.webp)
 
 ## Who this service is for
 
@@ -46,11 +46,11 @@ Generative Engine Optimization (GEO) helps your brand get mentioned and cited in
 
 ## Our process
 
-1. **Map prompts** — Find questions buyers ask AI.
-2. **Gap** — See which sources AI cites today.
-3. **Create** — Publish citable, original assets.
-4. **Distribute** — Earn mentions on trusted sites.
-5. **Measure** — Track mentions, citations and referral traffic.
+1. **Map prompts** - Find questions buyers ask AI.
+2. **Gap** - See which sources AI cites today.
+3. **Create** - Publish citable, original assets.
+4. **Distribute** - Earn mentions on trusted sites.
+5. **Measure** - Track mentions, citations and referral traffic.
 
 ![GEO SEO Agency process at Inrank Technologies](/images/geo/geo-process.webp)
 
@@ -68,10 +68,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -183,6 +183,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `geo-hero.webp` 1600×900 | Generative Engine Optimization (GEO) Agency in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to geo seo agency |
+| `geo-hero.webp` 1600×900 | Generative Engine Optimization (GEO) Agency in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to geo seo agency |
 | `geo-process.webp` 1200×800 | GEO SEO Agency process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/geo-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/geo-og.jpg` 1200×630 | - | Social share card with H1 + logo |

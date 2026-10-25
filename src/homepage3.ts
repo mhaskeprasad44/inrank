@@ -171,7 +171,7 @@ export function renderHomepage3View(): void {
       </section>
 
       <!-- =========================================================================
-           SECTION 2: ABOUT US — "THE DEADLINE WAS YESTERDAY!!!" (TING QUIRK)
+           SECTION 2: ABOUT US - "THE DEADLINE WAS YESTERDAY!!!" (TING QUIRK)
            ========================================================================= -->
       <section class="py-16 sm:py-24 px-5 sm:px-8 border-b border-stone-200 bg-[#fbfbfa]">
         <div class="max-w-7xl mx-auto">
@@ -248,7 +248,7 @@ export function renderHomepage3View(): void {
                   </div>
                   <div class="p-3 bg-stone-50 border border-stone-200 rounded">
                     <div class="font-bold text-sm text-stone-900">Sub-Second Code</div>
-                    <div class="text-[11px] text-stone-500 mt-0.5">Vite, React, headless Shopify — 98+ PageSpeed always.</div>
+                    <div class="text-[11px] text-stone-500 mt-0.5">Vite, React, headless Shopify - 98+ PageSpeed always.</div>
                   </div>
                   <div class="p-3 bg-stone-50 border border-stone-200 rounded">
                     <div class="font-bold text-sm text-stone-900">Revenue Attribution</div>
@@ -271,7 +271,7 @@ export function renderHomepage3View(): void {
       </section>
 
       <!-- =========================================================================
-           SECTION 3: CORE VERTICALS — INTEGRATED SOLUTIONS (TING VERTICAL SYSTEM)
+           SECTION 3: CORE VERTICALS - INTEGRATED SOLUTIONS (TING VERTICAL SYSTEM)
            ========================================================================= -->
       <section class="py-16 sm:py-24 px-5 sm:px-8 bg-stone-950 text-white border-b border-stone-800">
         <div class="max-w-7xl mx-auto">
@@ -447,7 +447,7 @@ export function renderHomepage3View(): void {
       </section>
 
       <!-- =========================================================================
-           SECTION 4: OUR WORK — CASE STUDIES (AUTHENTIC VISUAL CRAFT SHOWCASE)
+           SECTION 4: OUR WORK - CASE STUDIES (AUTHENTIC VISUAL CRAFT SHOWCASE)
            ========================================================================= -->
       <section id="hp3-work-grid" class="py-16 sm:py-24 px-5 sm:px-8 bg-white border-b border-stone-200">
         <div class="max-w-7xl mx-auto">
@@ -759,7 +759,7 @@ export function renderHomepage3View(): void {
               <div class="space-y-3">
                 <span class="text-4xl text-[#00b755] font-sans leading-none">“</span>
                 <p class="text-xs sm:text-sm text-stone-700 leading-relaxed italic">
-                  What truly sets Inrank apart is that design isn’t treated as cosmetic decoration — it is engineered for conversion. Their team built our property launch portal in two weeks flat with 99 PageSpeed and seamless WhatsApp tracking.
+                  What truly sets Inrank apart is that design isn’t treated as cosmetic decoration - it is engineered for conversion. Their team built our property launch portal in two weeks flat with 99 PageSpeed and seamless WhatsApp tracking.
                 </p>
               </div>
               <div class="pt-4 border-t border-stone-200">

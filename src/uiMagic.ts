@@ -171,8 +171,8 @@ export function initRoiForecaster() {
 
     if (reachVal) reachVal.textContent = `${impressions.toLocaleString("en-IN")}+`;
     if (clicksVal) clicksVal.textContent = `${clicks.toLocaleString("en-IN")}+`;
-    if (leadsVal) leadsVal.textContent = `${leadsMin} – ${leadsMax}`;
-    if (multipleVal) multipleVal.textContent = `${roasMin}x – ${roasMax}x`;
+    if (leadsVal) leadsVal.textContent = `${leadsMin} - ${leadsMax}`;
+    if (multipleVal) multipleVal.textContent = `${roasMin}x - ${roasMax}x`;
   };
 
   slider.addEventListener("input", calculateProjections);

@@ -1,4 +1,4 @@
-// Inrank Technologies — Homepage-2 (High-Converting Advertising & AI Growth Engine)
+// Inrank Technologies - Homepage-2 (High-Converting Advertising & AI Growth Engine)
 // Inspired by the modern editorial UI, metal-fx accents, and high-conversion mechanics of AdAnt.ai
 
 export function renderHomepage2View() {
@@ -1039,7 +1039,7 @@ export function renderHomepage2View() {
               Ready to Turn Clicks Into Verified Revenue?
             </h2>
             <p class="text-sm sm:text-base text-stone-400 leading-relaxed">
-              Book a 20-minute growth diagnostic directly with our Senior Growth Engineering Lead. We will audit your current website, ad campaigns, and competitor leaks — no generic sales rep talk.
+              Book a 20-minute growth diagnostic directly with our Senior Growth Engineering Lead. We will audit your current website, ad campaigns, and competitor leaks - no generic sales rep talk.
             </p>
 
             <div class="space-y-3 pt-2 text-xs sm:text-sm text-stone-300">

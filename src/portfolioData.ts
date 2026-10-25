@@ -88,7 +88,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
     id: "cytos",
     slug: "cytos-cnc-machines-pune",
-    title: "CyTOS Machines Pune — High-Speed Industrial Machinery & CNC Portal",
+    title: "CyTOS Machines Pune - High-Speed Industrial Machinery & CNC Portal",
     clientName: "CyTOS Machines Pune",
     category: "direct",
     categoryBadge: "Direct Inrank Project",
@@ -213,7 +213,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       { title: "Hostinger CI/CD Workflow", description: "Automated Git push deployment pipeline straight to production Apache servers.", icon: "git-branch" }
     ],
     testimonial: {
-      quote: "Inrank completely transformed how industrial buyers discover CyTOS. In our business, buyers don't fill out long static inquiry forms—they want specs and instant WhatsApp answers. The new website loads instantaneously, our Machine Finder has saved our sales team countless hours, and our organic inquiries from Pune and across Maharashtra have more than tripled.",
+      quote: "Inrank completely transformed how industrial buyers discover CyTOS. In our business, buyers don't fill out long static inquiry forms - they want specs and instant WhatsApp answers. The new website loads instantaneously, our Machine Finder has saved our sales team countless hours, and our organic inquiries from Pune and across Maharashtra have more than tripled.",
       author: "Prasad Mhaske",
       role: "Operations & Technical Director",
       company: "CyTOS Machines Pune"
@@ -234,7 +234,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
     id: "fludio",
     slug: "fludio-water-solutions-pune",
-    title: "Fludio Water Solutions — Architectural Fountains & Aquatic Engineering Portal",
+    title: "Fludio Water Solutions - Architectural Fountains & Aquatic Engineering Portal",
     clientName: "Fludio Water Solutions",
     category: "direct",
     categoryBadge: "Direct Inrank Project",
@@ -371,7 +371,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       },
       {
         question: "What makes Fludio's RFP consultation form convert so well?",
-        answer: "Instead of generic contact boxes, the form speaks the architect's language—asking for project type (Township, Resort, Plaza), water basin dimensions, and choreographic requirements."
+        answer: "Instead of generic contact boxes, the form speaks the architect's language - asking for project type (Township, Resort, Plaza), water basin dimensions, and choreographic requirements."
       }
     ],
     metaTitle: "Fludio Water Solutions Case Study | Luxury Fountain Engineering Web Development",
@@ -380,7 +380,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
     id: "hiragrafix",
     slug: "hiragrafix-mumbai-printing-packaging",
-    title: "HIRAGRAFIX™ — Corporate Printing, Packaging & Brand Merchandising",
+    title: "HIRAGRAFIX™ - Corporate Printing, Packaging & Brand Merchandising",
     clientName: "HIRAGRAFIX™ (Hira Printers)",
     category: "direct",
     categoryBadge: "Direct Inrank Project",
@@ -526,7 +526,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
     id: "greytothegreen",
     slug: "grey-to-the-green-eco-biotech",
-    title: "Grey To The Green — Plant-Powered Home Care & Biotech Formulations",
+    title: "Grey To The Green - Plant-Powered Home Care & Biotech Formulations",
     clientName: "Grey To The Green (Quantum Innovation)",
     category: "direct",
     categoryBadge: "Direct Inrank Project",
@@ -672,7 +672,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
     id: "vasroventures",
     slug: "vasro-ventures-fashion-apparel",
-    title: "Vasro Ventures — Contemporary Fashion Apparel & Lifestyle Brand",
+    title: "Vasro Ventures - Contemporary Fashion Apparel & Lifestyle Brand",
     clientName: "Vasro Ventures Pvt Ltd",
     category: "direct",
     categoryBadge: "Direct Inrank Project",
@@ -818,7 +818,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
     id: "hcpnest",
     slug: "hcpnest-healthcare-staffing-portal",
-    title: "HCPNest — Healthcare Recruitment & Medical Clinical Staffing Network",
+    title: "HCPNest - Healthcare Recruitment & Medical Clinical Staffing Network",
     clientName: "HCPNest (HCP Network)",
     category: "direct",
     categoryBadge: "Direct Inrank Project",
@@ -943,7 +943,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       { title: "24/7 Clinical Emergency Chat", description: "Urgent WhatsApp hotline for emergency ICU and locum coverage.", icon: "message-circle" }
     ],
     testimonial: {
-      quote: "Staffing in healthcare is a matter of life and death—when an ICU or emergency ward needs staff, we can't wait weeks. Inrank designed a portal that positions HCPNest as a trusted national healthcare staffing partner. Within weeks of launching their Google Jobs schema, our candidate applications skyrocketed by nearly 1,000%.",
+      quote: "Staffing in healthcare is a matter of life and death - when an ICU or emergency ward needs staff, we can't wait weeks. Inrank designed a portal that positions HCPNest as a trusted national healthcare staffing partner. Within weeks of launching their Google Jobs schema, our candidate applications skyrocketed by nearly 1,000%.",
       author: "HCPNest Executive Team",
       role: "Directors of Medical Recruitment",
       company: "HCPNest (HCP Network)"
@@ -951,7 +951,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     faqs: [
       {
         question: "How did Inrank get HCPNest jobs featured at the top of Google Search?",
-        answer: "We implemented complete Schema.org JobPosting structured data on every job listing—including validThrough, hiringOrganization, baseSalary, and jobLocation—making every position automatically indexed by Google's native Jobs box."
+        answer: "We implemented complete Schema.org JobPosting structured data on every job listing - including validThrough, hiringOrganization, baseSalary, and jobLocation - making every position automatically indexed by Google's native Jobs box."
       },
       {
         question: "How does the portal handle hospital confidentiality?",
@@ -964,7 +964,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
     id: "riituinstitution",
     slug: "riitu-institution-ca-commerce-academy",
-    title: "Riitu Institution — Premier CA, Commerce & Professional Coaching Academy",
+    title: "Riitu Institution - Premier CA, Commerce & Professional Coaching Academy",
     clientName: "Riitu Institution (Ritu Academy)",
     category: "direct",
     categoryBadge: "Direct Inrank Project",
@@ -1110,7 +1110,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
     id: "shetkarifoodstuff",
     slug: "shetkari-foodstuff-export-seo-geo",
-    title: "Shetkari Foodstuff Trading LLC — Global Agro Commodity Export SEO & AI GEO",
+    title: "Shetkari Foodstuff Trading LLC - Global Agro Commodity Export SEO & AI GEO",
     clientName: "Shetkari Foodstuff Trading LLC (Jaas Global)",
     category: "collaboration",
     categoryBadge: "In Collaboration / Outsourcing",
@@ -1161,7 +1161,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       "Global Container-Load Lead Acquisition"
     ],
     technologies: ["AI SEO / GEO Architecture", "International Schema.org", "Hreflang Tags", "Entity Authority Building", "Perplexity & ChatGPT Search Citations"],
-    clientBackground: "Shetkari Foodstuff Trading LLC (operating between Dubai, UAE and Jaas Global Export in India) is an international agricultural trade bridge exporting container loads of fresh Indian farm produce—including Cavendish Bananas, Bhagwa Pomegranates, Guntur Red Chillies, Nashik Red Onions, and 1121 Basmati Rice—to wholesale buyers, supermarket chains, and food distributors across the Middle East.",
+    clientBackground: "Shetkari Foodstuff Trading LLC (operating between Dubai, UAE and Jaas Global Export in India) is an international agricultural trade bridge exporting container loads of fresh Indian farm produce - including Cavendish Bananas, Bhagwa Pomegranates, Guntur Red Chillies, Nashik Red Onions, and 1121 Basmati Rice - to wholesale buyers, supermarket chains, and food distributors across the Middle East.",
     challenges: [
       "High competition from established wholesale traders in Dubai's Al Aweer fruit market and international trading houses.",
       "Traditional search engines were being superseded by Generative AI engines (ChatGPT Search, Perplexity, Gemini, Google AI Overviews) where Shetkari had zero citation visibility.",
@@ -1256,7 +1256,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
     id: "orthopedicanklefootspecialist",
     slug: "dr-shyam-thakkar-orthopedic-ankle-foot",
-    title: "Dr. Shyam Thakkar — Specialized Orthopedic Foot, Ankle & Sports Injury Clinic",
+    title: "Dr. Shyam Thakkar - Specialized Orthopedic Foot, Ankle & Sports Injury Clinic",
     clientName: "Dr. Shyam Thakkar (ARTICUL8 Clinic)",
     category: "collaboration",
     categoryBadge: "In Collaboration / Outsourcing",
@@ -1381,7 +1381,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       { title: "Priority Patient WhatsApp Desk", description: "Direct clinical coordinator chat for appointment confirmation and MRI sharing.", icon: "message-circle" }
     ],
     testimonial: {
-      quote: "In specialized medicine, patients arrive anxious and in pain—they need clear, empathetic explanations and confidence in their surgeon's qualifications. Inrank's approach to our clinical website and SEO was deeply respectful of medical ethics. Our patient inquiries have quadrupled, and patients now arrive for consultations thoroughly educated on their conditions.",
+      quote: "In specialized medicine, patients arrive anxious and in pain - they need clear, empathetic explanations and confidence in their surgeon's qualifications. Inrank's approach to our clinical website and SEO was deeply respectful of medical ethics. Our patient inquiries have quadrupled, and patients now arrive for consultations thoroughly educated on their conditions.",
       author: "ARTICUL8 Clinic Operations",
       role: "Clinical Administration",
       company: "Dr. Shyam Thakkar Clinic"
@@ -1402,7 +1402,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
     id: "dravyafinancial",
     slug: "dravya-financial-corporate-advisory",
-    title: "Dravya Financial Solutions — Enterprise Debt Syndication & Corporate Advisory",
+    title: "Dravya Financial Solutions - Enterprise Debt Syndication & Corporate Advisory",
     clientName: "Dravya Financial Solutions Pvt Ltd",
     category: "collaboration",
     categoryBadge: "In Collaboration / Outsourcing",

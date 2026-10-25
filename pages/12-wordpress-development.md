@@ -1,4 +1,4 @@
-# WordPress Development — Page Content
+# WordPress Development - Page Content
 
 ## SEO settings
 
@@ -8,25 +8,25 @@
 | SEO title (62 chars) | WordPress Development Company in Pune | Custom Themes | Inrank |
 | Meta description (147 chars) | WordPress development company in Pune: custom themes, Elementor builds, WooCommerce, speed optimisation and secure, easy-to-edit business websites. |
 | H1 | WordPress Development Company in Pune |
-| Primary keyword | `wordpress development company in pune` — 480/mo, KD 10 |
+| Primary keyword | `wordpress development company in pune` - 480/mo, KD 10 |
 | Opportunity tier | Quick-win (KD ≤20) |
 | Canonical | `https://www.inranktechnologies.com/services/wordpress-development-pune/` |
 | OG image | `/images/og/wordpress-development-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `wordpress developer pune` — (no Semrush India volume returned; long-tail/brand)
-- `wordpress website design pune` — (no Semrush India volume returned; long-tail/brand)
+- `wordpress developer pune` - (no Semrush India volume returned; long-tail/brand)
+- `wordpress website design pune` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
 # WordPress Development Company in Pune
 
-Inrank builds secure, fast and easy-to-manage WordPress websites for Pune businesses—custom themes, Elementor or block-based builds, WooCommerce stores and plugin development—with SEO and Core Web Vitals handled from day one.
+Inrank builds secure, fast and easy-to-manage WordPress websites for Pune businesses - custom themes, Elementor or block-based builds, WooCommerce stores and plugin development - with SEO and Core Web Vitals handled from day one.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![WordPress Development Company in Pune – Inrank Technologies team in Pune](/images/wordpress-development/wordpress-development-hero.webp)
+![WordPress Development Company in Pune - Inrank Technologies team in Pune](/images/wordpress-development/wordpress-development-hero.webp)
 
 ## Who this service is for
 
@@ -48,11 +48,11 @@ Inrank builds secure, fast and easy-to-manage WordPress websites for Pune busine
 
 ## Our process
 
-1. **Plan** — Content model and plugin stack.
-2. **Build** — Theme, templates and components.
-3. **Optimise** — Speed, images, caching, Core Web Vitals.
-4. **Secure** — Hardening, firewall, backups.
-5. **Train** — Editor walkthrough and documentation.
+1. **Plan** - Content model and plugin stack.
+2. **Build** - Theme, templates and components.
+3. **Optimise** - Speed, images, caching, Core Web Vitals.
+4. **Secure** - Hardening, firewall, backups.
+5. **Train** - Editor walkthrough and documentation.
 
 ![WordPress Development process at Inrank Technologies](/images/wordpress-development/wordpress-development-process.webp)
 
@@ -71,10 +71,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -186,6 +186,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `wordpress-development-hero.webp` 1600×900 | WordPress Development Company in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to wordpress development |
+| `wordpress-development-hero.webp` 1600×900 | WordPress Development Company in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to wordpress development |
 | `wordpress-development-process.webp` 1200×800 | WordPress Development process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/wordpress-development-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/wordpress-development-og.jpg` 1200×630 | - | Social share card with H1 + logo |

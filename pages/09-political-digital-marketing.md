@@ -1,4 +1,4 @@
-# Political Digital Marketing — Page Content
+# Political Digital Marketing - Page Content
 
 ## SEO settings
 
@@ -8,25 +8,25 @@
 | SEO title (65 chars) | Political Digital Marketing Agency in Pune & Maharashtra | Inrank |
 | Meta description (156 chars) | Political digital marketing in Pune and Maharashtra: candidate branding, regional content, social media war rooms, voter outreach and reputation monitoring. |
 | H1 | Political Digital Marketing Agency in Pune and Maharashtra |
-| Primary keyword | `political campaign management` — 110/mo, KD 25 |
-| Opportunity tier | Achievable (KD 21–35) |
+| Primary keyword | `political campaign management` - 110/mo, KD 25 |
+| Opportunity tier | Achievable (KD 21-35) |
 | Canonical | `https://www.inranktechnologies.com/services/political-digital-marketing-pune/` |
 | OG image | `/images/og/political-digital-marketing-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `political digital marketing agency` — 30/mo
-- `election campaign social media` — (no Semrush India volume returned; long-tail/brand)
+- `political digital marketing agency` - 30/mo
+- `election campaign social media` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
 # Political Digital Marketing Agency in Pune and Maharashtra
 
-Inrank supports candidates, parties and public representatives in Pune and Maharashtra with digital campaign strategy, Marathi and Hindi content, social media management, constituency-level outreach and reputation monitoring—within Election Commission and platform rules.
+Inrank supports candidates, parties and public representatives in Pune and Maharashtra with digital campaign strategy, Marathi and Hindi content, social media management, constituency-level outreach and reputation monitoring - within Election Commission and platform rules.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Political Digital Marketing Agency in Pune and Maharashtra – Inrank Technologies team in Pune](/images/political-digital-marketing/political-digital-marketing-hero.webp)
+![Political Digital Marketing Agency in Pune and Maharashtra - Inrank Technologies team in Pune](/images/political-digital-marketing/political-digital-marketing-hero.webp)
 
 ## Who this service is for
 
@@ -48,11 +48,11 @@ Inrank supports candidates, parties and public representatives in Pune and Mahar
 
 ## Our process
 
-1. **Research** — Constituency issues, audience and opposition review.
-2. **Narrative** — Define message pillars and visual identity.
-3. **Content engine** — Daily content across platforms.
-4. **Outreach** — Geo-targeted, compliant ads and community groups.
-5. **Monitor** — Track sentiment, respond and adapt.
+1. **Research** - Constituency issues, audience and opposition review.
+2. **Narrative** - Define message pillars and visual identity.
+3. **Content engine** - Daily content across platforms.
+4. **Outreach** - Geo-targeted, compliant ads and community groups.
+5. **Monitor** - Track sentiment, respond and adapt.
 
 ![Political Digital Marketing process at Inrank Technologies](/images/political-digital-marketing/political-digital-marketing-process.webp)
 
@@ -71,10 +71,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -186,6 +186,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `political-digital-marketing-hero.webp` 1600×900 | Political Digital Marketing Agency in Pune and Maharashtra – Inrank Technologies team in Pune | Real team/work photo relevant to political digital marketing |
+| `political-digital-marketing-hero.webp` 1600×900 | Political Digital Marketing Agency in Pune and Maharashtra - Inrank Technologies team in Pune | Real team/work photo relevant to political digital marketing |
 | `political-digital-marketing-process.webp` 1200×800 | Political Digital Marketing process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/political-digital-marketing-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/political-digital-marketing-og.jpg` 1200×630 | - | Social share card with H1 + logo |

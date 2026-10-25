@@ -1,4 +1,4 @@
-# About — Page Content
+# About - Page Content
 
 ## SEO settings
 
@@ -8,14 +8,14 @@
 | SEO title (54 chars) | About Inrank Technologies | Pune Digital Growth Agency |
 | Meta description (138 chars) | Meet Inrank Technologies, a Pune-based performance-first digital growth agency for websites, SEO, paid ads and measurable lead generation. |
 | H1 | About Inrank Technologies |
-| Primary keyword | `inrank technologies` — (no Semrush India volume returned; long-tail/brand) |
+| Primary keyword | `inrank technologies` - (no Semrush India volume returned; long-tail/brand) |
 | Opportunity tier | Long-tail / unmeasured |
 | Canonical | `https://www.inranktechnologies.com/about/` |
 | OG image | `/images/og/about-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `digital growth agency pune` — (no Semrush India volume returned; long-tail/brand)
+- `digital growth agency pune` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
@@ -25,7 +25,7 @@ Inrank Technologies is a Pune-based, performance-first digital growth agency. We
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![About Inrank Technologies – Inrank Technologies team in Pune](/images/about/about-hero.webp)
+![About Inrank Technologies - Inrank Technologies team in Pune](/images/about/about-hero.webp)
 
 ## What we stand for
 
@@ -45,10 +45,10 @@ Inrank Technologies is a Pune-based, performance-first digital growth agency. We
 
 ## Our values
 
-1. **Honesty** — No guaranteed-ranking promises.
-2. **Ownership** — Clients own accounts, data and assets.
-3. **Measurement** — Every action tied to a metric.
-4. **Speed** — Weekly progress, monthly reviews.
+1. **Honesty** - No guaranteed-ranking promises.
+2. **Ownership** - Clients own accounts, data and assets.
+3. **Measurement** - Every action tied to a metric.
+4. **Speed** - Weekly progress, monthly reviews.
 
 ![About process at Inrank Technologies](/images/about/about-process.webp)
 
@@ -139,6 +139,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `about-hero.webp` 1600×900 | About Inrank Technologies – Inrank Technologies team in Pune | Real team/work photo relevant to about |
+| `about-hero.webp` 1600×900 | About Inrank Technologies - Inrank Technologies team in Pune | Real team/work photo relevant to about |
 | `about-process.webp` 1200×800 | About process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/about-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/about-og.jpg` 1200×630 | - | Social share card with H1 + logo |

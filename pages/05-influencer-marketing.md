@@ -1,4 +1,4 @@
-# Influencer Marketing — Page Content
+# Influencer Marketing - Page Content
 
 ## SEO settings
 
@@ -8,15 +8,15 @@
 | SEO title (64 chars) | Influencer Marketing Agency in Pune | Creator Campaigns | Inrank |
 | Meta description (146 chars) | Influencer marketing agency in Pune: creator discovery, audience vetting, briefs, usage rights and tracked campaigns with Pune and India creators. |
 | H1 | Influencer Marketing Agency in Pune |
-| Primary keyword | `influencer marketing agency` — 1,900/mo, KD 33 |
-| Opportunity tier | Achievable (KD 21–35) |
+| Primary keyword | `influencer marketing agency` - 1,900/mo, KD 33 |
+| Opportunity tier | Achievable (KD 21-35) |
 | Canonical | `https://www.inranktechnologies.com/services/influencer-marketing-pune/` |
 | OG image | `/images/og/influencer-marketing-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `influencer marketing agency in pune` — (no Semrush India volume returned; long-tail/brand)
-- `micro influencers pune` — (no Semrush India volume returned; long-tail/brand)
+- `influencer marketing agency in pune` - (no Semrush India volume returned; long-tail/brand)
+- `micro influencers pune` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
@@ -26,7 +26,7 @@ Inrank runs influencer marketing campaigns in Pune with vetted micro and mid-tie
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Influencer Marketing Agency in Pune – Inrank Technologies team in Pune](/images/influencer-marketing/influencer-marketing-hero.webp)
+![Influencer Marketing Agency in Pune - Inrank Technologies team in Pune](/images/influencer-marketing/influencer-marketing-hero.webp)
 
 ## Who this service is for
 
@@ -46,11 +46,11 @@ Inrank runs influencer marketing campaigns in Pune with vetted micro and mid-tie
 
 ## Our process
 
-1. **Objective** — Define reach, footfall or sales goal.
-2. **Discovery** — Shortlist creators by niche, location and authenticity.
-3. **Brief** — Agree deliverables, messaging and disclosures.
-4. **Go live** — Coordinate posting dates and approvals.
-5. **Report** — Measure tracked outcomes and reuse top content in ads.
+1. **Objective** - Define reach, footfall or sales goal.
+2. **Discovery** - Shortlist creators by niche, location and authenticity.
+3. **Brief** - Agree deliverables, messaging and disclosures.
+4. **Go live** - Coordinate posting dates and approvals.
+5. **Report** - Measure tracked outcomes and reuse top content in ads.
 
 ![Influencer Marketing process at Inrank Technologies](/images/influencer-marketing/influencer-marketing-process.webp)
 
@@ -69,14 +69,14 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
-### Micro or macro influencers—which is better?
+### Micro or macro influencers - which is better?
 For local Pune businesses, micro creators (roughly 10k–100k followers) usually deliver better engagement and cost-efficiency than a single celebrity post.
 
 ### How do you check fake followers?
@@ -157,7 +157,7 @@ Optional FAQPage markup (only if FAQs are visible on the page):
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Micro or macro influencers—which is better?",
+      "name": "Micro or macro influencers - which is better?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "For local Pune businesses, micro creators (roughly 10k–100k followers) usually deliver better engagement and cost-efficiency than a single celebrity post."
@@ -195,6 +195,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `influencer-marketing-hero.webp` 1600×900 | Influencer Marketing Agency in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to influencer marketing |
+| `influencer-marketing-hero.webp` 1600×900 | Influencer Marketing Agency in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to influencer marketing |
 | `influencer-marketing-process.webp` 1200×800 | Influencer Marketing process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/influencer-marketing-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/influencer-marketing-og.jpg` 1200×630 | - | Social share card with H1 + logo |

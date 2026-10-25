@@ -1,4 +1,4 @@
-# Social Media Marketing — Page Content
+# Social Media Marketing - Page Content
 
 ## SEO settings
 
@@ -8,15 +8,15 @@
 | SEO title (59 chars) | Social Media Marketing Agency in Pune | Inrank Technologies |
 | Meta description (148 chars) | Social media marketing agency in Pune for Instagram, Facebook, LinkedIn and YouTube: strategy, content, reels, community management and paid social. |
 | H1 | Social Media Marketing Agency in Pune |
-| Primary keyword | `social media marketing agency in pune` — 590/mo, KD 33 |
-| Opportunity tier | Achievable (KD 21–35) |
+| Primary keyword | `social media marketing agency in pune` - 590/mo, KD 33 |
+| Opportunity tier | Achievable (KD 21-35) |
 | Canonical | `https://www.inranktechnologies.com/services/social-media-marketing-pune/` |
 | OG image | `/images/og/social-media-marketing-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `social media marketing services in pune` — 390/mo, KD 43
-- `social media marketing in pune` — 320/mo, KD 17
+- `social media marketing services in pune` - 390/mo, KD 43
+- `social media marketing in pune` - 320/mo, KD 17
 
 ---
 
@@ -26,7 +26,7 @@ Inrank's social media marketing in Pune combines strategy, content production, r
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Social Media Marketing Agency in Pune – Inrank Technologies team in Pune](/images/social-media-marketing/social-media-marketing-hero.webp)
+![Social Media Marketing Agency in Pune - Inrank Technologies team in Pune](/images/social-media-marketing/social-media-marketing-hero.webp)
 
 ## Who this service is for
 
@@ -47,11 +47,11 @@ Inrank's social media marketing in Pune combines strategy, content production, r
 
 ## Our process
 
-1. **Brand audit** — Review profiles, competitors and audience.
-2. **Content system** — Define pillars, formats and posting cadence.
-3. **Production** — Shoot, design and write content in monthly batches.
-4. **Engage** — Reply to comments and DMs within agreed timelines.
-5. **Amplify** — Boost winning posts with paid budget and retarget engaged users.
+1. **Brand audit** - Review profiles, competitors and audience.
+2. **Content system** - Define pillars, formats and posting cadence.
+3. **Production** - Shoot, design and write content in monthly batches.
+4. **Engage** - Reply to comments and DMs within agreed timelines.
+5. **Amplify** - Boost winning posts with paid budget and retarget engaged users.
 
 ![Social Media Marketing process at Inrank Technologies](/images/social-media-marketing/social-media-marketing-process.webp)
 
@@ -71,10 +71,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -209,6 +209,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `social-media-marketing-hero.webp` 1600×900 | Social Media Marketing Agency in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to social media marketing |
+| `social-media-marketing-hero.webp` 1600×900 | Social Media Marketing Agency in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to social media marketing |
 | `social-media-marketing-process.webp` 1200×800 | Social Media Marketing process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/social-media-marketing-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/social-media-marketing-og.jpg` 1200×630 | - | Social share card with H1 + logo |

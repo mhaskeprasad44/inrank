@@ -1,4 +1,4 @@
-# Digital Marketing Services — Page Content
+# Digital Marketing Services - Page Content
 
 ## SEO settings
 
@@ -8,27 +8,27 @@
 | SEO title (63 chars) | Digital Marketing Services in Pune | SEO, Ads & Social | Inrank |
 | Meta description (145 chars) | Digital marketing services in Pune: SEO, Google Ads, Meta Ads, social media, content, email and WhatsApp marketing connected to measurable leads. |
 | H1 | Digital Marketing Services in Pune |
-| Primary keyword | `digital marketing services in pune` — 590/mo, KD 26 |
-| Opportunity tier | Achievable (KD 21–35) |
+| Primary keyword | `digital marketing services in pune` - 590/mo, KD 26 |
+| Opportunity tier | Achievable (KD 21-35) |
 | Canonical | `https://www.inranktechnologies.com/digital-marketing-services-pune/` |
 | OG image | `/images/og/digital-marketing-services-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `digital marketing services company in pune` — 260/mo, KD 39
-- `online marketing company in pune` — 210/mo, KD 53
-- `internet marketing company in pune` — 210/mo, KD 37
-- `digital marketing near me` — 9,900/mo, KD 10
+- `digital marketing services company in pune` - 260/mo, KD 39
+- `online marketing company in pune` - 210/mo, KD 53
+- `internet marketing company in pune` - 210/mo, KD 37
+- `digital marketing near me` - 9,900/mo, KD 10
 
 ---
 
 # Digital Marketing Services in Pune
 
-Digital marketing services in Pune at Inrank include SEO, paid search, paid social, social media management, content, email, SMS and WhatsApp marketing. We recommend a channel mix based on your buyer journey, margins and sales cycle—not a one-size package.
+Digital marketing services in Pune at Inrank include SEO, paid search, paid social, social media management, content, email, SMS and WhatsApp marketing. We recommend a channel mix based on your buyer journey, margins and sales cycle - not a one-size package.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Digital Marketing Services in Pune – Inrank Technologies team in Pune](/images/digital-marketing-services/digital-marketing-services-hero.webp)
+![Digital Marketing Services in Pune - Inrank Technologies team in Pune](/images/digital-marketing-services/digital-marketing-services-hero.webp)
 
 ## Who this service is for
 
@@ -50,11 +50,11 @@ Digital marketing services in Pune at Inrank include SEO, paid search, paid soci
 
 ## Our process
 
-1. **Discovery** — Understand offer, margins, average deal value and current lead sources.
-2. **Channel fit** — Choose two to three channels with the best expected return.
-3. **Tracking** — Install GA4 events, call tracking and CRM source capture.
-4. **Launch** — Launch campaigns, content and landing pages in sprints.
-5. **Optimise** — Shift budget weekly toward channels producing qualified leads.
+1. **Discovery** - Understand offer, margins, average deal value and current lead sources.
+2. **Channel fit** - Choose two to three channels with the best expected return.
+3. **Tracking** - Install GA4 events, call tracking and CRM source capture.
+4. **Launch** - Launch campaigns, content and landing pages in sprints.
+5. **Optimise** - Shift budget weekly toward channels producing qualified leads.
 
 ![Digital Marketing Services process at Inrank Technologies](/images/digital-marketing-services/digital-marketing-services-process.webp)
 
@@ -74,10 +74,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -212,6 +212,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `digital-marketing-services-hero.webp` 1600×900 | Digital Marketing Services in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to digital marketing services |
+| `digital-marketing-services-hero.webp` 1600×900 | Digital Marketing Services in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to digital marketing services |
 | `digital-marketing-services-process.webp` 1200×800 | Digital Marketing Services process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/digital-marketing-services-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/digital-marketing-services-og.jpg` 1200×630 | - | Social share card with H1 + logo |

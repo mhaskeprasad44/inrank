@@ -1,4 +1,4 @@
-# Content Marketing — Page Content
+# Content Marketing - Page Content
 
 ## SEO settings
 
@@ -8,25 +8,25 @@
 | SEO title (63 chars) | Content Marketing Agency in Pune | SEO Content Writing | Inrank |
 | Meta description (144 chars) | Content marketing agency in Pune: SEO content strategy, expert articles, landing page copy, case studies and content refreshes that drive leads. |
 | H1 | Content Marketing Agency in Pune |
-| Primary keyword | `content marketing agency in pune` — (no Semrush India volume returned; long-tail/brand) |
+| Primary keyword | `content marketing agency in pune` - (no Semrush India volume returned; long-tail/brand) |
 | Opportunity tier | Long-tail / unmeasured |
 | Canonical | `https://www.inranktechnologies.com/services/content-marketing-pune/` |
 | OG image | `/images/og/content-marketing-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `content writing services in pune` — 10/mo
-- `seo content writing` — (no Semrush India volume returned; long-tail/brand)
+- `content writing services in pune` - 10/mo
+- `seo content writing` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
 # Content Marketing Agency in Pune
 
-Inrank's content marketing service in Pune plans, writes and distributes content that ranks, earns citations and converts—SEO articles, service-page copy, case studies, LinkedIn content and refreshes of existing pages.
+Inrank's content marketing service in Pune plans, writes and distributes content that ranks, earns citations and converts - SEO articles, service-page copy, case studies, LinkedIn content and refreshes of existing pages.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Content Marketing Agency in Pune – Inrank Technologies team in Pune](/images/content-marketing/content-marketing-hero.webp)
+![Content Marketing Agency in Pune - Inrank Technologies team in Pune](/images/content-marketing/content-marketing-hero.webp)
 
 ## Who this service is for
 
@@ -47,11 +47,11 @@ Inrank's content marketing service in Pune plans, writes and distributes content
 
 ## Our process
 
-1. **Research** — Keywords, questions and competitor gaps.
-2. **Plan** — Clusters and calendar.
-3. **Create** — Brief, write, expert review, edit.
-4. **Publish** — On-page optimisation and internal links.
-5. **Refresh** — Update content using Search Console data.
+1. **Research** - Keywords, questions and competitor gaps.
+2. **Plan** - Clusters and calendar.
+3. **Create** - Brief, write, expert review, edit.
+4. **Publish** - On-page optimisation and internal links.
+5. **Refresh** - Update content using Search Console data.
 
 ![Content Marketing process at Inrank Technologies](/images/content-marketing/content-marketing-process.webp)
 
@@ -70,10 +70,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -185,6 +185,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `content-marketing-hero.webp` 1600×900 | Content Marketing Agency in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to content marketing |
+| `content-marketing-hero.webp` 1600×900 | Content Marketing Agency in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to content marketing |
 | `content-marketing-process.webp` 1200×800 | Content Marketing process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/content-marketing-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/content-marketing-og.jpg` 1200×630 | - | Social share card with H1 + logo |

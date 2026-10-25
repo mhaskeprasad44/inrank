@@ -1,4 +1,4 @@
-# Website Maintenance — Page Content
+# Website Maintenance - Page Content
 
 ## SEO settings
 
@@ -8,25 +8,25 @@
 | SEO title (57 chars) | Website Maintenance Services in Pune | AMC Plans | Inrank |
 | Meta description (149 chars) | Website maintenance services in Pune: updates, backups, security monitoring, uptime, bug fixes and content changes under monthly or annual AMC plans. |
 | H1 | Website Maintenance Services in Pune |
-| Primary keyword | `website maintenance company` — 170/mo, KD 7 |
+| Primary keyword | `website maintenance company` - 170/mo, KD 7 |
 | Opportunity tier | Quick-win (KD ≤20) |
 | Canonical | `https://www.inranktechnologies.com/services/website-maintenance-pune/` |
 | OG image | `/images/og/website-maintenance-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `website maintenance services in pune` — (no Semrush India volume returned; long-tail/brand)
-- `wordpress maintenance services` — (no Semrush India volume returned; long-tail/brand)
+- `website maintenance services in pune` - (no Semrush India volume returned; long-tail/brand)
+- `wordpress maintenance services` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
 # Website Maintenance Services in Pune
 
-Inrank's website maintenance plans keep Pune business websites secure, fast and up to date—core and plugin updates, backups, malware monitoring, uptime checks, bug fixes and content changes—under clear monthly or annual AMC terms.
+Inrank's website maintenance plans keep Pune business websites secure, fast and up to date - core and plugin updates, backups, malware monitoring, uptime checks, bug fixes and content changes - under clear monthly or annual AMC terms.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Website Maintenance Services in Pune – Inrank Technologies team in Pune](/images/website-maintenance/website-maintenance-hero.webp)
+![Website Maintenance Services in Pune - Inrank Technologies team in Pune](/images/website-maintenance/website-maintenance-hero.webp)
 
 ## Who this service is for
 
@@ -48,11 +48,11 @@ Inrank's website maintenance plans keep Pune business websites secure, fast and 
 
 ## Our process
 
-1. **Onboard** — Access, audit and baseline backup.
-2. **Secure** — Harden, update and scan.
-3. **Monitor** — Uptime, security and performance.
-4. **Fix** — Resolve issues within agreed response times.
-5. **Report** — Monthly summary of work done.
+1. **Onboard** - Access, audit and baseline backup.
+2. **Secure** - Harden, update and scan.
+3. **Monitor** - Uptime, security and performance.
+4. **Fix** - Resolve issues within agreed response times.
+5. **Report** - Monthly summary of work done.
 
 ![Website Maintenance process at Inrank Technologies](/images/website-maintenance/website-maintenance-process.webp)
 
@@ -71,10 +71,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -186,6 +186,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `website-maintenance-hero.webp` 1600×900 | Website Maintenance Services in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to website maintenance |
+| `website-maintenance-hero.webp` 1600×900 | Website Maintenance Services in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to website maintenance |
 | `website-maintenance-process.webp` 1200×800 | Website Maintenance process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/website-maintenance-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/website-maintenance-og.jpg` 1200×630 | - | Social share card with H1 + logo |

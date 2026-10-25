@@ -1,4 +1,4 @@
-# Custom Website Design — Page Content
+# Custom Website Design - Page Content
 
 ## SEO settings
 
@@ -6,27 +6,27 @@
 |---|---|
 | URL | `/services/custom-website-design-pune/` |
 | SEO title (54 chars) | Custom Website Design Company in Pune | UI/UX | Inrank |
-| Meta description (148 chars) | Custom website design in Pune: unique UI/UX, brand-led layouts and conversion-focused journeys—no recycled templates. Request a design consultation. |
+| Meta description (148 chars) | Custom website design in Pune: unique UI/UX, brand-led layouts and conversion-focused journeys - no recycled templates. Request a design consultation. |
 | H1 | Custom Website Design Company in Pune |
-| Primary keyword | `website design company in pune` — 590/mo, KD 52 |
+| Primary keyword | `website design company in pune` - 590/mo, KD 52 |
 | Opportunity tier | Hard (KD >50) |
 | Canonical | `https://www.inranktechnologies.com/services/custom-website-design-pune/` |
 | OG image | `/images/og/custom-website-design-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `custom website design pune` — (no Semrush India volume returned; long-tail/brand)
-- `ui ux design company pune` — (no Semrush India volume returned; long-tail/brand)
+- `custom website design pune` - (no Semrush India volume returned; long-tail/brand)
+- `ui ux design company pune` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
 # Custom Website Design Company in Pune
 
-Inrank designs custom websites in Pune from scratch around your brand, buyer journey and conversion goals. No recycled templates—every layout is wireframed, tested and designed to make visitors trust you and take action.
+Inrank designs custom websites in Pune from scratch around your brand, buyer journey and conversion goals. No recycled templates - every layout is wireframed, tested and designed to make visitors trust you and take action.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Custom Website Design Company in Pune – Inrank Technologies team in Pune](/images/custom-website-design/custom-website-design-hero.webp)
+![Custom Website Design Company in Pune - Inrank Technologies team in Pune](/images/custom-website-design/custom-website-design-hero.webp)
 
 ## Who this service is for
 
@@ -47,11 +47,11 @@ Inrank designs custom websites in Pune from scratch around your brand, buyer jou
 
 ## Our process
 
-1. **Research** — Audience, competitors, brand assets.
-2. **Structure** — Sitemap and wireframes.
-3. **Visual design** — Design system, key pages, responsive views.
-4. **Prototype** — Clickable review and feedback rounds.
-5. **Handoff** — Specs for development and QA.
+1. **Research** - Audience, competitors, brand assets.
+2. **Structure** - Sitemap and wireframes.
+3. **Visual design** - Design system, key pages, responsive views.
+4. **Prototype** - Clickable review and feedback rounds.
+5. **Handoff** - Specs for development and QA.
 
 ![Custom Website Design process at Inrank Technologies](/images/custom-website-design/custom-website-design-process.webp)
 
@@ -70,10 +70,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -110,7 +110,7 @@ Book a free, no-obligation audit with Inrank Technologies. We'll show you the to
       "name": "Custom Website Design Company in Pune",
       "serviceType": "Custom Website Design",
       "url": "https://www.inranktechnologies.com/services/custom-website-design-pune/",
-      "description": "Custom website design in Pune: unique UI/UX, brand-led layouts and conversion-focused journeys—no recycled templates. Request a design consultation.",
+      "description": "Custom website design in Pune: unique UI/UX, brand-led layouts and conversion-focused journeys - no recycled templates. Request a design consultation.",
       "provider": {
         "@id": "https://www.inranktechnologies.com/#business"
       },
@@ -185,6 +185,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `custom-website-design-hero.webp` 1600×900 | Custom Website Design Company in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to custom website design |
+| `custom-website-design-hero.webp` 1600×900 | Custom Website Design Company in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to custom website design |
 | `custom-website-design-process.webp` 1200×800 | Custom Website Design process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/custom-website-design-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/custom-website-design-og.jpg` 1200×630 | - | Social share card with H1 + logo |

@@ -1,4 +1,4 @@
-# Brochure Design — Page Content
+# Brochure Design - Page Content
 
 ## SEO settings
 
@@ -8,25 +8,25 @@
 | SEO title (65 chars) | Brochure Design Company in Pune | Company Profile Design | Inrank |
 | Meta description (145 chars) | Brochure and company profile design in Pune: content structure, copywriting, layout and print-ready or interactive PDF brochures that help sales. |
 | H1 | Brochure Design Company in Pune |
-| Primary keyword | `brochure design` — 40,500/mo, KD 56 |
+| Primary keyword | `brochure design` - 40,500/mo, KD 56 |
 | Opportunity tier | Hard (KD >50) |
 | Canonical | `https://www.inranktechnologies.com/services/brochure-design-pune/` |
 | OG image | `/images/og/brochure-design-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `brochure design in pune` — (no Semrush India volume returned; long-tail/brand)
-- `company profile design` — (no Semrush India volume returned; long-tail/brand)
+- `brochure design in pune` - (no Semrush India volume returned; long-tail/brand)
+- `company profile design` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
 # Brochure Design Company in Pune
 
-Inrank designs brochures and company profiles in Pune that turn complex offerings into clear, persuasive sales material—combining content structure, copywriting, layout design and print-ready or interactive PDF delivery.
+Inrank designs brochures and company profiles in Pune that turn complex offerings into clear, persuasive sales material - combining content structure, copywriting, layout design and print-ready or interactive PDF delivery.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Brochure Design Company in Pune – Inrank Technologies team in Pune](/images/brochure-design/brochure-design-hero.webp)
+![Brochure Design Company in Pune - Inrank Technologies team in Pune](/images/brochure-design/brochure-design-hero.webp)
 
 ## Who this service is for
 
@@ -46,11 +46,11 @@ Inrank designs brochures and company profiles in Pune that turn complex offering
 
 ## Our process
 
-1. **Content plan** — Audience, flow and page count.
-2. **Copy** — Write or edit content.
-3. **Design** — Layouts and visuals.
-4. **Proof** — Revisions and proofing.
-5. **Deliver** — Print and digital versions.
+1. **Content plan** - Audience, flow and page count.
+2. **Copy** - Write or edit content.
+3. **Design** - Layouts and visuals.
+4. **Proof** - Revisions and proofing.
+5. **Deliver** - Print and digital versions.
 
 ![Brochure Design process at Inrank Technologies](/images/brochure-design/brochure-design-process.webp)
 
@@ -69,10 +69,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -184,6 +184,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `brochure-design-hero.webp` 1600×900 | Brochure Design Company in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to brochure design |
+| `brochure-design-hero.webp` 1600×900 | Brochure Design Company in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to brochure design |
 | `brochure-design-process.webp` 1200×800 | Brochure Design process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/brochure-design-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/brochure-design-og.jpg` 1200×630 | - | Social share card with H1 + logo |

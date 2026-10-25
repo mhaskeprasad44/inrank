@@ -1,4 +1,4 @@
-# Contact — Page Content
+# Contact - Page Content
 
 ## SEO settings
 
@@ -8,7 +8,7 @@
 | SEO title (59 chars) | Contact Inrank Technologies | Digital Marketing Agency Pune |
 | Meta description (130 chars) | Talk to Inrank Technologies about SEO, Google Ads, social media, branding or website development in Pune. Get a free growth audit. |
 | H1 | Contact Inrank Technologies |
-| Primary keyword | `digital marketing agency pune contact` — (no Semrush India volume returned; long-tail/brand) |
+| Primary keyword | `digital marketing agency pune contact` - (no Semrush India volume returned; long-tail/brand) |
 | Opportunity tier | Long-tail / unmeasured |
 | Canonical | `https://www.inranktechnologies.com/contact/` |
 | OG image | `/images/og/contact-og.jpg` (1200×630) |
@@ -21,14 +21,14 @@ Tell us about your business and goals; we reply within one business day with nex
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Contact Inrank Technologies – Inrank Technologies team in Pune](/images/contact/contact-hero.webp)
+![Contact Inrank Technologies - Inrank Technologies team in Pune](/images/contact/contact-hero.webp)
 
 ## Reach us
 
 - Phone: [ADD]
 - WhatsApp: [ADD]
 - Email: [ADD]
-- Address: [ADD full Pune address — must match Google Business Profile exactly]
+- Address: [ADD full Pune address - must match Google Business Profile exactly]
 - Hours: [ADD]
 
 ## Contact form
@@ -123,6 +123,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `contact-hero.webp` 1600×900 | Contact Inrank Technologies – Inrank Technologies team in Pune | Real team/work photo relevant to contact |
+| `contact-hero.webp` 1600×900 | Contact Inrank Technologies - Inrank Technologies team in Pune | Real team/work photo relevant to contact |
 | `contact-process.webp` 1200×800 | Contact process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/contact-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/contact-og.jpg` 1200×630 | - | Social share card with H1 + logo |

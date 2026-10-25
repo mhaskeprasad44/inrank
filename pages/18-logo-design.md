@@ -1,4 +1,4 @@
-# Logo Design — Page Content
+# Logo Design - Page Content
 
 ## SEO settings
 
@@ -8,25 +8,25 @@
 | SEO title (65 chars) | Logo Design Company in Pune | Professional Logo Designer | Inrank |
 | Meta description (136 chars) | Professional logo design in Pune: strategic concepts, refinements, colour and typography system and print- and digital-ready logo files. |
 | H1 | Logo Design Company in Pune |
-| Primary keyword | `logo design in pune` — 260/mo, KD 10 |
+| Primary keyword | `logo design in pune` - 260/mo, KD 10 |
 | Opportunity tier | Quick-win (KD ≤20) |
 | Canonical | `https://www.inranktechnologies.com/services/logo-design-pune/` |
 | OG image | `/images/og/logo-design-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `logo designer in pune` — 260/mo, KD 10
-- `logo design company in pune` — 70/mo
+- `logo designer in pune` - 260/mo, KD 10
+- `logo design company in pune` - 70/mo
 
 ---
 
 # Logo Design Company in Pune
 
-Inrank designs strategic, original logos in Pune that work everywhere—from a WhatsApp profile picture to a building sign. You receive multiple concepts, refinement rounds, a mini brand guide and every file format you need.
+Inrank designs strategic, original logos in Pune that work everywhere - from a WhatsApp profile picture to a building sign. You receive multiple concepts, refinement rounds, a mini brand guide and every file format you need.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Logo Design Company in Pune – Inrank Technologies team in Pune](/images/logo-design/logo-design-hero.webp)
+![Logo Design Company in Pune - Inrank Technologies team in Pune](/images/logo-design/logo-design-hero.webp)
 
 ## Who this service is for
 
@@ -47,11 +47,11 @@ Inrank designs strategic, original logos in Pune that work everywhere—from a W
 
 ## Our process
 
-1. **Brief** — Values, audience, competitors.
-2. **Sketch** — Explore concepts.
-3. **Design** — Develop three directions.
-4. **Refine** — Feedback rounds.
-5. **Deliver** — Final files and guide.
+1. **Brief** - Values, audience, competitors.
+2. **Sketch** - Explore concepts.
+3. **Design** - Develop three directions.
+4. **Refine** - Feedback rounds.
+5. **Deliver** - Final files and guide.
 
 ![Logo Design process at Inrank Technologies](/images/logo-design/logo-design-process.webp)
 
@@ -69,10 +69,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -184,6 +184,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `logo-design-hero.webp` 1600×900 | Logo Design Company in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to logo design |
+| `logo-design-hero.webp` 1600×900 | Logo Design Company in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to logo design |
 | `logo-design-process.webp` 1200×800 | Logo Design process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/logo-design-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/logo-design-og.jpg` 1200×630 | - | Social share card with H1 + logo |

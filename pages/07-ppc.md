@@ -1,4 +1,4 @@
-# PPC / Google Ads — Page Content
+# PPC / Google Ads - Page Content
 
 ## SEO settings
 
@@ -8,16 +8,16 @@
 | SEO title (62 chars) | PPC & Google Ads Agency in Pune | Lower Cost Per Lead | Inrank |
 | Meta description (156 chars) | Google Ads and PPC agency in Pune: search, Performance Max, YouTube and remarketing with conversion tracking and landing pages built to lower cost per lead. |
 | H1 | PPC and Google Ads Agency in Pune |
-| Primary keyword | `google ads agency` — 1,300/mo, KD 22 |
-| Opportunity tier | Achievable (KD 21–35) |
+| Primary keyword | `google ads agency` - 1,300/mo, KD 22 |
+| Opportunity tier | Achievable (KD 21-35) |
 | Canonical | `https://www.inranktechnologies.com/services/ppc-agency-pune/` |
 | OG image | `/images/og/ppc-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `ppc agency` — 590/mo, KD 22
-- `ppc services` — 590/mo, KD 45
-- `ppc agency in pune` — 20/mo
+- `ppc agency` - 590/mo, KD 22
+- `ppc services` - 590/mo, KD 45
+- `ppc agency in pune` - 20/mo
 
 ---
 
@@ -27,7 +27,7 @@ Inrank manages Google Ads and PPC campaigns for Pune businesses with one goal: m
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![PPC and Google Ads Agency in Pune – Inrank Technologies team in Pune](/images/ppc/ppc-hero.webp)
+![PPC and Google Ads Agency in Pune - Inrank Technologies team in Pune](/images/ppc/ppc-hero.webp)
 
 ## Who this service is for
 
@@ -48,11 +48,11 @@ Inrank manages Google Ads and PPC campaigns for Pune businesses with one goal: m
 
 ## Our process
 
-1. **Audit** — Find wasted spend, tracking gaps and missed intent.
-2. **Structure** — Rebuild campaigns around high-intent keyword themes.
-3. **Land** — Match each ad group to a focused landing page.
-4. **Optimise** — Weekly bids, negatives, assets and budget shifts.
-5. **Feed quality** — Import qualified leads so Google bids for buyers, not clicks.
+1. **Audit** - Find wasted spend, tracking gaps and missed intent.
+2. **Structure** - Rebuild campaigns around high-intent keyword themes.
+3. **Land** - Match each ad group to a focused landing page.
+4. **Optimise** - Weekly bids, negatives, assets and budget shifts.
+5. **Feed quality** - Import qualified leads so Google bids for buyers, not clicks.
 
 ![PPC / Google Ads process at Inrank Technologies](/images/ppc/ppc-process.webp)
 
@@ -71,10 +71,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -197,6 +197,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `ppc-hero.webp` 1600×900 | PPC and Google Ads Agency in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to ppc / google ads |
+| `ppc-hero.webp` 1600×900 | PPC and Google Ads Agency in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to ppc / google ads |
 | `ppc-process.webp` 1200×800 | PPC / Google Ads process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/ppc-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/ppc-og.jpg` 1200×630 | - | Social share card with H1 + logo |

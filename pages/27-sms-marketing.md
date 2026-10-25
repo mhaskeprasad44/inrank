@@ -1,4 +1,4 @@
-# SMS Marketing — Page Content
+# SMS Marketing - Page Content
 
 ## SEO settings
 
@@ -8,25 +8,25 @@
 | SEO title (64 chars) | SMS Marketing Services in Pune | DLT-Compliant Bulk SMS | Inrank |
 | Meta description (137 chars) | DLT-compliant SMS marketing in Pune: promotional and transactional SMS, sender ID and template registration, segmentation and automation. |
 | H1 | SMS Marketing Services in Pune |
-| Primary keyword | `sms marketing` — 1,300/mo, KD 44 |
-| Opportunity tier | Competitive (KD 36–50) |
+| Primary keyword | `sms marketing` - 1,300/mo, KD 44 |
+| Opportunity tier | Competitive (KD 36-50) |
 | Canonical | `https://www.inranktechnologies.com/services/sms-marketing-pune/` |
 | OG image | `/images/og/sms-marketing-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `bulk sms in pune` — 20/mo
-- `bulk sms service` — (no Semrush India volume returned; long-tail/brand)
+- `bulk sms in pune` - 20/mo
+- `bulk sms service` - (no Semrush India volume returned; long-tail/brand)
 
 ---
 
 # SMS Marketing Services in Pune
 
-Inrank runs DLT-compliant SMS marketing for Pune businesses—promotional offers, OTPs, reminders and alerts—with sender ID and template registration, audience segmentation and automated triggers.
+Inrank runs DLT-compliant SMS marketing for Pune businesses - promotional offers, OTPs, reminders and alerts - with sender ID and template registration, audience segmentation and automated triggers.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![SMS Marketing Services in Pune – Inrank Technologies team in Pune](/images/sms-marketing/sms-marketing-hero.webp)
+![SMS Marketing Services in Pune - Inrank Technologies team in Pune](/images/sms-marketing/sms-marketing-hero.webp)
 
 ## Who this service is for
 
@@ -46,11 +46,11 @@ Inrank runs DLT-compliant SMS marketing for Pune businesses—promotional offers
 
 ## Our process
 
-1. **Register** — DLT entity, headers, templates.
-2. **Segment** — Build audience lists.
-3. **Send** — Scheduled or triggered campaigns.
-4. **Track** — Delivery and clicks.
-5. **Improve** — Test timing and messaging.
+1. **Register** - DLT entity, headers, templates.
+2. **Segment** - Build audience lists.
+3. **Send** - Scheduled or triggered campaigns.
+4. **Track** - Delivery and clicks.
+5. **Improve** - Test timing and messaging.
 
 ![SMS Marketing process at Inrank Technologies](/images/sms-marketing/sms-marketing-process.webp)
 
@@ -68,10 +68,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -172,6 +172,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `sms-marketing-hero.webp` 1600×900 | SMS Marketing Services in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to sms marketing |
+| `sms-marketing-hero.webp` 1600×900 | SMS Marketing Services in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to sms marketing |
 | `sms-marketing-process.webp` 1200×800 | SMS Marketing process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/sms-marketing-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/sms-marketing-og.jpg` 1200×630 | - | Social share card with H1 + logo |

@@ -1,4 +1,4 @@
-# Website Development — Page Content
+# Website Development - Page Content
 
 ## SEO settings
 
@@ -8,29 +8,29 @@
 | SEO title (62 chars) | Website Development Company in Pune | Fast, SEO-Ready | Inrank |
 | Meta description (149 chars) | Website development company in Pune building fast, mobile-first, SEO-ready business websites, ecommerce stores and web apps. Get a fixed-scope quote. |
 | H1 | Website Development Company in Pune |
-| Primary keyword | `website development company in pune` — 3,600/mo, KD 43 |
-| Opportunity tier | Competitive (KD 36–50) |
+| Primary keyword | `website development company in pune` - 3,600/mo, KD 43 |
+| Opportunity tier | Competitive (KD 36-50) |
 | Canonical | `https://www.inranktechnologies.com/website-development-company-pune/` |
 | OG image | `/images/og/website-development-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `web designing company in pune` — 3,600/mo, KD 50
-- `web design company in pune` — 3,600/mo, KD 50
-- `web development company in pune` — 2,400/mo, KD 43
-- `website development in pune` — 210/mo, KD 43
-- `web development services in pune` — 110/mo
-- `web development company near me` — 1,600/mo, KD 43
+- `web designing company in pune` - 3,600/mo, KD 50
+- `web design company in pune` - 3,600/mo, KD 50
+- `web development company in pune` - 2,400/mo, KD 43
+- `website development in pune` - 210/mo, KD 43
+- `web development services in pune` - 110/mo
+- `web development company near me` - 1,600/mo, KD 43
 
 ---
 
 # Website Development Company in Pune
 
-Inrank is a website development company in Pune that builds fast, mobile-first and SEO-ready websites designed to generate enquiries. Every build includes conversion planning, technical SEO, analytics setup and post-launch support—so your website works as a sales asset, not a brochure.
+Inrank is a website development company in Pune that builds fast, mobile-first and SEO-ready websites designed to generate enquiries. Every build includes conversion planning, technical SEO, analytics setup and post-launch support - so your website works as a sales asset, not a brochure.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![Website Development Company in Pune – Inrank Technologies team in Pune](/images/website-development/website-development-hero.webp)
+![Website Development Company in Pune - Inrank Technologies team in Pune](/images/website-development/website-development-hero.webp)
 
 ## Who this service is for
 
@@ -53,12 +53,12 @@ Inrank is a website development company in Pune that builds fast, mobile-first a
 
 ## Our process
 
-1. **Discover** — Goals, audience, competitors and content inventory.
-2. **Plan** — Sitemap, user journeys and wireframes.
-3. **Design** — Brand-led UI with conversion-focused layouts.
-4. **Develop** — Build, integrate and optimise for speed and SEO.
-5. **Test and launch** — Cross-device QA, redirects, tracking and go-live.
-6. **Support** — Maintenance, updates and CRO improvements.
+1. **Discover** - Goals, audience, competitors and content inventory.
+2. **Plan** - Sitemap, user journeys and wireframes.
+3. **Design** - Brand-led UI with conversion-focused layouts.
+4. **Develop** - Build, integrate and optimise for speed and SEO.
+5. **Test and launch** - Cross-device QA, redirects, tracking and go-live.
+6. **Support** - Maintenance, updates and CRO improvements.
 
 ![Website Development process at Inrank Technologies](/images/website-development/website-development-process.webp)
 
@@ -79,10 +79,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -228,6 +228,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `website-development-hero.webp` 1600×900 | Website Development Company in Pune – Inrank Technologies team in Pune | Real team/work photo relevant to website development |
+| `website-development-hero.webp` 1600×900 | Website Development Company in Pune - Inrank Technologies team in Pune | Real team/work photo relevant to website development |
 | `website-development-process.webp` 1200×800 | Website Development process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/website-development-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/website-development-og.jpg` 1200×630 | - | Social share card with H1 + logo |

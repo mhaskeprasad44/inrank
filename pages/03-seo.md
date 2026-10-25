@@ -1,4 +1,4 @@
-# SEO Services — Page Content
+# SEO Services - Page Content
 
 ## SEO settings
 
@@ -8,28 +8,28 @@
 | SEO title (55 chars) | SEO Company in Pune | SEO Services & Local SEO | Inrank |
 | Meta description (137 chars) | SEO company in Pune offering technical SEO, local SEO, content and link building. Get a free SEO opportunity audit with clear priorities. |
 | H1 | SEO Company in Pune for Sustainable Organic Leads |
-| Primary keyword | `seo company in pune` — 3,600/mo, KD 32 |
-| Opportunity tier | Achievable (KD 21–35) |
+| Primary keyword | `seo company in pune` - 3,600/mo, KD 32 |
+| Opportunity tier | Achievable (KD 21-35) |
 | Canonical | `https://www.inranktechnologies.com/services/seo-services-pune/` |
 | OG image | `/images/og/seo-og.jpg` (1200×630) |
 
 **Secondary keywords (Semrush, India DB):**
 
-- `seo agency in pune` — 1,300/mo, KD 38
-- `seo services in pune` — 880/mo, KD 34
-- `best seo company in pune` — 720/mo, KD 35
-- `seo expert in pune` — 390/mo, KD 22
-- `local seo company in pune` — 210/mo, KD 20
+- `seo agency in pune` - 1,300/mo, KD 38
+- `seo services in pune` - 880/mo, KD 34
+- `best seo company in pune` - 720/mo, KD 35
+- `seo expert in pune` - 390/mo, KD 22
+- `local seo company in pune` - 210/mo, KD 20
 
 ---
 
 # SEO Company in Pune for Sustainable Organic Leads
 
-Inrank is an SEO company in Pune that improves rankings and organic enquiries through technical SEO, search-intent content, local SEO and genuine authority building. We start with a free opportunity audit that shows which keywords can realistically bring leads—and how long they may take.
+Inrank is an SEO company in Pune that improves rankings and organic enquiries through technical SEO, search-intent content, local SEO and genuine authority building. We start with a free opportunity audit that shows which keywords can realistically bring leads - and how long they may take.
 
 **[Get a Free Audit]** · **[Call / WhatsApp]**
 
-![SEO Company in Pune for Sustainable Organic Leads – Inrank Technologies team in Pune](/images/seo/seo-hero.webp)
+![SEO Company in Pune for Sustainable Organic Leads - Inrank Technologies team in Pune](/images/seo/seo-hero.webp)
 
 ## Who this service is for
 
@@ -51,11 +51,11 @@ Inrank is an SEO company in Pune that improves rankings and organic enquiries th
 
 ## Our process
 
-1. **Audit** — Technical crawl, competitor gap and keyword opportunity sizing.
-2. **Fix foundations** — Indexation, speed, structure, schema and internal linking.
-3. **Optimise pages** — Map one primary intent to each page and improve content depth.
-4. **Build authority** — Earn local citations, partner links and PR mentions.
-5. **Measure** — Track rankings, clicks, calls and forms monthly in Search Console and GA4.
+1. **Audit** - Technical crawl, competitor gap and keyword opportunity sizing.
+2. **Fix foundations** - Indexation, speed, structure, schema and internal linking.
+3. **Optimise pages** - Map one primary intent to each page and improve content depth.
+4. **Build authority** - Earn local citations, partner links and PR mentions.
+5. **Measure** - Track rankings, clicks, calls and forms monthly in Search Console and GA4.
 
 ![SEO Services process at Inrank Technologies](/images/seo/seo-process.webp)
 
@@ -75,10 +75,10 @@ We share a written scope and fixed fee before any work begins.
 
 ## Why choose Inrank Technologies
 
-- **One accountable team** — website, traffic and tracking under one roof.
-- **Proof over promises** — reports link work to calls, forms and WhatsApp enquiries.
-- **Pune market knowledge** — local buyer behaviour, languages and competition.
-- **You own everything** — accounts, data, content and code are yours.
+- **One accountable team** - website, traffic and tracking under one roof.
+- **Proof over promises** - reports link work to calls, forms and WhatsApp enquiries.
+- **Pune market knowledge** - local buyer behaviour, languages and competition.
+- **You own everything** - accounts, data, content and code are yours.
 
 ## Frequently asked questions
 
@@ -224,6 +224,6 @@ Optional FAQPage markup (only if FAQs are visible on the page):
 
 | File | Alt text | Brief |
 |---|---|---|
-| `seo-hero.webp` 1600×900 | SEO Company in Pune for Sustainable Organic Leads – Inrank Technologies team in Pune | Real team/work photo relevant to seo services |
+| `seo-hero.webp` 1600×900 | SEO Company in Pune for Sustainable Organic Leads - Inrank Technologies team in Pune | Real team/work photo relevant to seo services |
 | `seo-process.webp` 1200×800 | SEO Services process at Inrank Technologies | Process diagram or real deliverable/screenshot |
-| `/images/og/seo-og.jpg` 1200×630 | — | Social share card with H1 + logo |
+| `/images/og/seo-og.jpg` 1200×630 | - | Social share card with H1 + logo |
