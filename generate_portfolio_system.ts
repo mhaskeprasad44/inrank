@@ -91,9 +91,9 @@ function getHeaderHTML(activeNav: string = "our-work") {
           </a>
 
           <!-- Desktop Navigation -->
-          <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+          <nav class="hidden md:flex items-center gap-5 lg:gap-7">
             
-            <!-- Services Dropdown -->
+            <!-- Services Dropdown (4 Pillars) -->
             <div class="relative group" id="services-nav-group">
               <button id="services-dropdown-trigger" class="flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors py-2 focus:outline-none cursor-pointer">
                 <span>Services</span>
@@ -105,7 +105,7 @@ function getHeaderHTML(activeNav: string = "our-work") {
                 <div class="rounded-2xl border border-border bg-white p-6 shadow-2xl">
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-left">
                     
-                    <!-- Web & E-Commerce -->
+                    <!-- Pillar 1: Web & E-Commerce -->
                     <div class="space-y-1.5">
                       <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600 pb-1 border-b border-border/50">
                         <i data-lucide="code-xml" class="w-4 h-4"></i>
@@ -120,6 +120,10 @@ function getHeaderHTML(activeNav: string = "our-work") {
                           <div class="text-xs font-bold text-foreground">Shopify &amp; E-Commerce Stores</div>
                           <div class="text-[11px] text-muted-foreground">0% transaction commission, WhatsApp cart</div>
                         </a>
+                        <a href="/#/service/wordpress-development" class="block p-2 rounded-lg hover:bg-slate-50 transition-colors">
+                          <div class="text-xs font-bold text-foreground">WordPress Development</div>
+                          <div class="text-[11px] text-muted-foreground">Custom themes &amp; speed optimization</div>
+                        </a>
                         <a href="/website-design-company-in-pune.html" class="block p-2 rounded-lg bg-emerald-50/50 hover:bg-emerald-50 transition-colors border border-emerald-100">
                           <div class="text-xs font-bold text-emerald-700 flex items-center justify-between">
                             <span>Web Designing in Pune (Local Hub)</span>
@@ -130,7 +134,7 @@ function getHeaderHTML(activeNav: string = "our-work") {
                       </div>
                     </div>
 
-                    <!-- AI Search & SEO -->
+                    <!-- Pillar 2: AI Search & SEO -->
                     <div class="space-y-1.5">
                       <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600 pb-1 border-b border-border/50">
                         <i data-lucide="search" class="w-4 h-4"></i>
@@ -145,12 +149,68 @@ function getHeaderHTML(activeNav: string = "our-work") {
                           <div class="text-xs font-bold text-foreground">Generative Engine Optimization (GEO)</div>
                           <div class="text-[11px] text-muted-foreground">Get cited in ChatGPT &amp; AI Overviews</div>
                         </a>
+                        <a href="/#/service/gmb-optimization" class="block p-2 rounded-lg hover:bg-slate-50 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Google My Business (GMB)</div>
+                          <div class="text-[11px] text-muted-foreground">Direct customer calls &amp; inquiries</div>
+                        </a>
+                        <a href="/#/service/backlink-building" class="block p-2 rounded-lg hover:bg-slate-50 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Backlink &amp; Authority Building</div>
+                          <div class="text-[11px] text-muted-foreground">High DA contextual editorial links</div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- Pillar 3: Paid Ads & Growth -->
+                    <div class="space-y-1.5">
+                      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-indigo-600 pb-1 border-b border-border/50">
+                        <i data-lucide="target" class="w-4 h-4"></i>
+                        <span>Paid Ads &amp; Growth</span>
+                      </div>
+                      <div class="space-y-0.5">
+                        <a href="/#/service/google-ads" class="block p-2 rounded-lg hover:bg-slate-50 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Google Ads Management (PPC)</div>
+                          <div class="text-[11px] text-muted-foreground">High-ROAS search &amp; Performance Max</div>
+                        </a>
+                        <a href="/#/service/meta-ads" class="block p-2 rounded-lg hover:bg-slate-50 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Meta &amp; Instagram Ads Funnels</div>
+                          <div class="text-[11px] text-muted-foreground">Laser-targeted customer acquisition</div>
+                        </a>
+                        <a href="/#/service/social-media-marketing" class="block p-2 rounded-lg hover:bg-slate-50 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Social Media Marketing</div>
+                          <div class="text-[11px] text-muted-foreground">Viral reels &amp; organic brand authority</div>
+                        </a>
                         <a href="/digital-marketing-agency-in-pune.html" class="block p-2 rounded-lg bg-indigo-50/50 hover:bg-indigo-50 transition-colors border border-indigo-100">
                           <div class="text-xs font-bold text-indigo-700 flex items-center justify-between">
                             <span>Digital Marketing in Pune (Local Hub)</span>
                             <span class="text-[9px] uppercase px-1.5 py-0.2 bg-indigo-600 text-white rounded font-bold">Pune</span>
                           </div>
                           <div class="text-[11px] text-muted-foreground">Multi-channel revenue generation</div>
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- Pillar 4: Brand & Creative -->
+                    <div class="space-y-1.5">
+                      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-rose-600 pb-1 border-b border-border/50">
+                        <i data-lucide="palette" class="w-4 h-4"></i>
+                        <span>Brand &amp; Creative</span>
+                      </div>
+                      <div class="space-y-0.5">
+                        <a href="/#/service/logo-design" class="block p-2 rounded-lg hover:bg-slate-50 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Corporate Logo &amp; Identity</div>
+                          <div class="text-[11px] text-muted-foreground">Trademark-ready vector brand kits</div>
+                        </a>
+                        <a href="/#/service/brand-name" class="block p-2 rounded-lg hover:bg-slate-50 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Brand Strategy &amp; Naming</div>
+                          <div class="text-[11px] text-muted-foreground">Linguistic checks &amp; .com acquisition</div>
+                        </a>
+                        <a href="/#/service/brochure-designing" class="block p-2 rounded-lg hover:bg-slate-50 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Brochure &amp; Sales Collaterals</div>
+                          <div class="text-[11px] text-muted-foreground">Corporate profiles &amp; catalogues</div>
+                        </a>
+                        <a href="/#/service/conversion-optimization" class="block p-2 rounded-lg hover:bg-slate-50 transition-colors">
+                          <div class="text-xs font-bold text-foreground">Conversion Rate Optimization (CRO)</div>
+                          <div class="text-[11px] text-muted-foreground">A/B tested UX &amp; lead funnels</div>
                         </a>
                       </div>
                     </div>
@@ -181,6 +241,23 @@ function getHeaderHTML(activeNav: string = "our-work") {
             <!-- Case Studies -->
             <a href="/case-studies.html" class="text-sm font-semibold ${activeNav === 'case-studies' ? 'text-emerald-600 font-bold' : 'text-muted-foreground hover:text-foreground hover:text-emerald-600'} transition-colors">Case Studies</a>
 
+            <!-- About Dropdown -->
+            <div class="relative group" id="about-nav-group">
+              <button class="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors py-2 focus:outline-none cursor-pointer">
+                <span>About</span>
+                <i data-lucide="chevron-down" class="h-4 w-4 text-muted-foreground transition-transform duration-200 group-hover:rotate-180"></i>
+              </button>
+              <div class="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-64 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                <div class="rounded-xl border border-border bg-white p-2 shadow-xl space-y-1 text-xs">
+                  <a href="/#/about-us" class="block p-2 rounded-lg hover:bg-slate-50 font-semibold text-foreground">About Inrank Overview</a>
+                  <a href="/website-design-company-in-pune.html" class="block p-2 rounded-lg hover:bg-slate-50 text-muted-foreground hover:text-foreground">&bull; Web Designing in Pune</a>
+                  <a href="/digital-marketing-agency-in-pune.html" class="block p-2 rounded-lg hover:bg-slate-50 text-muted-foreground hover:text-foreground">&bull; Digital Marketing in Pune</a>
+                  <a href="/#results" class="block p-2 rounded-lg hover:bg-slate-50 text-muted-foreground hover:text-foreground">Results &amp; Proof</a>
+                  <a href="/#faq" class="block p-2 rounded-lg hover:bg-slate-50 text-muted-foreground hover:text-foreground">FAQ Directory</a>
+                </div>
+              </div>
+            </div>
+
             <!-- Blog -->
             <a href="/#/blog" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors">Blog</a>
 
@@ -199,9 +276,8 @@ function getHeaderHTML(activeNav: string = "our-work") {
               <i data-lucide="message-circle" class="w-4 h-4"></i>
             </a>
 
-            <a href="/contact.html" class="inline-flex items-center justify-center gap-1.5 h-9 sm:h-10 px-3.5 sm:px-4 rounded-xl bg-primary text-primary-foreground font-semibold text-xs sm:text-sm hover:bg-primary/90 transition-all shadow-md shadow-primary/20">
-              <span>Free Audit</span>
-              <i data-lucide="arrow-right" class="w-3.5 h-3.5 hidden sm:inline"></i>
+            <a href="/contact.html" class="inline-flex h-9 sm:h-10 items-center justify-center font-bold text-xs bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl px-4 sm:px-5 transition-all shadow-sm shadow-emerald-600/20 active:scale-[0.98]">
+              Get Free Audit
             </a>
 
             <!-- Mobile Hamburger Toggle -->
@@ -219,10 +295,13 @@ function getHeaderHTML(activeNav: string = "our-work") {
         <div class="space-y-1">
           <a href="/" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Home</a>
           <a href="/our-work.html" class="block px-3 py-2 rounded-lg text-sm font-semibold ${activeNav === 'our-work' ? 'bg-primary/10 text-primary' : 'hover:bg-secondary'}">Our Work</a>
+          <a href="/case-studies.html" class="block px-3 py-2 rounded-lg text-sm font-semibold ${activeNav === 'case-studies' ? 'bg-primary/10 text-primary' : 'hover:bg-secondary'}">Case Studies</a>
           <a href="/pricing.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Pricing</a>
           <a href="/website-design-company-in-pune.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Web Designing in Pune</a>
           <a href="/digital-marketing-agency-in-pune.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Digital Marketing in Pune</a>
           <a href="/#/services" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">All 27 Services</a>
+          <a href="/#/about-us" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">About Inrank</a>
+          <a href="/#results" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Results &amp; Proof</a>
           <a href="/#/blog" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Blog Hub</a>
           <a href="/contact.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Contact Desk</a>
         </div>
@@ -384,11 +463,12 @@ function generateMasterWorkHTML(): string {
     schemaJSON
   );
 
-  const projectCardsHTML = PORTFOLIO_PROJECTS.map((project) => {
+  const projectCardsHTML = PORTFOLIO_PROJECTS.map((project, idx) => {
     const isCollab = project.category === "collaboration";
     const categoryFilterClass = isCollab ? "filter-collaboration" : "filter-direct";
     const seoFilterClass = (project.services.some(s => s.toLowerCase().includes("seo") || s.toLowerCase().includes("geo")) || project.id === "shetkarifoodstuff") ? "filter-seo" : "";
     const techFilterClass = project.services.some(s => s.toLowerCase().includes("react") || s.toLowerCase().includes("portal") || s.toLowerCase().includes("web")) ? "filter-tech" : "";
+    const caseNum = String(idx + 1).padStart(2, '0');
 
     return `
       <!-- Work Item Card: ${project.id} -->
@@ -400,17 +480,17 @@ function generateMasterWorkHTML(): string {
             <!-- Gradient Scrim for Guaranteed Tag Visibility -->
             <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/65 via-black/25 to-transparent z-10 pointer-events-none"></div>
 
-            <!-- Floating High-Contrast Domain & Category Tags -->
-            <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950/90 backdrop-blur-md text-[11px] font-semibold text-white border border-white/20 shadow-lg">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <!-- Floating High-Contrast Domain & Case Study Badge (User-Requested Design) -->
+            <div class="absolute top-3.5 left-3.5 z-20 flex items-center gap-2">
+              <span class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-slate-900/95 backdrop-blur-md text-xs sm:text-[13px] font-bold text-white border border-slate-700/80 shadow-md">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 shrink-0"></span>
                 <span>${project.domain}</span>
               </span>
             </div>
 
-            <div class="absolute top-3 right-3 z-20">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-950/90 backdrop-blur-md shadow-lg ${isCollab ? 'text-amber-300 border border-amber-400/50' : 'text-emerald-300 border border-emerald-400/50'}">
-                ${isCollab ? 'Outsourcing / Collab' : 'Direct Project'}
+            <div class="absolute top-3.5 right-3.5 z-20 flex items-center">
+              <span class="inline-flex items-center px-3.5 sm:px-4 py-1.5 rounded-full bg-emerald-600 text-white text-xs sm:text-[13px] font-extrabold uppercase tracking-wide shadow-md">
+                CASE STUDY ${caseNum}
               </span>
             </div>
 
@@ -1272,16 +1352,16 @@ function generateCaseStudiesHubHTML(): string {
           <div class="relative bg-slate-950 overflow-hidden aspect-[16/9] border-b border-slate-200">
             <div class="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-black/75 via-black/35 to-transparent z-10 pointer-events-none"></div>
             
-            <div class="absolute top-3 left-3 z-20 flex items-center gap-2">
-              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 backdrop-blur-md text-xs font-mono font-semibold text-white border border-white/20 shadow-md">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <div class="absolute top-3.5 left-3.5 z-20 flex items-center gap-2">
+              <span class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-slate-900/95 backdrop-blur-md text-xs sm:text-[13px] font-bold text-white border border-slate-700/80 shadow-md">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 shrink-0"></span>
                 <span>${project.domain}</span>
               </span>
             </div>
 
-            <div class="absolute top-3 right-3 z-20 flex items-center gap-2">
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600/95 backdrop-blur-md text-white shadow-md">
-                Case Study 0${idx + 1}
+            <div class="absolute top-3.5 right-3.5 z-20 flex items-center">
+              <span class="inline-flex items-center px-3.5 sm:px-4 py-1.5 rounded-full bg-emerald-600 text-white text-xs sm:text-[13px] font-extrabold uppercase tracking-wide shadow-md">
+                CASE STUDY ${String(idx + 1).padStart(2, '0')}
               </span>
             </div>
 
