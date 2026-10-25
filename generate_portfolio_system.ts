@@ -762,17 +762,26 @@ function generateMasterWorkHTML(): string {
 }
 
 // -------------------------------------------------------------
-// 2. INDIVIDUAL WORK CASE STUDY GENERATOR (Ting.in Vedanta Inspired)
+// 2. INDIVIDUAL WORK & CASE STUDY GENERATOR (Elementor Agency Style)
 // -------------------------------------------------------------
-function generateIndividualWorkHTML(project: PortfolioProject, prevProject: PortfolioProject, nextProject: PortfolioProject): string {
+function generateIndividualWorkHTML(
+  project: PortfolioProject, 
+  prevProject: PortfolioProject, 
+  nextProject: PortfolioProject,
+  moduleType: 'our-work' | 'case-studies' = 'our-work'
+): string {
   const isCollab = project.category === "collaboration";
+  const isCaseStudy = moduleType === "case-studies";
+  const basePath = isCaseStudy ? "/case-studies" : "/our-work";
+  const moduleLabel = isCaseStudy ? "Case Studies" : "Our Work";
+  const moduleHubUrl = isCaseStudy ? "/case-studies.html" : "/our-work.html";
 
   const schemaJSON = JSON.stringify({
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Article",
-        "@id": `https://inranktech.com/our-work/${project.id}.html#article`,
+        "@id": `https://inranktech.com${basePath}/${project.id}.html#article`,
         "isPartOf": {
           "@type": "WebSite",
           "@id": "https://inranktech.com/#website",
@@ -781,7 +790,7 @@ function generateIndividualWorkHTML(project: PortfolioProject, prevProject: Port
         },
         "headline": project.title,
         "description": project.metaDesc,
-        "url": `https://inranktech.com/our-work/${project.id}.html`,
+        "url": `https://inranktech.com${basePath}/${project.id}.html`,
         "datePublished": "2026-08-10",
         "author": {
           "@type": "Organization",
@@ -810,7 +819,7 @@ function generateIndividualWorkHTML(project: PortfolioProject, prevProject: Port
       },
       {
         "@type": "FAQPage",
-        "@id": `https://inranktech.com/our-work/${project.id}.html#faq`,
+        "@id": `https://inranktech.com${basePath}/${project.id}.html#faq`,
         "mainEntity": project.faqs.map(f => ({
           "@type": "Question",
           "name": f.question,
@@ -824,9 +833,9 @@ function generateIndividualWorkHTML(project: PortfolioProject, prevProject: Port
   }, null, 2);
 
   const head = getCommonHead(
-    `${project.clientName} Case Study | Our Work | Inrank Technologies`,
+    `${project.clientName} | ${moduleLabel} | Inrank Technologies`,
     project.metaDesc,
-    `/our-work/${project.id}.html`,
+    `${basePath}/${project.id}.html`,
     schemaJSON
   );
 
@@ -835,95 +844,99 @@ function generateIndividualWorkHTML(project: PortfolioProject, prevProject: Port
     .slice(0, 3);
 
   const bodyContent = `
-    ${getHeaderHTML('our-work')}
+    ${getHeaderHTML(isCaseStudy ? 'case-studies' : 'our-work')}
 
     <main class="relative pt-24 sm:pt-28 md:pt-36 pb-24 overflow-hidden font-sans">
       
-      <!-- BREADCRUMBS BAR -->
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
-        <nav class="flex items-center gap-2 text-xs text-muted-foreground" aria-label="Breadcrumb">
-          <a href="/" class="hover:text-primary transition-colors">Home</a>
+      <!-- 1. BREADCRUMBS BAR -->
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+        <nav class="flex items-center gap-2 text-sm font-medium text-slate-500" aria-label="Breadcrumb">
+          <a href="/" class="hover:text-emerald-600 transition-colors">Home</a>
           <span class="text-slate-300">/</span>
-          <a href="/our-work.html" class="hover:text-primary transition-colors">Our Work</a>
+          <a href="${moduleHubUrl}" class="hover:text-emerald-600 transition-colors">${moduleLabel}</a>
           <span class="text-slate-300">/</span>
-          <span class="text-foreground font-semibold truncate max-w-xs sm:max-w-sm">${project.clientName}</span>
+          <span class="text-slate-900 font-semibold truncate max-w-xs sm:max-w-md">${project.clientName}</span>
         </nav>
       </div>
 
-      <article class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <article class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14 sm:space-y-16">
         
-        <!-- HEADER & TING-STYLE META SECTION -->
-        <header class="space-y-6">
+        <!-- 2. PROJECT HERO HEADER -->
+        <header class="space-y-5">
           
-          <!-- Category Badge & Live URL Pill -->
-          <div class="flex flex-wrap items-center gap-2.5">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold ${isCollab ? 'bg-amber-500/10 text-amber-700 border border-amber-500/20' : 'bg-primary/10 text-primary border border-primary/20'}">
-              <i data-lucide="${isCollab ? 'handshake' : 'award'}" class="h-3.5 w-3.5"></i>
+          <!-- Category Badges & Metadata Chips -->
+          <div class="flex flex-wrap items-center gap-2.5 sm:gap-3">
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold ${isCollab ? 'bg-amber-50 text-amber-700 border border-amber-200' : 'bg-emerald-50 text-emerald-700 border border-emerald-200'}">
+              <i data-lucide="${isCollab ? 'handshake' : 'award'}" class="w-4 h-4 text-emerald-600"></i>
               <span>${project.categoryBadge}</span>
             </span>
 
-            <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 hover:bg-emerald-100 transition-colors">
-              <i data-lucide="globe" class="h-3.5 w-3.5 text-emerald-600"></i>
-              <span>${project.domain}</span>
-              <i data-lucide="arrow-up-right" class="h-3 w-3"></i>
-            </a>
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+              <i data-lucide="clock" class="w-3.5 h-3.5 text-slate-500"></i>
+              <span>${project.timeline}</span>
+            </span>
 
-            <span class="px-2.5 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200">
-              ${project.timeline}
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-500"></i>
+              <span>${project.location}</span>
             </span>
           </div>
 
-          <!-- Main Case Study Headline -->
-          <div class="space-y-2">
-            <h1 class="font-display font-black text-3xl sm:text-5xl lg:text-6xl text-foreground tracking-tight leading-[1.1]">
+          <!-- Project Title & Subtitle -->
+          <div class="space-y-3">
+            <h1 class="font-display font-black text-3xl sm:text-5xl lg:text-6xl text-slate-900 tracking-tight leading-[1.12]">
               ${project.clientName}
             </h1>
-            <p class="font-display font-bold text-xl sm:text-2xl text-emerald-700 leading-snug">
+            <p class="font-display font-bold text-xl sm:text-2xl text-emerald-700 leading-snug max-w-4xl">
               ${project.heroHeadline}
             </p>
           </div>
 
-          <!-- TING VEDANTA META BLOCK (Services, Client, Sector, Timeline, Live URL) -->
-          <div class="rounded-2xl border border-border bg-card/90 shadow-sm p-6 sm:p-7 backdrop-blur-sm">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 text-left">
+          <!-- 3. ELEMENTOR-STYLE PROJECT META SPEC BAR -->
+          <div class="rounded-2xl border border-slate-200 bg-white shadow-sm p-6 sm:p-8 mt-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 items-center">
               
-              <div class="lg:col-span-2 space-y-1">
-                <div class="text-[10px] font-bold uppercase tracking-wider text-muted-foreground flex items-center gap-1">
-                  <i data-lucide="check-circle" class="w-3 h-3 text-emerald-600"></i>
-                  <span>Services Delivered</span>
-                </div>
-                <div class="text-xs sm:text-sm font-semibold text-foreground leading-relaxed">
-                  ${project.metaServices ? project.metaServices.join(", ") : project.services.slice(0, 4).join(", ")}
-                </div>
+              <!-- Meta 1: Client & Location -->
+              <div class="space-y-1 sm:border-r border-slate-100 pr-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 flex items-center gap-1.5">
+                  <i data-lucide="building-2" class="w-4 h-4"></i>
+                  <span>Client &amp; City</span>
+                </span>
+                <div class="text-base font-bold text-slate-900">${project.clientName}</div>
+                <div class="text-sm text-slate-500">${project.location}</div>
               </div>
 
-              <div class="space-y-1">
-                <div class="text-[10px] font-bold uppercase tracking-wider text-muted-foreground flex items-center gap-1">
-                  <i data-lucide="briefcase" class="w-3 h-3 text-emerald-600"></i>
-                  <span>Client &amp; Location</span>
-                </div>
-                <div class="text-xs sm:text-sm font-semibold text-foreground">${project.clientName}</div>
-                <div class="text-[11px] text-muted-foreground">${project.location}</div>
-              </div>
-
-              <div class="space-y-1">
-                <div class="text-[10px] font-bold uppercase tracking-wider text-muted-foreground flex items-center gap-1">
-                  <i data-lucide="target" class="w-3 h-3 text-emerald-600"></i>
+              <!-- Meta 2: Industry Sector -->
+              <div class="space-y-1 lg:border-r border-slate-100 pr-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 flex items-center gap-1.5">
+                  <i data-lucide="briefcase" class="w-4 h-4"></i>
                   <span>Industry Sector</span>
+                </span>
+                <div class="text-base font-bold text-slate-900 line-clamp-1" title="${project.sector || project.industry}">
+                  ${project.sector || project.industry}
                 </div>
-                <div class="text-xs sm:text-sm font-semibold text-foreground">${project.sector || project.industry}</div>
-                <div class="text-[11px] text-muted-foreground">${project.timeline}</div>
+                <div class="text-sm text-slate-500">Turnaround: ${project.timeline}</div>
               </div>
 
-              <div class="space-y-1 flex flex-col justify-end">
-                <div class="text-[10px] font-bold uppercase tracking-wider text-muted-foreground flex items-center gap-1 mb-1">
-                  <i data-lucide="external-link" class="w-3 h-3 text-emerald-600"></i>
-                  <span>Live Production</span>
+              <!-- Meta 3: Core Scope of Work -->
+              <div class="space-y-1 sm:border-r border-slate-100 pr-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 flex items-center gap-1.5">
+                  <i data-lucide="layers" class="w-4 h-4"></i>
+                  <span>Services Scope</span>
+                </span>
+                <div class="text-base font-bold text-slate-900 line-clamp-1" title="${project.metaServices ? project.metaServices.join(', ') : project.services.join(', ')}">
+                  ${project.metaServices ? project.metaServices.slice(0, 3).join(", ") : project.services.slice(0, 3).join(", ")}
                 </div>
-                <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 h-10 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs shadow-sm transition-colors text-center">
-                  <span>Visit Live Site</span>
-                  <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                <div class="text-sm text-slate-500">Full Production Build</div>
+              </div>
+
+              <!-- Meta 4: Live Website CTA Button -->
+              <div class="flex flex-col items-stretch sm:items-start lg:items-center justify-center">
+                <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all text-center">
+                  <span>Visit Live Website</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                 </a>
+                <span class="text-xs text-slate-400 mt-2 font-mono text-center">${project.domain}</span>
               </div>
 
             </div>
@@ -931,256 +944,178 @@ function generateIndividualWorkHTML(project: PortfolioProject, prevProject: Port
 
         </header>
 
-        <!-- HUMAN-CRAFTED ELEMENTOR AGENCY WEBSITE SHOWCASE -->
-        <section class="rounded-2xl border border-border bg-card shadow-2xl overflow-hidden p-2.5 sm:p-4">
-          <div class="rounded-xl overflow-hidden border border-border/70 shadow-sm">
+        <!-- 4. HIGH-RESOLUTION BROWSER SHOWCASE FRAME -->
+        <section class="rounded-2xl border border-slate-200 bg-white shadow-xl overflow-hidden">
+          <!-- Browser Window Controls Bar -->
+          <div class="h-11 bg-slate-100 border-b border-slate-200 px-4 sm:px-6 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-rose-400"></span>
+              <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+              <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+            </div>
+            
+            <div class="flex-1 max-w-md mx-auto hidden sm:flex items-center justify-center">
+              <div class="w-full bg-white border border-slate-200 rounded-lg px-4 py-1 text-xs text-slate-500 font-mono text-center truncate shadow-xs">
+                https://${project.domain}
+              </div>
+            </div>
+
+            <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 inline-flex items-center gap-1.5 transition-colors">
+              <span class="hidden sm:inline">Open Live URL</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+
+          <!-- Screenshot Viewport -->
+          <div class="bg-slate-50">
             <img 
               src="${project.screenshot}" 
               alt="${project.clientName} live website design by Inrank Technologies" 
-              class="w-full h-auto object-cover object-top block" 
+              class="w-full h-auto block object-top" 
               loading="eager"
             />
           </div>
         </section>
 
-        <!-- THE PROBLEM STATEMENT (TING VEDANTA QUESTION & ANSWER SPLIT) -->
-        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pt-4">
+        <!-- 5. ABOUT THE PROJECT & SCOPE (Balanced 2-Column Section) -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start pt-2">
           
-          <!-- Left Column: Ting Question & Answer Block (5 Cols) -->
-          <div class="lg:col-span-5 space-y-4">
-            
-            <div class="p-6 rounded-2xl border border-border bg-card shadow-sm space-y-5">
-              <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-rose-500/10 text-rose-700 border border-rose-500/20">
-                <i data-lucide="help-circle" class="w-3 h-3 text-rose-600"></i>
-                <span>The Core Challenge</span>
-              </div>
-
-              <!-- Question Box -->
-              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
-                <div class="text-[11px] font-bold uppercase tracking-wider text-rose-600">Question</div>
-                <p class="text-sm sm:text-base font-bold text-foreground leading-snug">
-                  "${project.tingQuestion || project.challenges[0]}"
-                </p>
-              </div>
-
-              <!-- Answer Box -->
-              <div class="p-4 rounded-xl bg-emerald-50/70 border border-emerald-200 space-y-1">
-                <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-700">Answer</div>
-                <p class="text-xs sm:text-sm font-semibold text-emerald-950 leading-relaxed">
-                  "${project.tingAnswer || project.strategicSolution.overview}"
-                </p>
-              </div>
-
-              <!-- Strategic Highlights Checklist -->
-              <div class="pt-2 space-y-2 text-xs border-t border-border/60">
-                <div class="font-bold text-foreground text-[11px] uppercase tracking-wider">Key Bottlenecks Solved:</div>
-                ${project.challenges.map(c => `
-                  <div class="flex items-start gap-2 text-muted-foreground">
-                    <i data-lucide="alert-circle" class="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5"></i>
-                    <span>${c}</span>
-                  </div>
-                `).join("")}
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Right Column: Rich Narrative & Background (7 Cols) -->
-          <div class="lg:col-span-7 space-y-6">
-            
-            <div class="p-6 sm:p-8 rounded-2xl border border-border bg-card shadow-sm space-y-5">
-              <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 border border-emerald-500/20">
-                <i data-lucide="book-open" class="w-3 h-3 text-emerald-600"></i>
-                <span>Background &amp; Market Context</span>
-              </div>
-
-              <h2 class="font-display font-bold text-2xl text-foreground">
-                Deconstructing The Business Landscape
+          <!-- Left Column: Context & Narrative (7 cols) -->
+          <div class="lg:col-span-7 space-y-5">
+            <div class="space-y-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">The Context</span>
+              <h2 class="font-display font-bold text-2xl sm:text-3xl text-slate-900 leading-tight">
+                About The Project &amp; Background
               </h2>
+            </div>
 
-              <p class="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                ${project.clientBackground}
-              </p>
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+              ${project.clientBackground}
+            </p>
 
-              <p class="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                ${project.strategicSolution.overview}
-              </p>
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+              ${project.strategicSolution.overview}
+            </p>
+          </div>
 
-              <!-- Live Telemetry Mini-Strip -->
-              <div class="pt-4 border-t border-border/60 grid grid-cols-2 sm:grid-cols-4 gap-3">
-                ${project.results.metrics.map(m => `
-                  <div class="p-3 rounded-xl bg-slate-50 border border-border/60">
-                    <div class="text-[10px] text-muted-foreground truncate">${m.label}</div>
-                    <div class="text-sm font-extrabold text-foreground font-mono mt-0.5">${m.after}</div>
-                    <div class="text-[10px] text-emerald-600 font-semibold">${m.change}</div>
+          <!-- Right Column: Project Scope & Bottlenecks Solved (5 cols) -->
+          <div class="lg:col-span-5">
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm space-y-5">
+              <div class="space-y-1">
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Project Objectives</span>
+                <h3 class="font-display font-bold text-xl text-slate-900">Challenges Solved</h3>
+              </div>
+
+              <div class="space-y-4">
+                ${project.challenges.map(c => `
+                  <div class="flex items-start gap-3">
+                    <div class="w-6 h-6 rounded-full bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5 border border-emerald-200">
+                      <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    </div>
+                    <p class="text-sm sm:text-base text-slate-700 leading-relaxed font-medium">
+                      ${c}
+                    </p>
                   </div>
                 `).join("")}
               </div>
             </div>
-
           </div>
 
         </section>
 
-        <!-- FULL-WIDTH BIG IMPACT TITLE BANNER (Exact Ting Vedanta Pattern) -->
-        <section class="rounded-3xl bg-gradient-to-r from-slate-900 via-zinc-900 to-slate-900 text-white p-8 sm:p-14 shadow-2xl text-center space-y-4">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white/10 text-white border border-white/20 shadow-xs">
-            <i data-lucide="compass" class="w-3.5 h-3.5 text-emerald-400"></i>
-            <span>Strategic Philosophy &amp; Impact</span>
-          </div>
-
-          <h2 class="font-display font-black text-2xl sm:text-4xl lg:text-5xl text-white tracking-tight max-w-4xl mx-auto leading-tight">
-            ${project.bigTitleBanner || project.heroHeadline}
-          </h2>
-
-          <p class="text-xs sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Engineered by Inrank Technologies to transform digital friction into compounding commercial market share.
-          </p>
-        </section>
-
-        <!-- KEY USPs / STRATEGIC PILLARS (Exact Ting Vedanta Pattern) -->
-        <section class="space-y-6 pt-2">
+        <!-- 6. STRATEGIC SOLUTIONS & KEY FEATURES DELIVERED -->
+        <section class="space-y-8 pt-4">
           
-          <div class="text-center max-w-2xl mx-auto space-y-2">
-            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 border border-emerald-500/20">
-              <i data-lucide="zap" class="w-3 h-3 text-emerald-600"></i>
-              <span>Architectural Pillars</span>
-            </div>
-            <h2 class="font-display font-bold text-2xl sm:text-3xl text-foreground">
-              Strategic Solutions &amp; Key USPs
+          <div class="text-center max-w-3xl mx-auto space-y-3">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">What We Engineered</span>
+            <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-slate-900 tracking-tight">
+              Strategic Solutions &amp; Key Features
             </h2>
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+              Engineered by Inrank Technologies to transform digital presence into high-converting commercial authority.
+            </p>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             ${(project.usps && project.usps.length ? project.usps : project.strategicSolution.pillars).map((usp, idx) => `
-              <div class="p-6 sm:p-7 rounded-2xl border border-border bg-card/90 shadow-sm hover:shadow-md hover:border-emerald-500/40 transition-all space-y-3">
+              <div class="rounded-2xl border border-slate-200 bg-white p-7 sm:p-8 shadow-sm hover:shadow-md hover:border-emerald-500/40 transition-all space-y-4">
                 <div class="flex items-center justify-between">
-                  <div class="h-10 w-10 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center">
-                    <i data-lucide="${usp.icon || 'check-circle'}" class="w-5 h-5"></i>
+                  <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                    <i data-lucide="${usp.icon || 'check-circle'}" class="w-6 h-6"></i>
                   </div>
-                  <span class="font-mono text-xs font-bold text-slate-400">0${idx + 1}</span>
+                  <span class="text-xs font-mono font-bold text-slate-400 uppercase tracking-widest">Feature 0${idx + 1}</span>
                 </div>
-                <h3 class="font-display font-bold text-lg text-foreground">${usp.title}</h3>
-                <p class="text-xs sm:text-sm text-muted-foreground leading-relaxed">${usp.description}</p>
+                <h3 class="font-display font-bold text-xl text-slate-900 leading-snug">${usp.title}</h3>
+                <p class="text-base text-slate-600 leading-relaxed">${usp.description}</p>
               </div>
             `).join("")}
           </div>
 
         </section>
 
-        <!-- ARCHITECTURE, CORE WEB VITALS & DELIVERABLES -->
-        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pt-6">
+        <!-- 7. DELIVERABLES & CLIENT TESTIMONIAL -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start pt-4">
           
-          <!-- Technical Architecture (7 Cols) -->
+          <!-- Deliverables Checklist (7 cols) -->
           <div class="lg:col-span-7 space-y-6">
-            
-            <div class="p-6 sm:p-7 rounded-2xl border border-border bg-card shadow-sm space-y-5">
-              <h3 class="font-display font-bold text-xl text-foreground flex items-center gap-2">
-                <i data-lucide="cpu" class="w-5 h-5 text-emerald-600"></i>
-                <span>Technical Architecture &amp; Production Stack</span>
-              </h3>
-              
-              <p class="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                ${project.technicalArchitecture.stackOverview}
-              </p>
-
-              <!-- Layers Table -->
-              <div class="space-y-2 pt-2">
-                ${project.technicalArchitecture.layers.map(layer => `
-                  <div class="p-3 rounded-xl bg-slate-50 border border-border/70 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
-                    <div>
-                      <div class="font-bold text-foreground">${layer.layer}</div>
-                      <div class="text-[11px] text-muted-foreground">${layer.role}</div>
-                    </div>
-                    <span class="font-mono px-2 py-1 rounded bg-white border border-border text-[11px] font-semibold text-emerald-700 shrink-0 self-start sm:self-auto">
-                      ${layer.tech}
-                    </span>
-                  </div>
-                `).join("")}
-              </div>
-
-              <!-- Speed & AI Bullets -->
-              <div class="pt-4 border-t border-border/60 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-                <div class="space-y-1.5">
-                  <div class="font-bold text-foreground flex items-center gap-1.5">
-                    <i data-lucide="gauge" class="w-3.5 h-3.5 text-emerald-600"></i>
-                    <span>Speed &amp; Core Web Vitals</span>
-                  </div>
-                  <ul class="space-y-1 text-muted-foreground text-[11px]">
-                    ${project.technicalArchitecture.speedAndPerformance.map(s => `<li>&bull; ${s}</li>`).join("")}
-                  </ul>
-                </div>
-
-                <div class="space-y-1.5">
-                  <div class="font-bold text-foreground flex items-center gap-1.5">
-                    <i data-lucide="bot" class="w-3.5 h-3.5 text-emerald-600"></i>
-                    <span>AI Search &amp; GEO Ingestion</span>
-                  </div>
-                  <ul class="space-y-1 text-muted-foreground text-[11px]">
-                    ${project.technicalArchitecture.aiAndGeoStrategy.map(a => `<li>&bull; ${a}</li>`).join("")}
-                  </ul>
-                </div>
-              </div>
-
+            <div class="space-y-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Assets &amp; Handover</span>
+              <h3 class="font-display font-bold text-2xl sm:text-3xl text-slate-900">Verified Project Deliverables</h3>
             </div>
 
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              ${project.deliverables.map(d => `
+                <div class="rounded-xl border border-slate-200 bg-white p-5 space-y-2 shadow-xs hover:border-slate-300 transition-colors">
+                  <div class="flex items-center gap-2.5 font-bold text-base text-slate-900">
+                    <i data-lucide="${d.icon || 'check'}" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                    <span>${d.title}</span>
+                  </div>
+                  <p class="text-sm text-slate-600 leading-relaxed pl-6">
+                    ${d.description}
+                  </p>
+                </div>
+              `).join("")}
+            </div>
           </div>
 
-          <!-- Deliverables Checklist (5 Cols) -->
+          <!-- Client Testimonial Box (5 cols) -->
           <div class="lg:col-span-5 space-y-6">
-            
-            <div class="p-6 rounded-2xl border border-border bg-card shadow-sm space-y-4">
-              <h3 class="font-display font-bold text-lg text-foreground flex items-center gap-2">
-                <i data-lucide="package-check" class="w-5 h-5 text-emerald-600"></i>
-                <span>Verified Deliverables</span>
-              </h3>
-
-              <div class="space-y-2.5">
-                ${project.deliverables.map(d => `
-                  <div class="p-3 rounded-xl bg-slate-50 border border-border/70 space-y-1 text-xs">
-                    <div class="font-bold text-foreground flex items-center gap-1.5">
-                      <i data-lucide="${d.icon || 'check'}" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
-                      <span>${d.title}</span>
-                    </div>
-                    <p class="text-[11px] text-muted-foreground leading-relaxed pl-5">
-                      ${d.description}
-                    </p>
-                  </div>
-                `).join("")}
+            <div class="rounded-2xl border border-emerald-200 bg-emerald-50/50 p-7 sm:p-8 space-y-5 shadow-sm">
+              <div class="flex items-center gap-1 text-amber-500">
+                <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
               </div>
-            </div>
-
-            <!-- Client Testimonial Box -->
-            <div class="p-6 rounded-2xl border border-emerald-500/30 bg-emerald-50/40 space-y-3">
-              <i data-lucide="quote" class="w-6 h-6 text-emerald-600"></i>
-              <p class="text-xs sm:text-sm italic text-slate-800 leading-relaxed font-sans">
+              <p class="text-base sm:text-lg italic text-slate-800 leading-relaxed">
                 "${project.testimonial.quote}"
               </p>
-              <div class="pt-2 border-t border-emerald-200/60 text-xs">
-                <div class="font-bold text-foreground">${project.testimonial.author}</div>
-                <div class="text-[11px] text-emerald-700">${project.testimonial.role}, ${project.testimonial.company}</div>
+              <div class="pt-4 border-t border-emerald-200/80">
+                <div class="font-bold text-base text-slate-900">${project.testimonial.author}</div>
+                <div class="text-sm text-emerald-700 font-medium">${project.testimonial.role}, ${project.testimonial.company}</div>
               </div>
             </div>
-
           </div>
 
         </section>
 
-        <!-- PROJECT FAQS -->
-        <section class="max-w-4xl mx-auto space-y-4 pt-6">
-          <div class="text-center space-y-1">
-            <h3 class="font-display font-bold text-xl sm:text-2xl text-foreground">Frequently Asked Questions</h3>
-            <p class="text-xs text-muted-foreground">Technical and strategic insights into the ${project.clientName} deployment.</p>
+        <!-- 8. FREQUENTLY ASKED QUESTIONS -->
+        <section class="max-w-4xl mx-auto space-y-6 pt-6">
+          <div class="text-center space-y-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Got Questions?</span>
+            <h3 class="font-display font-bold text-2xl sm:text-3xl text-slate-900">Frequently Asked Questions</h3>
+            <p class="text-base text-slate-600">Details about the ${project.clientName} deployment and architecture.</p>
           </div>
 
-          <div class="space-y-3 pt-2">
+          <div class="space-y-4 pt-2">
             ${project.faqs.map(faq => `
-              <div class="p-5 rounded-2xl border border-border bg-card space-y-2">
-                <div class="font-bold text-sm text-foreground flex items-start gap-2">
-                  <i data-lucide="help-circle" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+              <div class="rounded-2xl border border-slate-200 bg-white p-6 sm:p-7 shadow-sm space-y-2.5">
+                <div class="font-bold text-lg text-slate-900 flex items-start gap-3">
+                  <i data-lucide="help-circle" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
                   <span>${faq.question}</span>
                 </div>
-                <p class="text-xs text-muted-foreground leading-relaxed pl-6">
+                <p class="text-base text-slate-600 leading-relaxed pl-8">
                   ${faq.answer}
                 </p>
               </div>
@@ -1188,34 +1123,59 @@ function generateIndividualWorkHTML(project: PortfolioProject, prevProject: Port
           </div>
         </section>
 
-        <!-- RELATED OUR WORK GRID -->
-        <section class="border-t border-border pt-12 space-y-6">
+        <!-- 9. PREVIOUS & NEXT PROJECT NAVIGATION -->
+        <section class="border-t border-slate-200 pt-10">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a href="${basePath}/${prevProject.id}.html" class="group rounded-2xl border border-slate-200 bg-white p-5 hover:border-emerald-500/40 hover:shadow-md transition-all flex items-center gap-4">
+              <div class="w-10 h-10 rounded-xl bg-slate-100 group-hover:bg-emerald-50 text-slate-600 group-hover:text-emerald-600 flex items-center justify-center shrink-0 transition-colors">
+                <i data-lucide="arrow-left" class="w-5 h-5"></i>
+              </div>
+              <div class="min-w-0">
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Previous Project</span>
+                <div class="font-bold text-base text-slate-900 group-hover:text-emerald-600 truncate transition-colors">${prevProject.clientName}</div>
+              </div>
+            </a>
+
+            <a href="${basePath}/${nextProject.id}.html" class="group rounded-2xl border border-slate-200 bg-white p-5 hover:border-emerald-500/40 hover:shadow-md transition-all flex items-center justify-end gap-4 text-right">
+              <div class="min-w-0">
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Next Project</span>
+                <div class="font-bold text-base text-slate-900 group-hover:text-emerald-600 truncate transition-colors">${nextProject.clientName}</div>
+              </div>
+              <div class="w-10 h-10 rounded-xl bg-slate-100 group-hover:bg-emerald-50 text-slate-600 group-hover:text-emerald-600 flex items-center justify-center shrink-0 transition-colors">
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- 10. RELATED PROJECTS GRID -->
+        <section class="space-y-6 pt-4">
           <div class="flex items-center justify-between">
             <div class="space-y-1">
-              <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-600">More Client Stories</span>
-              <h3 class="font-display font-bold text-xl sm:text-2xl text-foreground">Explore Other Production Works</h3>
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">More Client Stories</span>
+              <h3 class="font-display font-bold text-2xl text-slate-900">Explore Other Production Works</h3>
             </div>
-            <a href="/our-work.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600 hover:text-emerald-700">
+            <a href="${moduleHubUrl}" class="inline-flex items-center gap-1.5 text-sm font-bold text-emerald-600 hover:text-emerald-700 transition-colors">
               <span>View All 10 Works</span>
-              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
             ${relatedProjects.map(rel => `
-              <a href="/our-work/${rel.id}.html" class="group block rounded-2xl border border-border bg-card overflow-hidden shadow-xs hover:shadow-lg hover:border-emerald-500/40 transition-all">
+              <a href="${basePath}/${rel.id}.html" class="group block rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-xs hover:shadow-lg hover:border-emerald-500/40 transition-all">
                 <div class="relative bg-slate-900 aspect-[16/10] overflow-hidden">
                   <img src="${rel.screenshot}" alt="${rel.clientName} screenshot" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300" loading="lazy" />
-                  <div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-black/60 text-white text-[10px] font-mono">
+                  <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-md bg-black/60 text-white text-xs font-mono">
                     ${rel.domain}
                   </div>
                 </div>
-                <div class="p-4 space-y-1">
-                  <div class="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">${rel.sector || rel.industry}</div>
-                  <div class="font-display font-bold text-sm text-foreground group-hover:text-emerald-600 transition-colors line-clamp-1">${rel.title}</div>
-                  <div class="text-[11px] text-emerald-600 font-semibold pt-1 flex items-center gap-1">
-                    <span>Explore Case Study</span>
-                    <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                <div class="p-5 space-y-2">
+                  <div class="text-xs font-bold uppercase tracking-wider text-emerald-600">${rel.sector || rel.industry}</div>
+                  <div class="font-display font-bold text-base text-slate-900 group-hover:text-emerald-600 transition-colors line-clamp-1">${rel.clientName}</div>
+                  <div class="text-xs text-slate-500 font-semibold pt-1 flex items-center gap-1 group-hover:text-emerald-600 transition-colors">
+                    <span>View Project</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
                   </div>
                 </div>
               </a>
@@ -1223,35 +1183,35 @@ function generateIndividualWorkHTML(project: PortfolioProject, prevProject: Port
           </div>
         </section>
 
-        <!-- BOTTOM CONVERSION CTA -->
-        <section class="rounded-3xl border border-primary/30 bg-gradient-to-br from-card via-card to-primary/5 p-8 sm:p-12 shadow-xl text-center space-y-6">
-          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 border border-emerald-500/20">
-            <i data-lucide="zap" class="h-3.5 w-3.5 text-emerald-600"></i>
+        <!-- 11. BOTTOM CONVERSION CTA BANNER -->
+        <section class="rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-white via-white to-emerald-50/30 p-8 sm:p-14 shadow-xl text-center space-y-6">
+          <div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 border border-emerald-500/20">
+            <i data-lucide="zap" class="h-4 w-4 text-emerald-600"></i>
             <span>Ready To Scale?</span>
           </div>
           
-          <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-foreground max-w-2xl mx-auto leading-tight">
+          <h2 class="font-display font-extrabold text-2xl sm:text-4xl lg:text-5xl text-slate-900 max-w-2xl mx-auto leading-tight">
             Like Our Work? Let's Build Your Next Digital Growth Engine.
           </h2>
 
-          <p class="text-xs sm:text-sm text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Get a tailored 45-point technical, SEO, and conversion audit for your business. Sub-second speed and category dominance engineered from Day 1.
+          <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+            Get a tailored technical, SEO, and conversion audit for your business. Sub-second speed and category dominance engineered from Day 1.
           </p>
 
-          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a href="/contact.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-primary text-primary-foreground font-semibold text-sm shadow-md hover:bg-primary/95 transition-all">
+          <div class="pt-3 flex flex-col sm:flex-row items-center justify-center gap-3.5">
+            <a href="/contact.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-12 px-7 rounded-xl bg-emerald-600 text-white font-bold text-sm shadow-md hover:bg-emerald-700 transition-all">
               <span>Request Free Growth Audit</span>
               <i data-lucide="arrow-right" class="h-4 w-4"></i>
             </a>
 
-            <a href="https://wa.me/918788823182?text=Hi%20Inrank%2C%20I%20reviewed%20the%20${encodeURIComponent(project.clientName)}%20case%20study%20and%20want%20to%20discuss%20a%20similar%20project." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl border border-border bg-card hover:bg-emerald-600 hover:text-white hover:border-emerald-600 text-foreground font-semibold text-sm transition-all shadow-sm">
+            <a href="https://wa.me/918788823182?text=Hi%20Inrank%2C%20I%20reviewed%20the%20${encodeURIComponent(project.clientName)}%20showcase%20and%20want%20to%20discuss%20a%20similar%20project." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-12 px-7 rounded-xl border border-slate-200 bg-white hover:bg-emerald-50 hover:text-emerald-700 hover:border-emerald-300 text-slate-800 font-bold text-sm transition-all shadow-sm">
               <i data-lucide="message-circle" class="h-4 w-4 text-emerald-600"></i>
               <span>WhatsApp Strategy Desk (+91 87888 23182)</span>
             </a>
           </div>
 
-          <div class="text-[11px] text-muted-foreground flex items-center justify-center gap-4 pt-2">
-            <span class="flex items-center gap-1"><i data-lucide="shield-check" class="h-3.5 w-3.5 text-emerald-600"></i> 100% Strict NDA</span>
+          <div class="text-xs text-slate-500 flex flex-wrap items-center justify-center gap-4 pt-2">
+            <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="h-4 w-4 text-emerald-600"></i> 100% Strict NDA</span>
             <span>&bull;</span>
             <span>48-Hour Turnaround</span>
             <span>&bull;</span>
@@ -1449,12 +1409,11 @@ function buildAll() {
     const prevProject = PORTFOLIO_PROJECTS[(idx - 1 + PORTFOLIO_PROJECTS.length) % PORTFOLIO_PROJECTS.length];
     const nextProject = PORTFOLIO_PROJECTS[(idx + 1) % PORTFOLIO_PROJECTS.length];
 
-    const projectHTML = generateIndividualWorkHTML(project, prevProject, nextProject);
-    
-    // Write to our-work/{id}.html
-    fs.writeFileSync(path.join(ourWorkDir, `${project.id}.html`), projectHTML, "utf-8");
-    // Write to case-studies/{id}.html for backwards compatibility
-    fs.writeFileSync(path.join(caseStudiesDir, `${project.id}.html`), projectHTML, "utf-8");
+    const workHTML = generateIndividualWorkHTML(project, prevProject, nextProject, 'our-work');
+    fs.writeFileSync(path.join(ourWorkDir, `${project.id}.html`), workHTML, "utf-8");
+
+    const caseStudyHTML = generateIndividualWorkHTML(project, prevProject, nextProject, 'case-studies');
+    fs.writeFileSync(path.join(caseStudiesDir, `${project.id}.html`), caseStudyHTML, "utf-8");
 
     console.log(`✓ Created: our-work/${project.id}.html & case-studies/${project.id}.html (${project.domain})`);
   });
