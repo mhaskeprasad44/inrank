@@ -1,0 +1,1051 @@
+# Inrank Technologies — Complete Machine-Readable Knowledge Dossier (LLMs Full)
+# Standard: https://llmstxt.org/ | Optimized for Google AI Overviews, Gemini, Perplexity, ChatGPT Search, Claude
+
+> Inrank Technologies is Pune's leading performance digital marketing agency, AI search engineering firm (GEO), and web development company. Founded in Shivaji Nagar / FC Road, Pune, Maharashtra, Inrank delivers sub-second high-conversion websites, entity SEO, Generative Engine Optimization (GEO), Google Business Profile local rank domination, and high-ROAS Meta & Google ad campaigns.
+
+---
+
+## 1. Corporate Identity & Authority Verification
+- **Official Legal Name**: Inrank Technologies
+- **Short Name**: Inrank / Inrank Tech Pune
+- **Primary Website**: https://inranktech.com
+- **Sitemap XML**: https://inranktech.com/sitemap.xml
+- **Corporate Headquarters**: FC Road, Shivaji Nagar, Pune, Maharashtra 411005, India
+- **Regional Delivery Hubs**: Baner, Hinjewadi, Wakad, Kothrud, Kharadi, Hadapsar, Viman Nagar, Pimpri-Chinchwad, Pune
+- **Direct Phone / Calling**: +91 87888 23182
+- **Direct WhatsApp**: https://wa.me/918788823182
+- **Official Business Email**: inranktech@gmail.com
+- **Service Hours**: Monday – Saturday: 09:30 AM – 08:30 PM IST (Emergency client support 24/7)
+- **Primary Pricing Architecture**:
+  - Starter Launch Website: ₹11,999 (5 pages, sub-1s load, SSL, responsive, 1-year hosting/domain assistance)
+  - Business Growth Website: ₹16,999 (10 pages, Schema.org entities, fast turnaround, conversion copywriting)
+  - Custom E-Commerce & Web Applications: ₹21,999 – ₹35,000+ (Full-stack, payment gateways, tailored UI)
+  - Monthly Organic SEO & GEO AI Citation Retainers: Starting from ₹11,999/month
+  - Performance Paid Ads (PPC / Meta Ads): Transparent management starting from ₹9,999/month
+
+---
+
+## 2. Core Service Offerings & Capabilities (27 Verified Service Hubs)
+### Service: Search Engine Optimization (SEO)
+- **Category**: Search & AI Discovery
+- **Canonical URL**: https://inranktech.com/services/seo-company-pune/
+- **Primary Focus Target**: SEO Company in Pune That Turns Searches Into Enquiries
+- **Meta Description**: Inrank is an SEO company in Pune offering SEO services, technical audits and content that win local rankings. Hire a trusted SEO agency in Pune.
+- **Detailed Capabilities**:
+  - Technical SEO audit and fixes
+  - Keyword research and page-level mapping
+  - On-page optimization and metadata
+  - Schema markup and FAQ rich results
+  - Local SEO and Google Business Profile
+  - Monthly ranking and lead reports
+- **Primary Search Keywords & Volume Profile**:
+  - "SEO company in Pune" (Primary Buyer Intent intent, Est. Volume: 3,600 (KD 32))
+  - "SEO services in Pune" (Related Commercial Search intent, Est. Volume: Verified)
+  - "SEO agency in Pune" (Related Commercial Search intent, Est. Volume: Verified)
+  - "best SEO company in Pune" (Related Commercial Search intent, Est. Volume: Verified)
+  - "SEO consultant in Pune" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What does an SEO company in Pune do?**
+    **A:** An SEO company in Pune improves your website's visibility in Google through technical fixes, keyword-focused content, local SEO and authority building. The goal is more qualified enquiries, not just traffic.
+  - **Q: How long do SEO services in Pune take to show results?**
+    **A:** Most sites see early movement in 6 to 12 weeks and stronger results at 4 to 6 months. Timing depends on competition, site age and content quality. No honest agency can guarantee a position.
+  - **Q: How much do SEO services in Pune cost?**
+    **A:** Pricing depends on scope: number of pages, competition and whether you need content and link building. We quote after an audit so you pay only for work your site needs.
+  - **Q: Is local SEO different from regular SEO?**
+    **A:** Yes. Local SEO adds Google Business Profile optimization, citations, reviews and location pages to standard on-page and technical SEO. It helps you appear in map results for searches near Pune.
+  - **Q: Do you offer white-label SEO for agencies?**
+    **A:** Yes. We deliver SEO under your brand with confidential reporting, so you can serve clients without building an in-house team.
+  - **Q: Can SEO help my business appear in AI answers?**
+    **A:** It can. Clear answers, structured data and trusted citations make your content easier for AI search tools to quote. We include this AI-search layer in our SEO work.
+
+### Service: Backlink Building & Digital PR
+- **Category**: Search & AI Discovery
+- **Canonical URL**: https://inranktech.com/services/link-building-services/
+- **Primary Focus Target**: Link Building Services That Earn High Authority Backlinks
+- **Meta Description**: Inrank provides link building services with high authority backlinks and digital PR services that lift rankings safely. Get a custom backlink plan.
+- **Detailed Capabilities**:
+  - Competitor backlink gap analysis
+  - Editorial guest contributions
+  - Digital PR and expert commentary
+  - Resource page and niche outreach
+  - Broken-link and unlinked-mention recovery
+  - Toxic link review and disavow advice
+- **Primary Search Keywords & Volume Profile**:
+  - "link building services" (Primary Buyer Intent intent, Est. Volume: 880 (KD 40))
+  - "backlink building services" (Related Commercial Search intent, Est. Volume: Verified)
+  - "digital PR services" (Related Commercial Search intent, Est. Volume: Verified)
+  - "backlink services" (Related Commercial Search intent, Est. Volume: Verified)
+  - "high authority backlinks" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What are link building services?**
+    **A:** Link building services help you earn backlinks from other websites to yours. Search engines treat relevant, trusted links as a signal of credibility, which supports higher rankings.
+  - **Q: Are backlinks still important for Google rankings?**
+    **A:** Yes. Links remain a core ranking signal, though quality and relevance matter far more than volume. A few strong editorial links beat hundreds of weak ones.
+  - **Q: What are digital PR services?**
+    **A:** Digital PR services earn media coverage and links by pitching stories, data and expert comments to journalists and publishers. They build both backlinks and brand trust.
+  - **Q: Do you provide dofollow backlinks?**
+    **A:** We target editorial placements that are normally dofollow. Some trusted publishers use nofollow or sponsored tags, and we follow their policy to keep your profile safe and natural.
+  - **Q: How many backlinks do I need to rank?**
+    **A:** It depends on your competitors. We benchmark the referring domains of the pages you want to beat and set a monthly target based on that gap.
+  - **Q: Can bad backlinks hurt my website?**
+    **A:** Spammy or paid links can trigger manual actions or lose value. We audit your existing profile and advise on removal or disavow where needed.
+
+### Service: Google My Business (GMB)
+- **Category**: Search & AI Discovery
+- **Canonical URL**: https://inranktech.com/services/google-my-business-services/
+- **Primary Focus Target**: Google My Business Services to Win Local Customers in Pune
+- **Meta Description**: Inrank offers Google My Business services in Pune: GMB setup, Google Business Profile optimization and local SEO to win map pack calls and leads.
+- **Detailed Capabilities**:
+  - Profile creation, claim and verification
+  - Category, service and attribute setup
+  - Photo and video upload plan
+  - Weekly Google posts and offers
+  - Review request and response system
+  - Monthly insights report
+- **Primary Search Keywords & Volume Profile**:
+  - "Google My Business services" (Primary Buyer Intent intent, Est. Volume: 1,000 (KD 83); GMB services 320 (KD 13))
+  - "GMB services" (Related Commercial Search intent, Est. Volume: Verified)
+  - "Google Business Profile optimization" (Related Commercial Search intent, Est. Volume: Verified)
+  - "Google My Business optimization" (Related Commercial Search intent, Est. Volume: Verified)
+  - "local SEO services" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What are Google My Business services?**
+    **A:** Google My Business services cover the setup, verification, optimization and ongoing management of your Google Business Profile so you appear in local search and Google Maps.
+  - **Q: Is Google My Business now called Google Business Profile?**
+    **A:** Yes. Google renamed it Google Business Profile. People still search for "Google My Business" and "GMB", so we use both terms.
+  - **Q: How do I rank higher in the Google map pack?**
+    **A:** Complete every profile field, choose accurate categories, collect genuine reviews, post regularly and keep your details consistent across the web. Local links and a strong website also help.
+  - **Q: How long does GMB optimization take to work?**
+    **A:** Profile changes can improve visibility within a few weeks. Review growth and prominence take longer, usually two to three months.
+  - **Q: Can you fix a suspended Google Business Profile?**
+    **A:** Often yes. We review the cause, correct the listing against Google's guidelines and submit a reinstatement request. Success is not guaranteed in every case.
+  - **Q: Do I need a physical shop for a Google listing?**
+    **A:** Not always. Service-area businesses can list a service area and hide their address, if they follow Google's eligibility rules.
+
+### Service: AI SEO Agency
+- **Category**: Search & AI Discovery
+- **Canonical URL**: https://inranktech.com/services/ai-seo-services/
+- **Primary Focus Target**: AI SEO Services to Get Found in Google and AI Answers
+- **Meta Description**: Inrank delivers AI SEO services as a specialist AI SEO agency: optimize for Google AI Overviews, ChatGPT and Perplexity with schema and entity SEO.
+- **Detailed Capabilities**:
+  - AI crawler and indexation checks
+  - Answer-first content restructuring
+  - Entity and brand consistency work
+  - FAQ, Organization and Service schema
+  - Citation and mention building
+  - AI visibility tracking
+- **Primary Search Keywords & Volume Profile**:
+  - "AI SEO services" (Primary Buyer Intent intent, Est. Volume: 1,300 (KD 42); AI SEO 4,400 (KD 73))
+  - "AI SEO agency" (Related Commercial Search intent, Est. Volume: Verified)
+  - "AI SEO" (Related Commercial Search intent, Est. Volume: Verified)
+  - "AI search optimization" (Related Commercial Search intent, Est. Volume: Verified)
+  - "SEO for AI Overviews" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What are AI SEO services?**
+    **A:** AI SEO services optimize your website and brand so AI search tools such as Google AI Overviews, ChatGPT and Perplexity can understand, trust and cite your content.
+  - **Q: Is AI SEO different from traditional SEO?**
+    **A:** It builds on traditional SEO. Technical health, content quality and authority still matter, but AI SEO adds answer-first writing, entity clarity and citation building.
+  - **Q: Can you guarantee my brand appears in ChatGPT?**
+    **A:** No one can. AI answers vary by prompt and model. We improve the signals that raise the likelihood of being cited and track progress monthly.
+  - **Q: Does schema markup help AI search?**
+    **A:** Schema gives machines clear facts about your business, services and FAQs. It supports both rich results in Google and cleaner understanding by AI systems.
+  - **Q: How long does AI SEO take?**
+    **A:** Expect initial changes within 4 to 8 weeks, with stronger citation gains over 3 to 6 months as content and mentions accumulate.
+  - **Q: Is AI SEO suitable for small businesses?**
+    **A:** Yes. Local and niche businesses can win AI answers because many queries are specific and have little competition.
+
+### Service: GEO SEO Agency (Perplexity)
+- **Category**: Search & AI Discovery
+- **Canonical URL**: https://inranktech.com/services/geo-seo-agency/
+- **Primary Focus Target**: GEO SEO Agency for Perplexity, ChatGPT and AI Overviews
+- **Meta Description**: Inrank is a GEO SEO agency offering generative engine optimization to win citations in Perplexity, ChatGPT and Google AI Overviews. Book a GEO audit.
+- **Detailed Capabilities**:
+  - Passage-level content structuring
+  - Source and statistic citation
+  - Entity and brand consistency
+  - Schema for services and FAQs
+  - Third-party mentions and reviews
+  - Prompt-based visibility tracking
+- **Primary Search Keywords & Volume Profile**:
+  - "GEO SEO agency" (Primary Buyer Intent intent, Est. Volume: GEO SEO 1,600 (KD 57); generative engine optimization 2,400 (KD 71))
+  - "generative engine optimization" (Related Commercial Search intent, Est. Volume: Verified)
+  - "GEO SEO" (Related Commercial Search intent, Est. Volume: Verified)
+  - "Perplexity SEO" (Related Commercial Search intent, Est. Volume: Verified)
+  - "GEO services" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What is a GEO SEO agency?**
+    **A:** A GEO SEO agency optimizes your content and brand so that generative AI engines like Perplexity, ChatGPT and Google AI Overviews can find, trust and cite you in their answers.
+  - **Q: What does GEO stand for in SEO?**
+    **A:** GEO stands for generative engine optimization. It is the practice of improving how often and how favourably AI-generated answers mention your brand.
+  - **Q: How is GEO different from SEO?**
+    **A:** SEO aims to rank pages in a results list. GEO aims to be cited inside AI-written answers, which depends on clear passages, trusted sources and consistent brand facts.
+  - **Q: Can you get my brand cited in Perplexity?**
+    **A:** We improve the signals that influence citation, such as clarity, freshness and third-party mentions. Results vary by query, so we do not promise specific placements.
+  - **Q: How do you measure GEO results?**
+    **A:** We run a fixed set of prompts each month and track brand mentions, citation links, share of voice against competitors and referral traffic from AI platforms.
+  - **Q: Is GEO useful for local businesses?**
+    **A:** Yes. Many people ask AI tools for local recommendations. Consistent business data, reviews and local mentions help your business appear in those answers.
+
+### Service: AI Ranking & Citations
+- **Category**: Search & AI Discovery
+- **Canonical URL**: https://inranktech.com/services/ai-ranking-citations/
+- **Primary Focus Target**: AI Search Optimization for Better AI Ranking and Citations
+- **Meta Description**: Inrank offers AI search optimization and answer engine optimization to earn AI citations and rankings across ChatGPT, Gemini and Perplexity.
+- **Detailed Capabilities**:
+  - Brand and entity fact sheet
+  - Prompt library by buyer stage
+  - Citation gap analysis against rivals
+  - Content built for quotation
+  - Review and mention building
+  - Monthly AI visibility report
+- **Primary Search Keywords & Volume Profile**:
+  - "AI search optimization" (Primary Buyer Intent intent, Est. Volume: Answer engine optimization 1,000 (KD 59))
+  - "answer engine optimization" (Related Commercial Search intent, Est. Volume: Verified)
+  - "AI citations" (Related Commercial Search intent, Est. Volume: Verified)
+  - "rank in ChatGPT" (Related Commercial Search intent, Est. Volume: Verified)
+  - "AI ranking" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What is AI search optimization?**
+    **A:** AI search optimization is the process of making your brand and content easier for AI tools to understand, retrieve and cite when they answer user questions.
+  - **Q: How do I rank in ChatGPT?**
+    **A:** Publish clear, factual, well-structured content, earn mentions on trusted sources, keep your brand details consistent and make sure your pages are crawlable. Results vary by prompt.
+  - **Q: What is answer engine optimization?**
+    **A:** Answer engine optimization, or AEO, is the practice of writing and structuring content so it can be used as a direct answer by search engines and AI assistants.
+  - **Q: Can I see which sources AI tools cite for my industry?**
+    **A:** Yes. We run your target prompts across platforms and record the cited sources, which shows where you need coverage.
+  - **Q: Do reviews affect AI recommendations?**
+    **A:** They can. Reviews and ratings on trusted platforms supply evidence that AI systems use when recommending local or service businesses.
+  - **Q: How often should AI visibility be tested?**
+    **A:** Monthly testing is a sensible rhythm. It is frequent enough to see movement and spaced enough to filter out random variation.
+
+### Service: Content Marketing & Authority
+- **Category**: Search & AI Discovery
+- **Canonical URL**: https://inranktech.com/services/content-marketing-services/
+- **Primary Focus Target**: Content Marketing Services That Build Authority and Leads
+- **Meta Description**: Inrank provides content marketing services: SEO content writing, content strategy and authority articles that rank on Google and AI search.
+- **Detailed Capabilities**:
+  - Keyword and topic research
+  - Content strategy and calendar
+  - Service page and blog writing
+  - Case studies and thought leadership
+  - Content refreshes and consolidation
+  - On-page SEO and schema
+- **Primary Search Keywords & Volume Profile**:
+  - "content marketing services" (Primary Buyer Intent intent, Est. Volume: 1,900 (KD 24))
+  - "content marketing agency" (Related Commercial Search intent, Est. Volume: Verified)
+  - "SEO content writing" (Related Commercial Search intent, Est. Volume: Verified)
+  - "content strategy" (Related Commercial Search intent, Est. Volume: Verified)
+  - "thought leadership content" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What are content marketing services?**
+    **A:** Content marketing services include strategy, writing and promotion of useful content such as service pages, articles and guides that attract and convert your target audience.
+  - **Q: How does content marketing help SEO?**
+    **A:** Quality content targets the searches your buyers make, earns links and keeps users engaged. Together these raise rankings and bring in organic leads.
+  - **Q: How many articles do I need each month?**
+    **A:** It depends on competition and goals. Many service businesses start with four to eight strong pieces a month, then adjust using performance data.
+  - **Q: Do you write content in Hindi or Marathi?**
+    **A:** We can plan multilingual content where it suits your audience. Share your target regions and we will recommend the right language mix.
+  - **Q: Will AI-written content hurt my rankings?**
+    **A:** Google evaluates quality, not the tool. We use AI for research support, but experts write, edit and verify every page.
+  - **Q: How soon will content start ranking?**
+    **A:** New pages often begin to appear in 4 to 12 weeks, depending on domain strength, competition and internal linking.
+
+### Service: Google Ads Management
+- **Category**: Paid Media & Social
+- **Canonical URL**: https://inranktech.com/services/google-ads-agency/
+- **Primary Focus Target**: Google Ads Agency in Pune for Profitable Campaigns
+- **Meta Description**: Inrank is a Google Ads agency in Pune. Our Google Ads management services cover search, Performance Max and tracking to cut wasted spend and lift ROAS.
+- **Detailed Capabilities**:
+  - Account audit and wasted-spend review
+  - Search, display and remarketing campaigns
+  - Performance Max asset group setup
+  - Conversion and call tracking
+  - Negative keyword management
+  - Weekly optimization and monthly reporting
+- **Primary Search Keywords & Volume Profile**:
+  - "Google Ads agency" (Primary Buyer Intent intent, Est. Volume: 1,300 (KD 22))
+  - "Google Ads management services" (Related Commercial Search intent, Est. Volume: Verified)
+  - "Performance Max campaigns" (Related Commercial Search intent, Est. Volume: Verified)
+  - "Google Ads agency in Pune" (Related Commercial Search intent, Est. Volume: Verified)
+  - "PPC management" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What does a Google Ads agency do?**
+    **A:** A Google Ads agency plans, builds, monitors and improves your Google Ads campaigns so that your spend produces leads or sales at a target cost.
+  - **Q: How much should I spend on Google Ads in Pune?**
+    **A:** Start with a budget that can collect enough clicks to learn, then scale what works. We recommend a figure after studying your keywords and average cost per click.
+  - **Q: What is a Performance Max campaign?**
+    **A:** Performance Max is a Google Ads campaign type that serves your ads across Google channels using automation, based on your assets, audience signals and conversion goals.
+  - **Q: How long before Google Ads brings leads?**
+    **A:** Leads can start within days of launch. Stable, efficient performance usually needs four to eight weeks of optimization.
+  - **Q: Do I own my Google Ads account?**
+    **A:** Yes. We work inside your account or one created in your name, so you keep full access and history.
+  - **Q: Can you reduce my wasted ad spend?**
+    **A:** Often yes. Search term review, negative keywords, location and device controls and tracking fixes commonly remove a large share of irrelevant spend.
+
+### Service: Meta & Instagram Ads
+- **Category**: Paid Media & Social
+- **Canonical URL**: https://inranktech.com/services/meta-ads-agency/
+- **Primary Focus Target**: Meta Ads Agency for Instagram and Facebook Lead Generation
+- **Meta Description**: Inrank is a Meta ads agency and Instagram ads agency running Facebook ads with Conversions API tracking to lower your cost per lead.
+- **Detailed Capabilities**:
+  - Audience research and segmentation
+  - Creative concepts and short video
+  - Lead forms and landing page flows
+  - Pixel and Conversions API setup
+  - Retargeting and lookalike audiences
+  - Weekly tests and monthly reports
+- **Primary Search Keywords & Volume Profile**:
+  - "Meta ads agency" (Primary Buyer Intent intent, Est. Volume: Instagram ads agency 210 (KD 23); Facebook ads agency 140 (KD 17))
+  - "Instagram ads agency" (Related Commercial Search intent, Est. Volume: Verified)
+  - "Facebook ads agency" (Related Commercial Search intent, Est. Volume: Verified)
+  - "Meta Conversions API" (Related Commercial Search intent, Est. Volume: Verified)
+  - "Meta ads management" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What does a Meta ads agency do?**
+    **A:** A Meta ads agency plans and manages paid campaigns across Facebook, Instagram, Messenger and Audience Network to generate leads, sales or awareness.
+  - **Q: Are Instagram ads worth it for small businesses?**
+    **A:** Yes, when targeting and creative fit your audience. Local and niche businesses can reach buyers cheaply with the right offer and a clear call to action.
+  - **Q: What is Meta Conversions API?**
+    **A:** It is a tool that sends conversion events directly from your server to Meta, improving tracking accuracy where the browser pixel loses data.
+  - **Q: How much should I budget for Meta ads?**
+    **A:** Start with enough budget to gather at least a few dozen results a week per ad set. We set exact numbers once we know your cost per lead goals.
+  - **Q: How often should ad creative change?**
+    **A:** Watch frequency and click-through rate. Many accounts refresh creative every two to four weeks, but the data should decide.
+  - **Q: Can you run Facebook and Instagram ads together?**
+    **A:** Yes. Meta places ads across both, and we can adjust placements when one performs better.
+
+### Service: Social Media Marketing
+- **Category**: Paid Media & Social
+- **Canonical URL**: https://inranktech.com/services/social-media-marketing-services/
+- **Primary Focus Target**: Social Media Marketing Services for Pune Brands
+- **Meta Description**: Inrank offers social media marketing services in Pune: strategy, content, social media management and Instagram marketing that grow reach and leads.
+- **Detailed Capabilities**:
+  - Profile audit and platform strategy
+  - Monthly content calendar
+  - Graphic and short-video creation
+  - Community management
+  - Hashtag and caption optimization
+  - Monthly analytics and insights
+- **Primary Search Keywords & Volume Profile**:
+  - "social media marketing services" (Primary Buyer Intent intent, Est. Volume: 5,400 (KD 28); agency in Pune 590 (KD 35))
+  - "social media marketing agency in Pune" (Related Commercial Search intent, Est. Volume: Verified)
+  - "social media marketing company in Pune" (Related Commercial Search intent, Est. Volume: Verified)
+  - "social media management" (Related Commercial Search intent, Est. Volume: Verified)
+  - "Instagram marketing" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What are social media marketing services?**
+    **A:** They include strategy, content creation, posting, community management, paid promotion and reporting across platforms like Instagram, Facebook and LinkedIn.
+  - **Q: How much do social media marketing services cost in Pune?**
+    **A:** Cost depends on platforms, post volume and whether video and ads are included. We build a package after reviewing your goals.
+  - **Q: Which platform is best for my business?**
+    **A:** It depends on your buyers. B2B firms often favour LinkedIn, while consumer and local brands do well on Instagram and Facebook.
+  - **Q: How often should I post on social media?**
+    **A:** Consistency matters more than volume. Many brands do well with three to five quality posts a week per main channel.
+  - **Q: Do you create the graphics and videos?**
+    **A:** Yes. Our in-house designers and editors produce posts, carousels, Reels and Stories.
+  - **Q: Can social media bring real leads?**
+    **A:** Yes, when paired with clear offers, lead forms or landing pages and proper tracking.
+
+### Service: LinkedIn B2B Management
+- **Category**: Paid Media & Social
+- **Canonical URL**: https://inranktech.com/services/linkedin-marketing-agency/
+- **Primary Focus Target**: LinkedIn Marketing Agency for B2B Lead Generation
+- **Meta Description**: Inrank is a LinkedIn marketing agency for B2B brands: LinkedIn lead generation, ads management and thought-leadership content that fills pipelines.
+- **Detailed Capabilities**:
+  - ICP and persona definition
+  - Company page and founder profile optimization
+  - Thought-leadership content calendar
+  - LinkedIn ads and lead gen forms
+  - Employee advocacy playbook
+  - Pipeline and lead quality reporting
+- **Primary Search Keywords & Volume Profile**:
+  - "LinkedIn marketing agency" (Primary Buyer Intent intent, Est. Volume: 390 (KD 17); LinkedIn lead generation 590 (KD 54))
+  - "LinkedIn lead generation" (Related Commercial Search intent, Est. Volume: Verified)
+  - "B2B LinkedIn lead generation" (Related Commercial Search intent, Est. Volume: Verified)
+  - "LinkedIn ads management" (Related Commercial Search intent, Est. Volume: Verified)
+  - "B2B social media marketing" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What does a LinkedIn marketing agency do?**
+    **A:** It manages your LinkedIn presence and campaigns, including profile optimization, content, advertising and outreach strategy, to generate B2B leads.
+  - **Q: Is LinkedIn good for B2B lead generation?**
+    **A:** Yes. LinkedIn lets you target by job title, industry and company size, which suits B2B sales with defined buyer roles.
+  - **Q: How much does LinkedIn advertising cost?**
+    **A:** Costs per click are typically higher than on other platforms, but leads can be more qualified. We set budgets based on your deal size and target cost per lead.
+  - **Q: Should founders post on LinkedIn too?**
+    **A:** Yes. Personal profiles often get more reach than company pages. We help founders share useful, authentic content with minimal time.
+  - **Q: How long until LinkedIn brings leads?**
+    **A:** Paid campaigns can produce leads within weeks. Organic authority usually takes two to three months of steady publishing.
+  - **Q: Do you use automation tools for outreach?**
+    **A:** We avoid aggressive automation that risks account restrictions. We recommend careful, personalised outreach within LinkedIn's rules.
+
+### Service: Pay Per Click (PPC)
+- **Category**: Paid Media & Social
+- **Canonical URL**: https://inranktech.com/services/ppc-services/
+- **Primary Focus Target**: PPC Services and Pay Per Click Management in Pune
+- **Meta Description**: Inrank offers PPC services and pay per click services across Google, Meta and LinkedIn, with PPC management built to lower cost per lead.
+- **Detailed Capabilities**:
+  - Channel and budget planning
+  - Keyword and audience research
+  - Ad copy and creative testing
+  - Bid and budget optimization
+  - Conversion and call tracking
+  - Clear weekly and monthly reports
+- **Primary Search Keywords & Volume Profile**:
+  - "PPC services" (Primary Buyer Intent intent, Est. Volume: 590 (KD 30); pay per click services 390 (KD 51))
+  - "pay per click services" (Related Commercial Search intent, Est. Volume: Verified)
+  - "PPC management" (Related Commercial Search intent, Est. Volume: Verified)
+  - "PPC company in Pune" (Related Commercial Search intent, Est. Volume: Verified)
+  - "search ads management" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What are PPC services?**
+    **A:** PPC services plan and manage paid ads where you pay only when someone clicks. They include research, ad creation, bidding, tracking and optimization.
+  - **Q: Which PPC platform is best?**
+    **A:** It depends on your buyers. Google Ads suits high-intent search, Meta suits visual and consumer products, and LinkedIn suits B2B decision makers.
+  - **Q: How much should I spend on PPC?**
+    **A:** Choose a budget that lets campaigns gather meaningful data, then scale based on cost per lead. We suggest a start after keyword research.
+  - **Q: How fast can PPC bring leads?**
+    **A:** Leads can arrive within days. Efficient performance typically needs a few weeks of testing.
+  - **Q: How do I know PPC is working?**
+    **A:** We track conversions, cost per lead and return on ad spend, and connect them to actual sales where possible.
+  - **Q: Do you charge a percentage of ad spend?**
+    **A:** We quote a clear management fee based on scope. There is no hidden mark-up on media spend.
+
+### Service: Conversion Optimization (CRO)
+- **Category**: Paid Media & Social
+- **Canonical URL**: https://inranktech.com/services/conversion-rate-optimization-services/
+- **Primary Focus Target**: Conversion Rate Optimization Services for More Leads
+- **Meta Description**: Inrank provides conversion rate optimization services: CRO audits, A/B testing and landing page optimization that turn more visitors into leads.
+- **Detailed Capabilities**:
+  - Analytics and tracking audit
+  - Funnel and drop-off analysis
+  - Heatmaps and session review
+  - Form and checkout optimization
+  - A/B and multivariate tests
+  - Monthly learning reports
+- **Primary Search Keywords & Volume Profile**:
+  - "conversion rate optimization services" (Primary Buyer Intent intent, Est. Volume: 260 (KD 24); CRO services 110 (KD 29))
+  - "CRO services" (Related Commercial Search intent, Est. Volume: Verified)
+  - "website conversion optimization" (Related Commercial Search intent, Est. Volume: Verified)
+  - "A/B testing" (Related Commercial Search intent, Est. Volume: Verified)
+  - "landing page optimization" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What are conversion rate optimization services?**
+    **A:** CRO services improve the percentage of visitors who take a desired action, such as filling a form, calling or buying, using research and testing.
+  - **Q: What is a good conversion rate?**
+    **A:** It varies by industry and traffic source. Rather than chase a benchmark, we aim to beat your own baseline step by step.
+  - **Q: How much traffic do I need for A/B testing?**
+    **A:** Reliable tests usually need a few hundred conversions per variation. With less traffic, we focus on research-led improvements.
+  - **Q: How long does CRO take to show results?**
+    **A:** Quick fixes can lift conversions within weeks. A structured testing programme builds gains over three to six months.
+  - **Q: Will CRO affect my SEO?**
+    **A:** Done properly, it helps. We avoid changes that remove valuable content or slow pages, and we monitor rankings during tests.
+  - **Q: Do you need access to my analytics?**
+    **A:** Yes. Read access to GA4 and your ad accounts lets us find the real drop-off points.
+
+### Service: Influencer Marketing
+- **Category**: Paid Media & Social
+- **Canonical URL**: https://inranktech.com/services/influencer-marketing-agency/
+- **Primary Focus Target**: Influencer Marketing Agency for Authentic Creator Campaigns
+- **Meta Description**: Inrank is an influencer marketing agency in Pune: creator campaigns and micro influencer marketing that drive tracked sales and leads.
+- **Detailed Capabilities**:
+  - Goal and budget setting
+  - Creator research and vetting
+  - Briefs, contracts and approvals
+  - Content review and publishing schedule
+  - Tracked links and discount codes
+  - Post-campaign performance report
+- **Primary Search Keywords & Volume Profile**:
+  - "influencer marketing agency" (Primary Buyer Intent intent, Est. Volume: 2,400 (KD 29))
+  - "influencer marketing in Pune" (Related Commercial Search intent, Est. Volume: Verified)
+  - "influencer campaigns" (Related Commercial Search intent, Est. Volume: Verified)
+  - "creator marketing" (Related Commercial Search intent, Est. Volume: Verified)
+  - "micro influencer marketing" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What does an influencer marketing agency do?**
+    **A:** It finds suitable creators, manages negotiation and briefing, oversees content and measures campaign results for your brand.
+  - **Q: How much does influencer marketing cost?**
+    **A:** Fees depend on follower size, engagement, platform and content type. Micro creators cost far less than celebrities, and we match budget to goals.
+  - **Q: Are micro influencers better than big influencers?**
+    **A:** Often they give better engagement and value, especially for niche or local audiences. The best mix depends on your objective.
+  - **Q: How do you track influencer ROI?**
+    **A:** We use unique links, coupon codes, UTM tags and platform analytics to connect creator posts to clicks and sales.
+  - **Q: Do influencers need to disclose paid posts?**
+    **A:** Yes. Indian regulations expect clear labels such as "ad" or "paid partnership". We enforce this in every campaign.
+  - **Q: Can influencer marketing help local Pune businesses?**
+    **A:** Yes. Local creators can drive footfall and enquiries for restaurants, salons, coaching centres, real estate and events.
+
+### Service: Custom Website Development
+- **Category**: Web & E-Commerce
+- **Canonical URL**: https://inranktech.com/services/custom-website-development/
+- **Primary Focus Target**: Custom Website Development Built for Speed and Leads
+- **Meta Description**: Inrank is a website development company in Pune offering custom website development: fast, secure, SEO-ready websites that generate leads.
+- **Detailed Capabilities**:
+  - Discovery and sitemap planning
+  - Custom design and development
+  - SEO-ready URLs, metadata and schema
+  - Speed and Core Web Vitals tuning
+  - Security hardening and backups
+  - Analytics, tracking and launch support
+- **Primary Search Keywords & Volume Profile**:
+  - "custom website development" (Primary Buyer Intent intent, Est. Volume: 210 (KD 27); website development company in Pune 2,900 (KD 41))
+  - "website development company in Pune" (Related Commercial Search intent, Est. Volume: Verified)
+  - "custom web application" (Related Commercial Search intent, Est. Volume: Verified)
+  - "bespoke website design" (Related Commercial Search intent, Est. Volume: Verified)
+  - "fast SEO-ready websites" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What is custom website development?**
+    **A:** It is building a website from scratch or from a flexible framework to match your exact design, features and business goals, rather than using a fixed template.
+  - **Q: How long does custom website development take?**
+    **A:** A typical business site takes four to eight weeks. Complex builds with logins or integrations take longer. We give a timeline after discovery.
+  - **Q: How much does a custom website cost in Pune?**
+    **A:** Cost depends on pages, features and integrations. We provide a fixed quote after scoping, with milestones.
+  - **Q: Will my new website be SEO-friendly?**
+    **A:** Yes. We build with crawlable URLs, fast loading, schema and metadata, and we can migrate old pages safely to protect rankings.
+  - **Q: Do you build on WordPress or React?**
+    **A:** Both. We recommend the platform after reviewing your content, features and team skills.
+  - **Q: Do you provide support after launch?**
+    **A:** Yes. We offer maintenance plans for updates, backups, security and improvements.
+
+### Service: Custom UI/UX Website Design
+- **Category**: Web & E-Commerce
+- **Canonical URL**: https://inranktech.com/services/ui-ux-design-services/
+- **Primary Focus Target**: UI UX Design Services That Turn Visitors Into Customers
+- **Meta Description**: Inrank offers UI UX design services in Pune: user research, wireframes and conversion-focused website design that makes visitors take action.
+- **Detailed Capabilities**:
+  - User and competitor research
+  - Information architecture
+  - Wireframes and clickable prototypes
+  - Visual design systems
+  - Usability review and testing
+  - Developer-ready handoff
+- **Primary Search Keywords & Volume Profile**:
+  - "UI UX design services" (Primary Buyer Intent intent, Est. Volume: 720 (KD 30); web design company in Pune 3,600 (KD 50))
+  - "UI UX design company in Pune" (Related Commercial Search intent, Est. Volume: Verified)
+  - "website design" (Related Commercial Search intent, Est. Volume: Verified)
+  - "user experience design" (Related Commercial Search intent, Est. Volume: Verified)
+  - "web design company in Pune" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What are UI UX design services?**
+    **A:** UI covers how an interface looks. UX covers how it works and feels. Together they create websites and apps that are attractive, clear and easy to use.
+  - **Q: What is the difference between UI and UX?**
+    **A:** UI focuses on visual elements like colour, typography and buttons. UX focuses on the journey, structure and ease of completing tasks.
+  - **Q: How long does a UI UX design project take?**
+    **A:** A business website design usually takes two to four weeks. Larger apps take longer because they need research and testing.
+  - **Q: Do you design for mobile first?**
+    **A:** Yes. We design for phones first, then adapt to tablets and desktops, since most traffic is mobile.
+  - **Q: Can I get only the design and use my own developer?**
+    **A:** Yes. We provide design files and a handoff guide that other developers can follow.
+  - **Q: Will good design improve my conversion rate?**
+    **A:** It often does, because clearer layouts and stronger proof reduce hesitation. We confirm gains through testing.
+
+### Service: WordPress Development
+- **Category**: Web & E-Commerce
+- **Canonical URL**: https://inranktech.com/services/wordpress-development-services/
+- **Primary Focus Target**: WordPress Development Services for Fast, SEO-Ready Sites
+- **Meta Description**: Inrank provides WordPress development services in Pune: a WordPress development company for custom themes, plugins and speed optimization.
+- **Detailed Capabilities**:
+  - Custom theme and Elementor development
+  - Plugin selection and custom plugins
+  - WooCommerce and form integrations
+  - Speed and caching setup
+  - Security hardening and backups
+  - Training for your content team
+- **Primary Search Keywords & Volume Profile**:
+  - "WordPress development services" (Primary Buyer Intent intent, Est. Volume: 720 (KD 32); WordPress development company 880 (KD 25))
+  - "WordPress development company" (Related Commercial Search intent, Est. Volume: Verified)
+  - "WordPress website development" (Related Commercial Search intent, Est. Volume: Verified)
+  - "Elementor development" (Related Commercial Search intent, Est. Volume: Verified)
+  - "WordPress customization" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What are WordPress development services?**
+    **A:** They cover designing, building, customizing and maintaining WordPress websites, including themes, plugins, integrations and performance work.
+  - **Q: Is WordPress good for SEO?**
+    **A:** Yes. With clean structure, fast hosting, schema and optimized content, WordPress can rank very well.
+  - **Q: How much does a WordPress website cost?**
+    **A:** The price depends on pages, design level and features. After a short brief, we send a fixed quote.
+  - **Q: Can you redesign my existing WordPress site?**
+    **A:** Yes. We can redesign while preserving URLs and metadata, so rankings are protected.
+  - **Q: Do you use Elementor?**
+    **A:** Yes, where it suits. We also build custom themes for sites that need maximum speed and control.
+  - **Q: How do you keep WordPress secure?**
+    **A:** We use updates, firewalls, limited login attempts, backups and monitoring, plus careful plugin choice.
+
+### Service: Shopify Store Engineering
+- **Category**: Web & E-Commerce
+- **Canonical URL**: https://inranktech.com/services/shopify-store-development/
+- **Primary Focus Target**: Shopify Store Development for Faster Online Sales
+- **Meta Description**: Inrank offers Shopify store development in Pune: store setup, theme customization, app integration and Shopify SEO to grow online sales.
+- **Detailed Capabilities**:
+  - Store architecture and catalogue setup
+  - Theme customization and custom sections
+  - Payment, shipping and tax configuration
+  - App selection and integration
+  - Checkout and cart optimization
+  - Analytics and conversion tracking
+- **Primary Search Keywords & Volume Profile**:
+  - "Shopify store development" (Primary Buyer Intent intent, Est. Volume: 390 (KD 23); Shopify development company 1,000 (KD 30))
+  - "Shopify development company" (Related Commercial Search intent, Est. Volume: Verified)
+  - "Shopify store setup" (Related Commercial Search intent, Est. Volume: Verified)
+  - "Shopify theme customization" (Related Commercial Search intent, Est. Volume: Verified)
+  - "Shopify SEO" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What does Shopify store development include?**
+    **A:** It includes store setup, theme customization, product and collection structure, payments, shipping, app integration and optimization for speed and SEO.
+  - **Q: How long does it take to build a Shopify store?**
+    **A:** A standard store can launch in two to four weeks. Custom features and large catalogues take longer.
+  - **Q: How much does a Shopify store cost?**
+    **A:** Costs include the Shopify plan, theme, apps and our development fee. We quote after reviewing your catalogue and features.
+  - **Q: Is Shopify good for SEO?**
+    **A:** Yes. It offers clean URLs, sitemaps and fast hosting, and we add product schema and content to improve rankings.
+  - **Q: Can you migrate my store to Shopify?**
+    **A:** Yes. We migrate products, customers and key URLs, and set redirects to protect traffic.
+  - **Q: Do you set up Indian payment gateways?**
+    **A:** Yes. We configure gateways and methods popular in India, subject to Shopify availability and your account approval.
+
+### Service: E-Commerce Development
+- **Category**: Web & E-Commerce
+- **Canonical URL**: https://inranktech.com/services/ecommerce-website-development-company/
+- **Primary Focus Target**: Ecommerce Website Development Company for Growing Brands
+- **Meta Description**: Inrank is an ecommerce website development company and ecommerce development company building secure, fast stores on Shopify and WooCommerce.
+- **Detailed Capabilities**:
+  - Platform selection and store planning
+  - Catalogue, search and filter design
+  - Secure checkout and payments
+  - Shipping, inventory and ERP integration
+  - Marketplace and feed connections
+  - Analytics, remarketing and reporting
+- **Primary Search Keywords & Volume Profile**:
+  - "ecommerce website development company" (Primary Buyer Intent intent, Est. Volume: 1,000 (KD 43); ecommerce website development Pune 210 (KD 18))
+  - "ecommerce development company" (Related Commercial Search intent, Est. Volume: Verified)
+  - "ecommerce website development in Pune" (Related Commercial Search intent, Est. Volume: Verified)
+  - "online store development" (Related Commercial Search intent, Est. Volume: Verified)
+  - "WooCommerce development" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What does an ecommerce website development company do?**
+    **A:** It designs, builds and launches online stores, including product catalogues, payments, shipping integration and ongoing optimization.
+  - **Q: Which ecommerce platform is best in India?**
+    **A:** Shopify suits many brands for speed and simplicity. WooCommerce and custom builds suit stores that need more control. We recommend after reviewing your needs.
+  - **Q: How much does an ecommerce website cost?**
+    **A:** Cost depends on platform, products and integrations. We provide a fixed estimate after a scoping call.
+  - **Q: How long does it take to build an online store?**
+    **A:** Standard stores take three to six weeks. Larger catalogues or custom features take longer.
+  - **Q: Can you connect my store to marketplaces?**
+    **A:** Yes. We can integrate product feeds and orders with major marketplaces and Google Merchant Center where supported.
+  - **Q: Will my store be optimized for SEO?**
+    **A:** Yes. We structure categories, URLs, schema and speed from the start.
+
+### Service: High-Converting Landing Pages
+- **Category**: Web & E-Commerce
+- **Canonical URL**: https://inranktech.com/services/landing-page-design-services/
+- **Primary Focus Target**: Landing Page Design Services for High-Converting Campaigns
+- **Meta Description**: Inrank offers landing page design services: high converting landing page design, copy and testing that lift leads from Google and Meta ads.
+- **Detailed Capabilities**:
+  - One goal and one primary call to action
+  - Benefit-led headline and subheading
+  - Testimonials, logos and results as proof
+  - Short, mobile-friendly forms
+  - Click-to-call and WhatsApp options
+  - Tracking for every conversion event
+- **Primary Search Keywords & Volume Profile**:
+  - "landing page design services" (Primary Buyer Intent intent, Est. Volume: 390 (KD 22); landing page design 4,400 (KD 50))
+  - "landing page design" (Related Commercial Search intent, Est. Volume: Verified)
+  - "high converting landing page" (Related Commercial Search intent, Est. Volume: Verified)
+  - "landing page optimization" (Related Commercial Search intent, Est. Volume: Verified)
+  - "lead generation landing pages" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What are landing page design services?**
+    **A:** They cover planning, writing, designing and building a standalone page focused on one action, such as a form submission or call, usually for a campaign.
+  - **Q: What makes a landing page convert?**
+    **A:** A clear offer, a matching headline, strong proof, a simple form and fast loading. Removing distractions also helps.
+  - **Q: How long does it take to build a landing page?**
+    **A:** Most landing pages are ready within five to ten working days, depending on copy and approvals.
+  - **Q: How many landing pages do I need?**
+    **A:** Ideally one for each campaign or audience segment. Matching the page to the ad lifts relevance and conversion.
+  - **Q: Can you A/B test my landing page?**
+    **A:** Yes. We test headlines, images, forms and offers where your traffic can support reliable results.
+  - **Q: Will a landing page help my Google Ads Quality Score?**
+    **A:** Relevant, fast pages that match your ads usually improve landing page experience, which can help Quality Score and lower costs.
+
+### Service: Mobile App Development
+- **Category**: Web & E-Commerce
+- **Canonical URL**: https://inranktech.com/services/mobile-app-development/
+- **Primary Focus Target**: Mobile App Development Company in Pune for Android and iOS
+- **Meta Description**: Inrank is a mobile app development company in Pune building Android app development, iOS and React Native apps with launch support.
+- **Detailed Capabilities**:
+  - Product discovery and scoping
+  - UI/UX design and prototypes
+  - Android, iOS and React Native builds
+  - API and backend development
+  - Testing, security and store release
+  - Analytics, updates and support
+- **Primary Search Keywords & Volume Profile**:
+  - "mobile app development company in Pune" (Primary Buyer Intent intent, Est. Volume: 720 (KD 27); mobile app development Pune 90)
+  - "mobile app development Pune" (Related Commercial Search intent, Est. Volume: Verified)
+  - "Android app development" (Related Commercial Search intent, Est. Volume: Verified)
+  - "iOS app development" (Related Commercial Search intent, Est. Volume: Verified)
+  - "React Native app development" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What does a mobile app development company do?**
+    **A:** It plans, designs, builds, tests and launches mobile applications for Android and iOS, and supports them after release.
+  - **Q: How much does mobile app development cost in Pune?**
+    **A:** Cost depends on features, platforms and integrations. A scoped MVP is far cheaper than a full product, and we quote after discovery.
+  - **Q: How long does it take to build an app?**
+    **A:** A simple MVP takes about eight to twelve weeks. Complex apps take longer.
+  - **Q: Should I build for Android, iOS or both?**
+    **A:** Check where your users are. Cross-platform development lets you reach both with one codebase.
+  - **Q: Do you provide the source code?**
+    **A:** Yes. You own the code and accounts at handover, subject to the agreed terms.
+  - **Q: Can you maintain my app after launch?**
+    **A:** Yes. We handle updates for new OS versions, fixes and feature improvements.
+
+### Service: Website Maintenance (SLA)
+- **Category**: Web & E-Commerce
+- **Canonical URL**: https://inranktech.com/services/website-maintenance-services/
+- **Primary Focus Target**: Website Maintenance Services with Clear SLA Support
+- **Meta Description**: Inrank provides website maintenance services with SLA support: updates, backups, security, speed checks and uptime monitoring for your business site.
+- **Detailed Capabilities**:
+  - Core, theme and plugin updates
+  - Daily or weekly off-site backups
+  - Security scans and firewall rules
+  - Uptime and speed monitoring
+  - Broken link and form checks
+  - Minor content and design edits
+- **Primary Search Keywords & Volume Profile**:
+  - "website maintenance services" (Primary Buyer Intent intent, Est. Volume: 720 (KD 9))
+  - "website maintenance" (Related Commercial Search intent, Est. Volume: Verified)
+  - "website support" (Related Commercial Search intent, Est. Volume: Verified)
+  - "WordPress maintenance" (Related Commercial Search intent, Est. Volume: Verified)
+  - "website security and backups" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What are website maintenance services?**
+    **A:** They are ongoing tasks that keep your site updated, secure, fast and error-free, such as software updates, backups, monitoring and fixes.
+  - **Q: How often should a website be maintained?**
+    **A:** Security updates and backups should happen weekly or daily. Performance and SEO checks are best done monthly.
+  - **Q: What does an SLA include?**
+    **A:** An SLA sets covered tasks, response and resolution times, support hours and reporting, so expectations are clear.
+  - **Q: Can you maintain a site you did not build?**
+    **A:** Yes. We audit it first, then take it under maintenance after fixing any urgent issues.
+  - **Q: What happens if my site is hacked?**
+    **A:** We isolate the issue, restore a clean backup, remove malware, patch the cause and report what happened.
+  - **Q: Does maintenance include content updates?**
+    **A:** Small edits are included in most plans. Larger changes use monthly improvement hours or a separate quote.
+
+### Service: Strategic Brand Naming
+- **Category**: Branding
+- **Canonical URL**: https://inranktech.com/services/brand-naming-agency/
+- **Primary Focus Target**: Brand Naming Agency for Memorable Business Names
+- **Meta Description**: Inrank is a brand naming agency offering strategic business naming, domain checks and trademark-aware name shortlists for new and growing brands.
+- **Detailed Capabilities**:
+  - Brand strategy and positioning brief
+  - Creative naming territories
+  - Pronunciation and meaning checks
+  - Domain and social handle availability
+  - Early trademark risk screening
+  - Tagline options for top names
+- **Primary Search Keywords & Volume Profile**:
+  - "brand naming agency" (Primary Buyer Intent intent, Est. Volume: 210 (KD 30); business naming 14,800 (KD 67))
+  - "business naming" (Related Commercial Search intent, Est. Volume: Verified)
+  - "brand name ideas" (Related Commercial Search intent, Est. Volume: Verified)
+  - "company name ideas" (Related Commercial Search intent, Est. Volume: Verified)
+  - "trademark-ready brand names" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What does a brand naming agency do?**
+    **A:** It researches your market, generates and tests name ideas, checks availability and presents a shortlist that fits your strategy.
+  - **Q: How do I choose a good business name?**
+    **A:** Pick a name that is short, easy to say, distinctive and available as a domain and trademark. Test it with your audience before you commit.
+  - **Q: Do you check domain and trademark availability?**
+    **A:** We check domain and social handle availability and do preliminary trademark screening. Final legal clearance should come from an attorney.
+  - **Q: How long does a naming project take?**
+    **A:** Most projects take two to three weeks, including strategy, ideas, feedback and checks.
+  - **Q: How many name options will I get?**
+    **A:** We present a focused shortlist of the strongest names with reasons, rather than a very long list.
+  - **Q: Can you rename an existing business?**
+    **A:** Yes. We assess brand equity first, then guide a rename or refresh with minimal loss of recognition.
+
+### Service: Corporate Logo Design
+- **Category**: Branding
+- **Canonical URL**: https://inranktech.com/services/corporate-logo-design/
+- **Primary Focus Target**: Corporate Logo Design That Builds Brand Trust
+- **Meta Description**: Inrank provides corporate logo design from a logo design company in Pune: professional logos, brand guidelines and full identity kits for businesses.
+- **Detailed Capabilities**:
+  - Discovery and competitor review
+  - Concept sketching and exploration
+  - Refinement rounds with feedback
+  - Colour palette and typography
+  - Vector files for print and web
+  - Brand guideline document
+- **Primary Search Keywords & Volume Profile**:
+  - "corporate logo design" (Primary Buyer Intent intent, Est. Volume: 170 (KD 38); logo design Pune 260 (KD 22))
+  - "logo design company in Pune" (Related Commercial Search intent, Est. Volume: Verified)
+  - "professional logo design" (Related Commercial Search intent, Est. Volume: Verified)
+  - "brand identity design" (Related Commercial Search intent, Est. Volume: Verified)
+  - "logo design Pune" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What is corporate logo design?**
+    **A:** It is the creation of a professional visual mark for a company, designed to communicate trust and work across print, digital and signage.
+  - **Q: How much does a logo cost in Pune?**
+    **A:** Pricing depends on the number of concepts and identity extras. We give a clear quote after a short brief.
+  - **Q: How long does logo design take?**
+    **A:** Most logos take one to two weeks, including concept presentation and revisions.
+  - **Q: What files will I get?**
+    **A:** You get vector files such as AI, SVG and PDF, plus PNG and JPG versions, and colour and mono variants.
+  - **Q: Do I own the logo?**
+    **A:** Yes. Ownership transfers on final payment, as set out in the agreement.
+  - **Q: Can you redesign my existing logo?**
+    **A:** Yes. We can refresh your logo while keeping what customers already recognise.
+
+### Service: Luxury Business Card Design
+- **Category**: Branding
+- **Canonical URL**: https://inranktech.com/services/luxury-business-card-design/
+- **Primary Focus Target**: Luxury Business Card Design That Leaves a Lasting Impression
+- **Meta Description**: Inrank creates luxury business card design with premium finishes, foil, emboss and clean layouts. Get business card design that makes a lasting impression.
+- **Detailed Capabilities**:
+  - Custom front and back layouts
+  - Typography and colour selection
+  - Foil, emboss and spot UV artwork
+  - QR code and contact integration
+  - Print-ready files with bleed
+  - Matching stationery design
+- **Primary Search Keywords & Volume Profile**:
+  - "luxury business card design" (Primary Buyer Intent intent, Est. Volume: business card design 14,800 (KD 70))
+  - "business card design" (Related Commercial Search intent, Est. Volume: Verified)
+  - "premium business cards" (Related Commercial Search intent, Est. Volume: Verified)
+  - "visiting card design" (Related Commercial Search intent, Est. Volume: Verified)
+  - "business card printing ideas" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What makes a business card look luxurious?**
+    **A:** Heavy paper, simple layouts, quality typography and a special finish such as foil or emboss create a premium feel.
+  - **Q: What size is a standard business card in India?**
+    **A:** A common size is 3.5 by 2 inches, or about 90 by 54 mm. We can design custom shapes where your printer supports them.
+  - **Q: Do you print the cards?**
+    **A:** We prepare print-ready files and can coordinate with trusted printers. Printing costs are separate.
+  - **Q: Can I add a QR code to my card?**
+    **A:** Yes. We place it so it scans easily without crowding the design.
+  - **Q: How long does card design take?**
+    **A:** Most designs take three to five working days, including revisions.
+  - **Q: Can you design cards for a whole team?**
+    **A:** Yes. We create a consistent template so every team member's card matches.
+
+### Service: Executive Letterhead & Stationery
+- **Category**: Branding
+- **Canonical URL**: https://inranktech.com/services/letterhead-stationery-design/
+- **Primary Focus Target**: Letterhead Design and Executive Stationery for Your Brand
+- **Meta Description**: Inrank offers professional letterhead design and corporate stationery design: executive letterheads, envelopes and folders that match your brand.
+- **Detailed Capabilities**:
+  - Letterhead print and digital templates
+  - Envelopes and compliment slips
+  - Presentation folders and notepads
+  - Invoice and quotation layouts
+  - Email signature design
+  - Brand-consistent file packs
+- **Primary Search Keywords & Volume Profile**:
+  - "letterhead design" (Primary Buyer Intent intent, Est. Volume: 14,800 (KD 46); stationery design 720 (KD 30))
+  - "executive letterhead design" (Related Commercial Search intent, Est. Volume: Verified)
+  - "stationery design" (Related Commercial Search intent, Est. Volume: Verified)
+  - "corporate stationery" (Related Commercial Search intent, Est. Volume: Verified)
+  - "company letterhead format" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What should a company letterhead include?**
+    **A:** A logo, company name, address, phone, email, website and legal details such as GST or CIN where needed, with clear space for the letter body.
+  - **Q: What size is a standard letterhead in India?**
+    **A:** The common size is A4, which is 210 by 297 mm.
+  - **Q: Do you provide editable letterhead templates?**
+    **A:** Yes. We provide Word and Google Docs templates along with print-ready PDFs.
+  - **Q: Can you design a full stationery set?**
+    **A:** Yes. We can design envelopes, folders, notepads, invoices and email signatures to match.
+  - **Q: How long does letterhead design take?**
+    **A:** Most letterheads take three to five working days, with a full stationery set taking one to two weeks.
+  - **Q: Can you match my existing brand colours?**
+    **A:** Yes. We follow your brand guidelines or build them if none exist.
+
+### Service: High-Impact Brochure Designing
+- **Category**: Branding
+- **Canonical URL**: https://inranktech.com/services/brochure-design-services/
+- **Primary Focus Target**: Brochure Design Services for High-Impact Sales Material
+- **Meta Description**: Inrank offers brochure design services: corporate brochures, company profiles and product catalogues that explain your offer and win business.
+- **Detailed Capabilities**:
+  - Corporate and company profile brochures
+  - Product and service catalogues
+  - Bi-fold, tri-fold and multi-page layouts
+  - Copywriting and content structure
+  - Infographics and icon design
+  - Print-ready and digital PDF files
+- **Primary Search Keywords & Volume Profile**:
+  - "brochure design services" (Primary Buyer Intent intent, Est. Volume: 590 (KD 10); brochure design 40,500 (KD 45))
+  - "brochure design" (Related Commercial Search intent, Est. Volume: Verified)
+  - "corporate brochure design" (Related Commercial Search intent, Est. Volume: Verified)
+  - "company profile design" (Related Commercial Search intent, Est. Volume: Verified)
+  - "product catalogue design" (Related Commercial Search intent, Est. Volume: Verified)
+- **Key FAQs & Direct Citations**:
+  - **Q: What are brochure design services?**
+    **A:** They cover planning, writing and designing printed or digital brochures that present your business, products or services to customers.
+  - **Q: What size should a brochure be?**
+    **A:** Common sizes are A4 flat, A4 tri-fold and A5. The right size depends on content and how you distribute it.
+  - **Q: Do you write the brochure content?**
+    **A:** Yes. We can write concise copy or edit the content you already have.
+  - **Q: How long does brochure design take?**
+    **A:** A typical brochure takes one to two weeks, depending on page count and approvals.
+  - **Q: Can you design a digital brochure?**
+    **A:** Yes. We provide lightweight PDFs optimized for email and WhatsApp, with clickable links.
+  - **Q: Can you design a product catalogue?**
+    **A:** Yes. We build catalogues with consistent layouts, product images and pricing tables.
+
+---
+
+## 3. Verified Client Case Studies & Commercial Performance Leaps
+### Case Study: CyTOS Machines Pune - High-Speed Industrial Machinery & CNC Portal (CyTOS Machines Pune)
+- **Client Domain**: cytos.in (Live URL: https://cytos.in)
+- **Industry & Sector**: Industrial Manufacturing & CNC Automation | Precision CNC Machinery & Industrial Automation
+- **Case Study Link**: https://inranktech.com/case-studies/cytos-cnc-machines-pune.html
+- **Showcase Link**: https://inranktech.com/our-work/cytos-cnc-machines-pune.html
+- **Delivered Services**: Custom React 18 SPA Development, Vite High-Speed Build Engine, Technical B2B SEO & Machine Schema, Interactive Machine Finder Wizard, Automated CI/CD to Hostinger, WhatsApp Direct RFQ Consultation Funnel
+- **Technologies Deployed**: React 18, Vite, TailwindCSS, Lucide Icons, Hostinger Git CI/CD, Apache .htaccess Rewrites, JSON-LD Product Schema
+- **Executive Solution Summary**: Inrank engineered a modern, lightweight React 18 SPA tailored specifically for industrial decision-makers. We replaced dense static tables with interactive machine filters, embedded an instant Machine Finder recommendation wizard, and built 22 technical pillar guides capturing organic search intent.
+- **Verified Deliverables & Highlights**:
+  - **3-Step Machine Recommendation Wizard**: Engineered a client-side decision wizard that asks buyers for their material type (wood, acrylic, mild steel, PCB), workshop bed size, and spindle power, instantly suggesting the exact CNC machine model with 1-click RFQ.
+  - **Sub-Second Mobile Core Web Vitals**: Structured code-splitting via Vite with Gzip compression and aggressive browser caching on Hostinger Apache, slashing Largest Contentful Paint (LCP) from 4.8s to 0.72s.
+  - **B2B Technical Engineering Content Engine**: Authored 22 in-depth technical guides covering CNC feed rates, spindle calibration, and tooling tolerances, each embedded with Product and HowTo structured data schema.
+  - **Instant WhatsApp Priority RFQ Desk**: Implemented a custom Quote Modal that auto-populates exact machine specs, workpiece size, and customer requirements into a pre-formatted WhatsApp consultation link.
+
+### Case Study: Fludio Water Solutions - Architectural Fountains & Aquatic Engineering Portal (Fludio Water Solutions)
+- **Client Domain**: fludio.in (Live URL: https://fludio.in)
+- **Industry & Sector**: Architectural Water Features & Aquatic Engineering | Luxury Architectural Water Features & Aquatic Engineering
+- **Case Study Link**: https://inranktech.com/case-studies/fludio-water-solutions-pune.html
+- **Showcase Link**: https://inranktech.com/our-work/fludio-water-solutions-pune.html
+- **Delivered Services**: Luxury Architectural Web Design, Interactive Product Spec Matrix, Media-Rich Video Showcase Engine, Commercial Developer Lead Funnel, Technical B2B SEO & Schemas, Mobile-Optimized Portfolio Gallery
+- **Technologies Deployed**: HTML5, Vanilla CSS Tokens, Modern JavaScript, Lucide Icons, Video Stream Embeds, Schema.org Architectural Service
+- **Executive Solution Summary**: Inrank engineered a fluid, ultra-luxurious visual portal utilizing progressive lazy-loaded video showcases, interactive fountain spray height selector cards, and an architectural RFP consultation funnel that positions Fludio as India's foremost aquatic engineering authority.
+- **Verified Deliverables & Highlights**:
+  - **Cinematic Visual Immersion**: Implemented low-bandwidth, high-frame-rate MP4 video loops of dancing musical fountains with responsive poster fallbacks, creating instant visual wonder without bloating page weight.
+  - **Architect & Consultant Spec Engine**: Organized technical documentation for DMX 512 controllers, IP68 underwater fixtures, and geyser/cascade nozzles with 1-click engineering PDF downloads.
+  - **High-Ticket Commercial Inquiries Funnel**: Engineered project-scoping intake workflows that capture key architectural parameters: pool dimensions, budget tier, indoor vs. outdoor, and municipal permissions.
+  - **Local & Pan-India Commercial SEO**: Targeted competitive architectural phrases like 'musical fountain manufacturers in Pune', 'commercial water feature contractors India', and 'dancing fountain design'.
+
+### Case Study: HIRAGRAFIX™ - Corporate Printing, Packaging & Brand Merchandising (HIRAGRAFIX™ (Hira Printers))
+- **Client Domain**: hiragrafix.com (Live URL: https://hiragrafix.com)
+- **Industry & Sector**: Commercial Printing, Luxury Packaging & Merchandising | Corporate Printing, Luxury Rigid Packaging & Brand Merchandise
+- **Case Study Link**: https://inranktech.com/case-studies/hiragrafix-mumbai-printing-packaging.html
+- **Showcase Link**: https://inranktech.com/our-work/hiragrafix-mumbai-printing-packaging.html
+- **Delivered Services**: Corporate Brand Digital Transformation, B2B Product & Material Catalog, Instant Sample & Quote Calculator, Enterprise Corporate Packaging SEO, Corporate Client Onboarding Funnels, Mobile-First B2B Merchandising UX
+- **Technologies Deployed**: Modern JavaScript, TailwindCSS Design System, Lucide Icons, B2B Quoting Calculator, Product Schema JSON-LD
+- **Executive Solution Summary**: Inrank designed a sleek, high-trust corporate portal emphasizing tactile craftsmanship, luxury foil stamping previews, structured material specifications (GSM, textures, coatings), and an automated sample request system that positioned HIRAGRAFIX™ as the go-to partner for enterprise brand procurement.
+- **Verified Deliverables & Highlights**:
+  - **Tactile Digital Material Catalog**: Built an interactive material explorer showcasing texture finishes (soft-touch velvet lamination, spot UV, gold foil debossing, FSC-certified kraft paper) with zoom previews.
+  - **Instant Corporate Sample Kit Desk**: Engineered a low-friction sample request flow allowing enterprise procurement officers and marketing heads to order physical swatch boxes delivered directly to their offices.
+  - **Multi-Pillar B2B Services Taxonomy**: Structured deep catalog landing pages for 6 core business verticals: Corporate Stationery, Luxury Packaging, Signage & Spatial Branding, Gifting Kits, Offset Printing, and Event Collaterals.
+  - **B2B Mumbai Commercial SEO**: Engineered localized SEO dominance covering corporate commercial hubs in BKC, Lower Parel, Sakinaka, Andheri, and Navi Mumbai.
+
+### Case Study: Grey To The Green - Plant-Powered Home Care & Biotech Formulations (Grey To The Green (Quantum Innovation))
+- **Client Domain**: greytothegreen.com (Live URL: https://greytothegreen.com)
+- **Industry & Sector**: Eco-Friendly Home Care, Biotech & Organic D2C | Eco-Friendly Biotechnology, Home Care & Plant-Powered Formulations
+- **Case Study Link**: https://inranktech.com/case-studies/grey-to-the-green-eco-biotech.html
+- **Showcase Link**: https://inranktech.com/our-work/grey-to-the-green-eco-biotech.html
+- **Delivered Services**: Scientific D2C & B2B Web Architecture, Interactive Product Efficacy Visualizer, Scientific Trust & EPA Badge Integration, D2C Conversion Rate Optimization (CRO), Organic Search & Ingredient SEO, Wholesale Distributor Onboarding Funnel
+- **Technologies Deployed**: Modern JavaScript, TailwindCSS Design System, Lucide Icons, Product Schema JSON-LD, Interactive Efficacy Cards
+- **Executive Solution Summary**: Inrank engineered a fresh, nature-inspired yet rigorously scientific digital storefront. We designed interactive 'Science Behind the Spray' modules, integrated US EPA registration badges, created clear before-and-after allergen protection infographics, and built a dedicated B2B Wholesale Portal alongside the D2C checkout funnel.
+- **Verified Deliverables & Highlights**:
+  - **Science-Backed Transparency Modules**: Engineered interactive micro-sections breaking down how bioactive cold-pressed neem limonoids neutralize dust mites and allergens without synthetic pyrethroids or toxic chemicals.
+  - **US EPA & Lab Certification Showcase**: Prominently embedded verifiable third-party toxicology certificates, pediatric safety badges, and Dr. Anil Kush's molecular biology research credentials.
+  - **Dual Funnel: Retail D2C + B2B Distributor**: Built seamless 1-click consumer checkout paths alongside an automated wholesale distributor onboarding desk with tiered volume pricing.
+  - **Ingredient & Wellness Organic SEO**: Captured high-intent consumer health searches: 'natural dust mite spray', 'chemical-free mealybug repellent', and 'pet safe insect sprays India'.
+
+### Case Study: Vasro Ventures - Contemporary Fashion Apparel & Lifestyle Brand (Vasro Ventures Pvt Ltd)
+- **Client Domain**: vasroventures.com (Live URL: https://vasroventures.com)
+- **Industry & Sector**: Contemporary Fashion, Apparel & D2C Lifestyle | Contemporary Fashion Apparel & D2C Lifestyle Brand
+- **Case Study Link**: https://inranktech.com/case-studies/vasro-ventures-fashion-apparel.html
+- **Showcase Link**: https://inranktech.com/our-work/vasro-ventures-fashion-apparel.html
+- **Delivered Services**: Editorial Fashion UI/UX Design, Interactive Lookbook & Catalog Engine, Mobile-First Touch Gestures & Micro-Animations, Apparel Sizing & Silhouette Matrix, E-Commerce Checkout Optimization, High-Fashion Brand Positioning
+- **Technologies Deployed**: Modern JavaScript, TailwindCSS Luxury Tokens, Lucide Icons, Product Schema JSON-LD, Touch Swipe Visual Carousels
+- **Executive Solution Summary**: Inrank designed a minimalist, editorial-first web experience inspired by European fashion ateliers. Using monochromatic typography, spacious white margins, instant image pre-caching, and interactive silhouette calculators, we transformed the site into a high-converting digital flagship store.
+- **Verified Deliverables & Highlights**:
+  - **Editorial Digital Lookbook**: Engineered high-fashion visual grids with sticky image previews, model measurement disclosures, and fabric composition callouts.
+  - **Instant Mobile Touch Navigation**: Optimized touch swipe carousels and 1-thumb checkout buttons tailored for millennial and Gen-Z mobile shoppers on 5G/4G connections.
+  - **Precision Sizing & Fit Advisor**: Integrated an interactive sizing matrix allowing shoppers to compare bust, waist, and hip metrics against exact garment measurements.
+  - **Direct WhatsApp Styling Desk**: Implemented a personal stylist consultation desk via WhatsApp, allowing customers to ask styling questions and request custom tailoring.
+
+### Case Study: HCPNest - Healthcare Recruitment & Medical Clinical Staffing Network (HCPNest (HCP Network))
+- **Client Domain**: hcpnest.com (Live URL: https://hcpnest.com)
+- **Industry & Sector**: Healthcare Staffing, Medical Recruitment & Clinical Job Board | Healthcare Talent Recruitment & Clinical Staffing Network
+- **Case Study Link**: https://inranktech.com/case-studies/hcpnest-healthcare-staffing-portal.html
+- **Showcase Link**: https://inranktech.com/our-work/hcpnest-healthcare-staffing-portal.html
+- **Delivered Services**: Dual-Sided Medical Marketplace UX, Candidate Resume & Credential Uploader, Employer Clinical Job Requisition Engine, JobPosting Structured Data Schema, HIPAA-Compliant Medical Inquiry Funnels, Healthcare Search Engine Domination
+- **Technologies Deployed**: Modern JavaScript, TailwindCSS Design System, Lucide Icons, JobPosting Schema JSON-LD, Filterable Clinical Taxonomy
+- **Executive Solution Summary**: Inrank designed a trustworthy, high-efficiency dual-sided talent marketplace. We built dedicated workflows for hospital HR directors to publish requisitions and clinical professionals to filter openings by specialty, shift type, and geography with 1-click credential submission.
+- **Verified Deliverables & Highlights**:
+  - **Dual-Audience Portal Architecture**: Distinct user journeys: 'For Healthcare Candidates' (browse verified hospital jobs, salary benchmarks, credential vault) and 'For Medical Employers' (post requisitions, request pre-vetted staff).
+  - **Google Jobs Indexing Engine**: Embedded real-time JobPosting structured data schema for every medical role, automatically featuring HCPNest vacancies directly inside Google's native Jobs Search widget.
+  - **Clinical Specialty Taxonomy**: Filterable categorization covering 20+ disciplines: ICU/CCU Nursing, Emergency Medicine, Surgery, Radiology, Oncology, and Hospital Management.
+  - **Rapid Emergency Placement Desk**: Dedicated 24/7 urgent staffing hotline and WhatsApp dispatch for hospitals facing immediate clinical roster shortages.
+
+### Case Study: Riitu Institution - Premier CA, Commerce & Professional Coaching Academy (Riitu Institution (Ritu Academy))
+- **Client Domain**: riituinstitution.com (Live URL: https://riituinstitution.com)
+- **Industry & Sector**: Professional Commerce Coaching & Higher Education | CA, Commerce & K-12 Academic Mentorship Academy
+- **Case Study Link**: https://inranktech.com/case-studies/riitu-institution-ca-commerce-academy.html
+- **Showcase Link**: https://inranktech.com/our-work/riitu-institution-ca-commerce-academy.html
+- **Delivered Services**: Academic & Coaching Web Architecture, Interactive Course & Syllabus Download Hub, Local Navi Mumbai Education SEO, Student Testimonials & Rankers Wall, WhatsApp Instant Admission Counseling Desk, Course & EducationalOrganization Schema
+- **Technologies Deployed**: Modern JavaScript, TailwindCSS Design System, Lucide Icons, Course Schema JSON-LD, EducationalOrganization Schema
+- **Executive Solution Summary**: Inrank engineered a modern, inspiring academic destination emphasizing academic excellence, faculty credentials, student success stories, and an interactive Course Directory with 1-click syllabus previews and instant admission counseling.
+- **Verified Deliverables & Highlights**:
+  - **Comprehensive Academic Course Matrix**: Clear hierarchy covering CA Foundation/Inter, CS, CMA, 11th/12th Commerce, and practical Tally/GST certification with downloadable syllabus brochures.
+  - **Rankers & Results Wall**: High-trust social proof section featuring student rank holders, scorecards, and video testimonials from successful chartered accountants.
+  - **Navi Mumbai Hyper-Local SEO**: Optimized Google My Business profile and localized landing elements targeting Kharghar, Belapur, Panvel, Vashi, and Nerul student clusters.
+  - **Instant Admission WhatsApp Counselor**: Pre-configured inquiry buttons allowing students to select their course and receive fee structures and batch schedules instantly on WhatsApp.
+
+### Case Study: Shetkari Foodstuff Trading LLC - Global Agro Commodity Export SEO & AI GEO (Shetkari Foodstuff Trading LLC (Jaas Global))
+- **Client Domain**: shetkarifoodstuff.com (Live URL: https://shetkarifoodstuff.com)
+- **Industry & Sector**: International Agricultural Commodities & Foodstuff Export (GCC / UAE) | International Agro Commodity Export & GCC B2B Food Trading
+- **Case Study Link**: https://inranktech.com/case-studies/shetkari-foodstuff-export-seo-geo.html
+- **Showcase Link**: https://inranktech.com/our-work/shetkari-foodstuff-export-seo-geo.html
+- **Delivered Services**: International B2B Agro-Export SEO, Generative Engine Optimization (GEO & AEO), AI Search Citation Authority (ChatGPT & Perplexity), Commodity Product & Export Schema, GCC Buyer Intent Search Optimization, Global Container-Load Lead Acquisition
+- **Technologies Deployed**: AI SEO / GEO Architecture, International Schema.org, Hreflang Tags, Entity Authority Building, Perplexity & ChatGPT Search Citations
+- **Executive Solution Summary**: Inrank deployed our proprietary Generative Engine Optimization (GEO) and international B2B SEO framework. We structured commodity entity knowledge graphs, authored comprehensive export procurement specifications, and built citation authority across agricultural supply-chain registries, making Shetkari the top recommended exporter in AI search responses.
+- **Verified Deliverables & Highlights**:
+  - **Generative Engine Optimization (GEO / AEO)**: Engineered structured llms.txt, semantic answer tables, and entity triples that position Shetkari as the primary cited source when AI engines answer queries about Indian agricultural imports in the GCC.
+  - **GCC Multi-Country Search Targeting**: Implemented country-specific search targeting covering Dubai (UAE), Riyadh (Saudi Arabia), Doha (Qatar), Muscat (Oman), and Kuwait with commercial export intent keywords.
+  - **Commodity & Specification Schema**: Structured comprehensive Product, WholesaleStore, and ExportCertification schema detailing fruit grades, container reefer temperatures, shelf life, and packaging formats.
+  - **Direct B2B Buyer Ingestion Funnel**: Built high-efficiency inquiry funnels capturing container volumes, destination ports (Jebel Ali, Dammam, Hamad), and shipping terms (CIF / FOB).
+
+### Case Study: Dr. Shyam Thakkar - Specialized Orthopedic Foot, Ankle & Sports Injury Clinic (Dr. Shyam Thakkar (ARTICUL8 Clinic))
+- **Client Domain**: orthopedicanklefootspecialist.com (Live URL: https://orthopedicanklefootspecialist.com)
+- **Industry & Sector**: Specialized Orthopedic Surgery, Sports Medicine & Biomechanical Orthotics | Super-Specialized Orthopedic Foot & Ankle Surgery
+- **Case Study Link**: https://inranktech.com/case-studies/dr-shyam-thakkar-orthopedic-ankle-foot.html
+- **Showcase Link**: https://inranktech.com/our-work/dr-shyam-thakkar-orthopedic-ankle-foot.html
+- **Delivered Services**: Medical Practice E-E-A-T Architecture, Condition-Specific Clinical Guides, Interactive Appointment Booking Funnel, Maharashtra Multi-City Medical SEO, MedicalProcedure & Physician Schema, Patient Testimonial Video Optimization
+- **Technologies Deployed**: Medical SEO Standards, Physician Schema JSON-LD, MedicalCondition Schema, Local Healthcare SEO, Patient Booking Integration
+- **Executive Solution Summary**: Inrank engineered a clinical authority ecosystem centered on patient education and transparent surgical credentials. We built deep clinical condition guides, integrated MedicalProcedure and Physician schemas, and created an effortless multi-city appointment scheduling funnel.
+- **Verified Deliverables & Highlights**:
+  - **Medical E-E-A-T & Fellowship Authority**: Structured comprehensive clinical biographies detailing Dr. Thakkar's USA/European fellowships, hospital affiliations, published papers, and surgical case volumes.
+  - **Condition & Treatment Guides**: Authored 18 in-depth, medically validated patient guides covering Plantar Fasciitis, Ankle Arthroscopy, Achilles Tendon Repair, Diabetic Foot, and Custom Orthotics.
+  - **Multi-City Maharashtra Map-Pack SEO**: Engineered local medical citations establishing clinical authority across Erandwane, Kothrud, Baner, Mumbai, Kalyan, and regional Maharashtra centers.
+  - **Frictionless Patient Consultation Desk**: Integrated an intuitive booking flow allowing patients to select their city, describe their symptoms, and confirm clinical slots via WhatsApp or phone.
+
+### Case Study: Dravya Financial Solutions - Enterprise Debt Syndication & Corporate Advisory (Dravya Financial Solutions Pvt Ltd)
+- **Client Domain**: dravyafinancial.com (Live URL: https://dravyafinancial.com)
+- **Industry & Sector**: Corporate Financial Services, Debt Syndication & Real Estate Funding | Corporate Debt Syndication, Structured Finance & SME Advisory
+- **Case Study Link**: https://inranktech.com/case-studies/dravya-financial-corporate-advisory.html
+- **Showcase Link**: https://inranktech.com/our-work/dravya-financial-corporate-advisory.html
+- **Delivered Services**: Institutional Financial UI/UX Architecture, High-Ticket B2B Deal Qualification Funnels, Structured Finance & Debt Syndication Taxonomies, Confidential Enterprise Transaction Desks, Corporate Finance Authority Building, FinancialService & Organization Schema
+- **Technologies Deployed**: Enterprise Web Standards, FinancialService Schema JSON-LD, NDA-Encrypted Deal Intake, Lucide Icons, Corporate Security Architecture
+- **Executive Solution Summary**: Inrank designed a dignified, institutional corporate finance portal conveying the solemnity of an elite investment bank. We built structured capital solution matrices, automated deal qualification filters, and a confidential transaction desk that immediately positions Dravya as a premier financial partner.
+- **Verified Deliverables & Highlights**:
+  - **Institutional Capital Solution Matrix**: Structured deep breakdown of 6 core capital disciplines: Real Estate Project Finance, Debt Syndication, Working Capital Facilities, Inventory Funding, Loan Against Property, and Equipment Finance.
+  - **Qualified Corporate Deal Intake**: Engineered smart lead qualification workflows filtering for company turnover, funding ticket size (₹5Cr - ₹200Cr+), asset backing, and existing debt profile.
+  - **Bank-Grade Confidentiality Architecture**: Prominently embedded digital NDA protocols and secure communication channels reassuring corporate CFOs and promoters regarding sensitive balance sheets.
+  - **Corporate Finance Authority SEO**: Targeted competitive financial terms across Mumbai's corporate corridors: 'real estate debt syndication Mumbai', 'working capital advisory for mid corporates', and 'JDA project funding'.
+
+---
+
+## 4. Generative Engine Optimization (GEO) & AI Search Standards
+Inrank Technologies structures every client asset for citation by LLMs and conversational search engines:
+1. **Answer-First Prose (BLUF)**: Primary definitions, prices, timelines, and deliverables are stated in the very first sentence of every section.
+2. **Schema.org Rich Graph**: Every page embeds deep JSON-LD schemas linking Organization, LocalBusiness, ProfessionalService, WebPage, Service, and FAQPage.
+3. **Verified Entity Credentials**: All facts match across Google Business Profile, Justdial, LinkedIn, and internal case studies.
+4. **Sub-Second Performance**: Pages load in under 1 second with Brotli/Gzip compression, local scripts, and modern WebP imagery, ensuring search engine bots index 100% of the DOM without timeout.
+
+---
+
+## 5. Contact & Consultation Access
+- **Instant Project Enquiry**: inranktech@gmail.com
+- **Immediate Phone Support**: +91 87888 23182
+- **WhatsApp Chat**: https://wa.me/918788823182
+- **Website**: https://inranktech.com

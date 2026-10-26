@@ -295,6 +295,14 @@ app.get("/llms.txt", (req, res) => {
 URL: https://inranktech.com
 `);
 });
+app.get("/llms-full.txt", (req, res) => {
+  res.type("text/plain");
+  const localLlmsFull = path.join(process.cwd(), "public", "llms-full.txt");
+  const rootLlmsFull = path.join(process.cwd(), "llms-full.txt");
+  if (fs.existsSync(localLlmsFull)) return res.sendFile(localLlmsFull);
+  if (fs.existsSync(rootLlmsFull)) return res.sendFile(rootLlmsFull);
+  return res.redirect("/llms.txt");
+});
 app.get("/sitemap.xml", (req, res) => {
   res.type("application/xml");
   const localSitemap = path.join(process.cwd(), "public", "sitemap.xml");
