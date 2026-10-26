@@ -279,33 +279,29 @@ app.post("/api/submit-seo-report", async (req, res): Promise<any> => {
 // Configure robots.txt directly
 app.get("/robots.txt", (req, res) => {
   res.type("text/plain");
-  res.send(`User-agent: *
-Allow: /
-Sitemap: ${process.env.APP_URL || "https://inranktech.com"}/sitemap.xml
-`);
+  const localRobots = path.join(process.cwd(), "public", "robots.txt");
+  if (fs.existsSync(localRobots)) return res.sendFile(localRobots);
+  res.send(`User-agent: *\nAllow: /\nSitemap: ${process.env.APP_URL || "https://inranktech.com"}/sitemap.xml\n`);
 });
 
-// Configure llms.txt directly for AI crawlers like Gemini etc.
+// Configure llms.txt directly for AI crawlers like Gemini, Perplexity, ChatGPT
 app.get("/llms.txt", (req, res) => {
   res.type("text/plain");
-  res.send(`# Inrank Technologies - AI SEO & Performance Growth Agency
-URL: ${process.env.APP_URL || "https://inranktech.com"}
+  const localLlms = path.join(process.cwd(), "public", "llms.txt");
+  const rootLlms = path.join(process.cwd(), "llms.txt");
+  if (fs.existsSync(localLlms)) return res.sendFile(localLlms);
+  if (fs.existsSync(rootLlms)) return res.sendFile(rootLlms);
+  return res.send(`# Inrank Technologies\nURL: https://inranktech.com\n`);
+});
 
-## Agency Overview
-Inrank Technologies is a premium, performance-first digital growth agency. We specialize in building conversion-engineered websites, managing high-yielding paid ad campaigns (Google & Meta) and implementing advanced search engine optimization (SEO) that directly drives top-line revenue for businesses.
-
-## Key Capabilities & Core Niches
-- Conversion-Optimized Web Design (Vite, React, Shopify, Custom WordPress)
-- Intelligent AI-Powered On-Page SEO Auditing Tool (HTML and image assets file upload analysis)
-- Highly focused D2C Brands optimization (Shopify setups, scaling ROAS)
-- Local Search Engine Domination (Google Maps ranking, local map packs)
-- High-performing campaign strategies for Dental clinic, Healthcare, Real Estate, Education and B2B services.
-
-## Contact & Location
-- San Francisco, California, US (with global remote teams).
-- Email: inranktech@gmail.com
-- Phone/WhatsApp: +91 87888 23182
-`);
+// Configure sitemap.xml directly
+app.get("/sitemap.xml", (req, res) => {
+  res.type("application/xml");
+  const localSitemap = path.join(process.cwd(), "public", "sitemap.xml");
+  const rootSitemap = path.join(process.cwd(), "sitemap.xml");
+  if (fs.existsSync(localSitemap)) return res.sendFile(localSitemap);
+  if (fs.existsSync(rootSitemap)) return res.sendFile(rootSitemap);
+  return res.status(404).send("Sitemap not found");
 });
 
 // Explicit direct route for Homepage-2 (advertising landing page)
@@ -456,6 +452,21 @@ app.get(["/our-work/:id", "/our-work/:id.html", "/case-studies/:id", "/case-stud
     if (fs.existsSync(c)) return res.sendFile(c);
   }
   return res.redirect("/our-work.html");
+});
+
+// Explicit direct routes for 27 dedicated Service Hub pages
+app.get(["/services/:id", "/services/:id/", "/services/:id.html"], (req, res) => {
+  const rawId = req.params.id.replace(/\.html$/, "").replace(/\/$/, "");
+  const candidates = [
+    path.join(process.cwd(), "dist", "services", `${rawId}.html`),
+    path.join(process.cwd(), "public", "services", `${rawId}.html`),
+    path.join(process.cwd(), "public", "services", rawId, "index.html"),
+    path.join(process.cwd(), "inrank-27-service-pages", "pages", `${rawId}.html`),
+  ];
+  for (const c of candidates) {
+    if (fs.existsSync(c)) return res.sendFile(c);
+  }
+  return res.redirect("/#/services");
 });
 
 // Serve frontend with Vite middleware in dev or as static files in production
