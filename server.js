@@ -5,12 +5,51 @@ import fs from "fs";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
 import dotenv from "dotenv";
+import compression from "compression";
 dotenv.config();
 var app = express();
 var PORT = Number(process.env.PORT) || 3e3;
+app.use(
+  compression({
+    level: 6,
+    threshold: 1024,
+    filter: (req, res) => {
+      if (req.headers["x-no-compression"]) return false;
+      return compression.filter(req, res);
+    }
+  })
+);
+var staticCacheOptions = {
+  maxAge: "7d",
+  setHeaders: (res, filePath) => {
+    if (/\.(png|jpe?g|webp|gif|svg|ico|woff2?|ttf|eot)$/i.test(filePath)) {
+      res.setHeader("Cache-Control", "public, max-age=2592000, immutable");
+    } else if (/\.(css|js)$/i.test(filePath)) {
+      res.setHeader("Cache-Control", "public, max-age=604800, stale-while-revalidate=86400");
+    } else if (/\.(html)$/i.test(filePath)) {
+      res.setHeader("Cache-Control", "public, max-age=0, must-revalidate");
+    }
+  }
+};
+app.use((req, res, next) => {
+  if (req.method === "GET" && req.headers.accept && req.headers.accept.includes("image/webp")) {
+    const rawPath = req.path;
+    if (/\.(png|jpe?g)$/i.test(rawPath)) {
+      const webpRelPath = rawPath.replace(/\.(png|jpe?g)$/i, ".webp");
+      const publicWebpFile = path.join(process.cwd(), "public", webpRelPath);
+      if (fs.existsSync(publicWebpFile)) {
+        res.setHeader("Content-Type", "image/webp");
+        res.setHeader("Cache-Control", "public, max-age=2592000, immutable");
+        res.setHeader("Vary", "Accept");
+        return res.sendFile(publicWebpFile);
+      }
+    }
+  }
+  next();
+});
 app.use(express.json({ limit: "50mb", inflate: false }));
 app.use(express.urlencoded({ limit: "50mb", extended: true, inflate: false }));
-app.use(express.static(path.join(process.cwd(), "public")));
+app.use(express.static(path.join(process.cwd(), "public"), staticCacheOptions));
 var getGeminiClient = () => {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
@@ -239,6 +278,8 @@ app.post("/api/submit-seo-report", async (req, res) => {
 });
 app.get("/robots.txt", (req, res) => {
   res.type("text/plain");
+  const localRobots = path.join(process.cwd(), "public", "robots.txt");
+  if (fs.existsSync(localRobots)) return res.sendFile(localRobots);
   res.send(`User-agent: *
 Allow: /
 Sitemap: ${process.env.APP_URL || "https://inranktech.com"}/sitemap.xml
@@ -246,24 +287,21 @@ Sitemap: ${process.env.APP_URL || "https://inranktech.com"}/sitemap.xml
 });
 app.get("/llms.txt", (req, res) => {
   res.type("text/plain");
-  res.send(`# Inrank Technologies - AI SEO & Performance Growth Agency
-URL: ${process.env.APP_URL || "https://inranktech.com"}
-
-## Agency Overview
-Inrank Technologies is a premium, performance-first digital growth agency. We specialize in building conversion-engineered websites, managing high-yielding paid ad campaigns (Google & Meta) and implementing advanced search engine optimization (SEO) that directly drives top-line revenue for businesses.
-
-## Key Capabilities & Core Niches
-- Conversion-Optimized Web Design (Vite, React, Shopify, Custom WordPress)
-- Intelligent AI-Powered On-Page SEO Auditing Tool (HTML and image assets file upload analysis)
-- Highly focused D2C Brands optimization (Shopify setups, scaling ROAS)
-- Local Search Engine Domination (Google Maps ranking, local map packs)
-- High-performing campaign strategies for Dental clinic, Healthcare, Real Estate, Education and B2B services.
-
-## Contact & Location
-- San Francisco, California, US (with global remote teams).
-- Email: inranktech@gmail.com
-- Phone/WhatsApp: +91 87888 23182
+  const localLlms = path.join(process.cwd(), "public", "llms.txt");
+  const rootLlms = path.join(process.cwd(), "llms.txt");
+  if (fs.existsSync(localLlms)) return res.sendFile(localLlms);
+  if (fs.existsSync(rootLlms)) return res.sendFile(rootLlms);
+  return res.send(`# Inrank Technologies
+URL: https://inranktech.com
 `);
+});
+app.get("/sitemap.xml", (req, res) => {
+  res.type("application/xml");
+  const localSitemap = path.join(process.cwd(), "public", "sitemap.xml");
+  const rootSitemap = path.join(process.cwd(), "sitemap.xml");
+  if (fs.existsSync(localSitemap)) return res.sendFile(localSitemap);
+  if (fs.existsSync(rootSitemap)) return res.sendFile(rootSitemap);
+  return res.status(404).send("Sitemap not found");
 });
 app.get(["/homepage-2", "/homepage-2.html"], (req, res) => {
   const distPage = path.join(process.cwd(), "dist", "homepage-2.html");
@@ -395,12 +433,26 @@ app.get(["/our-work/:id", "/our-work/:id.html", "/case-studies/:id", "/case-stud
   }
   return res.redirect("/our-work.html");
 });
+app.get(["/services/:id", "/services/:id/", "/services/:id.html"], (req, res) => {
+  const rawId = req.params.id.replace(/\.html$/, "").replace(/\/$/, "");
+  const candidates = [
+    path.join(process.cwd(), "dist", "services", `${rawId}.html`),
+    path.join(process.cwd(), "public", "services", `${rawId}.html`),
+    path.join(process.cwd(), "public", "services", rawId, "index.html"),
+    path.join(process.cwd(), "inrank-27-service-pages", "pages", `${rawId}.html`)
+  ];
+  for (const c of candidates) {
+    if (fs.existsSync(c)) return res.sendFile(c);
+  }
+  return res.redirect("/#/services");
+});
 async function startServer() {
   const distPath = path.join(process.cwd(), "dist");
   const hasDist = fs.existsSync(path.join(distPath, "index.html"));
   if (process.env.NODE_ENV === "production" || hasDist) {
-    app.use(express.static(distPath));
+    app.use(express.static(distPath, staticCacheOptions));
     app.get("*", (req, res) => {
+      res.setHeader("Cache-Control", "public, max-age=0, must-revalidate");
       res.sendFile(path.join(distPath, "index.html"));
     });
   } else {

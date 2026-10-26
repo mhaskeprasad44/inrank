@@ -4,16 +4,61 @@ import fs from "fs";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
 import dotenv from "dotenv";
+import compression from "compression";
 
 dotenv.config();
 
 const app = express();
 const PORT = Number(process.env.PORT) || 3000;
 
+// High-performance response compression (Gzip / Deflate)
+app.use(
+  compression({
+    level: 6,
+    threshold: 1024,
+    filter: (req, res) => {
+      if (req.headers["x-no-compression"]) return false;
+      return compression.filter(req, res);
+    },
+  })
+);
+
+// Cache-Control headers configuration for static assets
+const staticCacheOptions = {
+  maxAge: "7d",
+  setHeaders: (res: express.Response, filePath: string) => {
+    if (/\.(png|jpe?g|webp|gif|svg|ico|woff2?|ttf|eot)$/i.test(filePath)) {
+      res.setHeader("Cache-Control", "public, max-age=2592000, immutable");
+    } else if (/\.(css|js)$/i.test(filePath)) {
+      res.setHeader("Cache-Control", "public, max-age=604800, stale-while-revalidate=86400");
+    } else if (/\.(html)$/i.test(filePath)) {
+      res.setHeader("Cache-Control", "public, max-age=0, must-revalidate");
+    }
+  },
+};
+
+// Automatic WebP content negotiation: if browser supports webp and webp file exists, serve it
+app.use((req, res, next) => {
+  if (req.method === "GET" && req.headers.accept && req.headers.accept.includes("image/webp")) {
+    const rawPath = req.path;
+    if (/\.(png|jpe?g)$/i.test(rawPath)) {
+      const webpRelPath = rawPath.replace(/\.(png|jpe?g)$/i, ".webp");
+      const publicWebpFile = path.join(process.cwd(), "public", webpRelPath);
+      if (fs.existsSync(publicWebpFile)) {
+        res.setHeader("Content-Type", "image/webp");
+        res.setHeader("Cache-Control", "public, max-age=2592000, immutable");
+        res.setHeader("Vary", "Accept");
+        return res.sendFile(publicWebpFile);
+      }
+    }
+  }
+  next();
+});
+
 // Set up larger limits for base64 HTML and image files
 app.use(express.json({ limit: "50mb", inflate: false }));
 app.use(express.urlencoded({ limit: "50mb", extended: true, inflate: false }));
-app.use(express.static(path.join(process.cwd(), "public")));
+app.use(express.static(path.join(process.cwd(), "public"), staticCacheOptions));
 
 // Initialize the modern @google/genai client (Optional)
 // Returns null gracefully if GEMINI_API_KEY is not configured
@@ -475,8 +520,9 @@ async function startServer() {
   const hasDist = fs.existsSync(path.join(distPath, "index.html"));
 
   if (process.env.NODE_ENV === "production" || hasDist) {
-    app.use(express.static(distPath));
+    app.use(express.static(distPath, staticCacheOptions));
     app.get("*", (req, res) => {
+      res.setHeader("Cache-Control", "public, max-age=0, must-revalidate");
       res.sendFile(path.join(distPath, "index.html"));
     });
   } else {

@@ -11,6 +11,11 @@ export default defineConfig(() => {
       },
     },
     build: {
+      target: 'es2020',
+      minify: 'esbuild' as const,
+      cssCodeSplit: true,
+      sourcemap: false,
+      chunkSizeWarningLimit: 1200,
       rollupOptions: {
         input: {
           main: path.resolve(__dirname, 'index.html'),

@@ -209,7 +209,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <!-- Lucide Icons CDN -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/lucide.min.js" defer></script>
 
     <style>
 
@@ -367,7 +367,7 @@
           
           <!-- Site Identity Logo -->
           <a href="/" class="flex items-center gap-2.5 group">
-            <img src="/logo.png" class="h-8 w-8 sm:h-9 sm:w-9 object-contain group-hover:scale-105 transition-transform" alt="Inrank Technologies logo" />
+            <img src="/logo.png" class="h-8 w-8 sm:h-9 sm:w-9 object-contain group-hover:scale-105 transition-transform" alt="Inrank Technologies logo"  decoding="async" />
             <div class="flex flex-col leading-none">
               <span class="font-display font-bold text-[15px] sm:text-[16px] tracking-tight text-foreground">Inrank</span>
               <span class="font-display font-semibold text-[9px] uppercase tracking-[0.22em] text-emerald-600">Technologies</span>
@@ -1166,12 +1166,11 @@
 
                   <!-- Image Visual -->
                   <div class="mt-8 relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5] rounded-xl overflow-hidden border border-border bg-muted">
-                    <img
-                      src="/images/team-warroom.jpg"
+                    <img src="/images/team-warroom.jpg"
                       alt="Inrank Growth & Engineering Team Workspace"
                       class="object-cover w-full h-full opacity-90 transition-transform duration-1000 hover:scale-105"
                       loading="lazy"
-                    />
+                     decoding="async" />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                     
                     <div class="absolute bottom-5 left-5 right-5 text-white">
@@ -1584,7 +1583,7 @@
                       </div>
                       
                       <a href="/our-work/cytos.html" class="block w-full h-full relative overflow-hidden" title="View CyTOS project details">
-                        <img src="/portfolio/screenshots/cytos.png" alt="CyTOS Machines website screenshot" class="w-full h-full object-cover object-top group-hover/thumb:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
+                        <img src="/portfolio/screenshots/cytos.webp" alt="CyTOS Machines website screenshot" class="w-full h-full object-cover object-top group-hover/thumb:scale-105 transition-transform duration-500 ease-out" loading="lazy"  decoding="async" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-0 group-hover/thumb:opacity-100 transition-opacity duration-300 flex items-end p-5">
                           <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 text-white font-bold text-xs shadow-xl">
                             <span>View Project</span>
@@ -1639,7 +1638,7 @@
                       </div>
                       
                       <a href="/our-work/fludio.html" class="block w-full h-full relative overflow-hidden" title="View Fludio project details">
-                        <img src="/portfolio/screenshots/fludio.png" alt="Fludio Water Solutions website screenshot" class="w-full h-full object-cover object-top group-hover/thumb:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
+                        <img src="/portfolio/screenshots/fludio.webp" alt="Fludio Water Solutions website screenshot" class="w-full h-full object-cover object-top group-hover/thumb:scale-105 transition-transform duration-500 ease-out" loading="lazy"  decoding="async" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-0 group-hover/thumb:opacity-100 transition-opacity duration-300 flex items-end p-5">
                           <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 text-white font-bold text-xs shadow-xl">
                             <span>View Project</span>
@@ -1694,7 +1693,7 @@
                       </div>
                       
                       <a href="/our-work/hiragrafix.html" class="block w-full h-full relative overflow-hidden" title="View HIRAGRAFIX project details">
-                        <img src="/portfolio/screenshots/hiragrafix.png" alt="HIRAGRAFIX website screenshot" class="w-full h-full object-cover object-top group-hover/thumb:scale-105 transition-transform duration-500 ease-out" loading="lazy" />
+                        <img src="/portfolio/screenshots/hiragrafix.webp" alt="HIRAGRAFIX website screenshot" class="w-full h-full object-cover object-top group-hover/thumb:scale-105 transition-transform duration-500 ease-out" loading="lazy"  decoding="async" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-0 group-hover/thumb:opacity-100 transition-opacity duration-300 flex items-end p-5">
                           <span class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 text-white font-bold text-xs shadow-xl">
                             <span>View Project</span>
@@ -1754,12 +1753,11 @@
                 <div class="border border-border bg-white dark:bg-card rounded-2xl overflow-hidden shadow-sm hover:border-primary/50 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
                   <div>
                     <div class="relative aspect-[16/10] overflow-hidden bg-muted">
-                      <img 
-                        src="/images/proof-search-rankings.jpg" 
+                      <img src="/images/proof-search-rankings.jpg" 
                         alt="Pune Healthcare Clinic SEO ranking surge screenshot" 
                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
                         loading="lazy"
-                      />
+                       decoding="async" />
                       <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-emerald-500/90 text-black">
                         Local SEO · Pune
                       </span>
@@ -1798,12 +1796,11 @@
                 <div class="border border-border bg-white dark:bg-card rounded-2xl overflow-hidden shadow-sm hover:border-primary/50 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
                   <div>
                     <div class="relative aspect-[16/10] overflow-hidden bg-muted">
-                      <img 
-                        src="/images/proof-ecommerce-roas.jpg" 
+                      <img src="/images/proof-ecommerce-roas.jpg" 
                         alt="Shopify D2C Brand ROAS scaling and revenue metrics" 
                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
                         loading="lazy"
-                      />
+                       decoding="async" />
                       <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-primary text-black">
                         Shopify &amp; Paid Ads
                       </span>
@@ -1842,12 +1839,11 @@
                 <div class="border border-border bg-white dark:bg-card rounded-2xl overflow-hidden shadow-sm hover:border-primary/50 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
                   <div>
                     <div class="relative aspect-[16/10] overflow-hidden bg-muted">
-                      <img 
-                        src="/images/proof-lead-generation.jpg" 
+                      <img src="/images/proof-lead-generation.jpg" 
                         alt="Pune Real Estate Google Ads PMax lead pipeline" 
                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
                         loading="lazy"
-                      />
+                       decoding="async" />
                       <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-blue-500 text-white">
                         Google Ads &amp; CRO
                       </span>
@@ -2092,12 +2088,11 @@
                 <!-- Skyline graphic block -->
                 <div class="lg:col-span-6 order-1 lg:order-2">
                   <div class="relative aspect-[4/3] rounded-xl overflow-hidden border border-border">
-                    <img
-                      src="/images/pune-tech-hub.jpg"
+                    <img src="/images/pune-tech-hub.jpg"
                       alt="Inrank Pune Operational Tech Hub & Worldwide Operations"
                       class="object-cover w-full h-full"
                       loading="lazy"
-                    />
+                     decoding="async" />
                     <div class="absolute inset-0 bg-gradient-to-tr from-zinc-950/70 via-zinc-950/20 to-transparent"></div>
                     <div class="absolute bottom-5 left-5 right-5 text-white">
                       <div class="font-display text-2xl sm:text-3xl font-bold tracking-tight">
@@ -2117,12 +2112,11 @@
                 <div class="grid lg:grid-cols-12 gap-8 items-center bg-card/60 border border-border rounded-2xl p-6 sm:p-10 shadow-sm">
                   <div class="lg:col-span-4 flex flex-col items-center sm:items-start text-center sm:text-left">
                     <div class="relative w-36 h-36 sm:w-44 sm:h-44 rounded-2xl overflow-hidden border-2 border-primary/40 shadow-md">
-                      <img 
-                        src="/images/lead-growth-engineer.jpg" 
+                      <img src="/images/lead-growth-engineer.jpg" 
                         alt="Senior Growth Engineer - Technical Lead at Inrank Technologies" 
                         class="w-full h-full object-cover"
                         loading="lazy"
-                      />
+                       decoding="async" />
                     </div>
                     <div class="mt-4">
                       <h3 class="font-display font-bold text-xl sm:text-2xl text-foreground">Senior Growth Engineer</h3>
@@ -2199,12 +2193,11 @@
                     </blockquote>
                   </div>
                   <figcaption class="mt-6 pt-6 border-t border-border flex items-center gap-3">
-                    <img
-                      src="/images/client-rhea-kulkarni.jpg"
+                    <img src="/images/client-rhea-kulkarni.jpg"
                       alt="Rhea Kulkarni"
                       class="h-11 w-11 rounded-full object-cover border border-border"
                       loading="lazy"
-                    />
+                     decoding="async" />
                     <div>
                       <div class="font-semibold text-sm">Rhea Kulkarni</div>
                       <div class="text-xs text-muted-foreground">Founder, Wellness D2C Brand</div>
@@ -2229,12 +2222,11 @@
                     </blockquote>
                   </div>
                   <figcaption class="mt-6 pt-6 border-t border-border flex items-center gap-3">
-                    <img
-                      src="/images/client-aditya-shah.jpg"
+                    <img src="/images/client-aditya-shah.jpg"
                       alt="Aditya Shah"
                       class="h-11 w-11 rounded-full object-cover border border-border"
                       loading="lazy"
-                    />
+                     decoding="async" />
                     <div>
                       <div class="font-semibold text-sm">Aditya Shah</div>
                       <div class="text-xs text-muted-foreground">Marketing Head, Real Estate Developer</div>
@@ -2259,12 +2251,11 @@
                     </blockquote>
                   </div>
                   <figcaption class="mt-6 pt-6 border-t border-border flex items-center gap-3">
-                    <img
-                      src="/images/client-neha-patil.jpg"
+                    <img src="/images/client-neha-patil.jpg"
                       alt="Dr. Neha Patil"
                       class="h-11 w-11 rounded-full object-cover border border-border"
                       loading="lazy"
-                    />
+                     decoding="async" />
                     <div>
                       <div class="font-semibold text-sm">Dr. Neha Patil</div>
                       <div class="text-xs text-muted-foreground">Owner, Dental Clinic</div>
@@ -3136,7 +3127,7 @@
             <!-- Branding block -->
             <div class="lg:col-span-5">
               <div class="flex items-center gap-2.5 h-8 w-auto">
-                <img src="/logo.png" class="h-8 w-8 object-contain" alt="Inrank logo" />
+                <img src="/logo.png" class="h-8 w-8 object-contain" alt="Inrank logo"  decoding="async" />
                 <div class="flex flex-col leading-none">
                   <span class="font-display font-bold text-[15px] tracking-tight">Inrank</span>
                   <span class="font-display font-medium text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Technologies</span>

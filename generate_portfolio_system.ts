@@ -41,8 +41,8 @@ function getCommonHead(title: string, description: string, canonicalPath: string
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-    <!-- Lucide Icons CDN -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Lucide Icons Local Bundle (Fast, Non-blocking) -->
+    <script src="/lucide.min.js" defer></script>
 
     <!-- Permanent Light Theme Initializer -->
     <script>
