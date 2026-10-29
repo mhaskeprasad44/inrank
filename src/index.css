@@ -800,3 +800,36 @@ input[type="range"].adant-slider::-webkit-slider-thumb:hover {
     padding-bottom: 64px;
   }
 }
+
+
+      /* Hero section button hover visibility guarantee */
+      .hero-btn-primary {
+        background-color: #009d49 !important;
+        color: #ffffff !important;
+      }
+      .hero-btn-primary:hover {
+        background-color: #00813c !important;
+        color: #ffffff !important;
+      }
+      .hero-btn-primary *,
+      .hero-btn-primary:hover * {
+        color: #ffffff !important;
+      }
+
+      .hero-btn-secondary {
+        background-color: #ffffff !important;
+        color: #0f172a !important;
+        border: 1.5px solid #cbd5e1 !important;
+      }
+      .hero-btn-secondary * {
+        color: #0f172a !important;
+      }
+      .hero-btn-secondary:hover {
+        background-color: #009d49 !important;
+        border-color: #009d49 !important;
+        color: #ffffff !important;
+      }
+      .hero-btn-secondary:hover * {
+        color: #ffffff !important;
+      }
+

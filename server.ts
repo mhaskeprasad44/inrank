@@ -58,6 +58,15 @@ app.use((req, res, next) => {
 // Set up larger limits for base64 HTML and image files
 app.use(express.json({ limit: "50mb", inflate: false }));
 app.use(express.urlencoded({ limit: "50mb", extended: true, inflate: false }));
+// Explicit top-priority direct route for main Services Hub page
+app.get(["/services", "/services/", "/services.html"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "services.html");
+  const localPage = path.join(process.cwd(), "services.html");
+  if (fs.existsSync(distPage)) return res.sendFile(distPage);
+  if (fs.existsSync(localPage)) return res.sendFile(localPage);
+  return res.sendFile(path.join(process.cwd(), "index.html"));
+});
+
 app.use(express.static(path.join(process.cwd(), "public"), staticCacheOptions));
 
 // Initialize the modern @google/genai client (Optional)
@@ -281,6 +290,7 @@ Your website **${fallbackUrl}** has been assessed by Inrank Technologies' live c
   }
 });
 
+
 // API Endpoint for automatically submitting SEO Report requests directly from the website side
 app.post("/api/submit-seo-report", async (req, res): Promise<any> => {
   try {
@@ -392,6 +402,7 @@ app.get(["/homepage-3", "/homepage-3.html"], (req, res) => {
   }
   return res.sendFile(path.join(process.cwd(), "index.html"));
 });
+
 
 // Explicit direct route for Pricing
 app.get(["/pricing", "/pricing.html"], (req, res) => {
@@ -509,6 +520,17 @@ app.get(["/our-work/:id", "/our-work/:id.html", "/case-studies/:id", "/case-stud
   return res.redirect("/our-work.html");
 });
 
+// Explicit direct route for main Services Hub page
+app.get(["/services", "/services/", "/services.html"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "services.html");
+  const localPage = path.join(process.cwd(), "services.html");
+  const publicPage = path.join(process.cwd(), "public", "services.html");
+  if (fs.existsSync(distPage)) return res.sendFile(distPage);
+  if (fs.existsSync(localPage)) return res.sendFile(localPage);
+  if (fs.existsSync(publicPage)) return res.sendFile(publicPage);
+  return res.sendFile(path.join(process.cwd(), "index.html"));
+});
+
 // Explicit direct routes for 27 dedicated Service Hub pages
 app.get(["/services/:id", "/services/:id/", "/services/:id.html"], (req, res) => {
   const rawId = req.params.id.replace(/\.html$/, "").replace(/\/$/, "");
@@ -521,7 +543,7 @@ app.get(["/services/:id", "/services/:id/", "/services/:id.html"], (req, res) =>
   for (const c of candidates) {
     if (fs.existsSync(c)) return res.sendFile(c);
   }
-  return res.redirect("/#/services");
+  return res.redirect("/services.html");
 });
 
 // Serve frontend with Vite middleware in dev or as static files in production

@@ -49,6 +49,13 @@ app.use((req, res, next) => {
 });
 app.use(express.json({ limit: "50mb", inflate: false }));
 app.use(express.urlencoded({ limit: "50mb", extended: true, inflate: false }));
+app.get(["/services", "/services/", "/services.html"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "services.html");
+  const localPage = path.join(process.cwd(), "services.html");
+  if (fs.existsSync(distPage)) return res.sendFile(distPage);
+  if (fs.existsSync(localPage)) return res.sendFile(localPage);
+  return res.sendFile(path.join(process.cwd(), "index.html"));
+});
 app.use(express.static(path.join(process.cwd(), "public"), staticCacheOptions));
 var getGeminiClient = () => {
   const apiKey = process.env.GEMINI_API_KEY;
@@ -441,6 +448,15 @@ app.get(["/our-work/:id", "/our-work/:id.html", "/case-studies/:id", "/case-stud
   }
   return res.redirect("/our-work.html");
 });
+app.get(["/services", "/services/", "/services.html"], (req, res) => {
+  const distPage = path.join(process.cwd(), "dist", "services.html");
+  const localPage = path.join(process.cwd(), "services.html");
+  const publicPage = path.join(process.cwd(), "public", "services.html");
+  if (fs.existsSync(distPage)) return res.sendFile(distPage);
+  if (fs.existsSync(localPage)) return res.sendFile(localPage);
+  if (fs.existsSync(publicPage)) return res.sendFile(publicPage);
+  return res.sendFile(path.join(process.cwd(), "index.html"));
+});
 app.get(["/services/:id", "/services/:id/", "/services/:id.html"], (req, res) => {
   const rawId = req.params.id.replace(/\.html$/, "").replace(/\/$/, "");
   const candidates = [
@@ -452,7 +468,7 @@ app.get(["/services/:id", "/services/:id/", "/services/:id.html"], (req, res) =>
   for (const c of candidates) {
     if (fs.existsSync(c)) return res.sendFile(c);
   }
-  return res.redirect("/#/services");
+  return res.redirect("/services.html");
 });
 async function startServer() {
   const distPath = path.join(process.cwd(), "dist");

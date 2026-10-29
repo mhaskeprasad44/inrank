@@ -19,9 +19,12 @@ export default defineConfig(() => {
       rollupOptions: {
         input: {
           main: path.resolve(__dirname, 'index.html'),
+          services: path.resolve(__dirname, 'services.html'),
           homepage2: path.resolve(__dirname, 'homepage-2.html'),
           homepage3: path.resolve(__dirname, 'homepage-3.html'),
           pricing: path.resolve(__dirname, 'pricing.html'),
+          privacyPolicy: path.resolve(__dirname, 'privacy-policy.html'),
+          termsAndConditions: path.resolve(__dirname, 'terms-and-conditions.html'),
           contact: path.resolve(__dirname, 'contact.html'),
           justdialProfile: path.resolve(__dirname, 'justdial-profile.html'),
           gbpBlueprint: path.resolve(__dirname, 'google-business-profile-top3.html'),

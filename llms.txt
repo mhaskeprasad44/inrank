@@ -162,3 +162,9 @@
 - [About Inrank Technologies](https://inranktech.com/#/about-us): Direct single-page application navigation section.
 - [Inrank Growth Insights & Blog](https://inranktech.com/#/blog): Direct single-page application navigation section.
 - [Consultation Form & Direct Contact](https://inranktech.com/#/contact): Direct single-page application navigation section.
+
+---
+
+## Legal & Compliance
+- [Privacy Policy](https://inranktech.com/privacy-policy.html): Complete privacy policy compliant with Indian DPDP Act 2023, GDPR, CCPA, and cookie governance.
+- [Terms & Conditions](https://inranktech.com/terms-and-conditions.html): Commercial terms, package deliverables, 100% IP & source code ownership transfer, and 365-day SLA warranty.

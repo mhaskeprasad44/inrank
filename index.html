@@ -222,6 +222,19 @@
         0% { transform: translateX(0); }
         100% { transform: translateX(-50%); }
       }
+      @keyframes scroll-marquee-reverse {
+        0% { transform: translateX(-50%); }
+        100% { transform: translateX(0); }
+      }
+      .marquee-track:hover {
+        animation-play-state: paused !important;
+      }
+      .client-logo-card {
+        transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .client-logo-card:hover {
+        transform: translateY(-2px);
+      }
       @keyframes whatsapp-pulse {
         0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
         70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
@@ -331,6 +344,38 @@
       .service-card:hover {
         transform: none !important;
       }
+    
+      /* Hero section button hover visibility guarantee */
+      .hero-btn-primary {
+        background-color: #009d49 !important;
+        color: #ffffff !important;
+      }
+      .hero-btn-primary:hover {
+        background-color: #00813c !important;
+        color: #ffffff !important;
+      }
+      .hero-btn-primary *,
+      .hero-btn-primary:hover * {
+        color: #ffffff !important;
+      }
+
+      .hero-btn-secondary {
+        background-color: #ffffff !important;
+        color: #0f172a !important;
+        border: 1.5px solid #cbd5e1 !important;
+      }
+      .hero-btn-secondary * {
+        color: #0f172a !important;
+      }
+      .hero-btn-secondary:hover {
+        background-color: #009d49 !important;
+        border-color: #009d49 !important;
+        color: #ffffff !important;
+      }
+      .hero-btn-secondary:hover * {
+        color: #ffffff !important;
+      }
+
     </style>
   </head>
   <body>
@@ -377,140 +422,369 @@
           <!-- Desktop Navigation -->
           <nav class="hidden md:flex items-center gap-5 lg:gap-7">
             
-            <!-- Services Dropdown (Full Width Mega Menu) -->
+            <!-- Services Dropdown (Full Width Horizontal Multimedia Mega Menu) -->
             <div class="relative group" id="services-nav-group">
-              <button id="services-dropdown-trigger" class="flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors py-2 focus:outline-none cursor-pointer">
+              <a href="/services.html" id="services-dropdown-trigger" class="flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors py-2 focus:outline-none cursor-pointer">
                 <span>Services</span>
                 <i data-lucide="chevron-down" id="services-dropdown-chevron" class="h-4 w-4 text-muted-foreground transition-transform duration-200 group-hover:rotate-180"></i>
-              </button>
+              </a>
               
-              <!-- Full-Width 4-Pillar Mega Dropdown Menu -->
-              <div id="services-dropdown-menu" class="fixed left-0 right-0 top-16 sm:top-20 w-full bg-white dark:bg-zinc-950 border-b border-border shadow-2xl opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 sm:py-8">
-                  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 text-left">
+              <!-- Full-Width Horizontal Multimedia Dropdown Menu -->
+              <div id="services-dropdown-menu" class="fixed left-0 right-0 top-16 sm:top-20 w-full bg-white/95 dark:bg-zinc-950/95 backdrop-blur-2xl border-b border-border shadow-2xl opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                  
+                  <!-- Main Horizontal Layout: 8 Cols Services + 4 Cols Spotlight (Never Wraps) -->
+                  <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch text-left">
                     
-                    <!-- Pillar 1: Web & E-Commerce -->
-                    <div class="space-y-2">
-                      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600 pb-2 border-b border-border/60">
-                        <i data-lucide="code-xml" class="w-4 h-4"></i>
-                        <span>Web &amp; E-Commerce</span>
+                    <!-- Left: 3 Pillars of Minimalist Services (Cols 1-8) -->
+                    <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-5 lg:gap-6">
+                      
+                      <!-- Pillar 1: Web & E-Commerce -->
+                      <div class="space-y-2.5">
+                        <div class="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-foreground pb-2 border-b border-stone-200 dark:border-stone-800">
+                          <i data-lucide="code-xml" class="w-4 h-4 text-emerald-600"></i>
+                          <span>Web &amp; E-Commerce</span>
+                        </div>
+                        <div class="space-y-1">
+                          <a href="/services/custom-website-development/" class="group/item flex items-start gap-2.5 p-2 rounded-lg hover:bg-stone-100/70 dark:hover:bg-zinc-900/80 transition-colors">
+                            <i data-lucide="laptop" class="w-4 h-4 text-stone-400 dark:text-stone-500 group-hover/item:text-emerald-600 transition-colors mt-0.5 shrink-0"></i>
+                            <div>
+                              <div class="text-sm font-semibold text-foreground group-hover/item:text-emerald-600 transition-colors">Custom Websites</div>
+                              <p class="text-xs text-muted-foreground leading-tight mt-0.5">High-speed React &amp; Vite platforms</p>
+                            </div>
+                          </a>
+
+                          <a href="/services/shopify-store-development/" class="group/item flex items-start gap-2.5 p-2 rounded-lg hover:bg-stone-100/70 dark:hover:bg-zinc-900/80 transition-colors">
+                            <i data-lucide="shopping-bag" class="w-4 h-4 text-stone-400 dark:text-stone-500 group-hover/item:text-emerald-600 transition-colors mt-0.5 shrink-0"></i>
+                            <div>
+                              <div class="text-sm font-semibold text-foreground group-hover/item:text-emerald-600 transition-colors">Shopify Stores</div>
+                              <p class="text-xs text-muted-foreground leading-tight mt-0.5">WhatsApp cart &amp; high checkout</p>
+                            </div>
+                          </a>
+
+                          <a href="/services/wordpress-development-services/" class="group/item flex items-start gap-2.5 p-2 rounded-lg hover:bg-stone-100/70 dark:hover:bg-zinc-900/80 transition-colors">
+                            <i data-lucide="layout-grid" class="w-4 h-4 text-stone-400 dark:text-stone-500 group-hover/item:text-emerald-600 transition-colors mt-0.5 shrink-0"></i>
+                            <div>
+                              <div class="text-sm font-semibold text-foreground group-hover/item:text-emerald-600 transition-colors">WordPress Dev</div>
+                              <p class="text-xs text-muted-foreground leading-tight mt-0.5">Custom themes &amp; speed audits</p>
+                            </div>
+                          </a>
+
+                          <a href="/website-design-company-in-pune.html" class="group/item flex items-start gap-2.5 p-2 rounded-lg hover:bg-stone-100/70 dark:hover:bg-zinc-900/80 transition-colors">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-stone-400 dark:text-stone-500 group-hover/item:text-emerald-600 transition-colors mt-0.5 shrink-0"></i>
+                            <div>
+                              <div class="text-sm font-semibold text-foreground group-hover/item:text-emerald-600 transition-colors">Web Design in Pune</div>
+                              <p class="text-xs text-muted-foreground leading-tight mt-0.5">Fixed pricing, 5-7 days turnaround</p>
+                            </div>
+                          </a>
+                        </div>
                       </div>
-                      <div class="space-y-1">
-                        <a href="/#/service/website-development" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
-                          <div class="text-xs font-bold text-foreground">Custom Website Development</div>
-                          <div class="text-[11px] text-muted-foreground">High-speed React/Vite/HTML5 websites</div>
-                        </a>
-                        <a href="/#/service/shopify-development" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
-                          <div class="text-xs font-bold text-foreground">Shopify &amp; E-Commerce Stores</div>
-                          <div class="text-[11px] text-muted-foreground">0% transaction commission, WhatsApp cart</div>
-                        </a>
-                        <a href="/#/service/wordpress-development" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
-                          <div class="text-xs font-bold text-foreground">WordPress Development</div>
-                          <div class="text-[11px] text-muted-foreground">Custom themes &amp; speed optimization</div>
-                        </a>
-                        <a href="/website-design-company-in-pune.html" class="block p-2 rounded-lg bg-emerald-50/50 dark:bg-emerald-950/20 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 transition-colors border border-emerald-100 dark:border-emerald-900/30">
-                          <div class="text-xs font-bold text-emerald-700 dark:text-emerald-400 flex items-center justify-between">
-                            <span>Web Designing in Pune (Local Hub)</span>
-                            <span class="text-[9px] uppercase px-1.5 py-0.2 bg-emerald-600 text-white rounded font-bold">Pune</span>
+
+                      <!-- Pillar 2: AI Search & SEO -->
+                      <div class="space-y-2.5">
+                        <div class="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-foreground pb-2 border-b border-stone-200 dark:border-stone-800">
+                          <i data-lucide="search" class="w-4 h-4 text-emerald-600"></i>
+                          <span>AI Search &amp; SEO</span>
+                        </div>
+                        <div class="space-y-1">
+                          <a href="/services/seo-company-pune/" class="group/item flex items-start gap-2.5 p-2 rounded-lg hover:bg-stone-100/70 dark:hover:bg-zinc-900/80 transition-colors">
+                            <i data-lucide="trending-up" class="w-4 h-4 text-stone-400 dark:text-stone-500 group-hover/item:text-emerald-600 transition-colors mt-0.5 shrink-0"></i>
+                            <div>
+                              <div class="text-sm font-semibold text-foreground group-hover/item:text-emerald-600 transition-colors">Local SEO Pune</div>
+                              <p class="text-xs text-muted-foreground leading-tight mt-0.5">Page-one Google organic rankings</p>
+                            </div>
+                          </a>
+
+                          <a href="/services/geo-seo-agency/" class="group/item flex items-start gap-2.5 p-2 rounded-lg hover:bg-stone-100/70 dark:hover:bg-zinc-900/80 transition-colors">
+                            <i data-lucide="bot" class="w-4 h-4 text-stone-400 dark:text-stone-500 group-hover/item:text-emerald-600 transition-colors mt-0.5 shrink-0"></i>
+                            <div>
+                              <div class="text-sm font-semibold text-foreground group-hover/item:text-emerald-600 transition-colors">GEO &amp; AI Search</div>
+                              <p class="text-xs text-muted-foreground leading-tight mt-0.5">ChatGPT &amp; Perplexity citations</p>
+                            </div>
+                          </a>
+
+                          <a href="/services/google-my-business-services/" class="group/item flex items-start gap-2.5 p-2 rounded-lg hover:bg-stone-100/70 dark:hover:bg-zinc-900/80 transition-colors">
+                            <i data-lucide="map-pinned" class="w-4 h-4 text-stone-400 dark:text-stone-500 group-hover/item:text-emerald-600 transition-colors mt-0.5 shrink-0"></i>
+                            <div>
+                              <div class="text-sm font-semibold text-foreground group-hover/item:text-emerald-600 transition-colors">Google Maps 3-Pack</div>
+                              <p class="text-xs text-muted-foreground leading-tight mt-0.5">GMB citations &amp; phone calls</p>
+                            </div>
+                          </a>
+
+                          <a href="/services/link-building-services/" class="group/item flex items-start gap-2.5 p-2 rounded-lg hover:bg-stone-100/70 dark:hover:bg-zinc-900/80 transition-colors">
+                            <i data-lucide="link" class="w-4 h-4 text-stone-400 dark:text-stone-500 group-hover/item:text-emerald-600 transition-colors mt-0.5 shrink-0"></i>
+                            <div>
+                              <div class="text-sm font-semibold text-foreground group-hover/item:text-emerald-600 transition-colors">Authority Backlinks</div>
+                              <p class="text-xs text-muted-foreground leading-tight mt-0.5">High DR editorial guest placements</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <!-- Pillar 3: Paid Ads & Brand -->
+                      <div class="space-y-2.5">
+                        <div class="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-foreground pb-2 border-b border-stone-200 dark:border-stone-800">
+                          <i data-lucide="target" class="w-4 h-4 text-emerald-600"></i>
+                          <span>Paid Ads &amp; Brand</span>
+                        </div>
+                        <div class="space-y-1">
+                          <a href="/services/google-ads-agency/" class="group/item flex items-start gap-2.5 p-2 rounded-lg hover:bg-stone-100/70 dark:hover:bg-zinc-900/80 transition-colors">
+                            <i data-lucide="crosshair" class="w-4 h-4 text-stone-400 dark:text-stone-500 group-hover/item:text-emerald-600 transition-colors mt-0.5 shrink-0"></i>
+                            <div>
+                              <div class="text-sm font-semibold text-foreground group-hover/item:text-emerald-600 transition-colors">Google &amp; PPC Ads</div>
+                              <p class="text-xs text-muted-foreground leading-tight mt-0.5">Search, Performance Max &amp; YouTube</p>
+                            </div>
+                          </a>
+
+                          <a href="/services/meta-ads-agency/" class="group/item flex items-start gap-2.5 p-2 rounded-lg hover:bg-stone-100/70 dark:hover:bg-zinc-900/80 transition-colors">
+                            <i data-lucide="share-2" class="w-4 h-4 text-stone-400 dark:text-stone-500 group-hover/item:text-emerald-600 transition-colors mt-0.5 shrink-0"></i>
+                            <div>
+                              <div class="text-sm font-semibold text-foreground group-hover/item:text-emerald-600 transition-colors">Meta &amp; Instagram Ads</div>
+                              <p class="text-xs text-muted-foreground leading-tight mt-0.5">Viral creatives &amp; lead funnels</p>
+                            </div>
+                          </a>
+
+                          <a href="/services/corporate-logo-design/" class="group/item flex items-start gap-2.5 p-2 rounded-lg hover:bg-stone-100/70 dark:hover:bg-zinc-900/80 transition-colors">
+                            <i data-lucide="palette" class="w-4 h-4 text-stone-400 dark:text-stone-500 group-hover/item:text-emerald-600 transition-colors mt-0.5 shrink-0"></i>
+                            <div>
+                              <div class="text-sm font-semibold text-foreground group-hover/item:text-emerald-600 transition-colors">Corporate Branding</div>
+                              <p class="text-xs text-muted-foreground leading-tight mt-0.5">Logo, typography &amp; stationery</p>
+                            </div>
+                          </a>
+
+                          <a href="/digital-marketing-agency-in-pune.html" class="group/item flex items-start gap-2.5 p-2 rounded-lg hover:bg-stone-100/70 dark:hover:bg-zinc-900/80 transition-colors">
+                            <i data-lucide="rocket" class="w-4 h-4 text-stone-400 dark:text-stone-500 group-hover/item:text-emerald-600 transition-colors mt-0.5 shrink-0"></i>
+                            <div>
+                              <div class="text-sm font-semibold text-foreground group-hover/item:text-emerald-600 transition-colors">Marketing in Pune</div>
+                              <p class="text-xs text-muted-foreground leading-tight mt-0.5">Multi-channel revenue growth partner</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Right: Minimalist Single-Project Showcase (Cols 9-12) -->
+                    <div class="lg:col-span-4 min-w-0 flex flex-col justify-between p-3.5 sm:p-4 rounded-xl border border-stone-200 dark:border-stone-800 bg-stone-50/40 dark:bg-zinc-900/40">
+                      <div>
+                        <!-- Header with Single-Project Counter and Controls -->
+                        <div class="flex items-center justify-between pb-2 border-b border-stone-200 dark:border-stone-800">
+                          <div class="flex items-center gap-1.5 text-sm font-bold text-foreground">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            <span>Featured Client Work</span>
                           </div>
-                          <div class="text-[11px] text-muted-foreground">Fixed pricing, 5-7 days turnaround</div>
-                        </a>
-                      </div>
-                    </div>
-
-                    <!-- Pillar 2: AI Search & SEO -->
-                    <div class="space-y-2">
-                      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600 pb-2 border-b border-border/60">
-                        <i data-lucide="search" class="w-4 h-4"></i>
-                        <span>AI Search &amp; SEO</span>
-                      </div>
-                      <div class="space-y-1">
-                        <a href="/#/service/seo" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
-                          <div class="text-xs font-bold text-foreground">Local SEO &amp; Google Rankings</div>
-                          <div class="text-[11px] text-muted-foreground">Top Google 3-Pack rankings in Pune</div>
-                        </a>
-                        <a href="/#/service/geo-seo-agency" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
-                          <div class="text-xs font-bold text-foreground">Generative Engine Optimization (GEO)</div>
-                          <div class="text-[11px] text-muted-foreground">Get cited in ChatGPT &amp; AI Overviews</div>
-                        </a>
-                        <a href="/#/service/gmb-optimization" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
-                          <div class="text-xs font-bold text-foreground">Google My Business (GMB)</div>
-                          <div class="text-[11px] text-muted-foreground">Direct customer calls &amp; inquiries</div>
-                        </a>
-                        <a href="/#/service/backlink-building" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
-                          <div class="text-xs font-bold text-foreground">Backlink &amp; Authority Building</div>
-                          <div class="text-[11px] text-muted-foreground">High DA contextual editorial links</div>
-                        </a>
-                      </div>
-                    </div>
-
-                    <!-- Pillar 3: Paid Ads & Growth -->
-                    <div class="space-y-2">
-                      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-indigo-600 pb-2 border-b border-border/60">
-                        <i data-lucide="target" class="w-4 h-4"></i>
-                        <span>Paid Ads &amp; Growth</span>
-                      </div>
-                      <div class="space-y-1">
-                        <a href="/#/service/google-ads" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
-                          <div class="text-xs font-bold text-foreground">Google Ads Management (PPC)</div>
-                          <div class="text-[11px] text-muted-foreground">High-ROAS search &amp; Performance Max</div>
-                        </a>
-                        <a href="/#/service/meta-ads" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
-                          <div class="text-xs font-bold text-foreground">Meta &amp; Instagram Ads Funnels</div>
-                          <div class="text-[11px] text-muted-foreground">Laser-targeted customer acquisition</div>
-                        </a>
-                        <a href="/#/service/social-media-marketing" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
-                          <div class="text-xs font-bold text-foreground">Social Media Marketing</div>
-                          <div class="text-[11px] text-muted-foreground">Viral reels &amp; organic brand authority</div>
-                        </a>
-                        <a href="/digital-marketing-agency-in-pune.html" class="block p-2 rounded-lg bg-indigo-50/50 dark:bg-indigo-950/20 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 transition-colors border border-indigo-100 dark:border-indigo-900/30">
-                          <div class="text-xs font-bold text-indigo-700 dark:text-indigo-400 flex items-center justify-between">
-                            <span>Digital Marketing in Pune (Local Hub)</span>
-                            <span class="text-[9px] uppercase px-1.5 py-0.2 bg-indigo-600 text-white rounded font-bold">Pune</span>
+                          <div class="flex items-center gap-2">
+                            <span class="reel-counter font-mono text-[10px] text-muted-foreground font-semibold">1 / 5</span>
+                            <div class="flex items-center gap-1">
+                              <button type="button" onclick="const el=this.closest('.lg\\:col-span-4').querySelector('.projects-reel'); if(el) el.scrollBy({left: -el.clientWidth, behavior: 'smooth'});" class="w-6 h-6 rounded-md border border-stone-200 dark:border-stone-800 bg-white dark:bg-zinc-950 hover:bg-stone-100 dark:hover:bg-zinc-800 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors cursor-pointer" aria-label="Previous project">
+                                <i data-lucide="chevron-left" class="w-3.5 h-3.5"></i>
+                              </button>
+                              <button type="button" onclick="const el=this.closest('.lg\\:col-span-4').querySelector('.projects-reel'); if(el) el.scrollBy({left: el.clientWidth, behavior: 'smooth'});" class="w-6 h-6 rounded-md border border-stone-200 dark:border-stone-800 bg-white dark:bg-zinc-950 hover:bg-stone-100 dark:hover:bg-zinc-800 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors cursor-pointer" aria-label="Next project">
+                                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                              </button>
+                            </div>
                           </div>
-                          <div class="text-[11px] text-muted-foreground">Multi-channel revenue generation</div>
-                        </a>
-                      </div>
-                    </div>
+                        </div>
 
-                    <!-- Pillar 4: Brand & Creative -->
-                    <div class="space-y-2">
-                      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-rose-600 pb-2 border-b border-border/60">
-                        <i data-lucide="palette" class="w-4 h-4"></i>
-                        <span>Brand &amp; Creative</span>
+                        <!-- Scrolling Track showing EXACTLY ONE project at a time -->
+                        <div class="projects-reel flex overflow-x-auto py-2.5 scroll-smooth snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden w-full" onscroll="const idx=Math.min(5, Math.max(1, Math.round(this.scrollLeft/this.clientWidth)+1)); const cnt=this.closest('.lg\\:col-span-4').querySelector('.reel-counter'); if(cnt) cnt.textContent=idx+' / 5';">
+                          
+                          <!-- Project 1: Fludio Luxury Interiors -->
+                          <a href="/case-studies/fludio.html" class="group/pcard w-full min-w-full max-w-full snap-center shrink-0 rounded-lg border border-stone-200 dark:border-stone-800 bg-white dark:bg-zinc-950 p-2.5 shadow-2xs hover:border-emerald-500 dark:hover:border-emerald-500 hover:shadow-sm transition-all duration-200 block">
+                            <div class="flex items-center justify-between pb-1.5 border-b border-stone-100 dark:border-zinc-800 text-[10px] text-muted-foreground font-mono">
+                              <span class="flex items-center gap-1.5">
+                                <i data-lucide="globe" class="w-3 h-3 text-emerald-600 shrink-0"></i>
+                                <span class="truncate">inranktech.com/fludio</span>
+                              </span>
+                              <span class="text-[9px] px-1.5 py-0.2 rounded font-bold uppercase bg-stone-100 dark:bg-zinc-900 text-stone-600 dark:text-stone-300">Interiors</span>
+                            </div>
+                            <div class="relative mt-2 rounded-md overflow-hidden border border-stone-100 dark:border-zinc-800 bg-stone-50 dark:bg-zinc-900 h-28">
+                              <img src="/portfolio/screenshots/fludio.webp" alt="Fludio Interiors" class="w-full h-full object-cover object-top group-hover/pcard:scale-105 transition-transform duration-300" loading="lazy" />
+                            </div>
+                            <div class="mt-2 pt-1.5 border-t border-stone-100 dark:border-zinc-800 flex items-center justify-between text-[11px]">
+                              <span class="flex items-center gap-1 font-semibold text-emerald-600 dark:text-emerald-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 8.4k Visits
+                              </span>
+                              <span class="font-bold text-foreground">+318% Leads</span>
+                            </div>
+                            <div class="mt-1.5 flex items-center justify-between">
+                              <div class="leading-tight">
+                                <h5 class="text-sm font-bold text-foreground group-hover/pcard:text-emerald-600 transition-colors">Fludio Interiors</h5>
+                                <span class="text-xs text-muted-foreground">Luxury Architecture &amp; Design</span>
+                              </div>
+                              <span class="inline-flex items-center gap-1 text-xs font-semibold text-emerald-600 group-hover/pcard:translate-x-0.5 transition-transform">
+                                <span>Case Study</span>
+                                <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                              </span>
+                            </div>
+                          </a>
+
+                          <!-- Project 2: CyTOS Biosciences -->
+                          <a href="/case-studies/cytos.html" class="group/pcard w-full min-w-full max-w-full snap-center shrink-0 rounded-lg border border-stone-200 dark:border-stone-800 bg-white dark:bg-zinc-950 p-2.5 shadow-2xs hover:border-emerald-500 dark:hover:border-emerald-500 hover:shadow-sm transition-all duration-200 block">
+                            <div class="flex items-center justify-between pb-1.5 border-b border-stone-100 dark:border-zinc-800 text-[10px] text-muted-foreground font-mono">
+                              <span class="flex items-center gap-1.5">
+                                <i data-lucide="globe" class="w-3 h-3 text-emerald-600 shrink-0"></i>
+                                <span class="truncate">inranktech.com/cytos</span>
+                              </span>
+                              <span class="text-[9px] px-1.5 py-0.2 rounded font-bold uppercase bg-stone-100 dark:bg-zinc-900 text-stone-600 dark:text-stone-300">Biotech</span>
+                            </div>
+                            <div class="relative mt-2 rounded-md overflow-hidden border border-stone-100 dark:border-zinc-800 bg-stone-50 dark:bg-zinc-900 h-28">
+                              <img src="/portfolio/screenshots/cytos.webp" alt="CyTOS Biosciences" class="w-full h-full object-cover object-top group-hover/pcard:scale-105 transition-transform duration-300" loading="lazy" />
+                            </div>
+                            <div class="mt-2 pt-1.5 border-t border-stone-100 dark:border-zinc-800 flex items-center justify-between text-[11px]">
+                              <span class="flex items-center gap-1 font-semibold text-emerald-600 dark:text-emerald-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 12.6k Visits
+                              </span>
+                              <span class="font-bold text-foreground">+280% Organic</span>
+                            </div>
+                            <div class="mt-1.5 flex items-center justify-between">
+                              <div class="leading-tight">
+                                <h5 class="text-sm font-bold text-foreground group-hover/pcard:text-emerald-600 transition-colors">CyTOS Biosciences</h5>
+                                <span class="text-xs text-muted-foreground">Clinical Research CRO</span>
+                              </div>
+                              <span class="inline-flex items-center gap-1 text-xs font-semibold text-emerald-600 group-hover/pcard:translate-x-0.5 transition-transform">
+                                <span>Case Study</span>
+                                <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                              </span>
+                            </div>
+                          </a>
+
+                          <!-- Project 3: Dravya Financial -->
+                          <a href="/case-studies/dravyafinancial.html" class="group/pcard w-full min-w-full max-w-full snap-center shrink-0 rounded-lg border border-stone-200 dark:border-stone-800 bg-white dark:bg-zinc-950 p-2.5 shadow-2xs hover:border-emerald-500 dark:hover:border-emerald-500 hover:shadow-sm transition-all duration-200 block">
+                            <div class="flex items-center justify-between pb-1.5 border-b border-stone-100 dark:border-zinc-800 text-[10px] text-muted-foreground font-mono">
+                              <span class="flex items-center gap-1.5">
+                                <i data-lucide="globe" class="w-3 h-3 text-emerald-600 shrink-0"></i>
+                                <span class="truncate">inranktech.com/dravya</span>
+                              </span>
+                              <span class="text-[9px] px-1.5 py-0.2 rounded font-bold uppercase bg-stone-100 dark:bg-zinc-900 text-stone-600 dark:text-stone-300">FinTech</span>
+                            </div>
+                            <div class="relative mt-2 rounded-md overflow-hidden border border-stone-100 dark:border-zinc-800 bg-stone-50 dark:bg-zinc-900 h-28">
+                              <img src="/portfolio/screenshots/dravyafinancial.webp" alt="Dravya Financial" class="w-full h-full object-cover object-top group-hover/pcard:scale-105 transition-transform duration-300" loading="lazy" />
+                            </div>
+                            <div class="mt-2 pt-1.5 border-t border-stone-100 dark:border-zinc-800 flex items-center justify-between text-[11px]">
+                              <span class="flex items-center gap-1 font-semibold text-emerald-600 dark:text-emerald-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 6.2k Visits
+                              </span>
+                              <span class="font-bold text-foreground">4.2x ROAS</span>
+                            </div>
+                            <div class="mt-1.5 flex items-center justify-between">
+                              <div class="leading-tight">
+                                <h5 class="text-sm font-bold text-foreground group-hover/pcard:text-emerald-600 transition-colors">Dravya Financial</h5>
+                                <span class="text-xs text-muted-foreground">Wealth Advisory &amp; FinTech</span>
+                              </div>
+                              <span class="inline-flex items-center gap-1 text-xs font-semibold text-emerald-600 group-hover/pcard:translate-x-0.5 transition-transform">
+                                <span>Case Study</span>
+                                <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                              </span>
+                            </div>
+                          </a>
+
+                          <!-- Project 4: Grey to Green -->
+                          <a href="/case-studies/greytothegreen.html" class="group/pcard w-full min-w-full max-w-full snap-center shrink-0 rounded-lg border border-stone-200 dark:border-stone-800 bg-white dark:bg-zinc-950 p-2.5 shadow-2xs hover:border-emerald-500 dark:hover:border-emerald-500 hover:shadow-sm transition-all duration-200 block">
+                            <div class="flex items-center justify-between pb-1.5 border-b border-stone-100 dark:border-zinc-800 text-[10px] text-muted-foreground font-mono">
+                              <span class="flex items-center gap-1.5">
+                                <i data-lucide="globe" class="w-3 h-3 text-emerald-600 shrink-0"></i>
+                                <span class="truncate">inranktech.com/greytogreen</span>
+                              </span>
+                              <span class="text-[9px] px-1.5 py-0.2 rounded font-bold uppercase bg-stone-100 dark:bg-zinc-900 text-stone-600 dark:text-stone-300">Landscaping</span>
+                            </div>
+                            <div class="relative mt-2 rounded-md overflow-hidden border border-stone-100 dark:border-zinc-800 bg-stone-50 dark:bg-zinc-900 h-28">
+                              <img src="/portfolio/screenshots/greytothegreen.webp" alt="Grey to Green" class="w-full h-full object-cover object-top group-hover/pcard:scale-105 transition-transform duration-300" loading="lazy" />
+                            </div>
+                            <div class="mt-2 pt-1.5 border-t border-stone-100 dark:border-zinc-800 flex items-center justify-between text-[11px]">
+                              <span class="flex items-center gap-1 font-semibold text-emerald-600 dark:text-emerald-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 5.1k Visits
+                              </span>
+                              <span class="font-bold text-foreground">+190% Quotes</span>
+                            </div>
+                            <div class="mt-1.5 flex items-center justify-between">
+                              <div class="leading-tight">
+                                <h5 class="text-sm font-bold text-foreground group-hover/pcard:text-emerald-600 transition-colors">Grey to Green</h5>
+                                <span class="text-xs text-muted-foreground">Eco Landscape Architecture</span>
+                              </div>
+                              <span class="inline-flex items-center gap-1 text-xs font-semibold text-emerald-600 group-hover/pcard:translate-x-0.5 transition-transform">
+                                <span>Case Study</span>
+                                <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                              </span>
+                            </div>
+                          </a>
+
+                          <!-- Project 5: Hira Grafix -->
+                          <a href="/case-studies/hiragrafix.html" class="group/pcard w-full min-w-full max-w-full snap-center shrink-0 rounded-lg border border-stone-200 dark:border-stone-800 bg-white dark:bg-zinc-950 p-2.5 shadow-2xs hover:border-emerald-500 dark:hover:border-emerald-500 hover:shadow-sm transition-all duration-200 block">
+                            <div class="flex items-center justify-between pb-1.5 border-b border-stone-100 dark:border-zinc-800 text-[10px] text-muted-foreground font-mono">
+                              <span class="flex items-center gap-1.5">
+                                <i data-lucide="globe" class="w-3 h-3 text-emerald-600 shrink-0"></i>
+                                <span class="truncate">inranktech.com/hiragrafix</span>
+                              </span>
+                              <span class="text-[9px] px-1.5 py-0.2 rounded font-bold uppercase bg-stone-100 dark:bg-zinc-900 text-stone-600 dark:text-stone-300">Print</span>
+                            </div>
+                            <div class="relative mt-2 rounded-md overflow-hidden border border-stone-100 dark:border-zinc-800 bg-stone-50 dark:bg-zinc-900 h-28">
+                              <img src="/portfolio/screenshots/hiragrafix.webp" alt="Hira Grafix" class="w-full h-full object-cover object-top group-hover/pcard:scale-105 transition-transform duration-300" loading="lazy" />
+                            </div>
+                            <div class="mt-2 pt-1.5 border-t border-stone-100 dark:border-zinc-800 flex items-center justify-between text-[11px]">
+                              <span class="flex items-center gap-1 font-semibold text-emerald-600 dark:text-emerald-400">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> #1 Map 3-Pack
+                              </span>
+                              <span class="font-bold text-foreground">+420% Calls</span>
+                            </div>
+                            <div class="mt-1.5 flex items-center justify-between">
+                              <div class="leading-tight">
+                                <h5 class="text-sm font-bold text-foreground group-hover/pcard:text-emerald-600 transition-colors">Hira Grafix</h5>
+                                <span class="text-xs text-muted-foreground">Commercial Print &amp; Signage</span>
+                              </div>
+                              <span class="inline-flex items-center gap-1 text-xs font-semibold text-emerald-600 group-hover/pcard:translate-x-0.5 transition-transform">
+                                <span>Case Study</span>
+                                <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                              </span>
+                            </div>
+                          </a>
+
+                        </div>
                       </div>
-                      <div class="space-y-1">
-                        <a href="/#/service/logo-design" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
-                          <div class="text-xs font-bold text-foreground">Corporate Logo &amp; Identity</div>
-                          <div class="text-[11px] text-muted-foreground">Trademark-ready vector brand kits</div>
-                        </a>
-                        <a href="/#/service/brand-name" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
-                          <div class="text-xs font-bold text-foreground">Brand Strategy &amp; Naming</div>
-                          <div class="text-[11px] text-muted-foreground">Linguistic checks &amp; .com acquisition</div>
-                        </a>
-                        <a href="/#/service/brochure-designing" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
-                          <div class="text-xs font-bold text-foreground">Brochure &amp; Sales Collaterals</div>
-                          <div class="text-[11px] text-muted-foreground">Corporate profiles &amp; catalogues</div>
-                        </a>
-                        <a href="/#/service/conversion-optimization" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 transition-colors">
-                          <div class="text-xs font-bold text-foreground">Conversion Rate Optimization (CRO)</div>
-                          <div class="text-[11px] text-muted-foreground">A/B tested UX &amp; lead funnels</div>
+
+                      <!-- Minimalist Bottom Link -->
+                      <div class="pt-2 border-t border-stone-200 dark:border-stone-800 flex items-center justify-between text-xs">
+                        <span class="text-muted-foreground font-medium">50+ Pune Projects</span>
+                        <a href="/case-studies.html" class="font-bold text-emerald-600 hover:text-emerald-700 hover:underline flex items-center gap-1">
+                          <span>View All Studies</span>
+                          <i data-lucide="arrow-right" class="w-3 h-3"></i>
                         </a>
                       </div>
                     </div>
 
                   </div>
 
-                  <!-- Full-Width Bottom Bar -->
-                  <div class="mt-6 pt-4 border-t border-border/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-                    <span class="flex items-center gap-2">
-                      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                      <span><strong class="text-foreground font-semibold">27 Growth Disciplines</strong> · Fixed-Fee Delivery · 365 Days Direct Support</span>
-                    </span>
-                    <a href="/#/services" class="font-bold text-emerald-600 hover:text-emerald-500 inline-flex items-center gap-1.5 transition-colors group/link">
-                      <span>Explore Complete 27 Services Directory</span>
-                      <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform"></i>
+                  <!-- Full-Width Horizontal Bottom Bar with Partner Logos -->
+                  <div class="mt-5 pt-3.5 border-t border-stone-200 dark:border-stone-800 flex flex-col md:flex-row items-center justify-between gap-3 text-xs">
+                    
+                    <!-- Live Tech Stack Badges -->
+                    <div class="flex flex-wrap items-center gap-3 text-muted-foreground">
+                      <span class="text-xs font-semibold uppercase tracking-wider text-foreground flex items-center gap-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        <span>Technology Partners:</span>
+                      </span>
+                      <div class="flex items-center gap-3 text-xs text-muted-foreground font-medium">
+                        <span class="inline-flex items-center gap-1">
+                          <img src="/tech-stack/shopify.svg" alt="Shopify" class="h-3.5 w-3.5 object-contain inline" /> Shopify
+                        </span>
+                        <span class="inline-flex items-center gap-1">
+                          <img src="/tech-stack/wordpress.webp" alt="WordPress" class="h-3.5 w-3.5 object-contain inline" /> WordPress
+                        </span>
+                        <span class="inline-flex items-center gap-1">
+                          <img src="/tech-stack/meta.png" alt="Meta" class="h-3.5 w-3.5 object-contain inline" /> Meta
+                        </span>
+                        <span class="inline-flex items-center gap-1">
+                          <img src="/tech-stack/google-analytics.webp" alt="Google" class="h-3.5 w-3.5 object-contain inline" /> Google
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- View All Services CTA Button -->
+                    <a href="/services.html" class="inline-flex items-center gap-1.5 font-bold text-xs text-white bg-slate-900 hover:bg-emerald-600 dark:bg-stone-800 dark:hover:bg-emerald-600 px-3.5 py-1.5 rounded-lg transition-all shadow-2xs group/btn">
+                      <span>Explore All 27 Services</span>
+                      <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 transition-transform"></i>
                     </a>
+
                   </div>
                 </div>
               </div>
@@ -537,17 +811,17 @@
               </button>
               <div class="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-64 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
                 <div class="rounded-xl border border-border bg-white dark:bg-zinc-950 p-2 shadow-xl space-y-1 text-xs">
-                  <a href="/#/about-us" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 font-semibold text-foreground">About Inrank Overview</a>
+                  <a href="/contact.html" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 font-semibold text-foreground">About Inrank Overview</a>
                   <a href="/website-design-company-in-pune.html" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 text-muted-foreground hover:text-foreground">&bull; Web Designing in Pune</a>
                   <a href="/digital-marketing-agency-in-pune.html" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 text-muted-foreground hover:text-foreground">&bull; Digital Marketing in Pune</a>
-                  <a href="/#results" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 text-muted-foreground hover:text-foreground">Results &amp; Proof</a>
-                  <a href="/#faq" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 text-muted-foreground hover:text-foreground">FAQ Directory</a>
+                  <a href="/case-studies.html" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 text-muted-foreground hover:text-foreground">Results &amp; Proof</a>
+                  <a href="/pricing.html" class="block p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-zinc-900 text-muted-foreground hover:text-foreground">FAQ Directory</a>
                 </div>
               </div>
             </div>
 
             <!-- Blog -->
-            <a href="/#/blog" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors">Blog</a>
+            <a href="/blog" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors">Blog</a>
 
             <!-- Contact -->
             <a href="/contact.html" class="text-sm font-medium text-muted-foreground hover:text-foreground hover:text-emerald-600 transition-colors">Contact</a>
@@ -587,10 +861,10 @@
           <a href="/pricing.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Pricing</a>
           <a href="/website-design-company-in-pune.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Web Designing in Pune</a>
           <a href="/digital-marketing-agency-in-pune.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Digital Marketing in Pune</a>
-          <a href="/#/services" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">All 27 Services</a>
-          <a href="/#/about-us" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">About Inrank</a>
-          <a href="/#results" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Results &amp; Proof</a>
-          <a href="/#/blog" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Blog Hub</a>
+          <a href="/services.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">All 27 Services</a>
+          <a href="/contact.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">About Inrank</a>
+          <a href="/case-studies.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Results &amp; Proof</a>
+          <a href="/blog" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Blog Hub</a>
           <a href="/contact.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-secondary">Contact Desk</a>
         </div>
         <div class="pt-2 border-t border-border flex flex-col gap-2">
@@ -660,12 +934,12 @@
 
                   <!-- Hero CTAs buttons -->
                   <div class="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-                    <a href="#contact" class="inline-flex items-center justify-center gap-1.5 whitespace-nowrap bg-emerald-600 hover:bg-emerald-700 text-white h-12 px-7 rounded-lg text-base font-semibold shadow-md hover:shadow-lg hover:shadow-emerald-600/25 active:scale-[0.98] transition-all duration-200 cursor-pointer">
-                      Book Free Consultation
+                    <a href="/contact.html" class="hero-btn-primary inline-flex items-center justify-center gap-1.5 whitespace-nowrap bg-emerald-600 hover:bg-emerald-700 text-white h-12 px-7 rounded-lg text-base font-semibold shadow-md hover:shadow-lg hover:shadow-emerald-600/25 active:scale-[0.98] transition-all duration-200 cursor-pointer">
+                      <span>Book Free Consultation</span>
                       <i data-lucide="arrow-up-right" class="h-5 w-5 ml-1"></i>
                     </a>
-                    <a href="#services" class="inline-flex items-center justify-center gap-1.5 whitespace-nowrap border border-border bg-white dark:bg-card text-foreground shadow-sm hover:bg-emerald-600 hover:text-white hover:border-emerald-600 h-12 px-7 rounded-lg text-base font-semibold active:scale-[0.98] transition-all duration-200 cursor-pointer">
-                      Explore Our Services
+                    <a href="/services.html" class="hero-btn-secondary inline-flex items-center justify-center gap-1.5 whitespace-nowrap border-2 border-stone-300 dark:border-stone-700 bg-white dark:bg-card text-slate-900 dark:text-white shadow-sm hover:bg-emerald-600 hover:text-white hover:border-emerald-600 h-12 px-7 rounded-lg text-base font-semibold active:scale-[0.98] transition-all duration-200 cursor-pointer">
+                      <span>Explore Our Services</span>
                       <i data-lucide="arrow-right" class="h-5 w-5 ml-1"></i>
                     </a>
                   </div>
@@ -797,6 +1071,133 @@
 
               </div>
 
+                            <!-- HERO TECH STACK MARQUEE STRIP -->
+              <div class="mt-10 sm:mt-12 overflow-hidden w-full">
+                <div class="rounded-2xl border border-border/80 bg-card/80 backdrop-blur-md px-4 py-2.5 shadow-sm">
+                  <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-5">
+                    
+                    <div class="flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider text-muted-foreground font-mono whitespace-nowrap shrink-0">
+                      <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                      <span>Growth Tech Stack:</span>
+                    </div>
+
+                    <!-- Continuous Marquee Track -->
+                    <div class="flex-1 overflow-hidden relative w-full" style="mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);">
+                      <div class="flex w-max items-center gap-5 sm:gap-7 marquee-track" style="animation: scroll-marquee 40s linear infinite;">
+                        
+                        <!-- 1. Google Ads -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-amber-500/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.784 16.924L8.71 8.391a2.846 2.846 0 013.889-1.042 2.846 2.846 0 011.042 3.889l-4.927 8.533a2.846 2.846 0 01-3.889 1.042 2.846 2.846 0 01-1.041-3.889z" fill="#FBBC04"/>
+                            <path d="M20.216 16.924a2.846 2.846 0 01-1.042 3.889 2.846 2.846 0 01-3.889-1.042L10.358 11.24a2.846 2.846 0 011.042-3.889 2.846 2.846 0 013.889 1.042l4.927 8.532z" fill="#4285F4"/>
+                            <circle cx="5.32" cy="18.68" r="2.846" fill="#34A853"/>
+                          </svg>
+                          <span>Google Ads</span>
+                        </div>
+
+                        <!-- 2. Moz Pro -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-sky-500/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/moz.png" alt="Moz Pro" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>Moz Pro</span>
+                        </div>
+
+                        <!-- 3. Google Analytics 4 -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-amber-500/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/google-analytics.webp" alt="Google Analytics 4" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>GA4 Analytics</span>
+                        </div>
+
+                        <!-- 4. Google Tag Manager -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-blue-500/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/gtm.webp" alt="Google Tag Manager" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>Tag Manager</span>
+                        </div>
+
+                        <!-- 5. Google Search Console -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-blue-500/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/google-search-console.webp" alt="Google Search Console" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>Search Console</span>
+                        </div>
+
+                        <!-- 6. Meta Ads -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-blue-600/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/meta.png" alt="Meta Ads" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>Meta Ads</span>
+                        </div>
+
+                        <!-- 7. Semrush -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-orange-500/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/semrush.png" alt="Semrush" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>Semrush</span>
+                        </div>
+
+                        <!-- 8. Ahrefs -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-blue-500/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/ahrefs.webp" alt="Ahrefs" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>Ahrefs</span>
+                        </div>
+
+                        <!-- 9. WordPress -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-sky-500/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/wordpress.webp" alt="WordPress" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>WordPress</span>
+                        </div>
+
+                        <!-- 10. Shopify -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-emerald-500/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/shopify.webp" alt="Shopify" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>Shopify</span>
+                        </div>
+
+                        <!-- 11. ChatGPT -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-emerald-500/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/chatgpt.png" alt="ChatGPT" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>ChatGPT</span>
+                        </div>
+
+                        <!-- 12. Perplexity AI -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-teal-500/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/perplexity.png" alt="Perplexity AI" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>Perplexity AI</span>
+                        </div>
+
+                        <!-- 13. HubSpot CRM -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-orange-500/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/hubspot.png" alt="HubSpot" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>HubSpot</span>
+                        </div>
+
+                        <!-- 14. Screaming Frog -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-green-600/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/screaming-frog.png" alt="Screaming Frog" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>Screaming Frog</span>
+                        </div>
+
+                        <!-- 15. Cloudflare -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-amber-500/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/cloudflare.png" alt="Cloudflare" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>Cloudflare</span>
+                        </div>
+
+                        <!-- 16. Tailwind CSS -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-cyan-500/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/tailwind.png" alt="Tailwind CSS" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>Tailwind CSS</span>
+                        </div>
+
+                        <!-- 17. Rank Math SEO -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border/80 bg-card/90 hover:bg-card hover:border-indigo-500/50 text-xs font-semibold text-foreground whitespace-nowrap transition-all shadow-xs group">
+                          <img src="/tech-stack/rankmath.png" alt="Rank Math" class="h-4 w-auto object-contain flex-shrink-0" />
+                          <span>Rank Math</span>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
               <!-- Big Results Grid -->
               <div class="mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border border-border rounded-xl overflow-hidden bg-card">
                 
@@ -849,88 +1250,124 @@
             </div>
           </section>
 
-          <!-- ENTERPRISE TECH & GROWTH STACK MARQUEE -->
-          <section class="border-y border-border bg-card/60 backdrop-blur-sm overflow-hidden py-5">
-            <div class="max-w-7xl mx-auto px-5 sm:px-8">
-              <div class="flex items-center gap-6 sm:gap-10">
-                <div class="hidden sm:flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-muted-foreground font-semibold whitespace-nowrap">
-                  <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                  Tech &amp; Growth Stack
-                </div>
+                                    <!-- =========================================================================
+           2A. TRUSTED BY SECTION: CLIENT LOGOS & CONVERSION PROOF
+           ========================================================================= -->
+      <section id="trusted-by" class="py-14 sm:py-20 bg-white border-b border-stone-200/80 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8">
+          
+          <!-- Section Heading -->
+          <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+            <h2 class="font-display font-extrabold text-2xl sm:text-4xl lg:text-5xl tracking-tight text-stone-950 leading-[1.15] mb-3">
+              Trusted by Ambitious Brands Scaling Real Revenue &amp; High ROAS
+            </h2>
+            <p class="text-xs sm:text-sm md:text-base text-stone-600 leading-relaxed max-w-2xl mx-auto">
+              From precision CNC automation to architectural aquatics, luxury packaging, and healthcare, explore the high-growth businesses that replaced generic agencies with Inrank’s dedicated performance growth pod.
+            </p>
+          </div>
 
-                <!-- Infinite crawl scrolling mask -->
-                <div class="flex-1 overflow-hidden relative" style="mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);">
-                  <div class="flex w-max items-center gap-6 sm:gap-8" style="animation: scroll-marquee 36s linear infinite;">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-emerald-500 font-bold">99/100</span> Core Web Vitals
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-cyan-500 font-bold">React &amp; Next.js</span> High-Speed Web
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-emerald-600 font-bold">Semrush &amp; Ahrefs</span> Deep Keyword Audit
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-primary font-bold">Search Console</span> Indexation Architecture
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-emerald-600 font-bold">GA4 &amp; GTM</span> Server-Side Attribution
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-blue-500 font-bold">Meta CAPI</span> First-Party Signal Tracking
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-purple-500 font-bold">SearchGPT &amp; Perplexity</span> AEO Citations
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-emerald-500 font-bold">JSON-LD</span> Schema Knowledge Graph
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-sky-500 font-bold">WordPress</span> Custom Gutenberg &amp; Hardened
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-pink-500 font-bold">Figma</span> Design Systems &amp; UX
-                    </div>
-                    <!-- Repetition to enable seamless looping -->
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-emerald-500 font-bold">99/100</span> Core Web Vitals
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-cyan-500 font-bold">React &amp; Next.js</span> High-Speed Web
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-emerald-600 font-bold">Semrush &amp; Ahrefs</span> Deep Keyword Audit
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-primary font-bold">Search Console</span> Indexation Architecture
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-emerald-600 font-bold">GA4 &amp; GTM</span> Server-Side Attribution
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-blue-500 font-bold">Meta CAPI</span> First-Party Signal Tracking
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-purple-500 font-bold">SearchGPT &amp; Perplexity</span> AEO Citations
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-emerald-500 font-bold">JSON-LD</span> Schema Knowledge Graph
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-sky-500 font-bold">WordPress</span> Custom Gutenberg &amp; Hardened
-                    </div>
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-border bg-card/90 text-xs font-semibold text-foreground whitespace-nowrap shadow-sm">
-                      <span class="text-pink-500 font-bold">Figma</span> Design Systems &amp; UX
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <!-- Infinite Scrolling Logo Marquee Track with Uniform Width Client Logos -->
+          <div class="relative overflow-hidden py-3" style="mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);">
+            <div class="flex w-max items-center gap-5 sm:gap-7 marquee-track" style="animation: scroll-marquee 42s linear infinite;">
+              
+              <!-- CyTOS Machines Pune -->
+              <a href="/our-work/cytos.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="CyTOS Machines - Industrial CNC Automation">
+                <img src="/client-logos/cytos.png" alt="CyTOS Machines Pune Logo" class="max-h-12 sm:max-h-16 max-w-[130px] sm:max-w-[150px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- Fludio Water Solutions -->
+              <a href="/our-work/fludio.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="Fludio Water Solutions - Architectural Fountains">
+                <img src="/client-logos/fludio.webp" alt="Fludio Water Solutions Logo" class="max-h-11 sm:max-h-14 max-w-[160px] sm:max-w-[200px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- HIRAGRAFIX™ -->
+              <a href="/our-work/hiragrafix.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="HIRAGRAFIX - Luxury Printing & Packaging">
+                <img src="/client-logos/hiragrafix.png" alt="HIRAGRAFIX™ Logo" class="max-h-9 sm:max-h-12 max-w-[170px] sm:max-w-[210px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- Grey To The Green -->
+              <a href="/our-work/greytothegreen.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="Grey To The Green - Sustainable Landscaping">
+                <img src="/client-logos/greytothegreen.webp" alt="Grey To The Green Logo" class="max-h-12 sm:max-h-16 max-w-[130px] sm:max-w-[150px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- Vasro Ventures -->
+              <a href="/our-work/vasroventures.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="Vasro Ventures - Angel Investment & Advisory">
+                <img src="/client-logos/vasro.webp" alt="Vasro Ventures Logo" class="max-h-12 sm:max-h-16 max-w-[130px] sm:max-w-[150px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- Riitu Institution -->
+              <a href="/our-work/riituinstitution.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="Riitu Institution - Academic Coaching">
+                <img src="/client-logos/riitu.webp" alt="Riitu Institution Logo" class="max-h-12 sm:max-h-16 max-w-[130px] sm:max-w-[150px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- Shetkari Foodstuff -->
+              <a href="/our-work/shetkarifoodstuff.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="Shetkari Foodstuff - Agro-Commodity Processing">
+                <img src="/client-logos/shetkari.webp" alt="Shetkari Foodstuff Logo" class="max-h-12 sm:max-h-15 max-w-[160px] sm:max-w-[190px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- Dr. Ankle & Foot Clinic (ARTICUL8) -->
+              <a href="/our-work/orthopedicanklefootspecialist.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="ARTICUL8 Foot and Ankle Clinic">
+                <img src="/client-logos/articul8.webp" alt="Dr. Ankle & Foot Clinic (ARTICUL8) Logo" class="max-h-11 sm:max-h-14 max-w-[160px] sm:max-w-[200px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- Dravya Financial -->
+              <a href="/our-work/dravyafinancial.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="Dravya Financial - Wealth & Portfolio Advisory">
+                <img src="/client-logos/dravya.png" alt="Dravya Financial Logo" class="max-h-12 sm:max-h-16 max-w-[130px] sm:max-w-[150px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- REPETITION FOR SEAMLESS 100% INFINITE CRAWL -->
+
+              <!-- CyTOS Machines Pune -->
+              <a href="/our-work/cytos.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="CyTOS Machines - Industrial CNC Automation">
+                <img src="/client-logos/cytos.png" alt="CyTOS Machines Pune Logo" class="max-h-12 sm:max-h-16 max-w-[130px] sm:max-w-[150px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- Fludio Water Solutions -->
+              <a href="/our-work/fludio.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="Fludio Water Solutions - Architectural Fountains">
+                <img src="/client-logos/fludio.webp" alt="Fludio Water Solutions Logo" class="max-h-11 sm:max-h-14 max-w-[160px] sm:max-w-[200px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- HIRAGRAFIX™ -->
+              <a href="/our-work/hiragrafix.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="HIRAGRAFIX - Luxury Printing & Packaging">
+                <img src="/client-logos/hiragrafix.png" alt="HIRAGRAFIX™ Logo" class="max-h-9 sm:max-h-12 max-w-[170px] sm:max-w-[210px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- Grey To The Green -->
+              <a href="/our-work/greytothegreen.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="Grey To The Green - Sustainable Landscaping">
+                <img src="/client-logos/greytothegreen.webp" alt="Grey To The Green Logo" class="max-h-12 sm:max-h-16 max-w-[130px] sm:max-w-[150px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- Vasro Ventures -->
+              <a href="/our-work/vasroventures.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="Vasro Ventures - Angel Investment & Advisory">
+                <img src="/client-logos/vasro.webp" alt="Vasro Ventures Logo" class="max-h-12 sm:max-h-16 max-w-[130px] sm:max-w-[150px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- Riitu Institution -->
+              <a href="/our-work/riituinstitution.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="Riitu Institution - Academic Coaching">
+                <img src="/client-logos/riitu.webp" alt="Riitu Institution Logo" class="max-h-12 sm:max-h-16 max-w-[130px] sm:max-w-[150px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- Shetkari Foodstuff -->
+              <a href="/our-work/shetkarifoodstuff.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="Shetkari Foodstuff - Agro-Commodity Processing">
+                <img src="/client-logos/shetkari.webp" alt="Shetkari Foodstuff Logo" class="max-h-12 sm:max-h-15 max-w-[160px] sm:max-w-[190px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- Dr. Ankle & Foot Clinic (ARTICUL8) -->
+              <a href="/our-work/orthopedicanklefootspecialist.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="ARTICUL8 Foot and Ankle Clinic">
+                <img src="/client-logos/articul8.webp" alt="Dr. Ankle & Foot Clinic (ARTICUL8) Logo" class="max-h-11 sm:max-h-14 max-w-[160px] sm:max-w-[200px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
+
+              <!-- Dravya Financial -->
+              <a href="/our-work/dravyafinancial.html" class="client-logo-card group inline-flex items-center justify-center w-52 sm:w-64 h-20 sm:h-24 px-6 py-4 rounded-2xl border border-stone-200/90 bg-stone-50/70 hover:bg-white hover:border-emerald-500/50 hover:shadow-lg transition-all shrink-0" title="Dravya Financial - Wealth & Portfolio Advisory">
+                <img src="/client-logos/dravya.png" alt="Dravya Financial Logo" class="max-h-12 sm:max-h-16 max-w-[130px] sm:max-w-[150px] w-auto h-auto object-contain filter grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              </a>
             </div>
-          </section>
+          </div>
 
+          </div>
+      </section>
 
-
-          <!-- SERVICES SECTION -->
+      <!-- SERVICES SECTION -->
           <section id="services" class="relative py-24 sm:py-32 border-t border-border bg-card/10">
             <div class="max-w-7xl mx-auto px-5 sm:px-8">
               
@@ -954,174 +1391,162 @@
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 
                 <!-- Service 1: SEO Services -->
-                <a href="#/service/seo" class="p-6 sm:p-7 rounded-2xl border border-border/80 bg-white dark:bg-zinc-900 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06),0_2px_6px_-2px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_35px_-8px_rgba(16,185,129,0.18),0_8px_16px_-4px_rgba(0,0,0,0.06)] hover:border-emerald-500/60 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
-                  <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-emerald-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <a href="/services/seo-company-pune/" class="group p-6 sm:p-7 rounded-2xl border-2 border-stone-400 dark:border-stone-600 bg-card/40 hover:bg-card/90 hover:border-emerald-600 dark:hover:border-emerald-500 transition-all duration-200 flex flex-col justify-between">
                   <div>
-                    <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500/15 via-emerald-500/10 to-teal-500/5 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 group-hover:shadow-[0_8px_20px_-4px_rgba(16,185,129,0.4)] transition-all duration-300">
-                      <i data-lucide="search" class="h-6 w-6"></i>
+                    <div class="flex items-center justify-between mb-5">
+                      <i data-lucide="search" class="w-6 h-6 text-emerald-600 dark:text-emerald-400 group-hover:scale-105 transition-transform duration-200"></i>
+                      <span class="font-mono text-xs text-muted-foreground/60 font-medium">01</span>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight">SEO Services</h3>
-                    <p class="text-[13px] text-stone-600 dark:text-stone-300 mt-2.5 leading-relaxed font-normal">
-                      Rank #1 on Google for high-intent Pune search queries with technical Core Web Vitals fixes, keyword mapping and authority backlinks.
+                    <h3 class="font-display text-lg font-bold text-foreground group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight min-h-[3.25rem] flex items-start">
+                      SEO Services
+                    </h3>
+                    <p class="text-xs sm:text-sm text-muted-foreground mt-2 leading-relaxed font-normal min-h-[4rem]">
+                      Rank #1 on Google for high-intent search queries with technical Core Web Vitals, keyword architecture, and authority backlinks.
                     </p>
                   </div>
-                  <div class="mt-6 pt-4 border-t border-border/70 flex items-center justify-between text-xs font-semibold text-emerald-600 dark:text-emerald-400">
-                    <span>Explore Strategy</span>
-                    <div class="h-7 w-7 rounded-full bg-emerald-500/10 group-hover:bg-emerald-600 text-emerald-600 dark:text-emerald-400 group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-xs">
-                      <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-                    </div>
+                  <div class="mt-6 pt-4 border-t border-stone-300 dark:border-stone-700 flex items-center justify-between text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">
+                    <span>View Service Details</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 group-hover:translate-x-1 transition-transform"></i>
                   </div>
                 </a>
 
                 <!-- Service 2: Website Development -->
-                <a href="#/service/website-development" class="p-6 sm:p-7 rounded-2xl border border-border/80 bg-white dark:bg-zinc-900 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06),0_2px_6px_-2px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_35px_-8px_rgba(16,185,129,0.18),0_8px_16px_-4px_rgba(0,0,0,0.06)] hover:border-emerald-500/60 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
-                  <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-emerald-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <a href="/services/custom-website-development/" class="group p-6 sm:p-7 rounded-2xl border-2 border-stone-400 dark:border-stone-600 bg-card/40 hover:bg-card/90 hover:border-emerald-600 dark:hover:border-emerald-500 transition-all duration-200 flex flex-col justify-between">
                   <div>
-                    <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500/15 via-emerald-500/10 to-teal-500/5 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 group-hover:shadow-[0_8px_20px_-4px_rgba(16,185,129,0.4)] transition-all duration-300">
-                      <i data-lucide="code-xml" class="h-6 w-6"></i>
+                    <div class="flex items-center justify-between mb-5">
+                      <i data-lucide="code-xml" class="w-6 h-6 text-emerald-600 dark:text-emerald-400 group-hover:scale-105 transition-transform duration-200"></i>
+                      <span class="font-mono text-xs text-muted-foreground/60 font-medium">02</span>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight">Website Development</h3>
-                    <p class="text-[13px] text-stone-600 dark:text-stone-300 mt-2.5 leading-relaxed font-normal">
+                    <h3 class="font-display text-lg font-bold text-foreground group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight min-h-[3.25rem] flex items-start">
+                      Website Development
+                    </h3>
+                    <p class="text-xs sm:text-sm text-muted-foreground mt-2 leading-relaxed font-normal min-h-[4rem]">
                       Fast, conversion-engineered custom websites built with sub-second mobile load speeds and zero template bloatware.
                     </p>
                   </div>
-                  <div class="mt-6 pt-4 border-t border-border/70 flex items-center justify-between text-xs font-semibold text-emerald-600 dark:text-emerald-400">
-                    <span>Explore Strategy</span>
-                    <div class="h-7 w-7 rounded-full bg-emerald-500/10 group-hover:bg-emerald-600 text-emerald-600 dark:text-emerald-400 group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-xs">
-                      <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-                    </div>
+                  <div class="mt-6 pt-4 border-t border-stone-300 dark:border-stone-700 flex items-center justify-between text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">
+                    <span>View Service Details</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 group-hover:translate-x-1 transition-transform"></i>
                   </div>
                 </a>
 
                 <!-- Service 3: Pay Per Click (PPC) -->
-                <a href="#/service/pay-per-click-ppc" class="p-6 sm:p-7 rounded-2xl border border-border/80 bg-white dark:bg-zinc-900 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06),0_2px_6px_-2px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_35px_-8px_rgba(16,185,129,0.18),0_8px_16px_-4px_rgba(0,0,0,0.06)] hover:border-emerald-500/60 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
-                  <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-emerald-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <a href="/services/ppc-services/" class="group p-6 sm:p-7 rounded-2xl border-2 border-stone-400 dark:border-stone-600 bg-card/40 hover:bg-card/90 hover:border-emerald-600 dark:hover:border-emerald-500 transition-all duration-200 flex flex-col justify-between">
                   <div>
-                    <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500/15 via-emerald-500/10 to-teal-500/5 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 group-hover:shadow-[0_8px_20px_-4px_rgba(16,185,129,0.4)] transition-all duration-300">
-                      <i data-lucide="target" class="h-6 w-6"></i>
+                    <div class="flex items-center justify-between mb-5">
+                      <i data-lucide="target" class="w-6 h-6 text-emerald-600 dark:text-emerald-400 group-hover:scale-105 transition-transform duration-200"></i>
+                      <span class="font-mono text-xs text-muted-foreground/60 font-medium">03</span>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight">Pay Per Click (PPC)</h3>
-                    <p class="text-[13px] text-stone-600 dark:text-stone-300 mt-2.5 leading-relaxed font-normal">
-                      Instant, qualified lead acquisition across Google Search, Performance Max and YouTube with negative keyword waste elimination.
+                    <h3 class="font-display text-lg font-bold text-foreground group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight min-h-[3.25rem] flex items-start">
+                      Pay Per Click (PPC)
+                    </h3>
+                    <p class="text-xs sm:text-sm text-muted-foreground mt-2 leading-relaxed font-normal min-h-[4rem]">
+                      Targeted lead acquisition across Google Search, Performance Max, and YouTube with negative keyword waste elimination.
                     </p>
                   </div>
-                  <div class="mt-6 pt-4 border-t border-border/70 flex items-center justify-between text-xs font-semibold text-emerald-600 dark:text-emerald-400">
-                    <span>Explore Strategy</span>
-                    <div class="h-7 w-7 rounded-full bg-emerald-500/10 group-hover:bg-emerald-600 text-emerald-600 dark:text-emerald-400 group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-xs">
-                      <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-                    </div>
+                  <div class="mt-6 pt-4 border-t border-stone-300 dark:border-stone-700 flex items-center justify-between text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">
+                    <span>View Service Details</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 group-hover:translate-x-1 transition-transform"></i>
                   </div>
                 </a>
 
                 <!-- Service 4: Social Media Marketing -->
-                <a href="#/service/social-media-marketing" class="p-6 sm:p-7 rounded-2xl border border-border/80 bg-white dark:bg-zinc-900 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06),0_2px_6px_-2px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_35px_-8px_rgba(16,185,129,0.18),0_8px_16px_-4px_rgba(0,0,0,0.06)] hover:border-emerald-500/60 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
-                  <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-emerald-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <a href="/services/social-media-marketing-services/" class="group p-6 sm:p-7 rounded-2xl border-2 border-stone-400 dark:border-stone-600 bg-card/40 hover:bg-card/90 hover:border-emerald-600 dark:hover:border-emerald-500 transition-all duration-200 flex flex-col justify-between">
                   <div>
-                    <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500/15 via-emerald-500/10 to-teal-500/5 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 group-hover:shadow-[0_8px_20px_-4px_rgba(16,185,129,0.4)] transition-all duration-300">
-                      <i data-lucide="megaphone" class="h-6 w-6"></i>
+                    <div class="flex items-center justify-between mb-5">
+                      <i data-lucide="megaphone" class="w-6 h-6 text-emerald-600 dark:text-emerald-400 group-hover:scale-105 transition-transform duration-200"></i>
+                      <span class="font-mono text-xs text-muted-foreground/60 font-medium">04</span>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight">Social Media Marketing</h3>
-                    <p class="text-[13px] text-stone-600 dark:text-stone-300 mt-2.5 leading-relaxed font-normal">
-                      Viral short-form Instagram Reels, Facebook performance ads and LinkedIn B2B thought leadership to convert followers into buyers.
+                    <h3 class="font-display text-lg font-bold text-foreground group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight min-h-[3.25rem] flex items-start">
+                      Social Media Marketing
+                    </h3>
+                    <p class="text-xs sm:text-sm text-muted-foreground mt-2 leading-relaxed font-normal min-h-[4rem]">
+                      High-retention Instagram Reels, Facebook performance ads, and LinkedIn B2B thought leadership to convert followers into buyers.
                     </p>
                   </div>
-                  <div class="mt-6 pt-4 border-t border-border/70 flex items-center justify-between text-xs font-semibold text-emerald-600 dark:text-emerald-400">
-                    <span>Explore Strategy</span>
-                    <div class="h-7 w-7 rounded-full bg-emerald-500/10 group-hover:bg-emerald-600 text-emerald-600 dark:text-emerald-400 group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-xs">
-                      <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-                    </div>
+                  <div class="mt-6 pt-4 border-t border-stone-300 dark:border-stone-700 flex items-center justify-between text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">
+                    <span>View Service Details</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 group-hover:translate-x-1 transition-transform"></i>
                   </div>
                 </a>
 
                 <!-- Service 5: Custom Website Design -->
-                <a href="#/service/custom-website-design" class="p-6 sm:p-7 rounded-2xl border border-border/80 bg-white dark:bg-zinc-900 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06),0_2px_6px_-2px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_35px_-8px_rgba(16,185,129,0.18),0_8px_16px_-4px_rgba(0,0,0,0.06)] hover:border-emerald-500/60 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
-                  <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-emerald-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <a href="/services/ui-ux-design-services/" class="group p-6 sm:p-7 rounded-2xl border-2 border-stone-400 dark:border-stone-600 bg-card/40 hover:bg-card/90 hover:border-emerald-600 dark:hover:border-emerald-500 transition-all duration-200 flex flex-col justify-between">
                   <div>
-                    <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500/15 via-emerald-500/10 to-teal-500/5 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 group-hover:shadow-[0_8px_20px_-4px_rgba(16,185,129,0.4)] transition-all duration-300">
-                      <i data-lucide="layout-template" class="h-6 w-6"></i>
+                    <div class="flex items-center justify-between mb-5">
+                      <i data-lucide="layout-template" class="w-6 h-6 text-emerald-600 dark:text-emerald-400 group-hover:scale-105 transition-transform duration-200"></i>
+                      <span class="font-mono text-xs text-muted-foreground/60 font-medium">05</span>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight">Custom Website Design</h3>
-                    <p class="text-[13px] text-stone-600 dark:text-stone-300 mt-2.5 leading-relaxed font-normal">
-                      100% bespoke Figma UI/UX prototyping tailored to your brand identity, mobile-first responsiveness and conversion architecture.
+                    <h3 class="font-display text-lg font-bold text-foreground group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight min-h-[3.25rem] flex items-start">
+                      Custom Website Design
+                    </h3>
+                    <p class="text-xs sm:text-sm text-muted-foreground mt-2 leading-relaxed font-normal min-h-[4rem]">
+                      100% bespoke Figma UI/UX prototyping tailored to your brand identity, mobile-first responsiveness, and conversion architecture.
                     </p>
                   </div>
-                  <div class="mt-6 pt-4 border-t border-border/70 flex items-center justify-between text-xs font-semibold text-emerald-600 dark:text-emerald-400">
-                    <span>Explore Strategy</span>
-                    <div class="h-7 w-7 rounded-full bg-emerald-500/10 group-hover:bg-emerald-600 text-emerald-600 dark:text-emerald-400 group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-xs">
-                      <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-                    </div>
+                  <div class="mt-6 pt-4 border-t border-stone-300 dark:border-stone-700 flex items-center justify-between text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">
+                    <span>View Service Details</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 group-hover:translate-x-1 transition-transform"></i>
                   </div>
                 </a>
 
                 <!-- Service 6: AI SEO & GEO Agency -->
-                <a href="#/service/ai-seo-agency" class="p-6 sm:p-7 rounded-2xl border border-border/80 bg-white dark:bg-zinc-900 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06),0_2px_6px_-2px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_35px_-8px_rgba(16,185,129,0.18),0_8px_16px_-4px_rgba(0,0,0,0.06)] hover:border-emerald-500/60 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
-                  <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-emerald-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <a href="/services/ai-seo-services/" class="group p-6 sm:p-7 rounded-2xl border-2 border-stone-400 dark:border-stone-600 bg-card/40 hover:bg-card/90 hover:border-emerald-600 dark:hover:border-emerald-500 transition-all duration-200 flex flex-col justify-between">
                   <div>
-                    <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500/15 via-emerald-500/10 to-teal-500/5 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 p-2.5 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 group-hover:shadow-[0_8px_20px_-4px_rgba(16,185,129,0.4)] transition-all duration-300">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full">
-                        <rect x="2" y="3" width="20" height="18" rx="2.5" />
-                        <line x1="2" y1="8" x2="22" y2="8" />
-                        <circle cx="5" cy="5.5" r="0.75" fill="currentColor" stroke="none" />
-                        <circle cx="7.5" cy="5.5" r="0.75" fill="currentColor" stroke="none" />
-                        <circle cx="10" cy="5.5" r="0.75" fill="currentColor" stroke="none" />
-                        <rect x="7.5" y="11" width="9" height="7.5" rx="1.5" />
-                        <line x1="10" y1="9.2" x2="10" y2="11" /><line x1="14" y1="9.2" x2="14" y2="11" />
-                        <line x1="10" y1="18.5" x2="10" y2="20.3" /><line x1="14" y1="18.5" x2="14" y2="20.3" />
-                        <line x1="5.7" y1="13.2" x2="7.5" y2="13.2" /><line x1="5.7" y1="16.2" x2="7.5" y2="16.2" />
-                        <line x1="16.5" y1="13.2" x2="18.3" y2="13.2" /><line x1="16.5" y1="16.2" x2="18.3" y2="16.2" />
-                        <text x="12" y="16.1" font-size="4.4" font-family="system-ui, -apple-system, sans-serif" font-weight="800" text-anchor="middle" fill="currentColor" stroke="none" letter-spacing="-0.2px">AI</text>
-                      </svg>
+                    <div class="flex items-center justify-between mb-5">
+                      <i data-lucide="cpu" class="w-6 h-6 text-emerald-600 dark:text-emerald-400 group-hover:scale-105 transition-transform duration-200"></i>
+                      <span class="font-mono text-xs text-muted-foreground/60 font-medium">06</span>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight">AI SEO &amp; GEO Agency</h3>
-                    <p class="text-[13px] text-stone-600 dark:text-stone-300 mt-2.5 leading-relaxed font-normal">
-                      Generative Engine Optimization (GEO) ensuring your business is recommended directly inside ChatGPT, Perplexity and Google AI Overviews.
+                    <h3 class="font-display text-lg font-bold text-foreground group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight min-h-[3.25rem] flex items-start">
+                      AI SEO &amp; GEO Agency
+                    </h3>
+                    <p class="text-xs sm:text-sm text-muted-foreground mt-2 leading-relaxed font-normal min-h-[4rem]">
+                      Generative Engine Optimization (GEO) ensuring your business is recommended directly inside ChatGPT, Perplexity, and AI Overviews.
                     </p>
                   </div>
-                  <div class="mt-6 pt-4 border-t border-border/70 flex items-center justify-between text-xs font-semibold text-emerald-600 dark:text-emerald-400">
-                    <span>Explore Strategy</span>
-                    <div class="h-7 w-7 rounded-full bg-emerald-500/10 group-hover:bg-emerald-600 text-emerald-600 dark:text-emerald-400 group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-xs">
-                      <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-                    </div>
+                  <div class="mt-6 pt-4 border-t border-stone-300 dark:border-stone-700 flex items-center justify-between text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">
+                    <span>View Service Details</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 group-hover:translate-x-1 transition-transform"></i>
                   </div>
                 </a>
 
-                <!-- Service 7: E-Commerce & Shopify -->
-                <a href="#/service/e-commerce-development" class="p-6 sm:p-7 rounded-2xl border border-border/80 bg-white dark:bg-zinc-900 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06),0_2px_6px_-2px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_35px_-8px_rgba(16,185,129,0.18),0_8px_16px_-4px_rgba(0,0,0,0.06)] hover:border-emerald-500/60 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
-                  <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-emerald-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <!-- Service 7: E-Commerce Development -->
+                <a href="/services/ecommerce-website-development-company/" class="group p-6 sm:p-7 rounded-2xl border-2 border-stone-400 dark:border-stone-600 bg-card/40 hover:bg-card/90 hover:border-emerald-600 dark:hover:border-emerald-500 transition-all duration-200 flex flex-col justify-between">
                   <div>
-                    <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500/15 via-emerald-500/10 to-teal-500/5 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 group-hover:shadow-[0_8px_20px_-4px_rgba(16,185,129,0.4)] transition-all duration-300">
-                      <i data-lucide="shopping-bag" class="h-6 w-6"></i>
+                    <div class="flex items-center justify-between mb-5">
+                      <i data-lucide="shopping-bag" class="w-6 h-6 text-emerald-600 dark:text-emerald-400 group-hover:scale-105 transition-transform duration-200"></i>
+                      <span class="font-mono text-xs text-muted-foreground/60 font-medium">07</span>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight">E-Commerce Development</h3>
-                    <p class="text-[13px] text-stone-600 dark:text-stone-300 mt-2.5 leading-relaxed font-normal">
+                    <h3 class="font-display text-lg font-bold text-foreground group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight min-h-[3.25rem] flex items-start">
+                      E-Commerce Development
+                    </h3>
+                    <p class="text-xs sm:text-sm text-muted-foreground mt-2 leading-relaxed font-normal min-h-[4rem]">
                       Scalable Shopify and React online stores with Indian payment gateway integrations (Razorpay, Paytm, PhonePe) and optimized checkout.
                     </p>
                   </div>
-                  <div class="mt-6 pt-4 border-t border-border/70 flex items-center justify-between text-xs font-semibold text-emerald-600 dark:text-emerald-400">
-                    <span>Explore Strategy</span>
-                    <div class="h-7 w-7 rounded-full bg-emerald-500/10 group-hover:bg-emerald-600 text-emerald-600 dark:text-emerald-400 group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-xs">
-                      <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-                    </div>
+                  <div class="mt-6 pt-4 border-t border-stone-300 dark:border-stone-700 flex items-center justify-between text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">
+                    <span>View Service Details</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 group-hover:translate-x-1 transition-transform"></i>
                   </div>
                 </a>
 
-                <!-- Service 8: Google My Business / GMB -->
-                <a href="#/service/gmb-optimization" class="p-6 sm:p-7 rounded-2xl border border-border/80 bg-white dark:bg-zinc-900 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06),0_2px_6px_-2px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_35px_-8px_rgba(16,185,129,0.18),0_8px_16px_-4px_rgba(0,0,0,0.06)] hover:border-emerald-500/60 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
-                  <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-emerald-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <!-- Service 8: Google My Business / Google Map -->
+                <a href="/services/google-my-business-services/" class="group p-6 sm:p-7 rounded-2xl border-2 border-stone-400 dark:border-stone-600 bg-card/40 hover:bg-card/90 hover:border-emerald-600 dark:hover:border-emerald-500 transition-all duration-200 flex flex-col justify-between">
                   <div>
-                    <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-500/15 via-emerald-500/10 to-teal-500/5 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 group-hover:shadow-[0_8px_20px_-4px_rgba(16,185,129,0.4)] transition-all duration-300">
-                      <i data-lucide="map-pin" class="h-6 w-6"></i>
+                    <div class="flex items-center justify-between mb-5">
+                      <i data-lucide="map-pin" class="w-6 h-6 text-emerald-600 dark:text-emerald-400 group-hover:scale-105 transition-transform duration-200"></i>
+                      <span class="font-mono text-xs text-muted-foreground/60 font-medium">08</span>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-stone-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight">GMB Local Optimization</h3>
-                    <p class="text-[13px] text-stone-600 dark:text-stone-300 mt-2.5 leading-relaxed font-normal">
+                    <h3 class="font-display text-lg font-bold text-foreground group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors tracking-tight min-h-[3.25rem] flex items-start">
+                      Google My Business / Google Map
+                    </h3>
+                    <p class="text-xs sm:text-sm text-muted-foreground mt-2 leading-relaxed font-normal min-h-[4rem]">
                       Dominate Google Maps 3-Pack rankings for local Pune customer searches, driving direct inbound phone calls and store visits.
                     </p>
                   </div>
-                  <div class="mt-6 pt-4 border-t border-border/70 flex items-center justify-between text-xs font-semibold text-emerald-600 dark:text-emerald-400">
-                    <span>Explore Strategy</span>
-                    <div class="h-7 w-7 rounded-full bg-emerald-500/10 group-hover:bg-emerald-600 text-emerald-600 dark:text-emerald-400 group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-xs">
-                      <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-                    </div>
+                  <div class="mt-6 pt-4 border-t border-stone-300 dark:border-stone-700 flex items-center justify-between text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors">
+                    <span>View Service Details</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 group-hover:translate-x-1 transition-transform"></i>
                   </div>
                 </a>
 
@@ -2940,7 +3365,12 @@
                     
                     <!-- Form Interactive inputs slot -->
                     <div id="form-fields-container">
-                      <form id="consultation-form" class="space-y-6">
+                      <form id="consultation-form" action="https://formsubmit.co/inranktech@gmail.com" method="POST" class="space-y-6">
+                        <!-- FormSubmit.co Integration -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject" value="New Consultation Proposal Request (Inrank Technologies)">
+                        <input type="text" name="_honey" style="display:none">
                         
                         <!-- Anti-Spam Honeypot -->
                         <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off">
@@ -2951,7 +3381,7 @@
                             <label for="form-name" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Full Name <span class="text-primary">*</span></label>
                             <input
                               type="text"
-                              id="form-name"
+                              id="form-name" name="name"
                               required
                               placeholder="e.g. Rahul Deshmukh"
                               class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3.5 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary mt-1.5 h-11 rounded-lg"
@@ -2962,7 +3392,7 @@
                             <label for="form-company" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Business / Brand Name <span class="text-primary">*</span></label>
                             <input
                               type="text"
-                              id="form-company"
+                              id="form-company" name="company"
                               required
                               placeholder="e.g. Precision Engineering Ltd"
                               class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3.5 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary mt-1.5 h-11 rounded-lg"
@@ -2975,7 +3405,7 @@
                             <label for="form-email" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Business Email <span class="text-primary">*</span></label>
                             <input
                               type="email"
-                              id="form-email"
+                              id="form-email" name="email"
                               required
                               placeholder="name@company.com"
                               class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3.5 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary mt-1.5 h-11 rounded-lg"
@@ -2986,7 +3416,7 @@
                             <label for="form-phone" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Phone / WhatsApp Number <span class="text-primary">*</span></label>
                             <input
                               type="tel"
-                              id="form-phone"
+                              id="form-phone" name="phone"
                               required
                               placeholder="+91 98765 43210"
                               class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3.5 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary mt-1.5 h-11 rounded-lg"
@@ -2999,7 +3429,7 @@
                           <label for="form-website" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Current Website URL (if any)</label>
                           <input
                             type="text"
-                            id="form-website"
+                            id="form-website" name="website"
                             placeholder="yourbusiness.com"
                             class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3.5 py-1 text-sm shadow-sm transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary mt-1.5 h-11 rounded-lg"
                           />
@@ -3063,7 +3493,7 @@
                         <div class="space-y-2 pt-1">
                           <label for="form-message" class="text-xs uppercase tracking-[0.16em] font-semibold text-foreground">Project Details &amp; Target Timeline</label>
                           <textarea
-                            id="form-message"
+                            id="form-message" name="project_details"
                             rows="3"
                             placeholder="Tell us about your target launch date, primary competitors, or specific features you need..."
                             class="flex w-full border border-input bg-white dark:bg-card text-foreground px-3.5 py-2.5 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary mt-1.5 min-h-[90px] rounded-lg"
@@ -3170,12 +3600,12 @@
             <div class="lg:col-span-3">
               <div class="text-xs uppercase tracking-[0.2em] font-semibold text-muted-foreground mb-4">Quick Links</div>
               <ul class="space-y-2.5 text-sm">
-                <li><a href="#services" class="text-muted-foreground hover:text-primary transition-colors">Services</a></li>
+                <li><a href="/services.html" class="text-muted-foreground hover:text-primary transition-colors">All 27 Services</a></li>
                 <li><a href="#process" class="text-muted-foreground hover:text-primary transition-colors">Process Map</a></li>
                 <li><a href="#industries" class="text-muted-foreground hover:text-primary transition-colors">Industries</a></li>
-                <li><a href="#/about-us" class="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
-                <li><a href="#/blog" class="text-muted-foreground hover:text-primary transition-colors font-semibold text-primary">Digital Growth Blog</a></li>
-                <li><a href="#faq" class="text-muted-foreground hover:text-primary transition-colors">FAQ Directory</a></li>
+                <li><a href="/contact.html" class="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
+                <li><a href="/blog" class="text-muted-foreground hover:text-primary transition-colors font-semibold text-primary">Digital Growth Blog</a></li>
+                <li><a href="/pricing.html" class="text-muted-foreground hover:text-primary transition-colors">FAQ Directory</a></li>
                 <li><a href="#contact" class="text-muted-foreground hover:text-primary transition-colors">Audit Consultation</a></li>
               </ul>
             </div>
@@ -3184,15 +3614,15 @@
             <div class="lg:col-span-2">
               <div class="text-xs uppercase tracking-[0.2em] font-semibold text-muted-foreground mb-4">Services</div>
               <ul class="space-y-2.5 text-sm">
-                <li><a href="#/service/website-development" class="text-muted-foreground hover:text-primary transition-colors">Website Development</a></li>
-                <li><a href="#/service/landing-pages" class="text-muted-foreground hover:text-primary transition-colors">Landing Pages</a></li>
-                <li><a href="#/service/google-ads" class="text-muted-foreground hover:text-primary transition-colors">Google Ads</a></li>
-                <li><a href="#/service/meta-ads" class="text-muted-foreground hover:text-primary transition-colors">Meta Ads</a></li>
-                <li><a href="#/service/seo" class="text-muted-foreground hover:text-primary transition-colors">SEO Solutions</a></li>
-                <li><a href="#/service/gmb-optimization" class="text-muted-foreground hover:text-primary transition-colors">GMB / Google Business Profile</a></li>
-                <li><a href="#/service/conversion-optimization" class="text-muted-foreground hover:text-primary transition-colors">Conversion optimization</a></li>
-                <li><a href="#/service/shopify-development" class="text-muted-foreground hover:text-primary transition-colors">Shopify setups</a></li>
-                <li><a href="#/service/wordpress-development" class="text-muted-foreground hover:text-primary transition-colors">Wordpress design</a></li>
+                <li><a href="/services/custom-website-development/" class="text-muted-foreground hover:text-primary transition-colors">Website Development</a></li>
+                <li><a href="/services/landing-page-design-services/" class="text-muted-foreground hover:text-primary transition-colors">Landing Pages</a></li>
+                <li><a href="/services/google-ads-agency/" class="text-muted-foreground hover:text-primary transition-colors">Google Ads</a></li>
+                <li><a href="/services/meta-ads-agency/" class="text-muted-foreground hover:text-primary transition-colors">Meta Ads</a></li>
+                <li><a href="/services/seo-company-pune/" class="text-muted-foreground hover:text-primary transition-colors">SEO Solutions</a></li>
+                <li><a href="/services/google-my-business-services/" class="text-muted-foreground hover:text-primary transition-colors">GMB / Google Business Profile</a></li>
+                <li><a href="/services/conversion-rate-optimization-services/" class="text-muted-foreground hover:text-primary transition-colors">Conversion optimization</a></li>
+                <li><a href="/services/shopify-store-development/" class="text-muted-foreground hover:text-primary transition-colors">Shopify setups</a></li>
+                <li><a href="/services/wordpress-development-services/" class="text-muted-foreground hover:text-primary transition-colors">Wordpress design</a></li>
               </ul>
             </div>
 
@@ -3217,8 +3647,9 @@
               © <span id="footer-year">2026</span> Inrank Technologies. All rights reserved.
             </div>
             <div class="flex items-center gap-5">
-              <a href="#" class="hover:text-foreground">Privacy Policy</a>
-              <a href="#" class="hover:text-foreground">Terms of Service</a>
+              <a href="/privacy-policy.html" class="hover:text-foreground">Privacy Policy</a>
+              <a href="/terms-and-conditions.html" class="hover:text-foreground">Terms &amp; Conditions</a>
+              <button onclick="if(window.openInrankCookiePreferences) window.openInrankCookiePreferences();" class="hover:text-foreground cursor-pointer bg-transparent border-none p-0 text-xs text-muted-foreground">Cookie Preferences</button>
               <span>Performance Web & SEO.</span>
             </div>
             
@@ -3360,6 +3791,63 @@
         };
 
         setupTiltEvents();
+
+        // FormSubmit.co AJAX Handler for consultation-form
+        const consultForm = document.getElementById('consultation-form');
+        const consultSuccess = document.getElementById('form-success-container');
+        const consultFields = document.getElementById('form-fields-container');
+        const consultBtn = document.getElementById('submit-proposal-btn');
+
+        if (consultForm) {
+          consultForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            if (consultBtn) {
+              consultBtn.disabled = true;
+              consultBtn.innerHTML = '<span>Transmitting Proposal Request...</span>';
+            }
+
+            const name = document.getElementById('form-name')?.value || '';
+            const company = document.getElementById('form-company')?.value || '';
+            const email = document.getElementById('form-email')?.value || '';
+            const phone = document.getElementById('form-phone')?.value || '';
+            const website = document.getElementById('form-website')?.value || '';
+            const budget = document.querySelector('input[name="budget"]:checked')?.value || '₹20,000 - ₹50,000';
+            const message = document.getElementById('form-message')?.value || '';
+
+            try {
+              await fetch('https://formsubmit.co/ajax/inranktech@gmail.com', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                  name: name,
+                  company: company,
+                  email: email,
+                  phone: phone,
+                  website: website,
+                  budget: budget,
+                  project_details: message,
+                  _subject: 'New Consultation Request: ' + name + ' (' + company + ')',
+                  _template: 'table'
+                })
+              });
+
+              if (consultFields) consultFields.classList.add('hidden');
+              if (consultSuccess) consultSuccess.classList.remove('hidden');
+
+              setTimeout(() => {
+                const waUrl = 'https://wa.me/918788823182?text=' + encodeURIComponent(
+                  'Hi Inrank team! I am ' + name + ' from ' + company + '. I requested a proposal for ' + budget + ' budget.'
+                );
+                window.open(waUrl, '_blank');
+              }, 1200);
+            } catch (err) {
+              consultForm.submit();
+            }
+          });
+        }
       });
     </script>
   
@@ -3380,5 +3868,7 @@
     </div>
   </div>
 
+  <!-- Inrank Privacy & Cookie Consent Manager (DPDPA 2023 & GDPR Compliant) -->
+  <script src="/cookie-consent.js" defer></script>
 </body>
 </html>
