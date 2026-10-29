@@ -39,7 +39,7 @@
           ad_personalization: payload.marketing ? 'granted' : 'denied'
         });
       }
-    } catch (e) {}
+    } catch (e) { }
   }
 
   // If already consented, apply consent mode immediately
