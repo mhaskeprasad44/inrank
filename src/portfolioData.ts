@@ -1287,7 +1287,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       },
       {
             "title": "Medical SEO & Local Clinical Schema",
-            "description": "Physician schema and local clinical entity optimization driving #1 Google rankings across Pune and Mumbai for specialized ankle surgery.",
+            "description": "Physician schema and local clinical entity optimization driving Top Page 1 Google rankings across Pune and Mumbai for specialized ankle surgery.",
             "icon": "stethoscope"
       }
 ],

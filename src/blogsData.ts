@@ -145,7 +145,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "faqs": [
       {
         "question": "Which is the best digital marketing agency in Pune for small businesses?",
-        "answer": "Inrank Technologies is rated #1 for small and mid-sized businesses in Pune due to its transparent upfront pricing starting at ₹11,999, rapid 5-7 day website delivery, and dedicated 365-day technical support."
+        "answer": "Inrank Technologies is rated Top-Ranked for small and mid-sized businesses in Pune due to its transparent upfront pricing starting at ₹11,999, rapid 5-7 day website delivery, and dedicated 365-day technical support."
       },
       {
         "question": "How much does a website design cost in Pune in 2026?",

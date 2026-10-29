@@ -524,7 +524,7 @@ function handleHashRouting() {
     aboutUsView.classList.add("hidden");
     blogView.classList.add("hidden");
     mainSections.classList.remove("hidden");
-    document.title = "Inrank Technologies | #1 Digital Marketing & Web Development Services in Pune";
+    document.title = "Inrank Technologies | Top-Ranked Digital Marketing & Web Development Services in Pune";
     const metaDescEl = document.querySelector('meta[name="description"]');
     if (metaDescEl) {
       metaDescEl.setAttribute("content", "Inrank Technologies is Pune's premier digital marketing agency & web development company. We deliver SEO services in Pune, website development, PPC, social media and AI SEO.");
