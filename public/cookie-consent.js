@@ -1,7 +1,7 @@
 /**
- * Inrank Technologies — Modern Privacy & Cookie Consent Banner
+ * Inrank Technologies — Modern Privacy & Cookie Consent System
  * Compliant with Indian DPDP Act 2023, GDPR, CCPA/CPRA, and Google Consent Mode v2
- * Ultra-compact mobile layout with zero layout interference and native SVG cookie iconography.
+ * Features: Ultra-compact mobile banner + CookieYes-style floating revisit consent button
  */
 
 (function () {
@@ -42,7 +42,7 @@
     } catch (e) {}
   }
 
-  // If already consented, apply consent mode and do not show banner
+  // If already consented, apply consent mode immediately
   const existingConsent = getSavedConsent();
   if (existingConsent) {
     if (typeof window.gtag === 'function') {
@@ -55,20 +55,24 @@
     }
   }
 
-  // Inject Styles for Cookie Banner & Modal
+  // Inject Styles for Cookie Banner, Preferences Modal & CookieYes-style Floating Revisit Button
   const style = document.createElement('style');
   style.id = 'inrank-cookie-consent-styles';
   style.textContent = `
     #inrank-cookie-banner,
     #inrank-cookie-modal,
+    #inrank-cookie-revisit-btn,
     #inrank-cookie-banner *,
-    #inrank-cookie-modal * {
+    #inrank-cookie-modal *,
+    #inrank-cookie-revisit-btn * {
       box-sizing: border-box;
       font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Floating Banner Container (Bottom-Left) */
+    /* ==========================================================================
+       1. FLOATING BANNER (Desktop Default: Bottom-Left)
+       ========================================================================== */
     #inrank-cookie-banner {
       position: fixed;
       left: 20px;
@@ -109,8 +113,8 @@
     }
 
     .inrank-cb-icon {
-      width: 30px;
-      height: 30px;
+      width: 28px;
+      height: 28px;
       border-radius: 8px;
       background: rgba(16, 185, 129, 0.15);
       border: 1px solid rgba(16, 185, 129, 0.3);
@@ -119,6 +123,11 @@
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
+    }
+
+    .inrank-cb-icon svg {
+      width: 16px;
+      height: 16px;
     }
 
     .inrank-cb-title {
@@ -229,64 +238,102 @@
       color: #f1f5f9;
     }
 
-    /* Mobile View Optimization (Zero Layout Interference) */
-    @media (max-width: 640px) {
-      #inrank-cookie-banner {
-        left: 10px;
-        right: 10px;
-        bottom: 68px; /* Positioned above mobile sticky bottom bar with safe clearance */
-        width: auto;
-        max-width: calc(100vw - 20px);
-        padding: 12px 14px;
-        border-radius: 14px;
-        box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.14);
-      }
-
-      .inrank-cb-header {
-        margin-bottom: 6px;
-      }
-
-      .inrank-cb-icon {
-        width: 24px;
-        height: 24px;
-        border-radius: 6px;
-      }
-
-      .inrank-cb-icon svg {
-        width: 14px;
-        height: 14px;
-      }
-
-      .inrank-cb-title {
-        font-size: 12.5px;
-      }
-
-      .inrank-cb-body {
-        font-size: 11px;
-        line-height: 1.4;
-        margin-bottom: 10px;
-      }
-
-      /* Keep buttons compact & horizontal — NEVER stack 3 full-width blocks on mobile */
-      .inrank-cb-actions {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 6px;
-      }
-
-      .inrank-cb-btn {
-        padding: 7px 10px;
-        font-size: 11px;
-      }
-
-      .inrank-cb-btn-pref {
-        padding: 6px 4px;
-        font-size: 10.5px;
-      }
+    /* ==========================================================================
+       2. COOKIEYES-STYLE FLOATING REVISIT CONSENT BUTTON
+       ========================================================================== */
+    #inrank-cookie-revisit-btn {
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+      z-index: 99980;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #049649 0%, #009d49 100%);
+      color: #ffffff;
+      border: 1.5px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 4px 16px rgba(0, 157, 73, 0.38), 0 2px 6px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      opacity: 0;
+      transform: scale(0.6) rotate(-15deg);
+      pointer-events: none;
+      padding: 0;
     }
 
-    /* Preferences Modal Backdrop */
+    #inrank-cookie-revisit-btn.inrank-revisit-visible {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+      pointer-events: auto;
+    }
+
+    #inrank-cookie-revisit-btn:hover {
+      transform: scale(1.1) translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 157, 73, 0.5), 0 4px 10px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(135deg, #05a34f 0%, #00873e 100%);
+    }
+
+    #inrank-cookie-revisit-btn:focus-visible {
+      outline: 2px solid #009d49;
+      outline-offset: 3px;
+    }
+
+    .inrank-revisit-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      color: #ffffff;
+    }
+
+    .inrank-revisit-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* CookieYes-style Hover Tooltip (Desktop Only) */
+    .inrank-revisit-tooltip {
+      position: absolute;
+      left: calc(100% + 12px);
+      top: 50%;
+      transform: translateY(-50%) translateX(-6px);
+      background: #0f172a;
+      color: #ffffff;
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.12);
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Tooltip Arrow */
+    .inrank-revisit-tooltip::before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent #0f172a transparent transparent;
+    }
+
+    #inrank-cookie-revisit-btn:hover .inrank-revisit-tooltip {
+      opacity: 1;
+      transform: translateY(-50%) translateX(0);
+    }
+
+    /* ==========================================================================
+       3. PREFERENCES MODAL
+       ========================================================================== */
     #inrank-cookie-modal-backdrop {
       position: fixed;
       inset: 0;
@@ -303,7 +350,6 @@
       pointer-events: auto;
     }
 
-    /* Preferences Modal Window */
     #inrank-cookie-modal {
       position: fixed;
       top: 50%;
@@ -357,6 +403,7 @@
       justify-content: center;
       color: #64748b;
       transition: all 0.15s ease;
+      font-size: 14px;
     }
 
     .inrank-cm-close:hover {
@@ -464,8 +511,97 @@
       padding-top: 12px;
       border-top: 1px solid #e2e8f0;
     }
+
+    /* ==========================================================================
+       4. MOBILE RESPONSIVE OPTIMIZATION (max-width: 640px)
+       ========================================================================== */
+    @media (max-width: 640px) {
+      /* Mobile Banner: Compact, single horizontal button row, above bottom bar */
+      #inrank-cookie-banner {
+        left: 10px;
+        right: 10px;
+        bottom: 68px; /* Positioned safely above mobile sticky conversion bar */
+        width: auto;
+        max-width: calc(100vw - 20px);
+        padding: 12px 14px;
+        border-radius: 14px;
+        box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.14);
+      }
+
+      .inrank-cb-header {
+        margin-bottom: 6px;
+      }
+
+      .inrank-cb-icon {
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
+      }
+
+      .inrank-cb-icon svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      .inrank-cb-title {
+        font-size: 12.5px;
+      }
+
+      .inrank-cb-body {
+        font-size: 11px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+      }
+
+      .inrank-cb-actions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .inrank-cb-btn {
+        padding: 7px 10px;
+        font-size: 11px;
+      }
+
+      .inrank-cb-btn-pref {
+        padding: 6px 4px;
+        font-size: 10.5px;
+      }
+
+      /* Mobile Revisit Button: Positioned cleanly above sticky conversion bar */
+      #inrank-cookie-revisit-btn {
+        left: 14px;
+        bottom: 72px; /* Clears sticky mobile conversion bar */
+        width: 38px;
+        height: 38px;
+      }
+
+      .inrank-revisit-icon svg {
+        width: 17px;
+        height: 17px;
+      }
+
+      /* Hide tooltip on touch devices */
+      .inrank-revisit-tooltip {
+        display: none !important;
+      }
+    }
   `;
   document.head.appendChild(style);
+
+  // SVG Cookie Icon Markup (Clean Lucide-style cookie vector)
+  const cookieSvgMarkup = `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/>
+      <path d="M8.5 8.5v.01"/>
+      <path d="M16 15.5v.01"/>
+      <path d="M12 12v.01"/>
+      <path d="M11 17v.01"/>
+      <path d="M7 14v.01"/>
+    </svg>
+  `;
 
   // Build Banner DOM
   const banner = document.createElement('div');
@@ -476,14 +612,7 @@
     <div class="inrank-cb-header">
       <div class="inrank-cb-title-wrap">
         <div class="inrank-cb-icon" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/>
-            <path d="M8.5 8.5v.01"/>
-            <path d="M16 15.5v.01"/>
-            <path d="M12 12v.01"/>
-            <path d="M11 17v.01"/>
-            <path d="M7 14v.01"/>
-          </svg>
+          ${cookieSvgMarkup}
         </div>
         <div class="inrank-cb-title">Cookie Preferences</div>
       </div>
@@ -503,6 +632,18 @@
       <button id="inrank-cb-decline-btn" class="inrank-cb-btn inrank-cb-btn-decline">Necessary</button>
       <button id="inrank-cb-pref-btn" class="inrank-cb-btn inrank-cb-btn-pref">Customize</button>
     </div>
+  `;
+
+  // Build Floating Revisit Consent Button (CookieYes-Style)
+  const revisitBtn = document.createElement('button');
+  revisitBtn.id = 'inrank-cookie-revisit-btn';
+  revisitBtn.setAttribute('aria-label', 'Revisit Cookie Consent Preferences');
+  revisitBtn.setAttribute('title', 'Cookie Preferences');
+  revisitBtn.innerHTML = `
+    <span class="inrank-revisit-icon" aria-hidden="true">
+      ${cookieSvgMarkup}
+    </span>
+    <span class="inrank-revisit-tooltip">Cookie Preferences</span>
   `;
 
   // Build Preferences Modal DOM
@@ -568,11 +709,28 @@
   `;
 
   document.body.appendChild(banner);
+  document.body.appendChild(revisitBtn);
   document.body.appendChild(backdrop);
   document.body.appendChild(modal);
 
-  // If no saved consent, display the banner after a gentle delay
-  if (!existingConsent) {
+  function showFloatingButton() {
+    revisitBtn.classList.add('inrank-revisit-visible');
+  }
+
+  function hideFloatingButton() {
+    revisitBtn.classList.remove('inrank-revisit-visible');
+  }
+
+  function hideBanner() {
+    banner.classList.remove('inrank-visible');
+    // Reveal the floating revisit button right after the banner hides
+    setTimeout(showFloatingButton, 250);
+  }
+
+  // If user already consented, show floating revisit button directly. Otherwise, show banner after 800ms.
+  if (existingConsent) {
+    showFloatingButton();
+  } else {
     setTimeout(() => {
       banner.classList.add('inrank-visible');
     }, 800);
@@ -588,10 +746,6 @@
   const analyticsToggle = document.getElementById('inrank-toggle-analytics');
   const marketingToggle = document.getElementById('inrank-toggle-marketing');
 
-  function hideBanner() {
-    banner.classList.remove('inrank-visible');
-  }
-
   function openModal() {
     const current = getSavedConsent();
     if (current) {
@@ -606,6 +760,11 @@
     backdrop.classList.remove('inrank-open');
     modal.classList.remove('inrank-open');
   }
+
+  // Click on floating button opens preferences modal
+  revisitBtn.addEventListener('click', () => {
+    openModal();
+  });
 
   acceptBtn.addEventListener('click', () => {
     saveConsent('all');
