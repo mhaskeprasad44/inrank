@@ -1,7 +1,7 @@
 /**
  * Inrank Technologies — Modern Privacy & Cookie Consent Banner
  * Compliant with Indian DPDP Act 2023, GDPR, CCPA/CPRA, and Google Consent Mode v2
- * Positioned on the bottom-left to prevent overlap with the WhatsApp floating button
+ * Ultra-compact mobile layout with zero layout interference and native SVG cookie iconography.
  */
 
 (function () {
@@ -68,23 +68,23 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Floating Banner Container (Bottom-Left: leaves right side free for WhatsApp) */
+    /* Floating Banner Container (Bottom-Left) */
     #inrank-cookie-banner {
       position: fixed;
-      left: 24px;
-      bottom: 24px;
+      left: 20px;
+      bottom: 20px;
       z-index: 99990;
-      width: 440px;
-      max-width: calc(100vw - 32px);
+      width: 390px;
+      max-width: calc(100vw - 24px);
       background: #0f172a;
       color: #f8fafc;
-      border-radius: 20px;
-      padding: 20px;
-      box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.12);
+      border-radius: 18px;
+      padding: 16px 18px;
+      box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.12);
       backdrop-filter: blur(16px);
       transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
       opacity: 0;
-      transform: translateY(20px) scale(0.97);
+      transform: translateY(16px) scale(0.97);
       pointer-events: none;
     }
 
@@ -97,36 +97,63 @@
     .inrank-cb-header {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
+    }
+
+    .inrank-cb-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 9px;
     }
 
     .inrank-cb-icon {
-      width: 32px;
-      height: 32px;
-      border-radius: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
       background: rgba(16, 185, 129, 0.15);
       border: 1px solid rgba(16, 185, 129, 0.3);
-      color: #34d399;
+      color: #10b981;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-      font-size: 16px;
     }
 
     .inrank-cb-title {
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 700;
       color: #ffffff;
-      letter-spacing: -0.015em;
+      letter-spacing: -0.01em;
+    }
+
+    .inrank-cb-dismiss {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      padding: 0;
+      flex-shrink: 0;
+    }
+
+    .inrank-cb-dismiss:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
     }
 
     .inrank-cb-body {
-      font-size: 12.5px;
-      line-height: 1.55;
+      font-size: 12px;
+      line-height: 1.5;
       color: #cbd5e1;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
 
     .inrank-cb-body a {
@@ -145,13 +172,12 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      flex-wrap: wrap;
     }
 
     .inrank-cb-btn {
-      padding: 9px 16px;
-      border-radius: 10px;
-      font-size: 12px;
+      padding: 8px 14px;
+      border-radius: 9px;
+      font-size: 11.5px;
       font-weight: 700;
       cursor: pointer;
       border: none;
@@ -160,28 +186,26 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+      white-space: nowrap;
     }
 
     .inrank-cb-btn-accept {
-      background: linear-gradient(135deg, #049649 0%, #009d49 100%);
+      background: #009d49;
       color: #ffffff;
-      flex: 1;
-      min-width: 120px;
-      box-shadow: 0 4px 12px rgba(4, 150, 73, 0.3);
+      flex: 1.1;
+      box-shadow: 0 2px 8px rgba(0, 157, 73, 0.3);
     }
 
     .inrank-cb-btn-accept:hover {
-      background: linear-gradient(135deg, #059669 0%, #047857 100%);
+      background: #00813c;
       transform: translateY(-1px);
-      box-shadow: 0 6px 16px rgba(4, 150, 73, 0.45);
     }
 
     .inrank-cb-btn-decline {
       background: rgba(255, 255, 255, 0.08);
       color: #e2e8f0;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      flex: 1;
-      min-width: 110px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      flex: 0.9;
     }
 
     .inrank-cb-btn-decline:hover {
@@ -192,16 +216,74 @@
     .inrank-cb-btn-pref {
       background: transparent;
       color: #94a3b8;
-      border: 1px solid transparent;
-      padding: 9px 12px;
-      font-size: 11.5px;
+      border: none;
+      padding: 6px 8px;
+      font-size: 11px;
       font-weight: 600;
       cursor: pointer;
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
 
     .inrank-cb-btn-pref:hover {
-      color: #e2e8f0;
-      text-decoration: underline;
+      color: #f1f5f9;
+    }
+
+    /* Mobile View Optimization (Zero Layout Interference) */
+    @media (max-width: 640px) {
+      #inrank-cookie-banner {
+        left: 10px;
+        right: 10px;
+        bottom: 68px; /* Positioned above mobile sticky bottom bar with safe clearance */
+        width: auto;
+        max-width: calc(100vw - 20px);
+        padding: 12px 14px;
+        border-radius: 14px;
+        box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.14);
+      }
+
+      .inrank-cb-header {
+        margin-bottom: 6px;
+      }
+
+      .inrank-cb-icon {
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
+      }
+
+      .inrank-cb-icon svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      .inrank-cb-title {
+        font-size: 12.5px;
+      }
+
+      .inrank-cb-body {
+        font-size: 11px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+      }
+
+      /* Keep buttons compact & horizontal — NEVER stack 3 full-width blocks on mobile */
+      .inrank-cb-actions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .inrank-cb-btn {
+        padding: 7px 10px;
+        font-size: 11px;
+      }
+
+      .inrank-cb-btn-pref {
+        padding: 6px 4px;
+        font-size: 10.5px;
+      }
     }
 
     /* Preferences Modal Backdrop */
@@ -228,14 +310,14 @@
       left: 50%;
       transform: translate(-50%, -48%) scale(0.96);
       z-index: 99999;
-      width: 500px;
-      max-width: calc(100vw - 32px);
+      width: 480px;
+      max-width: calc(100vw - 28px);
       max-height: 85vh;
       overflow-y: auto;
       background: #ffffff;
       color: #0f172a;
-      border-radius: 24px;
-      padding: 24px;
+      border-radius: 20px;
+      padding: 20px 22px;
       box-shadow: 0 25px 65px -15px rgba(15, 23, 42, 0.35), 0 0 0 1px rgba(226, 232, 240, 0.9);
       opacity: 0;
       pointer-events: none;
@@ -252,13 +334,13 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 14px;
-      padding-bottom: 12px;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
       border-bottom: 1px solid #e2e8f0;
     }
 
     .inrank-cm-title {
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 800;
       color: #0f172a;
     }
@@ -267,8 +349,8 @@
       background: #f1f5f9;
       border: none;
       border-radius: 8px;
-      width: 32px;
-      height: 32px;
+      width: 30px;
+      height: 30px;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -283,55 +365,59 @@
     }
 
     .inrank-cm-desc {
-      font-size: 13px;
+      font-size: 12.5px;
       line-height: 1.5;
       color: #475569;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
     .inrank-cm-group {
       background: #f8fafc;
       border: 1px solid #e2e8f0;
-      border-radius: 14px;
-      padding: 14px;
-      margin-bottom: 12px;
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
     }
 
     .inrank-cm-group-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .inrank-cm-group-title {
-      font-size: 13.5px;
+      font-size: 13px;
       font-weight: 700;
       color: #0f172a;
     }
 
     .inrank-cm-badge-req {
-      font-size: 10.5px;
+      font-size: 10px;
       font-weight: 700;
-      background: #d1fae5;
-      color: #065f46;
-      padding: 3px 8px;
-      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #009d49;
+      background: #eafaf1;
+      border: 1px solid #bbf2d2;
+      padding: 2px 7px;
+      border-radius: 6px;
     }
 
     .inrank-cm-group-text {
-      font-size: 12px;
-      line-height: 1.5;
+      font-size: 11.5px;
+      line-height: 1.45;
       color: #64748b;
       margin: 0;
     }
 
-    /* Switch Toggle */
+    /* Toggle Switches */
     .inrank-cm-switch {
       position: relative;
       display: inline-block;
-      width: 40px;
+      width: 38px;
       height: 22px;
+      flex-shrink: 0;
     }
 
     .inrank-cm-switch input {
@@ -343,12 +429,9 @@
     .inrank-cm-slider {
       position: absolute;
       cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      inset: 0;
       background-color: #cbd5e1;
-      transition: .3s;
+      transition: 0.25s;
       border-radius: 22px;
     }
 
@@ -360,45 +443,26 @@
       left: 3px;
       bottom: 3px;
       background-color: white;
-      transition: .3s;
+      transition: 0.25s;
       border-radius: 50%;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.25);
     }
 
-    input:checked + .inrank-cm-slider {
-      background-color: #049649;
+    .inrank-cm-switch input:checked + .inrank-cm-slider {
+      background-color: #009d49;
     }
 
-    input:checked + .inrank-cm-slider:before {
-      transform: translateX(18px);
+    .inrank-cm-switch input:checked + .inrank-cm-slider:before {
+      transform: translateX(16px);
     }
 
     .inrank-cm-actions {
       display: flex;
-      align-items: center;
       justify-content: flex-end;
       gap: 10px;
-      margin-top: 18px;
-      padding-top: 14px;
+      margin-top: 16px;
+      padding-top: 12px;
       border-top: 1px solid #e2e8f0;
-    }
-
-    @media (max-width: 640px) {
-      #inrank-cookie-banner {
-        left: 12px;
-        right: 12px;
-        bottom: 76px;
-        width: auto;
-        padding: 16px;
-      }
-      .inrank-cb-actions {
-        flex-direction: column;
-      }
-      .inrank-cb-btn {
-        width: 100%;
-      }
-      .inrank-cb-btn-pref {
-        text-align: center;
-      }
     }
   `;
   document.head.appendChild(style);
@@ -410,16 +474,33 @@
   banner.setAttribute('aria-label', 'Cookie Consent Banner');
   banner.innerHTML = `
     <div class="inrank-cb-header">
-      <div class="inrank-cb-icon">🍪</div>
-      <div class="inrank-cb-title">Cookie &amp; Privacy Preferences</div>
+      <div class="inrank-cb-title-wrap">
+        <div class="inrank-cb-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/>
+            <path d="M8.5 8.5v.01"/>
+            <path d="M16 15.5v.01"/>
+            <path d="M12 12v.01"/>
+            <path d="M11 17v.01"/>
+            <path d="M7 14v.01"/>
+          </svg>
+        </div>
+        <div class="inrank-cb-title">Cookie Preferences</div>
+      </div>
+      <button id="inrank-cb-dismiss-btn" class="inrank-cb-dismiss" aria-label="Dismiss cookie banner">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
     </div>
     <div class="inrank-cb-body">
-      Inrank Technologies uses essential cookies, Google Analytics, and telemetry to deliver sub-second performance, analyze traffic, and ensure secure communication. By clicking <strong>Accept All</strong>, you agree to our data handling in accordance with our 
-      <a href="/privacy-policy.html">Privacy Policy</a> and <a href="/terms-and-conditions.html">Terms</a>.
+      We use cookies to optimize site speed and analyze anonymous traffic in accordance with our 
+      <a href="/privacy-policy.html">Privacy Policy</a>.
     </div>
     <div class="inrank-cb-actions">
       <button id="inrank-cb-accept-btn" class="inrank-cb-btn inrank-cb-btn-accept">Accept All</button>
-      <button id="inrank-cb-decline-btn" class="inrank-cb-btn inrank-cb-btn-decline">Necessary Only</button>
+      <button id="inrank-cb-decline-btn" class="inrank-cb-btn inrank-cb-btn-decline">Necessary</button>
       <button id="inrank-cb-pref-btn" class="inrank-cb-btn inrank-cb-btn-pref">Customize</button>
     </div>
   `;
@@ -449,7 +530,7 @@
         <span class="inrank-cm-badge-req">Always Active</span>
       </div>
       <p class="inrank-cm-group-text">
-        Required for core system security, form submission routing, load-balancing, and caching headers. Cannot be disabled.
+        Required for core system security, form submission routing, and caching headers. Cannot be disabled.
       </p>
     </div>
 
@@ -463,7 +544,7 @@
         </label>
       </div>
       <p class="inrank-cm-group-text">
-        Anonymized page views, Core Web Vitals measurements via Google Analytics 4, and heatmap diagnostics via Microsoft Clarity.
+        Anonymized page views and Core Web Vitals telemetry via Google Analytics 4 and Microsoft Clarity.
       </p>
     </div>
 
@@ -477,7 +558,7 @@
         </label>
       </div>
       <p class="inrank-cm-group-text">
-        Conversion attribution for Google Ads and Meta Ads campaigns. Helps measure inbound business inquiries.
+        Campaign conversion attribution for Google Ads and Meta Ads.
       </p>
     </div>
 
@@ -501,6 +582,7 @@
   const acceptBtn = document.getElementById('inrank-cb-accept-btn');
   const declineBtn = document.getElementById('inrank-cb-decline-btn');
   const prefBtn = document.getElementById('inrank-cb-pref-btn');
+  const dismissBtn = document.getElementById('inrank-cb-dismiss-btn');
   const closeBtn = document.getElementById('inrank-cm-close-btn');
   const saveBtn = document.getElementById('inrank-cm-save-btn');
   const analyticsToggle = document.getElementById('inrank-toggle-analytics');
@@ -534,6 +616,13 @@
     saveConsent('necessary', { analytics: false, marketing: false });
     hideBanner();
   });
+
+  if (dismissBtn) {
+    dismissBtn.addEventListener('click', () => {
+      saveConsent('necessary', { analytics: false, marketing: false });
+      hideBanner();
+    });
+  }
 
   prefBtn.addEventListener('click', () => {
     openModal();
