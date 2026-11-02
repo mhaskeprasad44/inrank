@@ -1137,14 +1137,12 @@
 
             const selectedBudget = document.querySelector('#budget-chips-container .active-chip')?.getAttribute('data-value') || 'Not specified';
 
+            // 1. Primary Dispatch: Direct Gmail SMTP Server (/api/send-email)
+            let smtpDelivered = false;
             try {
-              // Send to FormSubmit.co via AJAX
-              await fetch("https://formsubmit.co/ajax/inranktech@gmail.com", {
+              const smtpRes = await fetch("/api/send-email", {
                 method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                  "Accept": "application/json"
-                },
+                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
                   name: name,
                   phone: phone,
@@ -1153,12 +1151,41 @@
                   services_needed: selectedServices || 'General Consultation',
                   budget_range: selectedBudget,
                   message: message,
-                  _subject: "New Website Blueprint Request: " + name,
-                  _template: "table"
+                  source: "Contact Page"
                 })
               });
-            } catch (err) {
-              console.warn("FormSubmit background dispatch note:", err);
+              const smtpData = await smtpRes.json();
+              if (smtpData && smtpData.success) {
+                smtpDelivered = true;
+              }
+            } catch (smtpErr) {
+              console.warn("Direct SMTP server dispatch note:", smtpErr);
+            }
+
+            // 2. Secondary Fallback: FormSubmit.co
+            if (!smtpDelivered) {
+              try {
+                await fetch("https://formsubmit.co/ajax/inranktech@gmail.com", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                  },
+                  body: JSON.stringify({
+                    name: name,
+                    phone: phone,
+                    email: email,
+                    website: website,
+                    services_needed: selectedServices || 'General Consultation',
+                    budget_range: selectedBudget,
+                    message: message,
+                    _subject: "New Website Blueprint Request: " + name,
+                    _template: "table"
+                  })
+                });
+              } catch (err) {
+                console.warn("FormSubmit fallback dispatch note:", err);
+              }
             }
 
             let waText = `*Inrank Project Inquiry*\n\n`;

@@ -6,6 +6,7 @@ import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
 import dotenv from "dotenv";
 import compression from "compression";
+import nodemailer from "nodemailer";
 dotenv.config();
 var app = express();
 var PORT = Number(process.env.PORT) || 3e3;
@@ -246,6 +247,122 @@ Your website **${fallbackUrl}** has been assessed by Inrank Technologies' live c
   1. Standardize heading tag nesting (ensure exactly one semantic H1 focus term).
   2. Deploy structured Schema.org markup snippets matching target context.
   3. Re-compress background vector images to save up to 45% bandwidth load.`
+    });
+  }
+});
+var mailTransporter = null;
+var getMailTransporter = () => {
+  const user = process.env.SMTP_USER || process.env.GMAIL_USER || "inranktech@gmail.com";
+  const pass = process.env.SMTP_PASS || process.env.GMAIL_APP_PASSWORD;
+  if (!pass) return null;
+  if (!mailTransporter) {
+    mailTransporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST || "smtp.gmail.com",
+      port: Number(process.env.SMTP_PORT) || 465,
+      secure: process.env.SMTP_SECURE !== "false",
+      // true for 465, false for 587
+      auth: {
+        user,
+        pass
+      }
+    });
+  }
+  return { transporter: mailTransporter, user };
+};
+app.post("/api/send-email", async (req, res) => {
+  try {
+    const { name, email, phone, website, services_needed, budget_range, message, source } = req.body;
+    if (!name || !email && !phone) {
+      return res.status(400).json({
+        success: false,
+        error: "Name and at least one contact method (email or phone) are required."
+      });
+    }
+    const mailConfig = getMailTransporter();
+    const recipient = process.env.EMAIL_TO || "inranktech@gmail.com";
+    const sender = mailConfig ? mailConfig.user : "inranktech@gmail.com";
+    const htmlEmail = `
+      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 620px; margin: 0 auto; background: #ffffff; border-radius: 14px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px rgba(0,0,0,0.06);">
+        <div style="background: linear-gradient(135deg, #049649 0%, #009d49 100%); padding: 26px 28px; text-align: left; color: #ffffff;">
+          <h1 style="margin: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.02em;">INRANK TECHNOLOGIES</h1>
+          <p style="margin: 4px 0 0; font-size: 13px; opacity: 0.92; font-weight: 500;">New Inbound Customer Inquiry</p>
+        </div>
+        <div style="padding: 28px 26px; color: #0f172a;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 13.5px;">
+            <tr>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #64748b; font-weight: 600; width: 140px;">Customer Name:</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #0f172a; font-weight: 700;">${name}</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #64748b; font-weight: 600;">Phone / WhatsApp:</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #0f172a; font-weight: 700;">
+                <a href="tel:${phone}" style="color: #009d49; text-decoration: none;">${phone || "Not provided"}</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #64748b; font-weight: 600;">Email Address:</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #0f172a;">
+                <a href="mailto:${email}" style="color: #009d49; text-decoration: none;">${email || "Not provided"}</a>
+              </td>
+            </tr>
+            ${website ? `<tr>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #64748b; font-weight: 600;">Current Website:</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #0f172a;">
+                <a href="${website}" target="_blank" style="color: #009d49; text-decoration: underline;">${website}</a>
+              </td>
+            </tr>` : ""}
+            ${services_needed ? `<tr>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #64748b; font-weight: 600;">Services Needed:</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #0f172a; font-weight: 600;">${services_needed}</td>
+            </tr>` : ""}
+            ${budget_range ? `<tr>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #64748b; font-weight: 600;">Budget Range:</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #0f172a; font-weight: 600;">${budget_range}</td>
+            </tr>` : ""}
+            ${source ? `<tr>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #64748b; font-weight: 600;">Source Page:</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #64748b;">${source}</td>
+            </tr>` : ""}
+          </table>
+          ${message ? `
+            <div style="margin-top: 22px; padding: 16px 18px; background: #f8fafc; border-radius: 10px; border-left: 4px solid #009d49;">
+              <p style="margin: 0 0 6px; font-size: 11.5px; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em;">Project Details / Message:</p>
+              <p style="margin: 0; font-size: 13.5px; line-height: 1.6; color: #1e293b; white-space: pre-wrap;">${message}</p>
+            </div>
+          ` : ""}
+        </div>
+        <div style="background: #f8fafc; padding: 14px 24px; border-top: 1px solid #e2e8f0; font-size: 11.5px; color: #94a3b8; text-align: center;">
+          Received on ${(/* @__PURE__ */ new Date()).toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} IST &bull; Dispatched via Inrank smtp.gmail.com
+        </div>
+      </div>
+    `;
+    if (mailConfig && mailConfig.transporter) {
+      await mailConfig.transporter.sendMail({
+        from: `"Inrank Inquiries" <${sender}>`,
+        to: recipient,
+        replyTo: email || sender,
+        subject: `New Lead: ${name} (${services_needed || "Website Inquiry"})`,
+        html: htmlEmail
+      });
+      console.log(`[SMTP SUCCESS] Sent email notification to ${recipient} for customer: ${name}`);
+      return res.json({
+        success: true,
+        message: "Your inquiry was transmitted successfully to inranktech@gmail.com via Gmail SMTP."
+      });
+    } else {
+      console.warn("[SMTP NOTICE] SMTP_PASS not configured in .env. Form will use client fallback.");
+      return res.status(503).json({
+        success: false,
+        fallback: true,
+        message: "Gmail SMTP credentials not yet set in .env. Falling back to alternative gateway."
+      });
+    }
+  } catch (error) {
+    console.error("[SMTP ERROR] Error sending email via smtp.gmail.com:", error);
+    return res.status(500).json({
+      success: false,
+      fallback: true,
+      error: error.message || "Failed to dispatch email via SMTP."
     });
   }
 });
