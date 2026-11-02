@@ -1,3 +1,4 @@
+import { initReactComponents } from "./react/mount.tsx";
 import "./index.css";
 import { renderHomepage2View } from "./homepage2.ts";
 import { renderHomepage3View } from "./homepage3.ts";
@@ -3923,6 +3924,9 @@ window.addEventListener("DOMContentLoaded", () => {
   initSpotlightCards();
   initAnimatedCounters();
   initRoiForecaster();
+
+  // Mount Interactive React Components
+  initReactComponents();
 
   // Watch for Direct Route Changes & init router on initial load
   window.addEventListener("hashchange", handleHashRouting);

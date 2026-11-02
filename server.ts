@@ -5,7 +5,7 @@ import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
 import dotenv from "dotenv";
 import compression from "compression";
-import nodemailer from "nodemailer";
+import nodemailer, { type Transporter } from "nodemailer";
 
 dotenv.config();
 
@@ -306,7 +306,7 @@ Your website **${fallbackUrl}** has been assessed by Inrank Technologies' live c
 // ============================================================================
 // GMAIL SMTP SERVER INTEGRATION (smtp.gmail.com)
 // ============================================================================
-let mailTransporter: nodemailer.Transporter | null = null;
+let mailTransporter: Transporter | null = null;
 const getMailTransporter = () => {
   const user = process.env.SMTP_USER || process.env.GMAIL_USER || "inranktech@gmail.com";
   const pass = process.env.SMTP_PASS || process.env.GMAIL_APP_PASSWORD;

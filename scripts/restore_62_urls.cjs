@@ -149,3 +149,4 @@ fs.writeFileSync(serverTsPath, serverTs, 'utf8');
 console.log('Updated server.ts');
 
 console.log('Completed step 1-4.');
+

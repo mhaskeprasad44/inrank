@@ -114,3 +114,4 @@ if (fs.existsSync(path.join(rootDir, 'dist'))) {
 }
 
 console.log('Saved llms.txt and llms-full.txt with all 62 URLs');
+
