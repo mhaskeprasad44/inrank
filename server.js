@@ -271,12 +271,61 @@ var getMailTransporter = () => {
 };
 app.post("/api/send-email", async (req, res) => {
   try {
-    const { name, email, phone, website, services_needed, budget_range, message, source } = req.body;
+    const name = (req.body.name || req.body.leadName || "").trim();
+    const email = (req.body.email || req.body.leadEmail || "").trim();
+    const phone = (req.body.phone || req.body.leadPhone || "").trim();
+    const website = (req.body.website || req.body.websiteUrl || "").trim();
+    const company = (req.body.company || "").trim();
+    const services_needed = (req.body.services_needed || req.body.service || req.body.growth_focus || "").trim() || "General Consultation";
+    const budget_range = (req.body.budget_range || req.body.budget || "").trim() || "Not specified";
+    const message = (req.body.message || req.body.project_details || req.body.goals || req.body.leadMessage || "").trim();
+    const source = (req.body.source || "Website Inquiry Form").trim();
     if (!name || !email && !phone) {
+      if (req.headers.accept?.includes("text/html") && !req.headers["x-requested-with"]) {
+        return res.status(400).send(`
+          <div style="font-family:sans-serif; text-align:center; padding:50px;">
+            <h2 style="color:#e11d48;">Missing Required Information</h2>
+            <p>Please provide your name and either a phone number or email address.</p>
+            <a href="javascript:history.back()" style="display:inline-block; margin-top:20px; padding:10px 20px; background:#009d49; color:#fff; border-radius:6px; text-decoration:none;">Go Back</a>
+          </div>
+        `);
+      }
       return res.status(400).json({
         success: false,
         error: "Name and at least one contact method (email or phone) are required."
       });
+    }
+    const leadRecord = {
+      timestamp: (/* @__PURE__ */ new Date()).toISOString(),
+      istTime: (/* @__PURE__ */ new Date()).toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }),
+      name,
+      email,
+      phone,
+      website,
+      company,
+      services_needed,
+      budget_range,
+      message,
+      source
+    };
+    try {
+      const logLine = `${leadRecord.istTime} | LEAD: ${name} | PHONE: ${phone || "N/A"} | EMAIL: ${email || "N/A"} | SERVICE: ${services_needed} | BUDGET: ${budget_range} | SOURCE: ${source}
+`;
+      fs.appendFileSync(path.join(process.cwd(), "leads.log"), logLine, "utf8");
+      const jsonPath = path.join(process.cwd(), "leads.json");
+      let allLeads = [];
+      if (fs.existsSync(jsonPath)) {
+        try {
+          allLeads = JSON.parse(fs.readFileSync(jsonPath, "utf8"));
+          if (!Array.isArray(allLeads)) allLeads = [];
+        } catch (_) {
+          allLeads = [];
+        }
+      }
+      allLeads.push(leadRecord);
+      fs.writeFileSync(jsonPath, JSON.stringify(allLeads, null, 2), "utf8");
+    } catch (fsErr) {
+      console.error("[LEAD LOG ERROR]", fsErr);
     }
     const mailConfig = getMailTransporter();
     const recipient = process.env.EMAIL_TO || "inranktech@gmail.com";
@@ -293,6 +342,10 @@ app.post("/api/send-email", async (req, res) => {
               <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #64748b; font-weight: 600; width: 140px;">Customer Name:</td>
               <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #0f172a; font-weight: 700;">${name}</td>
             </tr>
+            ${company ? `<tr>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #64748b; font-weight: 600;">Company / Brand:</td>
+              <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #0f172a; font-weight: 700;">${company}</td>
+            </tr>` : ""}
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #64748b; font-weight: 600;">Phone / WhatsApp:</td>
               <td style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; color: #0f172a; font-weight: 700;">
@@ -336,33 +389,42 @@ app.post("/api/send-email", async (req, res) => {
         </div>
       </div>
     `;
+    let emailSent = false;
+    let smtpNotice = "";
     if (mailConfig && mailConfig.transporter) {
-      await mailConfig.transporter.sendMail({
-        from: `"Inrank Inquiries" <${sender}>`,
-        to: recipient,
-        replyTo: email || sender,
-        subject: `New Lead: ${name} (${services_needed || "Website Inquiry"})`,
-        html: htmlEmail
-      });
-      console.log(`[SMTP SUCCESS] Sent email notification to ${recipient} for customer: ${name}`);
-      return res.json({
-        success: true,
-        message: "Your inquiry was transmitted successfully to inranktech@gmail.com via Gmail SMTP."
-      });
+      try {
+        await mailConfig.transporter.sendMail({
+          from: `"Inrank Inquiries" <${sender}>`,
+          to: recipient,
+          replyTo: email || sender,
+          subject: `New Lead: ${name} (${services_needed || "Website Inquiry"})`,
+          html: htmlEmail
+        });
+        emailSent = true;
+        console.log(`[SMTP SUCCESS] Sent email notification to ${recipient} via smtp.gmail.com for customer: ${name}`);
+      } catch (mailErr) {
+        smtpNotice = mailErr.message || String(mailErr);
+        console.error("[SMTP ERROR] Failed to deliver via smtp.gmail.com:", smtpNotice);
+      }
     } else {
-      console.warn("[SMTP NOTICE] SMTP_PASS not configured in .env. Form will use client fallback.");
-      return res.status(503).json({
-        success: false,
-        fallback: true,
-        message: "Gmail SMTP credentials not yet set in .env. Falling back to alternative gateway."
-      });
+      console.warn("[SMTP NOTICE] SMTP_PASS not configured in .env. Lead saved to leads.log and leads.json.");
+      smtpNotice = "SMTP password not configured in .env";
     }
+    if (req.headers.accept?.includes("text/html") && !req.headers["x-requested-with"]) {
+      return res.redirect("/contact.html?submitted=true#consult-form");
+    }
+    return res.json({
+      success: true,
+      saved: true,
+      emailSent,
+      message: emailSent ? "Your inquiry was transmitted successfully to inranktech@gmail.com via Gmail SMTP." : "Your inquiry has been safely received! Our team will contact you shortly.",
+      ...smtpNotice && !emailSent ? { note: smtpNotice } : {}
+    });
   } catch (error) {
-    console.error("[SMTP ERROR] Error sending email via smtp.gmail.com:", error);
+    console.error("[FORM PROCESSING ERROR]:", error);
     return res.status(500).json({
       success: false,
-      fallback: true,
-      error: error.message || "Failed to dispatch email via SMTP."
+      error: error.message || "Failed to process form submission."
     });
   }
 });

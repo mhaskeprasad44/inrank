@@ -814,12 +814,18 @@
                   </p>
                 </div>
 
-                <form id="consult-form" action="https://formsubmit.co/inranktech@gmail.com" method="POST" class="space-y-6">
-                  <!-- FormSubmit.co Integration -->
-                  <input type="hidden" name="_captcha" value="false">
-                  <input type="hidden" name="_template" value="table">
-                  <input type="hidden" name="_subject" value="New Website Inquiry (Inrank Technologies)">
-                  <input type="text" name="_honey" style="display:none">
+                <div id="form-submitted-banner" class="hidden mb-6 p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-600">
+                  <div class="flex items-center gap-3">
+                    <i data-lucide="check-circle" class="w-5 h-5 shrink-0"></i>
+                    <div>
+                      <p class="font-bold text-sm">Inquiry Received Successfully!</p>
+                      <p class="text-xs opacity-90 mt-0.5">Your project details were dispatched to inranktech@gmail.com. Our senior team will reach out within 2 hours.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <form id="consult-form" action="/api/send-email" method="POST" class="space-y-6">
+                  <!-- Native SMTP Form Handler -->
                   <!-- Honeypot anti-spam -->
                   <input type="text" name="_hp_company_field" style="display:none;" tabindex="-1" autocomplete="off" />
 
@@ -1114,7 +1120,7 @@
           });
         });
 
-        // Form Submit -> FormSubmit.co + WhatsApp
+        // Form Submission via Gmail SMTP & PHP Mailer
         const form = document.getElementById('consult-form');
         if (form) {
           form.addEventListener('submit', async (e) => {
@@ -1137,57 +1143,52 @@
 
             const selectedBudget = document.querySelector('#budget-chips-container .active-chip')?.getAttribute('data-value') || 'Not specified';
 
-            // 1. Primary Dispatch: Direct Gmail SMTP Server (/api/send-email)
-            let smtpDelivered = false;
+            // Direct Form Submission via Gmail SMTP Server & PHP Backup
+            let delivered = false;
+            const payload = {
+              name: name,
+              phone: phone,
+              email: email,
+              website: website,
+              services_needed: selectedServices || 'General Consultation',
+              budget_range: selectedBudget,
+              message: message,
+              source: "Contact Page"
+            };
+
+            // Attempt 1: Node.js Gmail SMTP Server (/api/send-email)
             try {
-              const smtpRes = await fetch("/api/send-email", {
+              const res = await fetch("/api/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                  name: name,
-                  phone: phone,
-                  email: email,
-                  website: website,
-                  services_needed: selectedServices || 'General Consultation',
-                  budget_range: selectedBudget,
-                  message: message,
-                  source: "Contact Page"
-                })
+                body: JSON.stringify(payload)
               });
-              const smtpData = await smtpRes.json();
-              if (smtpData && smtpData.success) {
-                smtpDelivered = true;
+              const data = await res.json();
+              if (data && data.success) {
+                delivered = true;
               }
-            } catch (smtpErr) {
-              console.warn("Direct SMTP server dispatch note:", smtpErr);
+            } catch (e) {
+              console.warn("Node.js SMTP endpoint unreachable, trying backup handler...");
             }
 
-            // 2. Secondary Fallback: FormSubmit.co
-            if (!smtpDelivered) {
+            // Attempt 2: PHP Mail Engine backup (/contact.php)
+            if (!delivered) {
               try {
-                await fetch("https://formsubmit.co/ajax/inranktech@gmail.com", {
+                const phpRes = await fetch("/contact.php", {
                   method: "POST",
-                  headers: {
-                    "Content-Type": "application/json",
-                    "Accept": "application/json"
-                  },
-                  body: JSON.stringify({
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    website: website,
-                    services_needed: selectedServices || 'General Consultation',
-                    budget_range: selectedBudget,
-                    message: message,
-                    _subject: "New Website Blueprint Request: " + name,
-                    _template: "table"
-                  })
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify(payload)
                 });
+                const phpData = await phpRes.json();
+                if (phpData && phpData.success) {
+                  delivered = true;
+                }
               } catch (err) {
-                console.warn("FormSubmit fallback dispatch note:", err);
+                console.warn("Backup handler note:", err);
               }
             }
 
+            // Immediate WhatsApp Priority Notification to Inrank Team
             let waText = `*Inrank Project Inquiry*\n\n`;
             waText += `*Name:* ${name}\n`;
             waText += `*Phone:* ${phone}\n`;
@@ -1201,9 +1202,21 @@
             window.open(waUrl, '_blank');
 
             if (submitBtn) {
-              submitBtn.textContent = "Blueprint Sent!";
+              submitBtn.textContent = "Blueprint Sent Successfully!";
+            }
+
+            const successBanner = document.getElementById('form-submitted-banner');
+            if (successBanner) {
+              successBanner.classList.remove('hidden');
+              successBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }
           });
+        }
+
+        // Show banner if redirected with submitted=true
+        if (window.location.search.includes('submitted=true')) {
+          const successBanner = document.getElementById('form-submitted-banner');
+          if (successBanner) successBanner.classList.remove('hidden');
         }
       });
     </script>

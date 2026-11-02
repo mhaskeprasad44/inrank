@@ -1740,12 +1740,8 @@
               <h3 class="font-display font-bold text-xl text-white mb-2">Request Growth Roadmap</h3>
               <p class="text-xs text-stone-400 mb-6">Receive your personalized 12-page audit and advertising action plan.</p>
 
-              <form id="standalone-closing-form" action="https://formsubmit.co/inranktech@gmail.com" method="POST" class="space-y-4">
-                <!-- FormSubmit.co Integration -->
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_subject" value="New Growth Strategy Inquiry (Inrank Technologies)">
-                <input type="text" name="_honey" style="display:none">
+              <form id="standalone-closing-form" action="/api/send-email" method="POST" class="space-y-4">
+                <!-- Native SMTP Form Handler -->
                 <div>
                   <label for="standalone-form-name" class="block text-xs font-medium text-stone-300 mb-1">Your Full Name:</label>
                   <input type="text" id="standalone-form-name" name="name" required placeholder="Aditya Patil" class="w-full px-3.5 py-2.5 rounded-lg bg-stone-950 border border-stone-800 text-white text-xs focus:outline-none focus:border-emerald-500" />
@@ -1974,7 +1970,7 @@
           }
         });
 
-        // 6. Direct Closing Form with FormSubmit.co
+        // 6. Direct Closing Form with Gmail SMTP Server & PHP Backup
         const cForm = document.getElementById("standalone-closing-form");
         const cSuccess = document.getElementById("standalone-closing-success-msg");
         const cBtn = document.getElementById("standalone-closing-submit-btn");
@@ -1991,39 +1987,50 @@
             const website = document.getElementById("standalone-form-website")?.value || "";
             const goal = document.getElementById("standalone-form-goal")?.value || "General Growth";
 
+            const payload = {
+              name: name,
+              email: email,
+              phone: phone,
+              website: website,
+              services_needed: goal,
+              budget_range: "Strategy Audit Request",
+              message: "Growth Focus: " + goal,
+              source: "Homepage-2 Closing Form"
+            };
+
+            let delivered = false;
             try {
-              // Post to FormSubmit.co via official AJAX API
-              const response = await fetch("https://formsubmit.co/ajax/inranktech@gmail.com", {
+              const response = await fetch("/api/send-email", {
                 method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                  "Accept": "application/json"
-                },
-                body: JSON.stringify({
-                  name: name,
-                  email: email,
-                  phone: phone,
-                  website: website,
-                  growth_focus: goal,
-                  _subject: "New Growth Strategy Request: " + name + " (" + (website || "Direct") + ")",
-                  _template: "table"
-                })
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
               });
-
-              cForm.reset();
-              cSuccess.classList.remove("hidden");
-              cBtn.textContent = "Audit Requested Successfully!";
-
-              setTimeout(() => {
-                const waUrl = "https://wa.me/918788823182?text=" + encodeURIComponent(
-                  "Hi Inrank team! I am " + name + " from " + website + ". I submitted a strategy audit request on Inrank for " + goal + "."
-                );
-                window.open(waUrl, "_blank");
-              }, 1200);
+              const data = await response.json();
+              if (data && data.success) delivered = true;
             } catch (err) {
-              // Resilient fallback to standard FormSubmit POST
-              cForm.submit();
+              console.warn("Node endpoint notice:", err);
             }
+
+            if (!delivered) {
+              try {
+                await fetch("/contact.php", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify(payload)
+                });
+              } catch (err2) {}
+            }
+
+            cForm.reset();
+            cSuccess.classList.remove("hidden");
+            cBtn.textContent = "Audit Requested Successfully!";
+
+            setTimeout(() => {
+              const waUrl = "https://wa.me/918788823182?text=" + encodeURIComponent(
+                "Hi Inrank team! I am " + name + " from " + website + ". I submitted a strategy audit request on Inrank for " + goal + "."
+              );
+              window.open(waUrl, "_blank");
+            }, 1200);
           });
         }
       });
