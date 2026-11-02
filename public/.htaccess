@@ -16,10 +16,7 @@
   RewriteRule ^(.*)$ https://www.inranktech.com/$1 [R=301,L]
 
   # 3. 301 Permanent Redirects for Legacy / Consolidated Pages
-  RewriteRule ^portfolio(\.html)?$ /our-work.html [R=301,L]
-  RewriteRule ^case-studies/(.+)\.html$ /our-work/$1.html [R=301,L]
-  RewriteRule ^case-studies/(.+)$ /our-work/$1.html [R=301,L]
-
+      
   # 4. Service Pages trailing slash routing
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d

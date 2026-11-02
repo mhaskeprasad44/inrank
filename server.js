@@ -611,10 +611,21 @@ app.get(["/case-studies", "/case-studies.html"], (req, res) => {
   return res.redirect("/our-work.html");
 });
 app.get(["/portfolio", "/portfolio.html"], (req, res) => {
+  const distPort = path.join(process.cwd(), "dist", "portfolio.html");
+  const localPort = path.join(process.cwd(), "portfolio.html");
+  if (fs.existsSync(distPort)) return res.sendFile(distPort);
+  if (fs.existsSync(localPort)) return res.sendFile(localPort);
   return res.redirect(301, "/our-work.html");
 });
 app.get(["/case-studies/:id", "/case-studies/:id.html"], (req, res) => {
   const rawId = req.params.id.replace(/\.html$/, "");
+  const candidates = [
+    path.join(process.cwd(), "dist", "case-studies", `${rawId}.html`),
+    path.join(process.cwd(), "case-studies", `${rawId}.html`)
+  ];
+  for (const c of candidates) {
+    if (fs.existsSync(c)) return res.sendFile(c);
+  }
   return res.redirect(301, `/our-work/${rawId}.html`);
 });
 app.get(["/our-work/:id", "/our-work/:id.html"], (req, res) => {

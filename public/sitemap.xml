@@ -27,18 +27,6 @@
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://www.inranktech.com/our-work.html</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.inranktech.com/case-studies.html</loc>
-    <lastmod>2026-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
     <loc>https://www.inranktech.com/website-design-company-in-pune.html</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -51,6 +39,24 @@
     <priority>0.95</priority>
   </url>
   <url>
+    <loc>https://www.inranktech.com/our-work.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.inranktech.com/case-studies.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.inranktech.com/portfolio.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
     <loc>https://www.inranktech.com/google-business-profile-top3.html</loc>
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -61,6 +67,18 @@
     <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.inranktech.com/homepage-2.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.inranktech.com/homepage-3.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.inranktech.com/services/ai-ranking-citations/</loc>
@@ -225,63 +243,123 @@
     <priority>0.90</priority>
   </url>
   <url>
+    <loc>https://www.inranktech.com/case-studies/cytos.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.inranktech.com/case-studies/dravyafinancial.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.inranktech.com/case-studies/fludio.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.inranktech.com/case-studies/greytothegreen.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.inranktech.com/case-studies/hcpnest.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.inranktech.com/case-studies/hiragrafix.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.inranktech.com/case-studies/orthopedicanklefootspecialist.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.inranktech.com/case-studies/riituinstitution.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.inranktech.com/case-studies/shetkarifoodstuff.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.inranktech.com/case-studies/vasroventures.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.inranktech.com/our-work/cytos.html</loc>
     <lastmod>2026-11-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.inranktech.com/our-work/dravyafinancial.html</loc>
     <lastmod>2026-11-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.inranktech.com/our-work/fludio.html</loc>
     <lastmod>2026-11-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.inranktech.com/our-work/greytothegreen.html</loc>
     <lastmod>2026-11-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.inranktech.com/our-work/hcpnest.html</loc>
     <lastmod>2026-11-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.inranktech.com/our-work/hiragrafix.html</loc>
     <lastmod>2026-11-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.inranktech.com/our-work/orthopedicanklefootspecialist.html</loc>
     <lastmod>2026-11-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.inranktech.com/our-work/riituinstitution.html</loc>
     <lastmod>2026-11-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.inranktech.com/our-work/shetkarifoodstuff.html</loc>
     <lastmod>2026-11-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.inranktech.com/our-work/vasroventures.html</loc>
     <lastmod>2026-11-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
