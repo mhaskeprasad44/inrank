@@ -2025,12 +2025,7 @@
             cSuccess.classList.remove("hidden");
             cBtn.textContent = "Audit Requested Successfully!";
 
-            setTimeout(() => {
-              const waUrl = "https://wa.me/918788823182?text=" + encodeURIComponent(
-                "Hi Inrank team! I am " + name + " from " + website + ". I submitted a strategy audit request on Inrank for " + goal + "."
-              );
-              window.open(waUrl, "_blank");
-            }, 1200);
+            // Submission recorded without unwanted popup redirect
           });
         }
       });
