@@ -22,3 +22,4 @@ function findBadges(dir) {
 findBadges('.');
 console.log('Unique class strings found (' + targets.size + '):');
 Array.from(targets).forEach(t => console.log('  ' + t));
+

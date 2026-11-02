@@ -2762,7 +2762,7 @@ function generateServiceCardHTML(service: ServiceDetail) {
       </div>
 
       <div class="pt-5 mt-4 border-t border-border/60">
-        <a href="#/service/${service.id}" class="flex items-center justify-between w-full px-4 py-2.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-600 text-emerald-600 dark:text-emerald-400 hover:text-white font-semibold text-xs transition-all duration-200 group/btn shadow-xs active:scale-[0.98]">
+        <a href="#/service/${service.id}" class="flex items-center justify-between w-full px-4 py-2.5 rounded-lg bg-secondary hover:bg-primary text-secondary-foreground hover:text-primary-foreground font-semibold text-xs transition-all duration-200 group/btn shadow-xs active:scale-[0.98]">
           <span>Explore Architecture & Guide</span>
           <i data-lucide="arrow-right" class="h-3.5 w-3.5 group-hover/btn:translate-x-1 transition-transform"></i>
         </a>

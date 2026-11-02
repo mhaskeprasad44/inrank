@@ -109,10 +109,10 @@ export function renderHomepage2View() {
             <!-- Category Quick-Selectors -->
             <div class="flex items-center gap-2 overflow-x-auto pb-2 mb-2 text-[11px] text-stone-500 border-b border-stone-100">
               <span class="font-bold text-stone-700 shrink-0 uppercase tracking-wider text-[10px]">Test Quick Industry:</span>
-              <button type="button" class="hp2-quick-tag px-2.5 py-1 rounded-md bg-stone-100 hover:bg-emerald-50 hover:text-emerald-700 transition-colors shrink-0 font-medium" data-val="https://punerealestate.com">Real Estate Pune</button>
-              <button type="button" class="hp2-quick-tag px-2.5 py-1 rounded-md bg-stone-100 hover:bg-emerald-50 hover:text-emerald-700 transition-colors shrink-0 font-medium" data-val="https://drpatildentalclinic.com">Dental / Healthcare</button>
-              <button type="button" class="hp2-quick-tag px-2.5 py-1 rounded-md bg-stone-100 hover:bg-emerald-50 hover:text-emerald-700 transition-colors shrink-0 font-medium" data-val="https://urbanthreads-d2c.in">D2C E-Commerce</button>
-              <button type="button" class="hp2-quick-tag px-2.5 py-1 rounded-md bg-stone-100 hover:bg-emerald-50 hover:text-emerald-700 transition-colors shrink-0 font-medium" data-val="https://techscale-solutions.io">B2B SaaS / IT</button>
+              <button type="button" class="hp2-quick-tag px-2.5 py-1 rounded-md bg-stone-100 hover:bg-stone-200 hover:text-stone-900 transition-colors shrink-0 font-medium" data-val="https://punerealestate.com">Real Estate Pune</button>
+              <button type="button" class="hp2-quick-tag px-2.5 py-1 rounded-md bg-stone-100 hover:bg-stone-200 hover:text-stone-900 transition-colors shrink-0 font-medium" data-val="https://drpatildentalclinic.com">Dental / Healthcare</button>
+              <button type="button" class="hp2-quick-tag px-2.5 py-1 rounded-md bg-stone-100 hover:bg-stone-200 hover:text-stone-900 transition-colors shrink-0 font-medium" data-val="https://urbanthreads-d2c.in">D2C E-Commerce</button>
+              <button type="button" class="hp2-quick-tag px-2.5 py-1 rounded-md bg-stone-100 hover:bg-stone-200 hover:text-stone-900 transition-colors shrink-0 font-medium" data-val="https://techscale-solutions.io">B2B SaaS / IT</button>
             </div>
 
             <!-- Input bar -->
@@ -1031,7 +1031,7 @@ export function renderHomepage2View() {
           
           <!-- Left side pitch -->
           <div class="lg:col-span-6 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider font-mono">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-stone-100 border border-stone-300 text-stone-700 text-xs font-semibold uppercase tracking-wider font-mono">
               <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
               Sprint Consultations Open
             </div>

@@ -96,3 +96,4 @@ function walk(dir) {
 
 walk(rootDir);
 console.log(`Finished step 2, updated ${count} files.`);
+

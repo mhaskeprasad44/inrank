@@ -331,7 +331,7 @@ ${schemaJsonLd}
           <article class="lg:col-span-8 space-y-8">
             
             <!-- Category Tag & Sub-Pillar -->
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-xs font-semibold">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 text-xs font-medium">
               <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               <span>${service.category}</span>
             </div>
@@ -427,7 +427,7 @@ ${schemaJsonLd}
                   <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                   <span class="text-xs font-bold uppercase tracking-wider text-muted-foreground">Performance SLA</span>
                 </div>
-                <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 font-bold border border-emerald-500/20">Verified</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded-md bg-muted text-muted-foreground font-semibold border border-border/80">Verified</span>
               </div>
               <div class="space-y-2.5">
                 ${benchmarksHtml}

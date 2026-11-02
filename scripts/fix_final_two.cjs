@@ -21,3 +21,4 @@ if (fs.existsSync(gpPath)) {
   fs.writeFileSync(gpPath, gp, 'utf8');
   console.log('Fixed generate_portfolio_system.ts');
 }
+
