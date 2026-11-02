@@ -10,6 +10,15 @@ import nodemailer from "nodemailer";
 dotenv.config();
 
 const app = express();
+
+// Canonical Hostname Redirect: Force non-www (inranktech.com) -> www (www.inranktech.com)
+app.use((req, res, next) => {
+  const host = req.headers.host;
+  if (host === "inranktech.com") {
+    return res.redirect(301, `https://www.inranktech.com${req.originalUrl}`);
+  }
+  next();
+});
 const PORT = Number(process.env.PORT) || 3000;
 
 // High-performance response compression (Gzip / Deflate)

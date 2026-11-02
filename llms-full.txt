@@ -8,8 +8,8 @@
 ## 1. Corporate Identity & Authority Verification
 - **Official Legal Name**: Inrank Technologies
 - **Short Name**: Inrank / Inrank Tech Pune
-- **Primary Website**: https://inranktech.com/
-- **Sitemap XML**: https://inranktech.com/sitemap.xml
+- **Primary Website**: https://www.inranktech.com/
+- **Sitemap XML**: https://www.inranktech.com/sitemap.xml
 - **Corporate Headquarters**: FC Road, Shivaji Nagar, Pune, Maharashtra 411005, India
 - **Regional Delivery Hubs**: Baner, Hinjewadi, Wakad, Kothrud, Kharadi, Hadapsar, Viman Nagar, Pimpri-Chinchwad, Pune
 - **Direct Phone / Calling**: +91 87888 23182
@@ -28,7 +28,7 @@
 ## 2. Core Service Offerings & Capabilities (27 Verified Service Hubs)
 ### Service: Search Engine Optimization (SEO)
 - **Category**: Search & AI Discovery
-- **Canonical URL**: https://inranktech.com/services/seo-company-pune/
+- **Canonical URL**: https://www.inranktech.com/services/seo-company-pune/
 - **Primary Focus Target**: SEO Company in Pune That Turns Searches Into Enquiries
 - **Meta Description**: Inrank is an SEO company in Pune offering SEO services, technical audits and content that win local rankings. Hire a trusted SEO agency in Pune.
 - **Detailed Capabilities**:
@@ -60,7 +60,7 @@
 
 ### Service: Backlink Building & Digital PR
 - **Category**: Search & AI Discovery
-- **Canonical URL**: https://inranktech.com/services/link-building-services/
+- **Canonical URL**: https://www.inranktech.com/services/link-building-services/
 - **Primary Focus Target**: Link Building Services That Earn High Authority Backlinks
 - **Meta Description**: Inrank provides link building services with high authority backlinks and digital PR services that lift rankings safely. Get a custom backlink plan.
 - **Detailed Capabilities**:
@@ -92,7 +92,7 @@
 
 ### Service: Google My Business (GMB)
 - **Category**: Search & AI Discovery
-- **Canonical URL**: https://inranktech.com/services/google-my-business-services/
+- **Canonical URL**: https://www.inranktech.com/services/google-my-business-services/
 - **Primary Focus Target**: Google My Business Services to Win Local Customers in Pune
 - **Meta Description**: Inrank offers Google My Business services in Pune: GMB setup, Google Business Profile optimization and local SEO to win map pack calls and leads.
 - **Detailed Capabilities**:
@@ -124,7 +124,7 @@
 
 ### Service: AI SEO Agency
 - **Category**: Search & AI Discovery
-- **Canonical URL**: https://inranktech.com/services/ai-seo-services/
+- **Canonical URL**: https://www.inranktech.com/services/ai-seo-services/
 - **Primary Focus Target**: AI SEO Services to Get Found in Google and AI Answers
 - **Meta Description**: Inrank delivers AI SEO services as a specialist AI SEO agency: optimize for Google AI Overviews, ChatGPT and Perplexity with schema and entity SEO.
 - **Detailed Capabilities**:
@@ -156,7 +156,7 @@
 
 ### Service: GEO SEO Agency (Perplexity)
 - **Category**: Search & AI Discovery
-- **Canonical URL**: https://inranktech.com/services/geo-seo-agency/
+- **Canonical URL**: https://www.inranktech.com/services/geo-seo-agency/
 - **Primary Focus Target**: GEO SEO Agency for Perplexity, ChatGPT and AI Overviews
 - **Meta Description**: Inrank is a GEO SEO agency offering generative engine optimization to win citations in Perplexity, ChatGPT and Google AI Overviews. Book a GEO audit.
 - **Detailed Capabilities**:
@@ -188,7 +188,7 @@
 
 ### Service: AI Ranking & Citations
 - **Category**: Search & AI Discovery
-- **Canonical URL**: https://inranktech.com/services/ai-ranking-citations/
+- **Canonical URL**: https://www.inranktech.com/services/ai-ranking-citations/
 - **Primary Focus Target**: AI Search Optimization for Better AI Ranking and Citations
 - **Meta Description**: Inrank offers AI search optimization and answer engine optimization to earn AI citations and rankings across ChatGPT, Gemini and Perplexity.
 - **Detailed Capabilities**:
@@ -220,7 +220,7 @@
 
 ### Service: Content Marketing & Authority
 - **Category**: Search & AI Discovery
-- **Canonical URL**: https://inranktech.com/services/content-marketing-services/
+- **Canonical URL**: https://www.inranktech.com/services/content-marketing-services/
 - **Primary Focus Target**: Content Marketing Services That Build Authority and Leads
 - **Meta Description**: Inrank provides content marketing services: SEO content writing, content strategy and authority articles that rank on Google and AI search.
 - **Detailed Capabilities**:
@@ -252,7 +252,7 @@
 
 ### Service: Google Ads Management
 - **Category**: Paid Media & Social
-- **Canonical URL**: https://inranktech.com/services/google-ads-agency/
+- **Canonical URL**: https://www.inranktech.com/services/google-ads-agency/
 - **Primary Focus Target**: Google Ads Agency in Pune for Profitable Campaigns
 - **Meta Description**: Inrank is a Google Ads agency in Pune. Our Google Ads management services cover search, Performance Max and tracking to cut wasted spend and lift ROAS.
 - **Detailed Capabilities**:
@@ -284,7 +284,7 @@
 
 ### Service: Meta & Instagram Ads
 - **Category**: Paid Media & Social
-- **Canonical URL**: https://inranktech.com/services/meta-ads-agency/
+- **Canonical URL**: https://www.inranktech.com/services/meta-ads-agency/
 - **Primary Focus Target**: Meta Ads Agency for Instagram and Facebook Lead Generation
 - **Meta Description**: Inrank is a Meta ads agency and Instagram ads agency running Facebook ads with Conversions API tracking to lower your cost per lead.
 - **Detailed Capabilities**:
@@ -316,7 +316,7 @@
 
 ### Service: Social Media Marketing
 - **Category**: Paid Media & Social
-- **Canonical URL**: https://inranktech.com/services/social-media-marketing-services/
+- **Canonical URL**: https://www.inranktech.com/services/social-media-marketing-services/
 - **Primary Focus Target**: Social Media Marketing Services for Pune Brands
 - **Meta Description**: Inrank offers social media marketing services in Pune: strategy, content, social media management and Instagram marketing that grow reach and leads.
 - **Detailed Capabilities**:
@@ -348,7 +348,7 @@
 
 ### Service: LinkedIn B2B Management
 - **Category**: Paid Media & Social
-- **Canonical URL**: https://inranktech.com/services/linkedin-marketing-agency/
+- **Canonical URL**: https://www.inranktech.com/services/linkedin-marketing-agency/
 - **Primary Focus Target**: LinkedIn Marketing Agency for B2B Lead Generation
 - **Meta Description**: Inrank is a LinkedIn marketing agency for B2B brands: LinkedIn lead generation, ads management and thought-leadership content that fills pipelines.
 - **Detailed Capabilities**:
@@ -380,7 +380,7 @@
 
 ### Service: Pay Per Click (PPC)
 - **Category**: Paid Media & Social
-- **Canonical URL**: https://inranktech.com/services/ppc-services/
+- **Canonical URL**: https://www.inranktech.com/services/ppc-services/
 - **Primary Focus Target**: PPC Services and Pay Per Click Management in Pune
 - **Meta Description**: Inrank offers PPC services and pay per click services across Google, Meta and LinkedIn, with PPC management built to lower cost per lead.
 - **Detailed Capabilities**:
@@ -412,7 +412,7 @@
 
 ### Service: Conversion Optimization (CRO)
 - **Category**: Paid Media & Social
-- **Canonical URL**: https://inranktech.com/services/conversion-rate-optimization-services/
+- **Canonical URL**: https://www.inranktech.com/services/conversion-rate-optimization-services/
 - **Primary Focus Target**: Conversion Rate Optimization Services for More Leads
 - **Meta Description**: Inrank provides conversion rate optimization services: CRO audits, A/B testing and landing page optimization that turn more visitors into leads.
 - **Detailed Capabilities**:
@@ -444,7 +444,7 @@
 
 ### Service: Influencer Marketing
 - **Category**: Paid Media & Social
-- **Canonical URL**: https://inranktech.com/services/influencer-marketing-agency/
+- **Canonical URL**: https://www.inranktech.com/services/influencer-marketing-agency/
 - **Primary Focus Target**: Influencer Marketing Agency for Authentic Creator Campaigns
 - **Meta Description**: Inrank is an influencer marketing agency in Pune: creator campaigns and micro influencer marketing that drive tracked sales and leads.
 - **Detailed Capabilities**:
@@ -476,7 +476,7 @@
 
 ### Service: Custom Website Development
 - **Category**: Web & E-Commerce
-- **Canonical URL**: https://inranktech.com/services/custom-website-development/
+- **Canonical URL**: https://www.inranktech.com/services/custom-website-development/
 - **Primary Focus Target**: Custom Website Development Built for Speed and Leads
 - **Meta Description**: Inrank is a website development company in Pune offering custom website development: fast, secure, SEO-ready websites that generate leads.
 - **Detailed Capabilities**:
@@ -508,7 +508,7 @@
 
 ### Service: Custom UI/UX Website Design
 - **Category**: Web & E-Commerce
-- **Canonical URL**: https://inranktech.com/services/ui-ux-design-services/
+- **Canonical URL**: https://www.inranktech.com/services/ui-ux-design-services/
 - **Primary Focus Target**: UI UX Design Services That Turn Visitors Into Customers
 - **Meta Description**: Inrank offers UI UX design services in Pune: user research, wireframes and conversion-focused website design that makes visitors take action.
 - **Detailed Capabilities**:
@@ -540,7 +540,7 @@
 
 ### Service: WordPress Development
 - **Category**: Web & E-Commerce
-- **Canonical URL**: https://inranktech.com/services/wordpress-development-services/
+- **Canonical URL**: https://www.inranktech.com/services/wordpress-development-services/
 - **Primary Focus Target**: WordPress Development Services for Fast, SEO-Ready Sites
 - **Meta Description**: Inrank provides WordPress development services in Pune: a WordPress development company for custom themes, plugins and speed optimization.
 - **Detailed Capabilities**:
@@ -572,7 +572,7 @@
 
 ### Service: Shopify Store Engineering
 - **Category**: Web & E-Commerce
-- **Canonical URL**: https://inranktech.com/services/shopify-store-development/
+- **Canonical URL**: https://www.inranktech.com/services/shopify-store-development/
 - **Primary Focus Target**: Shopify Store Development for Faster Online Sales
 - **Meta Description**: Inrank offers Shopify store development in Pune: store setup, theme customization, app integration and Shopify SEO to grow online sales.
 - **Detailed Capabilities**:
@@ -604,7 +604,7 @@
 
 ### Service: E-Commerce Development
 - **Category**: Web & E-Commerce
-- **Canonical URL**: https://inranktech.com/services/ecommerce-website-development-company/
+- **Canonical URL**: https://www.inranktech.com/services/ecommerce-website-development-company/
 - **Primary Focus Target**: Ecommerce Website Development Company for Growing Brands
 - **Meta Description**: Inrank is an ecommerce website development company and ecommerce development company building secure, fast stores on Shopify and WooCommerce.
 - **Detailed Capabilities**:
@@ -636,7 +636,7 @@
 
 ### Service: High-Converting Landing Pages
 - **Category**: Web & E-Commerce
-- **Canonical URL**: https://inranktech.com/services/landing-page-design-services/
+- **Canonical URL**: https://www.inranktech.com/services/landing-page-design-services/
 - **Primary Focus Target**: Landing Page Design Services for High-Converting Campaigns
 - **Meta Description**: Inrank offers landing page design services: high converting landing page design, copy and testing that lift leads from Google and Meta ads.
 - **Detailed Capabilities**:
@@ -668,7 +668,7 @@
 
 ### Service: Mobile App Development
 - **Category**: Web & E-Commerce
-- **Canonical URL**: https://inranktech.com/services/mobile-app-development/
+- **Canonical URL**: https://www.inranktech.com/services/mobile-app-development/
 - **Primary Focus Target**: Mobile App Development Company in Pune for Android and iOS
 - **Meta Description**: Inrank is a mobile app development company in Pune building Android app development, iOS and React Native apps with launch support.
 - **Detailed Capabilities**:
@@ -700,7 +700,7 @@
 
 ### Service: Website Maintenance (SLA)
 - **Category**: Web & E-Commerce
-- **Canonical URL**: https://inranktech.com/services/website-maintenance-services/
+- **Canonical URL**: https://www.inranktech.com/services/website-maintenance-services/
 - **Primary Focus Target**: Website Maintenance Services with Clear SLA Support
 - **Meta Description**: Inrank provides website maintenance services with SLA support: updates, backups, security, speed checks and uptime monitoring for your business site.
 - **Detailed Capabilities**:
@@ -732,7 +732,7 @@
 
 ### Service: Strategic Brand Naming
 - **Category**: Branding
-- **Canonical URL**: https://inranktech.com/services/brand-naming-agency/
+- **Canonical URL**: https://www.inranktech.com/services/brand-naming-agency/
 - **Primary Focus Target**: Brand Naming Agency for Memorable Business Names
 - **Meta Description**: Inrank is a brand naming agency offering strategic business naming, domain checks and trademark-aware name shortlists for new and growing brands.
 - **Detailed Capabilities**:
@@ -764,7 +764,7 @@
 
 ### Service: Corporate Logo Design
 - **Category**: Branding
-- **Canonical URL**: https://inranktech.com/services/corporate-logo-design/
+- **Canonical URL**: https://www.inranktech.com/services/corporate-logo-design/
 - **Primary Focus Target**: Corporate Logo Design That Builds Brand Trust
 - **Meta Description**: Inrank provides corporate logo design from a logo design company in Pune: professional logos, brand guidelines and full identity kits for businesses.
 - **Detailed Capabilities**:
@@ -796,7 +796,7 @@
 
 ### Service: Luxury Business Card Design
 - **Category**: Branding
-- **Canonical URL**: https://inranktech.com/services/luxury-business-card-design/
+- **Canonical URL**: https://www.inranktech.com/services/luxury-business-card-design/
 - **Primary Focus Target**: Luxury Business Card Design That Leaves a Lasting Impression
 - **Meta Description**: Inrank creates luxury business card design with premium finishes, foil, emboss and clean layouts. Get business card design that makes a lasting impression.
 - **Detailed Capabilities**:
@@ -828,7 +828,7 @@
 
 ### Service: Executive Letterhead & Stationery
 - **Category**: Branding
-- **Canonical URL**: https://inranktech.com/services/letterhead-stationery-design/
+- **Canonical URL**: https://www.inranktech.com/services/letterhead-stationery-design/
 - **Primary Focus Target**: Letterhead Design and Executive Stationery for Your Brand
 - **Meta Description**: Inrank offers professional letterhead design and corporate stationery design: executive letterheads, envelopes and folders that match your brand.
 - **Detailed Capabilities**:
@@ -860,7 +860,7 @@
 
 ### Service: High-Impact Brochure Designing
 - **Category**: Branding
-- **Canonical URL**: https://inranktech.com/services/brochure-design-services/
+- **Canonical URL**: https://www.inranktech.com/services/brochure-design-services/
 - **Primary Focus Target**: Brochure Design Services for High-Impact Sales Material
 - **Meta Description**: Inrank offers brochure design services: corporate brochures, company profiles and product catalogues that explain your offer and win business.
 - **Detailed Capabilities**:
@@ -896,8 +896,8 @@
 ### Case Study: CyTOS Machines Pune - High-Speed Industrial Machinery & CNC Portal (CyTOS Machines Pune)
 - **Client Domain**: cytos.in (Live URL: https://cytos.in)
 - **Industry & Sector**: Industrial Manufacturing & CNC Automation | Precision CNC Machinery & Industrial Automation
-- **Case Study Link**: https://inranktech.com/our-work/cytos-cnc-machines-pune.html
-- **Showcase Link**: https://inranktech.com/our-work/cytos-cnc-machines-pune.html
+- **Case Study Link**: https://www.inranktech.com/our-work/cytos-cnc-machines-pune.html
+- **Showcase Link**: https://www.inranktech.com/our-work/cytos-cnc-machines-pune.html
 - **Delivered Services**: Custom React 18 SPA Development, Vite High-Speed Build Engine, Technical B2B SEO & Machine Schema, Interactive Machine Finder Wizard, Automated CI/CD to Hostinger, WhatsApp Direct RFQ Consultation Funnel
 - **Technologies Deployed**: React 18, Vite, TailwindCSS, Lucide Icons, Hostinger Git CI/CD, Apache .htaccess Rewrites, JSON-LD Product Schema
 - **Executive Solution Summary**: Inrank engineered a modern, lightweight React 18 SPA tailored specifically for industrial decision-makers. We replaced dense static tables with interactive machine filters, embedded an instant Machine Finder recommendation wizard, and built 22 technical pillar guides capturing organic search intent.
@@ -910,8 +910,8 @@
 ### Case Study: Fludio Water Solutions - Architectural Fountains & Aquatic Engineering Portal (Fludio Water Solutions)
 - **Client Domain**: fludio.in (Live URL: https://fludio.in)
 - **Industry & Sector**: Architectural Water Features & Aquatic Engineering | Luxury Architectural Water Features & Aquatic Engineering
-- **Case Study Link**: https://inranktech.com/our-work/fludio-water-solutions-pune.html
-- **Showcase Link**: https://inranktech.com/our-work/fludio-water-solutions-pune.html
+- **Case Study Link**: https://www.inranktech.com/our-work/fludio-water-solutions-pune.html
+- **Showcase Link**: https://www.inranktech.com/our-work/fludio-water-solutions-pune.html
 - **Delivered Services**: Luxury Architectural Web Design, Interactive Product Spec Matrix, Media-Rich Video Showcase Engine, Commercial Developer Lead Funnel, Technical B2B SEO & Schemas, Mobile-Optimized Portfolio Gallery
 - **Technologies Deployed**: HTML5, Vanilla CSS Tokens, Modern JavaScript, Lucide Icons, Video Stream Embeds, Schema.org Architectural Service
 - **Executive Solution Summary**: Inrank engineered a fluid, ultra-luxurious visual portal utilizing progressive lazy-loaded video showcases, interactive fountain spray height selector cards, and an architectural RFP consultation funnel that positions Fludio as India's foremost aquatic engineering authority.
@@ -924,8 +924,8 @@
 ### Case Study: HIRAGRAFIX™ - Corporate Printing, Packaging & Brand Merchandising (HIRAGRAFIX™ (Hira Printers))
 - **Client Domain**: hiragrafix.com (Live URL: https://hiragrafix.com)
 - **Industry & Sector**: Commercial Printing, Luxury Packaging & Merchandising | Corporate Printing, Luxury Rigid Packaging & Brand Merchandise
-- **Case Study Link**: https://inranktech.com/our-work/hiragrafix-mumbai-printing-packaging.html
-- **Showcase Link**: https://inranktech.com/our-work/hiragrafix-mumbai-printing-packaging.html
+- **Case Study Link**: https://www.inranktech.com/our-work/hiragrafix-mumbai-printing-packaging.html
+- **Showcase Link**: https://www.inranktech.com/our-work/hiragrafix-mumbai-printing-packaging.html
 - **Delivered Services**: Corporate Brand Digital Transformation, B2B Product & Material Catalog, Instant Sample & Quote Calculator, Enterprise Corporate Packaging SEO, Corporate Client Onboarding Funnels, Mobile-First B2B Merchandising UX
 - **Technologies Deployed**: Modern JavaScript, TailwindCSS Design System, Lucide Icons, B2B Quoting Calculator, Product Schema JSON-LD
 - **Executive Solution Summary**: Inrank designed a sleek, high-trust corporate portal emphasizing tactile craftsmanship, luxury foil stamping previews, structured material specifications (GSM, textures, coatings), and an automated sample request system that positioned HIRAGRAFIX™ as the go-to partner for enterprise brand procurement.
@@ -938,8 +938,8 @@
 ### Case Study: Grey To The Green - Plant-Powered Home Care & Biotech Formulations (Grey To The Green (Quantum Innovation))
 - **Client Domain**: greytothegreen.com (Live URL: https://greytothegreen.com)
 - **Industry & Sector**: Eco-Friendly Home Care, Biotech & Organic D2C | Eco-Friendly Biotechnology, Home Care & Plant-Powered Formulations
-- **Case Study Link**: https://inranktech.com/our-work/grey-to-the-green-eco-biotech.html
-- **Showcase Link**: https://inranktech.com/our-work/grey-to-the-green-eco-biotech.html
+- **Case Study Link**: https://www.inranktech.com/our-work/grey-to-the-green-eco-biotech.html
+- **Showcase Link**: https://www.inranktech.com/our-work/grey-to-the-green-eco-biotech.html
 - **Delivered Services**: Scientific D2C & B2B Web Architecture, Interactive Product Efficacy Visualizer, Scientific Trust & EPA Badge Integration, D2C Conversion Rate Optimization (CRO), Organic Search & Ingredient SEO, Wholesale Distributor Onboarding Funnel
 - **Technologies Deployed**: Modern JavaScript, TailwindCSS Design System, Lucide Icons, Product Schema JSON-LD, Interactive Efficacy Cards
 - **Executive Solution Summary**: Inrank engineered a fresh, nature-inspired yet rigorously scientific digital storefront. We designed interactive 'Science Behind the Spray' modules, integrated US EPA registration badges, created clear before-and-after allergen protection infographics, and built a dedicated B2B Wholesale Portal alongside the D2C checkout funnel.
@@ -952,8 +952,8 @@
 ### Case Study: Vasro Ventures - Contemporary Fashion Apparel & Lifestyle Brand (Vasro Ventures Pvt Ltd)
 - **Client Domain**: vasroventures.com (Live URL: https://vasroventures.com)
 - **Industry & Sector**: Contemporary Fashion, Apparel & D2C Lifestyle | Contemporary Fashion Apparel & D2C Lifestyle Brand
-- **Case Study Link**: https://inranktech.com/our-work/vasro-ventures-fashion-apparel.html
-- **Showcase Link**: https://inranktech.com/our-work/vasro-ventures-fashion-apparel.html
+- **Case Study Link**: https://www.inranktech.com/our-work/vasro-ventures-fashion-apparel.html
+- **Showcase Link**: https://www.inranktech.com/our-work/vasro-ventures-fashion-apparel.html
 - **Delivered Services**: Editorial Fashion UI/UX Design, Interactive Lookbook & Catalog Engine, Mobile-First Touch Gestures & Micro-Animations, Apparel Sizing & Silhouette Matrix, E-Commerce Checkout Optimization, High-Fashion Brand Positioning
 - **Technologies Deployed**: Modern JavaScript, TailwindCSS Luxury Tokens, Lucide Icons, Product Schema JSON-LD, Touch Swipe Visual Carousels
 - **Executive Solution Summary**: Inrank designed a minimalist, editorial-first web experience inspired by European fashion ateliers. Using monochromatic typography, spacious white margins, instant image pre-caching, and interactive silhouette calculators, we transformed the site into a high-converting digital flagship store.
@@ -966,8 +966,8 @@
 ### Case Study: HCPNest - Healthcare Recruitment & Medical Clinical Staffing Network (HCPNest (HCP Network))
 - **Client Domain**: hcpnest.com (Live URL: https://hcpnest.com)
 - **Industry & Sector**: Healthcare Staffing, Medical Recruitment & Clinical Job Board | Healthcare Talent Recruitment & Clinical Staffing Network
-- **Case Study Link**: https://inranktech.com/our-work/hcpnest-healthcare-staffing-portal.html
-- **Showcase Link**: https://inranktech.com/our-work/hcpnest-healthcare-staffing-portal.html
+- **Case Study Link**: https://www.inranktech.com/our-work/hcpnest-healthcare-staffing-portal.html
+- **Showcase Link**: https://www.inranktech.com/our-work/hcpnest-healthcare-staffing-portal.html
 - **Delivered Services**: Dual-Sided Medical Marketplace UX, Candidate Resume & Credential Uploader, Employer Clinical Job Requisition Engine, JobPosting Structured Data Schema, HIPAA-Compliant Medical Inquiry Funnels, Healthcare Search Engine Domination
 - **Technologies Deployed**: Modern JavaScript, TailwindCSS Design System, Lucide Icons, JobPosting Schema JSON-LD, Filterable Clinical Taxonomy
 - **Executive Solution Summary**: Inrank designed a trustworthy, high-efficiency dual-sided talent marketplace. We built dedicated workflows for hospital HR directors to publish requisitions and clinical professionals to filter openings by specialty, shift type, and geography with 1-click credential submission.
@@ -980,8 +980,8 @@
 ### Case Study: Riitu Institution - Premier CA, Commerce & Professional Coaching Academy (Riitu Institution (Ritu Academy))
 - **Client Domain**: riituinstitution.com (Live URL: https://riituinstitution.com)
 - **Industry & Sector**: Professional Commerce Coaching & Higher Education | CA, Commerce & K-12 Academic Mentorship Academy
-- **Case Study Link**: https://inranktech.com/our-work/riitu-institution-ca-commerce-academy.html
-- **Showcase Link**: https://inranktech.com/our-work/riitu-institution-ca-commerce-academy.html
+- **Case Study Link**: https://www.inranktech.com/our-work/riitu-institution-ca-commerce-academy.html
+- **Showcase Link**: https://www.inranktech.com/our-work/riitu-institution-ca-commerce-academy.html
 - **Delivered Services**: Academic & Coaching Web Architecture, Interactive Course & Syllabus Download Hub, Local Navi Mumbai Education SEO, Student Testimonials & Rankers Wall, WhatsApp Instant Admission Counseling Desk, Course & EducationalOrganization Schema
 - **Technologies Deployed**: Modern JavaScript, TailwindCSS Design System, Lucide Icons, Course Schema JSON-LD, EducationalOrganization Schema
 - **Executive Solution Summary**: Inrank engineered a modern, inspiring academic destination emphasizing academic excellence, faculty credentials, student success stories, and an interactive Course Directory with 1-click syllabus previews and instant admission counseling.
@@ -994,8 +994,8 @@
 ### Case Study: Shetkari Foodstuff Trading LLC - Global Agro Commodity Export SEO & AI GEO (Shetkari Foodstuff Trading LLC (Jaas Global))
 - **Client Domain**: shetkarifoodstuff.com (Live URL: https://shetkarifoodstuff.com)
 - **Industry & Sector**: International Agricultural Commodities & Foodstuff Export (GCC / UAE) | International Agro Commodity Export & GCC B2B Food Trading
-- **Case Study Link**: https://inranktech.com/our-work/shetkari-foodstuff-export-seo-geo.html
-- **Showcase Link**: https://inranktech.com/our-work/shetkari-foodstuff-export-seo-geo.html
+- **Case Study Link**: https://www.inranktech.com/our-work/shetkari-foodstuff-export-seo-geo.html
+- **Showcase Link**: https://www.inranktech.com/our-work/shetkari-foodstuff-export-seo-geo.html
 - **Delivered Services**: International B2B Agro-Export SEO, Generative Engine Optimization (GEO & AEO), AI Search Citation Authority (ChatGPT & Perplexity), Commodity Product & Export Schema, GCC Buyer Intent Search Optimization, Global Container-Load Lead Acquisition
 - **Technologies Deployed**: AI SEO / GEO Architecture, International Schema.org, Hreflang Tags, Entity Authority Building, Perplexity & ChatGPT Search Citations
 - **Executive Solution Summary**: Inrank deployed our proprietary Generative Engine Optimization (GEO) and international B2B SEO framework. We structured commodity entity knowledge graphs, authored comprehensive export procurement specifications, and built citation authority across agricultural supply-chain registries, making Shetkari the top recommended exporter in AI search responses.
@@ -1008,8 +1008,8 @@
 ### Case Study: Dr. Shyam Thakkar - Specialized Orthopedic Foot, Ankle & Sports Injury Clinic (Dr. Shyam Thakkar (ARTICUL8 Clinic))
 - **Client Domain**: orthopedicanklefootspecialist.com (Live URL: https://orthopedicanklefootspecialist.com)
 - **Industry & Sector**: Specialized Orthopedic Surgery, Sports Medicine & Biomechanical Orthotics | Super-Specialized Orthopedic Foot & Ankle Surgery
-- **Case Study Link**: https://inranktech.com/our-work/dr-shyam-thakkar-orthopedic-ankle-foot.html
-- **Showcase Link**: https://inranktech.com/our-work/dr-shyam-thakkar-orthopedic-ankle-foot.html
+- **Case Study Link**: https://www.inranktech.com/our-work/dr-shyam-thakkar-orthopedic-ankle-foot.html
+- **Showcase Link**: https://www.inranktech.com/our-work/dr-shyam-thakkar-orthopedic-ankle-foot.html
 - **Delivered Services**: Medical Practice E-E-A-T Architecture, Condition-Specific Clinical Guides, Interactive Appointment Booking Funnel, Maharashtra Multi-City Medical SEO, MedicalProcedure & Physician Schema, Patient Testimonial Video Optimization
 - **Technologies Deployed**: Medical SEO Standards, Physician Schema JSON-LD, MedicalCondition Schema, Local Healthcare SEO, Patient Booking Integration
 - **Executive Solution Summary**: Inrank engineered a clinical authority ecosystem centered on patient education and transparent surgical credentials. We built deep clinical condition guides, integrated MedicalProcedure and Physician schemas, and created an effortless multi-city appointment scheduling funnel.
@@ -1022,8 +1022,8 @@
 ### Case Study: Dravya Financial Solutions - Enterprise Debt Syndication & Corporate Advisory (Dravya Financial Solutions Pvt Ltd)
 - **Client Domain**: dravyafinancial.com (Live URL: https://dravyafinancial.com)
 - **Industry & Sector**: Corporate Financial Services, Debt Syndication & Real Estate Funding | Corporate Debt Syndication, Structured Finance & SME Advisory
-- **Case Study Link**: https://inranktech.com/our-work/dravya-financial-corporate-advisory.html
-- **Showcase Link**: https://inranktech.com/our-work/dravya-financial-corporate-advisory.html
+- **Case Study Link**: https://www.inranktech.com/our-work/dravya-financial-corporate-advisory.html
+- **Showcase Link**: https://www.inranktech.com/our-work/dravya-financial-corporate-advisory.html
 - **Delivered Services**: Institutional Financial UI/UX Architecture, High-Ticket B2B Deal Qualification Funnels, Structured Finance & Debt Syndication Taxonomies, Confidential Enterprise Transaction Desks, Corporate Finance Authority Building, FinancialService & Organization Schema
 - **Technologies Deployed**: Enterprise Web Standards, FinancialService Schema JSON-LD, NDA-Encrypted Deal Intake, Lucide Icons, Corporate Security Architecture
 - **Executive Solution Summary**: Inrank designed a dignified, institutional corporate finance portal conveying the solemnity of an elite investment bank. We built structured capital solution matrices, automated deal qualification filters, and a confidential transaction desk that immediately positions Dravya as a premier financial partner.
@@ -1048,4 +1048,4 @@ Inrank Technologies structures every client asset for citation by LLMs and conve
 - **Instant Project Enquiry**: inranktech@gmail.com
 - **Immediate Phone Support**: +91 87888 23182
 - **WhatsApp Chat**: https://wa.me/918788823182
-- **Website**: https://inranktech.com/
+- **Website**: https://www.inranktech.com/

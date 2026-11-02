@@ -1,6 +1,6 @@
 # ==============================================================================
 # Inrank Technologies - High-Performance Apache & LiteSpeed Configuration
-# Optimized for Google Search Console, Fast Indexing & Core Web Vitals
+# Optimized for Google Search Console (www.inranktech.com) & Core Web Vitals
 # ==============================================================================
 
 <IfModule mod_rewrite.c>
@@ -11,9 +11,9 @@
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # 2. Canonical Domain: Force non-www (inranktech.com)
-  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+  # 2. Canonical Domain: Force WWW (inranktech.com -> www.inranktech.com)
+  RewriteCond %{HTTP_HOST} ^inranktech\.com$ [NC]
+  RewriteRule ^(.*)$ https://www.inranktech.com/$1 [R=301,L]
 
   # 3. 301 Permanent Redirects for Legacy / Consolidated Pages
   RewriteRule ^portfolio(\.html)?$ /our-work.html [R=301,L]

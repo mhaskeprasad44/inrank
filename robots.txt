@@ -44,8 +44,8 @@ User-agent: *
 Allow: /
 
 # Canonical Sitemap Index
-Sitemap: https://inranktech.com/sitemap.xml
+Sitemap: https://www.inranktech.com/sitemap.xml
 
 # LLM / AI Search Context Manifests
-# https://inranktech.com/llms.txt
-# https://inranktech.com/llms-full.txt
+# https://www.inranktech.com/llms.txt
+# https://www.inranktech.com/llms-full.txt

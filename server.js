@@ -9,6 +9,13 @@ import compression from "compression";
 import nodemailer from "nodemailer";
 dotenv.config();
 var app = express();
+app.use((req, res, next) => {
+  const host = req.headers.host;
+  if (host === "inranktech.com") {
+    return res.redirect(301, `https://www.inranktech.com${req.originalUrl}`);
+  }
+  next();
+});
 var PORT = Number(process.env.PORT) || 3e3;
 app.use(
   compression({
