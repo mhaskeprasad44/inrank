@@ -26,10 +26,7 @@ export const GrowthRoiCalculator: React.FC = () => {
     <div className="w-full max-w-4xl mx-auto rounded-3xl border border-slate-200/80 bg-gradient-to-br from-white via-slate-50/50 to-emerald-50/20 p-6 sm:p-8 shadow-xl shadow-slate-200/50">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-200">
         <div>
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase bg-emerald-100/80 text-emerald-800">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-            React Engine Active
-          </span>
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-100 text-slate-600"><span className="w-1.5 h-1.5 rounded-full bg-slate-400" />Interactive ROI Model</span>
           <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2 font-display">
             Interactive Growth & ROI Forecaster
           </h3>
@@ -137,3 +134,4 @@ export const GrowthRoiCalculator: React.FC = () => {
     </div>
   );
 };
+

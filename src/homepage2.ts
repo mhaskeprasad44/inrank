@@ -83,7 +83,7 @@ export function renderHomepage2View() {
           </div>
 
           <!-- Highlight pill -->
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[11px] font-bold uppercase tracking-wider text-emerald-700">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-[11px] font-semibold uppercase tracking-wider text-slate-700">
             <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-ping"></span>
             <span>Live Multi-Channel Delivery Across 6 High-Intent Networks</span>
           </div>
@@ -234,7 +234,7 @@ export function renderHomepage2View() {
             <div class="fanned-card rounded-2xl bg-white border border-stone-200/90 p-5 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.06)] hover:border-emerald-500/50 cursor-pointer flex flex-col justify-between space-y-4">
               <div>
                 <div class="flex items-center justify-between mb-3">
-                  <span class="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-emerald-50 text-emerald-700 border border-emerald-200/60 flex items-center gap-1">
+                  <span class="px-2.5 py-1 rounded-md text-[10px] font-semibold uppercase tracking-wider bg-slate-100 text-slate-600 border border-slate-200 flex items-center gap-1">
                     <i data-lucide="map-pin" class="h-3 w-3"></i> Local SEO
                   </span>
                   <span class="text-xs font-mono font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">#1 Map Pack</span>
@@ -286,7 +286,7 @@ export function renderHomepage2View() {
             <div class="fanned-card rounded-2xl bg-white border border-stone-200/90 p-5 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.06)] hover:border-emerald-500/50 cursor-pointer flex flex-col justify-between space-y-4">
               <div>
                 <div class="flex items-center justify-between mb-3">
-                  <span class="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-emerald-50 text-emerald-700 border border-emerald-200/60 flex items-center gap-1">
+                  <span class="px-2.5 py-1 rounded-md text-[10px] font-semibold uppercase tracking-wider bg-slate-100 text-slate-600 border border-slate-200 flex items-center gap-1">
                     <i data-lucide="code-xml" class="h-3 w-3"></i> Web Engineering
                   </span>
                   <span class="text-xs font-mono font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">100/100 CWV</span>
@@ -312,7 +312,7 @@ export function renderHomepage2View() {
             <div class="fanned-card rounded-2xl bg-white border border-stone-200/90 p-5 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.06)] hover:border-emerald-500/50 cursor-pointer flex flex-col justify-between space-y-4">
               <div>
                 <div class="flex items-center justify-between mb-3">
-                  <span class="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-green-50 text-green-700 border border-green-200/60 flex items-center gap-1">
+                  <span class="px-2.5 py-1 rounded-md text-[10px] font-semibold uppercase tracking-wider bg-slate-100 text-slate-600 border border-slate-200 flex items-center gap-1">
                     <i data-lucide="message-circle" class="h-3 w-3"></i> Lead Funnel
                   </span>
                   <span class="text-xs font-mono font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded">+184% Leads</span>
@@ -416,7 +416,7 @@ export function renderHomepage2View() {
            ========================================================================= -->
       <section class="py-20 sm:py-28 px-5 sm:px-8 max-w-7xl mx-auto">
         <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 border border-emerald-500/20 font-mono">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200 font-mono">
             Dedicated Partner Pod
           </span>
           <h2 class="font-display font-extrabold text-3xl sm:text-5xl tracking-tight text-stone-950">
@@ -488,7 +488,7 @@ export function renderHomepage2View() {
           <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm hover:shadow-md hover:border-emerald-500/40 transition-all flex flex-col justify-between space-y-5">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
-                <div class="h-12 w-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-lg border border-emerald-200">
+                <div class="h-12 w-12 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center font-bold text-lg border border-slate-200">
                   <i data-lucide="code-xml" class="h-6 w-6"></i>
                 </div>
                 <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-stone-100 text-stone-600 font-bold">Pod Lead 03</span>
@@ -515,7 +515,7 @@ export function renderHomepage2View() {
           <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm hover:shadow-md hover:border-emerald-500/40 transition-all flex flex-col justify-between space-y-5">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
-                <div class="h-12 w-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-lg border border-emerald-200">
+                <div class="h-12 w-12 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center font-bold text-lg border border-slate-200">
                   <i data-lucide="trending-up" class="h-6 w-6"></i>
                 </div>
                 <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-stone-100 text-stone-600 font-bold">Pod Lead 04</span>
@@ -662,19 +662,19 @@ export function renderHomepage2View() {
                   <span class="text-xs font-mono text-emerald-600 font-bold bg-emerald-50 px-2 py-0.5 rounded">Mobile Checked</span>
                 </div>
                 <div class="grid grid-cols-4 gap-2 text-center">
-                  <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200">
+                  <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
                     <div class="text-2xl font-black text-emerald-600">99</div>
                     <div class="text-[10px] text-stone-600 font-bold uppercase mt-1">Performance</div>
                   </div>
-                  <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200">
+                  <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
                     <div class="text-2xl font-black text-emerald-600">100</div>
                     <div class="text-[10px] text-stone-600 font-bold uppercase mt-1">Accessibility</div>
                   </div>
-                  <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200">
+                  <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
                     <div class="text-2xl font-black text-emerald-600">100</div>
                     <div class="text-[10px] text-stone-600 font-bold uppercase mt-1">Best Practice</div>
                   </div>
-                  <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200">
+                  <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
                     <div class="text-2xl font-black text-emerald-600">100</div>
                     <div class="text-[10px] text-stone-600 font-bold uppercase mt-1">SEO Structure</div>
                   </div>

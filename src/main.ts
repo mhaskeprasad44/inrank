@@ -1844,7 +1844,7 @@ function renderServiceDetailView(service: ServiceDetail) {
           <div class="max-w-3xl mx-auto">
             
             <div class="text-center space-y-3.5 mb-10">
-              <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 shadow-xs">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-xs">
                 <i data-lucide="help-circle" class="h-3.5 w-3.5"></i>
                 <span>Frequently Asked Questions</span>
               </div>
@@ -2723,7 +2723,7 @@ function generateServiceCardHTML(service: ServiceDetail) {
       <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-emerald-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       <div class="space-y-4">
         <div class="flex items-center justify-between gap-2">
-          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wider bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
             ${isAiService ? `<span class="h-3.5 w-3.5 inline-block shrink-0">${AI_SEARCH_ICON_SVG}</span>` : `<i data-lucide="${meta.icon}" class="h-3.5 w-3.5"></i>`}
             ${meta.pillar}
           </span>
@@ -2836,7 +2836,7 @@ function renderAllServicesPage() {
         
         <!-- Hero Title Section -->
         <div class="space-y-5 max-w-4xl">
-          <span class="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-600 dark:text-emerald-400 shadow-sm">
+          <span class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 px-3.5 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-slate-700 dark:text-slate-300 shadow-sm">
             <i data-lucide="layers" class="h-3.5 w-3.5"></i>
             Proprietary 4-Pillar Architecture · 27 Specialized Disciplines
           </span>
@@ -2937,7 +2937,7 @@ function renderAllServicesPage() {
           <div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none"></div>
 
           <div class="relative space-y-6 max-w-4xl">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300">
               <i data-lucide="briefcase" class="h-3.5 w-3.5"></i>
               Agency Partnership Engine
             </div>

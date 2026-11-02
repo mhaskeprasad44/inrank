@@ -8,3 +8,4 @@ tsconfig.compilerOptions.jsx = 'react-jsx';
 
 fs.writeFileSync(tsconfigPath, JSON.stringify(tsconfig, null, 2), 'utf8');
 console.log('Successfully updated tsconfig.json with jsx: react-jsx');
+

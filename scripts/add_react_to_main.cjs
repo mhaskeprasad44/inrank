@@ -19,3 +19,4 @@ if (!content.includes('initReactComponents')) {
 } else {
   console.log('initReactComponents already present in src/main.ts');
 }
+

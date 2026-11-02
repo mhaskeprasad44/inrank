@@ -15,3 +15,4 @@ content = content.replace(
 
 fs.writeFileSync(serverPath, content, 'utf8');
 console.log('Fixed nodemailer typing in server.ts');
+

@@ -439,18 +439,6 @@
       color: #0f172a;
     }
 
-    .inrank-cm-badge-req {
-      font-size: 10px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: #009d49;
-      background: #eafaf1;
-      border: 1px solid #bbf2d2;
-      padding: 2px 7px;
-      border-radius: 6px;
-    }
-
     .inrank-cm-group-text {
       font-size: 11.5px;
       line-height: 1.45;
@@ -668,7 +656,6 @@
     <div class="inrank-cm-group">
       <div class="inrank-cm-group-row">
         <span class="inrank-cm-group-title">Strictly Necessary Cookies</span>
-        <span class="inrank-cm-badge-req">Always Active</span>
       </div>
       <p class="inrank-cm-group-text">
         Required for core system security, form submission routing, and caching headers. Cannot be disabled.

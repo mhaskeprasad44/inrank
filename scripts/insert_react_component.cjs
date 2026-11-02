@@ -48,3 +48,4 @@ if (!pricingHtml.includes('data-react-component="GrowthRoiCalculator"')) {
 } else {
   console.log('React component already present in pricing.html');
 }
+

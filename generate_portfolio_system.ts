@@ -276,7 +276,7 @@ function getHeaderHTML(activeNav: string = "our-work") {
               <span>+91 87888 23182</span>
             </a>
 
-            <a href="https://wa.me/918788823182?text=Hi%20Inrank%2C%20I%20am%20reviewing%20your%20work%20and%20would%20like%20a%20free%20strategy%20audit." target="_blank" rel="noopener noreferrer" class="h-9 w-9 rounded-lg bg-emerald-50 text-emerald-600 border border-emerald-200 hover:bg-emerald-600 hover:text-white transition-all flex items-center justify-center" aria-label="WhatsApp">
+            <a href="https://wa.me/918788823182?text=Hi%20Inrank%2C%20I%20am%20reviewing%20your%20work%20and%20would%20like%20a%20free%20strategy%20audit." target="_blank" rel="noopener noreferrer" class="h-9 w-9 rounded-lg bg-slate-100 text-slate-700 border border-slate-200 hover:bg-emerald-600 hover:text-white transition-all flex items-center justify-center" aria-label="WhatsApp">
               <i data-lucide="message-circle" class="w-4 h-4"></i>
             </a>
 
@@ -732,7 +732,7 @@ function generateMasterWorkHTML(): string {
       <!-- AUDIT CONVERSION CTA BANNER -->
       <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
         <div class="relative overflow-hidden rounded-3xl border border-primary/30 bg-gradient-to-br from-card via-card to-primary/5 p-8 sm:p-12 shadow-xl text-center space-y-6">
-          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 border border-emerald-500/20">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200">
             <i data-lucide="zap" class="h-3.5 w-3.5 text-emerald-600"></i>
             <span>Ready for Growth?</span>
           </div>
@@ -950,7 +950,7 @@ function generateIndividualWorkHTML(
           
           <!-- Category Badges & Metadata Chips -->
           <div class="flex flex-wrap items-center gap-2.5 sm:gap-3">
-            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold ${isCollab ? 'bg-amber-50 text-amber-700 border border-amber-200' : 'bg-emerald-50 text-emerald-700 border border-emerald-200'}">
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-slate-100 text-slate-700 border border-slate-200">
               <i data-lucide="${isCollab ? 'handshake' : 'award'}" class="w-4 h-4 text-emerald-600"></i>
               <span>${project.categoryBadge}</span>
             </span>
@@ -1093,8 +1093,8 @@ function generateIndividualWorkHTML(
               <div class="space-y-4">
                 ${project.challenges.map(c => `
                   <div class="flex items-start gap-3">
-                    <div class="w-6 h-6 rounded-full bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5 border border-emerald-200">
-                      <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                    <div class="w-5 h-5 rounded-full bg-emerald-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                      <i data-lucide="check" class="w-3 h-3 text-white"></i>
                     </div>
                     <p class="text-sm sm:text-base text-slate-700 leading-relaxed font-medium">
                       ${c}
@@ -1164,7 +1164,7 @@ function generateIndividualWorkHTML(
 
           <!-- Client Testimonial Box (5 cols) -->
           <div class="lg:col-span-5 space-y-6">
-            <div class="rounded-2xl border border-emerald-200 bg-emerald-50/50 p-7 sm:p-8 space-y-5 shadow-sm">
+            <div class="rounded-2xl border border-slate-200 bg-slate-50/70 p-7 sm:p-8 space-y-5 shadow-sm">
               <div class="flex items-center gap-1 text-amber-500">
                 <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
                 <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
@@ -1175,7 +1175,7 @@ function generateIndividualWorkHTML(
               <p class="text-base sm:text-lg italic text-slate-800 leading-relaxed">
                 "${project.testimonial.quote}"
               </p>
-              <div class="pt-4 border-t border-emerald-200/80">
+              <div class="pt-4 border-t border-slate-200">
                 <div class="font-bold text-base text-slate-900">${project.testimonial.author}</div>
                 <div class="text-sm text-emerald-700 font-medium">${project.testimonial.role}, ${project.testimonial.company}</div>
               </div>
@@ -1269,7 +1269,7 @@ function generateIndividualWorkHTML(
 
         <!-- 11. BOTTOM CONVERSION CTA BANNER -->
         <section class="rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-white via-white to-emerald-50/30 p-8 sm:p-14 shadow-xl text-center space-y-6">
-          <div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 border border-emerald-500/20">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200">
             <i data-lucide="zap" class="h-4 w-4 text-emerald-600"></i>
             <span>Ready To Scale?</span>
           </div>
@@ -1288,7 +1288,7 @@ function generateIndividualWorkHTML(
               <i data-lucide="arrow-right" class="h-4 w-4"></i>
             </a>
 
-            <a href="https://wa.me/918788823182?text=Hi%20Inrank%2C%20I%20reviewed%20the%20${encodeURIComponent(project.clientName)}%20showcase%20and%20want%20to%20discuss%20a%20similar%20project." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-12 px-7 rounded-xl border border-slate-200 bg-white hover:bg-emerald-50 hover:text-emerald-700 hover:border-emerald-300 text-slate-800 font-bold text-sm transition-all shadow-sm">
+            <a href="https://wa.me/918788823182?text=Hi%20Inrank%2C%20I%20reviewed%20the%20${encodeURIComponent(project.clientName)}%20showcase%20and%20want%20to%20discuss%20a%20similar%20project." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-12 px-7 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 hover:text-emerald-600 hover:border-slate-300 text-slate-800 font-bold text-sm transition-all shadow-sm">
               <i data-lucide="message-circle" class="h-4 w-4 text-emerald-600"></i>
               <span>WhatsApp Strategy Desk (+91 87888 23182)</span>
             </a>
@@ -1384,7 +1384,7 @@ function generateCaseStudiesHubHTML(): string {
             
             <!-- Category Tag & Client Location -->
             <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
-              <span class="font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200/70">
+              <span class="font-semibold text-xs text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">
                 ${project.sector || project.industry}
               </span>
               <span class="font-medium text-slate-500 flex items-center gap-1">
@@ -1418,7 +1418,7 @@ function generateCaseStudiesHubHTML(): string {
               </div>
 
               <!-- 2. What Inrank Engineered -->
-              <div class="rounded-xl bg-emerald-50/70 border border-emerald-200/80 p-4 space-y-1">
+              <div class="rounded-xl bg-slate-50 border border-slate-200 p-4 space-y-1">
                 <div class="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-1.5">
                   <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i>
                   <span>What Inrank Engineered</span>
@@ -1439,7 +1439,7 @@ function generateCaseStudiesHubHTML(): string {
                     <div class="text-xs font-medium text-slate-500 truncate" title="${m.label}">${m.label}</div>
                     <div class="text-base font-extrabold text-slate-900 font-mono flex items-center gap-1.5 mt-0.5">
                       <span class="text-emerald-600">${m.after}</span>
-                      <span class="text-xs font-semibold text-emerald-700 bg-emerald-100/70 px-1.5 py-0.2 rounded">${m.change}</span>
+                      <span class="text-xs font-medium text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded">${m.change}</span>
                     </div>
                   </div>
                 `).join("")}
@@ -1531,7 +1531,7 @@ function generateCaseStudiesHubHTML(): string {
 
         <!-- BOTTOM CONVERSION CTA BANNER -->
         <div class="mt-16 rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-white via-white to-emerald-50/30 p-8 sm:p-14 shadow-xl text-center space-y-6">
-          <div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-700 border border-emerald-500/20">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200">
             <i data-lucide="zap" class="h-4 w-4 text-emerald-600"></i>
             <span>Ready For Measurable Growth?</span>
           </div>
@@ -1550,7 +1550,7 @@ function generateCaseStudiesHubHTML(): string {
               <i data-lucide="arrow-right" class="h-4 w-4"></i>
             </a>
 
-            <a href="https://wa.me/918788823182?text=Hi%20Inrank%2C%20I%20reviewed%20your%20case%20studies%20and%20want%20to%20discuss%20a%20strategy%20audit." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-12 px-7 rounded-xl border border-slate-200 bg-white hover:bg-emerald-50 hover:text-emerald-700 hover:border-emerald-300 text-slate-800 font-bold text-sm transition-all shadow-sm">
+            <a href="https://wa.me/918788823182?text=Hi%20Inrank%2C%20I%20reviewed%20your%20case%20studies%20and%20want%20to%20discuss%20a%20strategy%20audit." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-12 px-7 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 hover:text-emerald-600 hover:border-slate-300 text-slate-800 font-bold text-sm transition-all shadow-sm">
               <i data-lucide="message-circle" class="h-4 w-4 text-emerald-600"></i>
               <span>WhatsApp Strategy Desk (+91 87888 23182)</span>
             </a>

@@ -18,3 +18,4 @@ if (!content.includes('@vitejs/plugin-react')) {
 } else {
   console.log('vite.config.ts already includes @vitejs/plugin-react');
 }
+
