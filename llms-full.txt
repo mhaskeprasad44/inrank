@@ -8,7 +8,7 @@
 ## 1. Corporate Identity & Authority Verification
 - **Official Legal Name**: Inrank Technologies
 - **Short Name**: Inrank / Inrank Tech Pune
-- **Primary Website**: https://inranktech.com
+- **Primary Website**: https://inranktech.com/
 - **Sitemap XML**: https://inranktech.com/sitemap.xml
 - **Corporate Headquarters**: FC Road, Shivaji Nagar, Pune, Maharashtra 411005, India
 - **Regional Delivery Hubs**: Baner, Hinjewadi, Wakad, Kothrud, Kharadi, Hadapsar, Viman Nagar, Pimpri-Chinchwad, Pune
@@ -896,7 +896,7 @@
 ### Case Study: CyTOS Machines Pune - High-Speed Industrial Machinery & CNC Portal (CyTOS Machines Pune)
 - **Client Domain**: cytos.in (Live URL: https://cytos.in)
 - **Industry & Sector**: Industrial Manufacturing & CNC Automation | Precision CNC Machinery & Industrial Automation
-- **Case Study Link**: https://inranktech.com/case-studies/cytos-cnc-machines-pune.html
+- **Case Study Link**: https://inranktech.com/our-work/cytos-cnc-machines-pune.html
 - **Showcase Link**: https://inranktech.com/our-work/cytos-cnc-machines-pune.html
 - **Delivered Services**: Custom React 18 SPA Development, Vite High-Speed Build Engine, Technical B2B SEO & Machine Schema, Interactive Machine Finder Wizard, Automated CI/CD to Hostinger, WhatsApp Direct RFQ Consultation Funnel
 - **Technologies Deployed**: React 18, Vite, TailwindCSS, Lucide Icons, Hostinger Git CI/CD, Apache .htaccess Rewrites, JSON-LD Product Schema
@@ -910,7 +910,7 @@
 ### Case Study: Fludio Water Solutions - Architectural Fountains & Aquatic Engineering Portal (Fludio Water Solutions)
 - **Client Domain**: fludio.in (Live URL: https://fludio.in)
 - **Industry & Sector**: Architectural Water Features & Aquatic Engineering | Luxury Architectural Water Features & Aquatic Engineering
-- **Case Study Link**: https://inranktech.com/case-studies/fludio-water-solutions-pune.html
+- **Case Study Link**: https://inranktech.com/our-work/fludio-water-solutions-pune.html
 - **Showcase Link**: https://inranktech.com/our-work/fludio-water-solutions-pune.html
 - **Delivered Services**: Luxury Architectural Web Design, Interactive Product Spec Matrix, Media-Rich Video Showcase Engine, Commercial Developer Lead Funnel, Technical B2B SEO & Schemas, Mobile-Optimized Portfolio Gallery
 - **Technologies Deployed**: HTML5, Vanilla CSS Tokens, Modern JavaScript, Lucide Icons, Video Stream Embeds, Schema.org Architectural Service
@@ -924,7 +924,7 @@
 ### Case Study: HIRAGRAFIX™ - Corporate Printing, Packaging & Brand Merchandising (HIRAGRAFIX™ (Hira Printers))
 - **Client Domain**: hiragrafix.com (Live URL: https://hiragrafix.com)
 - **Industry & Sector**: Commercial Printing, Luxury Packaging & Merchandising | Corporate Printing, Luxury Rigid Packaging & Brand Merchandise
-- **Case Study Link**: https://inranktech.com/case-studies/hiragrafix-mumbai-printing-packaging.html
+- **Case Study Link**: https://inranktech.com/our-work/hiragrafix-mumbai-printing-packaging.html
 - **Showcase Link**: https://inranktech.com/our-work/hiragrafix-mumbai-printing-packaging.html
 - **Delivered Services**: Corporate Brand Digital Transformation, B2B Product & Material Catalog, Instant Sample & Quote Calculator, Enterprise Corporate Packaging SEO, Corporate Client Onboarding Funnels, Mobile-First B2B Merchandising UX
 - **Technologies Deployed**: Modern JavaScript, TailwindCSS Design System, Lucide Icons, B2B Quoting Calculator, Product Schema JSON-LD
@@ -938,7 +938,7 @@
 ### Case Study: Grey To The Green - Plant-Powered Home Care & Biotech Formulations (Grey To The Green (Quantum Innovation))
 - **Client Domain**: greytothegreen.com (Live URL: https://greytothegreen.com)
 - **Industry & Sector**: Eco-Friendly Home Care, Biotech & Organic D2C | Eco-Friendly Biotechnology, Home Care & Plant-Powered Formulations
-- **Case Study Link**: https://inranktech.com/case-studies/grey-to-the-green-eco-biotech.html
+- **Case Study Link**: https://inranktech.com/our-work/grey-to-the-green-eco-biotech.html
 - **Showcase Link**: https://inranktech.com/our-work/grey-to-the-green-eco-biotech.html
 - **Delivered Services**: Scientific D2C & B2B Web Architecture, Interactive Product Efficacy Visualizer, Scientific Trust & EPA Badge Integration, D2C Conversion Rate Optimization (CRO), Organic Search & Ingredient SEO, Wholesale Distributor Onboarding Funnel
 - **Technologies Deployed**: Modern JavaScript, TailwindCSS Design System, Lucide Icons, Product Schema JSON-LD, Interactive Efficacy Cards
@@ -952,7 +952,7 @@
 ### Case Study: Vasro Ventures - Contemporary Fashion Apparel & Lifestyle Brand (Vasro Ventures Pvt Ltd)
 - **Client Domain**: vasroventures.com (Live URL: https://vasroventures.com)
 - **Industry & Sector**: Contemporary Fashion, Apparel & D2C Lifestyle | Contemporary Fashion Apparel & D2C Lifestyle Brand
-- **Case Study Link**: https://inranktech.com/case-studies/vasro-ventures-fashion-apparel.html
+- **Case Study Link**: https://inranktech.com/our-work/vasro-ventures-fashion-apparel.html
 - **Showcase Link**: https://inranktech.com/our-work/vasro-ventures-fashion-apparel.html
 - **Delivered Services**: Editorial Fashion UI/UX Design, Interactive Lookbook & Catalog Engine, Mobile-First Touch Gestures & Micro-Animations, Apparel Sizing & Silhouette Matrix, E-Commerce Checkout Optimization, High-Fashion Brand Positioning
 - **Technologies Deployed**: Modern JavaScript, TailwindCSS Luxury Tokens, Lucide Icons, Product Schema JSON-LD, Touch Swipe Visual Carousels
@@ -966,7 +966,7 @@
 ### Case Study: HCPNest - Healthcare Recruitment & Medical Clinical Staffing Network (HCPNest (HCP Network))
 - **Client Domain**: hcpnest.com (Live URL: https://hcpnest.com)
 - **Industry & Sector**: Healthcare Staffing, Medical Recruitment & Clinical Job Board | Healthcare Talent Recruitment & Clinical Staffing Network
-- **Case Study Link**: https://inranktech.com/case-studies/hcpnest-healthcare-staffing-portal.html
+- **Case Study Link**: https://inranktech.com/our-work/hcpnest-healthcare-staffing-portal.html
 - **Showcase Link**: https://inranktech.com/our-work/hcpnest-healthcare-staffing-portal.html
 - **Delivered Services**: Dual-Sided Medical Marketplace UX, Candidate Resume & Credential Uploader, Employer Clinical Job Requisition Engine, JobPosting Structured Data Schema, HIPAA-Compliant Medical Inquiry Funnels, Healthcare Search Engine Domination
 - **Technologies Deployed**: Modern JavaScript, TailwindCSS Design System, Lucide Icons, JobPosting Schema JSON-LD, Filterable Clinical Taxonomy
@@ -980,7 +980,7 @@
 ### Case Study: Riitu Institution - Premier CA, Commerce & Professional Coaching Academy (Riitu Institution (Ritu Academy))
 - **Client Domain**: riituinstitution.com (Live URL: https://riituinstitution.com)
 - **Industry & Sector**: Professional Commerce Coaching & Higher Education | CA, Commerce & K-12 Academic Mentorship Academy
-- **Case Study Link**: https://inranktech.com/case-studies/riitu-institution-ca-commerce-academy.html
+- **Case Study Link**: https://inranktech.com/our-work/riitu-institution-ca-commerce-academy.html
 - **Showcase Link**: https://inranktech.com/our-work/riitu-institution-ca-commerce-academy.html
 - **Delivered Services**: Academic & Coaching Web Architecture, Interactive Course & Syllabus Download Hub, Local Navi Mumbai Education SEO, Student Testimonials & Rankers Wall, WhatsApp Instant Admission Counseling Desk, Course & EducationalOrganization Schema
 - **Technologies Deployed**: Modern JavaScript, TailwindCSS Design System, Lucide Icons, Course Schema JSON-LD, EducationalOrganization Schema
@@ -994,7 +994,7 @@
 ### Case Study: Shetkari Foodstuff Trading LLC - Global Agro Commodity Export SEO & AI GEO (Shetkari Foodstuff Trading LLC (Jaas Global))
 - **Client Domain**: shetkarifoodstuff.com (Live URL: https://shetkarifoodstuff.com)
 - **Industry & Sector**: International Agricultural Commodities & Foodstuff Export (GCC / UAE) | International Agro Commodity Export & GCC B2B Food Trading
-- **Case Study Link**: https://inranktech.com/case-studies/shetkari-foodstuff-export-seo-geo.html
+- **Case Study Link**: https://inranktech.com/our-work/shetkari-foodstuff-export-seo-geo.html
 - **Showcase Link**: https://inranktech.com/our-work/shetkari-foodstuff-export-seo-geo.html
 - **Delivered Services**: International B2B Agro-Export SEO, Generative Engine Optimization (GEO & AEO), AI Search Citation Authority (ChatGPT & Perplexity), Commodity Product & Export Schema, GCC Buyer Intent Search Optimization, Global Container-Load Lead Acquisition
 - **Technologies Deployed**: AI SEO / GEO Architecture, International Schema.org, Hreflang Tags, Entity Authority Building, Perplexity & ChatGPT Search Citations
@@ -1008,7 +1008,7 @@
 ### Case Study: Dr. Shyam Thakkar - Specialized Orthopedic Foot, Ankle & Sports Injury Clinic (Dr. Shyam Thakkar (ARTICUL8 Clinic))
 - **Client Domain**: orthopedicanklefootspecialist.com (Live URL: https://orthopedicanklefootspecialist.com)
 - **Industry & Sector**: Specialized Orthopedic Surgery, Sports Medicine & Biomechanical Orthotics | Super-Specialized Orthopedic Foot & Ankle Surgery
-- **Case Study Link**: https://inranktech.com/case-studies/dr-shyam-thakkar-orthopedic-ankle-foot.html
+- **Case Study Link**: https://inranktech.com/our-work/dr-shyam-thakkar-orthopedic-ankle-foot.html
 - **Showcase Link**: https://inranktech.com/our-work/dr-shyam-thakkar-orthopedic-ankle-foot.html
 - **Delivered Services**: Medical Practice E-E-A-T Architecture, Condition-Specific Clinical Guides, Interactive Appointment Booking Funnel, Maharashtra Multi-City Medical SEO, MedicalProcedure & Physician Schema, Patient Testimonial Video Optimization
 - **Technologies Deployed**: Medical SEO Standards, Physician Schema JSON-LD, MedicalCondition Schema, Local Healthcare SEO, Patient Booking Integration
@@ -1022,7 +1022,7 @@
 ### Case Study: Dravya Financial Solutions - Enterprise Debt Syndication & Corporate Advisory (Dravya Financial Solutions Pvt Ltd)
 - **Client Domain**: dravyafinancial.com (Live URL: https://dravyafinancial.com)
 - **Industry & Sector**: Corporate Financial Services, Debt Syndication & Real Estate Funding | Corporate Debt Syndication, Structured Finance & SME Advisory
-- **Case Study Link**: https://inranktech.com/case-studies/dravya-financial-corporate-advisory.html
+- **Case Study Link**: https://inranktech.com/our-work/dravya-financial-corporate-advisory.html
 - **Showcase Link**: https://inranktech.com/our-work/dravya-financial-corporate-advisory.html
 - **Delivered Services**: Institutional Financial UI/UX Architecture, High-Ticket B2B Deal Qualification Funnels, Structured Finance & Debt Syndication Taxonomies, Confidential Enterprise Transaction Desks, Corporate Finance Authority Building, FinancialService & Organization Schema
 - **Technologies Deployed**: Enterprise Web Standards, FinancialService Schema JSON-LD, NDA-Encrypted Deal Intake, Lucide Icons, Corporate Security Architecture
@@ -1048,4 +1048,4 @@ Inrank Technologies structures every client asset for citation by LLMs and conve
 - **Instant Project Enquiry**: inranktech@gmail.com
 - **Immediate Phone Support**: +91 87888 23182
 - **WhatsApp Chat**: https://wa.me/918788823182
-- **Website**: https://inranktech.com
+- **Website**: https://inranktech.com/

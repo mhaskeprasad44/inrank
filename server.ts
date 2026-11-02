@@ -695,29 +695,24 @@ app.get(["/case-studies", "/case-studies.html"], (req, res) => {
 });
 
 app.get(["/portfolio", "/portfolio.html"], (req, res) => {
-  const ourWorkDist = path.join(process.cwd(), "dist", "our-work.html");
-  const ourWorkLocal = path.join(process.cwd(), "our-work.html");
-  if (fs.existsSync(ourWorkDist)) return res.sendFile(ourWorkDist);
-  if (fs.existsSync(ourWorkLocal)) return res.sendFile(ourWorkLocal);
-  const distPage = path.join(process.cwd(), "dist", "portfolio.html");
-  const localPage = path.join(process.cwd(), "portfolio.html");
-  if (fs.existsSync(distPage)) return res.sendFile(distPage);
-  if (fs.existsSync(localPage)) return res.sendFile(localPage);
-  return res.sendFile(path.join(process.cwd(), "index.html"));
+  return res.redirect(301, "/our-work.html");
 });
 
-app.get(["/our-work/:id", "/our-work/:id.html", "/case-studies/:id", "/case-studies/:id.html"], (req, res) => {
+app.get(["/case-studies/:id", "/case-studies/:id.html"], (req, res) => {
+  const rawId = req.params.id.replace(/\.html$/, "");
+  return res.redirect(301, `/our-work/${rawId}.html`);
+});
+
+app.get(["/our-work/:id", "/our-work/:id.html"], (req, res) => {
   const rawId = req.params.id.replace(/\.html$/, "");
   const candidates = [
     path.join(process.cwd(), "dist", "our-work", `${rawId}.html`),
     path.join(process.cwd(), "our-work", `${rawId}.html`),
-    path.join(process.cwd(), "dist", "case-studies", `${rawId}.html`),
-    path.join(process.cwd(), "case-studies", `${rawId}.html`),
   ];
   for (const c of candidates) {
     if (fs.existsSync(c)) return res.sendFile(c);
   }
-  return res.redirect("/our-work.html");
+  return res.redirect(302, "/our-work.html");
 });
 
 // Explicit direct route for main Services Hub page
