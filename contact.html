@@ -1204,7 +1204,7 @@
 
             let delivered = false;
 
-            // Channel 1: Hostinger Native Mail Engine (/contact.php)
+            // Channel 1: Primary - Hostinger Native Branded Mail Engine (/contact.php)
             try {
               const phpRes = await fetch("/contact.php", {
                 method: "POST",
@@ -1220,31 +1220,33 @@
               console.warn("PHP mail engine note:", err);
             }
 
-            // Channel 2: FormSubmit Cloud Mail Relay (guaranteed cloud delivery to inranktech@gmail.com)
-            try {
-              const fsRes = await fetch("https://formsubmit.co/ajax/inranktech@gmail.com", {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                  "Accept": "application/json"
-                },
-                body: JSON.stringify(formSubmitPayload)
-              });
-              const fsData = await fsRes.json();
-              if (fsData && (fsData.success === "true" || fsData.success === true)) {
-                delivered = true;
-                console.log("[INRANK] Dispatched via FormSubmit cloud relay");
+            // Channel 2: Fallback ONLY - FormSubmit Cloud Relay (triggers ONLY if /contact.php fails)
+            if (!delivered) {
+              try {
+                const fsRes = await fetch("https://formsubmit.co/ajax/inranktech@gmail.com", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                  },
+                  body: JSON.stringify(formSubmitPayload)
+                });
+                const fsData = await fsRes.json();
+                if (fsData && (fsData.success === "true" || fsData.success === true)) {
+                  delivered = true;
+                  console.log("[INRANK] Dispatched via FormSubmit fallback relay");
+                }
+              } catch (err) {
+                console.warn("FormSubmit cloud relay note:", err);
               }
-            } catch (err) {
-              console.warn("FormSubmit cloud relay note:", err);
             }
 
-            // Channel 3: Node.js Express server (/api/send-email) for persistent local logging
+            // Channel 3: Persistent local logging on Node.js (/api/send-email)
             try {
               await fetch("/api/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(payload)
+                body: JSON.stringify({ ...payload, skip_mail: true })
               });
             } catch (e) {}
 

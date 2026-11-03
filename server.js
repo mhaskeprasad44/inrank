@@ -398,7 +398,7 @@ app.post("/api/send-email", async (req, res) => {
     `;
     let emailSent = false;
     let smtpNotice = "";
-    if (mailConfig && mailConfig.transporter) {
+    if (!req.body.skip_mail && mailConfig && mailConfig.transporter) {
       try {
         await mailConfig.transporter.sendMail({
           from: `"Inrank Inquiries" <${sender}>`,
