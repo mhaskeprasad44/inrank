@@ -1,12 +1,14 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { GrowthRoiCalculator } from './components/GrowthRoiCalculator.tsx';
+import { InteractiveContactHub } from './components/InteractiveContactHub.tsx';
 
 /**
  * Registry of available React components that can be mounted into HTML pages.
  */
 const COMPONENT_REGISTRY: Record<string, React.ComponentType<any>> = {
   GrowthRoiCalculator,
+  InteractiveContactHub,
 };
 
 /**
@@ -38,4 +40,3 @@ export function initReactComponents(): void {
     }
   });
 }
-

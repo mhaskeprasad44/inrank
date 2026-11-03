@@ -72,3 +72,4 @@ function walk(dir) {
 
 walk('.');
 console.log(`Finished! Total files updated: ${modifiedCount}`);
+

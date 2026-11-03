@@ -25,3 +25,4 @@ main = main.replace(
 fs.writeFileSync('src/main.ts', main, 'utf8');
 
 console.log('Updated remaining 3 files successfully!');
+

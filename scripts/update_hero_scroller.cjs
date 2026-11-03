@@ -104,3 +104,4 @@ hp2Html = hp2Html.replace(/filter grayscale opacity-80 group-hover:grayscale-0 g
 
 fs.writeFileSync('homepage-2.html', hp2Html, 'utf8');
 console.log('Finished updating Hero Tech Stack and Client Logo scrollers!');
+
