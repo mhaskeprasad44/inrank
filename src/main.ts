@@ -1844,7 +1844,7 @@ function renderServiceDetailView(service: ServiceDetail) {
           <div class="max-w-3xl mx-auto">
             
             <div class="text-center space-y-3.5 mb-10">
-              <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-xs">
+              <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600">
                 <i data-lucide="help-circle" class="h-3.5 w-3.5"></i>
                 <span>Frequently Asked Questions</span>
               </div>
@@ -2044,7 +2044,7 @@ function renderAboutUsView() {
       <div class="relative max-w-7xl mx-auto px-5 sm:px-8 mb-12 sm:mb-16">
         <div class="grid lg:grid-cols-12 gap-10 items-center">
           <div class="lg:col-span-7 space-y-6">
-            <span class="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground shadow-sm">
+            <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-muted-foreground">
               <i data-lucide="info" class="h-3.5 w-3.5 text-primary"></i>
               Entity Profile
             </span>
@@ -2723,7 +2723,7 @@ function generateServiceCardHTML(service: ServiceDetail) {
       <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-emerald-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       <div class="space-y-4">
         <div class="flex items-center justify-between gap-2">
-          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wider bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+          <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-600">
             ${isAiService ? `<span class="h-3.5 w-3.5 inline-block shrink-0">${AI_SEARCH_ICON_SVG}</span>` : `<i data-lucide="${meta.icon}" class="h-3.5 w-3.5"></i>`}
             ${meta.pillar}
           </span>
@@ -2836,7 +2836,7 @@ function renderAllServicesPage() {
         
         <!-- Hero Title Section -->
         <div class="space-y-5 max-w-4xl">
-          <span class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 px-3.5 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-slate-700 dark:text-slate-300 shadow-sm">
+          <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-600">
             <i data-lucide="layers" class="h-3.5 w-3.5"></i>
             Proprietary 4-Pillar Architecture · 27 Specialized Disciplines
           </span>
@@ -2937,7 +2937,7 @@ function renderAllServicesPage() {
           <div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none"></div>
 
           <div class="relative space-y-6 max-w-4xl">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300">
+            <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600">
               <i data-lucide="briefcase" class="h-3.5 w-3.5"></i>
               Agency Partnership Engine
             </div>
@@ -3263,7 +3263,7 @@ function renderBlogHubView() {
         
         <!-- Hero Header section -->
         <div class="space-y-4 max-w-3xl mb-12 sm:mb-16">
-          <span class="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary shadow-sm">
+          <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-600">
             <i data-lucide="book-open" class="h-3.5 w-3.5"></i>
             Inrank Insights
           </span>
@@ -3786,7 +3786,7 @@ function renderBlogPostView(blog: BlogPost) {
               <div class="absolute -right-8 -top-8 w-28 h-28 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
               
               <div class="flex items-center justify-between border-b border-border/80 pb-3">
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary border border-primary/20">
+                <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-600">
                   
                   ${matchingService.title} Audit
                 </span>

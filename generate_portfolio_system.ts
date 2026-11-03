@@ -493,7 +493,7 @@ function generateMasterWorkHTML(): string {
             </div>
 
             <div class="absolute top-3.5 right-3.5 z-20 flex items-center">
-              <span class="inline-flex items-center px-3.5 sm:px-4 py-1.5 rounded-full bg-emerald-600 text-white text-xs sm:text-[13px] font-extrabold uppercase tracking-wide shadow-md">
+              <span class="inline-flex items-center px-3 py-1 rounded-md bg-emerald-600 text-white text-xs sm:text-[13px] font-bold uppercase tracking-wide shadow-xs">
                 PROJECT ${caseNum}
               </span>
             </div>
@@ -732,7 +732,7 @@ function generateMasterWorkHTML(): string {
       <!-- AUDIT CONVERSION CTA BANNER -->
       <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
         <div class="relative overflow-hidden rounded-3xl border border-primary/30 bg-gradient-to-br from-card via-card to-primary/5 p-8 sm:p-12 shadow-xl text-center space-y-6">
-          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200">
+          <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-600">
             <i data-lucide="zap" class="h-3.5 w-3.5 text-emerald-600"></i>
             <span>Ready for Growth?</span>
           </div>
@@ -1269,7 +1269,7 @@ function generateIndividualWorkHTML(
 
         <!-- 11. BOTTOM CONVERSION CTA BANNER -->
         <section class="rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-white via-white to-emerald-50/30 p-8 sm:p-14 shadow-xl text-center space-y-6">
-          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200">
+          <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-600">
             <i data-lucide="zap" class="h-4 w-4 text-emerald-600"></i>
             <span>Ready To Scale?</span>
           </div>
@@ -1364,7 +1364,7 @@ function generateCaseStudiesHubHTML(): string {
             </div>
 
             <div class="absolute top-3.5 right-3.5 z-20 flex items-center">
-              <span class="inline-flex items-center px-3.5 sm:px-4 py-1.5 rounded-full bg-emerald-600 text-white text-xs sm:text-[13px] font-extrabold uppercase tracking-wide shadow-md">
+              <span class="inline-flex items-center px-3 py-1 rounded-md bg-emerald-600 text-white text-xs sm:text-[13px] font-bold uppercase tracking-wide shadow-xs">
                 CASE STUDY ${String(idx + 1).padStart(2, '0')}
               </span>
             </div>
@@ -1531,7 +1531,7 @@ function generateCaseStudiesHubHTML(): string {
 
         <!-- BOTTOM CONVERSION CTA BANNER -->
         <div class="mt-16 rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-white via-white to-emerald-50/30 p-8 sm:p-14 shadow-xl text-center space-y-6">
-          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200">
+          <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-600">
             <i data-lucide="zap" class="h-4 w-4 text-emerald-600"></i>
             <span>Ready For Measurable Growth?</span>
           </div>
