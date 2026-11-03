@@ -827,7 +827,7 @@
                   </div>
                 </div>
 
-                <form id="consult-form" action="/api/send-email" method="POST" class="space-y-6">
+                <form id="consult-form" action="/contact.php" method="POST" class="space-y-6">
                   <!-- Native SMTP Form Handler -->
                   <!-- Honeypot anti-spam -->
                   <input type="text" name="_hp_company_field" style="display:none;" tabindex="-1" autocomplete="off" />
@@ -1188,44 +1188,70 @@
               source: "Contact Page (Email Submission)"
             };
 
+            const formSubmitPayload = {
+              _subject: "New Inrank Project Lead: " + name + " (" + (selectedServices || 'General Consultation') + ")",
+              _template: "table",
+              _captcha: "false",
+              "Client Name": name,
+              "Phone / WhatsApp": phone,
+              "Email Address": email || 'Not provided',
+              "Website": website || 'None',
+              "Services Needed": selectedServices || 'General Consultation',
+              "Budget Range": selectedBudget,
+              "Requirements / Message": message || 'None',
+              "Submitted From": "https://www.inranktech.com/contact.html"
+            };
+
             let delivered = false;
 
-            // Attempt 1: Node.js Gmail SMTP Server (/api/send-email)
+            // Channel 1: Hostinger Native Mail Engine (/contact.php)
             try {
-              const res = await fetch("/api/send-email", {
+              const phpRes = await fetch("/contact.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload)
               });
-              const data = await res.json();
-              if (data && data.success) {
+              const phpData = await phpRes.json();
+              if (phpData && (phpData.mailSent === true || phpData.success === true)) {
                 delivered = true;
+                console.log("[INRANK] Dispatched via /contact.php engine");
               }
-            } catch (e) {
-              console.warn("Node.js SMTP endpoint unreachable, trying backup handler...");
+            } catch (err) {
+              console.warn("PHP mail engine note:", err);
             }
 
-            // Attempt 2: PHP Mail Engine backup (/contact.php)
-            if (!delivered) {
-              try {
-                const phpRes = await fetch("/contact.php", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify(payload)
-                });
-                const phpData = await phpRes.json();
-                if (phpData && phpData.success) {
-                  delivered = true;
-                }
-              } catch (err) {
-                console.warn("Backup handler note:", err);
+            // Channel 2: FormSubmit Cloud Mail Relay (guaranteed cloud delivery to inranktech@gmail.com)
+            try {
+              const fsRes = await fetch("https://formsubmit.co/ajax/inranktech@gmail.com", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                  "Accept": "application/json"
+                },
+                body: JSON.stringify(formSubmitPayload)
+              });
+              const fsData = await fsRes.json();
+              if (fsData && (fsData.success === "true" || fsData.success === true)) {
+                delivered = true;
+                console.log("[INRANK] Dispatched via FormSubmit cloud relay");
               }
+            } catch (err) {
+              console.warn("FormSubmit cloud relay note:", err);
             }
+
+            // Channel 3: Node.js Express server (/api/send-email) for persistent local logging
+            try {
+              await fetch("/api/send-email", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
+              });
+            } catch (e) {}
 
             // Update UI State for Email Submission (No WhatsApp!)
             if (emailBtn) {
               emailBtn.disabled = false;
-              if (emailBtnText) emailBtnText.textContent = "Sent via Email ✓";
+              if (emailBtnText) emailBtnText.textContent = "Sent to inranktech@gmail.com ✓";
             }
 
             if (successBanner) {
@@ -1279,17 +1305,16 @@
               source: "Contact Page (WhatsApp Click)"
             };
 
+            fetch("/contact.php", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload)
+            }).catch(() => {});
             fetch("/api/send-email", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify(payload)
-            }).catch(() => {
-              fetch("/contact.php", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(payload)
-              }).catch(() => {});
-            });
+            }).catch(() => {});
           });
         }
 
