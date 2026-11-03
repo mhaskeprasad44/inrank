@@ -9,6 +9,7 @@ import compression from "compression";
 import nodemailer from "nodemailer";
 dotenv.config();
 var app = express();
+app.set("trust proxy", true);
 app.use((req, res, next) => {
   const host = req.headers.host;
   if (host === "inranktech.com") {

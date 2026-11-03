@@ -11,6 +11,9 @@ dotenv.config();
 
 const app = express();
 
+// Enable proxy trust for Cloudflare & Hostinger reverse proxies (extracts real client IP from CF-Connecting-IP / X-Forwarded-For)
+app.set("trust proxy", true);
+
 // Canonical Hostname Redirect: Force non-www (inranktech.com) -> www (www.inranktech.com)
 app.use((req, res, next) => {
   const host = req.headers.host;
