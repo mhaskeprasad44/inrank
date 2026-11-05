@@ -14,3 +14,6 @@ awrange_*
 awrange_pages/
 webvantik_*
 webvantik_pages/
+
+# Debugging and verification screenshots
+scripts/*.png

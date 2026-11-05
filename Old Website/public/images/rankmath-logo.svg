@@ -1,0 +1,1011 @@
+<!doctype html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+		<!-- begin Convert Experiences code -->
+	<script type="text/javascript" data-cfasync="false" src="https://cdn-4.convertexperiments.com/v1/js/10007679-10007902.js?environment=production"></script>
+	<!-- end Convert Experiences code -->
+	<script type="text/javascript" data-cfasync="false">
+	/* Convert consent bridge (Termly → Convert, "Option 1 / Step 2A"). */
+	( function () {
+		var categories = ["analytics"];
+		var state = window.rmConvertConsent = { granted: false, callbacks: [] };
+
+		/* Run `cb` once consent has been given (immediately if it already was). */
+		state.ready = function ( cb ) {
+			if ( state.granted ) {
+				cb();
+			} else {
+				state.callbacks.push( cb );
+			}
+		};
+
+		/*
+		 * Push revenue goals for a transaction — after consent, and at most once per
+		 * transaction per tab (a thank-you page refresh must not count it again).
+		 * Used by the thank-you page (rm_convert_revenue_script) and the one-click
+		 * upsell AJAX handler in main.js.
+		 */
+		state.pushRevenue = function ( transactionId, goals ) {
+			if ( ! transactionId || ! goals || ! goals.length ) {
+				return;
+			}
+			var key = 'rm_conv_tx_' + transactionId;
+			state.ready( function () {
+				try {
+					if ( window.sessionStorage.getItem( key ) ) {
+						return;
+					}
+					window.sessionStorage.setItem( key, '1' );
+				} catch ( e ) {}
+				window._conv_q = window._conv_q || [];
+				for ( var i = 0; i < goals.length; i++ ) {
+					window._conv_q.push( goals[ i ] );
+				}
+			} );
+		};
+
+		function grant() {
+			if ( state.granted ) {
+				return;
+			}
+			state.granted = true;
+			window._conv_q = window._conv_q || [];
+			window._conv_q.push( { what: 'consentGiven' } ); // Syntax per Convert's consent docs (Option 1, Step 2A).
+			while ( state.callbacks.length ) {
+				try { state.callbacks.shift()(); } catch ( e ) {}
+			}
+		}
+
+		function check( consent ) {
+			if ( ! consent ) {
+				return;
+			}
+			for ( var i = 0; i < categories.length; i++ ) {
+				if ( true === consent[ categories[ i ] ] ) {
+					grant();
+					return;
+				}
+			}
+		}
+
+		function readStored() {
+			try { check( window.Termly.getConsentState() ); } catch ( e ) {}
+		}
+
+		function bind() {
+			var termly = window.Termly;
+			if ( ! termly || 'function' !== typeof termly.on ) {
+				return false;
+			}
+			termly.on( 'initialized', readStored );
+			termly.on( 'consent', function ( data ) {
+				check( data && data.consentState ? data.consentState : null );
+				readStored();
+			} );
+			readStored();
+			return true;
+		}
+
+		/*
+		 * Convert only writes its `_conv_v` cookie after consent (Option 1), and uses it itself as
+		 * the "consent already given" marker (see Convert's consent docs, Step 1). A returning
+		 * visitor who has it has consented — don't wait for Termly, which WP Rocket delays until
+		 * the first interaction.
+		 */
+		function hasConvertCookie() {
+			try {
+				if ( window.convert && 'function' === typeof window.convert.getCookie ) {
+					return !! window.convert.getCookie( '_conv_v' );
+				}
+			} catch ( e ) {}
+			return /(?:^|;\s*)_conv_v=/.test( document.cookie );
+		}
+		if ( hasConvertCookie() ) {
+			grant();
+		}
+
+		/*
+		 * Termly loads after this script, and WP Rocket "Delay JS" holds it back until the
+		 * visitor's first interaction — so keep waiting for its API for the whole page view
+		 * (checked every 250ms, gives up after 30 minutes).
+		 */
+		if ( ! bind() ) {
+			var tries = 0;
+			var timer = setInterval( function () {
+				if ( bind() || ++tries > 7200 ) {
+					clearInterval( timer );
+				}
+			}, 250 );
+		}
+	}() );
+	</script>
+			<script type="text/javascript" src="https://app.termly.io/resource-blocker/a8be624f-646a-4940-9a04-d6a9b1de5c6c"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+	</script>
+			<!-- Google Tag Manager -->
+				<script>
+		(function () {
+			const isProd = window.location.hostname == 'rankmath.com';
+			const config = isProd
+			? { url: 'https://sst.rankmath.com/tm?origin=', auth: '8S4gdhFSM-b9qdgquohwCQ', env: '1' }
+			: {
+				url: 'https://sgtm-group-one-eu-prod-jqikvnoomq-ew.a.run.app/tm?origin=',
+				auth: 'kNCW7WH_GfP6S5S2N3AZ3Q',
+				env: '139',
+				};
+			(function (w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				config.url +
+				i +
+				dl +
+				`&gtm_auth=${config.auth}&gtm_preview=env-${config.env}&gtm_cookies_win=x`;
+			f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', window.location.origin);
+		})();
+		</script>
+		<!-- End Google Tag Manager -->
+		<!-- Reddit Pixel -->
+		<script>!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_ha0qfl1t15or');rdt('track', 'PageVisit');</script>
+		<!-- End Reddit Pixel -->
+			<!-- Hotjar Tracking Code -->
+	<script>
+		(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:6767536,hjsv:6};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
+		<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<meta name="dlm-version" content="5.1.4">
+<!-- Search Engine Optimization by Rank Math PRO - https://rankmath.com/ -->
+<title>Page Not Found &raquo; Rank Math</title>
+<meta name="robots" content="follow, noindex"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Page Not Found &raquo; Rank Math" />
+<meta property="og:site_name" content="Rank Math" />
+<meta property="article:publisher" content="https://www.facebook.com/RankMath" />
+<meta property="fb:app_id" content="773312216362768" />
+<meta property="og:image" content="https://rankmath.com/wp-content/uploads/2021/12/Rank-Math.png" />
+<meta property="og:image:secure_url" content="https://rankmath.com/wp-content/uploads/2021/12/Rank-Math.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Page Not Found &raquo; Rank Math" />
+<meta name="twitter:site" content="@RankMathSEO" />
+<meta name="twitter:image" content="https://rankmath.com/wp-content/uploads/2021/12/Rank-Math.png" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://rankmath.com/#organization","name":"Rank Math","url":"https://rankmath.com","sameAs":["https://www.facebook.com/RankMath","https://twitter.com/RankMathSEO"],"email":"support@rankmath.com","logo":{"@type":"ImageObject","@id":"https://rankmath.com/#logo","url":"https://rankmath.com/wp-content/uploads/2022/08/rank-math-logo-square.png","contentUrl":"https://rankmath.com/wp-content/uploads/2022/08/rank-math-logo-square.png","caption":"Rank Math","inLanguage":"en-US","width":"1849","height":"1849"}},{"@type":"WebSite","@id":"https://rankmath.com/#website","url":"https://rankmath.com","name":"Rank Math","publisher":{"@id":"https://rankmath.com/#organization"},"inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://rankmath.com","name":"Home"}}]},{"@type":"WebPage","@id":"#webpage","url":"","name":"Page Not Found &raquo; Rank Math","isPartOf":{"@id":"https://rankmath.com/#website"},"inLanguage":"en-US","breadcrumb":{"@id":"#breadcrumb"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Rank Math &raquo; Feed" href="https://rankmath.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Rank Math &raquo; Comments Feed" href="https://rankmath.com/comments/feed/" />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='trp-floater-language-switcher-style-css' href='https://rankmath.com/wp-content/plugins/translatepress-multilingual/assets/css/trp-floater-language-switcher.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='trp-language-switcher-style-css' href='https://rankmath.com/wp-content/plugins/translatepress-multilingual/assets/css/trp-language-switcher.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='brands-styles-css' href='https://rankmath.com/wp-content/plugins/woocommerce/assets/css/brands.css?ver=9.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='rm-style-css' href='https://rankmath.com/wp-content/themes/rm/style.css?ver=0.23' type='text/css' media='all' />
+<link rel='stylesheet' id='kb-css' href='https://rankmath.com/wp-content/themes/rm/css/kb.min.css?ver=0.23' type='text/css' media='all' />
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://rankmath.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<script type="text/javascript">
+            window._nslDOMReady = (function () {
+                const executedCallbacks = new Set();
+            
+                return function (callback) {
+                    /**
+                    * Third parties might dispatch DOMContentLoaded events, so we need to ensure that we only run our callback once!
+                    */
+                    if (executedCallbacks.has(callback)) return;
+            
+                    const wrappedCallback = function () {
+                        if (executedCallbacks.has(callback)) return;
+                        executedCallbacks.add(callback);
+                        callback();
+                    };
+            
+                    if (document.readyState === "complete" || document.readyState === "interactive") {
+                        wrappedCallback();
+                    } else {
+                        document.addEventListener("DOMContentLoaded", wrappedCallback);
+                    }
+                };
+            })();
+        </script><script type="text/javascript" src="https://rankmath.com/wp-content/plugins/wp-sentry-integration/public/wp-sentry-browser.min.js?ver=8.9.0" id="wp-sentry-browser-bundle-js"></script>
+<script type="text/javascript" id="wp-sentry-browser-js-extra">
+/* <![CDATA[ */
+var wp_sentry = {"environment":"production","release":"0.2.4","context":{"tags":{"wordpress":"6.8.10","language":"en-US"}},"dsn":"https:\/\/02efc90471b4fe80591376609686c5c0@o172969.ingest.us.sentry.io\/4508649752100864"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://rankmath.com/wp-content/plugins/wp-sentry-integration/public/wp-sentry-init.js?ver=8.9.0" id="wp-sentry-browser-js"></script>
+<script type="text/javascript" src="https://rankmath.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://rankmath.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.9.9.5" id="js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_password_show":"Show password","i18n_password_hide":"Hide password"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="jquery-cookie-js-extra">
+/* <![CDATA[ */
+var affwp_scripts = {"ajaxurl":"https:\/\/rankmath.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://rankmath.com/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.4.1-wc.9.9.5" id="jquery-cookie-js" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="affwp-tracking-js-extra">
+/* <![CDATA[ */
+var affwp_debug_vars = {"integrations":{"woocommerce":"WooCommerce"},"version":"2.29.1","currency":"USD","ref_cookie":"affwp_ref","visit_cookie":"affwp_ref_visit_id","campaign_cookie":"affwp_campaign"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://rankmath.com/wp-content/plugins/affiliate-wp/assets/js/tracking.min.js?ver=2.29.1" id="affwp-tracking-js"></script>
+<script type="text/javascript" src="https://rankmath.com/wp-content/plugins/translatepress-multilingual/assets/js/trp-frontend-compatibility.js?ver=3.0" id="trp-frontend-compatibility-js"></script>
+<script type="text/javascript" id="wc-settings-dep-in-header-js-after">
+/* <![CDATA[ */
+console.warn( "Scripts that have a dependency on [wc-settings, wc-blocks-checkout] must be loaded in the footer, automatewoo-marketing-optin-editor-script was registered to load in the header, but has been switched to load in the footer instead. See https://github.com/woocommerce/woocommerce-gutenberg-products-block/pull/5059" );
+/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="https://rankmath.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://rankmath.com/xmlrpc.php?rsd" />
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+				<script type="text/javascript">
+		var AFFWP = AFFWP || {};
+		AFFWP.referral_var = 'ref';
+		AFFWP.expiration = 60;
+		AFFWP.debug = 0;
+
+		AFFWP.cookie_domain = '.rankmath.com';
+
+		AFFWP.referral_credit_last = 1;
+		</script>
+<link rel="alternate" hreflang="en-US" href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"/>
+<link rel="alternate" hreflang="de-DE" href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"/>
+<link rel="alternate" hreflang="nl-NL" href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"/>
+<link rel="alternate" hreflang="fr-FR" href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"/>
+<link rel="alternate" hreflang="ja" href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"/>
+<link rel="alternate" hreflang="es-ES" href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"/>
+<link rel="alternate" hreflang="it-IT" href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"/>
+<link rel="alternate" hreflang="fi" href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"/>
+<link rel="alternate" hreflang="en" href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"/>
+<link rel="alternate" hreflang="de" href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"/>
+<link rel="alternate" hreflang="nl" href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"/>
+<link rel="alternate" hreflang="fr" href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"/>
+<link rel="alternate" hreflang="es" href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"/>
+<link rel="alternate" hreflang="it" href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"/>
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	<!-- Favicons -->
+	<link rel="shortcut icon" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-16.png">
+	<link rel="apple-touch-icon" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="https://rankmath.com/wp-content/themes/rm/images/favicons/favicon-144.png">
+	<meta name="msapplication-config" content="https://rankmath.com/wp-content/themes/rm/images/favicons/browserconfig.xml">
+	<!-- Favicons End -->
+</head>
+
+<body class="error404 wp-theme-rm theme-rm woocommerce-no-js translatepress-en_US content-sidebar-layout woocommerce-active" id="sitebody">
+
+
+<div id="page" class="site">
+	<header id="masthead" class="site-header  " itemscope itemtype="https://schema.org/WPHeader">
+		<a class="accessibility-toggle-link screen-reader-text" href="#" role="button" tabindex="0" aria-label="Turn On Accessible Colors Mode">Turn On Accessible Colors Mode</a>		<div class="container clear">
+			<div class="site-branding">
+								<div class="site-title"><a href="https://rankmath.com/" rel="home"><img src="https://rankmath.com/wp-content/themes/rm/images/rank-math-logo.svg" title="Swiss Army Knife of WordPress SEO" alt="Rank Math SEO Plugin" width="210" height="34"></a></div>
+									<span class="happy-user-count"><div class="user-count">4 Million+</div><div class="user-count-text">Happy Users</div></span>
+								</div><!-- .site-branding -->
+
+							<nav id="site-navigation" class="main-navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+					<span class="toggle-mobile-menu"><span></span></span>
+					<div id="primary-menu" class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-388333" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-388333"><a href="https://rankmath.com/wordpress/plugin/seo-suite/" title="Features of Rank Math SEO Plugin">SEO Plugin</a></li>
+<li id="menu-item-1824128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1824128"><a href="https://rankmath.com/ai/" aria-haspopup="true" aria-expanded="false">Rank Math AI</a>
+<ul class="sub-menu">
+	<li id="menu-item-1003350" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003350"><a href="https://rankmath.com/content-ai/">Content AI</a></li>
+	<li id="menu-item-1824131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1824131"><a href="https://rankmath.com/ai-link-genius/">AI Link Genius</a></li>
+	<li id="menu-item-1824130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1824130"><a href="https://rankmath.com/ai-visibility/">AI Visibility</a></li>
+</ul>
+</li>
+<li id="menu-item-641748" class="pricing sale menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-641748"><a href="https://rankmath.com/pricing/" title="Pricing Details" aria-haspopup="true" aria-expanded="false">Pricing</a>
+<ul class="sub-menu">
+	<li id="menu-item-1272084" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1272084"><a href="https://rankmath.com/pricing/">SEO Plugin Pricing</a></li>
+	<li id="menu-item-1824129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1824129"><a href="https://rankmath.com/ai/pricing/">Rank Math AI Pricing</a></li>
+	<li id="menu-item-1613977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1613977"><a href="https://rankmath.com/pricing/?show_bundle=1">Bundle Pricing</a></li>
+</ul>
+</li>
+<li id="menu-item-1091707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1091707"><a href="https://rankmath.com/tools/" aria-haspopup="true" aria-expanded="false">Tools</a>
+<ul class="sub-menu">
+	<li id="menu-item-1091708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1091708"><a href="https://rankmath.com/tools/meta-tag-analyzer/">Meta Tag Analyzer</a></li>
+	<li id="menu-item-1091709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1091709"><a rel="nofollow" href="https://rankmath.com/tools/seo-analyzer/">SEO Analyzer</a></li>
+	<li id="menu-item-1463882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1463882"><a href="https://rankmath.com/tools/robots-txt/">Robots.txt Tester</a></li>
+	<li id="menu-item-1784255" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1784255"><a href="https://rankmath.com/kb/mcp-tools/">MCP Tools</a></li>
+</ul>
+</li>
+<li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40"><a href="https://rankmath.com/kb/" title="Rank Math Support" aria-haspopup="true" aria-expanded="false">Help</a>
+<ul class="sub-menu">
+	<li id="menu-item-272" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-272"><a target="_blank" href="https://rankmath.com/support/" title="Support Ticket Forum" aria-label="Support Ticket Forum">Support</a></li>
+	<li id="menu-item-1686827" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1686827"><a href="https://rankmath.com/?action=click-seo-care-link&#038;position=footer-menu&#038;redirect=https://rankmath.com/?action=click-seo-care-link&#038;position=header-menu&#038;redirect=https://rankmath.com/services/">SEO Services</a></li>
+</ul>
+</li>
+<li id="menu-item-1599952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1599952"><a href="#" aria-haspopup="true" aria-expanded="false">Our Brands</a>
+<ul class="sub-menu">
+	<li id="menu-item-1599953" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1599953"><a target="_blank" href="https://rankmath.com/?our_brand_id=wp-rocket&#038;redirect=https://wp-rocket.me/">WP Rocket</a></li>
+	<li id="menu-item-1599955" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1599955"><a target="_blank" href="https://rankmath.com/?our_brand_id=imagify&#038;redirect=https://imagify.io/">Imagify</a></li>
+	<li id="menu-item-1599956" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1599956"><a target="_blank" href="https://rankmath.com/?our_brand_id=rocketcdn&#038;redirect=https://rocketcdn.me/">RocketCDN</a></li>
+	<li id="menu-item-1599957" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1599957"><a target="_blank" href="https://rankmath.com/?our_brand_id=termly&#038;redirect=https://termly.io/">Termly</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://rankmath.com/my-account/" title="Login to your account" rel="noopener nofollow" data-no-instant>My Account</a></li><li class="login-button-wrap"><a href="https://rankmath.com/thank-you/?download_id=rank-math" class="button login-button download-button" rel="noopener noreferrer nofollow" title="Download Rank Math Plugin for FREE"><span>Download</span></a></li></ul></div>				</nav><!-- #site-navigation -->
+					</div>
+			</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+
+<div class="container no-sidebar main clear">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+			<section class="error-404 not-found">
+				<header class="page-header">
+					<h1 class="page-title">Oops! That page can&rsquo;t be found.</h1>
+				</header><!-- .page-header -->
+
+				<article class="type-post post-1825449 post status-publish format-standard has-post-thumbnail category-blogging">
+					<div class="page-content">
+						<p>It looks like nothing was found at this location. Maybe try one of the links below or a search?</p>
+						
+		<div class="widget widget_recent_entries">
+		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+											<li>
+					<a href="https://rankmath.com/blog/free-vs-paid-wordpress-plugins/">Free vs Paid WordPress Plugins: Which Should You  Choose?</a>
+									</li>
+											<li>
+					<a href="https://rankmath.com/blog/wordpress-site-management-plugins/">7 Best WordPress Site Management Plugins</a>
+									</li>
+											<li>
+					<a href="https://rankmath.com/blog/white-label-seo-tools/">The Best White Label SEO Tools to Save Time and Win More Clients</a>
+									</li>
+											<li>
+					<a href="https://rankmath.com/blog/monsterinsights-vs-rank-math-analytics/">MonsterInsights vs Rank Math Analytics: Which WordPress Analytics Tool Is Right for You?</a>
+									</li>
+											<li>
+					<a href="https://rankmath.com/blog/seo-services/">7 Best Affordable SEO Services: Get More Traffic Without Breaking the Bank</a>
+									</li>
+					</ul>
+
+		</div>													<div id="hkb" class="hkb-template-search">
+								
+	<form class="hkb-site-search" method="get" action="https://rankmath.com/">
+		<label class="hkb-screen-reader-text" for="q">Search For</label>
+		<input class="hkb-site-search__field" type="text" value="" placeholder="Search the Knowledge Base" name="q" autocomplete="off">
+		<input type="hidden" name="ht-kb-search" value="1" />
+		<input type="hidden" name="lang" value=""/>
+		<button class="hkb-site-search__button" type="submit"><span>Search</span></button>       
+		<svg class="hkb-site-search__icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"/></svg>
+	</form>
+							</div>
+												</div><!-- .page-content -->
+				</article>
+			</section><!-- .error-404 -->
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+</div>
+
+
+	</div><!-- #content -->
+			<footer class="site-footer" itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="sitefooter">
+							<div class="container clear">
+											<div class="columns clear">
+							<div class="col col-1">
+								<section id="nav_menu-4" class="widget widget_nav_menu"><h4 class="widget-title">Recommended</h4><nav class="menu-recommended-widget-container"><ul id="menu-recommended-widget" class="menu"><li id="menu-item-388586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-388586"><a href="https://rankmath.com/reviews/" title="Glowing Praise from Our Users">Reviews</a></li>
+<li id="menu-item-956065" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-956065"><a href="https://rankmath.com/changelog/" title="All The Changes Happening To The Rank Math SEO Plugin">Changelog</a></li>
+<li id="menu-item-388588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-388588"><a href="https://rankmath.com/yoast-alternative/" title="A Detailed Comparison Between the Two SEO Plugins">Yoast Vs Rank Math</a></li>
+<li id="menu-item-388607" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-388607"><a href="https://rankmath.com/wordpress/plugin/instant-indexing/" title="WordPress Instant Indexing Plugin">Google Indexing API</a></li>
+<li id="menu-item-902801" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-902801"><a href="https://rankmath.com/google-updates/">Google Core Updates</a></li>
+</ul></nav></section>							</div>
+							<div class="col col-2">
+								<section id="custom_html-5" class="widget_text widget widget_custom_html"><h4 class="widget-title">Important</h4><div class="textwidget custom-html-widget"><ul>
+<li>
+<a href="https://rankmath.com/kb/how-to-setup/" title="Step by Step Guide On Setting up Rank Math Correctly">How to Setup Rank Math</a>
+</li>
+<li>
+<a href="https://rankmath.com/kb/score-100-in-tests/" title="Attain Maximum Score For Better Chances To Rank Higher">Score 100/100 In Rank Math</a>
+</li>
+<li>
+<a href="https://rankmath.com/kb/general-settings/" title="Learn all the General Settings of Rank Math">Rank Math General Settings</a>
+</li>
+<li>
+<a href="https://rankmath.com/kb/titles-and-meta/" title="Learn Essentials of Titles &amp; Meta in the Rank Math">'Titles and Meta' Settings</a>
+</li>
+<li>
+<a href="https://rankmath.com/kb/analytics/" title="Track Keywords, Traffic, Email reports &amp; much more.">Powerful Site Analytics</a>
+</li>
+<li>
+<a href="https://rankmath.com/kb/mcp-tools/" title="Connect Rank Math with AI Agents.">Rank Math MCP Tools</a>
+</li>
+</ul></div></section>							</div>
+							<div class="col col-3 last">
+								<section id="nav_menu-2" class="widget widget_nav_menu"><h4 class="widget-title">Company</h4><nav class="menu-company-widget-container"><ul id="menu-company-widget" class="menu"><li id="menu-item-575838" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-575838"><a href="https://rankmath.com/about/">About Us</a></li>
+<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a href="https://rankmath.com/contact/" title="Contact Rank Math Support Team">Contact</a></li>
+<li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="https://rankmath.com/privacy-policy/" title="Privacy Policy of Rank Math">Privacy Policy</a></li>
+<li id="menu-item-576054" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-576054"><a href="https://rankmath.com/hiring/" title="We are hiring at Rank Math!">We are hiring!</a></li>
+<li id="menu-item-1195297" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1195297"><a href="https://rankmath.com/blog/">SEO Blog – WordPress SEO Tips, Guides &amp; Tutorials | Rank Math</a></li>
+</ul></nav></section>							</div>
+							<div class="col col-4">
+								<section id="nav_menu-5" class="widget widget_nav_menu"><h4 class="widget-title">Our Brands</h4><nav class="menu-our-brands-container"><ul id="menu-our-brands" class="menu"><li id="menu-item-1262327" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1262327"><a target="_blank" href="https://rankmath.com/?our_brand_id=one-com&#038;redirect=https://www.one.com/en/wordpress-hosting">one.com</a></li>
+<li id="menu-item-1262324" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1262324"><a target="_blank" href="https://rankmath.com/?our_brand_id=wp-rocket&#038;redirect=https://wp-rocket.me">WP Rocket</a></li>
+<li id="menu-item-1262325" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1262325"><a target="_blank" href="https://rankmath.com/?our_brand_id=imagify&#038;redirect=https://imagify.io">Imagify</a></li>
+<li id="menu-item-1262326" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1262326"><a target="_blank" href="https://rankmath.com/?our_brand_id=rocketcdn&#038;redirect=https://rocketcdn.me">RocketCDN</a></li>
+<li id="menu-item-1275235" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1275235"><a target="_blank" href="https://rankmath.com/?our_brand_id=termly&#038;redirect=https://termly.io">Termly</a></li>
+<li id="menu-item-1562189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1562189"><a href="https://rankmath.com/?our_brand_id=shore&#038;redirect=https://www.shore.com/">Shore</a></li>
+<li id="menu-item-1562190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1562190"><a href="https://rankmath.com/?our_brand_id=socialpilot&#038;redirect=https://www.socialpilot.co/">SocialPilot</a></li>
+</ul></nav></section>							</div>
+							<div class="col col-5 last">
+								<section id="nav_menu-3" class="widget widget_nav_menu"><h4 class="widget-title">Useful</h4><nav class="menu-useful-widget-container"><ul id="menu-useful-widget" class="menu"><li id="menu-item-641753" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-641753"><a href="https://rankmath.com/tools/seo-analyzer/">SEO Analyzer</a></li>
+<li id="menu-item-1686829" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1686829"><a href="https://rankmath.com/?action=click-seo-care-link&#038;position=footer-menu&#038;redirect=https://rankmath.com/services/">SEO Services</a></li>
+<li id="menu-item-388556" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-388556"><a href="https://rankmath.com/compatibility/" title="List of 100% Compatible Products with Rank Math">Compatible Products</a></li>
+<li id="menu-item-388627" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-388627"><a href="https://rankmath.com/affiliates/" title="Earn 30% on every sale!!">Affiliate Program</a></li>
+<li id="menu-item-788094" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-788094"><a href="https://rankmath.com/free-vs-pro/" title="Rank Math Free vs. PRO">Free vs. PRO</a></li>
+<li id="menu-item-902811" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-902811"><a href="https://rankmath.com/wordpress/plugin/seo-suite/#comparison">Compare Alternatives</a></li>
+</ul></nav></section>							</div>
+						</div>
+									</div>
+			
+			<div class="copyrights clear">
+				<div class="container">
+					<ul class="social-profiles">
+						<li class="twitter"><a href="https://twitter.com/RankMathSEO" title="Twitter" rel="nofollow noopener" target="_blank" aria-label="Twitter"><i class="rm-icons icon-twitter" aria-hidden="true"></i></a></li>
+						<li class="facebook-group"><a href="https://www.facebook.com/groups/rankmathseopluginwordpress/" title="Facebook Group" rel="nofollow noopener" target="_blank" aria-label="Facebook Group"><i class="rm-icons icon-fb-group" aria-hidden="true"></i></a></li>
+						<li class="youtube"><a href="https://www.youtube.com/RankMath?view_as=subscriber&sub_confirmation=1" title="YouTube" rel="nofollow noopener" target="_blank" aria-label="YouTube"><i class="rm-icons icon-play" aria-hidden="true"></i></a></li>
+						<li class="facebook"><a href="https://www.facebook.com/RankMath/" title="Facebook" rel="nofollow noopener" target="_blank" aria-label="Facebook"><i class="rm-icons icon-facebook-alt" aria-hidden="true"></i></a></li>
+						<li class="linkedin"><a href="https://www.linkedin.com/company/rankmath/" title="LinkedIn" rel="nofollow noopener" target="_blank" aria-label="LinkedIn"><i class="rm-icons icon-linkedin" aria-hidden="true"></i></a></li>
+						<li class="tiktok"><a href="https://www.tiktok.com/@rankmathpro" title="TikTok" rel="nofollow noopener" target="_blank" aria-label="TikTok"><i class="rm-icons icon-tiktok" aria-hidden="true"></i></a></li>
+					</ul>
+					<div class="policies">
+						<a title="Terms of Service of Rank Math" href="https://rankmath.com/terms-and-conditions/">Terms of Service</a>
+						<span class="sep">|</span>
+						<a title="Cookie Policy of Rank Math" href="https://rankmath.com/cookie-policy/">Cookie Policy</a>
+						<span class="sep">|</span>
+						<a title="Plugin Usage Policy of Rank Math" href="https://rankmath.com/usage-tracking/">Plugin Usage Policy</a>
+					</div>
+					<div class="copyrights-text">
+						© Rank Math 2018-2026.
+						Made with <span class="heart" role="presentation"><i class="icon-heartbeat" aria-hidden="true"></i></span><span class="screen-reader-text">love</span> using WordPress.
+					</div>
+				</div><!-- .copyrights -->
+			</div>
+			<a id='scroll-to-top' class='animate' href='#' role='button' aria-label='Jump To Top' tabindex='0'><i class='rm-icons icon-right-arrow' aria-hidden='true'></i></a>
+		</footer><!-- #colophon -->
+		</div><!-- #page -->
+
+<template id="tp-language" data-tp-language="en_US"></template><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/rm\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+        <div id="trp-floater-ls" onclick="" data-no-translation class="trp-language-switcher-container trp-floater-ls-names trp-bottom-right trp-color-dark full-names" >
+            <div id="trp-floater-ls-current-language" class="">
+
+                <a href="#" class="trp-floater-ls-disabled-language trp-ls-disabled-language" onclick="event.preventDefault()">
+					🇺🇸 English				</a>
+
+            </div>
+            <div id="trp-floater-ls-language-list" class="" >
+
+                <div class="trp-language-wrap trp-language-wrap-bottom">                    <a href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"
+                         title="🇩🇪 Deutsch">
+          						  🇩🇪 Deutsch					          </a>
+                                    <a href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"
+                         title="🇳🇱 Nederlands">
+          						  🇳🇱 Nederlands					          </a>
+                                    <a href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"
+                         title="🇫🇷 Français">
+          						  🇫🇷 Français					          </a>
+                                    <a href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"
+                         title="🇯🇵 日本語">
+          						  🇯🇵 日本語					          </a>
+                                    <a href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"
+                         title="🇪🇸 Español">
+          						  🇪🇸 Español					          </a>
+                                    <a href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"
+                         title="🇮🇹 Italiano">
+          						  🇮🇹 Italiano					          </a>
+                                    <a href="https://rankmath.com/wp-content/uploads/2019/08/Rank-Math-Logo.svg"
+                         title="🇫🇮 Suomi">
+          						  🇫🇮 Suomi					          </a>
+                <a href="#" class="trp-floater-ls-disabled-language trp-ls-disabled-language" onclick="event.preventDefault()">🇺🇸 English</a></div>            </div>
+        </div>
+
+    	<script type='text/javascript'>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script type="text/javascript" id="dlm-xhr-js-extra">
+/* <![CDATA[ */
+var dlmXHRtranslations = {"error":"An error occurred while trying to download the file. Please try again.","not_found":"Download does not exist.","no_file_path":"No file path defined.","no_file_paths":"No file paths defined.","filetype":"Download is not allowed for this file type.","file_access_denied":"Access denied to this file.","access_denied":"Access denied. You do not have permission to download this file.","security_error":"Something is wrong with the file path.","file_not_found":"File not found."};
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/site-checkout\/|\/site-checkout-cai\/|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/my-account\/??(.*)|\/de\/my-account\/??(.*)|\/nl\/my-account\/??(.*)|\/fr\/my-account\/??(.*)|\/ja\/my-account\/??(.*)|\/es\/my-account\/??(.*)|\/it\/my-account\/??(.*)|\/fi\/my-account\/??(.*)|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/rankmath.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-extra">
+/* <![CDATA[ */
+var rocket_lazyload_css_data = {"threshold":"300"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-after">
+/* <![CDATA[ */
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+/* ]]> */
+</script>
+<script type="text/javascript" id="rm-main-async-js-extra">
+/* <![CDATA[ */
+var rm_ajax = {"url":"https:\/\/rankmath.com\/wp-admin\/admin-ajax.php","rm_download_nonce":"22bba234ab","checkout_pro_nonce":"d7abcb17b3","rm_ai_nonce":"f7662b436c","rm_ai_link_genius_nonce":"5fea9e7d24","rm_ai_visibility_nonce":"a5ba2641df","rm_ai_renewal_nonce":"530ece0cc3","rm_upsell_nonce":"78bc5dcfb3","recaptcha_key":"6LfyQBocAAAAAA4aw5_V7D7ASmqCiyV-b7TT-cgV"};
+/* ]]> */
+</script>
+<script async type="text/javascript" src="https://rankmath.com/wp-content/themes/rm/js/main.min.js?ver=0.23" id="rm-main-async-js"></script>
+<script async type="text/javascript" id="rm-main-async-js-after">
+/* <![CDATA[ */
+window.rmDetectedCurrency = "EUR";
+document.addEventListener( 'DOMContentLoaded', function () {
+	document.dispatchEvent( new CustomEvent( 'rmCurrencyReady', { detail: { currency: "EUR" } } ) );
+} );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://rankmath.com/wp-content/themes/rm/js/currency-prices.min.js?ver=0.23" id="rm-currency-prices-js"></script>
+<script type="text/javascript" src="https://rankmath.com/wp-content/themes/rm/js/jquery.countdown.js?ver=0.23" id="rm-countdown-js"></script>
+<script type="text/javascript">(function (undefined) {let scriptOptions={"_localizedStrings":{"redirect_overlay_title":"Hold On","redirect_overlay_text":"You are being redirected to another page,<br>it may take a few seconds.","webview_notification_text":"The selected provider doesn't support embedded browsers!"},"_targetWindow":"prefer-popup","_redirectOverlay":"overlay-with-spinner-and-message","_unsupportedWebviewBehavior":""};
+/**
+ * Used when Cross-Origin-Opener-Policy blocked the access to the opener. We can't have a reference of the opened windows, so we should attempt to refresh only the windows that has opened popups.
+ */
+window._nslHasOpenedPopup = false;
+window._nslWebViewNoticeElement = null;
+
+window.NSLPopup = function (url, title, w, h) {
+
+    /**
+     * Cross-Origin-Opener-Policy blocked the access to the opener
+     */
+    if (typeof BroadcastChannel === "function") {
+        const _nslLoginBroadCastChannel = new BroadcastChannel('nsl_login_broadcast_channel');
+        _nslLoginBroadCastChannel.onmessage = (event) => {
+            if (window?._nslHasOpenedPopup && event.data?.action === 'redirect') {
+                window._nslHasOpenedPopup = false;
+
+                const url = event.data?.href;
+                _nslLoginBroadCastChannel.close();
+                if (typeof window.nslRedirect === 'function') {
+                    window.nslRedirect(url);
+                } else {
+                    window.opener.location = url;
+                }
+            }
+        };
+    }
+
+    const userAgent = navigator.userAgent,
+        mobile = function () {
+            return /\b(iPhone|iP[ao]d)/.test(userAgent) ||
+                /\b(iP[ao]d)/.test(userAgent) ||
+                /Android/i.test(userAgent) ||
+                /Mobile/i.test(userAgent);
+        },
+        screenX = window.screenX !== undefined ? window.screenX : window.screenLeft,
+        screenY = window.screenY !== undefined ? window.screenY : window.screenTop,
+        outerWidth = window.outerWidth !== undefined ? window.outerWidth : document.documentElement.clientWidth,
+        outerHeight = window.outerHeight !== undefined ? window.outerHeight : document.documentElement.clientHeight - 22,
+        targetWidth = mobile() ? null : w,
+        targetHeight = mobile() ? null : h,
+        left = parseInt(screenX + (outerWidth - targetWidth) / 2, 10),
+        right = parseInt(screenY + (outerHeight - targetHeight) / 2.5, 10),
+        features = [];
+    if (targetWidth !== null) {
+        features.push('width=' + targetWidth);
+    }
+    if (targetHeight !== null) {
+        features.push('height=' + targetHeight);
+    }
+    features.push('left=' + left);
+    features.push('top=' + right);
+    features.push('scrollbars=1');
+
+    const newWindow = window.open(url, title, features.join(','));
+
+    if (window.focus) {
+        newWindow.focus();
+    }
+
+    window._nslHasOpenedPopup = true;
+
+    return newWindow;
+};
+
+let isWebView = null;
+
+function checkWebView() {
+    if (isWebView === null) {
+        function _detectOS(ua) {
+            if (/Android/.test(ua)) {
+                return "Android";
+            } else if (/iPhone|iPad|iPod/.test(ua)) {
+                return "iOS";
+            } else if (/Windows/.test(ua)) {
+                return "Windows";
+            } else if (/Mac OS X/.test(ua)) {
+                return "Mac";
+            } else if (/CrOS/.test(ua)) {
+                return "Chrome OS";
+            } else if (/Firefox/.test(ua)) {
+                return "Firefox OS";
+            }
+            return "";
+        }
+
+        function _detectBrowser(ua) {
+            let android = /Android/.test(ua);
+
+            if (/Opera Mini/.test(ua) || / OPR/.test(ua) || / OPT/.test(ua)) {
+                return "Opera";
+            } else if (/CriOS/.test(ua)) {
+                return "Chrome for iOS";
+            } else if (/Edge/.test(ua)) {
+                return "Edge";
+            } else if (android && /Silk\//.test(ua)) {
+                return "Silk";
+            } else if (/Chrome/.test(ua)) {
+                return "Chrome";
+            } else if (/Firefox/.test(ua)) {
+                return "Firefox";
+            } else if (android) {
+                return "AOSP";
+            } else if (/MSIE|Trident/.test(ua)) {
+                return "IE";
+            } else if (/Safari\//.test(ua)) {
+                return "Safari";
+            } else if (/AppleWebKit/.test(ua)) {
+                return "WebKit";
+            }
+            return "";
+        }
+
+        function _detectBrowserVersion(ua, browser) {
+            if (browser === "Opera") {
+                return /Opera Mini/.test(ua) ? _getVersion(ua, "Opera Mini/") :
+                    / OPR/.test(ua) ? _getVersion(ua, " OPR/") :
+                        _getVersion(ua, " OPT/");
+            } else if (browser === "Chrome for iOS") {
+                return _getVersion(ua, "CriOS/");
+            } else if (browser === "Edge") {
+                return _getVersion(ua, "Edge/");
+            } else if (browser === "Chrome") {
+                return _getVersion(ua, "Chrome/");
+            } else if (browser === "Firefox") {
+                return _getVersion(ua, "Firefox/");
+            } else if (browser === "Silk") {
+                return _getVersion(ua, "Silk/");
+            } else if (browser === "AOSP") {
+                return _getVersion(ua, "Version/");
+            } else if (browser === "IE") {
+                return /IEMobile/.test(ua) ? _getVersion(ua, "IEMobile/") :
+                    /MSIE/.test(ua) ? _getVersion(ua, "MSIE ")
+                        :
+                        _getVersion(ua, "rv:");
+            } else if (browser === "Safari") {
+                return _getVersion(ua, "Version/");
+            } else if (browser === "WebKit") {
+                return _getVersion(ua, "WebKit/");
+            }
+            return "0.0.0";
+        }
+
+        function _getVersion(ua, token) {
+            try {
+                return _normalizeSemverString(ua.split(token)[1].trim().split(/[^\w\.]/)[0]);
+            } catch (o_O) {
+            }
+            return "0.0.0";
+        }
+
+        function _normalizeSemverString(version) {
+            const ary = version.split(/[\._]/);
+            return (parseInt(ary[0], 10) || 0) + "." +
+                (parseInt(ary[1], 10) || 0) + "." +
+                (parseInt(ary[2], 10) || 0);
+        }
+
+        function _isWebView(ua, os, browser, version, options) {
+            switch (os + browser) {
+                case "iOSSafari":
+                    return false;
+                case "iOSWebKit":
+                    return _isWebView_iOS(options);
+                case "AndroidAOSP":
+                    return false;
+                case "AndroidChrome":
+                    return parseFloat(version) >= 42 ? /; wv/.test(ua) : /\d{2}\.0\.0/.test(version) ? true : _isWebView_Android(options);
+            }
+            return false;
+        }
+
+        function _isWebView_iOS(options) {
+            const document = (window["document"] || {});
+
+            if ("WEB_VIEW" in options) {
+                return options["WEB_VIEW"];
+            }
+            return !("fullscreenEnabled" in document || "webkitFullscreenEnabled" in document || false);
+        }
+
+        function _isWebView_Android(options) {
+            if ("WEB_VIEW" in options) {
+                return options["WEB_VIEW"];
+            }
+            return !("requestFileSystem" in window || "webkitRequestFileSystem" in window || false);
+        }
+
+        const options = {},
+            nav = window.navigator || {},
+            ua = nav.userAgent || "",
+            os = _detectOS(ua),
+            browser = _detectBrowser(ua),
+            browserVersion = _detectBrowserVersion(ua, browser);
+
+        isWebView = _isWebView(ua, os, browser, browserVersion, options);
+    }
+
+    return isWebView;
+}
+
+function isAllowedWebViewForUserAgent(provider) {
+    const facebookAllowedWebViews = [
+        'Instagram',
+        'FBAV',
+        'FBAN'
+    ];
+    let whitelist = [];
+
+    if (provider && provider === 'facebook') {
+        whitelist = facebookAllowedWebViews;
+    }
+
+    const nav = window.navigator || {},
+        ua = nav.userAgent || "";
+
+    if (whitelist.length && ua.match(new RegExp(whitelist.join('|')))) {
+        return true;
+    }
+
+    return false;
+}
+
+function disableButtonInWebView(providerButtonElement) {
+    if (providerButtonElement) {
+        providerButtonElement.classList.add('nsl-disabled-provider');
+        providerButtonElement.setAttribute('href', '#');
+
+        providerButtonElement.addEventListener('pointerdown', (e) => {
+            if (!window._nslWebViewNoticeElement) {
+                window._nslWebViewNoticeElement = document.createElement('div');
+                window._nslWebViewNoticeElement.id = "nsl-notices-fallback";
+                window._nslWebViewNoticeElement.addEventListener('pointerdown', function (e) {
+                    this.parentNode.removeChild(this);
+                    window._nslWebViewNoticeElement = null;
+                });
+                const webviewNoticeHTML = '<div class="error"><p>' + scriptOptions._localizedStrings.webview_notification_text + '</p></div>';
+
+                window._nslWebViewNoticeElement.insertAdjacentHTML("afterbegin", webviewNoticeHTML);
+                document.body.appendChild(window._nslWebViewNoticeElement);
+            }
+        });
+    }
+
+}
+
+window._nslDOMReady(function () {
+
+    window.nslRedirect = function (url) {
+        if (scriptOptions._redirectOverlay) {
+            const overlay = document.createElement('div');
+            overlay.id = "nsl-redirect-overlay";
+            let overlayHTML = '';
+            const overlayContainer = "<div id='nsl-redirect-overlay-container'>",
+                overlayContainerClose = "</div>",
+                overlaySpinner = "<div id='nsl-redirect-overlay-spinner'></div>",
+                overlayTitle = "<p id='nsl-redirect-overlay-title'>" + scriptOptions._localizedStrings.redirect_overlay_title + "</p>",
+                overlayText = "<p id='nsl-redirect-overlay-text'>" + scriptOptions._localizedStrings.redirect_overlay_text + "</p>";
+
+            switch (scriptOptions._redirectOverlay) {
+                case "overlay-only":
+                    break;
+                case "overlay-with-spinner":
+                    overlayHTML = overlayContainer + overlaySpinner + overlayContainerClose;
+                    break;
+                default:
+                    overlayHTML = overlayContainer + overlaySpinner + overlayTitle + overlayText + overlayContainerClose;
+                    break;
+            }
+
+            overlay.insertAdjacentHTML("afterbegin", overlayHTML);
+            document.body.appendChild(overlay);
+        }
+
+        window.location = url;
+    };
+
+    let targetWindow = scriptOptions._targetWindow || 'prefer-popup',
+        lastPopup = false;
+
+
+    document.addEventListener('click', function (e) {
+        if (e.target) {
+            const buttonLinkElement = e.target.closest('a[data-plugin="nsl"][data-action="connect"]') || e.target.closest('a[data-plugin="nsl"][data-action="link"]');
+            if (buttonLinkElement) {
+                if (lastPopup && !lastPopup.closed) {
+                    e.preventDefault();
+                    lastPopup.focus();
+                } else {
+
+                    let href = buttonLinkElement.href,
+                        success = false;
+                    if (href.indexOf('?') !== -1) {
+                        href += '&';
+                    } else {
+                        href += '?';
+                    }
+
+                    const redirectTo = buttonLinkElement.dataset.redirect;
+                    if (redirectTo === 'current') {
+                        href += 'redirect=' + encodeURIComponent(window.location.href) + '&';
+                    } else if (redirectTo && redirectTo !== '') {
+                        href += 'redirect=' + encodeURIComponent(redirectTo) + '&';
+                    }
+
+                    if (targetWindow !== 'prefer-same-window' && checkWebView()) {
+                        targetWindow = 'prefer-same-window';
+                    }
+
+                    if (targetWindow === 'prefer-popup') {
+                        lastPopup = NSLPopup(href + 'display=popup', 'nsl-social-connect', buttonLinkElement.dataset.popupwidth, buttonLinkElement.dataset.popupheight);
+                        if (lastPopup) {
+                            success = true;
+                            e.preventDefault();
+                        }
+                    } else if (targetWindow === 'prefer-new-tab') {
+                        const newTab = window.open(href + 'display=popup', '_blank');
+                        if (newTab) {
+                            if (window.focus) {
+                                newTab.focus();
+                            }
+                            success = true;
+                            window._nslHasOpenedPopup = true;
+                            e.preventDefault();
+                        }
+                    }
+
+                    if (!success) {
+                        window.location = href;
+                        e.preventDefault();
+                    }
+                }
+            }
+        }
+    });
+
+    let buttonCountChanged = false;
+
+    const googleLoginButtons = document.querySelectorAll(' a[data-plugin="nsl"][data-provider="google"]');
+    if (googleLoginButtons.length && checkWebView()) {
+        googleLoginButtons.forEach(function (googleLoginButton) {
+            if (scriptOptions._unsupportedWebviewBehavior === 'disable-button') {
+                disableButtonInWebView(googleLoginButton);
+            } else {
+                googleLoginButton.remove();
+                buttonCountChanged = true;
+            }
+        });
+    }
+
+    const facebookLoginButtons = document.querySelectorAll(' a[data-plugin="nsl"][data-provider="facebook"]');
+    if (facebookLoginButtons.length && checkWebView() && /Android/.test(window.navigator.userAgent) && !isAllowedWebViewForUserAgent('facebook')) {
+        facebookLoginButtons.forEach(function (facebookLoginButton) {
+            if (scriptOptions._unsupportedWebviewBehavior === 'disable-button') {
+                disableButtonInWebView(facebookLoginButton);
+            } else {
+                facebookLoginButton.remove();
+                buttonCountChanged = true;
+            }
+        });
+    }
+
+    const separators = document.querySelectorAll('div.nsl-separator');
+    if (buttonCountChanged && separators.length) {
+        separators.forEach(function (separator) {
+            const separatorParentNode = separator.parentNode;
+            if (separatorParentNode) {
+                const separatorButtonContainer = separatorParentNode.querySelector('div.nsl-container-buttons');
+                if (separatorButtonContainer && !separatorButtonContainer.hasChildNodes()) {
+                    separator.remove();
+                }
+            }
+        })
+    }
+});})();</script>		<script type="text/javascript">
+			window._nslDOMReady(function () {
+				var buttonLoginLinks = document.querySelectorAll('a[data-plugin="nsl"]');
+				buttonLoginLinks.forEach(function (buttonLoginLink) {
+					var href = buttonLoginLink.href;
+					if (href.indexOf('?') !== -1) {
+						href += '&';
+					} else {
+						href += '?';
+					}
+					var isLogin = buttonLoginLink.dataset.rm_is_login;
+					if (isLogin && isLogin !== '') {
+						href += 'rm_is_login=yes';
+					} else {
+						href += 'rm_is_login=no';
+					}
+					buttonLoginLink.setAttribute("href", href);
+				});
+			});
+		</script>
+		<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://rankmath.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="Play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script></body>
+</html>

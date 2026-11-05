@@ -1,0 +1,92 @@
+.prism-hero .eco-title{max-width:13ch;font-size:clamp(3rem,5.5vw,5.6rem);line-height:1.02}
+.prism-hero .eco-hero-grid{align-items:center;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(2rem,5vw,5rem)}
+.prism-hero .eco-kicker{color:var(--eco-signal)}
+.prism-actions{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem 2rem;margin-top:2rem}
+.prism-button{display:inline-flex;justify-content:space-between;align-items:center;gap:1.5rem;background:#fff;color:var(--eco-ink);padding:1.1rem 1.4rem;border-radius:8px;font-size:.92rem;font-weight:650;min-height:52px;line-height:1.4}
+.prism-button:hover{background:#f1efe9}
+.prism-button span{color:var(--eco-terra);font-size:1.2rem}
+.prism-text-link{display:inline-flex;align-items:center;min-height:48px;text-decoration:underline;text-underline-offset:.4em;font-size:.9rem;line-height:1.5}
+.prism-availability{font-size:.76rem;line-height:1.6;color:#b4bfca;margin-top:1.3rem}
+.prism-decision{border-top:2px solid var(--eco-signal);padding:2.5rem 0 0}
+.prism-overline{color:#b4bfca;text-transform:uppercase;letter-spacing:.14em;font-size:.7rem}
+.prism-decision h2{font-weight:450;font-size:clamp(2rem,3.5vw,3.7rem);line-height:1.1;letter-spacing:-.04em;margin:1.8rem 0}
+.prism-decision h2 em{color:var(--eco-signal);font-style:normal}
+.prism-decision ol{list-style:none;padding:0;margin:0}
+.prism-decision li{display:flex;gap:1.5rem;border-top:1px solid #324153;padding:1.5rem 0}
+.prism-decision li>span{color:var(--eco-signal);font-size:.7rem;padding-top:.2rem}
+.prism-decision strong{font-weight:550;font-size:1.1rem}
+.prism-decision li p{color:#b4bfca;font-size:.9rem;margin:.5rem 0 0;line-height:1.6}
+.prism-diagram-note{font-size:.7rem;color:#b4bfca}
+.prism-outcomes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3rem;margin-top:4rem}
+.prism-outcomes article{border-top:2px solid var(--eco-terra);padding-top:1.4rem}
+.prism-outcomes span{font-size:.75rem;color:var(--eco-terra)}
+.prism-outcomes h3{font-size:1.6rem;font-weight:500;letter-spacing:-.03em;line-height:1.2}
+.prism-outcomes p{color:#5f6873;line-height:1.7}
+.prism-workflows{margin-top:3rem;border-top:1px solid var(--eco-line)}
+.prism-workflows details{border-bottom:1px solid var(--eco-line)}
+.prism-workflows summary{display:flex;align-items:center;gap:1.5rem;cursor:pointer;padding:1.7rem 0;list-style:none}
+.prism-workflows summary::-webkit-details-marker{display:none}
+.prism-workflows h3{font-size:clamp(1.25rem,2.2vw,2rem);line-height:1.25;letter-spacing:-.025em;font-weight:500;margin:0;flex:1}
+.prism-step{color:var(--eco-terra);font-size:.75rem}
+.prism-expand{font-size:1.6rem;color:var(--eco-terra)}
+.prism-workflows details[open] .prism-expand{transform:rotate(45deg)}
+.prism-workflow-body{display:grid;grid-template-columns:1.2fr .8fr;gap:4rem;padding:1rem 0 2.5rem 2.7rem}
+.prism-workflow-body p{color:#5f6873;line-height:1.7;margin-top:0}
+.prism-workflow-body .eco-kicker{color:var(--eco-terra)}
+.prism-decision-line{border-left:2px solid var(--eco-terra);padding-left:1rem}
+.prism-decision-line strong{display:block;color:var(--eco-ink);margin-bottom:.3rem}
+.prism-process{list-style:none;padding:2rem;margin:0;background:var(--eco-ink);color:#fff;align-self:start}
+.prism-process li{font-size:1.2rem;line-height:1.4}
+.prism-process li+li::before{content:'↓';display:block;color:var(--eco-signal);margin:.6rem 0}
+.prism-inline-cta{margin-top:2rem;display:flex;justify-content:space-between;align-items:center;gap:2rem}
+.prism-inline-cta p{font-size:1.1rem}
+.prism-page .eco-dark .principle p{color:#aab7c5}
+.prism-page .eco-dark .principle-list,.prism-page .eco-dark .principle{border-color:#324153}
+.prism-page .eco-dark .principle::before,.prism-page .eco-dark .eco-kicker{color:var(--eco-signal)}
+.prism-boundary{display:grid;grid-template-columns:1fr 1fr;margin-top:3rem;border-top:1px solid var(--eco-line)}
+.prism-boundary>div{padding:2rem 2rem 1rem 0}
+.prism-boundary span{color:var(--eco-terra);font-size:.85rem}
+.prism-boundary h3{font-size:1.5rem;font-weight:500;line-height:1.3}
+.prism-boundary p,.prism-boundary-note{color:#5f6873;line-height:1.7}
+.prism-boundary-note{font-size:.85rem;border-top:1px solid var(--eco-line);padding-top:1.3rem}
+.prism-close{background:var(--eco-ink);color:#fff}
+.prism-close .eco-kicker{color:var(--eco-signal)}
+.prism-close .eco-heading{max-width:24ch}
+.prism-close .eco-copy{color:#c6ced7;margin:2rem 0}
+.prism-page a:focus-visible,.prism-page summary:focus-visible{outline:3px solid var(--eco-terra);outline-offset:5px}
+@media(max-width:900px){.prism-hero .eco-hero-grid{grid-template-columns:1fr}
+.prism-decision{max-width:40rem}
+.prism-outcomes{gap:1.5rem}
+.prism-workflow-body{gap:2rem;padding-left:0}}
+@media(max-width:760px){.prism-outcomes,.prism-workflow-body,.prism-boundary{grid-template-columns:1fr}
+.prism-outcomes{margin-top:2.5rem}
+.prism-outcomes h3{margin:.8rem 0}
+.prism-inline-cta{display:block}
+.prism-workflows summary{gap:.8rem}
+.prism-button{width:100%}
+.prism-close .eco-heading br{display:none}}
+
+.prism-screens{background:#fff}.prism-screen-groups{margin-top:3rem;border-top:1px solid var(--eco-line)}.prism-screen-groups>details{border-bottom:1px solid var(--eco-line)}.prism-screen-groups>details>summary{display:flex;align-items:center;gap:1.5rem;list-style:none;cursor:pointer;padding:1.7rem 0}.prism-screen-groups>details>summary::-webkit-details-marker{display:none}.prism-screen-groups summary h3{flex:1;font-size:clamp(1.15rem,2vw,1.7rem);line-height:1.3;font-weight:500;margin:0}.prism-screen-groups summary>span{color:var(--eco-terra);font-size:.85rem}.prism-screen-groups summary>span:last-child{font-size:1.6rem}.prism-screen-groups>details[open]>summary>span:last-child{transform:rotate(45deg)}.prism-screen-list{max-width:1100px;margin:0 auto}.prism-screen{padding:2rem 0 3.5rem}.prism-screen+.prism-screen{border-top:1px solid var(--eco-line)}.prism-screen-heading{max-width:48rem;margin-bottom:1.5rem}.prism-screen-heading h4{font-size:clamp(1.4rem,2.3vw,2rem);font-weight:500;letter-spacing:-.03em;margin:.5rem 0}.prism-screen-heading p:not(.eco-kicker){color:#5f6873;line-height:1.7}.prism-screen figure{margin:0}.prism-screen figure>a{display:block;border:1px solid var(--eco-line)}.prism-screen img{display:block;width:100%;height:auto}.prism-screen figcaption{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1rem;color:#5f6873;font-size:.78rem;margin-top:.5rem}.prism-screen figcaption a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:.3em;color:var(--eco-ink)}.prism-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}@media(max-width:760px){.prism-screen-groups>details>summary{gap:.75rem}.prism-screen{padding:1.5rem 0 2rem}}
+
+/* Fit the complete screenshot to the page; the linked original retains every pixel. */
+.prism-native-image{width:100%;min-width:0;border:1px solid var(--eco-line);box-sizing:border-box}
+.prism-native-image a{display:block;width:100%;min-width:0}
+.prism-native-image img{display:block;width:100%;max-width:100%;height:auto}
+
+/* Prevent intrinsic image sizes from expanding an open walkthrough chapter. */
+.prism-screen-groups, .prism-screen-groups>details, .prism-screen-list,
+.prism-screen, .prism-screen figure, .prism-screen figure>a{min-width:0;max-width:100%;box-sizing:border-box}
+.prism-screen img{max-width:100%;height:auto}
+.prism-screen figure a{cursor:zoom-in}
+.prism-screen-groups summary h3{min-width:0;overflow-wrap:anywhere}
+
+/* Compact desktop previews keep the explanation and product evidence together. */
+@media(min-width:1000px){
+ .prism-screen{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:center;gap:clamp(2rem,4vw,4rem);padding:2.5rem 0}
+ .prism-screen-heading{margin:0;max-width:28rem}
+ .prism-screen-heading h4{font-size:1.6rem}
+ .prism-screen figure{width:100%;max-width:620px;justify-self:end}
+ .prism-screen figure>a,.prism-native-image{background:#f5f6f7;padding:12px;border-radius:12px;box-shadow:0 6px 20px rgba(7,19,33,.05)}
+ .prism-screen img{width:100%;height:auto;max-height:400px;object-fit:contain;border-radius:4px}
+ .prism-screen figcaption{font-size:.73rem}
+}

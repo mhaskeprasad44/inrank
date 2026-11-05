@@ -24,9 +24,9 @@ if (!$data || !is_array($data)) {
 $name = trim($data['name'] ?? $data['leadName'] ?? '');
 $email = trim($data['email'] ?? $data['leadEmail'] ?? '');
 $phone = trim($data['phone'] ?? $data['leadPhone'] ?? '');
-$website = trim($data['website'] ?? $data['websiteUrl'] ?? '');
+$website = trim($data['website'] ?? $data['websiteUrl'] ?? $data['url'] ?? '');
 $services = trim($data['services_needed'] ?? $data['service'] ?? 'General Consultation');
-$budget = trim($data['budget_range'] ?? $data['budget'] ?? 'Not specified');
+$budget = trim($data['budget_range'] ?? $data['budget'] ?? $data['package'] ?? 'Not specified');
 $message = trim($data['message'] ?? $data['project_details'] ?? '');
 $source = trim($data['source'] ?? 'Website Inquiry Form');
 
@@ -137,7 +137,7 @@ $existing[] = $jsonEntry;
 
 // If submitted as traditional HTML form from browser
 if (isset($_SERVER['HTTP_ACCEPT']) && strpos($_SERVER['HTTP_ACCEPT'], 'text/html') !== false && !isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
-    header("Location: /contact.html?submitted=true#consult-form");
+    header("Location: /contact.html?submitted=true#inrank-contact-form");
     exit;
 }
 

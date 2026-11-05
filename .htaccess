@@ -1,10 +1,10 @@
 # ==============================================================================
-# Inrank Technologies - High-Performance Apache & LiteSpeed Configuration
-# Optimized for Google Search Console (www.inranktech.com) & Core Web Vitals
+# Inrank Technologies 2.0 - High-Performance Apache & LiteSpeed Configuration
+# Optimized for Fast Indexing, Google Search Console & Core Web Vitals (Baner, Pune)
 # ==============================================================================
 
 # ------------------------------------------------------------------------------
-# Cloudflare Real Visitor IP Restoration (Prevents Origin 429 Rate Limiting)
+# 1. Cloudflare Real Visitor IP Restoration (Prevents Origin 429 Rate Limiting)
 # ------------------------------------------------------------------------------
 <IfModule mod_remoteip.c>
   RemoteIPHeader CF-Connecting-IP
@@ -32,35 +32,34 @@
   RemoteIPTrustedProxy 2c0f:f248::/32
 </IfModule>
 
+# ------------------------------------------------------------------------------
+# 2. Rewrite Rules (HTTPS, Non-WWW Canonicalization, Clean URLs, 301 Redirects)
+# ------------------------------------------------------------------------------
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # 1. Force HTTPS
+  # A. Force HTTPS
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # 2. Canonical Domain: Force WWW (inranktech.com -> www.inranktech.com)
-  RewriteCond %{HTTP_HOST} ^inranktech\.com$ [NC]
-  RewriteRule ^(.*)$ https://www.inranktech.com/$1 [R=301,L]
+  # B. Canonical Domain: Force Non-WWW (www.inranktech.com -> inranktech.com)
+  RewriteCond %{HTTP_HOST} ^www\.inranktech\.com$ [NC]
+  RewriteRule ^(.*)$ https://inranktech.com/$1 [R=301,L]
 
-  # 3. 301 Permanent Redirects for Legacy / Consolidated Pages
-      
-  # 4. Service Pages trailing slash routing
+  # C. 301 Permanent Redirect for legacy inrank2.0 paths -> root
+  RewriteRule ^inrank2\.0/(.*)$ /$1 [R=301,L]
+
+  # D. Clean URL handling: serve existing .html files when requested without extension
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{DOCUMENT_ROOT}/public/services/$1/index.html -f
-  RewriteRule ^services/([^/]+)/?$ /public/services/$1/index.html [L]
-
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{DOCUMENT_ROOT}/public/services/$1.html -f
-  RewriteRule ^services/([^/]+)/?$ /public/services/$1.html [L]
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.+)$ $1.html [L]
 </IfModule>
 
-# ==============================================================================
-# MIME Types Configuration
-# ==============================================================================
+# ------------------------------------------------------------------------------
+# 3. MIME Types Configuration
+# ------------------------------------------------------------------------------
 <IfModule mod_mime.c>
   AddType application/xml .xml
   AddType text/plain .txt
@@ -69,9 +68,9 @@
   AddType font/woff2 .woff2
 </IfModule>
 
-# ==============================================================================
-# GZIP / Deflate Compression
-# ==============================================================================
+# ------------------------------------------------------------------------------
+# 4. GZIP / Deflate Compression
+# ------------------------------------------------------------------------------
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
   AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json
@@ -79,20 +78,20 @@
   AddOutputFilterByType DEFLATE image/svg+xml font/woff2
 </IfModule>
 
-# ==============================================================================
-# Browser Cache-Control Headers
-# ==============================================================================
+# ------------------------------------------------------------------------------
+# 5. Browser Cache-Control Headers
+# ------------------------------------------------------------------------------
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresDefault "access plus 1 month"
 
-  # HTML & Sitemaps: Revalidate immediately so changes are indexed rapidly
+  # HTML, Sitemaps & AI manifests: Revalidate immediately for rapid indexing
   ExpiresByType text/html "access plus 0 seconds"
   ExpiresByType application/xml "access plus 0 seconds"
   ExpiresByType text/xml "access plus 0 seconds"
   ExpiresByType text/plain "access plus 0 seconds"
 
-  # Static Assets: Long cache
+  # Static Assets: Long immutable cache for sub-second Core Web Vitals
   ExpiresByType image/webp "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/jpeg "access plus 1 year"
@@ -102,7 +101,9 @@
   ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
 
-# Security Headers
+# ------------------------------------------------------------------------------
+# 6. Security Headers
+# ------------------------------------------------------------------------------
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "SAMEORIGIN"

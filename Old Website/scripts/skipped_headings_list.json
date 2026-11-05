@@ -1,0 +1,686 @@
+[
+  {
+    "file": "portfolio.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\portfolio.html",
+    "skips": [
+      {
+        "from": 1,
+        "to": 3,
+        "text": "CyTOS Machines Pune - High-Speed Industrial Machin"
+      }
+    ],
+    "headingsCount": 29
+  },
+  {
+    "file": "services/ai-ranking-citations/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\ai-ranking-citations\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/ai-ranking-citations.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\ai-ranking-citations.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/ai-seo-services/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\ai-seo-services\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/ai-seo-services.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\ai-seo-services.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/brand-naming-agency/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\brand-naming-agency\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Briefing"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/brand-naming-agency.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\brand-naming-agency.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Briefing"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/brochure-design-services/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\brochure-design-services\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Briefing"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/brochure-design-services.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\brochure-design-services.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Briefing"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/content-marketing-services/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\content-marketing-services\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Keyword Strategy"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/content-marketing-services.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\content-marketing-services.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Keyword Strategy"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/conversion-rate-optimization-services/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\conversion-rate-optimization-services\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Teardown"
+      }
+    ],
+    "headingsCount": 39
+  },
+  {
+    "file": "services/conversion-rate-optimization-services.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\conversion-rate-optimization-services.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Teardown"
+      }
+    ],
+    "headingsCount": 39
+  },
+  {
+    "file": "services/corporate-logo-design/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\corporate-logo-design\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Discovery"
+      }
+    ],
+    "headingsCount": 39
+  },
+  {
+    "file": "services/corporate-logo-design.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\corporate-logo-design.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Discovery"
+      }
+    ],
+    "headingsCount": 39
+  },
+  {
+    "file": "services/custom-website-development/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\custom-website-development\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Briefing"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/custom-website-development.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\custom-website-development.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Briefing"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/ecommerce-website-development-company/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\ecommerce-website-development-company\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Catalog Architecture"
+      }
+    ],
+    "headingsCount": 39
+  },
+  {
+    "file": "services/ecommerce-website-development-company.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\ecommerce-website-development-company.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Catalog Architecture"
+      }
+    ],
+    "headingsCount": 39
+  },
+  {
+    "file": "services/geo-seo-agency/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\geo-seo-agency\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/geo-seo-agency.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\geo-seo-agency.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/google-ads-agency/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\google-ads-agency\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 39
+  },
+  {
+    "file": "services/google-ads-agency.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\google-ads-agency.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 39
+  },
+  {
+    "file": "services/google-my-business-services/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\google-my-business-services\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/google-my-business-services.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\google-my-business-services.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\index.html",
+    "skips": [
+      {
+        "from": 1,
+        "to": 3,
+        "text": "Search Dominance"
+      }
+    ],
+    "headingsCount": 23
+  },
+  {
+    "file": "services/influencer-marketing-agency/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\influencer-marketing-agency\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Strategy"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/influencer-marketing-agency.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\influencer-marketing-agency.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Strategy"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/landing-page-design-services/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\landing-page-design-services\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/landing-page-design-services.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\landing-page-design-services.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/letterhead-stationery-design/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\letterhead-stationery-design\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/letterhead-stationery-design.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\letterhead-stationery-design.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/link-building-services/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\link-building-services\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/link-building-services.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\link-building-services.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/linkedin-marketing-agency/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\linkedin-marketing-agency\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "ICP Definition"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/linkedin-marketing-agency.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\linkedin-marketing-agency.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "ICP Definition"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/luxury-business-card-design/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\luxury-business-card-design\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Consultation"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/luxury-business-card-design.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\luxury-business-card-design.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Consultation"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/meta-ads-agency/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\meta-ads-agency\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audience Research"
+      }
+    ],
+    "headingsCount": 39
+  },
+  {
+    "file": "services/meta-ads-agency.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\meta-ads-agency.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audience Research"
+      }
+    ],
+    "headingsCount": 39
+  },
+  {
+    "file": "services/mobile-app-development/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\mobile-app-development\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Scoping"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/mobile-app-development.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\mobile-app-development.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Scoping"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/ppc-services/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\ppc-services\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/ppc-services.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\ppc-services.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/seo-company-pune/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\seo-company-pune\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/seo-company-pune.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\seo-company-pune.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/shopify-store-development/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\shopify-store-development\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Catalog Modeling"
+      }
+    ],
+    "headingsCount": 39
+  },
+  {
+    "file": "services/shopify-store-development.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\shopify-store-development.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Catalog Modeling"
+      }
+    ],
+    "headingsCount": 39
+  },
+  {
+    "file": "services/social-media-marketing-services/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\social-media-marketing-services\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Brand Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/social-media-marketing-services.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\social-media-marketing-services.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Brand Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/ui-ux-design-services/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\ui-ux-design-services\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Discovery"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/ui-ux-design-services.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\ui-ux-design-services.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Discovery"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/website-maintenance-services/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\website-maintenance-services\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Baseline Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/website-maintenance-services.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\website-maintenance-services.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Baseline Audit"
+      }
+    ],
+    "headingsCount": 40
+  },
+  {
+    "file": "services/wordpress-development-services/index.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\wordpress-development-services\\index.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Requirements"
+      }
+    ],
+    "headingsCount": 39
+  },
+  {
+    "file": "services/wordpress-development-services.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services\\wordpress-development-services.html",
+    "skips": [
+      {
+        "from": 2,
+        "to": 4,
+        "text": "Requirements"
+      }
+    ],
+    "headingsCount": 39
+  },
+  {
+    "file": "services.html",
+    "fullPath": "C:\\Users\\PrasadMhaske\\Downloads\\Anti Websites\\Web\\Inrank\\inrank2.0\\services.html",
+    "skips": [
+      {
+        "from": 1,
+        "to": 3,
+        "text": "Search Dominance"
+      }
+    ],
+    "headingsCount": 50
+  }
+]

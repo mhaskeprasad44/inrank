@@ -1,0 +1,601 @@
+{
+  "totalPages": 119,
+  "h1Audit": {
+    "missingH1": [],
+    "multipleH1": [],
+    "singleH1": [
+      {
+        "file": "about.html",
+        "title": "Senior growth architects.\n            Zero junior interns."
+      },
+      {
+        "file": "blog/ai-ranking-citations-knowledge-graph-optimization.html",
+        "title": "AI Ranking and Citations: Knowledge Graph Engineering, Digital Entity Consensus and Vector Search Visibility"
+      },
+      {
+        "file": "blog/ai-seo-agency-generative-optimization.html",
+        "title": "AI SEO Agency: Generative Search Optimization, Answer Engines and Entity-First Knowledge Graph Engineering"
+      },
+      {
+        "file": "blog/content-marketing-editorial-authority-and-information-gain.html",
+        "title": "Content Marketing Architecture: Editorial Authority, Information Gain and Full-Funnel Customer Acquisition"
+      },
+      {
+        "file": "blog/conversion-rate-optimization-engineering.html",
+        "title": "Conversion Rate Optimization (CRO) Engineering: Neuromarketing, Heatmap Audits and Frictionless Funnels"
+      },
+      {
+        "file": "blog/cross-platform-mobile-app-engineering.html",
+        "title": "Cross-Platform Mobile App Engineering: React Native, Flutter and Scalable Enterprise Backend Systems"
+      },
+      {
+        "file": "blog/custom-shopify-development-guide.html",
+        "title": "Custom Shopify Theme Engineering and Liquid Architecture: Sub-Second Speeds, App Pruning and Scaling AOV"
+      },
+      {
+        "file": "blog/custom-website-design-frameworks.html",
+        "title": "Custom Website Design for High-Conversion Brands: UI/UX Frameworks and Visual Hierarchy Mastery"
+      },
+      {
+        "file": "blog/enterprise-email-marketing-and-lifecycle-automation.html",
+        "title": "Enterprise Email Marketing: Behavioral Lifecycle Automation, Deliverability Engineering and High-LTV Retention"
+      },
+      {
+        "file": "blog/enterprise-logo-design-and-visual-systems.html",
+        "title": "Enterprise Logo Design and Visual Identity Systems: Gestalt Psychology, Responsive Scalability and Vector Precision"
+      },
+      {
+        "file": "blog/enterprise-website-maintenance-guide.html",
+        "title": "Enterprise Website Maintenance and Security Engineering: Core Updates, SLA Uptime and Disaster Recovery"
+      },
+      {
+        "file": "blog/executive-letterhead-design-and-corporate-stationery-systems.html",
+        "title": "Executive Letterhead Design: Formal Document Architecture, Watermark Security and Corporate Stationery Systems"
+      },
+      {
+        "file": "blog/geo-seo-agency-generative-engine-optimization.html",
+        "title": "GEO SEO Agency: Generative Engine Optimization, LLM Perplexity Citation Engineering and Semantic Entity Authority"
+      },
+      {
+        "file": "blog/google-ads-scaling-blueprint.html",
+        "title": "Google Ads Scaling Blueprint: Performance Max, Smart Bidding and High-Intent Commercial Arbitrage"
+      },
+      {
+        "file": "blog/google-business-profile-local-pack-guide.html",
+        "title": "Google Business Profile and Maps 3-Pack Supremacy: Geo-Grid Proximity, Citations and Local SEO"
+      },
+      {
+        "file": "blog/high-converting-landing-page-engineering.html",
+        "title": "High-Converting Landing Page Engineering: Cognitive Flow, Sub-Second Speeds and Direct-Response UX"
+      },
+      {
+        "file": "blog/high-impact-brochure-designing-and-print-architecture.html",
+        "title": "High-Impact Brochure Designing: Visual Narrative Architecture, Fold Engineering and Corporate Collateral Systems"
+      },
+      {
+        "file": "blog/high-performance-wordpress-engineering.html",
+        "title": "High-Performance WordPress Engineering: Eradicating Plugin Bloat, Database Hardening and Sub-Second Speeds"
+      },
+      {
+        "file": "blog/index.html",
+        "title": "Engineering &amp; Growth Intelligence."
+      },
+      {
+        "file": "blog/influencer-marketing-guide.html",
+        "title": "Performance Influencer Marketing Architecture: Vetted Creator Partnerships and Direct-Response ROI"
+      },
+      {
+        "file": "blog/linkedin-management-guide.html",
+        "title": "B2B LinkedIn Marketing and Executive Positioning: Account-Based Funnels and High-Ticket Pipeline Growth"
+      },
+      {
+        "file": "blog/luxury-business-card-design-and-tactile-print-ergonomics.html",
+        "title": "Luxury Business Card Design: Haptic Print Ergonomics, Premium Paper Stocks and Executive Brand Tactility"
+      },
+      {
+        "file": "blog/meta-ads-scaling-mastery.html",
+        "title": "Meta Ads Scaling Mastery: Creative Testing Flywheels, Advantage+ Architecture and ROAS Engineering"
+      },
+      {
+        "file": "blog/modern-web-development-engineering.html",
+        "title": "Modern Web Development Engineering: Jamstack Architectures, Core Web Vitals and Custom Code Supremacy"
+      },
+      {
+        "file": "blog/omnichannel-ecommerce-architecture-guide.html",
+        "title": "Omnichannel E-Commerce Architecture: High-Velocity Checkout, Headless Storefronts and Scalable Conversions"
+      },
+      {
+        "file": "blog/omnichannel-sms-marketing-and-conversational-messaging.html",
+        "title": "Omnichannel SMS Marketing: Conversational Commerce, 10DLC Compliance and Sub-Minute Conversion Funnels"
+      },
+      {
+        "file": "blog/ppc-management-blueprint.html",
+        "title": "Enterprise Pay Per Click (PPC) Management: Bid Automation, Multi-Platform Attribution and Lowering CAC"
+      },
+      {
+        "file": "blog/seo-complete-guide.html",
+        "title": "The 2026 Guide to Search Engine Optimization: Entity SEO, Core Web Vitals and AI Search Architecture"
+      },
+      {
+        "file": "blog/social-media-marketing-guide.html",
+        "title": "Performance Social Media Marketing: Audience Architectures, Short-Form Video and Organic Brand Flywheels"
+      },
+      {
+        "file": "blog/strategic-brand-naming-architecture.html",
+        "title": "Strategic Brand Naming Architecture: Linguistic Psychology, Trademark Clearance and Global Category Creation"
+      },
+      {
+        "file": "blog/top-digital-marketing-web-development-agencies-pune.html",
+        "title": "Top 5 Digital Marketing & Web Development Agencies in Pune (2026 Review & Pricing Comparison)"
+      },
+      {
+        "file": "blog/whatsapp-marketing-guide.html",
+        "title": "Conversational WhatsApp Business Marketing: High-Converting API Funnels, Automation and 98% Open Rates"
+      },
+      {
+        "file": "blog.html",
+        "title": "Engineering &amp; Growth Intelligence."
+      },
+      {
+        "file": "case-studies/cytos.html",
+        "title": "CyTOS Machines"
+      },
+      {
+        "file": "case-studies/dravyafinancial.html",
+        "title": "Dravya Financial Solutions Pvt Ltd"
+      },
+      {
+        "file": "case-studies/fludio.html",
+        "title": "Fludio Design"
+      },
+      {
+        "file": "case-studies/greytothegreen.html",
+        "title": "Grey To The Green"
+      },
+      {
+        "file": "case-studies/hcpnest.html",
+        "title": "HCP Nest"
+      },
+      {
+        "file": "case-studies/hiragrafix.html",
+        "title": "Hira Grafix Solutions"
+      },
+      {
+        "file": "case-studies/orthopedicanklefootspecialist.html",
+        "title": "Dr. Shyam Thakkar — ARTICUL8 Foot & Ankle Clinic"
+      },
+      {
+        "file": "case-studies/riituinstitution.html",
+        "title": "Riitu Institution"
+      },
+      {
+        "file": "case-studies/shetkarifoodstuff.html",
+        "title": "Shetkari Foodstuff Pvt Ltd"
+      },
+      {
+        "file": "case-studies/vasroventures.html",
+        "title": "Vasro Ventures"
+      },
+      {
+        "file": "case-studies.html",
+        "title": "Numbers that move P&amp;Ls.\n            Not just vanity dashboards."
+      },
+      {
+        "file": "contact.html",
+        "title": "Let's Talk Growth."
+      },
+      {
+        "file": "digital-marketing-agency-in-pune.html",
+        "title": "Digital Marketing Agency in Pune That\r\n                Drives Verified Revenue"
+      },
+      {
+        "file": "index.html",
+        "title": "Websites, SEO &amp; Ads that \n            turn traffic into revenue."
+      },
+      {
+        "file": "our-work/cytos.html",
+        "title": "CyTOS Machines"
+      },
+      {
+        "file": "our-work/dravyafinancial.html",
+        "title": "Dravya Financial Solutions Pvt Ltd"
+      },
+      {
+        "file": "our-work/fludio.html",
+        "title": "Fludio Design"
+      },
+      {
+        "file": "our-work/greytothegreen.html",
+        "title": "Grey To The Green"
+      },
+      {
+        "file": "our-work/hcpnest.html",
+        "title": "HCP Nest"
+      },
+      {
+        "file": "our-work/hiragrafix.html",
+        "title": "Hira Grafix Solutions"
+      },
+      {
+        "file": "our-work/orthopedicanklefootspecialist.html",
+        "title": "Dr. Shyam Thakkar — ARTICUL8 Foot & Ankle Clinic"
+      },
+      {
+        "file": "our-work/riituinstitution.html",
+        "title": "Riitu Institution"
+      },
+      {
+        "file": "our-work/shetkarifoodstuff.html",
+        "title": "Shetkari Foodstuff Pvt Ltd"
+      },
+      {
+        "file": "our-work/vasroventures.html",
+        "title": "Vasro Ventures"
+      },
+      {
+        "file": "our-work.html",
+        "title": "Real websites.\n            Built for commercial dominance."
+      },
+      {
+        "file": "portfolio.html",
+        "title": "Selected Production Deployments"
+      },
+      {
+        "file": "pricing.html",
+        "title": "Fixed deliverables.\n            Zero lock-in retainers."
+      },
+      {
+        "file": "privacy-policy.html",
+        "title": "Privacy Policy"
+      },
+      {
+        "file": "services/ai-ranking-citations/index.html",
+        "title": "Anchor your brand identity.Ensure every AI engine knows who you are."
+      },
+      {
+        "file": "services/ai-ranking-citations.html",
+        "title": "Anchor your brand identity.Ensure every AI engine knows who you are."
+      },
+      {
+        "file": "services/ai-seo-services/index.html",
+        "title": "Get cited by answer engines.Lead the conversational discovery era."
+      },
+      {
+        "file": "services/ai-seo-services.html",
+        "title": "Get cited by answer engines.Lead the conversational discovery era."
+      },
+      {
+        "file": "services/brand-naming-agency/index.html",
+        "title": "Names that build immediate authority.Distinctive, memorable, and legally trademarkable."
+      },
+      {
+        "file": "services/brand-naming-agency.html",
+        "title": "Names that build immediate authority.Distinctive, memorable, and legally trademarkable."
+      },
+      {
+        "file": "services/brochure-design-services/index.html",
+        "title": "Brochures that close high-ticket contracts.Executive sales literature for industrial & corporate leaders."
+      },
+      {
+        "file": "services/brochure-design-services.html",
+        "title": "Brochures that close high-ticket contracts.Executive sales literature for industrial & corporate leaders."
+      },
+      {
+        "file": "services/content-marketing-services/index.html",
+        "title": "Content that establishes authority.Articles and case studies that turn readers into buyers."
+      },
+      {
+        "file": "services/content-marketing-services.html",
+        "title": "Content that establishes authority.Articles and case studies that turn readers into buyers."
+      },
+      {
+        "file": "services/conversion-rate-optimization-services/index.html",
+        "title": "Double your website revenue.Without spending an extra rupee on ads."
+      },
+      {
+        "file": "services/conversion-rate-optimization-services.html",
+        "title": "Double your website revenue.Without spending an extra rupee on ads."
+      },
+      {
+        "file": "services/corporate-logo-design/index.html",
+        "title": "Distinctive visual identity.Built to inspire immediate commercial trust."
+      },
+      {
+        "file": "services/corporate-logo-design.html",
+        "title": "Distinctive visual identity.Built to inspire immediate commercial trust."
+      },
+      {
+        "file": "services/custom-website-development/index.html",
+        "title": "Engineered for sub-second speed.Built to convert visitors into clients."
+      },
+      {
+        "file": "services/custom-website-development.html",
+        "title": "Engineered for sub-second speed.Built to convert visitors into clients."
+      },
+      {
+        "file": "services/ecommerce-website-development-company/index.html",
+        "title": "Online stores built for scale.Engineered for maximum checkout conversion."
+      },
+      {
+        "file": "services/ecommerce-website-development-company.html",
+        "title": "Online stores built for scale.Engineered for maximum checkout conversion."
+      },
+      {
+        "file": "services/geo-seo-agency/index.html",
+        "title": "Win generative search.Be the recommended answer in Perplexity & ChatGPT."
+      },
+      {
+        "file": "services/geo-seo-agency.html",
+        "title": "Win generative search.Be the recommended answer in Perplexity & ChatGPT."
+      },
+      {
+        "file": "services/google-ads-agency/index.html",
+        "title": "Stop burning budget on clicks.Buy qualified customer inquiries."
+      },
+      {
+        "file": "services/google-ads-agency.html",
+        "title": "Stop burning budget on clicks.Buy qualified customer inquiries."
+      },
+      {
+        "file": "services/google-my-business-services/index.html",
+        "title": "Own the local Pune map pack.Turn nearby searchers into phone calls."
+      },
+      {
+        "file": "services/google-my-business-services.html",
+        "title": "Own the local Pune map pack.Turn nearby searchers into phone calls."
+      },
+      {
+        "file": "services/index.html",
+        "title": "27 specialized services.\n            4 accountable growth pillars."
+      },
+      {
+        "file": "services/influencer-marketing-agency/index.html",
+        "title": "Authentic creator endorsements.Vetted influencers that drive measurable brand trust and sales."
+      },
+      {
+        "file": "services/influencer-marketing-agency.html",
+        "title": "Authentic creator endorsements.Vetted influencers that drive measurable brand trust and sales."
+      },
+      {
+        "file": "services/landing-page-design-services/index.html",
+        "title": "Single-page funnels that convert.Built for high-ROAS Google and Meta campaigns."
+      },
+      {
+        "file": "services/landing-page-design-services.html",
+        "title": "Single-page funnels that convert.Built for high-ROAS Google and Meta campaigns."
+      },
+      {
+        "file": "services/letterhead-stationery-design/index.html",
+        "title": "Official documents that inspire confidence.Corporate letterheads, invoices, and stationery suites."
+      },
+      {
+        "file": "services/letterhead-stationery-design.html",
+        "title": "Official documents that inspire confidence.Corporate letterheads, invoices, and stationery suites."
+      },
+      {
+        "file": "services/link-building-services/index.html",
+        "title": "Build genuine domain authority.Earn editorial backlinks that move the needle."
+      },
+      {
+        "file": "services/link-building-services.html",
+        "title": "Build genuine domain authority.Earn editorial backlinks that move the needle."
+      },
+      {
+        "file": "services/linkedin-marketing-agency/index.html",
+        "title": "Reach verified decision-makers.B2B lead generation that fills your enterprise pipeline."
+      },
+      {
+        "file": "services/linkedin-marketing-agency.html",
+        "title": "Reach verified decision-makers.B2B lead generation that fills your enterprise pipeline."
+      },
+      {
+        "file": "services/luxury-business-card-design/index.html",
+        "title": "Business cards that demand respect.Minimalist, tactile, and engineered for high-stakes handshakes."
+      },
+      {
+        "file": "services/luxury-business-card-design.html",
+        "title": "Business cards that demand respect.Minimalist, tactile, and engineered for high-stakes handshakes."
+      },
+      {
+        "file": "services/meta-ads-agency/index.html",
+        "title": "Transform social attention.Acquire customers on Instagram and Facebook."
+      },
+      {
+        "file": "services/meta-ads-agency.html",
+        "title": "Transform social attention.Acquire customers on Instagram and Facebook."
+      },
+      {
+        "file": "services/mobile-app-development/index.html",
+        "title": "High-performance iOS & Android applications.Built with Flutter for fluid, sub-second native speed."
+      },
+      {
+        "file": "services/mobile-app-development.html",
+        "title": "High-performance iOS & Android applications.Built with Flutter for fluid, sub-second native speed."
+      },
+      {
+        "file": "services/ppc-services/index.html",
+        "title": "Stop wasting budget on clicks.Buy qualified customer inquiries."
+      },
+      {
+        "file": "services/ppc-services.html",
+        "title": "Stop wasting budget on clicks.Buy qualified customer inquiries."
+      },
+      {
+        "file": "services/seo-company-pune/index.html",
+        "title": "Know what drives the rankings.Make the traffic turn into revenue."
+      },
+      {
+        "file": "services/seo-company-pune.html",
+        "title": "Know what drives the rankings.Make the traffic turn into revenue."
+      },
+      {
+        "file": "services/shopify-store-development/index.html",
+        "title": "High-speed D2C storefronts.Built to maximize Average Order Value."
+      },
+      {
+        "file": "services/shopify-store-development.html",
+        "title": "High-speed D2C storefronts.Built to maximize Average Order Value."
+      },
+      {
+        "file": "services/social-media-marketing-services/index.html",
+        "title": "Social media that builds brand equity.Consistent, high-impact visual storytelling that attracts customers."
+      },
+      {
+        "file": "services/social-media-marketing-services.html",
+        "title": "Social media that builds brand equity.Consistent, high-impact visual storytelling that attracts customers."
+      },
+      {
+        "file": "services/ui-ux-design-services/index.html",
+        "title": "Interfaces built for clarity.Designed to turn attention into action."
+      },
+      {
+        "file": "services/ui-ux-design-services.html",
+        "title": "Interfaces built for clarity.Designed to turn attention into action."
+      },
+      {
+        "file": "services/website-maintenance-services/index.html",
+        "title": "Zero downtime, zero hacks, zero stress.Proactive engineering maintenance for corporate web assets."
+      },
+      {
+        "file": "services/website-maintenance-services.html",
+        "title": "Zero downtime, zero hacks, zero stress.Proactive engineering maintenance for corporate web assets."
+      },
+      {
+        "file": "services/wordpress-development-services/index.html",
+        "title": "Fast, secure WordPress portals.Built with zero bloated page builders."
+      },
+      {
+        "file": "services/wordpress-development-services.html",
+        "title": "Fast, secure WordPress portals.Built with zero bloated page builders."
+      },
+      {
+        "file": "services.html",
+        "title": "27 specialized services.\n            4 accountable growth pillars."
+      },
+      {
+        "file": "terms-and-conditions.html",
+        "title": "Terms and Conditions"
+      },
+      {
+        "file": "website-design-company-in-pune.html",
+        "title": "Web Designing Company in Pune That\r\n                Turns Visitors Into Enquiries"
+      }
+    ]
+  },
+  "headingHierarchyIssues": [],
+  "metaAudit": {
+    "missingTitle": [],
+    "shortTitle": [],
+    "longTitle": [
+      {
+        "file": "case-studies/orthopedicanklefootspecialist.html",
+        "title": "Dr. Shyam Thakkar — ARTICUL8 Foot & Ankle Clinic — Inrank Technologies Case Study",
+        "len": 81
+      },
+      {
+        "file": "contact.html",
+        "title": "Contact Inrank Technologies Pune | Free Consultation &amp; Growth Audit",
+        "len": 71
+      },
+      {
+        "file": "digital-marketing-agency-in-pune.html",
+        "title": "Digital Marketing Agency in Pune | Performance SEO &amp; Paid Ads | Inrank",
+        "len": 74
+      },
+      {
+        "file": "index.html",
+        "title": "Inrank Technologies | Top-Ranked Digital Marketing & Web Development Services in Pune",
+        "len": 85
+      },
+      {
+        "file": "our-work/orthopedicanklefootspecialist.html",
+        "title": "Dr. Shyam Thakkar — ARTICUL8 Foot & Ankle Clinic — Inrank Technologies Case Study",
+        "len": 81
+      },
+      {
+        "file": "services/custom-website-development/index.html",
+        "title": "Custom Website Development Company in Pune | Next.js & Web Lab | Inrank",
+        "len": 71
+      },
+      {
+        "file": "services/custom-website-development.html",
+        "title": "Custom Website Development Company in Pune | Next.js & Web Lab | Inrank",
+        "len": 71
+      },
+      {
+        "file": "services/meta-ads-agency/index.html",
+        "title": "Meta Ads Agency in Pune | Instagram & Facebook Lead Generation | Inrank",
+        "len": 71
+      },
+      {
+        "file": "services/meta-ads-agency.html",
+        "title": "Meta Ads Agency in Pune | Instagram & Facebook Lead Generation | Inrank",
+        "len": 71
+      }
+    ],
+    "missingDesc": [],
+    "shortDesc": [
+      {
+        "file": "index.html",
+        "desc": "Inrank Technologies is Pune",
+        "len": 27
+      },
+      {
+        "file": "services/seo-company-pune/index.html",
+        "desc": "Inrank Technologies is Pune",
+        "len": 27
+      },
+      {
+        "file": "services/seo-company-pune.html",
+        "desc": "Inrank Technologies is Pune",
+        "len": 27
+      }
+    ],
+    "longDesc": [],
+    "missingCanonical": [],
+    "missingRobots": [],
+    "missingOg": []
+  },
+  "schemaAudit": {
+    "pagesWithSchema": 116,
+    "pagesWithoutSchema": [
+      "blog/index.html",
+      "privacy-policy.html",
+      "terms-and-conditions.html"
+    ],
+    "schemaTypesFound": {
+      "Graph": 96,
+      "AboutPage": 1,
+      "BlogPosting": 30,
+      "BreadcrumbList": 30,
+      "FAQPage": 86,
+      "Blog": 1,
+      "CreativeWork": 20,
+      "CollectionPage": 5,
+      "ContactPage": 1,
+      "LocalBusiness,ProfessionalService": 3,
+      "WebPage": 56,
+      "ItemList": 1,
+      "ItemPage": 1,
+      "Service": 54
+    },
+    "schemaErrors": [],
+    "puneEntitySignals": {
+      "hasPuneAddress": 231,
+      "hasGeoCoordinates": 35,
+      "hasTelephone": 118,
+      "hasAreaServed": 116
+    }
+  },
+  "semanticHtmlAudit": {
+    "missingMain": [],
+    "missingHeader": [],
+    "missingFooter": []
+  },
+  "geoAeoSignals": {
+    "hasFaqSection": 88,
+    "hasFaqSchema": 86,
+    "hasPuneGeoKicker": 119,
+    "hasDirectAnswerBlock": 0
+  }
+}

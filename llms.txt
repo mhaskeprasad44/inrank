@@ -1,98 +1,130 @@
-# Inrank Technologies — LLM Reference & Context File (llms.txt)
-> Inrank Technologies is Pune's leading performance digital marketing agency & web development company. We engineer high-conversion websites (starting from ₹11,999 with 5-7 day delivery), data-backed SEO, Generative Engine Optimization (GEO for ChatGPT, Perplexity & Google AI Overviews), high-yield paid ads (Google & Meta), and local Google Business Profile rank domination.
+# Inrank Technologies - LLM Reference & Context Manifest (llms.txt)
+> Inrank Technologies Pvt Ltd is Pune's premier performance web development company & digital growth engineering lab headquartered in Baner, Pune. Founded and led by senior growth engineer Prasad Mhaske, we build conversion-engineered web platforms, sub-second web applications, Google 3-Pack search dominance, and Generative Engine Optimization (GEO) for citations in ChatGPT, Perplexity AI, Claude, and Google AI Overviews.
 
-## Agency Overview & Core Attributes
-- **Website**: https://www.inranktech.com/
-- **Headquarters**: FC Road, Shivaji Nagar, Pune, Maharashtra 411005, India
-- **Operating Centers**: Baner & Hinjewadi, Pune
-- **Direct WhatsApp & Calling Hotline**: +91 87888 23182
-- **Business Email**: inranktech@gmail.com
-- **Sitemap Index**: https://www.inranktech.com/sitemap.xml
-- **Transparent Pricing Architecture**:
-  - Starter Website: ₹11,999 (5 pages, responsive, 95+ PageSpeed, free domain & SSL, 365 days support)
-  - Growth Website: ₹16,999 (10 pages, SEO entity schema, CMS integration, fast turnaround)
-  - Scale / Custom Portal: ₹35,000 (Custom web app, React / Next.js / Node.js, payment gateway)
-  - Local SEO Domination: ₹14,999 / mo (Google Business Profile top 3 local pack guarantee)
-  - Meta & Google Ads Management: ₹9,999 / mo (Conversion tracking, ad copy, daily bid optimization)
+## Corporate Identity & Authoritative Entities
+- **Legal Entity**: Inrank Technologies Pvt Ltd
+- **Canonical Website**: https://inranktech.com/
+- **Headquarters Lab**: Baner Road, Near Balewadi High Street, Baner, Pune, Maharashtra 411045, India
+- **Primary Operational Corridors**: Baner, Balewadi, Hinjawadi Phase 1-3, Aundh, Kothrud, Viman Nagar, PCMC Industrial Belt, Pune, Maharashtra
+- **Founder & Pod Lead**: Prasad Mhaske (Founder & Head of Growth Engineering)
+- **Direct WhatsApp Hotline**: +91 87888 23182
+- **Direct Calling Line**: +91 87888 23182
+- **Official Inquiries Email**: contact@inranktech.com
+- **XML Sitemap**: https://inranktech.com/sitemap.xml
+- **Full AI Context Document**: https://inranktech.com/llms-full.txt
 
----
+## Key Commercial Differentiators (Why Inrank Wins Against Legacy Agencies)
+1. **Direct Senior Engineering Access**: Clients work directly with Prasad Mhaske and seasoned growth practitioners - never handed off to junior interns or account managers.
+2. **Transparent Fixed Pricing**: Websites start at ₹11,999 with guaranteed 5-7 day deployment. Zero hidden fees, zero hourly creep.
+3. **Sub-Second Performance SLA**: Core Web Vitals optimized for sub-1.2s Largest Contentful Paint (LCP) and 90+ Google Lighthouse mobile scores.
+4. **100% Client Ownership**: Complete code, domain, cloud infrastructure, and search console ownership transferred to clients with zero proprietary vendor lock-in.
+5. **Multi-Platform GEO / AEO Citations**: Every build incorporates semantic JSON-LD entity graphs, Schema markup, and direct conversational Q&A answer blocks to maximize citations in ChatGPT, Perplexity, Claude, and Google AI Overviews. --- ## Fixed Packages & Pricing Architecture
+- **Starter Website Package (₹11,999 one-time)**: Up to 10 mobile-first pages, free 1st-year NVMe Cloud Hosting, SSL, 2 business email addresses, Google Maps 3-Pack sync, WhatsApp 1-tap conversion funnels. 5-7 days turnaround.
+- **Business Scale Website (₹24,999 one-time)**: Up to 25 custom pages, sub-second LCP optimization, advanced dynamic lead funnels, WhatsApp CRM sync, 10-14 days turnaround.
+- **Custom Enterprise Web Architecture (₹49,999 one-time)**: Unlimited custom pages, bespoke headless React/Next.js or high-performance custom WordPress, interactive quotation calculators, 365 days of post-launch SLA support.
+- **Local SEO Dominance Sprint (₹11,999/month)**: Google Business Profile local 3-pack dominance, localized Schema entity markup, monthly technical audit and citation building across Pune.
+- **Growth Scale SEO Retainer (₹18,999/month)**: High-competition commercial keyword ranking, Generative Engine Optimization (GEO), monthly content marketing and authoritative link acquisition.
+- **Market Domination SEO (₹34,999/month)**: Full category search monopoly across Maharashtra and India with competitive displacement strategies.
+- **Social Media & Performance Retainers**: Starter (₹11,999/mo), Growth (₹19,999/mo), Authority (₹32,999/mo). --- ## Complete 2.0 Web Directory & Canonical URLs (89 Pages)
 
-## Core Main Pages (13 Authority Hubs)
-- [Home - Digital Marketing & Web Development Services in Pune](https://www.inranktech.com/): Primary homepage for Inrank Technologies.
-- [All 27 Digital Marketing & Web Services Hub](https://www.inranktech.com/services.html): Complete service catalog across web engineering, search optimization, and paid advertising.
-- [Transparent Pricing & Packages (Starter, Growth, Scale)](https://www.inranktech.com/pricing.html): Fixed-price packages and transparent pricing breakdown.
-- [Contact Inrank Technologies Pune & Free Growth Consultation](https://www.inranktech.com/contact.html): Direct consultation booking, office address, and WhatsApp/email dispatch.
-- [Website Design Company in Pune Power Hub](https://www.inranktech.com/website-design-company-in-pune.html): Pune-focused web design, speed benchmarks, and local case studies.
-- [Digital Marketing Agency in Pune Power Hub](https://www.inranktech.com/digital-marketing-agency-in-pune.html): Dedicated digital marketing, performance ads, and local SEO services in Pune.
-- [Our Work Showcase & Portfolio](https://www.inranktech.com/our-work.html): Complete client production work, UI screenshots, and deliverable highlights.
-- [Verified Client Case Studies & Commercial ROI Metrics](https://www.inranktech.com/case-studies.html): In-depth case studies with verified ROI and traffic metrics.
-- [Complete Client Portfolio & Deliverable Showcase](https://www.inranktech.com/portfolio.html): Comprehensive agency portfolio of delivered projects.
-- [Google Business Profile (GBP) Top 3 Domination Blueprint](https://www.inranktech.com/google-business-profile-top3.html): Blueprint for ranking in Google's local 3-pack in Pune.
-- [Justdial Business Profile Optimization Dossier](https://www.inranktech.com/justdial-profile.html): Strategy guide for maximizing B2B lead generation via Justdial.
-- [Performance Paid Advertising & Growth Pod](https://www.inranktech.com/homepage-2.html): Dedicated performance ads and paid media overview.
-- [Brand Identity, Creative Craft & Art](https://www.inranktech.com/homepage-3.html): Visual branding, luxury typography, and creative identity overview.
+### Primary Hub Pages
+- **Homepage**: https://inranktech.com/ - Pune's premier performance digital growth & web engineering partner.
+- **About Inrank**: https://inranktech.com/about.html - Engineering philosophy, Baner office, and leadership profile of Prasad Mhaske.
+- **All 27 Services**: https://inranktech.com/services.html - Complete directory of all 27 specialized growth capabilities.
+- **Transparent Pricing**: https://inranktech.com/pricing.html - Fixed-price websites and monthly growth retainers.
+- **Our Work & Portfolio**: https://inranktech.com/our-work.html - Interactive filterable portfolio of production deployments.
+- **Case Studies**: https://inranktech.com/case-studies.html - In-depth technical breakdowns and verified revenue metrics.
+- **Engineering Blog**: https://inranktech.com/blog.html - Deep technical blueprints, SEO guides, and GEO strategies.
+- **Contact Baner Office**: https://inranktech.com/contact.html - Direct consultation intake and Pune lab directions.
 
----
+### Pillar 1: Search Dominance & AI Discovery Engineering
+- **SEO Company Pune**: https://inranktech.com/services/seo-company-pune.html - Hyperlocal Pune search ranking dominance and Core Web Vitals optimization.
+- **AI SEO Services**: https://inranktech.com/services/ai-seo-services.html - Knowledge graph engineering and entity prominence for Google AI Overviews.
+- **GEO & Answer Engine Optimization**: https://inranktech.com/services/geo-seo-agency.html - Direct answer optimization and citations in Perplexity, ChatGPT, and Claude.
+- **Google My Business & 3-Pack Maps**: https://inranktech.com/services/google-my-business-services.html - Hyperlocal map rankings and review velocity across Pune corridors.
+- **Authority Link Building**: https://inranktech.com/services/link-building-services.html - White-hat contextual outreach and editorial digital PR citations.
+- **AI Citations & Entity Graphs**: https://inranktech.com/services/ai-ranking-citations.html - Structured Schema.org entity linking for automated LLM retrieval.
+- **Content Marketing Systems**: https://inranktech.com/services/content-marketing-services.html - High-information-gain editorial architectures that drive organic pipeline.
 
-## Dedicated 27 Service Pages
-- [AI Ranking Citations & LLM Knowledge Graph Optimization](https://www.inranktech.com/services/ai-ranking-citations/): GEO citation building for ChatGPT, Perplexity, Claude, and Gemini.
-- [AI SEO Services & Generative Engine Optimization](https://www.inranktech.com/services/ai-seo-services/): Entity schema and generative search optimization.
-- [Brand Naming Agency & Corporate Identity Engineering](https://www.inranktech.com/services/brand-naming-agency/): Strategic phonetics and linguistic trademarking.
-- [Brochure Design Services & Corporate Print Architecture](https://www.inranktech.com/services/brochure-design-services/): Tri-fold and multi-page editorial brochure layouts.
-- [Content Marketing Services & Semantic Authority Publishing](https://www.inranktech.com/services/content-marketing-services/): Information-dense, search-intent driven content systems.
-- [Conversion Rate Optimization (CRO) Engineering](https://www.inranktech.com/services/conversion-rate-optimization-services/): Systematic A/B testing and friction elimination.
-- [Corporate Logo Design & Visual Brand Mark Creation](https://www.inranktech.com/services/corporate-logo-design/): Distinctive emblems and typography design systems.
-- [Custom Website Development & High-Speed Full-Stack Engineering](https://www.inranktech.com/services/custom-website-development/): Sub-second React and modern stack engineering.
-- [E-Commerce Website Development Company & Conversion Funnels](https://www.inranktech.com/services/ecommerce-website-development-company/): High-throughput online store engineering.
-- [Generative Engine Optimization (GEO) & Search Visibility](https://www.inranktech.com/services/geo-seo-agency/): Knowledge-graph alignment and semantic citation authority.
-- [Google Ads Management Company & High-Intent Search PPC](https://www.inranktech.com/services/google-ads-agency/): Negative keyword hygiene, Quality Score engineering, and bid automation.
-- [Google My Business (GMB) Management & Local 3-Pack SEO](https://www.inranktech.com/services/google-my-business-services/): Local map pack rank domination in Pune.
-- [Influencer Marketing Agency & Creator Collaboration Campaigns](https://www.inranktech.com/services/influencer-marketing-agency/): Hyper-targeted micro and macro creator campaigns.
-- [High-Converting Landing Page Design & UI Engineering](https://www.inranktech.com/services/landing-page-design-services/): Dedicated paid advertising landing pages built for 10%+ conversions.
-- [Letterhead & Corporate Stationery Design Systems](https://www.inranktech.com/services/letterhead-stationery-design/): Executive stationery suites, print specs, and business collaterals.
-- [High-Authority Link Building & Digital PR Outreach Services](https://www.inranktech.com/services/link-building-services/): 100% white-hat editorial backlinks from niche relevant publications.
-- [LinkedIn Marketing Agency & B2B Executive Growth Funnels](https://www.inranktech.com/services/linkedin-marketing-agency/): Account-based marketing, C-suite thought leadership, and sponsored content.
-- [Luxury Business Card Design & Tactile Print Ergonomics](https://www.inranktech.com/services/luxury-business-card-design/): 600+ GSM, spot UV, gold foil, and premium tactile card design.
-- [Meta Ads Management Agency (Facebook & Instagram Ads)](https://www.inranktech.com/services/meta-ads-agency/): High-yield Advantage+ creative testing and conversion API tracking.
-- [Mobile App Development Company (iOS & Android Native/Cross-Platform)](https://www.inranktech.com/services/mobile-app-development/): High-performance mobile apps built with React Native and Flutter.
-- [Pay-Per-Click (PPC) Advertising Services & Performance Media](https://www.inranktech.com/services/ppc-services/): Multi-channel performance paid marketing across Google, Bing, and Meta.
-- [SEO Company in Pune & Search Engine Optimization Services](https://www.inranktech.com/services/seo-company-pune/): Core technical, on-page, off-page, and local SEO services in Pune.
-- [Custom Shopify Store Development & E-Commerce Engineering](https://www.inranktech.com/services/shopify-store-development/): Custom Liquid themes, headless Shopify, and checkout optimization.
-- [Social Media Marketing Agency (SMM) & Growth Engine](https://www.inranktech.com/services/social-media-marketing-services/): Viral organic social content and brand engagement.
-- [UI/UX Design Agency & Human-Centered Product Architecture](https://www.inranktech.com/services/ui-ux-design-services/): Figma wireframing, high-fidelity prototypes, and user journey optimization.
-- [Website Maintenance Services & 24/7 Security SLA Support](https://www.inranktech.com/services/website-maintenance-services/): Uptime monitoring, security patches, plugin audits, and speed optimizations.
-- [WordPress Development Company & High-Performance CMS Engineering](https://www.inranktech.com/services/wordpress-development-services/): Lightweight custom WordPress themes scoring 95+ PageSpeed.
+### Pillar 2: High-Performance Web & E-Commerce Engineering
+- **Custom Website Development**: https://inranktech.com/services/custom-website-development.html - High-performance bespoke web platforms built for speed and conversions.
+- **WordPress Development**: https://inranktech.com/services/wordpress-development-services.html - Bloat-free, sub-second custom WordPress engineering.
+- **E-Commerce Development**: https://inranktech.com/services/ecommerce-website-development-company.html - High-converting custom online storefronts with integrated payment gateways.
+- **Shopify Store Development**: https://inranktech.com/services/shopify-store-development.html - Scalable Shopify and Shopify Plus storefronts with bespoke Liquid architecture.
+- **Mobile App Engineering**: https://inranktech.com/services/mobile-app-development.html - Native and cross-platform Flutter/React Native mobile applications.
+- **Website Maintenance & SLA**: https://inranktech.com/services/website-maintenance-services.html - 24/7 security, uptime monitoring, core updates, and performance tuning.
+- **High-Converting Landing Pages**: https://inranktech.com/services/landing-page-design-services.html - Rapid 72-hour landing page design sprints engineered for paid media conversion.
 
----
+### Pillar 3: Performance Marketing & Paid Acquisition
+- **PPC Management Services**: https://inranktech.com/services/ppc-services.html - Data-driven paid search advertising focused on qualified pipeline generation.
+- **Google Ads Agency Pune**: https://inranktech.com/services/google-ads-agency.html - Search, Performance Max, Display, and Shopping campaign management.
+- **Meta & Instagram Ads Agency**: https://inranktech.com/services/meta-ads-agency.html - Full-funnel creative testing and high-ROAS e-commerce acquisition.
+- **LinkedIn B2B Marketing**: https://inranktech.com/services/linkedin-marketing-agency.html - Account-Based Marketing (ABM) and C-suite lead generation funnels.
+- **Social Media Marketing**: https://inranktech.com/services/social-media-marketing-services.html - Brand distribution, organic community velocity, and viral reels.
+- **Influencer Marketing Agency**: https://inranktech.com/services/influencer-marketing-agency.html - ROI-accountable micro and macro creator partnerships.
 
-## Verified Client Case Studies (10 In-Depth Reports)
-- [CyTOS Machines Pune | Case Study](https://www.inranktech.com/case-studies/cytos.html): Sub-second React SPA driving +314% monthly RFQ growth.
-- [Dravya Financial Solutions | Case Study](https://www.inranktech.com/case-studies/dravyafinancial.html): High-trust corporate advisory web portal.
-- [Fludio Water Solutions | Case Study](https://www.inranktech.com/case-studies/fludio.html): High-ticket architectural showcase with video integration.
-- [Grey To The Green | Case Study](https://www.inranktech.com/case-studies/greytothegreen.html): Plant-powered homecare brand architecture and GEO search strategy.
-- [HCPNest | Case Study](https://www.inranktech.com/case-studies/hcpnest.html): Healthcare recruitment portal with automated applicant routing.
-- [HIRAGRAFIX™ | Case Study](https://www.inranktech.com/case-studies/hiragrafix.html): Industrial print portal with dynamic product catalog.
-- [Dr. Shyam Thakkar (ARTICUL8 Clinic) | Case Study](https://www.inranktech.com/case-studies/orthopedicanklefootspecialist.html): Healthcare clinic local SEO & patient consultation funnel.
-- [Riitu Institution | Case Study](https://www.inranktech.com/case-studies/riituinstitution.html): Educational portal with lead capture and student enrollment system.
-- [Shetkari Foodstuff Trading LLC | Case Study](https://www.inranktech.com/case-studies/shetkarifoodstuff.html): Multilingual agro export portal driving GCC buyer inquiries.
-- [Vasro Ventures | Case Study](https://www.inranktech.com/case-studies/vasroventures.html): Modern apparel brand showcase with lookbook and wholesale inquiry funnel.
+### Pillar 4: Brand Identity & Conversion Rate Optimization (CRO)
+- **UI/UX Design Systems**: https://inranktech.com/services/ui-ux-design-services.html - Conversion-focused interfaces engineered in Figma for seamless developer handoff.
+- **Conversion Rate Optimization (CRO)**: https://inranktech.com/services/conversion-rate-optimization-services.html - Neuromarketing teardowns, heatmaps, and A/B split-testing.
+- **Corporate Logo Design**: https://inranktech.com/services/corporate-logo-design.html - Timeless visual identity systems and brand style guidelines.
+- **Brand Naming Agency**: https://inranktech.com/services/brand-naming-agency.html - Strategic phonetic, trademark-cleared, and domain-vetted brand naming.
+- **Brochure & Collateral Design**: https://inranktech.com/services/brochure-design-services.html - Corporate brochures, investor decks, and product catalog systems.
+- **Letterhead & Stationery Systems**: https://inranktech.com/services/letterhead-stationery-design.html - Premium corporate document hierarchy and executive stationery.
+- **Luxury Business Card Design**: https://inranktech.com/services/luxury-business-card-design.html - Tactile, high-end business card finishes and NFC integration.
 
----
+### Verified Client Deployments & Case Studies (10 Landmark Projects)
+- **CyTOS Machines Pune**: - Portfolio: https://inranktech.com/our-work/cytos.html - Case Study: https://inranktech.com/case-studies/cytos.html - Industry: Precision CNC Machinery & PCB Milling Automation - Metric: +314% Monthly Industrial RFQs; Sub-second React 18 architecture
+- **Fludio Water Solutions**: - Portfolio: https://inranktech.com/our-work/fludio.html - Case Study: https://inranktech.com/case-studies/fludio.html - Industry: Architectural Fountains & Aquatic Engineering - Metric: 99 Google Lighthouse Performance Score; DMX 512 dancing water showcase
+- **HIRAGRAFIX™**: - Portfolio: https://inranktech.com/our-work/hiragrafix.html - Case Study: https://inranktech.com/case-studies/hiragrafix.html - Industry: Luxury Packaging, Rigid Boxes & Commercial Printing - Metric: 98/100 Core Web Vitals; Est. 1970 Mumbai heritage portfolio
+- **Grey To The Green**: - Portfolio: https://inranktech.com/our-work/greytothegreen.html - Case Study: https://inranktech.com/case-studies/greytothegreen.html - Industry: Plant-Powered Home Care & Biotech Formulations - Metric: +340% Organic Inquiries; US EPA-registered neem formulation storefront
+- **Vasro Ventures**: - Portfolio: https://inranktech.com/our-work/vasroventures.html - Case Study: https://inranktech.com/case-studies/vasroventures.html - Industry: Contemporary Fashion & Apparel Storefront - Metric: ₹120Cr Inventory Scaled; Fluid editorial lookbook with Instagram checkout
+- **HCPNest**: - Portfolio: https://inranktech.com/our-work/hcpnest.html - Case Study: https://inranktech.com/case-studies/hcpnest.html - Industry: Healthcare Staffing & Medical Recruitment Network - Metric: 4.8x Lead Flow; 4-day placement turnaround for hospitals
+- **Riitu Institution**: - Portfolio: https://inranktech.com/our-work/riituinstitution.html - Case Study: https://inranktech.com/case-studies/riituinstitution.html - Industry: CA, Commerce & Professional Coaching Academy - Metric: 12,000+ Enrolment Inquiries; High-speed entrance exam admission funnels
+- **Shetkari Foodstuff Trading LLC**: - Portfolio: https://inranktech.com/our-work/shetkarifoodstuff.html - Case Study: https://inranktech.com/case-studies/shetkarifoodstuff.html - Industry: Agro Commodity Export & International Trade - Metric: ₹18L+ Export GMV; Multi-currency GCC export infrastructure
+- **Dr. Shyam Thakkar**: - Portfolio: https://inranktech.com/our-work/orthopedicanklefootspecialist.html - Case Study: https://inranktech.com/case-studies/orthopedicanklefootspecialist.html - Industry: Orthopedic Foot & Ankle Surgical Practice - Metric: Top-3 Google Rankings across Pune & Mumbai; Surgical schema booking
+- **Dravya Financial Solutions**: - Portfolio: https://inranktech.com/our-work/dravyafinancial.html - Case Study: https://inranktech.com/case-studies/dravyafinancial.html - Industry: Corporate Capital Advisory & Debt Syndication - Metric: ₹45Cr+ Transaction Inquiries; Institutional deal intake architecture
 
-## Verified Production Works (10 Client Deployments)
-- [CyTOS Machines Pune | Industrial CNC Portal](https://www.inranktech.com/our-work/cytos.html): Production deployment for CyTOS Machines.
-- [Dravya Financial Solutions | Corporate Debt Advisory](https://www.inranktech.com/our-work/dravyafinancial.html): Production deployment for Dravya Financial.
-- [Fludio Water Solutions | Luxury Aquatic Systems](https://www.inranktech.com/our-work/fludio.html): Production deployment for Fludio Water Solutions.
-- [Grey To The Green | Biotech Formulations D2C](https://www.inranktech.com/our-work/greytothegreen.html): Production deployment for Grey To The Green.
-- [HCPNest | Healthcare Clinical Staffing Network](https://www.inranktech.com/our-work/hcpnest.html): Production deployment for HCPNest.
-- [HIRAGRAFIX™ | Corporate Print & Packaging](https://www.inranktech.com/our-work/hiragrafix.html): Production deployment for HIRAGRAFIX.
-- [Dr. Shyam Thakkar (ARTICUL8 Clinic) | Orthopedic Specialist](https://www.inranktech.com/our-work/orthopedicanklefootspecialist.html): Production deployment for ARTICUL8 Clinic.
-- [Riitu Institution | CA & Commerce Academy](https://www.inranktech.com/our-work/riituinstitution.html): Production deployment for Riitu Institution.
-- [Shetkari Foodstuff Trading LLC | Global Agro Export](https://www.inranktech.com/our-work/shetkarifoodstuff.html): Production deployment for Shetkari Foodstuff Trading.
-- [Vasro Ventures | Contemporary Fashion Apparel](https://www.inranktech.com/our-work/vasroventures.html): Production deployment for Vasro Ventures.
+### Technical Engineering & Growth Guides (30 Strategic Articles)
+- **Top Digital Marketing & Web Agencies Pune**: https://inranktech.com/blog/top-digital-marketing-web-development-agencies-pune.html
+- **Complete SEO Engineering Guide**: https://inranktech.com/blog/seo-complete-guide.html
+- **AI SEO & Generative Optimization Blueprint**: https://inranktech.com/blog/ai-seo-agency-generative-optimization.html
+- **AI Ranking Citations & Knowledge Graph Strategy**: https://inranktech.com/blog/ai-ranking-citations-knowledge-graph-optimization.html
+- **Generative Engine Optimization (GEO) Mastery**: https://inranktech.com/blog/geo-seo-agency-generative-engine-optimization.html
+- **Google Business Profile Local 3-Pack Blueprint**: https://inranktech.com/blog/google-business-profile-local-pack-guide.html
+- **High-Performance WordPress Engineering**: https://inranktech.com/blog/high-performance-wordpress-engineering.html
+- **Modern Web Development Architecture**: https://inranktech.com/blog/modern-web-development-engineering.html
+- **Custom Website Design Frameworks**: https://inranktech.com/blog/custom-website-design-frameworks.html
+- **Enterprise Website Maintenance Protocol**: https://inranktech.com/blog/enterprise-website-maintenance-guide.html
+- **Custom Shopify Development Guide**: https://inranktech.com/blog/custom-shopify-development-guide.html
+- **Omnichannel E-Commerce Architecture**: https://inranktech.com/blog/omnichannel-ecommerce-architecture-guide.html
+- **Cross-Platform Mobile App Engineering**: https://inranktech.com/blog/cross-platform-mobile-app-engineering.html
+- **High-Converting Landing Page Engineering**: https://inranktech.com/blog/high-converting-landing-page-engineering.html
+- **Conversion Rate Optimization (CRO) Engineering**: https://inranktech.com/blog/conversion-rate-optimization-engineering.html
+- **Google Ads Scaling Blueprint**: https://inranktech.com/blog/google-ads-scaling-blueprint.html
+- **Meta Ads Scaling Mastery**: https://inranktech.com/blog/meta-ads-scaling-mastery.html
+- **PPC Management & B2B Paid Search**: https://inranktech.com/blog/ppc-management-blueprint.html
+- **LinkedIn B2B Lead Generation Blueprint**: https://inranktech.com/blog/linkedin-management-guide.html
+- **Social Media Marketing Growth Guide**: https://inranktech.com/blog/social-media-marketing-guide.html
+- **Influencer Marketing Framework**: https://inranktech.com/blog/influencer-marketing-guide.html
+- **WhatsApp Marketing & Conversational Funnels**: https://inranktech.com/blog/whatsapp-marketing-guide.html
+- **Omnichannel SMS & Retention Messaging**: https://inranktech.com/blog/omnichannel-sms-marketing-and-conversational-messaging.html
+- **Enterprise Email Marketing & Lifecycle Automation**: https://inranktech.com/blog/enterprise-email-marketing-and-lifecycle-automation.html
+- **Content Marketing & Editorial Information Gain**: https://inranktech.com/blog/content-marketing-editorial-authority-and-information-gain.html
+- **Strategic Brand Naming Architecture**: https://inranktech.com/blog/strategic-brand-naming-architecture.html
+- **Enterprise Logo Design & Visual Systems**: https://inranktech.com/blog/enterprise-logo-design-and-visual-systems.html
+- **High-Impact Brochure Design & Print Architecture**: https://inranktech.com/blog/high-impact-brochure-designing-and-print-architecture.html
+- **Executive Letterhead & Corporate Stationery**: https://inranktech.com/blog/executive-letterhead-design-and-corporate-stationery-systems.html
+- **Luxury Business Card Design & Ergonomics**: https://inranktech.com/blog/luxury-business-card-design-and-tactile-print-ergonomics.html
 
----
+### High-Intent Local Pune Landing Pages
+- **Digital Marketing Agency in Pune**: https://inranktech.com/digital-marketing-agency-in-pune.html
+- **Website Design Company in Pune**: https://inranktech.com/website-design-company-in-pune.html
 
-## Legal & Compliance (2 Authority Docs)
-- [Privacy Policy](https://www.inranktech.com/privacy-policy.html): Complete privacy policy compliant with Indian DPDP Act 2023, GDPR, CCPA, and cookie governance.
-- [Terms & Conditions](https://www.inranktech.com/terms-and-conditions.html): Commercial terms, package deliverables, 100% IP & source code ownership transfer, and 365-day SLA warranty.
+### Legal & Compliance Pages
+- **Privacy Policy**: https://inranktech.com/privacy-policy.html
+- **Terms and Conditions**: https://inranktech.com/terms-and-conditions.html ---
+*Generated: 2026-11-05. Maintained and published by Inrank Technologies Pvt Ltd.*
+
+- [Autonomous AI Search Agents & Deep Research Citations](https://inranktech.com/blog/autonomous-ai-search-agents-deep-research-optimization.html): How agentic LLMs crawl and cite web platforms, with MCP endpoints and llms.txt manifests.
+- [Generative Engine Optimization (GEO) 2.0 Playbook](https://inranktech.com/blog/generative-engine-optimization-geo-2-0-playbook.html): Decodes past 30-day algorithmic shifts across Google AI Overviews and ChatGPT Search with 90-day future roadmap.
+- [Next.js 15, React 19 & Edge AI Web Architecture](https://inranktech.com/blog/nextjs-15-react-19-edge-ai-architecture.html): Building sub-1.2s portals, React Server Components, Turbopack, and Edge AI streaming.

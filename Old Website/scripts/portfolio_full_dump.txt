@@ -1,0 +1,250 @@
+
+################################################################################
+FILE: inrank2.0/our-work/dravyafinancial.html
+################################################################################
+Title: Dravya Financial Solutions Pvt Ltd — Inrank Technologies Case Study
+Meta: Institutional Wealth Advisory & High-Yield Portfolio Management Platform. Documented outcomes, performance metrics, and technical architecture by Inrank Technologies Pune.
+Canonical: https://inranktech.com/our-work/dravyafinancial.html
+
+NO JSON-LD!
+
+--- SECTION 0 ---
+Home / Our Work / Dravya Financial Solutions Pvt Ltd https://dravyafinancial.com/ ₹14.5Cr+ Inbound AUM Dravya Financial Solutions Pvt Ltd Institutional Wealth Advisory & High-Yield Portfolio Management Platform Visit Live Portal Book Similar Project
+
+--- SECTION 1 ---
+₹14.5Cr+ Inbound AUM Influenced Qualified HNIs via search 92% Lead Qualification High net-worth filters 1.1s Load Speed Clean corporate layout 24/7 Automated Scheduling Google Calendar sync
+
+--- SECTION 2 ---
+PROJECT OVERVIEW The Commercial Challenge &amp; Solution Dravya Financial Solutions is an institutional portfolio management and corporate advisory firm. They needed a digital presence communicating absolute fiduciary trust, regulatory compliance, and seamless consultation booking for high-net-worth individuals across Pune and Mumbai. Technical Challenge The existing site suffered from a generic WordPress theme template, 4.2-second load times on mobile, zero on-page Schema markup, and confusing contact funnels that leaked high-value corporate inquiries. ENGINEERING DELIVERABLES Scope of Architecture Deployed ✓ Custom semantic HTML5/CSS3 corporate web engineering ✓ FinancialService & ProfessionalService JSON-LD structured data ✓ Encrypted client inquiry forms with instant WhatsApp lead routing ✓ Interactive risk profiling calculator and consultation scheduler ✓ Sub-second mobile rendering optimized for Core Web Vitals
+
+--- SECTION 3 ---
+★★★★★ "Inrank gave us an institutional-grade digital platform that immediately commanded respect from HNI clients. Their speed, direct engineer communication, and focus on conversion are unmatched in Pune." Advisory Board Dravya Financial Solutions Pvt Ltd
+
+--- SECTION 4 ---
+SCALE YOUR REVENUE Ready for a similar commercial deployment? Schedule an executive growth audit with Prasad Mhaske at our Baner lab. We analyze Core Web Vitals, local Google 3-Pack gaps, and competitor ad strategies. Book Free Growth Audit Explore More Deployments
+
+
+################################################################################
+FILE: inrank2.0/our-work/greytothegreen.html
+################################################################################
+Title: Grey To The Green — Inrank Technologies Case Study
+Meta: Sustainable Bio-Architecture & Luxury Corporate Greenery Engineering. Documented outcomes, performance metrics, and technical architecture by Inrank Technologies Pune.
+Canonical: https://inranktech.com/our-work/greytothegreen.html
+
+NO JSON-LD!
+
+--- SECTION 0 ---
+Home / Our Work / Grey To The Green https://greytothegreen.com/ 4.8x Ad ROAS Grey To The Green Sustainable Bio-Architecture & Luxury Corporate Greenery Engineering Visit Live Portal Book Similar Project
+
+--- SECTION 1 ---
+4.8x Average Meta/Google ROAS Commercial contracts 120+ High-Ticket Inquiries IT parks & villas Render Time High-res image CDN +240% Organic Traffic Lift Pune landscaping queries
+
+--- SECTION 2 ---
+PROJECT OVERVIEW The Commercial Challenge &amp; Solution Grey To The Green engineers sustainable corporate green walls, terrace gardens, and bio-architectural installations for corporate IT parks and luxury residential estates. Technical Challenge A heavy, unoptimized photo gallery caused 6-second load times on mobile. PPC advertising was bleeding budget due to non-converting landing pages. ENGINEERING DELIVERABLES Scope of Architecture Deployed ✓ Next-generation WebP responsive image pipeline with lazy loading ✓ High-conversion corporate landscape quotation funnels ✓ Targeted Google Search & Meta Retargeting campaigns ✓ Local Pune citation network for premium landscaping ✓ Dynamic project portfolio filter with case breakdown
+
+--- SECTION 3 ---
+★★★★★ "Inrank transformed our web presence from a slow photo album into an aggressive B2B client acquisition machine. The lead quality from Pune IT parks has been phenomenal." Founder & Lead Architect Grey To The Green
+
+--- SECTION 4 ---
+SCALE YOUR REVENUE Ready for a similar commercial deployment? Schedule an executive growth audit with Prasad Mhaske at our Baner lab. We analyze Core Web Vitals, local Google 3-Pack gaps, and competitor ad strategies. Book Free Growth Audit Explore More Deployments
+
+
+################################################################################
+FILE: inrank2.0/our-work/cytos.html
+################################################################################
+Title: Cytos Healthcare Solutions — Inrank Technologies Case Study
+Meta: National B2B Diagnostic Equipment & Clinical Consumables Portal. Documented outcomes, performance metrics, and technical architecture by Inrank Technologies Pune.
+Canonical: https://inranktech.com/our-work/cytos.html
+
+NO JSON-LD!
+
+--- SECTION 0 ---
+Home / Our Work / Cytos Healthcare Solutions https://cytos.in/ 340+ Hospital Leads Cytos Healthcare Solutions National B2B Diagnostic Equipment & Clinical Consumables Portal Visit Live Portal Book Similar Project
+
+--- SECTION 1 ---
+340+ Hospital B2B Inquiries Direct RFQs via portal #1 Rank Google 3-Pack Pune medical supply 0.9s Page Load Speed Lighthouse 96 Mobile 4.9★ Verified Client Rating Healthcare procurement
+
+--- SECTION 2 ---
+PROJECT OVERVIEW The Commercial Challenge &amp; Solution Cytos Healthcare supplies clinical diagnostic equipment and lab consumables to hospitals and diagnostic chains. They required a fast, searchable product catalog capable of generating structured Request For Quotations (RFQs). Technical Challenge Previous PDF-based catalog made mobile browsing impossible for hospital purchase officers. Lack of medical equipment schema resulted in zero organic search visibility. ENGINEERING DELIVERABLES Scope of Architecture Deployed ✓ Fast-loading responsive diagnostic equipment catalog ✓ MedicalEntity & Product JSON-LD structured data architecture ✓ 1-click RFQ generator with instant WhatsApp integration ✓ Hyperlocal SEO optimization across Pune healthcare hubs ✓ Google Analytics 4 server-side conversion tracking
+
+--- SECTION 3 ---
+★★★★★ "Our hospital purchase inquiries tripled within two months. The product catalog loads instantly on mobile, and doctors love the quick RFQ system." Managing Director Cytos Healthcare
+
+--- SECTION 4 ---
+SCALE YOUR REVENUE Ready for a similar commercial deployment? Schedule an executive growth audit with Prasad Mhaske at our Baner lab. We analyze Core Web Vitals, local Google 3-Pack gaps, and competitor ad strategies. Book Free Growth Audit Explore More Deployments
+
+
+################################################################################
+FILE: inrank2.0/our-work/fludio.html
+################################################################################
+Title: Fludio Design Studio — Inrank Technologies Case Study
+Meta: High-End Architectural Planning & Contemporary Interior Engineering. Documented outcomes, performance metrics, and technical architecture by Inrank Technologies Pune.
+Canonical: https://inranktech.com/our-work/fludio.html
+
+NO JSON-LD!
+
+--- SECTION 0 ---
+Home / Our Work / Fludio Design Studio https://fludio.in/ ₹2.8Cr+ Projects Won Fludio Design Studio High-End Architectural Planning & Contemporary Interior Engineering Visit Live Portal Book Similar Project
+
+--- SECTION 1 ---
+₹2.8Cr+ Project Value Influenced Luxury interior contracts 38+ Consultation Bookings High-intent homeowners 98% Client Satisfaction Verified design reviews 0.8s LCP Speed Smooth micro-interactions
+
+--- SECTION 2 ---
+PROJECT OVERVIEW The Commercial Challenge &amp; Solution Fludio Design Studio crafts bespoke residential and commercial interior environments. They needed an editorial-grade web portfolio reflecting architectural precision. Technical Challenge Their existing portfolio failed to reflect their design standards, with disjointed typography, zero mobile responsiveness, and sluggish page transitions. ENGINEERING DELIVERABLES Scope of Architecture Deployed ✓ Bespoke architectural layout with editorial typography and whitespace ✓ Smooth, non-blocking image carousels with micro-interactions ✓ Integrated project inquiry pipeline with budget filtering ✓ Local Pune SEO targeting luxury residential corridors ✓ Full brand style guide alignment across all devices
+
+--- SECTION 3 ---
+★★★★★ "The site Inrank built looks like an international architectural journal. Our clients constantly mention how polished and seamless the website is." Principal Designer Fludio Studio
+
+--- SECTION 4 ---
+SCALE YOUR REVENUE Ready for a similar commercial deployment? Schedule an executive growth audit with Prasad Mhaske at our Baner lab. We analyze Core Web Vitals, local Google 3-Pack gaps, and competitor ad strategies. Book Free Growth Audit Explore More Deployments
+
+
+################################################################################
+FILE: inrank2.0/our-work/hcpnest.html
+################################################################################
+Title: HCP Nest Coworking & Managed Workspaces — Inrank Technologies Case Study
+Meta: Premium Enterprise Workspaces & Flexible Coworking Suites in Pune. Documented outcomes, performance metrics, and technical architecture by Inrank Technologies Pune.
+Canonical: https://inranktech.com/our-work/hcpnest.html
+
+NO JSON-LD!
+
+--- SECTION 0 ---
+Home / Our Work / HCP Nest Coworking & Managed Workspaces https://hcpnest.com/ 94% Desk Occupancy HCP Nest Coworking & Managed Workspaces Premium Enterprise Workspaces & Flexible Coworking Suites in Pune Visit Live Portal Book Similar Project
+
+--- SECTION 1 ---
+94% Workspace Occupancy Enterprise suites filled 280+ Monthly Tour Bookings Automated calendar sync #1 Rank Kharadi Coworking Google 3-pack top spot 1.0s Speed Index Zero bloat architecture
+
+--- SECTION 2 ---
+PROJECT OVERVIEW The Commercial Challenge &amp; Solution HCP Nest offers premium flexible coworking spaces, private team cabins, and meeting facilities in Pune’s prominent eastern IT corridors. Technical Challenge High cost-per-lead on Google Ads with 70% of clicks bouncing off a slow multi-step booking form. Desk vacancy stood at 32%. ENGINEERING DELIVERABLES Scope of Architecture Deployed ✓ High-conversion 1-page tour booking engine with instant slot selection ✓ Google Ads campaign restructuring focusing on high-intent IT terms ✓ Local SEO dominance across Kharadi, Magarpatta, and Viman Nagar ✓ Live WhatsApp desk availability bot integration ✓ Dynamic workspace pricing & amenities calculator
+
+--- SECTION 3 ---
+★★★★★ "Inrank completely turned around our digital acquisition. We reached 94% occupancy across both Kharadi floors while cutting our ad spend by 30%." Operations Head HCP Nest Coworking
+
+--- SECTION 4 ---
+SCALE YOUR REVENUE Ready for a similar commercial deployment? Schedule an executive growth audit with Prasad Mhaske at our Baner lab. We analyze Core Web Vitals, local Google 3-Pack gaps, and competitor ad strategies. Book Free Growth Audit Explore More Deployments
+
+
+################################################################################
+FILE: inrank2.0/our-work/hiragrafix.html
+################################################################################
+Title: Hira Grafix Solutions — Inrank Technologies Case Study
+Meta: Industrial Signage, Architectural Facades & Retail Branding Hub. Documented outcomes, performance metrics, and technical architecture by Inrank Technologies Pune.
+Canonical: https://inranktech.com/our-work/hiragrafix.html
+
+NO JSON-LD!
+
+--- SECTION 0 ---
+Home / Our Work / Hira Grafix Solutions https://hiragrafix.com/ 180+ Industrial RFQs Hira Grafix Solutions Industrial Signage, Architectural Facades & Retail Branding Hub Visit Live Portal Book Similar Project
+
+--- SECTION 1 ---
+180+ Industrial RFQs Bhosari & Chakan plants +185% Search Visibility Industrial signage Pune 1.1s Mobile Load Speed Clean semantic markup 100% Asset Ownership Zero vendor lock-in
+
+--- SECTION 2 ---
+PROJECT OVERVIEW The Commercial Challenge &amp; Solution Hira Grafix provides turnkey industrial branding, exterior architectural facades, and corporate wayfinding signage across Maharashtra’s automotive and engineering belts. Technical Challenge A dormant web presence that generated zero leads; automotive Tier-1 suppliers in Chakan could not discover their technical fabrication capabilities online. ENGINEERING DELIVERABLES Scope of Architecture Deployed ✓ Industrial fabrication capability showcase with detailed specs ✓ Targeted B2B SEO targeting PCMC, Bhosari, Chakan, and Talegaon clusters ✓ Fast mobile quotation request form with blueprint upload capability ✓ Full technical SEO audit and Google Search Console optimization ✓ WhatsApp direct routing to estimating engineers
+
+--- SECTION 3 ---
+★★★★★ "Industrial signage requires technical credibility. Inrank gave us a platform that immediately proves our capability to major automotive Tier-1 clients." Technical Director Hira Grafix
+
+--- SECTION 4 ---
+SCALE YOUR REVENUE Ready for a similar commercial deployment? Schedule an executive growth audit with Prasad Mhaske at our Baner lab. We analyze Core Web Vitals, local Google 3-Pack gaps, and competitor ad strategies. Book Free Growth Audit Explore More Deployments
+
+
+################################################################################
+FILE: inrank2.0/our-work/orthopedicanklefootspecialist.html
+################################################################################
+Title: Orthopedic Ankle & Foot Specialist — Inrank Technologies Case Study
+Meta: Advanced Foot & Ankle Reconstruction, Sports Injury & Trauma Surgery. Documented outcomes, performance metrics, and technical architecture by Inrank Technologies Pune.
+Canonical: https://inranktech.com/our-work/orthopedicanklefootspecialist.html
+
+NO JSON-LD!
+
+--- SECTION 0 ---
+Home / Our Work / Orthopedic Ankle & Foot Specialist https://orthopedicanklefootspecialist.com/ 450+ Consultations Orthopedic Ankle & Foot Specialist Advanced Foot & Ankle Reconstruction, Sports Injury & Trauma Surgery Visit Live Portal Book Similar Project
+
+--- SECTION 1 ---
+450+ Verified Patient Bookings Via local search #1 Rank Google 3-Pack Ankle specialist Pune 0.9s Mobile Page Speed Quick click-to-call 99% Patient Trust Rating Verified clinic reviews
+
+--- SECTION 2 ---
+PROJECT OVERVIEW The Commercial Challenge &amp; Solution A leading orthopedic surgical clinic specializing in complex foot reconstructive surgery, sports arthroscopy, and diabetic foot management. Technical Challenge Patients in severe pain were dropping off due to slow loading times and lack of direct clinic WhatsApp calling options on mobile devices. ENGINEERING DELIVERABLES Scope of Architecture Deployed ✓ Mobile-first medical clinic layout with 1-tap phone and WhatsApp booking ✓ MedicalCondition & Physician JSON-LD schema integration ✓ Hyperlocal SEO domination across Baner, Aundh, Kothrud, and PCMC ✓ Patient educational condition guides with recovery timelines ✓ Google Maps 3-Pack review management protocol
+
+--- SECTION 3 ---
+★★★★★ "Patients frequently tell me how easy it was to find my clinic on Google and book an appointment with one tap. Inrank understands medical growth." Consultant Orthopedic Surgeon Orthopedic Ankle & Foot Specialist
+
+--- SECTION 4 ---
+SCALE YOUR REVENUE Ready for a similar commercial deployment? Schedule an executive growth audit with Prasad Mhaske at our Baner lab. We analyze Core Web Vitals, local Google 3-Pack gaps, and competitor ad strategies. Book Free Growth Audit Explore More Deployments
+
+
+################################################################################
+FILE: inrank2.0/our-work/riituinstitution.html
+################################################################################
+Title: Riitu Institution of Arts & Design — Inrank Technologies Case Study
+Meta: Premier Design Academy, Fashion Tech & Fine Arts Education Hub. Documented outcomes, performance metrics, and technical architecture by Inrank Technologies Pune.
+Canonical: https://inranktech.com/our-work/riituinstitution.html
+
+NO JSON-LD!
+
+--- SECTION 0 ---
+Home / Our Work / Riitu Institution of Arts & Design https://riituinstitution.com/ 820+ Admissions Leads Riitu Institution of Arts & Design Premier Design Academy, Fashion Tech & Fine Arts Education Hub Visit Live Portal Book Similar Project
+
+--- SECTION 1 ---
+820+ Admissions Inquiries Summer semester batch 3.9x Ad Campaign ROAS Student registrations 1.2s Interactive Speed Curriculum explorer +160% Instagram Lead Surge Integrated Meta funnels
+
+--- SECTION 2 ---
+PROJECT OVERVIEW The Commercial Challenge &amp; Solution Riitu Institution prepares aspiring creative designers, fashion architects, and digital artists for global careers through certified intensive diplomas. Technical Challenge Cluttered academic prospectus on the old site caused high drop-off during the peak summer admissions intake window. ENGINEERING DELIVERABLES Scope of Architecture Deployed ✓ Vibrant academic portal with interactive course curriculum finder ✓ Automated admissions brochure download and lead nurturing workflow ✓ Multi-channel Meta and Google Ads strategy during intake season ✓ Student work showcase gallery with high-speed lazy loading ✓ Direct WhatsApp admissions counseling integration
+
+--- SECTION 3 ---
+★★★★★ "Our admissions team had their most successful intake season thanks to Inrank’s conversion-engineered landing pages and ad targeting." Academic Dean Riitu Institution
+
+--- SECTION 4 ---
+SCALE YOUR REVENUE Ready for a similar commercial deployment? Schedule an executive growth audit with Prasad Mhaske at our Baner lab. We analyze Core Web Vitals, local Google 3-Pack gaps, and competitor ad strategies. Book Free Growth Audit Explore More Deployments
+
+
+################################################################################
+FILE: inrank2.0/our-work/shetkarifoodstuff.html
+################################################################################
+Title: Shetkari Foodstuff Pvt Ltd — Inrank Technologies Case Study
+Meta: Farm-Direct Organic Food Processing & International Export Supply. Documented outcomes, performance metrics, and technical architecture by Inrank Technologies Pune.
+Canonical: https://inranktech.com/our-work/shetkarifoodstuff.html
+
+NO JSON-LD!
+
+--- SECTION 0 ---
+Home / Our Work / Shetkari Foodstuff Pvt Ltd https://shetkarifoodstuff.com/ ₹4.2Cr+ Export Orders Shetkari Foodstuff Pvt Ltd Farm-Direct Organic Food Processing & International Export Supply Visit Live Portal Book Similar Project
+
+--- SECTION 1 ---
+₹4.2Cr+ Export Contract Inquiries Middle East & Europe 85+ Wholesale B2B Leads Supermarket distributors 1.0s Global CDN Speed Zero overseas latency 100% Regulatory Verified APEDA & FSSAI Schema
+
+--- SECTION 2 ---
+PROJECT OVERVIEW The Commercial Challenge &amp; Solution Shetkari Foodstuff processes organic agricultural produce, cold-pressed oils, and spices for national FMCG distribution and export shipments. Technical Challenge Overseas buyers in the UAE and Europe required immediate access to laboratory certifications, export specs, and bulk container pricing models. ENGINEERING DELIVERABLES Scope of Architecture Deployed ✓ Global export product catalog with container load & pallet calculators ✓ Multi-currency pricing framework and international lead routing ✓ Agricultural & food processing schema markup for global discovery ✓ High-speed global CDN deployment ensuring sub-second overseas loads ✓ Instant sample order request funnel with automated CRM tracking
+
+--- SECTION 3 ---
+★★★★★ "Inrank gave us an international-standard export portal that directly opened doors with supermarket distributors in Dubai and Germany." Export Director Shetkari Foodstuff Pvt Ltd
+
+--- SECTION 4 ---
+SCALE YOUR REVENUE Ready for a similar commercial deployment? Schedule an executive growth audit with Prasad Mhaske at our Baner lab. We analyze Core Web Vitals, local Google 3-Pack gaps, and competitor ad strategies. Book Free Growth Audit Explore More Deployments
+
+
+################################################################################
+FILE: inrank2.0/our-work/vasroventures.html
+################################################################################
+Title: Vasro Ventures Private Limited — Inrank Technologies Case Study
+Meta: Strategic Investment, Venture Incubation & Cross-Border M&A Advisory. Documented outcomes, performance metrics, and technical architecture by Inrank Technologies Pune.
+Canonical: https://inranktech.com/our-work/vasroventures.html
+
+NO JSON-LD!
+
+--- SECTION 0 ---
+Home / Our Work / Vasro Ventures Private Limited https://vasroventures.com/ 14 Strategic Deals Vasro Ventures Private Limited Strategic Investment, Venture Incubation & Cross-Border M&A Advisory Visit Live Portal Book Similar Project
+
+--- SECTION 1 ---
+14 Strategic Deal Funnels Institutional syndication 100% Confidential Routing End-to-end encrypted 0.8s Serverless Render Enterprise Next.js architecture 99.9% Service Uptime Enterprise SLA
+
+--- SECTION 2 ---
+PROJECT OVERVIEW The Commercial Challenge &amp; Solution Vasro Ventures invests in early-growth technology startups and provides cross-border strategic advisory, equity syndication, and incubation. Technical Challenge Needed a minimalist, ultra-high-end venture capital platform communicating sophistication, regulatory rigor, and strict confidentiality. ENGINEERING DELIVERABLES Scope of Architecture Deployed ✓ Custom minimalist dark-mode executive web architecture ✓ Encrypted deal-room intake funnel for institutional founders ✓ Portfolio incubation showcase with real-time sector filtering ✓ Sub-second serverless deployment on high-availability edge nodes ✓ Executive bio profiles and press release archive
+
+--- SECTION 3 ---
+★★★★★ "Inrank understands corporate restraint and technical sophistication. The platform represents our venture thesis with precision and elegance." Managing Partner Vasro Ventures
+
+--- SECTION 4 ---
+SCALE YOUR REVENUE Ready for a similar commercial deployment? Schedule an executive growth audit with Prasad Mhaske at our Baner lab. We analyze Core Web Vitals, local Google 3-Pack gaps, and competitor ad strategies. Book Free Growth Audit Explore More Deployments
+

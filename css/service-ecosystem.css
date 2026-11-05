@@ -1,0 +1,2081 @@
+/* ══════════════════════════════════════════════════════════════════
+   INRANK 2.0 VINOVE ECOSYSTEM MASTER SERVICE STYLESHEET
+   Derived from Vinove Bond & Prism Architecture
+   ══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --eco-ink: #081424;
+  --eco-ink-2: #0f2138;
+  --eco-paper: #faf9f5;
+  --eco-stone: #f4f2ec;
+  --eco-line: #e2ded5;
+  --eco-line-dark: rgba(255, 255, 255, 0.12);
+  --eco-terra: #009d49;
+  --eco-signal: #34d399;
+  --eco-mint: #10b981;
+  --eco-text: #081424;
+  --eco-muted: #64748b;
+  --gutter: clamp(1.25rem, 3.5vw, 3rem);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.theme-ecosystem {
+  background: var(--eco-paper);
+  color: var(--eco-text);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+.eco-shell {
+  width: min(100%, 1400px);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  box-sizing: border-box;
+}
+
+.eco-kicker {
+  margin: 0 0 1rem;
+  color: var(--eco-terra);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  display: block;
+}
+
+.eco-title {
+  margin: 0;
+  font-size: clamp(2rem, 3.2vw, 3.15rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: #ffffff;
+}
+
+.eco-heading {
+  max-width: 22ch;
+  margin: 0;
+  font-size: clamp(2rem, 3.8vw, 3.8rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  color: var(--eco-ink);
+}
+
+.eco-dark .eco-heading {
+  color: #ffffff;
+}
+
+.eco-copy {
+  max-width: 44rem;
+  color: #475569;
+  font-size: clamp(1rem, 1.25vw, 1.15rem);
+  line-height: 1.7;
+}
+
+.eco-section {
+  padding-block: clamp(4.5rem, 8vw, 8rem);
+  position: relative;
+}
+
+.eco-dark {
+  color: #ffffff;
+  background: var(--eco-ink);
+}
+
+.eco-dark .eco-copy {
+  color: #94a3b8;
+}
+
+.eco-dark .eco-kicker {
+  color: var(--eco-signal);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   HERO SECTION (.eco-hero)
+   ══════════════════════════════════════════════════════════════════ */
+.eco-hero {
+  position: relative;
+  min-height: min(880px, 92svh);
+  display: grid;
+  align-items: center;
+  padding: calc(var(--nav-h, 72px) + clamp(4rem, 8vh, 6.5rem)) 0 clamp(4rem, 6vw, 6rem);
+  color: #ffffff;
+  background: radial-gradient(circle at 75% 25%, rgba(0, 157, 73, 0.28) 0%, transparent 55%),
+              radial-gradient(circle at 20% 85%, rgba(15, 33, 56, 0.9) 0%, transparent 60%),
+              #081424;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.eco-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.eco-hero-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+  gap: clamp(2.5rem, 6vw, 6.5rem);
+  align-items: center;
+}
+
+.eco-hero .eco-title em {
+  color: var(--eco-signal);
+  font-style: italic;
+  font-weight: 800;
+}
+
+.eco-hero-lede {
+  max-width: 42rem;
+  margin: 1.75rem 0 0;
+  color: #cbd5e1;
+  font-size: clamp(1.05rem, 1.45vw, 1.25rem);
+  line-height: 1.6;
+}
+
+.eco-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 2.25rem;
+}
+
+.eco-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--eco-terra);
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 750;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 10px 28px rgba(0, 157, 73, 0.3);
+}
+
+.eco-button:hover {
+  background: #00873e;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(0, 157, 73, 0.4);
+}
+
+.eco-text-link {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.eco-text-link:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.eco-availability {
+  margin-top: 1.75rem;
+  color: #cbd5e1;
+  font-size: 0.84rem;
+  font-weight: 550;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.4;
+}
+
+.eco-avail-icon {
+  color: var(--eco-signal, #00bf5d);
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+/* Decision Framework Card (Vinove Bond/Prism Signature) */
+.prism-decision,
+.eco-decision {
+  background: linear-gradient(165deg, rgba(15, 33, 56, 0.85) 0%, rgba(8, 20, 36, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 24px;
+  padding: clamp(2rem, 3.5vw, 3rem);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+
+.prism-overline,
+.eco-overline {
+  color: var(--eco-signal);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 0.8rem;
+}
+
+.prism-decision h2,
+.eco-decision h2 {
+  font-size: clamp(1.6rem, 2.3vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0 0 1.75rem;
+}
+
+.prism-decision h2 em,
+.eco-decision h2 em {
+  color: var(--eco-signal);
+  font-style: italic;
+}
+
+.prism-decision-list,
+.prism-decision ol,
+.eco-decision ol {
+  list-style: none !important;
+  list-style-type: none !important;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.prism-decision-list li,
+.prism-decision li,
+.eco-decision li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  list-style: none !important;
+  list-style-type: none !important;
+}
+
+.prism-decision-list li > span,
+.prism-decision li > span,
+.eco-decision li > span {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(52, 211, 153, 0.15);
+  color: var(--eco-signal);
+  font-size: 0.8rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.prism-decision-list li strong,
+.prism-decision li strong,
+.eco-decision li strong {
+  display: block;
+  font-size: 0.98rem;
+  font-weight: 750;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.prism-decision-list li p,
+.prism-decision li p,
+.eco-decision li p {
+  margin: 0;
+  font-size: 0.84rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+.eco-diagram-note {
+  margin-top: 1.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #64748b;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   SECTION 2: STAKEHOLDER OUTCOMES & FRICTION
+   ══════════════════════════════════════════════════════════════════ */
+.friction-split,
+.eco-intro-head {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: flex-end;
+  margin-bottom: 3.5rem;
+}
+
+.eco-outcomes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.eco-outcomes article {
+  background: #ffffff;
+  border: 1px solid var(--eco-line);
+  border-radius: 20px;
+  padding: 2.25rem 2rem;
+  transition: transform 0.25s var(--ease), border-color 0.25s, box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+
+.eco-outcomes article:hover {
+  transform: translateY(-4px);
+  border-color: var(--eco-terra);
+  box-shadow: 0 16px 40px rgba(8, 20, 36, 0.06);
+}
+
+.eco-outcomes article > span {
+  color: var(--eco-terra);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.eco-outcomes article h3 {
+  font-size: 1.28rem;
+  font-weight: 800;
+  color: var(--eco-ink);
+  line-height: 1.35;
+  margin: 0 0 0.85rem;
+}
+
+.eco-outcomes article p {
+  color: #475569;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   SECTION 3: PRACTICE TOUR & WORKFLOWS (Vinove Bond Style)
+   ══════════════════════════════════════════════════════════════════ */
+.product-tour {
+  background: #ffffff;
+  border-top: 1px solid var(--eco-line);
+  border-bottom: 1px solid var(--eco-line);
+}
+
+.tour-heading {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3.5rem;
+  align-items: flex-end;
+  margin-bottom: 3.5rem;
+}
+
+.eco-workflows {
+  border-top: 1px solid var(--eco-line);
+}
+
+.eco-workflows details {
+  border-bottom: 1px solid var(--eco-line);
+  transition: background 0.2s;
+}
+
+.eco-workflows summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.75rem 0;
+  user-select: none;
+}
+
+.eco-workflows summary::-webkit-details-marker {
+  display: none;
+}
+
+.eco-workflows summary .eco-step {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--eco-terra);
+  min-width: 2rem;
+}
+
+.eco-workflows summary h3 {
+  margin: 0;
+  font-size: clamp(1.2rem, 1.8vw, 1.65rem);
+  font-weight: 750;
+  color: var(--eco-ink);
+  flex-grow: 1;
+  letter-spacing: -0.02em;
+}
+
+.eco-workflows summary .eco-expand {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--eco-terra);
+  transition: transform 0.25s var(--ease);
+}
+
+.eco-workflows details[open] summary .eco-expand {
+  transform: rotate(45deg);
+}
+
+.eco-workflow-body {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 3.5rem;
+  padding: 0.5rem 0 2.5rem 3.5rem;
+}
+
+.eco-workflow-body p {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.eco-decision-line {
+  border-left: 3px solid var(--eco-terra);
+  padding-left: 1.25rem;
+  margin-top: 1.25rem !important;
+}
+
+.eco-decision-line strong {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--eco-terra);
+  margin-bottom: 4px;
+}
+
+.eco-process {
+  list-style: none;
+  padding: 2rem;
+  margin: 0;
+  background: var(--eco-ink);
+  border-radius: 18px;
+  color: #ffffff;
+  align-self: flex-start;
+}
+
+.eco-process li {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.eco-process li + li::before {
+  content: '↓';
+  display: block;
+  color: var(--eco-signal);
+  margin: 0.6rem 0;
+  font-size: 1.1rem;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   SECTION 4: THE HONEST EQUATION (Vinove Prism Signature)
+   ══════════════════════════════════════════════════════════════════ */
+.equation {
+  display: grid;
+  grid-template-columns: 1.2fr auto 1.2fr auto 1fr;
+  gap: 1.25rem;
+  align-items: center;
+  margin-top: 3rem;
+  background: #ffffff;
+  border: 1px solid var(--eco-line);
+  border-radius: 24px;
+  padding: 2.25rem 2.5rem;
+  box-shadow: 0 12px 36px rgba(8, 20, 36, 0.04);
+}
+
+.equation-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.equation-block span {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--eco-terra);
+}
+
+.equation-block strong {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--eco-ink);
+  line-height: 1.35;
+}
+
+.equation-sign {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-align: center;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   SECTION 5: EXECUTION THREAD (.thread-map) (Vinove Prism Signature)
+   ══════════════════════════════════════════════════════════════════ */
+.thread-head {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3.5rem;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+.thread-map {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.65rem;
+  padding-top: 3.5rem;
+}
+
+.thread-map::before {
+  content: '';
+  position: absolute;
+  top: 1.6rem;
+  left: 2rem;
+  right: 2rem;
+  height: 2px;
+  background: linear-gradient(90deg, var(--eco-signal), rgba(52, 211, 153, 0.25));
+}
+
+.thread-step,
+.thread-node {
+  position: relative;
+  min-height: 210px;
+  padding: 1.5rem 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  transition: transform 0.3s var(--ease), border-color 0.3s, background 0.3s;
+}
+
+.thread-step::before,
+.thread-node::before {
+  content: '';
+  position: absolute;
+  top: -2.3rem;
+  left: 1.1rem;
+  width: 12px;
+  height: 12px;
+  border: 3px solid var(--eco-ink);
+  border-radius: 50%;
+  background: var(--eco-signal);
+  box-shadow: 0 0 0 1px var(--eco-signal), 0 0 0 8px rgba(52, 211, 153, 0.1);
+}
+
+.thread-step:hover,
+.thread-node:hover {
+  transform: translateY(-4px);
+  border-color: var(--eco-signal);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.thread-step span,
+.thread-node .thread-idx,
+.thread-node span {
+  display: block;
+  color: var(--eco-signal);
+  font-size: 0.72rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.thread-step h3,
+.thread-node h4,
+.thread-node h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 750;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.thread-step small,
+.thread-node p {
+  display: block;
+  margin-top: 0.5rem;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   SECTION 6: TRUST & PRINCIPLES (.principles-grid)
+   ══════════════════════════════════════════════════════════════════ */
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  margin-top: clamp(2rem, 3.5vw, 3rem);
+}
+
+.principle-card {
+  background: #ffffff;
+  border: 1px solid var(--eco-line);
+  border-radius: 20px;
+  padding: clamp(2rem, 3vw, 2.75rem);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: transform 0.25s var(--ease), border-color 0.25s, box-shadow 0.25s;
+}
+
+.principle-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--eco-terra);
+  box-shadow: 0 16px 40px rgba(8, 20, 36, 0.06);
+}
+
+.principle-card h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--eco-ink);
+  line-height: 1.35;
+  margin: 0 0 0.85rem;
+}
+
+.principle-card p {
+  color: #475569;
+  font-size: 0.94rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.principle-list {
+  counter-reset: principle;
+  border-top: 1px solid var(--eco-line);
+}
+
+.eco-dark .principle-list {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.principle {
+  counter-increment: principle;
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--eco-line);
+}
+
+.eco-dark .principle {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.principle::before {
+  content: '0' counter(principle);
+  color: var(--eco-terra);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.eco-dark .principle::before {
+  color: var(--eco-signal);
+}
+
+.principle h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 750;
+  color: var(--eco-ink);
+}
+
+.eco-dark .principle h3 {
+  color: #ffffff;
+}
+
+.principle p {
+  margin: 0;
+  color: #475569;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.eco-dark .principle p {
+  color: #94a3b8;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   SECTION 7: CLEAR ANSWERS (FAQ) (.answer-grid)
+   ══════════════════════════════════════════════════════════════════ */
+.answer-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+.answer-list {
+  border-top: 1px solid var(--eco-line);
+}
+
+.answer-list details {
+  border-bottom: 1px solid var(--eco-line);
+}
+
+.answer-list summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 0;
+  font-size: 1.15rem;
+  font-weight: 750;
+  color: var(--eco-ink);
+  user-select: none;
+}
+
+.answer-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.answer-list summary span {
+  font-size: 1.5rem;
+  color: var(--eco-terra);
+  transition: transform 0.25s var(--ease);
+}
+
+.answer-list details[open] summary span {
+  transform: rotate(45deg);
+}
+
+.answer-list p {
+  margin: 0 0 1.75rem;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   SECTION 8: CLOSING DUAL ACTION CARDS
+   ══════════════════════════════════════════════════════════════════ */
+.eco-close,
+.eco-closing {
+  background: var(--eco-ink);
+  color: #ffffff;
+}
+
+.closing-grid,
+.eco-close-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+.eco-close-card {
+  border-radius: 24px;
+  padding: clamp(2rem, 3.5vw, 3.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 320px;
+}
+
+.eco-close-card.dark {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.eco-close-card.light {
+  background: #ffffff;
+  color: var(--eco-ink);
+  border: 1px solid var(--eco-line);
+}
+
+.eco-close-card h3 {
+  font-size: clamp(1.6rem, 2.4vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+}
+
+.eco-close-card p {
+  margin: 0 0 2rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #94a3b8;
+}
+
+.eco-close-card.light p {
+  color: #475569;
+}
+
+.eco-close-card a.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 750;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.eco-close-card.dark a.btn {
+  background: var(--eco-terra);
+  color: #ffffff;
+}
+
+.eco-close-card.dark a.btn:hover {
+  background: #00873e;
+  transform: translateY(-2px);
+}
+
+.eco-close-card.light a.btn {
+  background: var(--eco-ink);
+  color: #ffffff;
+}
+
+.eco-close-card.light a.btn:hover {
+  background: #000000;
+  transform: translateY(-2px);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   RESPONSIVE QUERIES
+   ══════════════════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .eco-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .thread-map {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .thread-map::before {
+    display: none;
+  }
+  .equation {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .equation-sign {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 860px) {
+  .eco-intro-head,
+  .friction-split,
+  .tour-heading,
+  .thread-head,
+  .principles-grid,
+  .answer-grid,
+  .eco-close-grid,
+  .closing-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .eco-outcomes {
+    grid-template-columns: 1fr;
+  }
+  .eco-workflow-body {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+  .thread-map {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .thread-map {
+    grid-template-columns: 1fr;
+  }
+  .eco-button,
+  .eco-text-link {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   HOMEPAGE ECOSYSTEM EXTENSIONS (VINOVE PRISM ARCHITECTURE)
+   ══════════════════════════════════════════════════════════════════ */
+
+/* Marquee Strip */
+.eco-marquee-band {
+  background: var(--eco-paper);
+  border-top: 1px solid var(--eco-line);
+  border-bottom: 1px solid var(--eco-line);
+  padding: 2.25rem 0;
+  overflow: hidden;
+}
+
+.eco-marquee-band .marquee-title {
+  color: #64748b;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+
+/* 4-Pillars Grid */
+.eco-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.eco-pillar-card {
+  background: #ffffff;
+  border: 1px solid var(--eco-line);
+  border-radius: 20px;
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s var(--ease), border-color 0.25s, box-shadow 0.25s;
+}
+
+.eco-pillar-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--eco-terra);
+  box-shadow: 0 16px 36px rgba(8, 20, 36, 0.06);
+}
+
+.eco-pillar-card.featured {
+  border-color: rgba(0, 157, 73, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 157, 73, 0.08);
+}
+
+.eco-pillar-card.featured::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--eco-terra);
+}
+
+.eco-pillar-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.eco-pillar-kicker {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.eco-pillar-card.featured .eco-pillar-kicker {
+  color: var(--eco-terra);
+}
+
+.eco-pillar-stat {
+  font-size: 1.85rem;
+  font-weight: 850;
+  letter-spacing: -0.02em;
+  color: var(--eco-ink);
+  line-height: 1;
+}
+
+.eco-pillar-card.featured .eco-pillar-stat {
+  color: var(--eco-terra);
+}
+
+.eco-pillar-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--eco-ink);
+  margin: 0 0 0.35rem;
+  letter-spacing: -0.02em;
+}
+
+.eco-pillar-sub {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #64748b;
+  margin: 0;
+}
+
+/* 8-Services Grid */
+.eco-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.eco-service-card {
+  background: #ffffff;
+  border: 1px solid var(--eco-line);
+  border-radius: 20px;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s var(--ease), border-color 0.25s, box-shadow 0.25s;
+  text-decoration: none;
+}
+
+.eco-service-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--eco-terra);
+  box-shadow: 0 16px 40px rgba(8, 20, 36, 0.06);
+}
+
+.eco-service-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.eco-service-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(0, 157, 73, 0.08);
+  color: var(--eco-terra);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 157, 73, 0.18);
+}
+
+.eco-service-idx {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.eco-service-title {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: var(--eco-ink);
+  line-height: 1.35;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.eco-service-desc {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0 0 1.25rem;
+  flex-grow: 1;
+}
+
+.eco-service-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.eco-service-chip {
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--eco-stone);
+  color: #475569;
+  border: 1px solid var(--eco-line);
+}
+
+/* Service Card Checklist (Single-Column Layout with Check Badges) */
+.eco-service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.35rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+}
+
+.eco-service-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #334155;
+  line-height: 1.35;
+}
+
+.eco-check-badge {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: rgba(0, 157, 73, 0.12);
+  color: #009d49;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s var(--ease);
+}
+
+.eco-service-card:hover .eco-check-badge {
+  background: #009d49;
+  color: #ffffff;
+}
+
+.eco-service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--eco-terra);
+  font-weight: 750;
+  font-size: 0.88rem;
+  transition: gap 0.2s;
+}
+
+.eco-service-card:hover .eco-service-link {
+  gap: 10px;
+}
+
+/* Section Bottom Banner */
+.eco-footer-banner {
+  background: var(--eco-stone);
+  border: 1px solid var(--eco-line);
+  border-radius: 20px;
+  padding: 2.25rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.eco-footer-banner strong {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--eco-ink);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.eco-footer-banner p {
+  font-size: 0.92rem;
+  color: #475569;
+  margin: 0;
+}
+
+.eco-footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Operating Philosophy Grid */
+.eco-manifesto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.eco-manifesto-points {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.eco-manifesto-point {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  transition: transform 0.25s var(--ease), border-color 0.25s, background 0.25s;
+}
+
+.eco-manifesto-point:hover {
+  transform: translateY(-2px);
+  border-color: var(--eco-signal);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.eco-manifesto-idx {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(52, 211, 153, 0.15);
+  color: var(--eco-signal);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  font-size: 0.82rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.eco-manifesto-point h3 {
+  font-size: 1.12rem;
+  font-weight: 750;
+  color: #ffffff;
+  margin: 0 0 0.35rem;
+}
+
+.eco-manifesto-point p {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* 4-Stages Methodology Grid */
+.eco-stages-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.eco-stage-card {
+  background: #ffffff;
+  border: 1px solid var(--eco-line);
+  border-radius: 20px;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s var(--ease), border-color 0.25s, box-shadow 0.25s;
+}
+
+.eco-stage-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--eco-terra);
+  box-shadow: 0 16px 40px rgba(8, 20, 36, 0.06);
+}
+
+.eco-stage-kicker {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--eco-terra);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.eco-stage-title {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: var(--eco-ink);
+  line-height: 1.35;
+  margin: 0 0 0.85rem;
+  letter-spacing: -0.02em;
+}
+
+.eco-stage-desc {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0 0 1.25rem;
+  flex-grow: 1;
+}
+
+.eco-stage-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--eco-line);
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.eco-stage-list li {
+  font-size: 0.82rem;
+  color: #334155;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.eco-stage-list li::before {
+  content: '✓';
+  color: var(--eco-terra);
+  font-weight: 800;
+}
+
+/* Niches Grid */
+.eco-niches-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.eco-niche-card {
+  background: #ffffff;
+  border: 1px solid var(--eco-line);
+  border-radius: 20px;
+  padding: 2.25rem 2rem;
+  transition: transform 0.25s var(--ease), border-color 0.25s, box-shadow 0.25s;
+}
+
+.eco-niche-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--eco-terra);
+  box-shadow: 0 16px 40px rgba(8, 20, 36, 0.06);
+}
+
+.eco-niche-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.eco-niche-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(0, 157, 73, 0.08);
+  color: var(--eco-terra);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 157, 73, 0.18);
+}
+
+.eco-niche-sector {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.eco-niche-title {
+  font-size: 1.22rem;
+  font-weight: 800;
+  color: var(--eco-ink);
+  line-height: 1.35;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.eco-niche-desc {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Proof Section */
+.eco-proof-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: center;
+}
+
+.eco-proof-highlights {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.eco-highlight-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 1.5rem 1.75rem;
+  flex: 1;
+  min-width: 140px;
+}
+
+.eco-highlight-val {
+  font-size: 2.2rem;
+  font-weight: 850;
+  color: var(--eco-signal);
+  line-height: 1;
+  display: block;
+}
+
+.eco-highlight-lbl {
+  font-size: 0.88rem;
+  font-weight: 750;
+  color: #ffffff;
+  margin-top: 6px;
+  display: block;
+}
+
+.eco-highlight-sub {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  display: block;
+  margin-top: 2px;
+}
+
+.eco-proof-facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.eco-fact-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 2rem 1.75rem;
+  transition: transform 0.25s var(--ease), border-color 0.25s;
+}
+
+.eco-fact-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--eco-signal);
+}
+
+.eco-fact-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.eco-fact-stat {
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+  font-weight: 850;
+  color: var(--eco-signal);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.eco-fact-tag {
+  background: rgba(52, 211, 153, 0.15);
+  color: var(--eco-signal);
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.eco-fact-title {
+  font-size: 1.05rem;
+  font-weight: 750;
+  color: #ffffff;
+  margin-bottom: 0.45rem;
+  display: block;
+}
+
+.eco-fact-desc {
+  font-size: 0.86rem;
+  color: #94a3b8;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Portfolio / Work Grid */
+.eco-work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.eco-work-card {
+  background: #ffffff;
+  border: 1px solid var(--eco-line);
+  border-radius: 22px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s var(--ease), border-color 0.25s, box-shadow 0.25s;
+  text-decoration: none;
+}
+
+.eco-work-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--eco-terra);
+  box-shadow: 0 20px 48px rgba(8, 20, 36, 0.08);
+}
+
+.eco-work-media {
+  position: relative;
+  aspect-ratio: 16/9;
+  background: #081424;
+  overflow: hidden;
+}
+
+.eco-work-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s var(--ease);
+}
+
+.eco-work-card:hover .eco-work-media img {
+  transform: scale(1.03);
+}
+
+.eco-work-pill {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(8, 20, 36, 0.85);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.eco-work-body {
+  padding: 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.eco-work-category {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--eco-terra);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.eco-work-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--eco-ink);
+  line-height: 1.3;
+  margin: 0 0 0.65rem;
+  letter-spacing: -0.02em;
+}
+
+.eco-work-desc {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+
+.eco-work-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--eco-line);
+  padding-top: 1.25rem;
+}
+
+.eco-work-metric {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--eco-terra);
+}
+
+.eco-work-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--eco-ink);
+  font-weight: 750;
+  font-size: 0.88rem;
+}
+
+/* Comparison Table */
+.eco-comparison-card {
+  background: #ffffff;
+  border: 1px solid var(--eco-line);
+  border-radius: 24px;
+  overflow-x: auto;
+  box-shadow: 0 12px 36px rgba(8, 20, 36, 0.04);
+  margin-top: 3rem;
+}
+
+.eco-comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.eco-comparison-table th,
+.eco-comparison-table td {
+  padding: 1.25rem 1.75rem;
+  border-bottom: 1px solid var(--eco-line);
+  font-size: 0.95rem;
+}
+
+.eco-comparison-table th {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+  background: var(--eco-paper);
+}
+
+.eco-comparison-table th.col-highlight,
+.eco-comparison-table td.col-highlight {
+  background: rgba(0, 157, 73, 0.04);
+  border-inline: 1px solid rgba(0, 157, 73, 0.15);
+}
+
+.eco-badge-good {
+  background: rgba(0, 157, 73, 0.12);
+  color: var(--eco-terra);
+  font-weight: 750;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  display: inline-block;
+}
+
+/* Founder Spotlight Card */
+.eco-founder-card {
+  background: #ffffff;
+  border: 1px solid var(--eco-line);
+  border-radius: 24px;
+  padding: clamp(2rem, 4vw, 3.5rem);
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3.5rem;
+  align-items: center;
+  box-shadow: 0 16px 48px rgba(8, 20, 36, 0.04);
+}
+
+.eco-founder-avatar {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1/1;
+  border-radius: 18px;
+  object-fit: cover;
+  border: 1px solid var(--eco-line);
+}
+
+.eco-founder-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--eco-ink);
+  margin: 1rem 0 0.25rem;
+}
+
+.eco-founder-role {
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: var(--eco-terra);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: block;
+}
+
+.eco-founder-location {
+  font-size: 0.82rem;
+  color: #64748b;
+  display: block;
+  margin-top: 2px;
+}
+
+.eco-founder-quote {
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  font-weight: 500;
+  line-height: 1.65;
+  color: var(--eco-ink);
+  margin: 0 0 2rem;
+  font-style: italic;
+  border-left: 3px solid var(--eco-terra);
+  padding-left: 1.5rem;
+}
+
+.eco-founder-actions {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+/* Testimonials Grid */
+.eco-testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.eco-testi-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s var(--ease), border-color 0.25s;
+}
+
+.eco-testi-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--eco-signal);
+}
+
+.eco-testi-stars {
+  color: #fbbf24;
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  margin-bottom: 1.25rem;
+}
+
+.eco-testi-body {
+  font-size: 0.95rem;
+  color: #e2e8f0;
+  line-height: 1.7;
+  margin: 0 0 1.75rem;
+  font-style: italic;
+  flex-grow: 1;
+}
+
+.eco-testi-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.25rem;
+}
+
+.eco-testi-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--eco-signal);
+}
+
+.eco-testi-name {
+  font-size: 0.95rem;
+  font-weight: 750;
+  color: #ffffff;
+  display: block;
+}
+
+.eco-testi-role {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  display: block;
+}
+
+/* Lead Magnet Card */
+.eco-lead-magnet-card {
+  background: linear-gradient(165deg, #0f2138 0%, #081424 100%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 24px;
+  padding: clamp(2.5rem, 5vw, 4rem);
+  text-align: center;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+}
+
+.eco-lead-magnet-form {
+  display: flex;
+  max-width: 540px;
+  margin: 2rem auto 1rem;
+  gap: 10px;
+}
+
+.eco-lead-magnet-input {
+  flex-grow: 1;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 0 1.5rem;
+  font-size: 0.95rem;
+  color: #ffffff;
+  outline: none;
+}
+
+.eco-lead-magnet-input:focus {
+  border-color: var(--eco-signal);
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.2);
+}
+
+.eco-lead-magnet-sub {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Pricing Section Extensions */
+.eco-pricing-tabs-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.5rem;
+}
+
+.eco-pricing-tabs-bar {
+  background: var(--eco-stone);
+  border: 1px solid var(--eco-line);
+  border-radius: 999px;
+  padding: 6px;
+  display: inline-flex;
+  gap: 6px;
+}
+
+.eco-pricing-tab-btn {
+  background: transparent;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 24px;
+  font-size: 0.88rem;
+  font-weight: 650;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.eco-pricing-tab-btn.active {
+  background: #ffffff;
+  color: var(--eco-ink);
+  box-shadow: 0 2px 10px rgba(8, 20, 36, 0.08);
+  font-weight: 750;
+}
+
+.eco-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.eco-pricing-card {
+  background: #ffffff;
+  border: 1px solid var(--eco-line);
+  border-radius: 22px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s var(--ease), border-color 0.25s, box-shadow 0.25s;
+  position: relative;
+}
+
+.eco-pricing-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--eco-terra);
+  box-shadow: 0 16px 40px rgba(8, 20, 36, 0.06);
+}
+
+.eco-pricing-card.featured {
+  border: 2px solid var(--eco-terra);
+  box-shadow: 0 16px 40px rgba(0, 157, 73, 0.1);
+  transform: scale(1.02);
+}
+
+.eco-pricing-card.featured:hover {
+  transform: scale(1.02) translateY(-4px);
+}
+
+.eco-tier-kicker {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--eco-terra);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.eco-tier-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--eco-ink);
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.eco-tier-desc {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+
+.eco-tier-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--eco-line);
+  margin-bottom: 1.5rem;
+}
+
+.eco-tier-price {
+  font-size: 2.35rem;
+  font-weight: 850;
+  color: var(--eco-ink);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.eco-tier-period {
+  font-size: 0.82rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.eco-tier-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.eco-tier-features li {
+  font-size: 0.88rem;
+  color: #334155;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.45;
+}
+
+.eco-tier-features li svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.eco-pricing-guarantee {
+  background: var(--eco-stone);
+  border: 1px solid var(--eco-line);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.eco-pricing-guarantee h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--eco-ink);
+  margin: 0 0 4px;
+}
+
+.eco-pricing-guarantee p {
+  font-size: 0.9rem;
+  color: #475569;
+  margin: 0;
+}
+
+/* Responsive queries */
+@media (max-width: 1100px) {
+  .eco-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .eco-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .eco-stages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .eco-niches-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .eco-pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  .eco-pricing-card.featured {
+    transform: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .eco-manifesto-grid,
+  .eco-proof-wrap,
+  .eco-work-grid,
+  .eco-founder-card,
+  .eco-testi-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .eco-lead-magnet-form {
+    flex-direction: column;
+  }
+  .eco-lead-magnet-input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .eco-footer-banner,
+  .eco-pricing-guarantee {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .eco-pillars-grid,
+  .eco-services-grid,
+  .eco-stages-grid,
+  .eco-niches-grid,
+  .eco-proof-facts {
+    grid-template-columns: 1fr;
+  }
+}
