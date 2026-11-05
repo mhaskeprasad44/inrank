@@ -1,6 +1,5 @@
 node_modules/
 build/
-dist/
 coverage/
 .DS_Store
 *.log
@@ -8,6 +7,7 @@ leads.json
 *.map
 .env*
 !.env.example
+Old Website/dist/
 
 # Competitor Scrape Caches
 awrange_*
