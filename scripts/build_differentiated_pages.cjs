@@ -15,16 +15,16 @@ const clients = [
     liveUrl: 'https://cytos.in/',
     screenshot: '/portfolio/screenshots/cytos.webp',
     cta: {
-      bg: '#ea580c',
+      bg: '#d97706',
       text: '#ffffff',
-      shadow: 'rgba(234, 88, 12, 0.28)',
-      accentText: '#ea580c'
+      shadow: 'rgba(217, 119, 6, 0.28)',
+      accentText: '#d97706'
     },
     colors: [
-      { name: 'Precision Tooling Amber', hex: '#ea580c', role: 'Primary Quote Actions & Engineering Accents' },
-      { name: 'Industrial Slate Navy', hex: '#1e293b', role: 'CNC Machine Chassis & Technical Typography' },
-      { name: 'Gerber Spec Cobalt', hex: '#1d4ed8', role: 'CAD Vector Lines & Spindle RPM Specs' },
-      { name: 'Cleanroom White', hex: '#f8fafc', role: 'High-Contrast Laboratory Surface Field' }
+      { name: 'Precision Amber Gold', hex: '#d97706', role: 'Primary Tooling CTA & Engineering Accents (--brand-gold)' },
+      { name: 'Industrial Slate Navy', hex: '#1e293b', role: 'CNC Machine Chassis & Technical Typography (--text-primary)' },
+      { name: 'Gerber Spec Cyan', hex: '#0284c7', role: 'CAD Vector Lines & Spindle RPM Specs (--accent-cyan)' },
+      { name: 'Cleanroom Laboratory Light', hex: '#f8fafc', role: 'High-Contrast Laboratory Surface Field (--bg-secondary)' }
     ],
     typography: {
       display: 'Inter Display 850 (Heavy Geometric)',
@@ -76,16 +76,16 @@ const clients = [
     liveUrl: 'https://dravyafinancial.com/',
     screenshot: '/portfolio/screenshots/dravyafinancial.webp',
     cta: {
-      bg: '#a3e635',
-      text: '#081424',
-      shadow: 'rgba(163, 230, 53, 0.35)',
-      accentText: '#181512'
+      bg: '#1c4b42',
+      text: '#ffffff',
+      shadow: 'rgba(28, 75, 66, 0.35)',
+      accentText: '#1c4b42'
     },
     colors: [
-      { name: 'Chartreuse Action Lime', hex: '#a3e635', role: 'Executive CTA Desk & High-Conversion Funnel' },
-      { name: 'Corporate Heritage Red', hex: '#dc2626', role: 'Dravya Logo Seal & Financial Authority Anchor' },
-      { name: 'Executive Obsidian', hex: '#181512', role: 'Wood-Grain Corporate Ground & Dark Navigation' },
-      { name: 'Boardroom White', hex: '#f5f5f4', role: 'Tabular Capital Sheets & Institutional Canvas' }
+      { name: 'Deep Forest Teal', hex: '#1c4b42', role: 'Institutional Authority & Primary Button Ground (vamtam_accent_1)' },
+      { name: 'Chartreuse Action Lime', hex: '#b4e717', role: 'Executive Consultation CTA & High-Conversion Funnel (vamtam_accent_2)' },
+      { name: 'Boardroom Cream Canvas', hex: '#f6f5f2', role: 'Tabular Capital Sheets & Institutional Surface (vamtam_accent_3)' },
+      { name: 'Executive Obsidian', hex: '#181512', role: 'Wood-Grain Corporate Ground & Dark Navigation' }
     ],
     typography: {
       display: 'Inter Display 800 (Executive Authority)',
@@ -137,16 +137,16 @@ const clients = [
     liveUrl: 'https://fludio.in/',
     screenshot: '/portfolio/screenshots/fludio.webp',
     cta: {
-      bg: '#0a2540',
+      bg: '#003345',
       text: '#ffffff',
-      shadow: 'rgba(10, 37, 64, 0.28)',
-      accentText: '#00a8cc'
+      shadow: 'rgba(0, 51, 69, 0.35)',
+      accentText: '#006876'
     },
     colors: [
-      { name: 'Kinetic Hydro Cyan', hex: '#00a8cc', role: 'Musical Fountain Waves & Neon Water Accents' },
-      { name: 'Abyssal Oceanic Navy', hex: '#0a2540', role: 'Primary Project Actions & Architectural Depth' },
-      { name: 'Architectural Ice Blue', hex: '#e0f2fe', role: 'Frosted Glass Cards & Water Mist Atmospheric Ground' },
-      { name: 'Reflective White', hex: '#ffffff', role: 'High-Fidelity Project Showcase Canvas' }
+      { name: 'Hydro Wave Cyan', hex: '#58e6ff', role: 'Musical Fountain Waves & Neon Water Accents (--color-secondary-container)' },
+      { name: 'Abyssal Oceanic Navy', hex: '#003345', role: 'Primary Action CTAs & Architectural Depth (--color-primary)' },
+      { name: 'Aquatic Marine Teal', hex: '#006876', role: 'Water Engineering Specs & Secondary Highlights (--color-secondary)' },
+      { name: 'Frosted Ice Mist', hex: '#a1efff', role: 'Frosted Glass Cards & Atmospheric Ground (--color-secondary-fixed)' }
     ],
     typography: {
       display: 'Inter Display 800 (Architectural Scale)',
@@ -198,16 +198,16 @@ const clients = [
     liveUrl: 'https://greytothegreen.com/',
     screenshot: '/portfolio/screenshots/greytothegreen.webp',
     cta: {
-      bg: '#0e3820',
+      bg: '#80b500',
       text: '#ffffff',
-      shadow: 'rgba(14, 56, 32, 0.28)',
-      accentText: '#0e3820'
+      shadow: 'rgba(128, 181, 0, 0.35)',
+      accentText: '#071c1f'
     },
     colors: [
-      { name: 'Botanical Forest Green', hex: '#0e3820', role: 'Bio-Trust Panels & Primary Brand Headings' },
-      { name: 'Herbal Jute Ochre', hex: '#d97706', role: 'Active Botanical Product Labels & Packaging Tones' },
-      { name: 'Active Plant Mint', hex: '#ecfdf5', role: 'Neem Enzyme Highlights & EPA Certification Badges' },
-      { name: 'Natural Organic Linen', hex: '#f7f7f2', role: 'Non-Toxic Storefront Canvas & Clean Packaging Field' }
+      { name: 'Bio Leaf Lime', hex: '#80b500', role: 'Active Plant Enzymes & Conversion Action (--ltn__secondary-color)' },
+      { name: 'Botanical Pine Obsidian', hex: '#071c1f', role: 'Natural Brand Authority & Primary Headings (--ltn__primary-color)' },
+      { name: 'Active Herbal Red', hex: '#cb3421', role: 'EPA Certification Badges & Odor-Off Accents (--ltn__secondary-color-2)' },
+      { name: 'Linen Plant Mint', hex: '#acd2d8', role: 'Clean Non-Toxic Storefront Canvas & Surface (--ltn__color-2)' }
     ],
     typography: {
       display: 'Inter Display 850 (Clean Consumer)',
@@ -259,16 +259,16 @@ const clients = [
     liveUrl: 'https://hcpnest.com/',
     screenshot: '/portfolio/screenshots/hcpnest.webp',
     cta: {
-      bg: '#093836',
+      bg: '#1967d2',
       text: '#ffffff',
-      shadow: 'rgba(9, 56, 54, 0.28)',
-      accentText: '#093836'
+      shadow: 'rgba(25, 103, 210, 0.35)',
+      accentText: '#1967d2'
     },
     colors: [
-      { name: 'Clinical Pine Teal', hex: '#093836', role: 'Primary Portal Action CTAs & Clinical Navigation' },
-      { name: 'Hospital Scrub Blue', hex: '#0ea5e9', role: 'Specialty Signals & Urgent Hospital Shift Indicators' },
-      { name: 'Sterile Powder Blue', hex: '#e0f2fe', role: 'Healthcare Network Grid & Card Atmosphere' },
-      { name: 'Pure Medical White', hex: '#ffffff', role: 'High-Legibility Verified Credential Surfaces' }
+      { name: 'Hospital Royal Blue', hex: '#1967d2', role: 'Primary Portal Action CTAs & Medical Careers (--superio-theme-color)' },
+      { name: 'Verified Medical Green', hex: '#34a853', role: 'Verified Clinical Credentials & Shift Indicators (.btn-theme-second)' },
+      { name: 'Clinical Charcoal Slate', hex: '#202124', role: 'Healthcare Typography & Institutional Headings' },
+      { name: 'Sterile Ice Blue', hex: '#f0f5f7', role: 'Medical Candidate Grid & Dashboard Canvas Field' }
     ],
     typography: {
       display: 'Inter Display 800 (Clinical Authority)',
@@ -320,16 +320,16 @@ const clients = [
     liveUrl: 'https://hiragrafix.com/',
     screenshot: '/portfolio/screenshots/hiragrafix.webp',
     cta: {
-      bg: '#582be8',
+      bg: '#6528f7',
       text: '#ffffff',
-      shadow: 'rgba(88, 43, 232, 0.28)',
-      accentText: '#582be8'
+      shadow: 'rgba(101, 40, 247, 0.35)',
+      accentText: '#6528f7'
     },
     colors: [
-      { name: 'Electric Print Violet', hex: '#582be8', role: 'Primary Quote Actions & 3D Offset Press Accents' },
-      { name: 'Process Cyan Blue', hex: '#06b6d4', role: 'Direct Call CTAs & Precision Plotter Accents' },
-      { name: 'Industrial Carbon Black', hex: '#09090b', role: 'Est. 1970 Heritage Badge & Deep Contrast Typography' },
-      { name: 'Paperboard Iris White', hex: '#f5f3ff', role: 'Luxury Rigid Packaging Canvas Background' }
+      { name: 'Electric Print Violet', hex: '#6528f7', role: 'Primary Quote Actions & 3D Offset Press Accents (--ast-global-color-0)' },
+      { name: 'Process Cyan Blue', hex: '#44c4d9', role: 'Direct Call CTAs & Precision Plotter Accents' },
+      { name: 'Industrial Carbon Black', hex: '#0f172a', role: 'Est. 1970 Heritage Badge & Deep Contrast Typography (--ast-global-color-2)' },
+      { name: 'Paperboard Iris White', hex: '#f2f0fe', role: 'Luxury Rigid Packaging Canvas Field (--ast-global-color-4)' }
     ],
     typography: {
       display: 'Inter Display 850 (Craftsman Precision)',
@@ -381,16 +381,16 @@ const clients = [
     liveUrl: 'https://orthopedicanklefootspecialist.com/',
     screenshot: '/portfolio/screenshots/orthopedicanklefootspecialist.webp',
     cta: {
-      bg: '#0891b2',
+      bg: '#008bb0',
       text: '#ffffff',
-      shadow: 'rgba(8, 145, 178, 0.28)',
-      accentText: '#0891b2'
+      shadow: 'rgba(0, 139, 176, 0.35)',
+      accentText: '#008bb0'
     },
     colors: [
-      { name: 'Surgical Ocean Teal', hex: '#0891b2', role: 'Primary Clinic Booking & Arthroscopy Treatment Signals' },
-      { name: 'Patient Care Green', hex: '#16a34a', role: '1-Tap WhatsApp Surgeon Booking & Recovery Badges' },
-      { name: 'Clinical Midnight Navy', hex: '#0f172a', role: 'Fellowship Surgeon Authority & Hospital Affiliations' },
-      { name: 'Sterile Pearl White', hex: '#f8fafc', role: 'Anatomical Recovery Timelines & Accessible Patient Field' }
+      { name: 'Surgical Ocean Teal', hex: '#008bb0', role: 'Primary Clinic Booking & Arthroscopy Treatment Signals (--teal-accent)' },
+      { name: 'Primary Surgeon Navy', hex: '#1d3557', role: 'Fellowship Surgeon Authority & Hospital Affiliations (--navy-primary)' },
+      { name: 'Deep Clinical Slate', hex: '#14243b', role: 'Anatomical Condition Guides & Header Typography (--navy-dark)' },
+      { name: 'Sterile Ice Canvas', hex: '#eef8fa', role: 'Orthopedic Recovery Timelines & Accessible Patient Field' }
     ],
     typography: {
       display: 'Inter Display 800 (Empathetic Medical)',
@@ -442,16 +442,16 @@ const clients = [
     liveUrl: 'https://riituinstitution.com/',
     screenshot: '/portfolio/screenshots/riituinstitution.webp',
     cta: {
-      bg: '#d97706',
+      bg: '#dca416',
       text: '#ffffff',
-      shadow: 'rgba(217, 119, 6, 0.28)',
-      accentText: '#d97706'
+      shadow: 'rgba(220, 164, 22, 0.35)',
+      accentText: '#dca416'
     },
     colors: [
-      { name: 'Scholastic Gold Ochre', hex: '#d97706', role: 'Primary Demo Booking CTA & Batch Distinction Accents' },
-      { name: 'Academic Pine Green', hex: '#064e3b', role: 'Institutional Crest Shield & Academic Authority Anchor' },
-      { name: 'Campus Ivory Cream', hex: '#fefce8', role: 'Admissions Banner Ground & Ranker Callout Background' },
-      { name: 'Lecture Charcoal', hex: '#1f2937', role: 'High-Legibility CA Foundation Syllabus Typography' }
+      { name: 'Scholastic Gold Ochre', hex: '#dca416', role: 'Primary Demo Booking CTA & Batch Distinction Accents (--e-global-color-primary)' },
+      { name: 'Academic Pine Green', hex: '#083f20', role: 'Institutional Crest Shield & Academic Authority Anchor' },
+      { name: 'Bronze Amber Wood', hex: '#85550e', role: 'Faculty Profiles & Course Curriculum Headings (--thim-body-secondary-color)' },
+      { name: 'Campus Warm Ivory', hex: '#fdf8ee', role: 'Admissions Banner Ground & Ranker Callout Background' }
     ],
     typography: {
       display: 'Inter Display 850 (Academic Clarity)',
@@ -504,15 +504,15 @@ const clients = [
     screenshot: '/portfolio/screenshots/shetkarifoodstuff.webp',
     cta: {
       bg: '#f59e0b',
-      text: '#064e3b',
-      shadow: 'rgba(245, 158, 11, 0.32)',
-      accentText: '#064e3b'
+      text: '#022c22',
+      shadow: 'rgba(245, 158, 11, 0.35)',
+      accentText: '#022c22'
     },
     colors: [
-      { name: 'Trade Saffron Amber', hex: '#f59e0b', role: 'Primary Export RFQ CTAs & Citrus Commodity Accents' },
-      { name: 'Deep Agro Forest Green', hex: '#064e3b', role: 'APEDA Certification Seal & Agricultural Brand Heritage' },
-      { name: 'Organic Sand Parchment', hex: '#f7f3ea', role: 'Soil-to-Souk Export Canvas & Card Atmosphere' },
-      { name: 'Fresh Crop Green', hex: '#22c55e', role: 'Cold-Chain Reefer Verification & Quality Inspection Marks' }
+      { name: 'Trade Saffron Amber', hex: '#f59e0b', role: 'Primary Export RFQ CTAs & Citrus Commodity Accents (bg-amber-500)' },
+      { name: 'Deep Agro Forest Green', hex: '#022c22', role: 'APEDA Certification Seal & Agricultural Brand Heritage (bg-emerald-950)' },
+      { name: 'Organic Soil Parchment', hex: '#fdf8ee', role: 'Soil-to-Souk Export Canvas & Card Atmosphere (bg-[#FDF8EE])' },
+      { name: 'Fresh Harvest Green', hex: '#16a34a', role: 'Cold-Chain Reefer Verification & Quality Inspection Marks (bg-green-600)' }
     ],
     typography: {
       display: 'Inter Display 800 (International Commodity Scale)',
@@ -564,16 +564,16 @@ const clients = [
     liveUrl: 'https://vasroventures.com/',
     screenshot: '/portfolio/screenshots/vasroventures.webp',
     cta: {
-      bg: '#121212',
-      text: '#ffffff',
-      shadow: 'rgba(18, 18, 18, 0.28)',
-      accentText: '#121212'
+      bg: '#27374d',
+      text: '#dde6ed',
+      shadow: 'rgba(39, 55, 77, 0.35)',
+      accentText: '#27374d'
     },
     colors: [
-      { name: 'High-Fashion Jet Black', hex: '#121212', role: 'Monogram Brand Logo & Editorial High-Contrast Ground' },
-      { name: 'Terracotta Linen Tan', hex: '#b48c72', role: 'Womenswear Lookbook Accents & Earthy Apparel Tones' },
-      { name: 'Chambray Denim Blue', hex: '#4a7c9b', role: 'Menswear Lookbook Background & Contemporary Wardrobe Styling' },
-      { name: 'Studio Editorial White', hex: '#fafafa', role: 'Minimalist Runway Canvas & Garment Detail Overlays' }
+      { name: 'Slate Contemporary Navy', hex: '#27374d', role: 'Editorial Primary Action & Modern Brand Anchor' },
+      { name: 'Ice Chambray Canvas', hex: '#dde6ed', role: 'Button Contrast Typography & Lookbook Field' },
+      { name: 'Muted Denim Steel', hex: '#526d82', role: 'Menswear Lookbook Accents & Sub-Navigation' },
+      { name: 'Editorial Charcoal Noir', hex: '#111111', role: 'Monogram Brand Header & Minimalist Runway Contrast' }
     ],
     typography: {
       display: 'Inter Display 900 (High-Impact Editorial)',
@@ -726,7 +726,7 @@ function buildWorkPage(c) {
 
         <!-- Browser Mockup Showcase Frame -->
         <div class="work-mockup-frame" style="background:#ffffff;border:1px solid rgba(8,20,36,0.12);border-radius:20px;overflow:hidden;box-shadow:0 30px 60px -12px rgba(8,20,36,0.25), 0 10px 24px -8px rgba(8,20,36,0.15);margin-bottom:3rem;">
-          <div style="padding:12px 20px;background:#f8fafc;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+          <div style="padding:12px 20px;background:#f8fafc;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;justify-content:space-between;flex-wrap:gap;gap:8px;">
             <div style="display:flex;gap:6px;">
               <span style="width:11px;height:11px;border-radius:50%;background:#ef4444;display:inline-block;"></span>
               <span style="width:11px;height:11px;border-radius:50%;background:#f59e0b;display:inline-block;"></span>
