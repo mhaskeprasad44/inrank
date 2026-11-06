@@ -27,9 +27,17 @@ const clients = [
       { name: 'Cleanroom Laboratory Light', hex: '#f8fafc', role: 'High-Contrast Laboratory Surface Field (--bg-secondary)' }
     ],
     typography: {
-      display: 'Inter Display 850 (Heavy Geometric)',
-      body: 'Inter 400/500 (Technical Reading)',
-      mono: 'JetBrains Mono / Fira Code (G-Code & Tolerances)'
+      googleFontsUrl: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap',
+      fontStackName: 'Roboto & Roboto Mono',
+      display: 'Roboto 900 (Heavy Industrial Sans)',
+      displayFamily: "'Roboto', -apple-system, sans-serif",
+      displayNote: 'Heavyweight geometric sans engineered for high-impact CNC machine series branding and laboratory headlines.',
+      body: 'Roboto 400/500 (Technical Reading)',
+      bodyFamily: "'Roboto', -apple-system, sans-serif",
+      bodyNote: 'Standardized 1.6 line-height engineered for technical CAD descriptions and laboratory specifications.',
+      mono: 'Roboto Mono (G-Code & Tolerances)',
+      monoFamily: "'Roboto Mono', monospace",
+      monoNote: 'Fixed-width precision for spindle RPM, travel axes (X/Y/Z), and ISO tolerance matrices.'
     },
     workTitle: 'CyTOS Machines - UI/UX Design System & Hardware Showcase | Inrank 2.0',
     workMeta: 'Visual portfolio showcase for CyTOS Machines. Explore high-precision CNC machine catalogs, CAD/Gerber specification tables, responsive UI tokens, and sub-second asset pipelines.',
@@ -88,9 +96,17 @@ const clients = [
       { name: 'Executive Obsidian', hex: '#181512', role: 'Wood-Grain Corporate Ground & Dark Navigation' }
     ],
     typography: {
-      display: 'Inter Display 800 (Executive Authority)',
-      body: 'Inter 400/500 (Clean Financial Prose)',
-      mono: 'JetBrains Mono (Tabular Deal Data & Crores)'
+      googleFontsUrl: 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap',
+      fontStackName: 'Work Sans & JetBrains Mono',
+      display: 'Work Sans 700/800 (Executive Authority)',
+      displayFamily: "'Work Sans', sans-serif",
+      displayNote: 'Clean grotesque letterforms projecting institutional trust and corporate debt syndication leadership.',
+      body: 'Work Sans 400/500 (Institutional Reading)',
+      bodyFamily: "'Work Sans', sans-serif",
+      bodyNote: 'Modern geometric proportions ensuring maximum legibility across advisory service briefings and client agreements.',
+      mono: 'JetBrains Mono (Crores & Syndicate Capital Data)',
+      monoFamily: "'JetBrains Mono', monospace",
+      monoNote: 'Tabular lining figures for multi-crore working capital ranges, NBFC debt matrices, and loan yields.'
     },
     workTitle: 'Dravya Financial - Corporate UI/UX Design System & Fintech Portal | Inrank 2.0',
     workMeta: 'Visual portfolio showcase for Dravya Financial Solutions. Explore institutional fintech design tokens, structured debt intake flows, executive mobile layouts, and enterprise typography.',
@@ -149,9 +165,17 @@ const clients = [
       { name: 'Frosted Ice Mist', hex: '#a1efff', role: 'Frosted Glass Cards & Atmospheric Ground (--color-secondary-fixed)' }
     ],
     typography: {
-      display: 'Inter Display 800 (Architectural Scale)',
-      body: 'Inter 400 (Clean Technical Documentation)',
-      mono: 'Space Mono (DMX 512 Nozzle & Flow Specs)'
+      googleFontsUrl: 'https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap',
+      fontStackName: 'Manrope & Hanken Grotesk',
+      display: 'Manrope 700/800 (Architectural Geometric)',
+      displayFamily: "'Manrope', sans-serif",
+      displayNote: 'Sculptural geometric curves echoing kinetic water fountains and civic musical architecture.',
+      body: 'Hanken Grotesk 400/500 (Fluid Editorial)',
+      bodyFamily: "'Hanken Grotesk', sans-serif",
+      bodyNote: 'Fluid neo-grotesque rhythm providing clean scannability for municipal installation project briefs.',
+      mono: 'Space Mono (DMX 512 Nozzle & Flow Specs)',
+      monoFamily: "'Space Mono', monospace",
+      monoNote: 'Accurate tabular columns for DMX 512 channel addressing, pump horsepower, and nozzle choreography.'
     },
     workTitle: 'Fludio Design - Architectural UI/UX & Aquatic Portfolio | Inrank 2.0',
     workMeta: 'Visual portfolio showcase for Fludio Design. Explore luxury aquatic fountain showcases, DMX 512 interactive design systems, fluid responsive galleries, and mobile engineering.',
@@ -210,9 +234,17 @@ const clients = [
       { name: 'Linen Plant Mint', hex: '#acd2d8', role: 'Clean Non-Toxic Storefront Canvas & Surface (--ltn__color-2)' }
     ],
     typography: {
-      display: 'Inter Display 850 (Clean Consumer)',
-      body: 'Inter 400/500 (Ingredient Transparency)',
-      mono: 'JetBrains Mono (EPA Bio-Registration Numbers)'
+      googleFontsUrl: 'https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Open+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap',
+      fontStackName: 'Rajdhani & Open Sans',
+      display: 'Rajdhani 700 (Botanical Technical Bold)',
+      displayFamily: "'Rajdhani', sans-serif",
+      displayNote: 'Square-shouldered technical grotesque conveying bio-enzyme engineering and non-toxic efficacy.',
+      body: 'Open Sans 400/500 (Clean Consumer Reading)',
+      bodyFamily: "'Open Sans', sans-serif",
+      bodyNote: 'Friendly neutral typography conveying ingredient transparency and child/pet safety reassurance.',
+      mono: 'JetBrains Mono (EPA Bio-Registration Numbers)',
+      monoFamily: "'JetBrains Mono', monospace",
+      monoNote: 'Monospace clarity for EPA registration numbers, pH indices, and active plant enzyme percentages.'
     },
     workTitle: 'Grey To The Green - D2C E-Commerce UI/UX & Botanical Storefront | Inrank 2.0',
     workMeta: 'Visual portfolio showcase for Grey To The Green. Explore botanical e-commerce design systems, 1-click cart ergonomics, product trust badges, and sub-second mobile checkout.',
@@ -271,9 +303,17 @@ const clients = [
       { name: 'Sterile Ice Blue', hex: '#f0f5f7', role: 'Medical Candidate Grid & Dashboard Canvas Field' }
     ],
     typography: {
-      display: 'Inter Display 800 (Clinical Authority)',
-      body: 'Inter 400/500 (Medical Role Specifications)',
-      mono: 'Space Mono (Hospital License & Shift Codes)'
+      googleFontsUrl: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Jost:wght@400;500;600&display=swap',
+      fontStackName: 'Montserrat & Jost',
+      display: 'Montserrat 700/800 (Clinical Authority)',
+      displayFamily: "'Montserrat', sans-serif",
+      displayNote: 'High-visibility geometric sans commanding clinical authority for healthcare career portals and hospitals.',
+      body: 'Montserrat 400/500 (Medical Role Specifications)',
+      bodyFamily: "'Montserrat', sans-serif",
+      bodyNote: 'Clear typographic hierarchy for doctor shift rotations, nurse vacancies, and hospital credential tables.',
+      mono: 'Jost / Space Mono (Shift Codes & Licensing)',
+      monoFamily: "'Jost', monospace",
+      monoNote: 'Standardized tabular format for hospital department codes (ICU, CCU), shift stipends, and license IDs.'
     },
     workTitle: 'HCP Nest - Healthcare Portal UI/UX & Job Engine | Inrank 2.0',
     workMeta: 'Visual portfolio showcase for HCP Nest. Explore clinical recruitment portal design, specialty filtering UX, mobile candidate application funnels, and enterprise medical typography.',
@@ -332,9 +372,17 @@ const clients = [
       { name: 'Paperboard Iris White', hex: '#f2f0fe', role: 'Luxury Rigid Packaging Canvas Field (--ast-global-color-4)' }
     ],
     typography: {
-      display: 'Inter Display 850 (Craftsman Precision)',
-      body: 'Inter 400 (Material & Finishing Specs)',
-      mono: 'Space Mono (Paper GSM & Die-Cut Specs)'
+      googleFontsUrl: 'https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=Open+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap',
+      fontStackName: 'Inter & Open Sans',
+      display: 'Inter 800 (Craftsman Precision Display)',
+      displayFamily: "'Inter', sans-serif",
+      displayNote: 'Tight tracking and tall x-height conveying modern commercial printing and luxury packaging authority.',
+      body: 'Open Sans 400/500 (Finishing & Paper Specs)',
+      bodyFamily: "'Open Sans', sans-serif",
+      bodyNote: 'Highly legible neutral letterforms outlining offset, digital, and rigid box manufacturing capabilities.',
+      mono: 'Space Mono (Paper GSM & Die-Cut Specs)',
+      monoFamily: "'Space Mono', monospace",
+      monoNote: 'Technical monospacing for paperboard GSM (300-800 GSM), UV foil dimensions, and die-line coordinates.'
     },
     workTitle: 'Hira Grafix - Luxury Packaging UI/UX & Print Portfolio | Inrank 2.0',
     workMeta: 'Visual portfolio showcase for Hira Grafix Solutions. Explore luxury packaging design systems, custom box configurators, tactile print finishes, and high-speed B2B catalogs.',
@@ -393,9 +441,17 @@ const clients = [
       { name: 'Sterile Ice Canvas', hex: '#eef8fa', role: 'Orthopedic Recovery Timelines & Accessible Patient Field' }
     ],
     typography: {
-      display: 'Inter Display 800 (Empathetic Medical)',
-      body: 'Inter 400/500 (Accessible Patient Recovery Text)',
-      mono: 'Space Mono (Surgical Codes & Clinic Hours)'
+      googleFontsUrl: 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Source+Sans+3:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap',
+      fontStackName: 'Plus Jakarta Sans & Source Sans 3',
+      display: 'Plus Jakarta Sans 700/800 (Empathetic Medical)',
+      displayFamily: "'Plus Jakarta Sans', sans-serif",
+      displayNote: 'Warm contemporary geometry instilling patient calm and surgical confidence for specialized orthopedics.',
+      body: 'Source Sans 3 400/500 (Accessible Patient Text)',
+      bodyFamily: "'Source Sans 3', sans-serif",
+      bodyNote: 'Engineered specifically for clinical readability, recovery protocols, and post-operative instructions.',
+      mono: 'Space Mono (Surgical Codes & Clinic Hours)',
+      monoFamily: "'Space Mono', monospace",
+      monoNote: 'Tabular accuracy for surgery procedure codes, consultation time slots, and emergency clinic lines.'
     },
     workTitle: 'Dr. Shyam Thakkar - Clinical UI/UX & Patient Portal | Inrank 2.0',
     workMeta: 'Visual portfolio showcase for Dr. Shyam Thakkar (ARTICUL8 Clinic). Explore orthopedic patient portal design, 1-tap appointment booking, anatomical condition guides, and accessible UI.',
@@ -454,9 +510,17 @@ const clients = [
       { name: 'Campus Warm Ivory', hex: '#fdf8ee', role: 'Admissions Banner Ground & Ranker Callout Background' }
     ],
     typography: {
-      display: 'Inter Display 850 (Academic Clarity)',
-      body: 'Inter 400/500 (Curriculum & Subject Modules)',
-      mono: 'Space Mono (Batch Timings & Passing Scores)'
+      googleFontsUrl: 'https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap',
+      fontStackName: 'Poppins & Inter',
+      display: 'Poppins 600/700 (Academic Distinction)',
+      displayFamily: "'Poppins', sans-serif",
+      displayNote: 'Open geometric circles and friendly presence tailored for student motivation and CA coaching leadership.',
+      body: 'Inter 400/500 (Syllabus & Commerce Modules)',
+      bodyFamily: "'Inter', sans-serif",
+      bodyNote: 'Dense, clear structural rhythm for comprehensive CA Foundation exam modules and batch timetables.',
+      mono: 'Space Mono (Batch Timings & Passing Scores)',
+      monoFamily: "'Space Mono', monospace",
+      monoNote: 'Precision digits for student rank percentages, demo batch hours, and scholarship qualification cutoffs.'
     },
     workTitle: 'Riitu Institution - EdTech UI/UX & Academic Admissions Portal | Inrank 2.0',
     workMeta: 'Visual portfolio showcase for Riitu Institution. Explore academic coaching design systems, interactive syllabus breakdowns, mobile demo class booking, and conversion-optimized education UX.',
@@ -515,9 +579,17 @@ const clients = [
       { name: 'Fresh Harvest Green', hex: '#16a34a', role: 'Cold-Chain Reefer Verification & Quality Inspection Marks (bg-green-600)' }
     ],
     typography: {
-      display: 'Inter Display 800 (International Commodity Scale)',
-      body: 'Inter 400 (Trade Specifications & Phytosanitary Data)',
-      mono: 'Space Mono (Reefer Tonnage, TEUs & Dubai Ports)'
+      googleFontsUrl: 'https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700;800&family=Roboto:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap',
+      fontStackName: 'Roboto Slab & Roboto',
+      display: 'Roboto Slab 700/800 (Agro Commodity Scale)',
+      displayFamily: "'Roboto Slab', serif",
+      displayNote: 'Sturdy slab serifs anchoring international agro trade credibility and farm-to-table export legacy.',
+      body: 'Roboto 400/500 (Phytosanitary & Export Data)',
+      bodyFamily: "'Roboto', sans-serif",
+      bodyNote: 'Industrial clarity for international cold-chain logistics, APEDA certifications, and customs documentation.',
+      mono: 'JetBrains Mono (Reefer Tonnage & TEU Codes)',
+      monoFamily: "'JetBrains Mono', monospace",
+      monoNote: 'Standardized monospace for container metric tons, transit temperatures (+2°C to +4°C), and Dubai port bills.'
     },
     workTitle: 'Shetkari Foodstuff - Global Agro Export UI/UX & Trade Portal | Inrank 2.0',
     workMeta: 'Visual portfolio showcase for Shetkari Foodstuff Trading LLC. Explore fresh produce export design systems, cold-chain commodity tables, global container calculators, and international B2B UX.',
@@ -576,9 +648,17 @@ const clients = [
       { name: 'Editorial Charcoal Noir', hex: '#111111', role: 'Monogram Brand Header & Minimalist Runway Contrast' }
     ],
     typography: {
-      display: 'Inter Display 900 (High-Impact Editorial)',
-      body: 'Inter 400 (Fluid Lookbook Narratives)',
-      mono: 'Space Mono (SKU Sizes & Garment Codes)'
+      googleFontsUrl: 'https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap',
+      fontStackName: 'Jost (Futura-Inspired Editorial)',
+      display: 'Jost 700/800 (High-Impact Fashion Editorial)',
+      displayFamily: "'Jost', sans-serif",
+      displayNote: 'Refined Futura-inspired proportions tailored for modern menswear & womenswear lookbook titles.',
+      body: 'Jost 400/500 (Fluid Lookbook Narratives)',
+      bodyFamily: "'Jost', sans-serif",
+      bodyNote: 'Minimalist letterforms with airy tracking supporting high-aesthetic product narratives and size guides.',
+      mono: 'Monaco / Space Mono (SKU Sizes & Garment Codes)',
+      monoFamily: "'Space Mono', Monaco, monospace",
+      monoNote: 'Clean monospace alignment for garment barcode IDs, European size matrices (XS-XXL), and inventory SKUs.'
     },
     workTitle: 'Vasro Ventures - Editorial Fashion UI/UX & Apparel Storefront | Inrank 2.0',
     workMeta: 'Visual portfolio showcase for Vasro Ventures. Explore modern apparel design tokens, fluid mobile lookbooks, instant size-filter ergonomics, and sub-second e-commerce performance.',
@@ -698,6 +778,11 @@ function prepareHead(beforeRaw, pageType, c) {
     head = head.replace(/<a href="\/case-studies\.html" class="mob-link[^"]*"/g, '<a href="/case-studies.html" class="mob-link is-current"');
   }
 
+  // Inject client-specific Google Fonts if specified (for work pages)
+  if (pageType === 'work' && c.typography && c.typography.googleFontsUrl) {
+    head = head.replace('</head>', `  <link rel="stylesheet" href="${c.typography.googleFontsUrl}">\n</head>`);
+  }
+
   return head;
 }
 
@@ -726,7 +811,7 @@ function buildWorkPage(c) {
 
         <!-- Browser Mockup Showcase Frame -->
         <div class="work-mockup-frame" style="background:#ffffff;border:1px solid rgba(8,20,36,0.12);border-radius:20px;overflow:hidden;box-shadow:0 30px 60px -12px rgba(8,20,36,0.25), 0 10px 24px -8px rgba(8,20,36,0.15);margin-bottom:3rem;">
-          <div style="padding:12px 20px;background:#f8fafc;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;justify-content:space-between;flex-wrap:gap;gap:8px;">
+          <div style="padding:12px 20px;background:#f8fafc;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
             <div style="display:flex;gap:6px;">
               <span style="width:11px;height:11px;border-radius:50%;background:#ef4444;display:inline-block;"></span>
               <span style="width:11px;height:11px;border-radius:50%;background:#f59e0b;display:inline-block;"></span>
@@ -823,24 +908,53 @@ function buildWorkPage(c) {
           `).join('')}
         </div>
 
-        <!-- Typography & Layout Scaling -->
-        <div style="margin-top:3rem;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:2rem;">
-          <h3 style="font-size:1.25rem;font-weight:800;color:var(--text-strong);margin-bottom:1rem;">Typography Scale &amp; Structural Hierarchy</h3>
+        <!-- Typography & Layout Scaling (LIVE SITE FONT STACK) -->
+        <div style="margin-top:3rem;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:2.25rem;">
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid var(--line);">
+            <div>
+              <small style="font-size:0.75rem;text-transform:uppercase;color:${c.cta.accentText};font-weight:800;letter-spacing:0.06em;display:block;margin-bottom:4px;">PRODUCTION TYPOGRAPHY ARCHITECTURE</small>
+              <h3 style="font-size:1.35rem;font-weight:850;color:var(--text-strong);margin:0;">Typography Scale &amp; Structural Hierarchy</h3>
+            </div>
+            <span style="font-size:0.8rem;font-weight:750;color:#64748b;background:#ffffff;padding:6px 14px;border-radius:999px;border:1px solid var(--line);">
+              Native Website Font: <strong style="color:var(--text-strong);">${c.typography.fontStackName}</strong>
+            </span>
+          </div>
+
           <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:1.5rem;">
-            <div>
+            <!-- Display Scale Card -->
+            <div style="background:#ffffff;padding:1.5rem;border-radius:16px;border:1px solid var(--line);">
               <small style="font-size:0.75rem;text-transform:uppercase;color:${c.cta.accentText};font-weight:800;letter-spacing:0.06em;">Display Scale</small>
-              <div style="font-size:1.1rem;font-weight:800;color:var(--text-strong);margin-top:4px;">${c.typography.display}</div>
-              <p style="font-size:0.85rem;color:#64748b;margin-top:4px;">Engineered with tight tracking (-0.03em) to convey commercial authority.</p>
+              <div style="font-family:${c.typography.displayFamily};font-size:1.35rem;font-weight:750;color:var(--text-strong);margin-top:6px;line-height:1.2;">
+                ${c.typography.display}
+              </div>
+              <div style="font-family:${c.typography.displayFamily};font-size:0.92rem;color:#475569;font-weight:600;margin-top:8px;letter-spacing:0.02em;">
+                Aa Bb Cc Dd Ee Ff Gg Hh 0123456789
+              </div>
+              <p style="font-size:0.82rem;color:#64748b;margin-top:10px;line-height:1.5;margin-bottom:0;">${c.typography.displayNote}</p>
             </div>
-            <div>
+
+            <!-- Editorial Body Card -->
+            <div style="background:#ffffff;padding:1.5rem;border-radius:16px;border:1px solid var(--line);">
               <small style="font-size:0.75rem;text-transform:uppercase;color:${c.cta.accentText};font-weight:800;letter-spacing:0.06em;">Editorial Body</small>
-              <div style="font-size:1.1rem;font-weight:800;color:var(--text-strong);margin-top:4px;">${c.typography.body}</div>
-              <p style="font-size:0.85rem;color:#64748b;margin-top:4px;">Optimized 1.65 line-height ensuring effortless scannability on small screens.</p>
+              <div style="font-family:${c.typography.bodyFamily};font-size:1.2rem;font-weight:600;color:var(--text-strong);margin-top:6px;line-height:1.3;">
+                ${c.typography.body}
+              </div>
+              <div style="font-family:${c.typography.bodyFamily};font-size:0.86rem;color:#475569;margin-top:8px;line-height:1.55;">
+                The quick brown fox jumps over the lazy dog. Optimized 1.65 line-height for effortless mobile reading.
+              </div>
+              <p style="font-size:0.82rem;color:#64748b;margin-top:10px;line-height:1.5;margin-bottom:0;">${c.typography.bodyNote}</p>
             </div>
-            <div>
+
+            <!-- Technical Data Card -->
+            <div style="background:#ffffff;padding:1.5rem;border-radius:16px;border:1px solid var(--line);">
               <small style="font-size:0.75rem;text-transform:uppercase;color:${c.cta.accentText};font-weight:800;letter-spacing:0.06em;">Technical Data</small>
-              <div style="font-size:1.1rem;font-weight:800;color:var(--text-strong);margin-top:4px;">${c.typography.mono}</div>
-              <p style="font-size:0.85rem;color:#64748b;margin-top:4px;">Monospace accuracy for tabular numbers, pricing, and technical parameters.</p>
+              <div style="font-family:${c.typography.monoFamily};font-size:1.05rem;font-weight:600;color:var(--text-strong);margin-top:6px;line-height:1.3;">
+                ${c.typography.mono}
+              </div>
+              <div style="font-family:${c.typography.monoFamily};font-size:0.82rem;color:#0284c7;background:#f0f9ff;padding:8px 12px;border-radius:8px;margin-top:8px;">
+                0.85s LCP · 99 Perf · 100% Core Web Vitals
+              </div>
+              <p style="font-size:0.82rem;color:#64748b;margin-top:10px;line-height:1.5;margin-bottom:0;">${c.typography.monoNote}</p>
             </div>
           </div>
         </div>
