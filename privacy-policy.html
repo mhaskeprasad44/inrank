@@ -85,16 +85,25 @@
   <script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
 
 </head>
-  <body class="bg-background text-foreground antialiased selection:bg-emerald-500/20 selection:text-emerald-700 min-h-screen flex flex-col">
+  <body class="theme-corporate light-hero-page bg-background text-foreground antialiased selection:bg-emerald-500/20 selection:text-emerald-700 min-h-screen flex flex-col">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLZ75BS8"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-<header id="nav" class="nav-dock" data-dock="default">
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-bar" role="progressbar" aria-label="Page reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <!-- Unified Corporate Header & Mega Dropdown (Vinove 2.0 System) -->
+  <header id="nav" class="nav-dock" data-dock="default">
     <div class="nav-bar">
       <!-- Inrank Brand Logo -->
       <a href="/" class="nav-logo" aria-label="Inrank Technologies Home">
-        <img src="/img/inrank-white-logo.svg" alt="Inrank Technologies" width="36" height="36" class="logo-icon" />
+        <img src="/img/inrank-dark-logo.svg" alt="Inrank Technologies" width="36" height="36" class="logo-icon logo-icon--dark" />
+        <img src="/img/inrank-white-logo.svg" alt="Inrank Technologies" width="36" height="36" class="logo-icon logo-icon--white" />
         <div class="nav-logo-brand">
           <span class="nav-logo-name">Inrank</span>
           <span class="nav-logo-sub">Technologies</span>
@@ -105,12 +114,12 @@
       <nav class="nav-links" aria-label="Main Navigation">
         <!-- Services with Mega Dropdown -->
         <div class="nav-item" data-dropdown="services">
-          <button class="nav-link nav-link--drop" aria-expanded="false" aria-haspopup="true">
+          <a href="/services.html" class="nav-link nav-link--drop" aria-expanded="false" aria-haspopup="true">
             <span>Services</span>
             <svg class="nav-chev" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true">
               <path d="M2.5 4.5L6 8L9.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </button>
+          </a>
 
           <!-- Floating Mega Dropdown Menu -->
           <div class="nav-drop drop-mega" role="region" aria-label="Services Submenu">
@@ -237,6 +246,7 @@
 
         <!-- Direct Navigation Items -->
         <a href="/pricing.html" class="nav-link" data-nav="pricing">Pricing</a>
+        
         <!-- Our Work with 3x2 Client Dropdown -->
         <div class="nav-item" data-dropdown="work">
           <a href="/our-work.html" class="nav-link nav-link--drop" aria-expanded="false" aria-haspopup="true">
@@ -249,8 +259,7 @@
           <!-- Floating Our Work Dropdown Menu -->
           <div class="nav-drop drop-work" role="region" aria-label="Our Work Submenu">
             <div class="work-dropdown-grid">
-              
-              <!-- Box 1: Greytothegreen (Replaced Dravya Financial) -->
+              <!-- Box 1: Greytothegreen -->
               <a href="/our-work/greytothegreen.html" class="work-dropdown-card">
                 <div class="work-drop-logo-wrap">
                   <img src="/client-logos/greytothegreen.png" alt="Greytothegreen" class="work-drop-logo" />
@@ -261,7 +270,7 @@
                 </div>
               </a>
 
-              <!-- Box: CyTOS Machines -->
+              <!-- Box 2: CyTOS Machines -->
               <a href="/our-work/cytos.html" class="work-dropdown-card">
                 <div class="work-drop-logo-wrap">
                   <img src="/client-logos/cytos.png" alt="CyTOS Machines" class="work-drop-logo" />
@@ -313,7 +322,7 @@
                     <span class="work-drop-all-title">INRANK</span>
                   </div>
                   <svg class="work-drop-all-arrow" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M3 13L13 3M13 3H5M13 3V11" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 13L13 3H5M13 3V11" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </div>
                 <div class="work-drop-info">
@@ -321,121 +330,12 @@
                   <span class="work-drop-desc">Explore 50+ Pune &amp; Global client wins</span>
                 </div>
               </a>
-
             </div>
           </div>
         </div>
+
         <a href="/case-studies.html" class="nav-link" data-nav="cases">Case Studies</a>
-
-                <!-- About with Mega Dropdown (Exact Services Dropdown Style) -->
-        <div class="nav-item" data-dropdown="about">
-          <button class="nav-link nav-link--drop" aria-expanded="false" aria-haspopup="true">
-            <span>About</span>
-            <svg class="nav-chev" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true">
-              <path d="M2.5 4.5L6 8L9.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-
-          <!-- Floating Mega Dropdown Menu for About -->
-          <div class="nav-drop drop-mega" role="region" aria-label="About Submenu">
-            <div class="mega-grid-wrap">
-              <!-- Left Rail: About Inrank Overview -->
-              <div class="mega-rail">
-                <span class="mega-rail-eyebrow">ABOUT INRANK</span>
-                <div class="mega-rail-title">Engineering Direct Growth</div>
-                <p class="mega-rail-text">Direct senior ownership with zero account managers, zero junior interns, and 100% IP code &amp; asset handover.</p>
-                <a href="/about.html" class="mega-rail-cta">
-                  <span>Explore our philosophy</span>
-                  <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2">
-                    <path d="M3 13L13 3M13 3H5M13 3V11" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </a>
-              </div>
-
-              <!-- Right Area: 4 Architectural Pillars of About -->
-              <div class="mega-pillars-grid">
-                
-                <!-- Pillar 1: Company & Mission -->
-                <div class="mega-pillar-card">
-                  <a href="/about.html#philosophy" class="mega-co-head">
-                    <span class="mega-co-logo">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                    </span>
-                    <div>
-                      <span class="mega-co-name">Company &amp; Mission</span>
-                      <span class="mega-co-cat">Our Founding Story</span>
-                    </div>
-                  </a>
-                  <div class="mega-pillar-links">
-                    <a href="/about.html#philosophy" class="mega-sub-link">Operating Philosophy</a>
-                    <a href="/about.html#ownership" class="mega-sub-link">100% Code &amp; Asset Ownership</a>
-                    <a href="/about.html#speed" class="mega-sub-link">Engineered for Conversion Speed</a>
-                    <a href="/about.html" class="mega-sub-link">Zero Agency Markup Model</a>
-                  </div>
-                </div>
-
-                <!-- Pillar 2: Leadership Profile -->
-                <div class="mega-pillar-card">
-                  <a href="/about.html#prasad-mhaske" class="mega-co-head">
-                    <span class="mega-co-logo">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                    </span>
-                    <div>
-                      <span class="mega-co-name">Leadership Profile</span>
-                      <span class="mega-co-cat">Prasad Mhaske</span>
-                    </div>
-                  </a>
-                  <div class="mega-pillar-links">
-                    <a href="/about.html#prasad-mhaske" class="mega-sub-link">Founder &amp; Lead Architect</a>
-                    <a href="/about.html#team" class="mega-sub-link">Direct Senior Engineers</a>
-                    <a href="/about.html#team" class="mega-sub-link">No Junior Account Managers</a>
-                    <a href="/about.html#team" class="mega-sub-link">Weekly Technical Sprints</a>
-                  </div>
-                </div>
-
-                <!-- Pillar 3: Baner Office -->
-                <div class="mega-pillar-card">
-                  <a href="/about.html#lab" class="mega-co-head">
-                    <span class="mega-co-logo">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    </span>
-                    <div>
-                      <span class="mega-co-name">Baner Office</span>
-                      <span class="mega-co-cat">Pune Headquarters</span>
-                    </div>
-                  </a>
-                  <div class="mega-pillar-links">
-                    <a href="/about.html#lab" class="mega-sub-link">Baner Road, near Balewadi High St</a>
-                    <a href="/about.html#lab" class="mega-sub-link">In-Person Technical War Rooms</a>
-                    <a href="/about.html#lab" class="mega-sub-link">Direct Client Collaboration</a>
-                    <a href="/contact.html" class="mega-sub-link">Schedule Lab Visit / Meeting</a>
-                  </div>
-                </div>
-
-                <!-- Pillar 4: Production Standards -->
-                <div class="mega-pillar-card">
-                  <a href="/about.html#standards" class="mega-co-head">
-                    <span class="mega-co-logo">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </span>
-                    <div>
-                      <span class="mega-co-name">Quality Benchmarks</span>
-                      <span class="mega-co-cat">Production Standards</span>
-                    </div>
-                  </a>
-                  <div class="mega-pillar-links">
-                    <a href="/about.html#standards" class="mega-sub-link">Google Lighthouse 95+ Standard</a>
-                    <a href="/about.html#standards" class="mega-sub-link">Sub-1.2s Page Load Guarantee</a>
-                    <a href="/about.html#standards" class="mega-sub-link">Clean Semantic Next.js Code</a>
-                    <a href="/case-studies.html" class="mega-sub-link">Verified Client Case Studies</a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <a href="/about.html" class="nav-link" data-nav="about">About</a>
         <a href="/blog.html" class="nav-link" data-nav="blog">Blog</a>
         <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
       </nav>
@@ -449,252 +349,11 @@
       </button>
     </div>
   </header>
-<div class="nav-scrim" id="nav-scrim"></div>
-  <div id="scroll-bar" role="progressbar" aria-label="Page reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-
-  <!-- Skip Link for Accessibility -->
-  <a class="skip-link" href="#main">Skip to main content</a>
-
-  <!-- ══════════════════════════════════════════
-       VINOVE FLOATING DOCK NAVIGATION
-       ══════════════════════════════════════════ -->
-  <nav id="nav" class="is-dark" aria-label="Main navigation">
-    <div class="nav-bar">
-      <!-- Inrank Brand Logo -->
-      <a href="/" class="nav-logo" aria-label="Inrank Technologies home">
-        <img src="/img/inrank-white-logo.svg" alt="Inrank Technologies" width="34" height="34" class="logo-icon" />
-        <div class="nav-logo-brand">
-          <span class="nav-logo-name">Inrank</span>
-          <span class="nav-logo-sub">Technologies</span>
-        </div>
-      </a>
-
-      <!-- Desktop Links -->
-      <ul class="nav-links" role="list">
-        <!-- Services Mega Dropdown -->
-        <li class="nav-item" data-dropdown data-nav="services">
-          <button class="nav-link" aria-expanded="false" aria-controls="drop-services" aria-haspopup="true">Services
-            <svg class="nav-chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4.5l4 3.5 4-3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-          <div class="nav-drop drop-mega" id="drop-services" role="region" aria-label="Services Directory">
-            <div class="mega-grid-wrap">
-              <div class="mega-rail">
-                <span class="mega-rail-eyebrow">Digital Capabilities</span>
-                <p class="mega-rail-title">Full-Stack Growth Engineering</p>
-                <p class="mega-rail-text">We replace fragmented agencies with an accountable, high-performance growth engineering partner.</p>
-                <a href="/services.html" class="mega-rail-cta">
-                  <span>Explore all 27 services</span>
-                  <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 11L11 1M11 1H4M11 1V8"/></svg>
-                </a>
-              </div>
-              <div class="mega-cards">
-                <a href="/services.html#pillar-1" class="mega-co" style="--co:#009d49">
-                  <span class="mega-co-logo">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                  </span>
-                  <span class="mega-co-text">
-                    <span class="mega-co-name">Search &amp; AI Discovery</span>
-                    <span class="mega-co-tag">SEO in Pune, GEO &amp; Google 3-Pack</span>
-                  </span>
-                  <svg class="mega-co-arr" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 11L11 1M11 1H4M11 1V8"/></svg>
-                </a>
-                <a href="/services.html#pillar-2" class="mega-co" style="--co:#102138">
-                  <span class="mega-co-logo">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                  </span>
-                  <span class="mega-co-text">
-                    <span class="mega-co-name">High-Performance Web</span>
-                    <span class="mega-co-tag">Custom Next.js, WordPress &amp; E-Commerce</span>
-                  </span>
-                  <svg class="mega-co-arr" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 11L11 1M11 1H4M11 1V8"/></svg>
-                </a>
-                <a href="/services.html#pillar-3" class="mega-co" style="--co:#047857">
-                  <span class="mega-co-logo">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                  </span>
-                  <span class="mega-co-text">
-                    <span class="mega-co-name">Performance Marketing</span>
-                    <span class="mega-co-tag">Google Ads, Meta &amp; High-ROI Funnels</span>
-                  </span>
-                  <svg class="mega-co-arr" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 11L11 1M11 1H4M11 1V8"/></svg>
-                </a>
-                <a href="/services.html#pillar-4" class="mega-co" style="--co:#081424">
-                  <span class="mega-co-logo">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
-                  </span>
-                  <span class="mega-co-text">
-                    <span class="mega-co-name">Brand &amp; CRO Optimization</span>
-                    <span class="mega-co-tag">UI/UX, Brand Identity &amp; High-Conversion</span>
-                  </span>
-                  <svg class="mega-co-arr" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 11L11 1M11 1H4M11 1V8"/></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <!-- Pricing -->
-        <li class="nav-item">
-          <a href="/pricing.html" class="nav-link" data-nav="pricing">Pricing</a>
-        </li>
-
-        <!-- Our Work -->
-        <li class="nav-item">
-          <!-- Our Work with 3x2 Client Dropdown -->
-        <div class="nav-item" data-dropdown="work">
-          <a href="/our-work.html" class="nav-link nav-link--drop" aria-expanded="false" aria-haspopup="true">
-            <span>Our Work</span>
-            <svg class="nav-chev" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true">
-              <path d="M2.5 4.5L6 8L9.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-
-          <!-- Floating Our Work Dropdown Menu -->
-          <div class="nav-drop drop-work" role="region" aria-label="Our Work Submenu">
-            <div class="work-dropdown-grid">
-              
-              <!-- Box 1: Hira Grafix -->
-              <a href="/our-work/hiragrafix.html" class="work-dropdown-card">
-                <div class="work-drop-logo-wrap">
-                  <img src="/client-logos/hiragrafix.png" alt="Hira Grafix" class="work-drop-logo" />
-                </div>
-                <div class="work-drop-info">
-                  <div class="work-drop-name">Hira Grafix</div>
-                  <span class="work-drop-desc">Signage &amp; industrial branding</span>
-                </div>
-              </a>
-
-              <!-- Box 2: Greytothegreen -->
-              <a href="/our-work/greytothegreen.html" class="work-dropdown-card">
-                <div class="work-drop-logo-wrap">
-                  <img src="/client-logos/greytothegreen.png" alt="Greytothegreen" class="work-drop-logo" />
-                </div>
-                <div class="work-drop-info">
-                  <div class="work-drop-name">Greytothegreen</div>
-                  <span class="work-drop-desc">Botanical skincare &amp; remedies</span>
-                </div>
-              </a>
-
-              <!-- Box: CyTOS Machines -->
-              <a href="/our-work/cytos.html" class="work-dropdown-card">
-                <div class="work-drop-logo-wrap">
-                  <img src="/client-logos/cytos.png" alt="CyTOS Machines" class="work-drop-logo" />
-                </div>
-                <div class="work-drop-info">
-                  <div class="work-drop-name">CyTOS Machines</div>
-                  <span class="work-drop-desc">PCB prototyping CNC machines</span>
-                </div>
-              </a>
-
-              <!-- Box 4: Shetkari Foodstuff -->
-              <a href="/our-work/shetkarifoodstuff.html" class="work-dropdown-card">
-                <div class="work-drop-logo-wrap">
-                  <img src="/client-logos/shetkari.webp" alt="Shetkari Foodstuff" class="work-drop-logo" />
-                </div>
-                <div class="work-drop-info">
-                  <div class="work-drop-name">Shetkari Foodstuff</div>
-                  <span class="work-drop-desc">Agri-export &amp; D2C storefront</span>
-                </div>
-              </a>
-
-              <!-- Box 5: Fludio Design -->
-              <a href="/our-work/fludio.html" class="work-dropdown-card">
-                <div class="work-drop-logo-wrap">
-                  <img src="/client-logos/fludio.png" alt="Fludio Design" class="work-drop-logo" />
-                </div>
-                <div class="work-drop-info">
-                  <div class="work-drop-name">Fludio Design</div>
-                  <span class="work-drop-desc">Architectural musical fountains</span>
-                </div>
-              </a>
-
-              <!-- Box 6: All companies / Explore the full portfolio (Featured Dark Card) -->
-              <a href="/our-work.html" class="work-dropdown-card work-dropdown-card--all">
-                <div class="work-drop-all-head">
-                  <div class="work-drop-all-brand">
-                    <img src="/img/inrank-white-logo.svg" alt="Inrank Technologies" width="28" height="28" />
-                    <span class="work-drop-all-title">INRANK™</span>
-                  </div>
-                  <svg class="work-drop-all-arrow" viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 10h12M10 4l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <div class="work-drop-info">
-                  <div class="work-drop-name">All companies</div>
-                  <span class="work-drop-desc">Explore the full portfolio</span>
-                </div>
-              </a>
-
-            </div>
-          </div>
-        </div>
-        </li>
-
-        <!-- Case Studies -->
-        <li class="nav-item">
-          <a href="/case-studies.html" class="nav-link" data-nav="cases">Case Studies</a>
-        </li>
-
-        <!-- About Dropdown -->
-        <li class="nav-item" data-dropdown data-nav="about">
-          <button class="nav-link" aria-expanded="false" aria-controls="drop-about" aria-haspopup="true">About
-            <svg class="nav-chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4.5l4 3.5 4-3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-          <div class="nav-drop drop-simple" id="drop-about" role="region" aria-label="About Inrank">
-            <div class="mega-grid-wrap">
-              <div class="simple-cards">
-                <a href="/about.html" class="drop-row">
-                  <span class="drop-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                  </span>
-                  <span class="drop-row-text">
-                    <span class="drop-name">Leadership &amp; Founder</span>
-                    <span class="drop-desc">Prasad Mhaske and our Baner Office.</span>
-                  </span>
-                </a>
-                <a href="/about.html#operating-model" class="drop-row">
-                  <span class="drop-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6Z"/></svg>
-                  </span>
-                  <span class="drop-row-text">
-                    <span class="drop-name">The Inrank Standard</span>
-                    <span class="drop-desc">5-7 day sprints, transparent fixed pricing.</span>
-                  </span>
-                </a>
-                <a href="/about.html#baner-lab" class="drop-row">
-                  <span class="drop-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                  </span>
-                  <span class="drop-row-text">
-                    <span class="drop-name">Baner, Pune Office</span>
-                    <span class="drop-desc">Direct technical consultation on FC Road / Baner.</span>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <!-- Contact -->
-        <li class="nav-item">
-          <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
-        </li>
-      </ul>
-
-      <!-- CTA -->
-      <a href="/contact.html" class="nav-cta">Get Free Audit</a>
-
-      <!-- Mobile Hamburger -->
-      <button id="nav-burger" class="nav-burger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mob">
-        <span class="nav-burger-box" aria-hidden="true"><span></span><span></span><span></span></span>
-      </button>
-    </div>
-  </nav>
 
   <!-- Navigation Scrim Backdrop -->
   <div id="nav-scrim" aria-hidden="true"></div>
 
-  <!-- Mobile Drawer Menu -->
+  <!-- Mobile Drawer Menu (#mob) -->
   <div id="mob" aria-hidden="true">
     <div class="mob-hd">
       <a href="/" class="mob-logo" aria-label="Inrank Technologies">
@@ -704,39 +363,54 @@
           <span class="nav-logo-sub">Technologies</span>
         </div>
       </a>
-      <button id="mob-x" class="mob-x" aria-label="Close menu">✕</button>
-    </div>
-    <nav class="mob-body">
-      <button class="mob-acc-btn" aria-expanded="false" aria-controls="mob-services">
-        Services <span>▾</span>
+      <button id="mob-x" class="mob-x" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 6L6 18M6 6l12 12"/></svg>
       </button>
-      <div id="mob-services" class="mob-acc-body">
-        <a href="/services.html#pillar-1" class="mob-co"><span class="mob-co-name">Search &amp; AI Discovery</span><span class="mob-co-cat">SEO &amp; GEO</span></a>
-        <a href="/services.html#pillar-2" class="mob-co"><span class="mob-co-name">High-Performance Web</span><span class="mob-co-cat">Web Development</span></a>
-        <a href="/services.html#pillar-3" class="mob-co"><span class="mob-co-name">Performance Marketing</span><span class="mob-co-cat">Google &amp; Meta Ads</span></a>
-        <a href="/services.html#pillar-4" class="mob-co"><span class="mob-co-name">Brand &amp; CRO</span><span class="mob-co-cat">UI/UX &amp; Conversions</span></a>
-        <a href="/services.html" class="mob-co" style="color:var(--terra);"><span class="mob-co-name">View All 27 Services →</span></a>
+    </div>
+
+    <div class="mob-body">
+      <!-- Services Accordion -->
+      <div class="mob-acc">
+        <button class="mob-acc-btn" aria-expanded="true" aria-controls="mob-acc-services">
+          <span>Services (All 27)</span>
+          <svg class="mob-acc-chev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div id="mob-acc-services" class="mob-acc-body">
+          <a href="/services/seo-company-pune.html" class="mob-co">
+            <span class="mob-co-name">Search &amp; AI Discovery</span>
+            <span class="mob-co-cat">SEO &amp; GEO (7 Services)</span>
+          </a>
+          <a href="/services/custom-website-development.html" class="mob-co">
+            <span class="mob-co-name">High-Performance Web</span>
+            <span class="mob-co-cat">Next.js &amp; WordPress (7 Services)</span>
+          </a>
+          <a href="/services/ppc-services.html" class="mob-co">
+            <span class="mob-co-name">Performance Marketing</span>
+            <span class="mob-co-cat">Google &amp; Meta Ads (6 Services)</span>
+          </a>
+          <a href="/services/ui-ux-design-services.html" class="mob-co">
+            <span class="mob-co-name">Brand &amp; CRO Optimization</span>
+            <span class="mob-co-cat">UI/UX &amp; Conversions (7 Services)</span>
+          </a>
+          <a href="/services.html" class="mob-co" style="background:rgba(0,157,73,0.12);border-color:#009d49;">
+            <span class="mob-co-name" style="color:var(--terra-hero);font-weight:750;">Explore All 27 Services →</span>
+            <span class="mob-co-cat">Full Directory</span>
+          </a>
+        </div>
       </div>
 
       <a href="/pricing.html" class="mob-link">Pricing</a>
       <a href="/our-work.html" class="mob-link">Our Work</a>
       <a href="/case-studies.html" class="mob-link">Case Studies</a>
-
-      <button class="mob-acc-btn" aria-expanded="false" aria-controls="mob-about">
-        About <span>▾</span>
-      </button>
-      <div id="mob-about" class="mob-acc-body">
-        <a href="/about.html" class="mob-co"><span class="mob-co-name">Leadership Profile</span></a>
-        <a href="/about.html#baner-lab" class="mob-co"><span class="mob-co-name">Baner, Pune Lab</span></a>
-      </div>
-
+      <a href="/about.html" class="mob-link">About</a>
       <a href="/blog.html" class="mob-link">Blog &amp; Playbooks</a>
       <a href="/contact.html" class="mob-link">Contact</a>
-      <a href="/contact.html" class="mob-cta">Request Strategy Consultation</a>
-    </nav>
+
+      <a href="/contact.html" class="mob-cta">Book Free Consultation</a>
+    </div>
   </div>
 
-  <main class="flex-1 py-12 sm:py-20">
+  <main id="main" style="padding-top: 100px;" class="flex-1 py-12 sm:py-20">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Hero Header -->
