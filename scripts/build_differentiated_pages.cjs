@@ -14,11 +14,17 @@ const clients = [
     industry: 'Precision CNC Machinery & Hardware Automation',
     liveUrl: 'https://cytos.in/',
     screenshot: '/portfolio/screenshots/cytos.webp',
+    cta: {
+      bg: '#ea580c',
+      text: '#ffffff',
+      shadow: 'rgba(234, 88, 12, 0.28)',
+      accentText: '#ea580c'
+    },
     colors: [
-      { name: 'Precision Emerald', hex: '#009d49', role: 'Brand Core & Live Telemetry' },
-      { name: 'Industrial Obsidian', hex: '#081424', role: 'Machine Chassis & Surface Dark' },
-      { name: 'Gerber Blue', hex: '#38bdf8', role: 'CAD Specs & Active Vectors' },
-      { name: 'Cleanroom White', hex: '#f8fafc', role: 'High-Contrast Laboratory Field' }
+      { name: 'Precision Tooling Amber', hex: '#ea580c', role: 'Primary Quote Actions & Engineering Accents' },
+      { name: 'Industrial Slate Navy', hex: '#1e293b', role: 'CNC Machine Chassis & Technical Typography' },
+      { name: 'Gerber Spec Cobalt', hex: '#1d4ed8', role: 'CAD Vector Lines & Spindle RPM Specs' },
+      { name: 'Cleanroom White', hex: '#f8fafc', role: 'High-Contrast Laboratory Surface Field' }
     ],
     typography: {
       display: 'Inter Display 850 (Heavy Geometric)',
@@ -69,11 +75,17 @@ const clients = [
     industry: 'Institutional Corporate Finance & Capital Syndication',
     liveUrl: 'https://dravyafinancial.com/',
     screenshot: '/portfolio/screenshots/dravyafinancial.webp',
+    cta: {
+      bg: '#a3e635',
+      text: '#081424',
+      shadow: 'rgba(163, 230, 53, 0.35)',
+      accentText: '#181512'
+    },
     colors: [
-      { name: 'Institutional Navy', hex: '#0a192f', role: 'Corporate Trust & Stability Anchor' },
-      { name: 'Fiscal Emerald', hex: '#009d49', role: 'Yield Signals & Verification Badges' },
-      { name: 'Sovereign Gold', hex: '#d4af37', role: 'Premium Syndication & Advisory' },
-      { name: 'Executive Cloud', hex: '#f8fafc', role: 'Boardroom-Grade Canvas Contrast' }
+      { name: 'Chartreuse Action Lime', hex: '#a3e635', role: 'Executive CTA Desk & High-Conversion Funnel' },
+      { name: 'Corporate Heritage Red', hex: '#dc2626', role: 'Dravya Logo Seal & Financial Authority Anchor' },
+      { name: 'Executive Obsidian', hex: '#181512', role: 'Wood-Grain Corporate Ground & Dark Navigation' },
+      { name: 'Boardroom White', hex: '#f5f5f4', role: 'Tabular Capital Sheets & Institutional Canvas' }
     ],
     typography: {
       display: 'Inter Display 800 (Executive Authority)',
@@ -124,11 +136,17 @@ const clients = [
     industry: 'Architectural Aquatic Engineering & Civic Installations',
     liveUrl: 'https://fludio.in/',
     screenshot: '/portfolio/screenshots/fludio.webp',
+    cta: {
+      bg: '#0a2540',
+      text: '#ffffff',
+      shadow: 'rgba(10, 37, 64, 0.28)',
+      accentText: '#00a8cc'
+    },
     colors: [
-      { name: 'Abyssal Ocean', hex: '#031926', role: 'Deep Civic Rigor & Backdrop' },
-      { name: 'Aquatic Emerald', hex: '#009d49', role: 'Inrank Growth Accent & Signals' },
-      { name: 'Hydro Cyan', hex: '#00a8e8', role: 'Kinetic Water Jet Highlights' },
-      { name: 'Reflective White', hex: '#f8fafc', role: 'Architectural Blueprint Field' }
+      { name: 'Kinetic Hydro Cyan', hex: '#00a8cc', role: 'Musical Fountain Waves & Neon Water Accents' },
+      { name: 'Abyssal Oceanic Navy', hex: '#0a2540', role: 'Primary Project Actions & Architectural Depth' },
+      { name: 'Architectural Ice Blue', hex: '#e0f2fe', role: 'Frosted Glass Cards & Water Mist Atmospheric Ground' },
+      { name: 'Reflective White', hex: '#ffffff', role: 'High-Fidelity Project Showcase Canvas' }
     ],
     typography: {
       display: 'Inter Display 800 (Architectural Scale)',
@@ -179,11 +197,17 @@ const clients = [
     industry: 'Consumer Packaged Goods (CPG) & Sustainable Bio-Formulations',
     liveUrl: 'https://greytothegreen.com/',
     screenshot: '/portfolio/screenshots/greytothegreen.webp',
+    cta: {
+      bg: '#0e3820',
+      text: '#ffffff',
+      shadow: 'rgba(14, 56, 32, 0.28)',
+      accentText: '#0e3820'
+    },
     colors: [
-      { name: 'Forest Obsidian', hex: '#0f2416', role: 'Botanical Depth & Premium Organic' },
-      { name: 'Botanical Emerald', hex: '#009d49', role: 'Primary Bio-Trust Signal' },
-      { name: 'Bio Lime', hex: '#84cc16', role: 'Active Plant Enzyme Accents' },
-      { name: 'Organic Linen', hex: '#fafaf9', role: 'Pure Clean Natural Surface' }
+      { name: 'Botanical Forest Green', hex: '#0e3820', role: 'Bio-Trust Panels & Primary Brand Headings' },
+      { name: 'Herbal Jute Ochre', hex: '#d97706', role: 'Active Botanical Product Labels & Packaging Tones' },
+      { name: 'Active Plant Mint', hex: '#ecfdf5', role: 'Neem Enzyme Highlights & EPA Certification Badges' },
+      { name: 'Natural Organic Linen', hex: '#f7f7f2', role: 'Non-Toxic Storefront Canvas & Clean Packaging Field' }
     ],
     typography: {
       display: 'Inter Display 850 (Clean Consumer)',
@@ -234,11 +258,17 @@ const clients = [
     industry: 'Healthcare Recruitment & Clinical Talent Networks',
     liveUrl: 'https://hcpnest.com/',
     screenshot: '/portfolio/screenshots/hcpnest.webp',
+    cta: {
+      bg: '#093836',
+      text: '#ffffff',
+      shadow: 'rgba(9, 56, 54, 0.28)',
+      accentText: '#093836'
+    },
     colors: [
-      { name: 'Clinical Midnight', hex: '#0c1e33', role: 'Enterprise Health & Security Ground' },
-      { name: 'Care Green', hex: '#009d49', role: 'Verified Medical Credentials' },
-      { name: 'Medical Sky', hex: '#0ea5e9', role: 'Specialty Signals & Urgent Shifts' },
-      { name: 'Sterile Mint', hex: '#f0fdf4', role: 'High-Legibility Clinical Field' }
+      { name: 'Clinical Pine Teal', hex: '#093836', role: 'Primary Portal Action CTAs & Clinical Navigation' },
+      { name: 'Hospital Scrub Blue', hex: '#0ea5e9', role: 'Specialty Signals & Urgent Hospital Shift Indicators' },
+      { name: 'Sterile Powder Blue', hex: '#e0f2fe', role: 'Healthcare Network Grid & Card Atmosphere' },
+      { name: 'Pure Medical White', hex: '#ffffff', role: 'High-Legibility Verified Credential Surfaces' }
     ],
     typography: {
       display: 'Inter Display 800 (Clinical Authority)',
@@ -289,11 +319,17 @@ const clients = [
     industry: 'Commercial Printing, Rigid Luxury Boxes & B2B Packaging',
     liveUrl: 'https://hiragrafix.com/',
     screenshot: '/portfolio/screenshots/hiragrafix.webp',
+    cta: {
+      bg: '#582be8',
+      text: '#ffffff',
+      shadow: 'rgba(88, 43, 232, 0.28)',
+      accentText: '#582be8'
+    },
     colors: [
-      { name: 'Carbon Black', hex: '#18181b', role: 'Print Industrial & Pigment Ground' },
-      { name: 'Craftsman Green', hex: '#009d49', role: 'Inrank Growth Accent & Quality' },
-      { name: 'Gilding Amber', hex: '#f59e0b', role: 'Luxury Foil Embellishment' },
-      { name: 'Matte Stock', hex: '#f4f4f5', role: 'Textured Paper Canvas' }
+      { name: 'Electric Print Violet', hex: '#582be8', role: 'Primary Quote Actions & 3D Offset Press Accents' },
+      { name: 'Process Cyan Blue', hex: '#06b6d4', role: 'Direct Call CTAs & Precision Plotter Accents' },
+      { name: 'Industrial Carbon Black', hex: '#09090b', role: 'Est. 1970 Heritage Badge & Deep Contrast Typography' },
+      { name: 'Paperboard Iris White', hex: '#f5f3ff', role: 'Luxury Rigid Packaging Canvas Background' }
     ],
     typography: {
       display: 'Inter Display 850 (Craftsman Precision)',
@@ -344,11 +380,17 @@ const clients = [
     industry: 'Orthopedic Surgery, Sports Medicine & Subspecialized Clinical Practice',
     liveUrl: 'https://orthopedicanklefootspecialist.com/',
     screenshot: '/portfolio/screenshots/orthopedicanklefootspecialist.webp',
+    cta: {
+      bg: '#0891b2',
+      text: '#ffffff',
+      shadow: 'rgba(8, 145, 178, 0.28)',
+      accentText: '#0891b2'
+    },
     colors: [
-      { name: 'Surgical Navy', hex: '#071a2f', role: 'Clinical Authority & Rigor' },
-      { name: 'Vitality Emerald', hex: '#009d49', role: 'Recovery Signals & Patient Health' },
-      { name: 'Arthroscopy Cyan', hex: '#06b6d4', role: 'Minimally Invasive Diagnostics' },
-      { name: 'Clinical Pearl', hex: '#f8fafc', role: 'Accessible Patient-First Field' }
+      { name: 'Surgical Ocean Teal', hex: '#0891b2', role: 'Primary Clinic Booking & Arthroscopy Treatment Signals' },
+      { name: 'Patient Care Green', hex: '#16a34a', role: '1-Tap WhatsApp Surgeon Booking & Recovery Badges' },
+      { name: 'Clinical Midnight Navy', hex: '#0f172a', role: 'Fellowship Surgeon Authority & Hospital Affiliations' },
+      { name: 'Sterile Pearl White', hex: '#f8fafc', role: 'Anatomical Recovery Timelines & Accessible Patient Field' }
     ],
     typography: {
       display: 'Inter Display 800 (Empathetic Medical)',
@@ -399,11 +441,17 @@ const clients = [
     industry: 'Professional Education, CA Coaching & Academic Excellence',
     liveUrl: 'https://riituinstitution.com/',
     screenshot: '/portfolio/screenshots/riituinstitution.webp',
+    cta: {
+      bg: '#d97706',
+      text: '#ffffff',
+      shadow: 'rgba(217, 119, 6, 0.28)',
+      accentText: '#d97706'
+    },
     colors: [
-      { name: 'Academy Charcoal', hex: '#111827', role: 'Academic Rigor & Institutional Depth' },
-      { name: 'Scholar Emerald', hex: '#009d49', role: 'Academic Success & Ranker Signals' },
-      { name: 'Intellect Indigo', hex: '#6366f1', role: 'Course Modules & Test Series' },
-      { name: 'Ivory Study', hex: '#f9fafb', role: 'Clean Study Surface Field' }
+      { name: 'Scholastic Gold Ochre', hex: '#d97706', role: 'Primary Demo Booking CTA & Batch Distinction Accents' },
+      { name: 'Academic Pine Green', hex: '#064e3b', role: 'Institutional Crest Shield & Academic Authority Anchor' },
+      { name: 'Campus Ivory Cream', hex: '#fefce8', role: 'Admissions Banner Ground & Ranker Callout Background' },
+      { name: 'Lecture Charcoal', hex: '#1f2937', role: 'High-Legibility CA Foundation Syllabus Typography' }
     ],
     typography: {
       display: 'Inter Display 850 (Academic Clarity)',
@@ -454,11 +502,17 @@ const clients = [
     industry: 'Agro Commodity Export & International Cold-Chain Trade',
     liveUrl: 'https://shetkarifoodstuff.com/',
     screenshot: '/portfolio/screenshots/shetkarifoodstuff.webp',
+    cta: {
+      bg: '#f59e0b',
+      text: '#064e3b',
+      shadow: 'rgba(245, 158, 11, 0.32)',
+      accentText: '#064e3b'
+    },
     colors: [
-      { name: 'Harvest Deep Green', hex: '#142918', role: 'Agriculture Depth & Sustainable Ground' },
-      { name: 'Fresh Emerald', hex: '#009d49', role: 'Produce Freshness & Quality Assurance' },
-      { name: 'Saffron Harvest', hex: '#eab308', role: 'Export Trade Currency & Citrus Tones' },
-      { name: 'Agro Mist', hex: '#f7fee7', role: 'Crisp Cold-Chain Refrigerated Field' }
+      { name: 'Trade Saffron Amber', hex: '#f59e0b', role: 'Primary Export RFQ CTAs & Citrus Commodity Accents' },
+      { name: 'Deep Agro Forest Green', hex: '#064e3b', role: 'APEDA Certification Seal & Agricultural Brand Heritage' },
+      { name: 'Organic Sand Parchment', hex: '#f7f3ea', role: 'Soil-to-Souk Export Canvas & Card Atmosphere' },
+      { name: 'Fresh Crop Green', hex: '#22c55e', role: 'Cold-Chain Reefer Verification & Quality Inspection Marks' }
     ],
     typography: {
       display: 'Inter Display 800 (International Commodity Scale)',
@@ -509,11 +563,17 @@ const clients = [
     industry: 'Fashion E-Commerce & Contemporary D2C Apparel',
     liveUrl: 'https://vasroventures.com/',
     screenshot: '/portfolio/screenshots/vasroventures.webp',
+    cta: {
+      bg: '#121212',
+      text: '#ffffff',
+      shadow: 'rgba(18, 18, 18, 0.28)',
+      accentText: '#121212'
+    },
     colors: [
-      { name: 'Editorial Noir', hex: '#09090b', role: 'Fashion Editorial Canvas & Contrast' },
-      { name: 'Runway Green', hex: '#009d49', role: 'Conversion Accents & Stock Signals' },
-      { name: 'Cashmere Heather', hex: '#a1a1aa', role: 'Premium Fabric & Dimension Tones' },
-      { name: 'Studio White', hex: '#fafafa', role: 'Clean High-Fidelity Product Field' }
+      { name: 'High-Fashion Jet Black', hex: '#121212', role: 'Monogram Brand Logo & Editorial High-Contrast Ground' },
+      { name: 'Terracotta Linen Tan', hex: '#b48c72', role: 'Womenswear Lookbook Accents & Earthy Apparel Tones' },
+      { name: 'Chambray Denim Blue', hex: '#4a7c9b', role: 'Menswear Lookbook Background & Contemporary Wardrobe Styling' },
+      { name: 'Studio Editorial White', hex: '#fafafa', role: 'Minimalist Runway Canvas & Garment Detail Overlays' }
     ],
     typography: {
       display: 'Inter Display 900 (High-Impact Editorial)',
@@ -673,7 +733,7 @@ function buildWorkPage(c) {
               <span style="width:11px;height:11px;border-radius:50%;background:#10b981;display:inline-block;"></span>
             </div>
             <span style="font-size:0.8rem;font-weight:700;color:#64748b;font-family:monospace;">${c.liveUrl}</span>
-            <span style="font-size:0.8rem;font-weight:800;color:#009d49;">UI/UX &amp; Frontend System</span>
+            <span style="font-size:0.8rem;font-weight:800;color:${c.cta.accentText};">UI/UX &amp; Frontend System</span>
           </div>
           <img src="${c.screenshot}" alt="${c.name} UI/UX Production Interface" style="width:100%;height:auto;display:block;" />
         </div>
@@ -682,7 +742,7 @@ function buildWorkPage(c) {
         <div class="work-hero-details" style="color:#081424;margin-top:2rem;">
           <span class="section-kicker" style="color:#009d49;margin-bottom:0.5rem;display:inline-block;">VISUAL PORTFOLIO SHOWCASE</span>
           <h1 class="hero-title" style="margin-bottom:0.75rem;font-size:clamp(2.2rem, 3.8vw, 3.5rem);font-weight:850;letter-spacing:-0.03em;color:#081424;line-height:1.15;">${c.name}</h1>
-          <p style="font-size:clamp(1.1rem, 1.6vw, 1.35rem);color:#009d49;font-weight:700;line-height:1.4;max-width:860px;margin-bottom:1.5rem;">${c.tagline}</p>
+          <p style="font-size:clamp(1.1rem, 1.6vw, 1.35rem);color:${c.cta.accentText};font-weight:700;line-height:1.4;max-width:860px;margin-bottom:1.5rem;">${c.tagline}</p>
 
           <!-- Quick Metadata Bar -->
           <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid #e2e8f0;">
@@ -702,7 +762,7 @@ function buildWorkPage(c) {
 
           <!-- Action Buttons -->
           <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
-            <a href="${c.liveUrl}" target="_blank" rel="noopener noreferrer" class="button primary" style="background:#009d49;color:#ffffff;padding:12px 28px;border-radius:999px;font-weight:750;text-decoration:none;display:inline-flex;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,157,73,0.28);">
+            <a href="${c.liveUrl}" target="_blank" rel="noopener noreferrer" class="button primary" style="background:${c.cta.bg};color:${c.cta.text};padding:12px 28px;border-radius:999px;font-weight:750;text-decoration:none;display:inline-flex;align-items:center;gap:8px;box-shadow:0 4px 14px ${c.cta.shadow};">
               <span>Visit Live Website</span>
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 13L13 3M13 3H5M13 3V11"/></svg>
             </a>
@@ -755,7 +815,7 @@ function buildWorkPage(c) {
         <div class="ds-token-grid">
           ${c.colors.map(col => `
             <div class="ds-token-card">
-              <div class="ds-swatch-chip" style="background:${col.hex};"></div>
+              <div class="ds-swatch-chip" style="background:${col.hex};border:1px solid rgba(0,0,0,0.12);"></div>
               <div class="ds-token-name">${col.name}</div>
               <div class="ds-token-hex">${col.hex}</div>
               <div class="ds-token-role">${col.role}</div>
@@ -768,17 +828,17 @@ function buildWorkPage(c) {
           <h3 style="font-size:1.25rem;font-weight:800;color:var(--text-strong);margin-bottom:1rem;">Typography Scale &amp; Structural Hierarchy</h3>
           <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:1.5rem;">
             <div>
-              <small style="font-size:0.75rem;text-transform:uppercase;color:#009d49;font-weight:800;letter-spacing:0.06em;">Display Scale</small>
+              <small style="font-size:0.75rem;text-transform:uppercase;color:${c.cta.accentText};font-weight:800;letter-spacing:0.06em;">Display Scale</small>
               <div style="font-size:1.1rem;font-weight:800;color:var(--text-strong);margin-top:4px;">${c.typography.display}</div>
               <p style="font-size:0.85rem;color:#64748b;margin-top:4px;">Engineered with tight tracking (-0.03em) to convey commercial authority.</p>
             </div>
             <div>
-              <small style="font-size:0.75rem;text-transform:uppercase;color:#009d49;font-weight:800;letter-spacing:0.06em;">Editorial Body</small>
+              <small style="font-size:0.75rem;text-transform:uppercase;color:${c.cta.accentText};font-weight:800;letter-spacing:0.06em;">Editorial Body</small>
               <div style="font-size:1.1rem;font-weight:800;color:var(--text-strong);margin-top:4px;">${c.typography.body}</div>
               <p style="font-size:0.85rem;color:#64748b;margin-top:4px;">Optimized 1.65 line-height ensuring effortless scannability on small screens.</p>
             </div>
             <div>
-              <small style="font-size:0.75rem;text-transform:uppercase;color:#009d49;font-weight:800;letter-spacing:0.06em;">Technical Data</small>
+              <small style="font-size:0.75rem;text-transform:uppercase;color:${c.cta.accentText};font-weight:800;letter-spacing:0.06em;">Technical Data</small>
               <div style="font-size:1.1rem;font-weight:800;color:var(--text-strong);margin-top:4px;">${c.typography.mono}</div>
               <p style="font-size:0.85rem;color:#64748b;margin-top:4px;">Monospace accuracy for tabular numbers, pricing, and technical parameters.</p>
             </div>
@@ -789,13 +849,13 @@ function buildWorkPage(c) {
     </section>
 
     <!-- ════════════════════════════════════════════════════════
-         SECTION 3: FRONTEND ARCHITECTURE & PERFORMANCE
+         SECTION 3: FRONTEND ARCHITECTURE SPECIFICATION
          ════════════════════════════════════════════════════════ -->
-    <section style="padding:4.5rem 0;background:var(--paper);border-bottom:1px solid var(--line);">
+    <section id="tech-stack" style="padding:4.5rem 0;background:var(--paper);border-bottom:1px solid var(--line);">
       <div class="shell">
-        <span class="section-kicker">FRONTEND PERFORMANCE SPECIFICATION</span>
+        <span class="section-kicker">PRODUCTION SPECIFICATION</span>
         <h2 style="font-size:clamp(1.8rem, 2.8vw, 2.4rem);font-weight:850;color:var(--text-strong);letter-spacing:-0.03em;line-height:1.2;margin-bottom:0.75rem;">
-          Lightweight Frontend Engineering &amp; Micro-Interactions
+          Frontend Engineering &amp; Core Web Vitals Optimization
         </h2>
         <p style="font-size:1.05rem;line-height:1.65;color:#64748b;max-width:820px;margin-bottom:2.5rem;">
           Every interaction was built from scratch without bloated templates, bulky frameworks, or excessive third-party plugins.
@@ -803,7 +863,7 @@ function buildWorkPage(c) {
 
         <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:1.5rem;">
           <div style="padding:1.75rem;background:#ffffff;border:1px solid var(--line);border-radius:18px;">
-            <div style="width:36px;height:36px;border-radius:10px;background:rgba(0,157,73,0.12);color:#009d49;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <div style="width:36px;height:36px;border-radius:10px;background:rgba(8,20,36,0.06);color:${c.cta.accentText};display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
             </div>
             <h3 style="font-size:1.15rem;font-weight:800;color:var(--text-strong);margin-bottom:0.5rem;">Semantic HTML5 &amp; CSS Grid</h3>
@@ -811,7 +871,7 @@ function buildWorkPage(c) {
           </div>
 
           <div style="padding:1.75rem;background:#ffffff;border:1px solid var(--line);border-radius:18px;">
-            <div style="width:36px;height:36px;border-radius:10px;background:rgba(0,157,73,0.12);color:#009d49;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <div style="width:36px;height:36px;border-radius:10px;background:rgba(8,20,36,0.06);color:${c.cta.accentText};display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             </div>
             <h3 style="font-size:1.15rem;font-weight:800;color:var(--text-strong);margin-bottom:0.5rem;">Zero-Bloat Vanilla JS Engine</h3>
@@ -819,7 +879,7 @@ function buildWorkPage(c) {
           </div>
 
           <div style="padding:1.75rem;background:#ffffff;border:1px solid var(--line);border-radius:18px;">
-            <div style="width:36px;height:36px;border-radius:10px;background:rgba(0,157,73,0.12);color:#009d49;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <div style="width:36px;height:36px;border-radius:10px;background:rgba(8,20,36,0.06);color:${c.cta.accentText};display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
             </div>
             <h3 style="font-size:1.15rem;font-weight:800;color:var(--text-strong);margin-bottom:0.5rem;">Sub-Second Asset Pipeline</h3>
@@ -827,7 +887,7 @@ function buildWorkPage(c) {
           </div>
 
           <div style="padding:1.75rem;background:#ffffff;border:1px solid var(--line);border-radius:18px;">
-            <div style="width:36px;height:36px;border-radius:10px;background:rgba(0,157,73,0.12);color:#009d49;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
+            <div style="width:36px;height:36px;border-radius:10px;background:rgba(8,20,36,0.06);color:${c.cta.accentText};display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
             </div>
             <h3 style="font-size:1.15rem;font-weight:800;color:var(--text-strong);margin-bottom:0.5rem;">Responsive Ergonomics</h3>
@@ -843,7 +903,7 @@ function buildWorkPage(c) {
             <span class="crosslink-eyebrow">COMMERCIAL CASE STUDY &amp; ROI</span>
             <h3 class="crosslink-title">Looking for the verified P&amp;L numbers and commercial results?</h3>
             <p class="crosslink-text">
-              Discover how Inrank\'s full-stack growth architecture generated ${c.metrics[0].val} ${c.metrics[0].label}, secured ${c.metrics[1].val}, and delivered ${c.metrics[2].val} performance for ${c.name}.
+              Discover how Inrank's full-stack growth architecture generated ${c.metrics[0].val} ${c.metrics[0].label}, secured ${c.metrics[1].val}, and delivered ${c.metrics[2].val} performance for ${c.name}.
             </p>
           </div>
           <a href="/case-studies/${c.slug}.html" class="crosslink-btn">
@@ -947,126 +1007,123 @@ function buildCasePage(c) {
     <section style="padding:5rem 0;background:#ffffff;border-bottom:1px solid var(--line);">
       <div class="shell">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
-          
           <div>
-            <span class="section-kicker">THE STRATEGIC CHALLENGE</span>
-            <h2 style="font-size:clamp(1.8rem, 2.6vw, 2.3rem);font-weight:850;color:var(--text-strong);letter-spacing:-0.03em;line-height:1.2;margin-bottom:1.5rem;">
-              The Pipeline Bottleneck &amp; Market Friction
+            <span class="section-kicker">THE COMMERCIAL BOTTLENECK</span>
+            <h2 style="font-size:clamp(1.85rem, 3vw, 2.6rem);font-weight:850;color:var(--text-strong);letter-spacing:-0.03em;line-height:1.2;margin-bottom:1.5rem;">
+              The Pipeline Problem Prior to Inrank Engagement
             </h2>
-            <p style="font-size:1.05rem;line-height:1.75;color:#475569;margin-bottom:1.5rem;">
+            <p style="font-size:1.05rem;line-height:1.7;color:#475569;margin-bottom:1.5rem;">
               ${c.challenge}
             </p>
-            <div style="padding:1.5rem;background:#fff1f2;border-left:4px solid #f43f5e;border-radius:0 12px 12px 0;">
-              <strong style="color:#9f1239;font-size:0.95rem;display:block;margin-bottom:4px;">Pre-Engagement Status:</strong>
-              <span style="color:#881337;font-size:0.88rem;line-height:1.5;display:block;">
-                Zero structured data entities, sluggish mobile asset delivery, and unoptimized high-friction contact forms resulted in high customer acquisition costs.
-              </span>
+            <div style="padding:1.5rem;background:#fef2f2;border:1px solid #fee2e2;border-radius:16px;">
+              <strong style="display:block;color:#b91c1c;font-size:0.95rem;margin-bottom:4px;">Core Commercial Vulnerability:</strong>
+              <p style="font-size:0.9rem;color:#7f1d1d;line-height:1.6;margin:0;">
+                High acquisition costs and lead leakage caused by sub-optimal mobile speeds, absence of entity-level Google structured data, and non-optimized technical user funnels.
+              </p>
             </div>
           </div>
 
-          <div style="padding:2.5rem;background:var(--paper);border:1px solid var(--line);border-radius:24px;">
-            <span class="section-kicker">ENGINEERING DELIVERABLES</span>
-            <h2 style="font-size:1.35rem;font-weight:800;color:var(--text-strong);margin-bottom:1.5rem;">Scope of Architecture Deployed</h2>
-            <ul style="display:grid;gap:1.1rem;list-style:none;padding:0;margin:0;">
-              ${c.deliverables.map(del => `
+          <!-- Key Deliverables Card -->
+          <div style="background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:2.5rem;">
+            <span class="section-kicker" style="color:#009d49;">DEPLOYED CAPABILITIES</span>
+            <h3 style="font-size:1.35rem;font-weight:850;color:var(--text-strong);margin-bottom:1.5rem;">Engineered Scope of Work</h3>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1rem;">
+              ${c.deliverables.map(d => `
                 <li style="display:flex;align-items:flex-start;gap:12px;font-size:0.95rem;color:#334155;line-height:1.5;">
-                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none" style="flex:none;margin-top:2px;"><circle cx="10" cy="10" r="10" fill="#009d49" fill-opacity="0.15"/><path d="M6 10l3 3 5-6" stroke="#009d49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                  <span>${del}</span>
+                  <span style="color:#009d49;font-weight:800;font-size:1.1rem;flex-shrink:0;">✓</span>
+                  <span>${d}</span>
                 </li>
               `).join('')}
             </ul>
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- ════════════════════════════════════════════════════════
-         SECTION 3: FOUR-TIER GROWTH ARCHITECTURE DEPLOYED
+         SECTION 3: ARCHITECTURAL SOLUTION TIERS
          ════════════════════════════════════════════════════════ -->
     <section style="padding:5rem 0;background:var(--paper);border-bottom:1px solid var(--line);">
       <div class="shell">
-        <span class="section-kicker">SYSTEM ARCHITECTURE</span>
-        <h2 style="font-size:clamp(1.8rem, 2.6vw, 2.3rem);font-weight:850;color:var(--text-strong);letter-spacing:-0.03em;line-height:1.2;margin-bottom:0.75rem;">
-          Four-Tier Growth Architecture Deployed
+        <span class="section-kicker">ENGINEERED TRANSFORMATION</span>
+        <h2 style="font-size:clamp(1.85rem, 3vw, 2.6rem);font-weight:850;color:var(--text-strong);letter-spacing:-0.03em;line-height:1.2;margin-bottom:1rem;">
+          The 4-Tier Inrank Growth Architecture
         </h2>
-        <p style="font-size:1.05rem;line-height:1.65;color:#64748b;max-width:820px;margin-bottom:2rem;">
-          Rather than building a decorative brochure, Inrank engineered a multi-tier technical pipeline systematically eliminating conversion drag.
+        <p style="font-size:1.05rem;color:#64748b;line-height:1.65;max-width:820px;margin-bottom:3rem;">
+          Rather than superficial aesthetic adjustments, we engineered a scalable commercial growth system addressing search knowledge graphs, client-side performance, and direct pipeline routing.
         </p>
 
-        <!-- 4-Tier Architecture Pipeline Grid -->
-        <div class="case-arch-grid">
-          ${c.solutionTiers.map(tier => `
-            <div class="case-arch-card">
-              <span class="case-arch-step">${tier.step}</span>
-              <h3 class="case-arch-title">${tier.title}</h3>
-              <p class="case-arch-desc">${tier.desc}</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:1.5rem;">
+          ${c.solutionTiers.map(t => `
+            <div style="padding:2rem;background:#ffffff;border:1px solid var(--line);border-radius:20px;box-shadow:0 4px 16px rgba(8,20,36,0.03);">
+              <span style="font-size:0.75rem;font-weight:800;text-transform:uppercase;color:#009d49;letter-spacing:0.06em;display:block;margin-bottom:6px;">${t.step}</span>
+              <h3 style="font-size:1.2rem;font-weight:850;color:var(--text-strong);margin-bottom:0.75rem;">${t.title}</h3>
+              <p style="font-size:0.9rem;color:#64748b;line-height:1.65;margin:0;">${t.desc}</p>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         SECTION 4: VERIFIED BENCHMARKS & CWV TELEMETRY
+         ════════════════════════════════════════════════════════ -->
+    <section style="padding:5rem 0;background:#ffffff;border-bottom:1px solid var(--line);">
+      <div class="shell">
+        <div style="text-align:center;max-width:780px;margin:0 auto 3rem;">
+          <span class="section-kicker">EMPIRICAL PROOF</span>
+          <h2 style="font-size:clamp(1.85rem, 3vw, 2.6rem);font-weight:850;color:var(--text-strong);letter-spacing:-0.03em;line-height:1.2;margin-bottom:0.75rem;">
+            Before vs. After Production Benchmarks
+          </h2>
+          <p style="font-size:1.05rem;color:#64748b;line-height:1.6;">
+            Hard data verified via Google Search Console, Google Analytics 4 telemetry, and Chrome User Experience (CrUX) field reports.
+          </p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:1.5rem;margin-bottom:3.5rem;">
+          ${c.benchmarks.map(b => `
+            <div style="padding:1.75rem;background:var(--paper);border:1px solid var(--line);border-radius:20px;">
+              <small style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;color:#64748b;font-weight:750;display:block;margin-bottom:12px;">${b.metric}</small>
+              <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:12px;padding-bottom:12px;border-bottom:1px dashed #cbd5e1;">
+                <div>
+                  <span style="font-size:0.75rem;color:#94a3b8;display:block;">PRE-ENGAGEMENT</span>
+                  <strong style="font-size:1.15rem;color:#ef4444;text-decoration:line-through;">${b.before}</strong>
+                </div>
+                <div style="text-align:right;">
+                  <span style="font-size:0.75rem;color:#94a3b8;display:block;">PRODUCTION</span>
+                  <strong style="font-size:1.35rem;color:#009d49;font-weight:850;">${b.after}</strong>
+                </div>
+              </div>
+              <span style="font-size:0.82rem;font-weight:800;color:#009d49;background:rgba(0,157,73,0.1);padding:4px 10px;border-radius:999px;display:inline-block;">${b.lift}</span>
             </div>
           `).join('')}
         </div>
 
-      </div>
-    </section>
-
-    <!-- ════════════════════════════════════════════════════════
-         SECTION 4: CORE WEB VITALS & TECHNICAL BENCHMARKS
-         ════════════════════════════════════════════════════════ -->
-    <section id="benchmarks" style="padding:5rem 0;background:#ffffff;border-bottom:1px solid var(--line);">
-      <div class="shell">
-        <span class="section-kicker">VERIFIED TELEMETRY</span>
-        <h2 style="font-size:clamp(1.8rem, 2.6vw, 2.3rem);font-weight:850;color:var(--text-strong);letter-spacing:-0.03em;line-height:1.2;margin-bottom:0.75rem;">
-          Pre-Engagement vs Inrank 2.0 Architecture Benchmark
-        </h2>
-        <p style="font-size:1.05rem;line-height:1.65;color:#64748b;max-width:820px;margin-bottom:1.5rem;">
-          Actual telemetry audited via Google Lighthouse, Chrome User Experience Report (CrUX), and Google Search Console.
-        </p>
-
-        <!-- Benchmark Table -->
-        <div class="benchmark-table-card">
-          <table class="benchmark-table">
-            <thead>
-              <tr>
-                <th>Technical / Commercial Metric</th>
-                <th>Legacy Platform</th>
-                <th>Inrank 2.0 Architecture</th>
-                <th>Performance Lift</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${c.benchmarks.map(b => `
-                <tr>
-                  <td class="benchmark-metric-name">${b.metric}</td>
-                  <td style="color:#94a3b8;text-decoration:line-through;">${b.before}</td>
-                  <td style="color:#009d49;font-weight:750;">${b.after}</td>
-                  <td>
-                    <span class="benchmark-badge-lift">
-                      <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8 12V4M4 8l4-4 4 4"/></svg>
-                      ${b.lift}
-                    </span>
-                  </td>
-                </tr>
-              `).join('')}
-            </tbody>
-          </table>
-        </div>
-
-        <!-- Commercial ROI Narrative -->
-        <div style="margin-top:3rem;padding:2.25rem;background:#f0fdf4;border:1px solid rgba(0,157,73,0.3);border-radius:20px;">
-          <h3 style="font-size:1.25rem;font-weight:800;color:#065f46;margin-bottom:0.5rem;">Commercial ROI &amp; P&amp;L Movement</h3>
-          <p style="font-size:1.02rem;line-height:1.7;color:#166534;margin:0;">
-            ${c.roiNarrative}
-          </p>
+        <!-- Verified P&L Narrative -->
+        <div style="background:#081424;color:#ffffff;border-radius:24px;padding:3rem;position:relative;overflow:hidden;">
+          <div style="max-width:820px;position:relative;z-index:2;">
+            <span class="section-kicker" style="color:#00bf5d;">COMMERCIAL ROI IMPACT</span>
+            <h3 style="font-size:clamp(1.4rem, 2.2vw, 1.85rem);font-weight:850;color:#ffffff;line-height:1.3;margin-bottom:1rem;">
+              The Bottom Line Outcome for ${c.name}
+            </h3>
+            <p style="font-size:1.05rem;line-height:1.7;color:#cbd5e1;margin-bottom:1.5rem;">
+              ${c.roiNarrative}
+            </p>
+            <p style="font-size:0.95rem;line-height:1.6;color:#94a3b8;margin:0;">
+              By combining Google 3-Pack authority with sub-second mobile page loads and automated direct-intake funnels, Inrank turned ${c.name}'s digital touchpoint into a predictable revenue generation asset.
+            </p>
+          </div>
         </div>
 
         <!-- ════════════════════════════════════════════════════════
              SYMMETRICAL CROSS-LINK TO VISUAL PORTFOLIO
              ════════════════════════════════════════════════════════ -->
-        <div class="crosslink-banner">
+        <div class="crosslink-banner" style="margin-top:3.5rem;">
           <div class="crosslink-content">
-            <span class="crosslink-eyebrow">DESIGN SYSTEM &amp; UI/UX SHOWCASE</span>
-            <h3 class="crosslink-title">Want to inspect the UI/UX tokens and visual design system?</h3>
+            <span class="crosslink-eyebrow">VISUAL SHOWCASE &amp; DESIGN SYSTEM</span>
+            <h3 class="crosslink-title">Want to inspect the frontend design tokens and interactive UI?</h3>
             <p class="crosslink-text">
-              Explore the interactive frontend showcase for ${c.name}, including high-fidelity browser frames, color science tokens, typography scaling, and mobile viewports.
+              View the complete visual portfolio showcase for ${c.name}, including desktop/mobile mockups, design token color science, and frontend performance architecture.
             </p>
           </div>
           <a href="/our-work/${c.slug}.html" class="crosslink-btn">
@@ -1079,9 +1136,9 @@ function buildCasePage(c) {
     </section>
 
     <!-- ════════════════════════════════════════════════════════
-         SECTION 5: VERIFIED CLIENT ENDORSEMENT
+         SECTION 5: EXECUTIVE TESTIMONIAL
          ════════════════════════════════════════════════════════ -->
-    <section style="padding:4rem 0;background:var(--paper);border-bottom:1px solid var(--line);">
+    <section style="padding:4rem 0;background:#ffffff;border-bottom:1px solid var(--line);">
       <div class="shell">
         <div style="max-width:820px;margin:0 auto;text-align:center;">
           <span style="color:#009d49;font-size:1.75rem;display:block;margin-bottom:1rem;">★★★★★</span>
@@ -1099,12 +1156,12 @@ function buildCasePage(c) {
          ════════════════════════════════════════════════════════ -->
     <section style="padding:5rem 0;background:#081424;color:#ffffff;text-align:center;">
       <div class="shell" style="max-width:760px;margin:0 auto;">
-        <span class="section-kicker" style="color:#00bf5d;">SCALE YOUR PIPELINE</span>
+        <span class="section-kicker" style="color:#00bf5d;">CATEGORY LEADERSHIP AUDIT</span>
         <h2 style="font-size:clamp(2rem, 3.5vw, 2.8rem);font-weight:850;color:#ffffff;letter-spacing:-0.03em;margin-bottom:1rem;">
-          Ready for a similar commercial deployment?
+          Ready for documented commercial results like this?
         </h2>
         <p style="font-size:1.05rem;color:#94a3b8;line-height:1.6;margin-bottom:2rem;">
-          Schedule an executive growth audit with Prasad Mhaske at our Baner office. We will analyze your Core Web Vitals, audit your local Google 3-Pack gaps, and deliver a fixed-milestone engineering roadmap.
+          Schedule a private 30-minute growth engineering consultation with Prasad Mhaske at our Baner office. We will audit your market positioning, analyze pipeline drop-offs, and map a bespoke roadmap to category leadership.
         </p>
         <div style="display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;">
           <a href="/contact.html" class="button primary" style="background:#009d49;color:#ffffff;padding:14px 28px;border-radius:999px;font-weight:750;text-decoration:none;">Book Free Growth Audit</a>
