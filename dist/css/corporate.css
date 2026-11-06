@@ -4123,3 +4123,263 @@ main { overflow: clip; }
   }
 }
 
+/* ==========================================================================
+   Inrank 2.0 Portfolio & Case Studies Differentiation System
+   ========================================================================== */
+
+/* Design System Tokens Grid (Our Work) */
+.ds-token-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.ds-token-card {
+  background: var(--paper, #ffffff);
+  border: 1px solid var(--line, #e2e8f0);
+  border-radius: 18px;
+  padding: 1.5rem 1.25rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ds-token-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -6px rgba(8, 20, 36, 0.08);
+  border-color: rgba(0, 157, 73, 0.35);
+}
+
+.ds-swatch-chip {
+  width: 100%;
+  height: 52px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ds-token-name {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-strong, #081424);
+  margin-bottom: 2px;
+}
+
+.ds-token-hex {
+  font-family: monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #009d49;
+  margin-bottom: 6px;
+}
+
+.ds-token-role {
+  font-size: 0.78rem;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* Architecture Flow Pipeline (Case Studies) */
+.case-arch-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.case-arch-card {
+  background: var(--paper, #ffffff);
+  border: 1px solid var(--line, #e2e8f0);
+  border-radius: 20px;
+  padding: 1.75rem 1.5rem;
+  position: relative;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.case-arch-card:hover {
+  transform: translateY(-2px);
+  border-color: #009d49;
+  box-shadow: 0 14px 30px -8px rgba(0, 157, 73, 0.12);
+}
+
+.case-arch-step {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #009d49;
+  background: rgba(0, 157, 73, 0.1);
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.case-arch-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-strong, #081424);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.6rem;
+}
+
+.case-arch-desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Core Web Vitals Benchmark Table */
+.benchmark-table-card {
+  background: #ffffff;
+  border: 1px solid var(--line, #e2e8f0);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px -10px rgba(8, 20, 36, 0.08);
+  margin-top: 2rem;
+}
+
+.benchmark-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+.benchmark-table th {
+  background: #f8fafc;
+  padding: 1rem 1.5rem;
+  font-weight: 750;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #475569;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.benchmark-table td {
+  padding: 1.15rem 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+
+.benchmark-table tr:last-child td {
+  border-bottom: none;
+}
+
+.benchmark-metric-name {
+  font-weight: 750;
+  color: var(--text-strong, #081424);
+}
+
+.benchmark-badge-lift {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #009d49;
+  background: rgba(0, 157, 73, 0.12);
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 157, 73, 0.25);
+}
+
+/* Symmetrical Cross-Link Banner */
+.crosslink-banner {
+  margin: 4rem 0 2rem;
+  background: radial-gradient(circle at 90% 10%, rgba(0, 157, 73, 0.2) 0%, transparent 70%), #081424;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 2.75rem 3rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  box-shadow: 0 20px 45px -12px rgba(8, 20, 36, 0.5);
+}
+
+.crosslink-content {
+  max-width: 620px;
+}
+
+.crosslink-eyebrow {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #00bf5d;
+  margin-bottom: 0.6rem;
+}
+
+.crosslink-title {
+  font-size: 1.65rem;
+  font-weight: 850;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  line-height: 1.25;
+  margin: 0 0 0.75rem 0;
+}
+
+.crosslink-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.crosslink-btn {
+  background: #009d49;
+  color: #ffffff;
+  padding: 13px 26px;
+  border-radius: 999px;
+  font-weight: 750;
+  font-size: 0.92rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px rgba(0, 157, 73, 0.35);
+  transition: all 0.2s ease;
+}
+
+.crosslink-btn:hover {
+  background: #00873e;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(0, 157, 73, 0.45);
+  color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .ds-token-grid,
+  .case-arch-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .crosslink-banner {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .ds-token-grid,
+  .case-arch-grid {
+    grid-template-columns: 1fr;
+  }
+  .crosslink-banner {
+    padding: 1.75rem 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .crosslink-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
