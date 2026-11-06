@@ -86,3 +86,4 @@ if (fs.existsSync(serverSrc)) {
 }
 
 console.log('Dist build complete! Total items in dist/:', fs.readdirSync(distDir).length);
+

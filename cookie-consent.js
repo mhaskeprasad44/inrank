@@ -1,13 +1,13 @@
 /**
- * Inrank Technologies - Modern Privacy & Cookie Consent System
- * Compliant with Indian DPDP Act 2023, GDPR, CCPA/CPRA, and Google Consent Mode v2
- * Features: Ultra-compact mobile banner + CookieYes-style floating revisit consent button
+ * Inrank Technologies 2.0 - Privacy & Cookie Consent System
+ * Fully Compliant with Indian DPDP Act 2023, GDPR, CCPA/CPRA & Google Consent Mode v2
+ * Designed as per Inrank 2.0 Design System (Obsidian Slate + Brand Emerald + Outlined Vectors)
  */
 
 (function () {
   'use strict';
 
-  const STORAGE_KEY = 'inrank_cookie_consent_v1';
+  const STORAGE_KEY = 'inrank_cookie_consent_v2';
 
   // Check if consent has already been recorded
   function getSavedConsent() {
@@ -55,7 +55,7 @@
     }
   }
 
-  // Inject Styles for Cookie Banner, Preferences Modal & CookieYes-style Floating Revisit Button
+  // Inject Styles for Cookie Banner, Preferences Modal & Floating Revisit Button
   const style = document.createElement('style');
   style.id = 'inrank-cookie-consent-styles';
   style.textContent = `
@@ -66,7 +66,8 @@
     #inrank-cookie-modal *,
     #inrank-cookie-revisit-btn * {
       box-sizing: border-box;
-      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important; -webkit-font-smoothing: antialiased;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
+      -webkit-font-smoothing: antialiased;
     }
 
     /* ==========================================================================
@@ -74,17 +75,17 @@
        ========================================================================== */
     #inrank-cookie-banner {
       position: fixed;
-      left: 20px;
-      bottom: 20px;
+      left: 24px;
+      bottom: 24px;
       z-index: 99990;
-      width: 390px;
-      max-width: calc(100vw - 24px);
-      background: #0f172a;
+      width: 380px;
+      max-width: calc(100vw - 32px);
+      background: #090d16;
       color: #f8fafc;
       border-radius: 18px;
       padding: 16px 18px;
-      box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(16px);
+      box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.12), 0 0 20px rgba(0, 157, 73, 0.15);
+      backdrop-filter: blur(20px);
       transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
       opacity: 0;
       transform: translateY(16px) scale(0.97);
@@ -112,12 +113,12 @@
     }
 
     .inrank-cb-icon {
-      width: 28px;
-      height: 28px;
-      border-radius: 8px;
-      background: rgba(16, 185, 129, 0.15);
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      color: #10b981;
+      width: 30px;
+      height: 30px;
+      border-radius: 9px;
+      background: rgba(0, 157, 73, 0.14);
+      border: 1px solid rgba(0, 157, 73, 0.35);
+      color: #009d49;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -125,8 +126,8 @@
     }
 
     .inrank-cb-icon svg {
-      width: 16px;
-      height: 16px;
+      width: 17px;
+      height: 17px;
     }
 
     .inrank-cb-title {
@@ -134,6 +135,18 @@
       font-weight: 700;
       color: #ffffff;
       letter-spacing: -0.01em;
+    }
+
+    .inrank-cb-tag {
+      font-size: 9.5px;
+      font-weight: 800;
+      color: #009d49;
+      background: rgba(0, 157, 73, 0.15);
+      padding: 1px 6px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-left: 4px;
     }
 
     .inrank-cb-dismiss {
@@ -165,7 +178,7 @@
     }
 
     .inrank-cb-body a {
-      color: #34d399;
+      color: #00b355;
       text-decoration: underline;
       text-underline-offset: 2px;
       font-weight: 600;
@@ -173,7 +186,7 @@
     }
 
     .inrank-cb-body a:hover {
-      color: #6ee7b7;
+      color: #34d399;
     }
 
     .inrank-cb-actions {
@@ -184,12 +197,12 @@
 
     .inrank-cb-btn {
       padding: 8px 14px;
-      border-radius: 9px;
+      border-radius: 9999px;
       font-size: 11.5px;
       font-weight: 700;
       cursor: pointer;
       border: none;
-      transition: all 0.2s ease;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -201,24 +214,26 @@
       background: #009d49;
       color: #ffffff;
       flex: 1.1;
-      box-shadow: 0 2px 8px rgba(0, 157, 73, 0.3);
+      box-shadow: 0 4px 14px rgba(0, 157, 73, 0.35);
     }
 
     .inrank-cb-btn-accept:hover {
-      background: #00813c;
+      background: #00873e;
       transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(0, 157, 73, 0.45);
     }
 
     .inrank-cb-btn-decline {
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.06);
       color: #e2e8f0;
-      border: 1px solid rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.15);
       flex: 0.9;
     }
 
     .inrank-cb-btn-decline:hover {
-      background: rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.14);
       color: #ffffff;
+      transform: translateY(-1px);
     }
 
     .inrank-cb-btn-pref {
@@ -238,91 +253,75 @@
     }
 
     /* ==========================================================================
-       2. COOKIEYES-STYLE FLOATING REVISIT CONSENT BUTTON
+       2. REVISIT CONSENT BUTTON (Bottom-Left)
        ========================================================================== */
     #inrank-cookie-revisit-btn {
       position: fixed;
-      left: 20px;
-      bottom: 20px;
-      z-index: 99980;
-      width: 44px;
-      height: 44px;
+      left: 24px;
+      bottom: 24px;
+      z-index: 99970;
+      width: 42px;
+      height: 42px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #049649 0%, #009d49 100%);
-      color: #ffffff;
-      border: 1.5px solid rgba(255, 255, 255, 0.3);
-      box-shadow: 0 4px 16px rgba(0, 157, 73, 0.38), 0 2px 6px rgba(0, 0, 0, 0.15);
+      background: #090d16;
+      color: #009d49;
+      border: 1.5px solid rgba(0, 157, 73, 0.4);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45), 0 0 14px rgba(0, 157, 73, 0.2);
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
       opacity: 0;
-      transform: scale(0.6) rotate(-15deg);
+      transform: scale(0.6);
       pointer-events: none;
       padding: 0;
+      backdrop-filter: blur(12px);
     }
 
     #inrank-cookie-revisit-btn.inrank-revisit-visible {
       opacity: 1;
-      transform: scale(1) rotate(0deg);
+      transform: scale(1);
       pointer-events: auto;
     }
 
     #inrank-cookie-revisit-btn:hover {
       transform: scale(1.1) translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0, 157, 73, 0.5), 0 4px 10px rgba(0, 0, 0, 0.2);
-      background: linear-gradient(135deg, #05a34f 0%, #00873e 100%);
-    }
-
-    #inrank-cookie-revisit-btn:focus-visible {
-      outline: 2px solid #009d49;
-      outline-offset: 3px;
+      border-color: #009d49;
+      color: #ffffff;
+      background: #009d49;
+      box-shadow: 0 10px 25px rgba(0, 157, 73, 0.5);
     }
 
     .inrank-revisit-icon {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 22px;
-      height: 22px;
-      color: #ffffff;
-    }
-
-    .inrank-revisit-icon svg {
       width: 20px;
       height: 20px;
     }
 
-    /* CookieYes-style Hover Tooltip (Desktop Only) */
+    .inrank-revisit-icon svg {
+      width: 19px;
+      height: 19px;
+    }
+
     .inrank-revisit-tooltip {
       position: absolute;
-      left: calc(100% + 12px);
+      left: calc(100% + 10px);
       top: 50%;
       transform: translateY(-50%) translateX(-6px);
-      background: #0f172a;
+      background: #090d16;
       color: #ffffff;
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 600;
-      padding: 6px 12px;
+      padding: 5px 10px;
       border-radius: 8px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.12);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.12);
       white-space: nowrap;
       pointer-events: none;
       opacity: 0;
       transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    /* Tooltip Arrow */
-    .inrank-revisit-tooltip::before {
-      content: "";
-      position: absolute;
-      right: 100%;
-      top: 50%;
-      transform: translateY(-50%);
-      border-width: 5px;
-      border-style: solid;
-      border-color: transparent #0f172a transparent transparent;
     }
 
     #inrank-cookie-revisit-btn:hover .inrank-revisit-tooltip {
@@ -336,8 +335,8 @@
     #inrank-cookie-modal-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(15, 23, 42, 0.7);
-      backdrop-filter: blur(6px);
+      background: rgba(9, 13, 22, 0.75);
+      backdrop-filter: blur(8px);
       z-index: 99998;
       opacity: 0;
       pointer-events: none;
@@ -359,11 +358,12 @@
       max-width: calc(100vw - 28px);
       max-height: 85vh;
       overflow-y: auto;
-      background: #ffffff;
-      color: #0f172a;
+      background: #090d16;
+      color: #f8fafc;
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 20px;
-      padding: 20px 22px;
-      box-shadow: 0 25px 65px -15px rgba(15, 23, 42, 0.35), 0 0 0 1px rgba(226, 232, 240, 0.9);
+      padding: 22px 24px;
+      box-shadow: 0 25px 70px -15px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(0, 157, 73, 0.25);
       opacity: 0;
       pointer-events: none;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -380,19 +380,20 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 12px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .inrank-cm-title {
       font-size: 16px;
       font-weight: 800;
-      color: #0f172a;
+      color: #ffffff;
+      letter-spacing: -0.01em;
     }
 
     .inrank-cm-close {
-      background: #f1f5f9;
-      border: none;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 8px;
       width: 30px;
       height: 30px;
@@ -400,26 +401,25 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #64748b;
+      color: #94a3b8;
       transition: all 0.15s ease;
-      font-size: 14px;
     }
 
     .inrank-cm-close:hover {
-      background: #e2e8f0;
-      color: #0f172a;
+      background: rgba(255, 255, 255, 0.14);
+      color: #ffffff;
     }
 
     .inrank-cm-desc {
       font-size: 12.5px;
       line-height: 1.5;
-      color: #475569;
+      color: #94a3b8;
       margin-bottom: 16px;
     }
 
     .inrank-cm-group {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.07);
       border-radius: 12px;
       padding: 12px 14px;
       margin-bottom: 10px;
@@ -435,17 +435,17 @@
     .inrank-cm-group-title {
       font-size: 13px;
       font-weight: 700;
-      color: #0f172a;
+      color: #ffffff;
     }
 
     .inrank-cm-group-text {
       font-size: 11.5px;
       line-height: 1.45;
-      color: #64748b;
+      color: #94a3b8;
       margin: 0;
     }
 
-    /* Toggle Switches */
+    /* Modern Toggle Switches */
     .inrank-cm-switch {
       position: relative;
       display: inline-block;
@@ -464,7 +464,7 @@
       position: absolute;
       cursor: pointer;
       inset: 0;
-      background-color: #cbd5e1;
+      background-color: rgba(255, 255, 255, 0.16);
       transition: 0.25s;
       border-radius: 22px;
     }
@@ -479,7 +479,7 @@
       background-color: white;
       transition: 0.25s;
       border-radius: 50%;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.4);
     }
 
     .inrank-cm-switch input:checked + .inrank-cm-slider {
@@ -495,82 +495,30 @@
       justify-content: flex-end;
       gap: 10px;
       margin-top: 16px;
-      padding-top: 12px;
-      border-top: 1px solid #e2e8f0;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     /* ==========================================================================
-       4. MOBILE RESPONSIVE OPTIMIZATION (max-width: 640px)
+       4. MOBILE RESPONSIVE ADAPTATION (max-width: 640px)
        ========================================================================== */
     @media (max-width: 640px) {
-      /* Mobile Banner: Compact, single horizontal button row, above bottom bar */
       #inrank-cookie-banner {
-        left: 10px;
-        right: 10px;
-        bottom: 68px; /* Positioned safely above mobile sticky conversion bar */
-        width: auto;
-        max-width: calc(100vw - 20px);
-        padding: 12px 14px;
-        border-radius: 14px;
-        box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.14);
-      }
-
-      .inrank-cb-header {
-        margin-bottom: 6px;
-      }
-
-      .inrank-cb-icon {
-        width: 24px;
-        height: 24px;
-        border-radius: 6px;
-      }
-
-      .inrank-cb-icon svg {
-        width: 14px;
-        height: 14px;
-      }
-
-      .inrank-cb-title {
-        font-size: 12.5px;
-      }
-
-      .inrank-cb-body {
-        font-size: 11px;
-        line-height: 1.4;
-        margin-bottom: 10px;
-      }
-
-      .inrank-cb-actions {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 6px;
-      }
-
-      .inrank-cb-btn {
-        padding: 7px 10px;
-        font-size: 11px;
-      }
-
-      .inrank-cb-btn-pref {
-        padding: 6px 4px;
-        font-size: 10.5px;
-      }
-
-      /* Mobile Revisit Button: Positioned cleanly above sticky conversion bar */
-      #inrank-cookie-revisit-btn {
         left: 14px;
-        bottom: 72px; /* Clears sticky mobile conversion bar */
+        right: 14px;
+        bottom: 20px;
+        width: auto;
+        max-width: calc(100vw - 28px);
+        padding: 14px 16px;
+      }
+
+      #inrank-cookie-revisit-btn {
+        left: 16px;
+        bottom: 20px;
         width: 38px;
         height: 38px;
       }
 
-      .inrank-revisit-icon svg {
-        width: 17px;
-        height: 17px;
-      }
-
-      /* Hide tooltip on touch devices */
       .inrank-revisit-tooltip {
         display: none !important;
       }
@@ -578,15 +526,23 @@
   `;
   document.head.appendChild(style);
 
-  // SVG Cookie Icon Markup (Clean Lucide-style cookie vector)
+  // Clean Outlined Cookie SVG Icon (Stroke Only)
   const cookieSvgMarkup = `
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
       <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/>
       <path d="M8.5 8.5v.01"/>
       <path d="M16 15.5v.01"/>
       <path d="M12 12v.01"/>
       <path d="M11 17v.01"/>
       <path d="M7 14v.01"/>
+    </svg>
+  `;
+
+  // Outlined Close Cross SVG
+  const closeSvgMarkup = `
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18"/>
+      <line x1="6" y1="6" x2="18" y2="18"/>
     </svg>
   `;
 
@@ -601,13 +557,10 @@
         <div class="inrank-cb-icon" aria-hidden="true">
           ${cookieSvgMarkup}
         </div>
-        <div class="inrank-cb-title">Cookie Preferences</div>
+        <div class="inrank-cb-title">Cookie Preferences <span class="inrank-cb-tag">2.0</span></div>
       </div>
       <button id="inrank-cb-dismiss-btn" class="inrank-cb-dismiss" aria-label="Dismiss cookie banner">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="18" y1="6" x2="6" y2="18"/>
-          <line x1="6" y1="6" x2="18" y2="18"/>
-        </svg>
+        ${closeSvgMarkup}
       </button>
     </div>
     <div class="inrank-cb-body">
@@ -616,15 +569,15 @@
     </div>
     <div class="inrank-cb-actions">
       <button id="inrank-cb-accept-btn" class="inrank-cb-btn inrank-cb-btn-accept">Accept All</button>
-      <button id="inrank-cb-decline-btn" class="inrank-cb-btn inrank-cb-btn-decline">Necessary</button>
+      <button id="inrank-cb-decline-btn" class="inrank-cb-btn inrank-cb-btn-decline">Essential Only</button>
       <button id="inrank-cb-pref-btn" class="inrank-cb-btn inrank-cb-btn-pref">Customize</button>
     </div>
   `;
 
-  // Build Floating Revisit Consent Button (CookieYes-Style)
+  // Build Floating Revisit Consent Button
   const revisitBtn = document.createElement('button');
   revisitBtn.id = 'inrank-cookie-revisit-btn';
-  revisitBtn.setAttribute('aria-label', 'Revisit Cookie Consent Preferences');
+  revisitBtn.setAttribute('aria-label', 'Revisit Cookie Preferences');
   revisitBtn.setAttribute('title', 'Cookie Preferences');
   revisitBtn.innerHTML = `
     <span class="inrank-revisit-icon" aria-hidden="true">
@@ -645,10 +598,12 @@
   modal.innerHTML = `
     <div class="inrank-cm-header">
       <div class="inrank-cm-title">Privacy &amp; Cookie Preferences</div>
-      <button id="inrank-cm-close-btn" class="inrank-cm-close" aria-label="Close preferences">✕</button>
+      <button id="inrank-cm-close-btn" class="inrank-cm-close" aria-label="Close preferences">
+        ${closeSvgMarkup}
+      </button>
     </div>
     <div class="inrank-cm-desc">
-      Control how Inrank Technologies collects and processes data during your visit. You can modify these preferences at any time.
+      Control how Inrank Technologies processes data during your visit. You can modify these preferences at any time.
     </div>
 
     <!-- Essential Group -->
@@ -709,7 +664,6 @@
 
   function hideBanner() {
     banner.classList.remove('inrank-visible');
-    // Reveal the floating revisit button right after the banner hides
     setTimeout(showFloatingButton, 250);
   }
 
@@ -747,10 +701,7 @@
     modal.classList.remove('inrank-open');
   }
 
-  // Click on floating button opens preferences modal
-  revisitBtn.addEventListener('click', () => {
-    openModal();
-  });
+  revisitBtn.addEventListener('click', openModal);
 
   acceptBtn.addEventListener('click', () => {
     saveConsent('all');
@@ -769,10 +720,7 @@
     });
   }
 
-  prefBtn.addEventListener('click', () => {
-    openModal();
-  });
-
+  prefBtn.addEventListener('click', openModal);
   closeBtn.addEventListener('click', closeModal);
   backdrop.addEventListener('click', closeModal);
 
