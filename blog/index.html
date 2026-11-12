@@ -30,6 +30,30 @@
   <link rel="stylesheet" href="/css/components.css">
   <link rel="stylesheet" href="/css/corporate.css">
   <link rel="stylesheet" href="/css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Blog",
+      "@id": "https://inranktech.com/blog.html#blog",
+      "url": "https://inranktech.com/blog.html",
+      "name": "Inrank Digital Growth Engineering & Technical SEO Journal",
+      "description": "Deep technical guides and strategic blueprints on SEO in Pune, Generative Engine Optimization (GEO), Core Web Vitals, and conversion web architecture.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Inrank Technologies Pvt Ltd",
+        "url": "https://inranktech.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://inranktech.com/img/inrank-white-logo.svg"
+        }
+      }
+    }
+  ]
+}
+  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PH0J0ZGNS"></script>
   <script>
@@ -53,7 +77,7 @@
 
   <script src="/cookie-consent.js" defer></script>
 </head>
-<body class="page-blog-hub">
+<body class="theme-corporate page-blog-hub">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLZ75BS8"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -64,7 +88,8 @@
     <div class="nav-bar">
       <!-- Inrank Brand Logo -->
       <a href="/" class="nav-logo" aria-label="Inrank Technologies Home">
-        <img src="/img/inrank-white-logo.svg" alt="Inrank Technologies" width="36" height="36" class="logo-icon" />
+        <img src="/img/inrank-dark-logo.svg" alt="Inrank Technologies" width="36" height="36" class="logo-icon logo-icon--dark" />
+        <img src="/img/inrank-white-logo.svg" alt="Inrank Technologies" width="36" height="36" class="logo-icon logo-icon--white" />
         <div class="nav-logo-brand">
           <span class="nav-logo-name">Inrank</span>
           <span class="nav-logo-sub">Technologies</span>
@@ -207,6 +232,7 @@
 
         <!-- Direct Navigation Items -->
         <a href="/pricing.html" class="nav-link" data-nav="pricing">Pricing</a>
+        
         <!-- Our Work with 3x2 Client Dropdown -->
         <div class="nav-item" data-dropdown="work">
           <a href="/our-work.html" class="nav-link nav-link--drop" aria-expanded="false" aria-haspopup="true">
@@ -219,8 +245,7 @@
           <!-- Floating Our Work Dropdown Menu -->
           <div class="nav-drop drop-work" role="region" aria-label="Our Work Submenu">
             <div class="work-dropdown-grid">
-              
-              <!-- Box 1: Greytothegreen (Replaced Dravya Financial) -->
+              <!-- Box 1: Greytothegreen -->
               <a href="/our-work/greytothegreen.html" class="work-dropdown-card">
                 <div class="work-drop-logo-wrap">
                   <img src="/client-logos/greytothegreen.png" alt="Greytothegreen" class="work-drop-logo" />
@@ -231,7 +256,7 @@
                 </div>
               </a>
 
-              <!-- Box: CyTOS Machines -->
+              <!-- Box 2: CyTOS Machines -->
               <a href="/our-work/cytos.html" class="work-dropdown-card">
                 <div class="work-drop-logo-wrap">
                   <img src="/client-logos/cytos.png" alt="CyTOS Machines" class="work-drop-logo" />
@@ -283,7 +308,7 @@
                     <span class="work-drop-all-title">INRANK</span>
                   </div>
                   <svg class="work-drop-all-arrow" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M3 13L13 3M13 3H5M13 3V11" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 13L13 3H5M13 3V11" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </div>
                 <div class="work-drop-info">
@@ -291,14 +316,12 @@
                   <span class="work-drop-desc">Explore 50+ Pune &amp; Global client wins</span>
                 </div>
               </a>
-
             </div>
           </div>
         </div>
+
         <a href="/case-studies.html" class="nav-link" data-nav="cases">Case Studies</a>
-
-                <a href="/about.html" class="nav-link" data-nav="about">About</a>
-
+        <a href="/about.html" class="nav-link" data-nav="about">About</a>
         <a href="/blog.html" class="nav-link" data-nav="blog">Blog</a>
         <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
       </nav>
@@ -312,6 +335,11 @@
       </button>
     </div>
   </header>
+
+  <!-- Navigation Scrim Backdrop -->
+  <div id="nav-scrim" aria-hidden="true"></div>
+
+  <!-- Mobile Drawer Menu (#mob) -->
   <div id="mob" aria-hidden="true">
     <div class="mob-hd">
       <a href="/" class="mob-logo" aria-label="Inrank Technologies">
@@ -360,9 +388,7 @@
       <a href="/pricing.html" class="mob-link">Pricing</a>
       <a href="/our-work.html" class="mob-link">Our Work</a>
       <a href="/case-studies.html" class="mob-link">Case Studies</a>
-
       <a href="/about.html" class="mob-link">About</a>
-
       <a href="/blog.html" class="mob-link">Blog &amp; Playbooks</a>
       <a href="/contact.html" class="mob-link">Contact</a>
 
@@ -385,7 +411,7 @@
       <div class="blog-categories-inner">
         <nav class="categories-strip" id="cat-strip">
           
-  <button class="cat-pill is-active" data-filter="all">All (32)</button>
+  <button class="cat-pill is-active" data-filter="all">All (33)</button>
   
     <button class="cat-pill" data-filter="market-intelligence-pricing">Market Intelligence & Pricing (1)</button>
   
@@ -413,7 +439,7 @@
     </section>
 
     <!-- §1 Featured Post Card (50/50 Split) -->
-    <section class="blog-featured-section" aria-labelledby="featured-post-title">
+    <section class="blog-featured-section" id="featured-section" data-category="market-intelligence-pricing" data-title="top 5 digital marketing & web development agencies in pune (2026 review & pricing comparison) market intelligence pricing" aria-labelledby="featured-post-title">
       <div class="blog-featured-inner">
         <span class="blog-section-label">Featured Benchmark</span>
         <a href="/blog/top-digital-marketing-web-development-agencies-pune.html" class="blog-featured-card" aria-label="Read: Top 5 Digital Marketing & Web Development Agencies in Pune (2026 Review & Pricing Comparison)">
@@ -444,7 +470,7 @@
 
     <article class="blog-card" data-category="web-development-website-performance" data-title="next.js 15, react 19 & edge ai web architecture: building sub-1-second portals in 2026-2027">
       <div class="blog-card-img">
-        <img src="/images/service-custom-website-development.jpg" alt="Next.js 15 React 19 Edge AI Web Architecture" loading="lazy" width="600" height="340" />
+        <img src="/images/service-website-development.jpg" alt="Next.js 15 React 19 Edge AI Web Architecture" loading="lazy" width="600" height="340" />
       </div>
       <div class="blog-card-content">
         <div class="blog-card-meta">
@@ -458,34 +484,11 @@
           <a href="/blog/nextjs-15-react-19-edge-ai-architecture.html" class="blog-link">Read perspective →</a>
         </div>
       </div>
-    
-      <!-- Google Preferred Source Reader Follow Card -->
-      <div class="blog-pref-box">
-        <div class="blog-pref-content">
-          <h4>Follow Inrank on Google Search &amp; AI Overviews</h4>
-          <p>Add Inrank Technologies to your Google Preferred Sources to get our latest search optimization, GEO playbooks, and engineering teardowns surfaced first in your feed.</p>
-        </div>
-        <a href="https://www.google.com/preferences/source?q=inranktech.com" target="_blank" rel="noopener noreferrer" class="google-pref-badge" title="Add Inrank to Preferred Sources">
-          <div class="google-pref-g-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
-              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
-            </svg>
-          </div>
-          <span class="google-pref-text">
-            <span class="google-pref-sub">GOOGLE SOURCES</span>
-            <span class="google-pref-main">★ Add to Preferred Sources</span>
-          </span>
-          <span class="google-pref-btn-label">Follow ↗</span>
-        </a>
-      </div>
-</article>
+    </article>
 
     <article class="blog-card" data-category="seo-ai-search" data-title="generative engine optimization (geo) 2.0 & ai overviews: the 2026-2027 technical playbook">
       <div class="blog-card-img">
-        <img src="/images/service-geo-seo.jpg" alt="Generative Engine Optimization GEO 2.0" loading="lazy" width="600" height="340" />
+        <img src="/images/service-geo-seo-agency.jpg" alt="Generative Engine Optimization GEO 2.0" loading="lazy" width="600" height="340" />
       </div>
       <div class="blog-card-content">
         <div class="blog-card-meta">
@@ -1257,15 +1260,15 @@
         </ul>
       </nav>
 
-      <!-- Col 3: Expertise -->
+      <!-- Col 3: Pune Solutions & Expertise -->
       <nav aria-labelledby="ft-expertise">
-        <h3 id="ft-expertise">Expertise</h3>
+        <h3 id="ft-expertise">Pune Solutions</h3>
         <ul>
+          <li><a href="/digital-marketing-agency-in-pune.html" style="color:var(--green-hi);font-weight:700;">Digital Marketing Agency in Pune</a></li>
+          <li><a href="/website-design-company-in-pune.html" style="color:var(--green-hi);font-weight:700;">Web Designing Company in Pune</a></li>
           <li><a href="/services/seo-company-pune.html">SEO Company Pune</a></li>
           <li><a href="/services/custom-website-development.html">Custom Web Development</a></li>
-          <li><a href="/services/ppc-services.html">Google Ads &amp; PPC</a></li>
-          <li><a href="/services/meta-ads-agency.html">Meta &amp; Instagram Ads</a></li>
-          <li><a href="/services/ui-ux-design-services.html">Brand Identity &amp; CRO</a></li>
+          <li><a href="/services/google-ads-agency.html">Google Ads &amp; PPC</a></li>
           <li><a href="/services.html">All 27 Services</a></li>
         </ul>
       </nav>
@@ -1327,24 +1330,39 @@
     document.addEventListener('DOMContentLoaded', function() {
       const pills = document.querySelectorAll('.cat-pill');
       const cards = document.querySelectorAll('.blog-card');
+      const featuredSec = document.getElementById('featured-section');
+      const gridSection = document.querySelector('.blog-grid-section');
       const search = document.getElementById('blog-search');
 
       let currentFilter = 'all';
       let currentQuery = '';
 
       function filterCards() {
+        let visibleGridCount = 0;
         cards.forEach(card => {
           const cardCat = card.getAttribute('data-category');
-          const cardTitle = card.getAttribute('data-title');
+          const cardTitle = card.getAttribute('data-title') || '';
           const matchesCat = currentFilter === 'all' || cardCat === currentFilter;
           const matchesQuery = !currentQuery || cardTitle.includes(currentQuery);
 
           if (matchesCat && matchesQuery) {
             card.style.display = 'flex';
+            visibleGridCount++;
           } else {
             card.style.display = 'none';
           }
         });
+
+        if (featuredSec) {
+          const featCat = featuredSec.getAttribute('data-category');
+          const featTitle = featuredSec.getAttribute('data-title') || '';
+          const showFeatured = (currentFilter === 'all' || currentFilter === featCat) && (!currentQuery || featTitle.includes(currentQuery));
+          featuredSec.style.display = showFeatured ? '' : 'none';
+        }
+
+        if (gridSection) {
+          gridSection.style.display = visibleGridCount > 0 || currentFilter === 'all' ? '' : 'none';
+        }
       }
 
       pills.forEach(pill => {

@@ -107,32 +107,42 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "What is a digital entity and why is it important for AI search ranking?",
           "acceptedAnswer": {
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "A digital entity is a uniquely identifiable person, organization, product or place recognized by search algorithms. AI search engines evaluate entity confidence scores and knowledge graph relationships rather than simple keyword matches to recommend authoritative vendors."
           }
         },
         {
           "@type": "Question",
+          "name": "How do AI search engines discover and verify company citations?",
           "acceptedAnswer": {
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "AI search engines discover citations by parsing structured JSON-LD schema, querying public knowledge graphs like Wikidata and evaluating corroborating mentions across authoritative third-party news sources and industry directories."
           }
         },
         {
           "@type": "Question",
+          "name": "Can an enterprise fix incorrect information that AI models state about its brand?",
           "acceptedAnswer": {
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Yes. By correcting structured data across authoritative knowledge bases, deploying verified schema graphs, updating official digital profiles and publishing factual press releases, we establish new consensus data that AI models adopt."
           }
         },
         {
           "@type": "Question",
+          "name": "Can marketing agencies outsource AI ranking and entity optimization to Inrank Technologies?",
           "acceptedAnswer": {
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Yes. Inrank Technologies provides confidential white-label AI ranking, Knowledge Graph engineering and digital entity optimization for agencies worldwide under complete non-disclosure agreements."
           }
         },
         {
           "@type": "Question",
+          "name": "How long does it take to see improved citations inside AI search platforms?",
           "acceptedAnswer": {
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Visible improvements in AI citation frequency typically emerge within 45 to 90 days as real-time retrieval models index new structured data and updated entity consensus spreads across authoritative web nodes."
           }
         }
       ]
@@ -163,7 +173,7 @@
 
   <script src="/cookie-consent.js" defer></script>
 </head>
-<body class="page-single-post">
+<body class="theme-corporate light-hero-page page-single-post">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLZ75BS8"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -175,7 +185,8 @@
     <div class="nav-bar">
       <!-- Inrank Brand Logo -->
       <a href="/" class="nav-logo" aria-label="Inrank Technologies Home">
-        <img src="/img/inrank-white-logo.svg" alt="Inrank Technologies" width="36" height="36" class="logo-icon" />
+        <img src="/img/inrank-dark-logo.svg" alt="Inrank Technologies" width="36" height="36" class="logo-icon logo-icon--dark" />
+        <img src="/img/inrank-white-logo.svg" alt="Inrank Technologies" width="36" height="36" class="logo-icon logo-icon--white" />
         <div class="nav-logo-brand">
           <span class="nav-logo-name">Inrank</span>
           <span class="nav-logo-sub">Technologies</span>
@@ -318,6 +329,7 @@
 
         <!-- Direct Navigation Items -->
         <a href="/pricing.html" class="nav-link" data-nav="pricing">Pricing</a>
+        
         <!-- Our Work with 3x2 Client Dropdown -->
         <div class="nav-item" data-dropdown="work">
           <a href="/our-work.html" class="nav-link nav-link--drop" aria-expanded="false" aria-haspopup="true">
@@ -330,8 +342,7 @@
           <!-- Floating Our Work Dropdown Menu -->
           <div class="nav-drop drop-work" role="region" aria-label="Our Work Submenu">
             <div class="work-dropdown-grid">
-              
-              <!-- Box 1: Greytothegreen (Replaced Dravya Financial) -->
+              <!-- Box 1: Greytothegreen -->
               <a href="/our-work/greytothegreen.html" class="work-dropdown-card">
                 <div class="work-drop-logo-wrap">
                   <img src="/client-logos/greytothegreen.png" alt="Greytothegreen" class="work-drop-logo" />
@@ -342,7 +353,7 @@
                 </div>
               </a>
 
-              <!-- Box: CyTOS Machines -->
+              <!-- Box 2: CyTOS Machines -->
               <a href="/our-work/cytos.html" class="work-dropdown-card">
                 <div class="work-drop-logo-wrap">
                   <img src="/client-logos/cytos.png" alt="CyTOS Machines" class="work-drop-logo" />
@@ -394,7 +405,7 @@
                     <span class="work-drop-all-title">INRANK</span>
                   </div>
                   <svg class="work-drop-all-arrow" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M3 13L13 3M13 3H5M13 3V11" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 13L13 3H5M13 3V11" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </div>
                 <div class="work-drop-info">
@@ -402,14 +413,12 @@
                   <span class="work-drop-desc">Explore 50+ Pune &amp; Global client wins</span>
                 </div>
               </a>
-
             </div>
           </div>
         </div>
+
         <a href="/case-studies.html" class="nav-link" data-nav="cases">Case Studies</a>
-
-                <a href="/about.html" class="nav-link" data-nav="about">About</a>
-
+        <a href="/about.html" class="nav-link" data-nav="about">About</a>
         <a href="/blog.html" class="nav-link" data-nav="blog">Blog</a>
         <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
       </nav>
@@ -423,6 +432,11 @@
       </button>
     </div>
   </header>
+
+  <!-- Navigation Scrim Backdrop -->
+  <div id="nav-scrim" aria-hidden="true"></div>
+
+  <!-- Mobile Drawer Menu (#mob) -->
   <div id="mob" aria-hidden="true">
     <div class="mob-hd">
       <a href="/" class="mob-logo" aria-label="Inrank Technologies">
@@ -471,9 +485,7 @@
       <a href="/pricing.html" class="mob-link">Pricing</a>
       <a href="/our-work.html" class="mob-link">Our Work</a>
       <a href="/case-studies.html" class="mob-link">Case Studies</a>
-
       <a href="/about.html" class="mob-link">About</a>
-
       <a href="/blog.html" class="mob-link">Blog &amp; Playbooks</a>
       <a href="/contact.html" class="mob-link">Contact</a>
 
@@ -566,86 +578,57 @@
             <!-- Section 1: Why This Matters -->
             <section class="post-section" id="why-matters">
               <h2 class="post-h2">Why Digital Entity Authority Outweighs Traditional Backlinks in AI Search</h2>
-              <div class="post-p">The underlying architecture of internet search has transitioned from a document-level hyperlink web into a conceptual entity-based knowledge web. In the early eras of search, Google and other search engines evaluated the authority of a web page primarily by counting the quantity and anchor text distribution of incoming hyperlinks pointing to that specific URL.
-    
-In the modern era of machine learning and large language models, this document-centric paradigm has been superseded by entity-oriented search. An entity is defined formally by computer science standards as a singular, uniquely identifiable thing or concept (a specific organization, person, software product or geographical location) characterized by distinct attributes and relationships to other entities.
-    
-When a user asks an artificial intelligence engine like Google AI Overviews, Perplexity AI, Claude or ChatGPT Search to identify the top enterprise software development consultancies or reliable B2B marketing partners, the model does not run a simple keyword search across hyperlinked web pages. Instead, it queries its internal semantic knowledge graph and vector index to identify entities that exhibit the highest mathematical consensus and topical authority for the queried domain.
-    
-According to linked data research published by the [World Wide Web Consortium (W3C)](https://www.w3.org) and [Wikidata Entity Specifications](https://www.wikidata.org), unstructured web data creates informational ambiguity that large language models penalize with lower confidence scores. If an organization has inconsistent business descriptions, conflicting executive names across platforms, or no structured schema connecting its domain to recognized knowledge bases, AI models either ignore the entity completely or risk hallucinating incorrect details.
-    
-Investing in specialized [AI ranking and citations services](#/service/ai-ranking-citations) establishes your brand as an unshakeable, verified entity in the global knowledge graph. By programmatically linking your business credentials, executive profiles, proprietary innovations and client achievements across trusted semantic nodes, we ensure AI search systems recognize your company as the premier authoritative choice in your market.</div>
+              <p class="post-p">The underlying architecture of internet search has transitioned from a document-level hyperlink web into a conceptual entity-based knowledge web. In the early eras of search, Google and other search engines evaluated the authority of a web page primarily by counting the quantity and anchor text distribution of incoming hyperlinks pointing to that specific URL. In the modern era of machine learning and large language models, this document-centric paradigm has been superseded by entity-oriented search. An entity is defined formally by computer science standards as a singular, uniquely identifiable thing or concept (a specific organization, person, software product or geographical location) characterized by distinct attributes and relationships to other entities. When a user asks an artificial intelligence engine like Google AI Overviews, Perplexity AI, Claude or ChatGPT Search to identify the top enterprise software development consultancies or reliable B2B marketing partners, the model does not run a simple keyword search across hyperlinked web pages. Instead, it queries its internal semantic knowledge graph and vector index to identify entities that exhibit the highest mathematical consensus and topical authority for the queried domain. According to linked data research published by the <a href="https://www.w3.org" target="_blank" rel="noopener noreferrer">World Wide Web Consortium (W3C)</a> and <a href="https://www.wikidata.org" target="_blank" rel="noopener noreferrer">Wikidata Entity Specifications</a>, unstructured web data creates informational ambiguity that large language models penalize with lower confidence scores. If an organization has inconsistent business descriptions, conflicting executive names across platforms, or no structured schema connecting its domain to recognized knowledge bases, AI models either ignore the entity completely or risk hallucinating incorrect details. Investing in specialized <a href="/services/ai-ranking-citations.html">AI ranking and citations services</a> establishes your brand as an unshakeable, verified entity in the global knowledge graph. By programmatically linking your business credentials, executive profiles, proprietary innovations and client achievements across trusted semantic nodes, we ensure AI search systems recognize your company as the premier authoritative choice in your market.</p>
             </section>
 
             <!-- Section 2: Critical Mistakes -->
             <section class="post-section" id="critical-mistakes">
               <h2 class="post-h2">Costly Entity and Citation Mistakes That Cripple AI Search Visibility</h2>
-              <div class="post-p">Many businesses struggle to earn recommendations inside artificial intelligence platforms because their technical teams commit five critical entity management mistakes.
-    
-The most damaging error is maintaining fragmented and contradictory entity data across the digital ecosystem. When an enterprise lists different business addresses on its website compared to Google Business Profile, provides conflicting founding dates on LinkedIn, or uses variations of its legal corporate name without proper alias reconciliation, AI search models encounter low data confidence and omit the company from synthesized recommendations.
-    
-The second widespread blunder is deploying incomplete or invalid JSON-LD schema markup. Many websites implement basic schema templates that declare only high-level metadata (such as an empty Organization tag) while omitting vital semantic connections. Failing to declare sameAs links, parentOrganization relationships, key executive Person entities, certified service offerings and recognized industry awards leaves search bots without semantic context.
-    
-The third critical pitfall is neglecting authoritative entity repositories such as Wikidata, Crunchbase and industry-specific registries. AI models like ChatGPT and Google Gemini heavily utilize structured knowledge bases during pre-training and real-time fine-tuning. If your enterprise is completely absent from these primary linked data nodes, your entity remains virtually invisible to machine learning models.
-    
-The fourth major mistake is publishing content that lacks clear subject-predicate-object semantic structure. Composing vague marketing copy filled with subjective hyperbole makes it difficult for natural language processing parsers to extract factual entity attributes. Clear, factual statements with verifiable claims are essential for machine comprehension.
-    
-Finally, organizations fail to monitor and correct negative or hallucinated entity associations. If outdated negative reviews, deprecated product lines or incorrect historical data become associated with your entity in public vector indices, prospective buyers querying AI assistants receive inaccurate representations of your capabilities.</div>
+              <p class="post-p">Many businesses struggle to earn recommendations inside artificial intelligence platforms because their technical teams commit five critical entity management mistakes. The most damaging error is maintaining fragmented and contradictory entity data across the digital ecosystem. When an enterprise lists different business addresses on its website compared to Google Business Profile, provides conflicting founding dates on LinkedIn, or uses variations of its legal corporate name without proper alias reconciliation, AI search models encounter low data confidence and omit the company from synthesized recommendations. The second widespread blunder is deploying incomplete or invalid JSON-LD schema markup. Many websites implement basic schema templates that declare only high-level metadata (such as an empty Organization tag) while omitting vital semantic connections. Failing to declare sameAs links, parentOrganization relationships, key executive Person entities, certified service offerings and recognized industry awards leaves search bots without semantic context. The third critical pitfall is neglecting authoritative entity repositories such as Wikidata, Crunchbase and industry-specific registries. AI models like ChatGPT and Google Gemini heavily utilize structured knowledge bases during pre-training and real-time fine-tuning. If your enterprise is completely absent from these primary linked data nodes, your entity remains virtually invisible to machine learning models. The fourth major mistake is publishing content that lacks clear subject-predicate-object semantic structure. Composing vague marketing copy filled with subjective hyperbole makes it difficult for natural language processing parsers to extract factual entity attributes. Clear, factual statements with verifiable claims are essential for machine comprehension. Finally, organizations fail to monitor and correct negative or hallucinated entity associations. If outdated negative reviews, deprecated product lines or incorrect historical data become associated with your entity in public vector indices, prospective buyers querying AI assistants receive inaccurate representations of your capabilities.</p>
             </section>
 
             <!-- In-Content Diagram (if available) -->
             
               <div class="post-diagram-box">
-                <img src="[object Object]" alt="ai ranking citations Architectural Workflow" loading="lazy" />
-                <div class="post-diagram-caption">System Flow &amp; Technical Benchmark Schema · Source: Inrank Engineering Labs</div>
+                <img src="/images/proof-search-rankings.jpg" alt="Knowledge Graph Entity Corroboration and Citation Map" width="1200" height="675" loading="lazy" />
+                <div class="post-diagram-caption">Knowledge graph authority network: Validating business entity claims across authoritative databases and industry directories.</div>
               </div>
-            
+
 
             <!-- Section 3: What to Do Instead -->
             <section class="post-section" id="what-to-do">
               <h2 class="post-h2">The 4-Pillar AI Ranking and Knowledge Graph Engineering Architecture</h2>
-              <div class="post-p">Establishing dominant AI ranking and consistent citation frequency requires a rigorous four-stage engineering methodology designed specifically for semantic search systems.
-    
-### Pillar 1: Entity Reconciliation and Knowledge Base Seeding
-Conduct a comprehensive digital forensic audit of all existing entity footprints across the public web. Standardize your brand name, legal corporate entity, executive leadership profiles, founding timeline and official service taxonomy across every authoritative directory and profile. Establish and verify official profiles across premier linked data repositories, including Wikidata, Crunchbase, Google Knowledge Graph and verified industry registers.
-    
-### Pillar 2: Advanced Nested JSON-LD Knowledge Graph Deployment
-Engineer a comprehensive semantic linked data graph embedded directly into your website's source code. Construct deeply nested JSON-LD schema models that connect your Organization entity to verified founders (Person schema), certified services (Service and Offer schemas), original research (TechArticle schemas) and official corporate locations. Utilize sameAs properties to link your domain directly to your authoritative Wikidata, Wikipedia and verified social media entity URLs.
-    
-### Pillar 3: Semantic Vector Alignment and Entity Co-Occurrence Optimization
-Re-engineer website content architecture to maximize semantic entity salience. Ensure that all technical documentation, case studies and service landing pages utilize clear subject-predicate-object grammatical structures. Intentionally incorporate primary and secondary domain entities that naturally co-occur within your industry's knowledge graph, reinforcing your company's mathematical proximity to core commercial search terms.
-    
-### Pillar 4: Multi-Node Authority Consensus and Digital PR Verification
-Execute an ongoing digital entity citation campaign across high-trust external media nodes. Secure authoritative citations, bylines and expert quotes in reputable trade publications, technology blogs and academic portals. By establishing consistent, verified entity attributes across dozens of independent high-authority web nodes, you achieve unshakeable mathematical consensus across AI training sets and real-time retrieval indices. Discover our specialized [AI ranking and citations services](#/service/ai-ranking-citations) to secure your market leadership.</p><p class="post-p">Entity corroboration across digital registries follows tracking protocols monitored through [Semrush AI Search Tracking](https://www.semrush.com).</p><p class="post-p">Query reconciliation with recognized entities utilizes the official [Google Knowledge Graph Search API](https://developers.google.com/knowledge-graph).</p><p class="post-p">For verified technical specifications and industry benchmarks, review [Schema.org Organization and Person Vocabularies](https://schema.org).</div>
+              <p class="post-p">Establishing dominant AI ranking and consistent citation frequency requires a rigorous four-stage engineering methodology designed specifically for semantic search systems.</p>
+              <h3 class="post-h3">Pillar 1: Entity Reconciliation and Knowledge Base Seeding</h3>
+              <p class="post-p">Conduct a comprehensive digital forensic audit of all existing entity footprints across the public web. Standardize your brand name, legal corporate entity, executive leadership profiles, founding timeline and official service taxonomy across every authoritative directory and profile. Establish and verify official profiles across premier linked data repositories, including Wikidata, Crunchbase, Google Knowledge Graph and verified industry registers.</p>
+              <h3 class="post-h3">Pillar 2: Advanced Nested JSON-LD Knowledge Graph Deployment</h3>
+              <p class="post-p">Engineer a comprehensive semantic linked data graph embedded directly into your website's source code. Construct deeply nested JSON-LD schema models that connect your Organization entity to verified founders (Person schema), certified services (Service and Offer schemas), original research (TechArticle schemas) and official corporate locations. Utilize sameAs properties to link your domain directly to your authoritative Wikidata, Wikipedia and verified social media entity URLs.</p>
+              <h3 class="post-h3">Pillar 3: Semantic Vector Alignment and Entity Co-Occurrence Optimization</h3>
+              <p class="post-p">Re-engineer website content architecture to maximize semantic entity salience. Ensure that all technical documentation, case studies and service landing pages utilize clear subject-predicate-object grammatical structures. Intentionally incorporate primary and secondary domain entities that naturally co-occur within your industry's knowledge graph, reinforcing your company's mathematical proximity to core commercial search terms.</p>
+              <h3 class="post-h3">Pillar 4: Multi-Node Authority Consensus and Digital PR Verification</h3>
+              <p class="post-p">Execute an ongoing digital entity citation campaign across high-trust external media nodes. Secure authoritative citations, bylines and expert quotes in reputable trade publications, technology blogs and academic portals. By establishing consistent, verified entity attributes across dozens of independent high-authority web nodes, you achieve unshakeable mathematical consensus across AI training sets and real-time retrieval indices. Discover our specialized <a href="/services/ai-ranking-citations.html">AI ranking and citations services</a> to secure your market leadership.</p>
+              <p class="post-p">Entity corroboration across digital registries follows tracking protocols monitored through <a href="https://www.semrush.com" target="_blank" rel="noopener noreferrer">Semrush AI Search Tracking</a>.</p>
+              <p class="post-p">Query reconciliation with recognized entities utilizes the official <a href="https://developers.google.com/knowledge-graph" target="_blank" rel="noopener noreferrer">Google Knowledge Graph Search API</a>.</p>
+              <p class="post-p">For verified technical specifications and industry benchmarks, review <a href="https://schema.org" target="_blank" rel="noopener noreferrer">Schema.org Organization and Person Vocabularies</a>.</p>
             </section>
 
             <!-- Deep Dive Subsections -->
             
     <section class="post-section" id="section-1">
       <h2 class="post-h2">Vector Embeddings, Cosine Similarity and AI Entity Retrieval</h2>
-      <div class="post-p">To understand how AI systems rank and cite entities, one must explore the mathematics of vector search and high-dimensional semantic spaces.
-        
-Modern AI search engines convert textual descriptions of businesses, services and concepts into dense mathematical vectors containing thousands of dimensions. When a user submits a commercial inquiry, the search engine computes the cosine similarity between the user query vector and candidate entity vectors stored in its index.
-        
-Our engineering methodology optimizes your digital entity footprint to minimize vector distance between your brand and high-value commercial queries. We ensure that your brand's digital descriptions, service taxonomies and verified competencies match the multidimensional coordinate clusters that AI models associate with industry excellence, resulting in top citation rankings.</div>
+      <p class="post-p">To understand how AI systems rank and cite entities, one must explore the mathematics of vector search and high-dimensional semantic spaces. Modern AI search engines convert textual descriptions of businesses, services and concepts into dense mathematical vectors containing thousands of dimensions. When a user submits a commercial inquiry, the search engine computes the cosine similarity between the user query vector and candidate entity vectors stored in its index. Our engineering methodology optimizes your digital entity footprint to minimize vector distance between your brand and high-value commercial queries. We ensure that your brand's digital descriptions, service taxonomies and verified competencies match the multidimensional coordinate clusters that AI models associate with industry excellence, resulting in top citation rankings.</p>
     </section>
   
 
     <section class="post-section" id="section-2">
       <h2 class="post-h2">Wikidata Modeling and Linked Open Data (LOD) Interoperability</h2>
-      <div class="post-p">Wikidata serves as one of the most critical foundational data sources for Google Knowledge Graph, Perplexity AI, Claude and OpenAI models.
-        
-Structuring an entity according to Linked Open Data (LOD) principles requires meticulous adherence to standard ontological properties. We assist enterprises in establishing verifiable Wikidata statements with appropriate property definitions (such as P31 for instance of, P17 for country, P571 for inception date and P856 for official website).
-        
-By anchoring your digital entity to open semantic standards, you ensure complete interoperability with artificial intelligence knowledge crawlers and establish an immutable digital record that persists across model updates.</div>
+      <p class="post-p">Wikidata serves as one of the most critical foundational data sources for Google Knowledge Graph, Perplexity AI, Claude and OpenAI models. Structuring an entity according to Linked Open Data (LOD) principles requires meticulous adherence to standard ontological properties. We assist enterprises in establishing verifiable Wikidata statements with appropriate property definitions (such as P31 for instance of, P17 for country, P571 for inception date and P856 for official website). By anchoring your digital entity to open semantic standards, you ensure complete interoperability with artificial intelligence knowledge crawlers and establish an immutable digital record that persists across model updates.</p>
     </section>
   
 
     <section class="post-section" id="section-3">
       <h2 class="post-h2">8+ Years of Senior Engineering Leadership and White-Label Entity Outsourcing</h2>
-      <div class="post-p">Inrank Technologies is led by our Senior Growth Engineering Lead, who brings over 8+ years of hands-on technical software engineering, data architecture and semantic search experience to every client deployment. Having developed complex linked data systems, enterprise knowledge graphs and scalable digital platforms across India, North America and international markets, our technical lead personally directs all entity reconciliation audits, JSON-LD graph constructions and vector similarity optimizations.
-        
-Inrank Technologies also functions as a confidential white-label AI ranking, entity modeling and citation engineering partner for digital marketing agencies, SEO consultancies and public relations firms globally. We design comprehensive linked data architectures, manage knowledge base verification and optimize brand visibility across Perplexity and Google AI Overviews under strict Non-Disclosure Agreements (NDAs). Partner agencies expand their service catalog with high-margin AI citation engineering under their own brand banner without hiring specialized semantic data engineers in-house.</div>
+      <p class="post-p">Inrank Technologies is led by our Senior Growth Engineering Lead, who brings over 8+ years of hands-on technical software engineering, data architecture and semantic search experience to every client deployment. Having developed complex linked data systems, enterprise knowledge graphs and scalable digital platforms across India, North America and international markets, our technical lead personally directs all entity reconciliation audits, JSON-LD graph constructions and vector similarity optimizations. Inrank Technologies also functions as a confidential white-label AI ranking, entity modeling and citation engineering partner for digital marketing agencies, SEO consultancies and public relations firms globally. We design comprehensive linked data architectures, manage knowledge base verification and optimize brand visibility across Perplexity and Google AI Overviews under strict Non-Disclosure Agreements (NDAs). Partner agencies expand their service catalog with high-margin AI citation engineering under their own brand banner without hiring specialized semantic data engineers in-house.</p>
     </section>
   
 
@@ -724,57 +707,55 @@ Inrank Technologies also functions as a confidential white-label AI ranking, ent
       <h2 class="post-h2" style="margin-bottom:1.25rem;">Frequently Asked Questions</h2>
       
         <div class="faq-card open">
-          <button class="faq-q-btn" aria-expanded="true">
-            <span>undefined</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+          <button class="faq-q-btn" type="button" aria-expanded="true">
+            <span>What is a digital entity and why is it important for AI search ranking?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p style="margin:0;">undefined</p>
+            <p style="margin:0;">A digital entity is a uniquely identifiable person, organization, product or place recognized by search algorithms. AI search engines evaluate entity confidence scores and knowledge graph relationships rather than simple keyword matches to recommend authoritative vendors.</p>
           </div>
         </div>
-      
-        <div class="faq-card ">
-          <button class="faq-q-btn" aria-expanded="false">
-            <span>undefined</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+
+        <div class="faq-card">
+          <button class="faq-q-btn" type="button" aria-expanded="false">
+            <span>How do AI search engines discover and verify company citations?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p style="margin:0;">undefined</p>
+            <p style="margin:0;">AI search engines discover citations by parsing structured JSON-LD schema, querying public knowledge graphs like Wikidata and evaluating corroborating mentions across authoritative third-party news sources and industry directories.</p>
           </div>
         </div>
-      
-        <div class="faq-card ">
-          <button class="faq-q-btn" aria-expanded="false">
-            <span>undefined</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+
+        <div class="faq-card">
+          <button class="faq-q-btn" type="button" aria-expanded="false">
+            <span>Can an enterprise fix incorrect information that AI models state about its brand?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p style="margin:0;">undefined</p>
+            <p style="margin:0;">Yes. By correcting structured data across authoritative knowledge bases, deploying verified schema graphs, updating official digital profiles and publishing factual press releases, we establish new consensus data that AI models adopt.</p>
           </div>
         </div>
-      
-        <div class="faq-card ">
-          <button class="faq-q-btn" aria-expanded="false">
-            <span>undefined</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+
+        <div class="faq-card">
+          <button class="faq-q-btn" type="button" aria-expanded="false">
+            <span>Can marketing agencies outsource AI ranking and entity optimization to Inrank Technologies?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p style="margin:0;">undefined</p>
+            <p style="margin:0;">Yes. Inrank Technologies provides confidential white-label AI ranking, Knowledge Graph engineering and digital entity optimization for agencies worldwide under complete non-disclosure agreements.</p>
           </div>
         </div>
-      
-        <div class="faq-card ">
-          <button class="faq-q-btn" aria-expanded="false">
-            <span>undefined</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+
+        <div class="faq-card">
+          <button class="faq-q-btn" type="button" aria-expanded="false">
+            <span>How long does it take to see improved citations inside AI search platforms?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p style="margin:0;">undefined</p>
+            <p style="margin:0;">Visible improvements in AI citation frequency typically emerge within 45 to 90 days as real-time retrieval models index new structured data and updated entity consensus spreads across authoritative web nodes.</p>
           </div>
         </div>
-      
     </div>
-  
 
             <!-- Bottom Conversion Box -->
             <div class="post-bottom-cta">
@@ -1025,15 +1006,15 @@ Inrank Technologies also functions as a confidential white-label AI ranking, ent
         </ul>
       </nav>
 
-      <!-- Col 3: Expertise -->
+      <!-- Col 3: Pune Solutions & Expertise -->
       <nav aria-labelledby="ft-expertise">
-        <h3 id="ft-expertise">Expertise</h3>
+        <h3 id="ft-expertise">Pune Solutions</h3>
         <ul>
+          <li><a href="/digital-marketing-agency-in-pune.html" style="color:var(--green-hi);font-weight:700;">Digital Marketing Agency in Pune</a></li>
+          <li><a href="/website-design-company-in-pune.html" style="color:var(--green-hi);font-weight:700;">Web Designing Company in Pune</a></li>
           <li><a href="/services/seo-company-pune.html">SEO Company Pune</a></li>
           <li><a href="/services/custom-website-development.html">Custom Web Development</a></li>
-          <li><a href="/services/ppc-services.html">Google Ads &amp; PPC</a></li>
-          <li><a href="/services/meta-ads-agency.html">Meta &amp; Instagram Ads</a></li>
-          <li><a href="/services/ui-ux-design-services.html">Brand Identity &amp; CRO</a></li>
+          <li><a href="/services/google-ads-agency.html">Google Ads &amp; PPC</a></li>
           <li><a href="/services.html">All 27 Services</a></li>
         </ul>
       </nav>
@@ -1090,22 +1071,22 @@ Inrank Technologies also functions as a confidential white-label AI ranking, ent
   </footer>
 
   <script src="/js/core.js" defer></script>
-  <script>
-    // Reading Progress & Dynamic TOC Scrollspy
+        <script>
+    // Reading Progress, Dynamic TOC Scrollspy, FAQ Accordion & Share Copy Link
     document.addEventListener('DOMContentLoaded', function() {
       const progressBar = document.getElementById('reading-progress');
       const tocLinks = document.querySelectorAll('.toc-item');
-      const sections = document.querySelectorAll('.post-section, .post-checklist-card, .post-proof-grid, .post-faq-wrap');
+      const sections = document.querySelectorAll('.post-section, .post-article-main section[id], .post-checklist-card, .post-proof-grid, .post-faq-wrap');
 
-      window.addEventListener('scroll', function() {
+      function onScroll() {
         const h = document.documentElement;
         const b = document.body;
-        const st = 'scrollTop';
-        const sh = 'scrollHeight';
-        const percent = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
-        if (progressBar) progressBar.style.width = percent + '%';
+        const maxScroll = (h.scrollHeight || b.scrollHeight) - h.clientHeight;
+        if (progressBar && maxScroll > 0) {
+          const percent = Math.min(100, Math.max(0, ((h.scrollTop || b.scrollTop) / maxScroll) * 100));
+          progressBar.style.width = percent + '%';
+        }
 
-        // TOC active highlight
         let currentId = '';
         sections.forEach(sec => {
           const rect = sec.getBoundingClientRect();
@@ -1116,30 +1097,37 @@ Inrank Technologies also functions as a confidential white-label AI ranking, ent
 
         if (currentId) {
           tocLinks.forEach(link => {
-            if (link.getAttribute('href') === '#' + currentId) {
-              link.classList.add('active');
-            } else {
-              link.classList.remove('active');
-            }
+            link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
           });
         }
-      });
+      }
 
-      // FAQ Accordion interaction
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // FAQ Accordion interaction with aria-expanded sync
       const faqCards = document.querySelectorAll('.faq-card');
       faqCards.forEach(card => {
         const btn = card.querySelector('.faq-q-btn');
+        if (!btn) return;
         btn.addEventListener('click', () => {
           const isOpen = card.classList.contains('open');
-          faqCards.forEach(c => c.classList.remove('open'));
-          if (!isOpen) card.classList.add('open');
+          faqCards.forEach(c => {
+            c.classList.remove('open');
+            const b = c.querySelector('.faq-q-btn');
+            if (b) b.setAttribute('aria-expanded', 'false');
+          });
+          if (!isOpen) {
+            card.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
         });
       });
 
       // Copy Link button
       const copyBtn = document.getElementById('copy-link-btn');
       const copyText = document.getElementById('copy-btn-text');
-      if (copyBtn) {
+      if (copyBtn && copyText) {
         copyBtn.addEventListener('click', function() {
           navigator.clipboard.writeText(window.location.href).then(() => {
             copyText.textContent = 'Copied!';

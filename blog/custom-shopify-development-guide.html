@@ -107,32 +107,42 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Why should a merchant choose custom Liquid theme development over a theme store template?",
           "acceptedAnswer": {
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Custom Liquid themes contain only the exact code your brand requires, eliminating thousands of lines of unused CSS and JavaScript found in bloated multi-purpose themes. This yields sub-second load times, superior conversion rates and total design freedom."
           }
         },
         {
           "@type": "Question",
+          "name": "How do you optimize an existing Shopify store that is slow due to too many apps?",
           "acceptedAnswer": {
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "We conduct an app forensic audit, remove redundant apps, code essential features natively into Liquid, deep-clean theme.liquid of orphaned scripts, optimize images to WebP and configure server-side Google Tag Manager for tracking."
           }
         },
         {
           "@type": "Question",
+          "name": "What is Shopify Checkout Extensibility and why is it important?",
           "acceptedAnswer": {
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Checkout Extensibility is Shopify's modern framework replacing legacy checkout.liquid. It allows secure, app-based customization of the checkout experience, enabling one-click post-purchase upsells, custom banners and biometric wallet integrations."
           }
         },
         {
           "@type": "Question",
+          "name": "Can creative agencies outsource Shopify store development to Inrank Technologies?",
           "acceptedAnswer": {
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Yes. Inrank Technologies provides confidential white-label Shopify development, custom theme builds and performance optimization for agencies worldwide under complete non-disclosure agreements."
           }
         },
         {
           "@type": "Question",
+          "name": "Does custom Shopify development support multi-currency and international markets?",
           "acceptedAnswer": {
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Yes. We architect custom Shopify themes fully integrated with Shopify Markets, supporting multi-currency pricing, localized content translations and geo-IP automated currency switching without requiring expensive third-party apps."
           }
         }
       ]
@@ -163,7 +173,7 @@
 
   <script src="/cookie-consent.js" defer></script>
 </head>
-<body class="page-single-post">
+<body class="theme-corporate light-hero-page page-single-post">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLZ75BS8"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -175,7 +185,8 @@
     <div class="nav-bar">
       <!-- Inrank Brand Logo -->
       <a href="/" class="nav-logo" aria-label="Inrank Technologies Home">
-        <img src="/img/inrank-white-logo.svg" alt="Inrank Technologies" width="36" height="36" class="logo-icon" />
+        <img src="/img/inrank-dark-logo.svg" alt="Inrank Technologies" width="36" height="36" class="logo-icon logo-icon--dark" />
+        <img src="/img/inrank-white-logo.svg" alt="Inrank Technologies" width="36" height="36" class="logo-icon logo-icon--white" />
         <div class="nav-logo-brand">
           <span class="nav-logo-name">Inrank</span>
           <span class="nav-logo-sub">Technologies</span>
@@ -318,6 +329,7 @@
 
         <!-- Direct Navigation Items -->
         <a href="/pricing.html" class="nav-link" data-nav="pricing">Pricing</a>
+        
         <!-- Our Work with 3x2 Client Dropdown -->
         <div class="nav-item" data-dropdown="work">
           <a href="/our-work.html" class="nav-link nav-link--drop" aria-expanded="false" aria-haspopup="true">
@@ -330,8 +342,7 @@
           <!-- Floating Our Work Dropdown Menu -->
           <div class="nav-drop drop-work" role="region" aria-label="Our Work Submenu">
             <div class="work-dropdown-grid">
-              
-              <!-- Box 1: Greytothegreen (Replaced Dravya Financial) -->
+              <!-- Box 1: Greytothegreen -->
               <a href="/our-work/greytothegreen.html" class="work-dropdown-card">
                 <div class="work-drop-logo-wrap">
                   <img src="/client-logos/greytothegreen.png" alt="Greytothegreen" class="work-drop-logo" />
@@ -342,7 +353,7 @@
                 </div>
               </a>
 
-              <!-- Box: CyTOS Machines -->
+              <!-- Box 2: CyTOS Machines -->
               <a href="/our-work/cytos.html" class="work-dropdown-card">
                 <div class="work-drop-logo-wrap">
                   <img src="/client-logos/cytos.png" alt="CyTOS Machines" class="work-drop-logo" />
@@ -394,7 +405,7 @@
                     <span class="work-drop-all-title">INRANK</span>
                   </div>
                   <svg class="work-drop-all-arrow" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M3 13L13 3M13 3H5M13 3V11" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 13L13 3H5M13 3V11" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </div>
                 <div class="work-drop-info">
@@ -402,14 +413,12 @@
                   <span class="work-drop-desc">Explore 50+ Pune &amp; Global client wins</span>
                 </div>
               </a>
-
             </div>
           </div>
         </div>
+
         <a href="/case-studies.html" class="nav-link" data-nav="cases">Case Studies</a>
-
-                <a href="/about.html" class="nav-link" data-nav="about">About</a>
-
+        <a href="/about.html" class="nav-link" data-nav="about">About</a>
         <a href="/blog.html" class="nav-link" data-nav="blog">Blog</a>
         <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
       </nav>
@@ -423,6 +432,11 @@
       </button>
     </div>
   </header>
+
+  <!-- Navigation Scrim Backdrop -->
+  <div id="nav-scrim" aria-hidden="true"></div>
+
+  <!-- Mobile Drawer Menu (#mob) -->
   <div id="mob" aria-hidden="true">
     <div class="mob-hd">
       <a href="/" class="mob-logo" aria-label="Inrank Technologies">
@@ -471,9 +485,7 @@
       <a href="/pricing.html" class="mob-link">Pricing</a>
       <a href="/our-work.html" class="mob-link">Our Work</a>
       <a href="/case-studies.html" class="mob-link">Case Studies</a>
-
       <a href="/about.html" class="mob-link">About</a>
-
       <a href="/blog.html" class="mob-link">Blog &amp; Playbooks</a>
       <a href="/contact.html" class="mob-link">Contact</a>
 
@@ -566,50 +578,71 @@
             <!-- Section 1: Why This Matters -->
             <section class="post-section" id="why-matters">
               <h2 class="post-h2">Why App-Heavy Shopify Themes Collapse Under Scale and Custom Liquid Wins</h2>
-              <div class="post-p">Shopify's massive commercial popularity created a dangerous operational paradox: the App Store trap. When a merchant desires a new functional feature (such as sticky cart drawers, product bundles, custom swatches, countdown timers or social reviews), the default agency advice is to install another monthly subscription app.</p><p class="post-p">Over eighteen months, a typical merchant accumulates twenty to thirty active Shopify apps. Each app injects third-party JavaScript tracking tags, external CSS sheets, tracking iframes and webhook listeners into the theme's core document lifecycle. When a mobile customer on a cellular connection arrives at your store, the browser must download and execute five to ten megabytes of chaotic, uncoordinated third-party code before the primary product image renders.</p><p class="post-p">According to performance research published by [Shopify Engineering](https://shopify.engineering), every additional second of mobile page load latency reduces store conversion rates by up to 10 percent and increases bounce rates dramatically. Bloated stores suffer from terrible Interaction to Next Paint (INP) latency and unpredictable Cumulative Layout Shifts (CLS) as third-party app widgets pop into the viewport asynchronously.</p><p class="post-p">Furthermore, relying on dozens of apps creates immense recurring SaaS subscription overhead, often costing merchants thousands of dollars per month for functionality that could be engineered natively into the theme codebase once with zero recurring software fees. Each third-party app introduces a potential point of failure: an unexpected API deprecation or server outage at an app vendor can instantly disable checkout buttons or break inventory displays on your live storefront.</p><p class="post-p">Liquid server rendering cycles also dictate store performance. Unoptimized nested for-loops and redundant collection queries inside theme templates force Shopify's rendering servers to spend excessive processing time generating HTML, inflating Time to First Byte (TTFB) and causing noticeable delays during mobile navigation.</p><p class="post-p">Investing in bespoke [Shopify development services](#/service/shopify-development) liberates your brand from the app trap. By engineering native Liquid components, eliminating render-blocking app scripts and utilizing Shopify's modern Online Store 2.0 architecture, your storefront achieves near-perfect 95+ Google Lighthouse scores, impenetrable operational stability and complete creative control over your customer purchasing journey across every global market.</div>
+              <p class="post-p">Shopify's massive commercial popularity created a dangerous operational paradox: the App Store trap. When a merchant desires a new functional feature (such as sticky cart drawers, product bundles, custom swatches, countdown timers or social reviews), the default agency advice is to install another monthly subscription app.</p>
+              <p class="post-p">Over eighteen months, a typical merchant accumulates twenty to thirty active Shopify apps. Each app injects third-party JavaScript tracking tags, external CSS sheets, tracking iframes and webhook listeners into the theme's core document lifecycle. When a mobile customer on a cellular connection arrives at your store, the browser must download and execute five to ten megabytes of chaotic, uncoordinated third-party code before the primary product image renders.</p>
+              <p class="post-p">According to performance research published by <a href="https://shopify.engineering" target="_blank" rel="noopener noreferrer">Shopify Engineering</a>, every additional second of mobile page load latency reduces store conversion rates by up to 10 percent and increases bounce rates dramatically. Bloated stores suffer from terrible Interaction to Next Paint (INP) latency and unpredictable Cumulative Layout Shifts (CLS) as third-party app widgets pop into the viewport asynchronously.</p>
+              <p class="post-p">Furthermore, relying on dozens of apps creates immense recurring SaaS subscription overhead, often costing merchants thousands of dollars per month for functionality that could be engineered natively into the theme codebase once with zero recurring software fees. Each third-party app introduces a potential point of failure: an unexpected API deprecation or server outage at an app vendor can instantly disable checkout buttons or break inventory displays on your live storefront.</p>
+              <p class="post-p">Liquid server rendering cycles also dictate store performance. Unoptimized nested for-loops and redundant collection queries inside theme templates force Shopify's rendering servers to spend excessive processing time generating HTML, inflating Time to First Byte (TTFB) and causing noticeable delays during mobile navigation.</p>
+              <p class="post-p">Investing in bespoke <a href="/services/shopify-store-development.html">Shopify development services</a> liberates your brand from the app trap. By engineering native Liquid components, eliminating render-blocking app scripts and utilizing Shopify's modern Online Store 2.0 architecture, your storefront achieves near-perfect 95+ Google Lighthouse scores, impenetrable operational stability and complete creative control over your customer purchasing journey across every global market.</p>
             </section>
 
             <!-- Section 2: Critical Mistakes -->
             <section class="post-section" id="critical-mistakes">
               <h2 class="post-h2">Catastrophic Shopify Development Blunders That Destroy Store Margins</h2>
-              <div class="post-p">Thousands of ambitious Shopify brands fail to scale their gross merchandise value because they commit five repeatable architectural and operational mistakes.</p><p class="post-p">The primary error is building online stores with visual page builder apps like PageFly, Shogun or GemPages. While these tools allow drag-and-drop visual layout assembly, they generate massive, unminified DOM trees filled with thousands of redundant nested div tags and heavy JavaScript bundles. This code bloat severely degrades mobile CPU processing times and permanently traps stores in poor Google Core Web Vitals scores.</p><p class="post-p">The second widespread blunder is leaving orphaned tracking scripts and residual app code inside theme.liquid after uninstalling Shopify apps. When an app is removed from the Shopify admin, its injected code snippets and external script tags frequently remain embedded within your theme files. These orphaned ghost scripts continue to fire failed network requests on every page load, wasting mobile bandwidth and slowing down user interactions.</p><p class="post-p">The third critical mistake is ignoring Shopify Checkout Extensibility. Continuing to rely on legacy checkout.liquid files prevents merchants from accessing modern one-click payment customizations, post-purchase upsell widgets and native biometric wallet integrations. Modern high-converting stores utilize Checkout Extensibility to embed frictionless conversion elements directly into the secure checkout flow.</p><p class="post-p">The fourth major pitfall is deploying uncompressed, oversized product imagery. Uploading raw 4000-pixel photographic files without automated WebP compression, explicit image dimensions or responsive srcset attributes causes severe page rendering delays and layout shifts during gallery browsing.</p><p class="post-p">Finally, organizations fail to maintain continuous staging environments using modern developer tooling. Editing live theme code directly within the Shopify admin editor without Git version control, local Theme Kit or Shopify CLI staging branches risks accidental code corruption, broken checkout buttons and catastrophic revenue loss during peak shopping hours.</div>
+              <p class="post-p">Thousands of ambitious Shopify brands fail to scale their gross merchandise value because they commit five repeatable architectural and operational mistakes.</p>
+              <p class="post-p">The primary error is building online stores with visual page builder apps like PageFly, Shogun or GemPages. While these tools allow drag-and-drop visual layout assembly, they generate massive, unminified DOM trees filled with thousands of redundant nested div tags and heavy JavaScript bundles. This code bloat severely degrades mobile CPU processing times and permanently traps stores in poor Google Core Web Vitals scores.</p>
+              <p class="post-p">The second widespread blunder is leaving orphaned tracking scripts and residual app code inside theme.liquid after uninstalling Shopify apps. When an app is removed from the Shopify admin, its injected code snippets and external script tags frequently remain embedded within your theme files. These orphaned ghost scripts continue to fire failed network requests on every page load, wasting mobile bandwidth and slowing down user interactions.</p>
+              <p class="post-p">The third critical mistake is ignoring Shopify Checkout Extensibility. Continuing to rely on legacy checkout.liquid files prevents merchants from accessing modern one-click payment customizations, post-purchase upsell widgets and native biometric wallet integrations. Modern high-converting stores utilize Checkout Extensibility to embed frictionless conversion elements directly into the secure checkout flow.</p>
+              <p class="post-p">The fourth major pitfall is deploying uncompressed, oversized product imagery. Uploading raw 4000-pixel photographic files without automated WebP compression, explicit image dimensions or responsive srcset attributes causes severe page rendering delays and layout shifts during gallery browsing.</p>
+              <p class="post-p">Finally, organizations fail to maintain continuous staging environments using modern developer tooling. Editing live theme code directly within the Shopify admin editor without Git version control, local Theme Kit or Shopify CLI staging branches risks accidental code corruption, broken checkout buttons and catastrophic revenue loss during peak shopping hours.</p>
             </section>
 
             <!-- In-Content Diagram (if available) -->
             
               <div class="post-diagram-box">
-                <img src="[object Object]" alt="Shopify development Architectural Workflow" loading="lazy" />
-                <div class="post-diagram-caption">System Flow &amp; Technical Benchmark Schema · Source: Inrank Engineering Labs</div>
+                <img src="/images/blog-shopify-speed-optimization.jpg" alt="Shopify Liquid Theme Optimization and Speed Benchmark" width="1200" height="675" loading="lazy" />
+                <div class="post-diagram-caption">Shopify performance blueprint: Re-engineering Liquid architecture to achieve 0.8s mobile page rendering.</div>
               </div>
-            
+
 
             <!-- Section 3: What to Do Instead -->
             <section class="post-section" id="what-to-do">
               <h2 class="post-h2">The 4-Pillar Custom Shopify Engineering Architecture</h2>
-              <div class="post-p">Building an ultra-fast, high-converting Shopify storefront requires a disciplined engineering framework that replaces app bloat with bespoke, high-performance code.</p><p class="post-p">### Pillar 1: Modular Liquid Architecture and Native Online Store 2.0 Sections
-Engineer your storefront from the ground up using Shopify's modern Online Store 2.0 framework. Build modular, reusable Liquid components and custom Sections with full JSON template support. Code native functional features (such as dynamic color swatches, AJAX slide-out cart drawers, product bundle builders and trust badge accordions) directly into the theme codebase using lightweight vanilla JavaScript and semantic HTML5, completely eliminating the need for five to eight bloated third-party apps.</p><p class="post-p">### Pillar 2: App Audit, Code Pruning and Script Optimization
-Conduct an exhaustive forensic audit of all installed Shopify apps. Identify and remove redundant apps whose features can be coded natively. Deep-clean theme.liquid to eradicate all orphaned tracking scripts and obsolete third-party tags. Implement Google Tag Manager with server-side tracking to handle all analytics, pixel events and conversion telemetry through a single lightweight asynchronous container.</p><p class="post-p">### Pillar 3: Core Web Vitals and Mobile Asset Modernization
-Optimize the critical rendering path to achieve sub-second product page loads. Utilize Shopify's native CDN image filters to serve modern WebP and AVIF formats dynamically sized to the visitor's exact mobile viewport. Inline critical above-the-fold CSS styles and implement speculative pre-fetching for high-probability navigation paths, ensuring that cart and checkout transitions render instantaneously.</p><p class="post-p">### Pillar 4: Checkout Extensibility and Average Order Value (AOV) Expansion
-Maximize revenue per visitor by deploying custom Checkout Extensibility apps. Integrate one-click post-purchase upsells, native order bump checkboxes, dynamic free-shipping progress bars and automated customer loyalty rewards directly into the checkout journey without violating Shopify's PCI compliance perimeter. Discover how our specialized [Shopify development services](#/service/shopify-development) can transform your e-commerce growth.</p><p class="post-p">Custom Liquid architecture eliminates third-party script bloat according to performance guidelines from [web.dev Core Web Vitals](https://web.dev).</p><p class="post-p">Building responsive viewports adheres to mobile rendering principles published by [W3C Mobile Web Best Practices](https://www.w3.org).</p><p class="post-p">Authoritative industry standards and benchmarks to reference include [Shopify Developer Documentation](https://shopify.dev), [web.dev E-Commerce Core Web Vitals](https://web.dev/vitals/), and [Think with Google Retail Consumer Benchmarks](https://www.thinkwithgoogle.com).</div>
+              <p class="post-p">Building an ultra-fast, high-converting Shopify storefront requires a disciplined engineering framework that replaces app bloat with bespoke, high-performance code.</p>
+              <h3 class="post-h3">Pillar 1: Modular Liquid Architecture and Native Online Store 2.0 Sections</h3>
+              <p class="post-p">Engineer your storefront from the ground up using Shopify's modern Online Store 2.0 framework. Build modular, reusable Liquid components and custom Sections with full JSON template support. Code native functional features (such as dynamic color swatches, AJAX slide-out cart drawers, product bundle builders and trust badge accordions) directly into the theme codebase using lightweight vanilla JavaScript and semantic HTML5, completely eliminating the need for five to eight bloated third-party apps.</p>
+              <h3 class="post-h3">Pillar 2: App Audit, Code Pruning and Script Optimization</h3>
+              <p class="post-p">Conduct an exhaustive forensic audit of all installed Shopify apps. Identify and remove redundant apps whose features can be coded natively. Deep-clean theme.liquid to eradicate all orphaned tracking scripts and obsolete third-party tags. Implement Google Tag Manager with server-side tracking to handle all analytics, pixel events and conversion telemetry through a single lightweight asynchronous container.</p>
+              <h3 class="post-h3">Pillar 3: Core Web Vitals and Mobile Asset Modernization</h3>
+              <p class="post-p">Optimize the critical rendering path to achieve sub-second product page loads. Utilize Shopify's native CDN image filters to serve modern WebP and AVIF formats dynamically sized to the visitor's exact mobile viewport. Inline critical above-the-fold CSS styles and implement speculative pre-fetching for high-probability navigation paths, ensuring that cart and checkout transitions render instantaneously.</p>
+              <h3 class="post-h3">Pillar 4: Checkout Extensibility and Average Order Value (AOV) Expansion</h3>
+              <p class="post-p">Maximize revenue per visitor by deploying custom Checkout Extensibility apps. Integrate one-click post-purchase upsells, native order bump checkboxes, dynamic free-shipping progress bars and automated customer loyalty rewards directly into the checkout journey without violating Shopify's PCI compliance perimeter. Discover how our specialized <a href="/services/shopify-store-development.html">Shopify development services</a> can transform your e-commerce growth.</p>
+              <p class="post-p">Custom Liquid architecture eliminates third-party script bloat according to performance guidelines from <a href="https://web.dev" target="_blank" rel="noopener noreferrer">web.dev Core Web Vitals</a>.</p>
+              <p class="post-p">Building responsive viewports adheres to mobile rendering principles published by <a href="https://www.w3.org" target="_blank" rel="noopener noreferrer">W3C Mobile Web Best Practices</a>.</p>
+              <p class="post-p">Authoritative industry standards and benchmarks to reference include <a href="https://shopify.dev" target="_blank" rel="noopener noreferrer">Shopify Developer Documentation</a>, <a href="https://web.dev/vitals/" target="_blank" rel="noopener noreferrer">web.dev E-Commerce Core Web Vitals</a>, and <a href="https://www.thinkwithgoogle.com" target="_blank" rel="noopener noreferrer">Think with Google Retail Consumer Benchmarks</a>.</p>
             </section>
 
             <!-- Deep Dive Subsections -->
             
     <section class="post-section" id="section-1">
       <h2 class="post-h2">Headless Shopify Engineering with Hydrogen and Oxygen</h2>
-      <div class="post-p">For enterprise merchants demanding bespoke digital storytelling, multi-brand storefronts or sub-500ms global load times, headless Shopify represents the ultimate technical frontier.</p><p class="post-p">By leveraging Shopify's official Hydrogen React framework and Oxygen global hosting infrastructure, our development team builds decoupled storefronts powered by the Shopify Storefront API. This architecture provides total front-end creative freedom, instantaneous page transitions and dynamic content personalization while retaining Shopify's rock-solid back-end checkout and order management infrastructure.</p><p class="post-p">Furthermore, we implement intelligent sub-request caching, edge computing workers and optimized GraphQL batch queries. By caching product catalog schemas at edge nodes around the globe, catalog browsing occurs with instantaneous zero-latency responsiveness while real-time inventory counts and cart checkout states sync seamlessly with Shopify core servers.</div>
+      <p class="post-p">For enterprise merchants demanding bespoke digital storytelling, multi-brand storefronts or sub-500ms global load times, headless Shopify represents the ultimate technical frontier.</p>
+              <p class="post-p">By leveraging Shopify's official Hydrogen React framework and Oxygen global hosting infrastructure, our development team builds decoupled storefronts powered by the Shopify Storefront API. This architecture provides total front-end creative freedom, instantaneous page transitions and dynamic content personalization while retaining Shopify's rock-solid back-end checkout and order management infrastructure.</p>
+              <p class="post-p">Furthermore, we implement intelligent sub-request caching, edge computing workers and optimized GraphQL batch queries. By caching product catalog schemas at edge nodes around the globe, catalog browsing occurs with instantaneous zero-latency responsiveness while real-time inventory counts and cart checkout states sync seamlessly with Shopify core servers.</p>
     </section>
   
 
     <section class="post-section" id="section-2">
       <h2 class="post-h2">Generative AI, Product Schema Graphs and Search Engine Dominance</h2>
-      <div class="post-p">Modern search engines and generative AI shopping assistants (like ChatGPT Search, Perplexity and Google AI Overviews) rely on structured data to recommend e-commerce products.</p><p class="post-p">Our custom Shopify themes inject comprehensive, validated JSON-LD schema graphs directly into product templates. By explicitly structuring Product, Offer, AggregateRating, Brand and InStock attributes, your catalog is fully indexed by automated search bots, qualifying your store for Google Shopping organic rich snippets and conversational AI buying recommendations.</div>
+      <p class="post-p">Modern search engines and generative AI shopping assistants (like ChatGPT Search, Perplexity and Google AI Overviews) rely on structured data to recommend e-commerce products.</p>
+              <p class="post-p">Our custom Shopify themes inject comprehensive, validated JSON-LD schema graphs directly into product templates. By explicitly structuring Product, Offer, AggregateRating, Brand and InStock attributes, your catalog is fully indexed by automated search bots, qualifying your store for Google Shopping organic rich snippets and conversational AI buying recommendations.</p>
     </section>
   
 
     <section class="post-section" id="section-3">
       <h2 class="post-h2">8+ Years of Senior Engineering Leadership and White-Label Shopify Outsourcing</h2>
-      <div class="post-p">Inrank Technologies is led by our Senior Growth Engineering Lead, who brings over 8+ years of hands-on technical software engineering and custom Shopify architecture experience to every client deployment. Having developed custom themes, migrated complex catalogs and optimized checkout funnels for high-growth direct-to-consumer brands across India, North America and Europe, our technical lead personally oversees all Liquid code reviews, performance tuning and API integrations.</p><p class="post-p">Inrank Technologies also functions as a trusted white-label Shopify development partner for creative design studios, advertising agencies and e-commerce consultancies globally. We build custom Liquid themes, execute complex app migrations and optimize store Core Web Vitals under strict Non-Disclosure Agreements (NDAs). Partner agencies expand their e-commerce service margins and client retention rates by delivering enterprise-grade Shopify engineering under their own brand banner without maintaining expensive in-house Shopify developer teams.</div>
+      <p class="post-p">Inrank Technologies is led by our Senior Growth Engineering Lead, who brings over 8+ years of hands-on technical software engineering and custom Shopify architecture experience to every client deployment. Having developed custom themes, migrated complex catalogs and optimized checkout funnels for high-growth direct-to-consumer brands across India, North America and Europe, our technical lead personally oversees all Liquid code reviews, performance tuning and API integrations.</p>
+              <p class="post-p">Inrank Technologies also functions as a trusted white-label Shopify development partner for creative design studios, advertising agencies and e-commerce consultancies globally. We build custom Liquid themes, execute complex app migrations and optimize store Core Web Vitals under strict Non-Disclosure Agreements (NDAs). Partner agencies expand their e-commerce service margins and client retention rates by delivering enterprise-grade Shopify engineering under their own brand banner without maintaining expensive in-house Shopify developer teams.</p>
     </section>
   
 
@@ -688,57 +721,55 @@ Maximize revenue per visitor by deploying custom Checkout Extensibility apps. In
       <h2 class="post-h2" style="margin-bottom:1.25rem;">Frequently Asked Questions</h2>
       
         <div class="faq-card open">
-          <button class="faq-q-btn" aria-expanded="true">
-            <span>undefined</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+          <button class="faq-q-btn" type="button" aria-expanded="true">
+            <span>Why should a merchant choose custom Liquid theme development over a theme store template?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p style="margin:0;">undefined</p>
+            <p style="margin:0;">Custom Liquid themes contain only the exact code your brand requires, eliminating thousands of lines of unused CSS and JavaScript found in bloated multi-purpose themes. This yields sub-second load times, superior conversion rates and total design freedom.</p>
           </div>
         </div>
-      
-        <div class="faq-card ">
-          <button class="faq-q-btn" aria-expanded="false">
-            <span>undefined</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+
+        <div class="faq-card">
+          <button class="faq-q-btn" type="button" aria-expanded="false">
+            <span>How do you optimize an existing Shopify store that is slow due to too many apps?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p style="margin:0;">undefined</p>
+            <p style="margin:0;">We conduct an app forensic audit, remove redundant apps, code essential features natively into Liquid, deep-clean theme.liquid of orphaned scripts, optimize images to WebP and configure server-side Google Tag Manager for tracking.</p>
           </div>
         </div>
-      
-        <div class="faq-card ">
-          <button class="faq-q-btn" aria-expanded="false">
-            <span>undefined</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+
+        <div class="faq-card">
+          <button class="faq-q-btn" type="button" aria-expanded="false">
+            <span>What is Shopify Checkout Extensibility and why is it important?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p style="margin:0;">undefined</p>
+            <p style="margin:0;">Checkout Extensibility is Shopify's modern framework replacing legacy checkout.liquid. It allows secure, app-based customization of the checkout experience, enabling one-click post-purchase upsells, custom banners and biometric wallet integrations.</p>
           </div>
         </div>
-      
-        <div class="faq-card ">
-          <button class="faq-q-btn" aria-expanded="false">
-            <span>undefined</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+
+        <div class="faq-card">
+          <button class="faq-q-btn" type="button" aria-expanded="false">
+            <span>Can creative agencies outsource Shopify store development to Inrank Technologies?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p style="margin:0;">undefined</p>
+            <p style="margin:0;">Yes. Inrank Technologies provides confidential white-label Shopify development, custom theme builds and performance optimization for agencies worldwide under complete non-disclosure agreements.</p>
           </div>
         </div>
-      
-        <div class="faq-card ">
-          <button class="faq-q-btn" aria-expanded="false">
-            <span>undefined</span>
-            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+
+        <div class="faq-card">
+          <button class="faq-q-btn" type="button" aria-expanded="false">
+            <span>Does custom Shopify development support multi-currency and international markets?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p style="margin:0;">undefined</p>
+            <p style="margin:0;">Yes. We architect custom Shopify themes fully integrated with Shopify Markets, supporting multi-currency pricing, localized content translations and geo-IP automated currency switching without requiring expensive third-party apps.</p>
           </div>
         </div>
-      
     </div>
-  
 
             <!-- Bottom Conversion Box -->
             <div class="post-bottom-cta">
@@ -989,15 +1020,15 @@ Maximize revenue per visitor by deploying custom Checkout Extensibility apps. In
         </ul>
       </nav>
 
-      <!-- Col 3: Expertise -->
+      <!-- Col 3: Pune Solutions & Expertise -->
       <nav aria-labelledby="ft-expertise">
-        <h3 id="ft-expertise">Expertise</h3>
+        <h3 id="ft-expertise">Pune Solutions</h3>
         <ul>
+          <li><a href="/digital-marketing-agency-in-pune.html" style="color:var(--green-hi);font-weight:700;">Digital Marketing Agency in Pune</a></li>
+          <li><a href="/website-design-company-in-pune.html" style="color:var(--green-hi);font-weight:700;">Web Designing Company in Pune</a></li>
           <li><a href="/services/seo-company-pune.html">SEO Company Pune</a></li>
           <li><a href="/services/custom-website-development.html">Custom Web Development</a></li>
-          <li><a href="/services/ppc-services.html">Google Ads &amp; PPC</a></li>
-          <li><a href="/services/meta-ads-agency.html">Meta &amp; Instagram Ads</a></li>
-          <li><a href="/services/ui-ux-design-services.html">Brand Identity &amp; CRO</a></li>
+          <li><a href="/services/google-ads-agency.html">Google Ads &amp; PPC</a></li>
           <li><a href="/services.html">All 27 Services</a></li>
         </ul>
       </nav>
@@ -1054,22 +1085,22 @@ Maximize revenue per visitor by deploying custom Checkout Extensibility apps. In
   </footer>
 
   <script src="/js/core.js" defer></script>
-  <script>
-    // Reading Progress & Dynamic TOC Scrollspy
+        <script>
+    // Reading Progress, Dynamic TOC Scrollspy, FAQ Accordion & Share Copy Link
     document.addEventListener('DOMContentLoaded', function() {
       const progressBar = document.getElementById('reading-progress');
       const tocLinks = document.querySelectorAll('.toc-item');
-      const sections = document.querySelectorAll('.post-section, .post-checklist-card, .post-proof-grid, .post-faq-wrap');
+      const sections = document.querySelectorAll('.post-section, .post-article-main section[id], .post-checklist-card, .post-proof-grid, .post-faq-wrap');
 
-      window.addEventListener('scroll', function() {
+      function onScroll() {
         const h = document.documentElement;
         const b = document.body;
-        const st = 'scrollTop';
-        const sh = 'scrollHeight';
-        const percent = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
-        if (progressBar) progressBar.style.width = percent + '%';
+        const maxScroll = (h.scrollHeight || b.scrollHeight) - h.clientHeight;
+        if (progressBar && maxScroll > 0) {
+          const percent = Math.min(100, Math.max(0, ((h.scrollTop || b.scrollTop) / maxScroll) * 100));
+          progressBar.style.width = percent + '%';
+        }
 
-        // TOC active highlight
         let currentId = '';
         sections.forEach(sec => {
           const rect = sec.getBoundingClientRect();
@@ -1080,30 +1111,37 @@ Maximize revenue per visitor by deploying custom Checkout Extensibility apps. In
 
         if (currentId) {
           tocLinks.forEach(link => {
-            if (link.getAttribute('href') === '#' + currentId) {
-              link.classList.add('active');
-            } else {
-              link.classList.remove('active');
-            }
+            link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
           });
         }
-      });
+      }
 
-      // FAQ Accordion interaction
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // FAQ Accordion interaction with aria-expanded sync
       const faqCards = document.querySelectorAll('.faq-card');
       faqCards.forEach(card => {
         const btn = card.querySelector('.faq-q-btn');
+        if (!btn) return;
         btn.addEventListener('click', () => {
           const isOpen = card.classList.contains('open');
-          faqCards.forEach(c => c.classList.remove('open'));
-          if (!isOpen) card.classList.add('open');
+          faqCards.forEach(c => {
+            c.classList.remove('open');
+            const b = c.querySelector('.faq-q-btn');
+            if (b) b.setAttribute('aria-expanded', 'false');
+          });
+          if (!isOpen) {
+            card.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
         });
       });
 
       // Copy Link button
       const copyBtn = document.getElementById('copy-link-btn');
       const copyText = document.getElementById('copy-btn-text');
-      if (copyBtn) {
+      if (copyBtn && copyText) {
         copyBtn.addEventListener('click', function() {
           navigator.clipboard.writeText(window.location.href).then(() => {
             copyText.textContent = 'Copied!';

@@ -77,7 +77,7 @@
 
   <script src="/cookie-consent.js" defer></script>
 </head>
-<body class="page-blog-hub">
+<body class="theme-corporate page-blog-hub">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLZ75BS8"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -88,7 +88,8 @@
     <div class="nav-bar">
       <!-- Inrank Brand Logo -->
       <a href="/" class="nav-logo" aria-label="Inrank Technologies Home">
-        <img src="/img/inrank-white-logo.svg" alt="Inrank Technologies" width="36" height="36" class="logo-icon" />
+        <img src="/img/inrank-dark-logo.svg" alt="Inrank Technologies" width="36" height="36" class="logo-icon logo-icon--dark" />
+        <img src="/img/inrank-white-logo.svg" alt="Inrank Technologies" width="36" height="36" class="logo-icon logo-icon--white" />
         <div class="nav-logo-brand">
           <span class="nav-logo-name">Inrank</span>
           <span class="nav-logo-sub">Technologies</span>
@@ -231,6 +232,7 @@
 
         <!-- Direct Navigation Items -->
         <a href="/pricing.html" class="nav-link" data-nav="pricing">Pricing</a>
+        
         <!-- Our Work with 3x2 Client Dropdown -->
         <div class="nav-item" data-dropdown="work">
           <a href="/our-work.html" class="nav-link nav-link--drop" aria-expanded="false" aria-haspopup="true">
@@ -243,8 +245,7 @@
           <!-- Floating Our Work Dropdown Menu -->
           <div class="nav-drop drop-work" role="region" aria-label="Our Work Submenu">
             <div class="work-dropdown-grid">
-              
-              <!-- Box 1: Greytothegreen (Replaced Dravya Financial) -->
+              <!-- Box 1: Greytothegreen -->
               <a href="/our-work/greytothegreen.html" class="work-dropdown-card">
                 <div class="work-drop-logo-wrap">
                   <img src="/client-logos/greytothegreen.png" alt="Greytothegreen" class="work-drop-logo" />
@@ -255,7 +256,7 @@
                 </div>
               </a>
 
-              <!-- Box: CyTOS Machines -->
+              <!-- Box 2: CyTOS Machines -->
               <a href="/our-work/cytos.html" class="work-dropdown-card">
                 <div class="work-drop-logo-wrap">
                   <img src="/client-logos/cytos.png" alt="CyTOS Machines" class="work-drop-logo" />
@@ -307,7 +308,7 @@
                     <span class="work-drop-all-title">INRANK</span>
                   </div>
                   <svg class="work-drop-all-arrow" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M3 13L13 3M13 3H5M13 3V11" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 13L13 3H5M13 3V11" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </div>
                 <div class="work-drop-info">
@@ -315,14 +316,12 @@
                   <span class="work-drop-desc">Explore 50+ Pune &amp; Global client wins</span>
                 </div>
               </a>
-
             </div>
           </div>
         </div>
+
         <a href="/case-studies.html" class="nav-link" data-nav="cases">Case Studies</a>
-
-                <a href="/about.html" class="nav-link" data-nav="about">About</a>
-
+        <a href="/about.html" class="nav-link" data-nav="about">About</a>
         <a href="/blog.html" class="nav-link" data-nav="blog">Blog</a>
         <a href="/contact.html" class="nav-link" data-nav="contact">Contact</a>
       </nav>
@@ -336,6 +335,11 @@
       </button>
     </div>
   </header>
+
+  <!-- Navigation Scrim Backdrop -->
+  <div id="nav-scrim" aria-hidden="true"></div>
+
+  <!-- Mobile Drawer Menu (#mob) -->
   <div id="mob" aria-hidden="true">
     <div class="mob-hd">
       <a href="/" class="mob-logo" aria-label="Inrank Technologies">
@@ -384,9 +388,7 @@
       <a href="/pricing.html" class="mob-link">Pricing</a>
       <a href="/our-work.html" class="mob-link">Our Work</a>
       <a href="/case-studies.html" class="mob-link">Case Studies</a>
-
       <a href="/about.html" class="mob-link">About</a>
-
       <a href="/blog.html" class="mob-link">Blog &amp; Playbooks</a>
       <a href="/contact.html" class="mob-link">Contact</a>
 
@@ -409,7 +411,7 @@
       <div class="blog-categories-inner">
         <nav class="categories-strip" id="cat-strip">
           
-  <button class="cat-pill is-active" data-filter="all">All (32)</button>
+  <button class="cat-pill is-active" data-filter="all">All (33)</button>
   
     <button class="cat-pill" data-filter="market-intelligence-pricing">Market Intelligence & Pricing (1)</button>
   
@@ -437,7 +439,7 @@
     </section>
 
     <!-- §1 Featured Post Card (50/50 Split) -->
-    <section class="blog-featured-section" aria-labelledby="featured-post-title">
+    <section class="blog-featured-section" id="featured-section" data-category="market-intelligence-pricing" data-title="top 5 digital marketing & web development agencies in pune (2026 review & pricing comparison) market intelligence pricing" aria-labelledby="featured-post-title">
       <div class="blog-featured-inner">
         <span class="blog-section-label">Featured Benchmark</span>
         <a href="/blog/top-digital-marketing-web-development-agencies-pune.html" class="blog-featured-card" aria-label="Read: Top 5 Digital Marketing & Web Development Agencies in Pune (2026 Review & Pricing Comparison)">
@@ -468,7 +470,7 @@
 
     <article class="blog-card" data-category="web-development-website-performance" data-title="next.js 15, react 19 & edge ai web architecture: building sub-1-second portals in 2026-2027">
       <div class="blog-card-img">
-        <img src="/images/service-custom-website-development.jpg" alt="Next.js 15 React 19 Edge AI Web Architecture" loading="lazy" width="600" height="340" />
+        <img src="/images/service-website-development.jpg" alt="Next.js 15 React 19 Edge AI Web Architecture" loading="lazy" width="600" height="340" />
       </div>
       <div class="blog-card-content">
         <div class="blog-card-meta">
@@ -486,7 +488,7 @@
 
     <article class="blog-card" data-category="seo-ai-search" data-title="generative engine optimization (geo) 2.0 & ai overviews: the 2026-2027 technical playbook">
       <div class="blog-card-img">
-        <img src="/images/service-geo-seo.jpg" alt="Generative Engine Optimization GEO 2.0" loading="lazy" width="600" height="340" />
+        <img src="/images/service-geo-seo-agency.jpg" alt="Generative Engine Optimization GEO 2.0" loading="lazy" width="600" height="340" />
       </div>
       <div class="blog-card-content">
         <div class="blog-card-meta">
@@ -1328,24 +1330,39 @@
     document.addEventListener('DOMContentLoaded', function() {
       const pills = document.querySelectorAll('.cat-pill');
       const cards = document.querySelectorAll('.blog-card');
+      const featuredSec = document.getElementById('featured-section');
+      const gridSection = document.querySelector('.blog-grid-section');
       const search = document.getElementById('blog-search');
 
       let currentFilter = 'all';
       let currentQuery = '';
 
       function filterCards() {
+        let visibleGridCount = 0;
         cards.forEach(card => {
           const cardCat = card.getAttribute('data-category');
-          const cardTitle = card.getAttribute('data-title');
+          const cardTitle = card.getAttribute('data-title') || '';
           const matchesCat = currentFilter === 'all' || cardCat === currentFilter;
           const matchesQuery = !currentQuery || cardTitle.includes(currentQuery);
 
           if (matchesCat && matchesQuery) {
             card.style.display = 'flex';
+            visibleGridCount++;
           } else {
             card.style.display = 'none';
           }
         });
+
+        if (featuredSec) {
+          const featCat = featuredSec.getAttribute('data-category');
+          const featTitle = featuredSec.getAttribute('data-title') || '';
+          const showFeatured = (currentFilter === 'all' || currentFilter === featCat) && (!currentQuery || featTitle.includes(currentQuery));
+          featuredSec.style.display = showFeatured ? '' : 'none';
+        }
+
+        if (gridSection) {
+          gridSection.style.display = visibleGridCount > 0 || currentFilter === 'all' ? '' : 'none';
+        }
       }
 
       pills.forEach(pill => {
