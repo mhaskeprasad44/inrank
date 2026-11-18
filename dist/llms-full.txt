@@ -10,7 +10,7 @@
 - **Direct WhatsApp Hotline**: [+91 87888 23182](https://wa.me/918788823182)
 - **Direct Phone Line**: +91 87888 23182
 - **Official Inquiries Email**: contact@inranktech.com
-- **XML Sitemap (92 Pages, 646 Images, 14 Videos)**: [https://inranktech.com/sitemap.xml](https://inranktech.com/sitemap.xml)
+- **XML Sitemap (92 Pages, 646 Images)**: [https://inranktech.com/sitemap.xml](https://inranktech.com/sitemap.xml)
 - **Complete 92-URL Production Manifest**: [https://inranktech.com/all-urls.txt](https://inranktech.com/all-urls.txt)
 - **Full LLM Deep-Context Document**: [https://inranktech.com/llms-full.txt](https://inranktech.com/llms-full.txt)
 
@@ -127,7 +127,7 @@
 - [Luxury Business Card Design & Ergonomics](https://inranktech.com/blog/luxury-business-card-design-and-tactile-print-ergonomics.html): Specialty paper, velvet lamination, metallic foil, embossed textures, and smart NFC cards.
 
 ## Machine-Readable Discovery Endpoints
-- [XML Sitemap (Pages, 646 Images, 14 Videos)](https://inranktech.com/sitemap.xml): Primary multimodal crawl index.
+- [XML Sitemap (Pages & 646 Images)](https://inranktech.com/sitemap.xml): Primary multimodal crawl index.
 - [Robots.txt](https://inranktech.com/robots.txt): Crawler access rules and sitemap directives.
 - [Production URLs Manifest (92 URLs)](https://inranktech.com/all-urls.txt): Flat text manifest of all canonical URLs.
 - [Full AI Context Document](https://inranktech.com/llms-full.txt): Deep knowledge graph and technical documentation.

@@ -1,18 +1,22 @@
+/**
+ * scripts/generate_rich_sitemap.cjs
+ * Generates an authoritative, valid Google XML Sitemap with dedicated
+ * Google Image SEO nodes (<image:image>) for all 92 production URLs.
+ * All third-party video nodes have been completely removed to protect
+ * Inrank's brand entity and topic relevancy.
+ */
+
 const fs = require('fs');
 const path = require('path');
 
-const rootDir = path.resolve(__dirname, '..');
-const TODAY = '2026-11-18';
 const DOMAIN = 'https://inranktech.com';
+const TODAY = '2026-11-18';
+const rootDir = path.resolve(__dirname, '..');
 
+// Helper to escape XML special characters
 function escapeXml(str) {
   if (!str) return '';
   return str
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&apos;/g, "'")
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
@@ -20,109 +24,70 @@ function escapeXml(str) {
     .replace(/'/g, '&apos;');
 }
 
-function resolveAssetUrl(src) {
-  if (!src) return null;
-  if (src.startsWith('http://') || src.startsWith('https://')) return src;
-  const clean = src.startsWith('/') ? src : '/' + src;
-  return `${DOMAIN}${clean}`;
-}
-
-// Extract primary high-value images from an HTML file
+// Extract images from HTML file
 function getPageImages(filePath, pageType, slug) {
-  const content = fs.readFileSync(filePath, 'utf8');
+  if (!fs.existsSync(filePath)) return [];
+  const html = fs.readFileSync(filePath, 'utf8');
   const images = [];
-  const seenUrls = new Set();
+  const seenLocs = new Set();
 
-  function addImage(url, title, caption) {
-    const fullUrl = resolveAssetUrl(url);
-    if (!fullUrl || seenUrls.has(fullUrl)) return;
-    seenUrls.add(fullUrl);
+  function addImage(loc, title, caption) {
+    if (!loc) return;
+    // Normalize relative paths
+    let fullLoc = loc;
+    if (loc.startsWith('/')) {
+      fullLoc = `${DOMAIN}${loc}`;
+    } else if (!loc.startsWith('http')) {
+      fullLoc = `${DOMAIN}/${loc}`;
+    }
+
+    // Filter out external tracking pixels or 3rd party badges
+    if (!fullLoc.startsWith(DOMAIN)) return;
+    if (seenLocs.has(fullLoc)) return;
+    seenLocs.add(fullLoc);
+
     images.push({
-      loc: fullUrl,
-      title: title || 'Inrank Technologies Web Engineering Pune',
-      caption: caption || 'Inrank Technologies performance web development, SEO and digital growth engineering in Baner, Pune'
+      loc: fullLoc,
+      title: title || 'Inrank Technologies Pune Digital Growth Platform',
+      caption: caption || title || 'Inrank Technologies Web Development and Performance Growth'
     });
   }
 
-  // Always include primary branding if it's a hub or local landing page
-  if (pageType === 'home' || pageType === 'hub' || pageType === 'local') {
-    addImage('/Logo.png', 'Inrank Technologies Logo - Performance Web Development Company in Pune', 'Inrank Technologies corporate brand identity and growth engineering lab in Baner, Pune');
-  }
+  // 1. Primary Inrank Brand Logos
+  addImage('/img/inrank-dark-logo.svg', 'Inrank Technologies Corporate Logo', 'Official vector brandmark of Inrank Technologies Pvt Ltd Pune');
+  addImage('/img/inrank-white-logo.svg', 'Inrank Technologies Dark Mode Logo', 'Official white vector brandmark of Inrank Technologies Pvt Ltd Pune');
 
-  // Extract from HTML <img> tags that are meaningful content images
-  const imgRegex = /<img\s+[^>]*src=["']([^"']+)["'][^>]*>/gi;
-  let m;
-  while ((m = imgRegex.exec(content)) !== null) {
-    const src = m[1];
-    if (src.startsWith('data:') || src.includes('favicon') || src.includes('logo-icon')) continue;
+  // 2. Extract <img> tags
+  const imgRegex = /<img[^>]+src=["']([^"']+)["'][^>]*>/gi;
+  let match;
+  while ((match = imgRegex.exec(html)) !== null) {
+    const fullTag = match[0];
+    const src = match[1];
 
-    const altMatch = m[0].match(/alt=["']([^"']*)["']/i);
-    const alt = altMatch ? altMatch[1].trim() : '';
+    // Extract alt text
+    const altMatch = fullTag.match(/alt=["']([^"']*)["']/i);
+    const altText = altMatch ? altMatch[1].trim() : '';
 
-    const titleMatch = m[0].match(/title=["']([^"']*)["']/i);
-    const title = titleMatch ? titleMatch[1].trim() : (alt || 'Inrank Technologies Asset');
+    // Extract title text if present
+    const titleMatch = fullTag.match(/title=["']([^"']*)["']/i);
+    const titleText = titleMatch ? titleMatch[1].trim() : altText;
 
-    // Filter out minor tech icons if we already have main hero/diagrams
-    if (src.includes('/images/') || src.includes('/portfolio/') || src.includes('client-logos') || src.includes('pune-tech-hub')) {
-      let caption = alt || title;
-      if (!caption || caption.length < 10) {
-        caption = `${title} - Inrank Technologies high-performance digital solutions in Pune`;
-      }
-      addImage(src, title, caption);
+    if (src && !src.includes('data:image') && !src.includes('google.com') && !src.includes('facebook.com')) {
+      addImage(src, titleText || `${slug} visual asset`, altText || `Inrank Technologies ${slug} portfolio showcase`);
     }
   }
 
-  // Extract og:image if present
-  const ogMatch = content.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i);
-  if (ogMatch) {
-    const titleMatch = content.match(/<title>([^<]+)<\/title>/i);
-    const pageTitle = titleMatch ? titleMatch[1].trim() : 'Inrank Technologies';
+  // 3. Extract OpenGraph image
+  const ogMatch = html.match(/<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i);
+  if (ogMatch && ogMatch[1]) {
+    const pageTitleMatch = html.match(/<title>([^<]+)<\/title>/i);
+    const pageTitle = pageTitleMatch ? pageTitleMatch[1].split('|')[0].trim() : slug;
     addImage(ogMatch[1], pageTitle, `${pageTitle} - Visual preview for Inrank Technologies`);
   }
 
   // Limit images per URL to top 8 highest quality images to prevent sitemap bloat
   return images.slice(0, 8);
 }
-
-// Client engineering videos for video SEO
-const cytosVideos = [
-  {
-    thumbnail_loc: 'https://img.youtube.com/vi/Wc9UoQiWpxI/hqdefault.jpg',
-    title: 'High Accuracy Mini Milling Machine - CyTOS Pune CNC Automation',
-    description: 'TITAN machining process for soft and hard metals and non-metals (metallic die, plastic, FR4, nylon, wood, brass, aluminium). Manufactured by CyTOS Pune with digital platform engineered by Inrank Technologies.',
-    content_loc: 'https://www.youtube.com/watch?v=Wc9UoQiWpxI',
-    player_loc: 'https://www.youtube.com/embed/Wc9UoQiWpxI',
-    duration: 132,
-    publication_date: '2026-10-01T00:00:00+05:30'
-  },
-  {
-    thumbnail_loc: 'https://img.youtube.com/vi/VFu1gzPGcH0/hqdefault.jpg',
-    title: 'Automatic Thermal Foam Welding Machine - CyTOS Industrial Automation',
-    description: 'Thermal fusion foam welding machine with 700x700mm platen. Welds 10mm to 250mm thick EPE/EVA/XLPE foam in seconds with 100% glue-free molecular bonding. Web architecture by Inrank Technologies.',
-    content_loc: 'https://www.youtube.com/watch?v=VFu1gzPGcH0',
-    player_loc: 'https://www.youtube.com/embed/VFu1gzPGcH0',
-    duration: 83,
-    publication_date: '2026-10-01T00:00:00+05:30'
-  },
-  {
-    thumbnail_loc: 'https://img.youtube.com/vi/vvbIlXhe4BE/hqdefault.jpg',
-    title: 'High Speed Industrial PCB Drilling Machine - CyTOS Production Platform',
-    description: 'Commercial PCB manufacturing machine with pneumatic ATC and high-speed micro-drilling up to 160 hits/min on multilayer panels. Deployed by Inrank Technologies.',
-    content_loc: 'https://www.youtube.com/watch?v=vvbIlXhe4BE',
-    player_loc: 'https://www.youtube.com/embed/vvbIlXhe4BE',
-    duration: 101,
-    publication_date: '2026-10-01T00:00:00+05:30'
-  },
-  {
-    thumbnail_loc: 'https://img.youtube.com/vi/5qZVqYg9CYc/hqdefault.jpg',
-    title: 'Chemical-Free PCB Prototyping Machine - Laboratory CNC Demonstration',
-    description: 'Compact 100% chemical-free rapid prototyper for research labs and colleges with auto-leveling surface height compensation. Case study on Inrank Technologies.',
-    content_loc: 'https://www.youtube.com/watch?v=5qZVqYg9CYc',
-    player_loc: 'https://www.youtube.com/embed/5qZVqYg9CYc',
-    duration: 119,
-    publication_date: '2026-10-01T00:00:00+05:30'
-  }
-];
 
 // Build URL items
 const urlItems = [];
@@ -133,8 +98,7 @@ urlItems.push({
   priority: '1.0',
   changefreq: 'daily',
   pageType: 'home',
-  filePath: path.join(rootDir, 'index.html'),
-  videos: cytosVideos.slice(0, 2)
+  filePath: path.join(rootDir, 'index.html')
 });
 
 // 2. High-Intent Pune Local Landing Pages
@@ -143,29 +107,27 @@ urlItems.push({
   priority: '0.95',
   changefreq: 'daily',
   pageType: 'local',
-  filePath: path.join(rootDir, 'website-design-company-in-pune.html'),
-  videos: []
+  filePath: path.join(rootDir, 'website-design-company-in-pune.html')
 });
 urlItems.push({
   loc: `${DOMAIN}/digital-marketing-agency-in-pune.html`,
   priority: '0.95',
   changefreq: 'daily',
   pageType: 'local',
-  filePath: path.join(rootDir, 'digital-marketing-agency-in-pune.html'),
-  videos: []
+  filePath: path.join(rootDir, 'digital-marketing-agency-in-pune.html')
 });
 
 // 3. Core Hub Pages
 const coreHubs = [
-  { file: 'about.html', priority: '0.90', changefreq: 'weekly', videos: [] },
-  { file: 'services.html', priority: '0.90', changefreq: 'weekly', videos: [] },
-  { file: 'pricing.html', priority: '0.90', changefreq: 'weekly', videos: [] },
-  { file: 'our-work.html', priority: '0.90', changefreq: 'weekly', videos: cytosVideos.slice(0, 2) },
-  { file: 'case-studies.html', priority: '0.90', changefreq: 'weekly', videos: cytosVideos.slice(0, 2) },
-  { file: 'blog.html', priority: '0.85', changefreq: 'daily', videos: [] },
-  { file: 'contact.html', priority: '0.80', changefreq: 'monthly', videos: [] },
-  { file: 'privacy-policy.html', priority: '0.30', changefreq: 'monthly', videos: [] },
-  { file: 'terms-and-conditions.html', priority: '0.30', changefreq: 'monthly', videos: [] }
+  { file: 'about.html', priority: '0.90', changefreq: 'weekly' },
+  { file: 'services.html', priority: '0.90', changefreq: 'weekly' },
+  { file: 'pricing.html', priority: '0.90', changefreq: 'weekly' },
+  { file: 'our-work.html', priority: '0.90', changefreq: 'weekly' },
+  { file: 'case-studies.html', priority: '0.90', changefreq: 'weekly' },
+  { file: 'blog.html', priority: '0.85', changefreq: 'daily' },
+  { file: 'contact.html', priority: '0.80', changefreq: 'monthly' },
+  { file: 'privacy-policy.html', priority: '0.30', changefreq: 'monthly' },
+  { file: 'terms-and-conditions.html', priority: '0.30', changefreq: 'monthly' }
 ];
 
 coreHubs.forEach(h => {
@@ -174,8 +136,7 @@ coreHubs.forEach(h => {
     priority: h.priority,
     changefreq: h.changefreq,
     pageType: 'hub',
-    filePath: path.join(rootDir, h.file),
-    videos: h.videos
+    filePath: path.join(rootDir, h.file)
   });
 });
 
@@ -188,8 +149,7 @@ serviceFiles.forEach(f => {
     priority: '0.85',
     changefreq: 'weekly',
     pageType: 'service',
-    filePath: path.join(servicesDir, f),
-    videos: []
+    filePath: path.join(servicesDir, f)
   });
 });
 
@@ -197,14 +157,12 @@ serviceFiles.forEach(f => {
 const workDir = path.join(rootDir, 'our-work');
 const workFiles = fs.readdirSync(workDir).filter(f => f.endsWith('.html')).sort();
 workFiles.forEach(f => {
-  const isCytos = f === 'cytos.html';
   urlItems.push({
     loc: `${DOMAIN}/our-work/${f}`,
     priority: '0.80',
     changefreq: 'weekly',
     pageType: 'work',
-    filePath: path.join(workDir, f),
-    videos: isCytos ? cytosVideos : []
+    filePath: path.join(workDir, f)
   });
 });
 
@@ -212,14 +170,12 @@ workFiles.forEach(f => {
 const caseDir = path.join(rootDir, 'case-studies');
 const caseFiles = fs.readdirSync(caseDir).filter(f => f.endsWith('.html')).sort();
 caseFiles.forEach(f => {
-  const isCytos = f === 'cytos.html';
   urlItems.push({
     loc: `${DOMAIN}/case-studies/${f}`,
     priority: '0.80',
     changefreq: 'weekly',
     pageType: 'case',
-    filePath: path.join(caseDir, f),
-    videos: isCytos ? cytosVideos : []
+    filePath: path.join(caseDir, f)
   });
 });
 
@@ -232,20 +188,17 @@ blogFiles.forEach(f => {
     priority: '0.75',
     changefreq: 'monthly',
     pageType: 'blog',
-    filePath: path.join(blogDir, f),
-    videos: []
+    filePath: path.join(blogDir, f)
   });
 });
 
-console.log(`Processing ${urlItems.length} URLs for Rich Image & Video Sitemap...`);
+console.log(`Processing ${urlItems.length} URLs for Rich Image Sitemap...`);
 
 let totalImages = 0;
-let totalVideos = 0;
 
 const xmlEntries = urlItems.map(item => {
   const images = getPageImages(item.filePath, item.pageType, path.basename(item.filePath, '.html'));
   totalImages += images.length;
-  totalVideos += (item.videos || []).length;
 
   let block = `  <url>\n    <loc>${item.loc}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <changefreq>${item.changefreq}</changefreq>\n    <priority>${item.priority}</priority>`;
 
@@ -256,13 +209,6 @@ const xmlEntries = urlItems.map(item => {
     });
   }
 
-  // Add Video SEO nodes
-  if (item.videos && item.videos.length > 0) {
-    item.videos.forEach(v => {
-      block += `\n    <video:video>\n      <video:thumbnail_loc>${escapeXml(v.thumbnail_loc)}</video:thumbnail_loc>\n      <video:title>${escapeXml(v.title)}</video:title>\n      <video:description>${escapeXml(v.description)}</video:description>\n      <video:content_loc>${escapeXml(v.content_loc)}</video:content_loc>\n      <video:player_loc>${escapeXml(v.player_loc)}</video:player_loc>\n      <video:duration>${v.duration}</video:duration>\n      <video:publication_date>${v.publication_date}</video:publication_date>\n      <video:family_friendly>yes</video:family_friendly>\n      <video:uploader info="https://inranktech.com">Inrank Technologies</video:uploader>\n    </video:video>`;
-    });
-  }
-
   block += `\n  </url>`;
   return block;
 });
@@ -270,20 +216,22 @@ const xmlEntries = urlItems.map(item => {
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
         http://www.google.com/schemas/sitemap-image/1.1
-        http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd
-        http://www.google.com/schemas/sitemap-video/1.1
-        http://www.google.com/schemas/sitemap-video/1.1/sitemap-video.xsd">
+        http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
 ${xmlEntries.join('\n')}
 </urlset>
 `;
 
 fs.writeFileSync(path.join(rootDir, 'sitemap.xml'), sitemapXml, 'utf8');
-console.log(`Rich Sitemap generated successfully!`);
+const distPath = path.join(rootDir, 'dist', 'sitemap.xml');
+if (fs.existsSync(path.dirname(distPath))) {
+  fs.writeFileSync(distPath, sitemapXml, 'utf8');
+}
+
+console.log(`Rich Image Sitemap generated successfully!`);
 console.log(`- Total URLs: ${urlItems.length}`);
 console.log(`- Total Image SEO Nodes: ${totalImages}`);
-console.log(`- Total Video SEO Nodes: ${totalVideos}`);
+console.log(`- All third-party video nodes removed.`);

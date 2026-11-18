@@ -199,7 +199,7 @@ function buildStandardLLMsTxt() {
   lines.push("- **Direct WhatsApp Hotline**: [+91 87888 23182](https://wa.me/918788823182)");
   lines.push("- **Direct Phone Line**: +91 87888 23182");
   lines.push("- **Official Inquiries Email**: contact@inranktech.com");
-  lines.push("- **XML Sitemap (92 Pages, 646 Images, 14 Videos)**: [https://inranktech.com/sitemap.xml](https://inranktech.com/sitemap.xml)");
+  lines.push("- **XML Sitemap (92 Pages, 646 Images)**: [https://inranktech.com/sitemap.xml](https://inranktech.com/sitemap.xml)");
   lines.push("- **Complete 92-URL Production Manifest**: [https://inranktech.com/all-urls.txt](https://inranktech.com/all-urls.txt)");
   lines.push("- **Full LLM Deep-Context Document**: [https://inranktech.com/llms-full.txt](https://inranktech.com/llms-full.txt)");
   lines.push("");
@@ -275,7 +275,7 @@ function buildStandardLLMsTxt() {
 
   // Section 11: Machine-Readable Discovery & Manifest Endpoints
   lines.push("## Machine-Readable Discovery Endpoints");
-  lines.push("- [XML Sitemap (Pages, 646 Images, 14 Videos)](https://inranktech.com/sitemap.xml): Primary multimodal crawl index.");
+  lines.push("- [XML Sitemap (Pages & 646 Images)](https://inranktech.com/sitemap.xml): Primary multimodal crawl index.");
   lines.push("- [Robots.txt](https://inranktech.com/robots.txt): Crawler access rules and sitemap directives.");
   lines.push("- [Production URLs Manifest (92 URLs)](https://inranktech.com/all-urls.txt): Flat text manifest of all canonical URLs.");
   lines.push("- [Full AI Context Document](https://inranktech.com/llms-full.txt): Deep knowledge graph and technical documentation.");
