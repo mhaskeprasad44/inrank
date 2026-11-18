@@ -44,6 +44,7 @@ const itemsToCopy = [
   'website-design-company-in-pune.html',
   'robots.txt',
   'sitemap.xml',
+  'all-urls.txt',
   'llms.txt',
   'llms-full.txt',
   'favicon.ico',

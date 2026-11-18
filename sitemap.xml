@@ -1,558 +1,3948 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+        http://www.google.com/schemas/sitemap-image/1.1
+        http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd
+        http://www.google.com/schemas/sitemap-video/1.1
+        http://www.google.com/schemas/sitemap-video/1.1/sitemap-video.xsd">
   <url>
     <loc>https://inranktech.com/</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/Logo.png</image:loc>
+      <image:title>Inrank Technologies Logo - Performance Web Development Company in Pune</image:title>
+      <image:caption>Inrank Technologies corporate brand identity and growth engineering lab in Baner, Pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/orthopedicanklefootspecialist.png</image:loc>
+      <image:title>Orthopedic &amp; Ankle Foot Specialist Clinic</image:title>
+      <image:caption>Orthopedic &amp; Ankle Foot Specialist Clinic</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hcpnest.png</image:loc>
+      <image:title>HCP Nest</image:title>
+      <image:caption>HCP Nest - Inrank Technologies high-performance digital solutions in Pune</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/Wc9UoQiWpxI/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>High Accuracy Mini Milling Machine - CyTOS Pune CNC Automation</video:title>
+      <video:description>TITAN machining process for soft and hard metals and non-metals (metallic die, plastic, FR4, nylon, wood, brass, aluminium). Manufactured by CyTOS Pune with digital platform engineered by Inrank Technologies.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=Wc9UoQiWpxI</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/Wc9UoQiWpxI</video:player_loc>
+      <video:duration>132</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://inranktech.com">Inrank Technologies</video:uploader>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/VFu1gzPGcH0/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Automatic Thermal Foam Welding Machine - CyTOS Industrial Automation</video:title>
+      <video:description>Thermal fusion foam welding machine with 700x700mm platen. Welds 10mm to 250mm thick EPE/EVA/XLPE foam in seconds with 100% glue-free molecular bonding. Web architecture by Inrank Technologies.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=VFu1gzPGcH0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/VFu1gzPGcH0</video:player_loc>
+      <video:duration>83</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://inranktech.com">Inrank Technologies</video:uploader>
+    </video:video>
   </url>
   <url>
     <loc>https://inranktech.com/website-design-company-in-pune.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/Logo.png</image:loc>
+      <image:title>Inrank Technologies Logo - Performance Web Development Company in Pune</image:title>
+      <image:caption>Inrank Technologies corporate brand identity and growth engineering lab in Baner, Pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-seo.jpg</image:loc>
+      <image:title>Web Designing Company in Pune | Website Development Services | Inrank</image:title>
+      <image:caption>Web Designing Company in Pune | Website Development Services | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/digital-marketing-agency-in-pune.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/Logo.png</image:loc>
+      <image:title>Inrank Technologies Logo - Performance Web Development Company in Pune</image:title>
+      <image:caption>Inrank Technologies corporate brand identity and growth engineering lab in Baner, Pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-seo.jpg</image:loc>
+      <image:title>Digital Marketing Agency in Pune | Performance SEO &amp; Paid Ads | Inrank</image:title>
+      <image:caption>Digital Marketing Agency in Pune | Performance SEO &amp; Paid Ads | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/about.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/Logo.png</image:loc>
+      <image:title>Inrank Technologies Logo - Performance Web Development Company in Pune</image:title>
+      <image:caption>Inrank Technologies corporate brand identity and growth engineering lab in Baner, Pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>About Inrank Technologies | Baner, Pune Engineering Lab</image:title>
+      <image:caption>About Inrank Technologies | Baner, Pune Engineering Lab - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/Logo.png</image:loc>
+      <image:title>Inrank Technologies Logo - Performance Web Development Company in Pune</image:title>
+      <image:caption>Inrank Technologies corporate brand identity and growth engineering lab in Baner, Pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-website-development.webp</image:loc>
+      <image:title>Inrank Growth Services Architecture</image:title>
+      <image:caption>Inrank Growth Services Architecture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>All 27 Services &amp; 4 Growth Pillars | Inrank Technologies Pune</image:title>
+      <image:caption>All 27 Services &amp; 4 Growth Pillars | Inrank Technologies Pune - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/pricing.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/Logo.png</image:loc>
+      <image:title>Inrank Technologies Logo - Performance Web Development Company in Pune</image:title>
+      <image:caption>Inrank Technologies corporate brand identity and growth engineering lab in Baner, Pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-conversion-optimization.webp</image:loc>
+      <image:title>Inrank Transparent Pricing Packages</image:title>
+      <image:caption>Inrank Transparent Pricing Packages</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Transparent Pricing Packages | Inrank Technologies Pune</image:title>
+      <image:caption>Transparent Pricing Packages | Inrank Technologies Pune - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/our-work.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/Logo.png</image:loc>
+      <image:title>Inrank Technologies Logo - Performance Web Development Company in Pune</image:title>
+      <image:caption>Inrank Technologies corporate brand identity and growth engineering lab in Baner, Pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/portfolio/screenshots/greytothegreen.webp</image:loc>
+      <image:title>Inrank Production Web Deployments</image:title>
+      <image:caption>Inrank Production Web Deployments</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/portfolio/screenshots/vasroventures.webp</image:loc>
+      <image:title>Vasro Ventures - Contemporary Fashion &amp; Apparel Storefront Screenshot</image:title>
+      <image:caption>Vasro Ventures - Contemporary Fashion &amp; Apparel Storefront Screenshot</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/Wc9UoQiWpxI/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>High Accuracy Mini Milling Machine - CyTOS Pune CNC Automation</video:title>
+      <video:description>TITAN machining process for soft and hard metals and non-metals (metallic die, plastic, FR4, nylon, wood, brass, aluminium). Manufactured by CyTOS Pune with digital platform engineered by Inrank Technologies.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=Wc9UoQiWpxI</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/Wc9UoQiWpxI</video:player_loc>
+      <video:duration>132</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://inranktech.com">Inrank Technologies</video:uploader>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/VFu1gzPGcH0/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Automatic Thermal Foam Welding Machine - CyTOS Industrial Automation</video:title>
+      <video:description>Thermal fusion foam welding machine with 700x700mm platen. Welds 10mm to 250mm thick EPE/EVA/XLPE foam in seconds with 100% glue-free molecular bonding. Web architecture by Inrank Technologies.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=VFu1gzPGcH0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/VFu1gzPGcH0</video:player_loc>
+      <video:duration>83</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://inranktech.com">Inrank Technologies</video:uploader>
+    </video:video>
   </url>
   <url>
     <loc>https://inranktech.com/case-studies.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/Logo.png</image:loc>
+      <image:title>Inrank Technologies Logo - Performance Web Development Company in Pune</image:title>
+      <image:caption>Inrank Technologies corporate brand identity and growth engineering lab in Baner, Pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-seo.webp</image:loc>
+      <image:title>Inrank Documented Outcomes</image:title>
+      <image:caption>Inrank Documented Outcomes</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/portfolio/screenshots/greytothegreen.webp</image:loc>
+      <image:title>Grey To The Green - Plant-Powered Home Care &amp; Biotech Formulations Screenshot</image:title>
+      <image:caption>Grey To The Green - Plant-Powered Home Care &amp; Biotech Formulations Screenshot</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/Wc9UoQiWpxI/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>High Accuracy Mini Milling Machine - CyTOS Pune CNC Automation</video:title>
+      <video:description>TITAN machining process for soft and hard metals and non-metals (metallic die, plastic, FR4, nylon, wood, brass, aluminium). Manufactured by CyTOS Pune with digital platform engineered by Inrank Technologies.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=Wc9UoQiWpxI</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/Wc9UoQiWpxI</video:player_loc>
+      <video:duration>132</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://inranktech.com">Inrank Technologies</video:uploader>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/VFu1gzPGcH0/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Automatic Thermal Foam Welding Machine - CyTOS Industrial Automation</video:title>
+      <video:description>Thermal fusion foam welding machine with 700x700mm platen. Welds 10mm to 250mm thick EPE/EVA/XLPE foam in seconds with 100% glue-free molecular bonding. Web architecture by Inrank Technologies.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=VFu1gzPGcH0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/VFu1gzPGcH0</video:player_loc>
+      <video:duration>83</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://inranktech.com">Inrank Technologies</video:uploader>
+    </video:video>
   </url>
   <url>
     <loc>https://inranktech.com/blog.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/Logo.png</image:loc>
+      <image:title>Inrank Technologies Logo - Performance Web Development Company in Pune</image:title>
+      <image:caption>Inrank Technologies corporate brand identity and growth engineering lab in Baner, Pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-seo.jpg</image:loc>
+      <image:title>best digital marketing agency in pune</image:title>
+      <image:caption>best digital marketing agency in pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-website-development.jpg</image:loc>
+      <image:title>Next.js 15 React 19 Edge AI Web Architecture</image:title>
+      <image:caption>Next.js 15 React 19 Edge AI Web Architecture</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/contact.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/Logo.png</image:loc>
+      <image:title>Inrank Technologies Logo - Performance Web Development Company in Pune</image:title>
+      <image:caption>Inrank Technologies corporate brand identity and growth engineering lab in Baner, Pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Contact Inrank Technologies Pune | Free Consultation &amp; Growth Audit</image:title>
+      <image:caption>Contact Inrank Technologies Pune | Free Consultation &amp; Growth Audit - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/privacy-policy.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.30</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/Logo.png</image:loc>
+      <image:title>Inrank Technologies Logo - Performance Web Development Company in Pune</image:title>
+      <image:caption>Inrank Technologies corporate brand identity and growth engineering lab in Baner, Pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/logo.png</image:loc>
+      <image:title>Privacy Policy | Inrank Technologies Pune</image:title>
+      <image:caption>Privacy Policy | Inrank Technologies Pune - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/terms-and-conditions.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.30</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/Logo.png</image:loc>
+      <image:title>Inrank Technologies Logo - Performance Web Development Company in Pune</image:title>
+      <image:caption>Inrank Technologies corporate brand identity and growth engineering lab in Baner, Pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/logo.png</image:loc>
+      <image:title>Terms and Conditions | Inrank Technologies Pune</image:title>
+      <image:caption>Terms and Conditions | Inrank Technologies Pune - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/ai-ranking-citations.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>AI Ranking Citations | Knowledge Graph &amp; Entity Authority | Inrank</image:title>
+      <image:caption>AI Ranking Citations | Knowledge Graph &amp; Entity Authority | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/ai-seo-services.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>AI SEO Services in Pune | Generative Engine Optimization | Inrank</image:title>
+      <image:caption>AI SEO Services in Pune | Generative Engine Optimization | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/brand-naming-agency.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Brand Naming Agency in Pune | Inrank Technologies</image:title>
+      <image:caption>Brand Naming Agency in Pune | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/brochure-design-services.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Brochure Design Services in Pune | Inrank Technologies</image:title>
+      <image:caption>Brochure Design Services in Pune | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/content-marketing-services.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Content Marketing Services in Pune | Inrank Technologies</image:title>
+      <image:caption>Content Marketing Services in Pune | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/conversion-rate-optimization-services.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Conversion Rate Optimization Services in Pune | CRO Agency | Inrank</image:title>
+      <image:caption>Conversion Rate Optimization Services in Pune | CRO Agency | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/corporate-logo-design.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Corporate Logo Design Company in Pune | Brand Identity | Inrank</image:title>
+      <image:caption>Corporate Logo Design Company in Pune | Brand Identity | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/custom-website-development.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Custom Website Development Company in Pune | Next.js &amp; Web Lab | Inrank</image:title>
+      <image:caption>Custom Website Development Company in Pune | Next.js &amp; Web Lab | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/ecommerce-website-development-company.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Ecommerce Website Development Company in Pune | Custom E-Com | Inrank</image:title>
+      <image:caption>Ecommerce Website Development Company in Pune | Custom E-Com | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/geo-seo-agency.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>GEO SEO Agency in Pune | Generative Engine Optimization | Inrank</image:title>
+      <image:caption>GEO SEO Agency in Pune | Generative Engine Optimization | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/google-ads-agency.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Google Ads Agency in Pune | High-ROAS Google Ads Management | Inrank</image:title>
+      <image:caption>Google Ads Agency in Pune | High-ROAS Google Ads Management | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/google-my-business-services.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Google My Business Services in Pune | GMB &amp; Local SEO | Inrank</image:title>
+      <image:caption>Google My Business Services in Pune | GMB &amp; Local SEO | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/influencer-marketing-agency.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Influencer Marketing Agency in Pune | Inrank Technologies</image:title>
+      <image:caption>Influencer Marketing Agency in Pune | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/landing-page-design-services.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Landing Page Design Services in Pune | Inrank Technologies</image:title>
+      <image:caption>Landing Page Design Services in Pune | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/letterhead-stationery-design.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Letterhead &amp; Stationery Design in Pune | Inrank Technologies</image:title>
+      <image:caption>Letterhead &amp; Stationery Design in Pune | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/link-building-services.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Link Building Services in Pune | High-Authority Backlinks | Inrank</image:title>
+      <image:caption>Link Building Services in Pune | High-Authority Backlinks | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/linkedin-marketing-agency.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>LinkedIn Marketing Agency in Pune | Inrank Technologies</image:title>
+      <image:caption>LinkedIn Marketing Agency in Pune | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/luxury-business-card-design.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Luxury Business Card Design in Pune | Inrank Technologies</image:title>
+      <image:caption>Luxury Business Card Design in Pune | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/meta-ads-agency.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Meta Ads Agency in Pune | Instagram &amp; Facebook Lead Generation | Inrank</image:title>
+      <image:caption>Meta Ads Agency in Pune | Instagram &amp; Facebook Lead Generation | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/mobile-app-development.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Mobile App Development in Pune | Inrank Technologies</image:title>
+      <image:caption>Mobile App Development in Pune | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/ppc-services.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>PPC Services in Pune | Google Ads &amp; Performance Marketing | Inrank</image:title>
+      <image:caption>PPC Services in Pune | Google Ads &amp; Performance Marketing | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/seo-company-pune.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>SEO Company in Pune | High-Performance Search Engineering | Inrank</image:title>
+      <image:caption>SEO Company in Pune | High-Performance Search Engineering | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/shopify-store-development.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Shopify Store Development in Pune | Shopify Experts | Inrank</image:title>
+      <image:caption>Shopify Store Development in Pune | Shopify Experts | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/social-media-marketing-services.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Social Media Marketing Services in Pune | Inrank Technologies</image:title>
+      <image:caption>Social Media Marketing Services in Pune | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/ui-ux-design-services.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>UI UX Design Services in Pune | Web &amp; Mobile Product Design | Inrank</image:title>
+      <image:caption>UI UX Design Services in Pune | Web &amp; Mobile Product Design | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/website-maintenance-services.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>Website Maintenance Services in Pune | Inrank Technologies</image:title>
+      <image:caption>Website Maintenance Services in Pune | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/services/wordpress-development-services.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/og-image.jpg</image:loc>
+      <image:title>WordPress Development Services in Pune | Custom WordPress | Inrank</image:title>
+      <image:caption>WordPress Development Services in Pune | Custom WordPress | Inrank - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/our-work/cytos.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/portfolio/screenshots/cytos.webp</image:loc>
+      <image:title>CyTOS Machines UI/UX Production Interface</image:title>
+      <image:caption>CyTOS Machines UI/UX Production Interface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>CyTOS Machines - UI/UX Design System &amp; Hardware Showcase | Inrank 2.0</image:title>
+      <image:caption>CyTOS Machines - UI/UX Design System &amp; Hardware Showcase | Inrank 2.0 - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/Wc9UoQiWpxI/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>High Accuracy Mini Milling Machine - CyTOS Pune CNC Automation</video:title>
+      <video:description>TITAN machining process for soft and hard metals and non-metals (metallic die, plastic, FR4, nylon, wood, brass, aluminium). Manufactured by CyTOS Pune with digital platform engineered by Inrank Technologies.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=Wc9UoQiWpxI</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/Wc9UoQiWpxI</video:player_loc>
+      <video:duration>132</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://inranktech.com">Inrank Technologies</video:uploader>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/VFu1gzPGcH0/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Automatic Thermal Foam Welding Machine - CyTOS Industrial Automation</video:title>
+      <video:description>Thermal fusion foam welding machine with 700x700mm platen. Welds 10mm to 250mm thick EPE/EVA/XLPE foam in seconds with 100% glue-free molecular bonding. Web architecture by Inrank Technologies.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=VFu1gzPGcH0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/VFu1gzPGcH0</video:player_loc>
+      <video:duration>83</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://inranktech.com">Inrank Technologies</video:uploader>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/vvbIlXhe4BE/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>High Speed Industrial PCB Drilling Machine - CyTOS Production Platform</video:title>
+      <video:description>Commercial PCB manufacturing machine with pneumatic ATC and high-speed micro-drilling up to 160 hits/min on multilayer panels. Deployed by Inrank Technologies.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=vvbIlXhe4BE</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/vvbIlXhe4BE</video:player_loc>
+      <video:duration>101</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://inranktech.com">Inrank Technologies</video:uploader>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/5qZVqYg9CYc/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Chemical-Free PCB Prototyping Machine - Laboratory CNC Demonstration</video:title>
+      <video:description>Compact 100% chemical-free rapid prototyper for research labs and colleges with auto-leveling surface height compensation. Case study on Inrank Technologies.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=5qZVqYg9CYc</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/5qZVqYg9CYc</video:player_loc>
+      <video:duration>119</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://inranktech.com">Inrank Technologies</video:uploader>
+    </video:video>
   </url>
   <url>
     <loc>https://inranktech.com/our-work/dravyafinancial.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/portfolio/screenshots/dravyafinancial.webp</image:loc>
+      <image:title>Dravya Financial Solutions Pvt Ltd UI/UX Production Interface</image:title>
+      <image:caption>Dravya Financial Solutions Pvt Ltd UI/UX Production Interface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Dravya Financial - Corporate UI/UX Design System &amp; Fintech Portal | Inrank 2.0</image:title>
+      <image:caption>Dravya Financial - Corporate UI/UX Design System &amp; Fintech Portal | Inrank 2.0 - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/our-work/fludio.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/portfolio/screenshots/fludio.webp</image:loc>
+      <image:title>Fludio Design UI/UX Production Interface</image:title>
+      <image:caption>Fludio Design UI/UX Production Interface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Fludio Design - Architectural UI/UX &amp; Aquatic Portfolio | Inrank 2.0</image:title>
+      <image:caption>Fludio Design - Architectural UI/UX &amp; Aquatic Portfolio | Inrank 2.0 - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/our-work/greytothegreen.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/portfolio/screenshots/greytothegreen.webp</image:loc>
+      <image:title>Grey To The Green UI/UX Production Interface</image:title>
+      <image:caption>Grey To The Green UI/UX Production Interface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Grey To The Green - D2C E-Commerce UI/UX &amp; Botanical Storefront | Inrank 2.0</image:title>
+      <image:caption>Grey To The Green - D2C E-Commerce UI/UX &amp; Botanical Storefront | Inrank 2.0 - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/our-work/hcpnest.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/portfolio/screenshots/hcpnest.webp</image:loc>
+      <image:title>HCP Nest UI/UX Production Interface</image:title>
+      <image:caption>HCP Nest UI/UX Production Interface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>HCP Nest - Healthcare Portal UI/UX &amp; Job Engine | Inrank 2.0</image:title>
+      <image:caption>HCP Nest - Healthcare Portal UI/UX &amp; Job Engine | Inrank 2.0 - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/our-work/hiragrafix.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/portfolio/screenshots/hiragrafix.webp</image:loc>
+      <image:title>Hira Grafix Solutions UI/UX Production Interface</image:title>
+      <image:caption>Hira Grafix Solutions UI/UX Production Interface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Hira Grafix - Luxury Packaging UI/UX &amp; Print Portfolio | Inrank 2.0</image:title>
+      <image:caption>Hira Grafix - Luxury Packaging UI/UX &amp; Print Portfolio | Inrank 2.0 - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/our-work/orthopedicanklefootspecialist.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/portfolio/screenshots/orthopedicanklefootspecialist.webp</image:loc>
+      <image:title>Dr. Shyam Thakkar - ARTICUL8 Foot &amp; Ankle Clinic UI/UX Production Interface</image:title>
+      <image:caption>Dr. Shyam Thakkar - ARTICUL8 Foot &amp; Ankle Clinic UI/UX Production Interface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Dr. Shyam Thakkar - Clinical UI/UX &amp; Patient Portal | Inrank 2.0</image:title>
+      <image:caption>Dr. Shyam Thakkar - Clinical UI/UX &amp; Patient Portal | Inrank 2.0 - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/our-work/riituinstitution.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/portfolio/screenshots/riituinstitution.webp</image:loc>
+      <image:title>Riitu Institution UI/UX Production Interface</image:title>
+      <image:caption>Riitu Institution UI/UX Production Interface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Riitu Institution - EdTech UI/UX &amp; Academic Admissions Portal | Inrank 2.0</image:title>
+      <image:caption>Riitu Institution - EdTech UI/UX &amp; Academic Admissions Portal | Inrank 2.0 - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/our-work/shetkarifoodstuff.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/portfolio/screenshots/shetkarifoodstuff.webp</image:loc>
+      <image:title>Shetkari Foodstuff Pvt Ltd UI/UX Production Interface</image:title>
+      <image:caption>Shetkari Foodstuff Pvt Ltd UI/UX Production Interface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Shetkari Foodstuff - Global Agro Export UI/UX &amp; Trade Portal | Inrank 2.0</image:title>
+      <image:caption>Shetkari Foodstuff - Global Agro Export UI/UX &amp; Trade Portal | Inrank 2.0 - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/our-work/vasroventures.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/portfolio/screenshots/vasroventures.webp</image:loc>
+      <image:title>Vasro Ventures UI/UX Production Interface</image:title>
+      <image:caption>Vasro Ventures UI/UX Production Interface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Vasro Ventures - Editorial Fashion UI/UX &amp; Apparel Storefront | Inrank 2.0</image:title>
+      <image:caption>Vasro Ventures - Editorial Fashion UI/UX &amp; Apparel Storefront | Inrank 2.0 - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/case-studies/cytos.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>CyTOS Machines Case Study: +314% Industrial RFQs | Inrank Technologies</image:title>
+      <image:caption>CyTOS Machines Case Study: +314% Industrial RFQs | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/Wc9UoQiWpxI/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>High Accuracy Mini Milling Machine - CyTOS Pune CNC Automation</video:title>
+      <video:description>TITAN machining process for soft and hard metals and non-metals (metallic die, plastic, FR4, nylon, wood, brass, aluminium). Manufactured by CyTOS Pune with digital platform engineered by Inrank Technologies.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=Wc9UoQiWpxI</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/Wc9UoQiWpxI</video:player_loc>
+      <video:duration>132</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://inranktech.com">Inrank Technologies</video:uploader>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/VFu1gzPGcH0/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Automatic Thermal Foam Welding Machine - CyTOS Industrial Automation</video:title>
+      <video:description>Thermal fusion foam welding machine with 700x700mm platen. Welds 10mm to 250mm thick EPE/EVA/XLPE foam in seconds with 100% glue-free molecular bonding. Web architecture by Inrank Technologies.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=VFu1gzPGcH0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/VFu1gzPGcH0</video:player_loc>
+      <video:duration>83</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://inranktech.com">Inrank Technologies</video:uploader>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/vvbIlXhe4BE/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>High Speed Industrial PCB Drilling Machine - CyTOS Production Platform</video:title>
+      <video:description>Commercial PCB manufacturing machine with pneumatic ATC and high-speed micro-drilling up to 160 hits/min on multilayer panels. Deployed by Inrank Technologies.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=vvbIlXhe4BE</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/vvbIlXhe4BE</video:player_loc>
+      <video:duration>101</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://inranktech.com">Inrank Technologies</video:uploader>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/5qZVqYg9CYc/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Chemical-Free PCB Prototyping Machine - Laboratory CNC Demonstration</video:title>
+      <video:description>Compact 100% chemical-free rapid prototyper for research labs and colleges with auto-leveling surface height compensation. Case study on Inrank Technologies.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=5qZVqYg9CYc</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/5qZVqYg9CYc</video:player_loc>
+      <video:duration>119</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://inranktech.com">Inrank Technologies</video:uploader>
+    </video:video>
   </url>
   <url>
     <loc>https://inranktech.com/case-studies/dravyafinancial.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Dravya Financial Case Study: ₹45Cr+ Capital Deals | Inrank Technologies</image:title>
+      <image:caption>Dravya Financial Case Study: ₹45Cr+ Capital Deals | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/case-studies/fludio.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Fludio Design Case Study: ₹2.8Cr+ Projects Won | Inrank Technologies</image:title>
+      <image:caption>Fludio Design Case Study: ₹2.8Cr+ Projects Won | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/case-studies/greytothegreen.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Grey To The Green Case Study: 4.8x Ad ROAS &amp; 3,200+ Orders | Inrank Technologies</image:title>
+      <image:caption>Grey To The Green Case Study: 4.8x Ad ROAS &amp; 3,200+ Orders | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/case-studies/hcpnest.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>HCP Nest Case Study: 1,400+ Clinical Placements | Inrank Technologies</image:title>
+      <image:caption>HCP Nest Case Study: 1,400+ Clinical Placements | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/case-studies/hiragrafix.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Hira Grafix Case Study: 250+ Corporate Clients &amp; +185% Search | Inrank Technologies</image:title>
+      <image:caption>Hira Grafix Case Study: 250+ Corporate Clients &amp; +185% Search | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/case-studies/orthopedicanklefootspecialist.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Dr. Shyam Thakkar Case Study: 3,500+ Surgeries &amp; #1 Google 3-Pack | Inrank Technologies</image:title>
+      <image:caption>Dr. Shyam Thakkar Case Study: 3,500+ Surgeries &amp; #1 Google 3-Pack | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/case-studies/riituinstitution.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Riitu Institution Case Study: 650+ Enrolled &amp; 3.8x ROAS | Inrank Technologies</image:title>
+      <image:caption>Riitu Institution Case Study: 650+ Enrolled &amp; 3.8x ROAS | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/case-studies/shetkarifoodstuff.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Shetkari Foodstuff Case Study: ₹4.2Cr+ Export Orders | Inrank Technologies</image:title>
+      <image:caption>Shetkari Foodstuff Case Study: ₹4.2Cr+ Export Orders | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/case-studies/vasroventures.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/img/og-preview.png</image:loc>
+      <image:title>Vasro Ventures Case Study: 4.2x ROAS &amp; 2,800+ Orders | Inrank Technologies</image:title>
+      <image:caption>Vasro Ventures Case Study: 4.2x ROAS &amp; 2,800+ Orders | Inrank Technologies - Visual preview for Inrank Technologies</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/ai-ranking-citations-knowledge-graph-optimization.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-ai-ranking-citations.jpg</image:loc>
+      <image:title>ai ranking citations</image:title>
+      <image:caption>ai ranking citations</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/proof-search-rankings.jpg</image:loc>
+      <image:title>Knowledge Graph Entity Corroboration and Citation Map</image:title>
+      <image:caption>Knowledge Graph Entity Corroboration and Citation Map</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-ai-seo-agency.jpg</image:loc>
+      <image:title>ai seo agency</image:title>
+      <image:caption>ai seo agency</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/ai-seo-agency-generative-optimization.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-ai-seo-agency.jpg</image:loc>
+      <image:title>ai seo agency</image:title>
+      <image:caption>ai seo agency</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-entity-seo.jpg</image:loc>
+      <image:title>AI Search Engine Generative Optimization Citation Architecture</image:title>
+      <image:caption>AI Search Engine Generative Optimization Citation Architecture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-geo-seo-agency.jpg</image:loc>
+      <image:title>geo seo agency</image:title>
+      <image:caption>geo seo agency</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/autonomous-ai-search-agents-deep-research-optimization.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-ai-ranking-citations.jpg</image:loc>
+      <image:title>Autonomous AI Search Agents &amp; Deep Research Citations Architecture</image:title>
+      <image:caption>Autonomous AI Search Agents &amp; Deep Research Citations Architecture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-geo-seo-agency.jpg</image:loc>
+      <image:title>Generative Engine Optimization GEO 2.0</image:title>
+      <image:caption>Generative Engine Optimization GEO 2.0</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-website-development.jpg</image:loc>
+      <image:title>Next.js 15 React 19 Edge AI Web Architecture</image:title>
+      <image:caption>Next.js 15 React 19 Edge AI Web Architecture</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/content-marketing-editorial-authority-and-information-gain.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-content-marketing.jpg</image:loc>
+      <image:title>content marketing</image:title>
+      <image:caption>content marketing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-content-topic-clusters.jpg</image:loc>
+      <image:title>Content Marketing Editorial Strategy Calendar and Topic Cluster Architecture</image:title>
+      <image:caption>Content Marketing Editorial Strategy Calendar and Topic Cluster Architecture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-email-marketing.jpg</image:loc>
+      <image:title>email marketing</image:title>
+      <image:caption>email marketing</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/conversion-rate-optimization-engineering.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-conversion-optimization.jpg</image:loc>
+      <image:title>conversion rate optimization</image:title>
+      <image:caption>conversion rate optimization</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-landing-pages.jpg</image:loc>
+      <image:title>Conversion Rate Optimization User Journey and Heatmap Wireframe</image:title>
+      <image:caption>Conversion Rate Optimization User Journey and Heatmap Wireframe</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-shopify-development.jpg</image:loc>
+      <image:title>Shopify development</image:title>
+      <image:caption>Shopify development</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/cross-platform-mobile-app-engineering.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-mobile-app-development.jpg</image:loc>
+      <image:title>mobile app development</image:title>
+      <image:caption>mobile app development</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-mobile-app-engineering.jpg</image:loc>
+      <image:title>Mobile App Engineering Workspace with iOS and Android UI Mockups</image:title>
+      <image:caption>Mobile App Engineering Workspace with iOS and Android UI Mockups</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-website-development.jpg</image:loc>
+      <image:title>website development</image:title>
+      <image:caption>website development</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/custom-shopify-development-guide.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-shopify-development.jpg</image:loc>
+      <image:title>Shopify development</image:title>
+      <image:caption>Shopify development</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-shopify-speed-optimization.jpg</image:loc>
+      <image:title>Shopify Liquid Theme Optimization and Speed Benchmark</image:title>
+      <image:caption>Shopify Liquid Theme Optimization and Speed Benchmark</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-conversion-optimization.jpg</image:loc>
+      <image:title>conversion rate optimization</image:title>
+      <image:caption>conversion rate optimization</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/custom-website-design-frameworks.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-custom-website-design.jpg</image:loc>
+      <image:title>custom website design</image:title>
+      <image:caption>custom website design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-landing-pages.jpg</image:loc>
+      <image:title>Custom UI/UX Design System to Production Code Architecture</image:title>
+      <image:caption>Custom UI/UX Design System to Production Code Architecture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-website-development.jpg</image:loc>
+      <image:title>website development</image:title>
+      <image:caption>website development</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/enterprise-email-marketing-and-lifecycle-automation.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-email-marketing.jpg</image:loc>
+      <image:title>email marketing</image:title>
+      <image:caption>email marketing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-email-automation-flow.jpg</image:loc>
+      <image:title>Enterprise Email Marketing Automation Customer Engagement Journey Flowchart</image:title>
+      <image:caption>Enterprise Email Marketing Automation Customer Engagement Journey Flowchart</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-content-marketing.jpg</image:loc>
+      <image:title>content marketing</image:title>
+      <image:caption>content marketing</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/enterprise-logo-design-and-visual-systems.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-logo-design.jpg</image:loc>
+      <image:title>logo design</image:title>
+      <image:caption>logo design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-logo-design-system.jpg</image:loc>
+      <image:title>Visual Identity Design System with Golden Ratio Grid and Vector Geometry</image:title>
+      <image:caption>Visual Identity Design System with Golden Ratio Grid and Vector Geometry</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-brand-name.jpg</image:loc>
+      <image:title>brand name</image:title>
+      <image:caption>brand name</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/enterprise-website-maintenance-guide.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-website-maintenance.jpg</image:loc>
+      <image:title>website maintenance</image:title>
+      <image:caption>website maintenance</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-website-performance.jpg</image:loc>
+      <image:title>Enterprise Website Maintenance Monitoring and Security Pipeline</image:title>
+      <image:caption>Enterprise Website Maintenance Monitoring and Security Pipeline</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-website-development.jpg</image:loc>
+      <image:title>website development</image:title>
+      <image:caption>website development</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/executive-letterhead-design-and-corporate-stationery-systems.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-letterhead-design.jpg</image:loc>
+      <image:title>letterhead design</image:title>
+      <image:caption>letterhead design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-letterhead-stationery.jpg</image:loc>
+      <image:title>Executive Corporate Stationery Set with Letterhead, Folder and Luxury Pen</image:title>
+      <image:caption>Executive Corporate Stationery Set with Letterhead, Folder and Luxury Pen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-brand-name.jpg</image:loc>
+      <image:title>brand name</image:title>
+      <image:caption>brand name</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/generative-engine-optimization-geo-2-0-playbook.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-geo-seo-agency.jpg</image:loc>
+      <image:title>Generative Engine Optimization (GEO) 2.0 Technical Playbook</image:title>
+      <image:caption>Generative Engine Optimization (GEO) 2.0 Technical Playbook</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-ai-ranking-citations.jpg</image:loc>
+      <image:title>Autonomous AI Search Agents Deep Research</image:title>
+      <image:caption>Autonomous AI Search Agents Deep Research</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-seo-in-2026.jpg</image:loc>
+      <image:title>Search Engine Optimization 2026 Guide</image:title>
+      <image:caption>Search Engine Optimization 2026 Guide</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/geo-seo-agency-generative-engine-optimization.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-geo-seo-agency.jpg</image:loc>
+      <image:title>geo seo agency</image:title>
+      <image:caption>geo seo agency</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-programmatic-seo.jpg</image:loc>
+      <image:title>Generative Engine Optimization Vectorized Entity Blueprint</image:title>
+      <image:caption>Generative Engine Optimization Vectorized Entity Blueprint</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-ai-seo-agency.jpg</image:loc>
+      <image:title>ai seo agency</image:title>
+      <image:caption>ai seo agency</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/google-ads-scaling-blueprint.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-google-ads.jpg</image:loc>
+      <image:title>Google Ads management</image:title>
+      <image:caption>Google Ads management</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-google-ads-shopify.jpg</image:loc>
+      <image:title>Google Ads Target ROAS Bid Scaling and Query Sculpting</image:title>
+      <image:caption>Google Ads Target ROAS Bid Scaling and Query Sculpting</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-social-media-marketing.jpg</image:loc>
+      <image:title>social media marketing</image:title>
+      <image:caption>social media marketing</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/google-business-profile-local-pack-guide.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-gmb-optimization.jpg</image:loc>
+      <image:title>Google Business Profile optimization</image:title>
+      <image:caption>Google Business Profile optimization</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/proof-search-rankings.jpg</image:loc>
+      <image:title>Google Local 3-Pack Geo-Grid Ranking Prominence Graph</image:title>
+      <image:caption>Google Local 3-Pack Geo-Grid Ranking Prominence Graph</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-seo-in-2026.jpg</image:loc>
+      <image:title>search engine optimization</image:title>
+      <image:caption>search engine optimization</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/high-converting-landing-page-engineering.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-landing-pages.jpg</image:loc>
+      <image:title>landing pages</image:title>
+      <image:caption>landing pages</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-landing-pages.jpg</image:loc>
+      <image:title>High-Converting Landing Page Above-The-Fold Information Hierarchy</image:title>
+      <image:caption>High-Converting Landing Page Above-The-Fold Information Hierarchy</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-website-development.jpg</image:loc>
+      <image:title>website development</image:title>
+      <image:caption>website development</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/high-impact-brochure-designing-and-print-architecture.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-brochure-designing.jpg</image:loc>
+      <image:title>brochure designing</image:title>
+      <image:caption>brochure designing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-brochure-design-mockup.jpg</image:loc>
+      <image:title>Corporate Sales Brochure Mockup with Open Editorial Infographic Spreads</image:title>
+      <image:caption>Corporate Sales Brochure Mockup with Open Editorial Infographic Spreads</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-brand-name.jpg</image:loc>
+      <image:title>brand name</image:title>
+      <image:caption>brand name</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/high-performance-wordpress-engineering.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-wordpress-development.jpg</image:loc>
+      <image:title>WordPress development</image:title>
+      <image:caption>WordPress development</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-wordpress-core-web-vitals.jpg</image:loc>
+      <image:title>WordPress Server-Side Object Caching and Asset Extraction</image:title>
+      <image:caption>WordPress Server-Side Object Caching and Asset Extraction</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-website-development.jpg</image:loc>
+      <image:title>website development</image:title>
+      <image:caption>website development</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/influencer-marketing-guide.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-influencer-marketing.jpg</image:loc>
+      <image:title>influencer marketing</image:title>
+      <image:caption>influencer marketing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-influencer-analytics.jpg</image:loc>
+      <image:title>Creator Campaign Attribution and Coupon Code ROI Dashboard</image:title>
+      <image:caption>Creator Campaign Attribution and Coupon Code ROI Dashboard</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-social-media-marketing.jpg</image:loc>
+      <image:title>social media marketing</image:title>
+      <image:caption>social media marketing</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/linkedin-management-guide.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-linkedin-management.jpg</image:loc>
+      <image:title>LinkedIn management</image:title>
+      <image:caption>LinkedIn management</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-linkedin-growth.jpg</image:loc>
+      <image:title>B2B LinkedIn Pipeline and Executive Content Analytics Dashboard</image:title>
+      <image:caption>B2B LinkedIn Pipeline and Executive Content Analytics Dashboard</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-social-media-marketing.jpg</image:loc>
+      <image:title>social media marketing</image:title>
+      <image:caption>social media marketing</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/luxury-business-card-design-and-tactile-print-ergonomics.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-business-card-design.jpg</image:loc>
+      <image:title>business card design</image:title>
+      <image:caption>business card design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-business-card-tactile.jpg</image:loc>
+      <image:title>Luxury Corporate Business Cards with Embossed Gold Foil and Heavyweight Cotton Stock</image:title>
+      <image:caption>Luxury Corporate Business Cards with Embossed Gold Foil and Heavyweight Cotton Stock</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-brand-name.jpg</image:loc>
+      <image:title>brand name</image:title>
+      <image:caption>brand name</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/meta-ads-scaling-mastery.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-meta-ads.jpg</image:loc>
+      <image:title>Meta ads management</image:title>
+      <image:caption>Meta ads management</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/proof-ecommerce-roas.jpg</image:loc>
+      <image:title>Meta Conversions API Server-Side Tracking and Event Feedback</image:title>
+      <image:caption>Meta Conversions API Server-Side Tracking and Event Feedback</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-social-media-marketing.jpg</image:loc>
+      <image:title>social media marketing</image:title>
+      <image:caption>social media marketing</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/modern-web-development-engineering.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-website-development.jpg</image:loc>
+      <image:title>website development</image:title>
+      <image:caption>website development</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-website-performance.jpg</image:loc>
+      <image:title>Modern Web Performance Benchmarks and Core Web Vitals Chart</image:title>
+      <image:caption>Modern Web Performance Benchmarks and Core Web Vitals Chart</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-custom-website-design.jpg</image:loc>
+      <image:title>custom website design</image:title>
+      <image:caption>custom website design</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/nextjs-15-react-19-edge-ai-architecture.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-website-development.jpg</image:loc>
+      <image:title>Next.js 15 &amp; React 19 Edge AI Web Architecture</image:title>
+      <image:caption>Next.js 15 &amp; React 19 Edge AI Web Architecture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-conversion-optimization.jpg</image:loc>
+      <image:title>Conversion Rate Optimization Engineering</image:title>
+      <image:caption>Conversion Rate Optimization Engineering</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-geo-seo-agency.jpg</image:loc>
+      <image:title>Generative Engine Optimization GEO 2.0</image:title>
+      <image:caption>Generative Engine Optimization GEO 2.0</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/omnichannel-ecommerce-architecture-guide.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-e-commerce-development.jpg</image:loc>
+      <image:title>e-commerce development</image:title>
+      <image:caption>e-commerce development</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-gmc-optimization.jpg</image:loc>
+      <image:title>Omnichannel E-Commerce Inventory and Google Merchant Center Feed</image:title>
+      <image:caption>Omnichannel E-Commerce Inventory and Google Merchant Center Feed</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-website-development.jpg</image:loc>
+      <image:title>website development</image:title>
+      <image:caption>website development</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/omnichannel-sms-marketing-and-conversational-messaging.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-sms-marketing.jpg</image:loc>
+      <image:title>sms marketing</image:title>
+      <image:caption>sms marketing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-sms-conversational.jpg</image:loc>
+      <image:title>Conversational SMS Marketing Interface on Smartphone with Real-Time Engagement Analytics</image:title>
+      <image:caption>Conversational SMS Marketing Interface on Smartphone with Real-Time Engagement Analytics</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-content-marketing.jpg</image:loc>
+      <image:title>content marketing</image:title>
+      <image:caption>content marketing</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/ppc-management-blueprint.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-pay-per-click-ppc.jpg</image:loc>
+      <image:title>pay per click management</image:title>
+      <image:caption>pay per click management</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-omnichannel-ad-strategy.jpg</image:loc>
+      <image:title>PPC Bid Strategy and Quality Score Optimization Framework</image:title>
+      <image:caption>PPC Bid Strategy and Quality Score Optimization Framework</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-social-media-marketing.jpg</image:loc>
+      <image:title>social media marketing</image:title>
+      <image:caption>social media marketing</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/seo-complete-guide.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-seo-in-2026.jpg</image:loc>
+      <image:title>search engine optimization</image:title>
+      <image:caption>search engine optimization</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-entity-seo.jpg</image:loc>
+      <image:title>Entity SEO Semantic Knowledge Graph Architecture Diagram</image:title>
+      <image:caption>Entity SEO Semantic Knowledge Graph Architecture Diagram</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-gmb-optimization.jpg</image:loc>
+      <image:title>Google Business Profile optimization</image:title>
+      <image:caption>Google Business Profile optimization</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/social-media-marketing-guide.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-social-media-marketing.jpg</image:loc>
+      <image:title>social media marketing</image:title>
+      <image:caption>social media marketing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-omnichannel-ad-strategy.jpg</image:loc>
+      <image:title>Social Media Creative Testing and Performance Funnel Diagram</image:title>
+      <image:caption>Social Media Creative Testing and Performance Funnel Diagram</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-influencer-marketing.jpg</image:loc>
+      <image:title>influencer marketing</image:title>
+      <image:caption>influencer marketing</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/strategic-brand-naming-architecture.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-brand-name.jpg</image:loc>
+      <image:title>brand name</image:title>
+      <image:caption>brand name</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-brand-naming-board.jpg</image:loc>
+      <image:title>Strategic Brand Naming Workspace with Phonetic Cards and Trademark Clearance</image:title>
+      <image:caption>Strategic Brand Naming Workspace with Phonetic Cards and Trademark Clearance</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-logo-design.jpg</image:loc>
+      <image:title>logo design</image:title>
+      <image:caption>logo design</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/top-digital-marketing-web-development-agencies-pune.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-seo.jpg</image:loc>
+      <image:title>best digital marketing agency in pune</image:title>
+      <image:caption>best digital marketing agency in pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/blog-seo-in-2026.jpg</image:loc>
+      <image:title>search engine optimization</image:title>
+      <image:caption>search engine optimization</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-social-media-marketing.jpg</image:loc>
+      <image:title>social media marketing</image:title>
+      <image:caption>social media marketing</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://inranktech.com/blog/whatsapp-marketing-guide.html</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/greytothegreen.png</image:loc>
+      <image:title>Greytothegreen</image:title>
+      <image:caption>Greytothegreen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/cytos.png</image:loc>
+      <image:title>CyTOS Machines</image:title>
+      <image:caption>CyTOS Machines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/shetkari.webp</image:loc>
+      <image:title>Shetkari Foodstuff</image:title>
+      <image:caption>Shetkari Foodstuff</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/fludio.png</image:loc>
+      <image:title>Fludio Design</image:title>
+      <image:caption>Fludio Design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/client-logos/hiragrafix.png</image:loc>
+      <image:title>Hira Grafix</image:title>
+      <image:caption>Hira Grafix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-whatsapp-marketing.jpg</image:loc>
+      <image:title>WhatsApp marketing</image:title>
+      <image:caption>WhatsApp marketing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/proof-lead-generation.jpg</image:loc>
+      <image:title>Automated WhatsApp Conversational Marketing Funnel</image:title>
+      <image:caption>Automated WhatsApp Conversational Marketing Funnel</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://inranktech.com/images/service-social-media-marketing.jpg</image:loc>
+      <image:title>social media marketing</image:title>
+      <image:caption>social media marketing</image:caption>
+    </image:image>
   </url>
 </urlset>
