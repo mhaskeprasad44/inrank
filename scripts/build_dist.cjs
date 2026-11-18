@@ -16,7 +16,7 @@ function copyRecursive(src, dest) {
   if (stats.isDirectory()) {
     fs.mkdirSync(dest, { recursive: true });
     fs.readdirSync(src).forEach(child => {
-      if (child === 'node_modules' || child === 'Old Website' || child === '.git' || child === 'dist') return;
+      if (child === 'node_modules' || child === '.git' || child === 'dist') return;
       copyRecursive(path.join(src, child), path.join(dest, child));
     });
   } else {
@@ -39,6 +39,7 @@ const itemsToCopy = [
   'portfolio.html',
   'pricing.html',
   'privacy-policy.html',
+  'services.html',
   'terms-and-conditions.html',
   'website-design-company-in-pune.html',
   'robots.txt',
