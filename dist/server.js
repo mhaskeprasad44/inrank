@@ -166,33 +166,51 @@ async function handleContact(req, res) {
 app.post('/contact.php', handleContact);
 app.post('/api/contact', handleContact);
 
-// Dynamic clean URL resolver for services, blogs, case studies, and hub pages
+// Dynamic canonical 301 redirect and static file resolver (Google Search Console Optimized)
 app.use((req, res, next) => {
   if (req.method !== 'GET' && req.method !== 'HEAD') return next();
 
   let reqPath = req.path;
-  if (reqPath.endsWith('/') && reqPath.length > 1) {
-    reqPath = reqPath.slice(0, -1);
+
+  // 1. Permanent 301 Redirect for legacy portfolio -> our-work.html
+  if (reqPath === '/portfolio' || reqPath === '/portfolio.html' || reqPath === '/portfolio/') {
+    return res.redirect(301, '/our-work.html');
   }
 
-  // 1. Check exact file first (e.g. /css/corporate.css, /images/logo.png)
+  // 2. Permanent 301 Redirect for hub paths to canonical .html
+  if (reqPath === '/services' || reqPath === '/services/') {
+    return res.redirect(301, '/services.html');
+  }
+  if (reqPath === '/blog' || reqPath === '/blog/') {
+    return res.redirect(301, '/blog.html');
+  }
+  if (reqPath === '/case-studies' || reqPath === '/case-studies/') {
+    return res.redirect(301, '/case-studies.html');
+  }
+  if (reqPath === '/our-work' || reqPath === '/our-work/') {
+    return res.redirect(301, '/our-work.html');
+  }
+
+  // Strip trailing slashes on non-root paths
+  if (reqPath.endsWith('/') && reqPath.length > 1) {
+    const cleanPath = reqPath.slice(0, -1);
+    const htmlCandidate = path.join(rootDir, `${cleanPath}.html`);
+    if (fs.existsSync(htmlCandidate) && fs.statSync(htmlCandidate).isFile()) {
+      return res.redirect(301, `${cleanPath}.html`);
+    }
+    return res.redirect(301, cleanPath);
+  }
+
+  // 3. Serve exact static files (e.g. /css/corporate.css, /about.html, /services/seo-company-pune.html)
   const exactFile = path.join(rootDir, reqPath);
   if (fs.existsSync(exactFile) && fs.statSync(exactFile).isFile()) {
     return res.sendFile(exactFile, staticCacheOptions);
   }
 
-  // 2. Check if clean URL matches .html file (e.g. /about -> /about.html)
+  // 4. Enforce Canonical URL: 301 redirect extensionless URLs to .html (e.g. /about -> /about.html)
   const htmlFile = path.join(rootDir, `${reqPath}.html`);
   if (fs.existsSync(htmlFile) && fs.statSync(htmlFile).isFile()) {
-    res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
-    return res.sendFile(htmlFile);
-  }
-
-  // 3. Check directory index.html (e.g. /services/seo-company-pune/index.html)
-  const dirIndex = path.join(rootDir, reqPath, 'index.html');
-  if (fs.existsSync(dirIndex) && fs.statSync(dirIndex).isFile()) {
-    res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
-    return res.sendFile(dirIndex);
+    return res.redirect(301, `${reqPath}.html`);
   }
 
   next();

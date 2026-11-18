@@ -33,7 +33,7 @@
 </IfModule>
 
 # ------------------------------------------------------------------------------
-# 2. Rewrite Rules (HTTPS, Non-WWW Canonicalization, Clean URLs, 301 Redirects)
+# 2. Rewrite Rules (HTTPS, Non-WWW Canonicalization, 301 Canonical Redirects)
 # ------------------------------------------------------------------------------
 <IfModule mod_rewrite.c>
   RewriteEngine On
@@ -50,11 +50,27 @@
   # C. 301 Permanent Redirect for legacy inrank2.0 paths -> root
   RewriteRule ^inrank2\.0/(.*)$ /$1 [R=301,L]
 
-  # D. Clean URL handling: serve existing .html files when requested without extension
+  # D. 301 Permanent Redirect legacy portfolio -> our-work.html
+  RewriteRule ^portfolio(?:\.html)?$ /our-work.html [R=301,L]
+  RewriteRule ^portfolio/(.*)$ /our-work/$1 [R=301,L]
+
+  # E. 301 Permanent Redirect hub paths with or without slash -> canonical .html
+  RewriteRule ^services/?$ /services.html [R=301,L]
+  RewriteRule ^blog/?$ /blog.html [R=301,L]
+  RewriteRule ^case-studies/?$ /case-studies.html [R=301,L]
+  RewriteRule ^our-work/?$ /our-work.html [R=301,L]
+
+  # F. Strip trailing slash on non-directories and 301 redirect to .html
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}\.html -f
+  RewriteRule ^(.+)/$ /$1.html [R=301,L]
+
+  # G. Canonical URL enforcement: 301 Redirect extensionless requests to .html
+  RewriteCond %{REQUEST_METHOD} !POST
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME}.html -f
-  RewriteRule ^(.+)$ $1.html [L]
+  RewriteCond %{REQUEST_FILENAME}\.html -f
+  RewriteRule ^(.+)$ /$1.html [R=301,L]
 </IfModule>
 
 # ------------------------------------------------------------------------------

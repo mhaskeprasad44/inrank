@@ -1,11 +1,14 @@
 # https://www.robotstxt.org/robotstxt.html
 # Inrank Technologies - Search Engine & AI Agent Crawling Directives
-# Production 2.0 Web Architecture & AI Growth Platform
+# Production 2.0 Web Architecture & AI Growth Platform (Baner, Pune)
 
 User-agent: Googlebot
 Allow: /
 
 User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
 Allow: /
 
 User-agent: Google-Extended
@@ -17,6 +20,19 @@ Allow: /
 User-agent: msnbot
 Allow: /
 
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# AI Retrieval Agents (ChatGPT, Claude, Perplexity, Applebot)
 User-agent: GPTBot
 Allow: /
 
@@ -56,7 +72,10 @@ Allow: /
 User-agent: *
 Allow: /
 
-# Canonical XML Sitemap (All 89 verified production URLs)
+# Canonical Host Directive
+Host: https://inranktech.com
+
+# Canonical XML Sitemap (All 92 verified production URLs)
 Sitemap: https://inranktech.com/sitemap.xml
 
 # LLM & Answer Engine Citation Manifests (AEO / GEO)

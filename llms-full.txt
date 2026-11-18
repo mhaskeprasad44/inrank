@@ -25,7 +25,7 @@
 - **Local SEO Dominance Sprint (₹11,999/month)**: Google Business Profile local 3-pack dominance, localized Schema entity markup, monthly technical audit and citation building across Pune.
 - **Growth Scale SEO Retainer (₹18,999/month)**: High-competition commercial keyword ranking, Generative Engine Optimization (GEO), monthly content marketing and authoritative link acquisition.
 - **Market Domination SEO (₹34,999/month)**: Full category search monopoly across Maharashtra and India with competitive displacement strategies.
-- **Social Media & Performance Retainers**: Starter (₹11,999/mo), Growth (₹19,999/mo), Authority (₹32,999/mo). --- ## Complete 2.0 Web Directory & Canonical URLs (89 Pages)
+- **Social Media & Performance Retainers**: Starter (₹11,999/mo), Growth (₹19,999/mo), Authority (₹32,999/mo). --- ## Complete 2.0 Web Directory & Canonical URLs (92 Pages)
 
 ### Primary Hub Pages
 - **Homepage**: https://inranktech.com/ - Pune's premier performance digital growth & web engineering partner.
@@ -84,7 +84,7 @@
 - **Dr. Shyam Thakkar**: - Portfolio: https://inranktech.com/our-work/orthopedicanklefootspecialist.html - Case Study: https://inranktech.com/case-studies/orthopedicanklefootspecialist.html - Industry: Orthopedic Foot & Ankle Surgical Practice - Metric: Top-3 Google Rankings across Pune & Mumbai; Surgical schema booking
 - **Dravya Financial Solutions**: - Portfolio: https://inranktech.com/our-work/dravyafinancial.html - Case Study: https://inranktech.com/case-studies/dravyafinancial.html - Industry: Corporate Capital Advisory & Debt Syndication - Metric: ₹45Cr+ Transaction Inquiries; Institutional deal intake architecture
 
-### Technical Engineering & Growth Guides (30 Strategic Articles)
+### Technical Engineering & Growth Guides (33 Strategic Articles)
 - **Top Digital Marketing & Web Agencies Pune**: https://inranktech.com/blog/top-digital-marketing-web-development-agencies-pune.html
 - **Complete SEO Engineering Guide**: https://inranktech.com/blog/seo-complete-guide.html
 - **AI SEO & Generative Optimization Blueprint**: https://inranktech.com/blog/ai-seo-agency-generative-optimization.html
@@ -116,6 +116,10 @@
 - **Executive Letterhead & Corporate Stationery**: https://inranktech.com/blog/executive-letterhead-design-and-corporate-stationery-systems.html
 - **Luxury Business Card Design & Ergonomics**: https://inranktech.com/blog/luxury-business-card-design-and-tactile-print-ergonomics.html
 
+- **Autonomous AI Search Agents & Deep Research Citations**: https://inranktech.com/blog/autonomous-ai-search-agents-deep-research-optimization.html - How agentic LLMs crawl and cite web platforms with MCP endpoints and llms.txt manifests.
+- **Generative Engine Optimization (GEO) 2.0 Playbook**: https://inranktech.com/blog/generative-engine-optimization-geo-2-0-playbook.html - Decodes past 30-day algorithmic shifts across Google AI Overviews and ChatGPT Search with 90-day future roadmap.
+- **Next.js 15, React 19 & Edge AI Web Architecture**: https://inranktech.com/blog/nextjs-15-react-19-edge-ai-architecture.html - Building sub-1.2s portals, React Server Components, Turbopack, and Edge AI streaming.
+
 ### High-Intent Local Pune Landing Pages
 - **Digital Marketing Agency in Pune**: https://inranktech.com/digital-marketing-agency-in-pune.html
 - **Website Design Company in Pune**: https://inranktech.com/website-design-company-in-pune.html
@@ -123,8 +127,4 @@
 ### Legal & Compliance Pages
 - **Privacy Policy**: https://inranktech.com/privacy-policy.html
 - **Terms and Conditions**: https://inranktech.com/terms-and-conditions.html ---
-*Generated: 2026-11-05. Maintained and published by Inrank Technologies Pvt Ltd.*
-
-- [Autonomous AI Search Agents & Deep Research Citations](https://inranktech.com/blog/autonomous-ai-search-agents-deep-research-optimization.html): How agentic LLMs crawl and cite web platforms, with MCP endpoints and llms.txt manifests.
-- [Generative Engine Optimization (GEO) 2.0 Playbook](https://inranktech.com/blog/generative-engine-optimization-geo-2-0-playbook.html): Decodes past 30-day algorithmic shifts across Google AI Overviews and ChatGPT Search with 90-day future roadmap.
-- [Next.js 15, React 19 & Edge AI Web Architecture](https://inranktech.com/blog/nextjs-15-react-19-edge-ai-architecture.html): Building sub-1.2s portals, React Server Components, Turbopack, and Edge AI streaming.
+*Generated: 2026-11-18. Maintained and published by Inrank Technologies Pvt Ltd.*
