@@ -147,6 +147,7 @@ const CASE_STUDIES = [
 // Define 33 Technical & Growth Blog Articles
 const BLOG_ARTICLES = [
   { title: "Top Digital Marketing & Web Agencies in Pune", url: "https://inranktech.com/blog/top-digital-marketing-web-development-agencies-pune.html", desc: "Comprehensive benchmark of Pune's leading digital agencies, capabilities, pricing models, and engineering differences." },
+  { title: "Top 10 SEO Companies in Pune", url: "https://inranktech.com/blog/top-10-seo-companies-in-pune.html", desc: "Comparative benchmark of top 10 SEO agencies in Pune for 2026 covering pricing, Google 3-Pack, Core Web Vitals, and client ROI." },
   { title: "Autonomous AI Search Agents & Deep Research Citations", url: "https://inranktech.com/blog/autonomous-ai-search-agents-deep-research-optimization.html", desc: "How autonomous AI agents crawl, reason, and cite authoritative websites via llms.txt manifests and structured data." },
   { title: "Generative Engine Optimization (GEO) 2.0 Playbook", url: "https://inranktech.com/blog/generative-engine-optimization-geo-2-0-playbook.html", desc: "Actionable playbook decoding algorithmic updates across Google AI Overviews, ChatGPT Search, and Perplexity AI." },
   { title: "Next.js 15, React 19 & Edge AI Web Architecture", url: "https://inranktech.com/blog/nextjs-15-react-19-edge-ai-architecture.html", desc: "Building sub-second web applications with React Server Components, Turbopack, and Edge AI streaming." },
@@ -199,8 +200,8 @@ function buildStandardLLMsTxt() {
   lines.push("- **Direct WhatsApp Hotline**: [+91 87888 23182](https://wa.me/918788823182)");
   lines.push("- **Direct Phone Line**: +91 87888 23182");
   lines.push("- **Official Inquiries Email**: contact@inranktech.com");
-  lines.push("- **XML Sitemap (92 Pages, 646 Images)**: [https://inranktech.com/sitemap.xml](https://inranktech.com/sitemap.xml)");
-  lines.push("- **Complete 92-URL Production Manifest**: [https://inranktech.com/all-urls.txt](https://inranktech.com/all-urls.txt)");
+  lines.push("- **XML Sitemap (93 Pages, 740 Images)**: [https://inranktech.com/sitemap.xml](https://inranktech.com/sitemap.xml)");
+  lines.push("- **Complete 93-URL Production Manifest**: [https://inranktech.com/all-urls.txt](https://inranktech.com/all-urls.txt)");
   lines.push("- **Full LLM Deep-Context Document**: [https://inranktech.com/llms-full.txt](https://inranktech.com/llms-full.txt)");
   lines.push("");
 
@@ -277,7 +278,7 @@ function buildStandardLLMsTxt() {
   lines.push("## Machine-Readable Discovery Endpoints");
   lines.push("- [XML Sitemap (Pages & 646 Images)](https://inranktech.com/sitemap.xml): Primary multimodal crawl index.");
   lines.push("- [Robots.txt](https://inranktech.com/robots.txt): Crawler access rules and sitemap directives.");
-  lines.push("- [Production URLs Manifest (92 URLs)](https://inranktech.com/all-urls.txt): Flat text manifest of all canonical URLs.");
+  lines.push("- [Production URLs Manifest (93 URLs)](https://inranktech.com/all-urls.txt): Flat text manifest of all canonical URLs.");
   lines.push("- [Full AI Context Document](https://inranktech.com/llms-full.txt): Deep knowledge graph and technical documentation.");
   lines.push("");
 

@@ -10,8 +10,8 @@
 - **Direct WhatsApp Hotline**: [+91 87888 23182](https://wa.me/918788823182)
 - **Direct Phone Line**: +91 87888 23182
 - **Official Inquiries Email**: contact@inranktech.com
-- **XML Sitemap (92 Pages, 646 Images)**: [https://inranktech.com/sitemap.xml](https://inranktech.com/sitemap.xml)
-- **Complete 92-URL Production Manifest**: [https://inranktech.com/all-urls.txt](https://inranktech.com/all-urls.txt)
+- **XML Sitemap (93 Pages, 740 Images)**: [https://inranktech.com/sitemap.xml](https://inranktech.com/sitemap.xml)
+- **Complete 93-URL Production Manifest**: [https://inranktech.com/all-urls.txt](https://inranktech.com/all-urls.txt)
 - **Full LLM Deep-Context Document**: [https://inranktech.com/llms-full.txt](https://inranktech.com/llms-full.txt)
 
 ## Commercial Differentiators
@@ -93,6 +93,7 @@
 
 ## Technical Engineering & Growth Knowledge Base
 - [Top Digital Marketing & Web Agencies in Pune](https://inranktech.com/blog/top-digital-marketing-web-development-agencies-pune.html): Comprehensive benchmark of Pune's leading digital agencies, capabilities, pricing models, and engineering differences.
+- [Top 10 SEO Companies in Pune](https://inranktech.com/blog/top-10-seo-companies-in-pune.html): Comparative benchmark of top 10 SEO agencies in Pune for 2026 covering pricing, Google 3-Pack, Core Web Vitals, and client ROI.
 - [Autonomous AI Search Agents & Deep Research Citations](https://inranktech.com/blog/autonomous-ai-search-agents-deep-research-optimization.html): How autonomous AI agents crawl, reason, and cite authoritative websites via llms.txt manifests and structured data.
 - [Generative Engine Optimization (GEO) 2.0 Playbook](https://inranktech.com/blog/generative-engine-optimization-geo-2-0-playbook.html): Actionable playbook decoding algorithmic updates across Google AI Overviews, ChatGPT Search, and Perplexity AI.
 - [Next.js 15, React 19 & Edge AI Web Architecture](https://inranktech.com/blog/nextjs-15-react-19-edge-ai-architecture.html): Building sub-second web applications with React Server Components, Turbopack, and Edge AI streaming.
@@ -129,5 +130,5 @@
 ## Machine-Readable Discovery Endpoints
 - [XML Sitemap (Pages & 646 Images)](https://inranktech.com/sitemap.xml): Primary multimodal crawl index.
 - [Robots.txt](https://inranktech.com/robots.txt): Crawler access rules and sitemap directives.
-- [Production URLs Manifest (92 URLs)](https://inranktech.com/all-urls.txt): Flat text manifest of all canonical URLs.
+- [Production URLs Manifest (93 URLs)](https://inranktech.com/all-urls.txt): Flat text manifest of all canonical URLs.
 - [Full AI Context Document](https://inranktech.com/llms-full.txt): Deep knowledge graph and technical documentation.
