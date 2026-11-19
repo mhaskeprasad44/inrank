@@ -1,4 +1,4 @@
-# Inrank Technologies - Complete Production URLs Manifest (92 URLs)
+# Inrank Technologies - Complete Production URLs Manifest (93 URLs)
 # Domain: https://inranktech.com/
 # Generated: 2026-11-18
 # Use this list for Google Search Console URL Inspection, IndexNow bulk submission, and SEO Audits.
@@ -113,6 +113,7 @@ https://inranktech.com/blog/seo-complete-guide.html
 https://inranktech.com/blog/social-media-marketing-guide.html
 https://inranktech.com/blog/strategic-brand-naming-architecture.html
 https://inranktech.com/blog/top-digital-marketing-web-development-agencies-pune.html
+https://inranktech.com/blog/top-10-seo-companies-in-pune.html
 https://inranktech.com/blog/whatsapp-marketing-guide.html
 
 # =====================================================================
@@ -209,4 +210,5 @@ https://inranktech.com/blog/seo-complete-guide.html
 https://inranktech.com/blog/social-media-marketing-guide.html
 https://inranktech.com/blog/strategic-brand-naming-architecture.html
 https://inranktech.com/blog/top-digital-marketing-web-development-agencies-pune.html
+https://inranktech.com/blog/top-10-seo-companies-in-pune.html
 https://inranktech.com/blog/whatsapp-marketing-guide.html
