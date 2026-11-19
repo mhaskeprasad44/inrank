@@ -1,0 +1,941 @@
+{
+  "negativeSEO": [
+    {
+      "file": "blog/autonomous-ai-search-agents-deep-research-optimization.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "72 chars",
+      "snippet": "Autonomous AI Search Agents & Deep Research Citations 2026-2027 | Inrank"
+    },
+    {
+      "file": "case-studies/dravyafinancial.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "71 chars",
+      "snippet": "Dravya Financial Case Study: ₹45Cr+ Capital Deals | Inrank Technologies"
+    },
+    {
+      "file": "case-studies/greytothegreen.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "80 chars",
+      "snippet": "Grey To The Green Case Study: 4.8x Ad ROAS & 3,200+ Orders | Inrank Technologies"
+    },
+    {
+      "file": "case-studies/hiragrafix.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "83 chars",
+      "snippet": "Hira Grafix Case Study: 250+ Corporate Clients & +185% Search | Inrank Technologies"
+    },
+    {
+      "file": "case-studies/orthopedicanklefootspecialist.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "87 chars",
+      "snippet": "Dr. Shyam Thakkar Case Study: 3,500+ Surgeries & #1 Google 3-Pack | Inrank Technologies"
+    },
+    {
+      "file": "case-studies/orthopedicanklefootspecialist.html",
+      "issue": "Meta description too long (>175 chars)",
+      "current": "179 chars",
+      "snippet": "Documented medical practice case study: how Dr. Shyam Thakka..."
+    },
+    {
+      "file": "case-studies/riituinstitution.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "77 chars",
+      "snippet": "Riitu Institution Case Study: 650+ Enrolled & 3.8x ROAS | Inrank Technologies"
+    },
+    {
+      "file": "case-studies/riituinstitution.html",
+      "issue": "Meta description too long (>175 chars)",
+      "current": "177 chars",
+      "snippet": "Documented education marketing case study: how Riitu Institu..."
+    },
+    {
+      "file": "case-studies/shetkarifoodstuff.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "74 chars",
+      "snippet": "Shetkari Foodstuff Case Study: ₹4.2Cr+ Export Orders | Inrank Technologies"
+    },
+    {
+      "file": "case-studies/shetkarifoodstuff.html",
+      "issue": "Meta description too long (>175 chars)",
+      "current": "186 chars",
+      "snippet": "Documented international trade case study: how Shetkari Food..."
+    },
+    {
+      "file": "case-studies/vasroventures.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "74 chars",
+      "snippet": "Vasro Ventures Case Study: 4.2x ROAS & 2,800+ Orders | Inrank Technologies"
+    },
+    {
+      "file": "case-studies/vasroventures.html",
+      "issue": "Meta description too long (>175 chars)",
+      "current": "182 chars",
+      "snippet": "Documented fashion e-commerce case study: how Vasro Ventures..."
+    },
+    {
+      "file": "contact.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "71 chars",
+      "snippet": "Contact Inrank Technologies Pune | Free Consultation &amp; Growth Audit"
+    },
+    {
+      "file": "digital-marketing-agency-in-pune.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "74 chars",
+      "snippet": "Digital Marketing Agency in Pune | Performance SEO &amp; Paid Ads | Inrank"
+    },
+    {
+      "file": "digital-marketing-agency-in-pune.html",
+      "issue": "Meta description too long (>175 chars)",
+      "current": "183 chars",
+      "snippet": "Inrank is Pune's leading ROI digital marketing agency. Data-..."
+    },
+    {
+      "file": "index.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "85 chars",
+      "snippet": "Inrank Technologies | Top-Ranked Digital Marketing & Web Development Services in Pune"
+    },
+    {
+      "file": "index.html",
+      "issue": "Meta description too long (>175 chars)",
+      "current": "212 chars",
+      "snippet": "Inrank Technologies is Pune's leading performance digital ma..."
+    },
+    {
+      "file": "our-work/cytos.html",
+      "issue": "Meta description too long (>175 chars)",
+      "current": "177 chars",
+      "snippet": "Visual portfolio showcase for CyTOS Machines. Explore high-p..."
+    },
+    {
+      "file": "our-work/dravyafinancial.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "78 chars",
+      "snippet": "Dravya Financial - Corporate UI/UX Design System & Fintech Portal | Inrank 2.0"
+    },
+    {
+      "file": "our-work/dravyafinancial.html",
+      "issue": "Meta description too long (>175 chars)",
+      "current": "185 chars",
+      "snippet": "Visual portfolio showcase for Dravya Financial Solutions. Ex..."
+    },
+    {
+      "file": "our-work/greytothegreen.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "76 chars",
+      "snippet": "Grey To The Green - D2C E-Commerce UI/UX & Botanical Storefront | Inrank 2.0"
+    },
+    {
+      "file": "our-work/hcpnest.html",
+      "issue": "Meta description too long (>175 chars)",
+      "current": "180 chars",
+      "snippet": "Visual portfolio showcase for HCP Nest. Explore clinical rec..."
+    },
+    {
+      "file": "our-work/orthopedicanklefootspecialist.html",
+      "issue": "Meta description too long (>175 chars)",
+      "current": "183 chars",
+      "snippet": "Visual portfolio showcase for Dr. Shyam Thakkar (ARTICUL8 Cl..."
+    },
+    {
+      "file": "our-work/riituinstitution.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "74 chars",
+      "snippet": "Riitu Institution - EdTech UI/UX & Academic Admissions Portal | Inrank 2.0"
+    },
+    {
+      "file": "our-work/riituinstitution.html",
+      "issue": "Meta description too long (>175 chars)",
+      "current": "189 chars",
+      "snippet": "Visual portfolio showcase for Riitu Institution. Explore aca..."
+    },
+    {
+      "file": "our-work/shetkarifoodstuff.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "73 chars",
+      "snippet": "Shetkari Foodstuff - Global Agro Export UI/UX & Trade Portal | Inrank 2.0"
+    },
+    {
+      "file": "our-work/shetkarifoodstuff.html",
+      "issue": "Meta description too long (>175 chars)",
+      "current": "191 chars",
+      "snippet": "Visual portfolio showcase for Shetkari Foodstuff Trading LLC..."
+    },
+    {
+      "file": "our-work/vasroventures.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "74 chars",
+      "snippet": "Vasro Ventures - Editorial Fashion UI/UX & Apparel Storefront | Inrank 2.0"
+    },
+    {
+      "file": "our-work/vasroventures.html",
+      "issue": "Meta description too long (>175 chars)",
+      "current": "178 chars",
+      "snippet": "Visual portfolio showcase for Vasro Ventures. Explore modern..."
+    },
+    {
+      "file": "services/ai-seo-services.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "71 chars",
+      "snippet": "AI SEO Services in Pune | Generative Engine Optimization (GEO) | Inrank"
+    },
+    {
+      "file": "services/brochure-design-services.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "75 chars",
+      "snippet": "Brochure Design Services in Pune | Corporate & Industrial Profiles | Inrank"
+    },
+    {
+      "file": "services/custom-website-development.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "71 chars",
+      "snippet": "Website Development Company in Pune | Custom Next.js & Web Lab | Inrank"
+    },
+    {
+      "file": "services/influencer-marketing-agency.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "71 chars",
+      "snippet": "Influencer Marketing Agency in Pune | Creator Growth Campaigns | Inrank"
+    },
+    {
+      "file": "services/landing-page-design-services.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "71 chars",
+      "snippet": "Landing Page Design Services in Pune | High-Converting Funnels | Inrank"
+    },
+    {
+      "file": "services/letterhead-stationery-design.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "72 chars",
+      "snippet": "Letterhead & Stationery Design in Pune | Corporate Identity Kit | Inrank"
+    },
+    {
+      "file": "services/luxury-business-card-design.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "71 chars",
+      "snippet": "Luxury Business Card Design in Pune | Executive Brand Identity | Inrank"
+    },
+    {
+      "file": "services/meta-ads-agency.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "71 chars",
+      "snippet": "Meta Ads Agency in Pune | Instagram & Facebook Lead Generation | Inrank"
+    },
+    {
+      "file": "services/mobile-app-development.html",
+      "issue": "Title too long (>70 chars)",
+      "current": "72 chars",
+      "snippet": "Mobile App Development Company in Pune | iOS, Android & Flutter | Inrank"
+    },
+    {
+      "file": "services/seo-company-pune.html",
+      "issue": "Meta description too long (>175 chars)",
+      "current": "195 chars",
+      "snippet": "Inrank Technologies is Pune's leading SEO company. We engine..."
+    }
+  ],
+  "negativeAEO": [
+    {
+      "file": "digital-marketing-agency-in-pune.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/ai-ranking-citations.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/ai-seo-services.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/brand-naming-agency.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/brochure-design-services.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/content-marketing-services.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/conversion-rate-optimization-services.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/corporate-logo-design.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/custom-website-development.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/ecommerce-website-development-company.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/geo-seo-agency.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/google-ads-agency.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/google-my-business-services.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/influencer-marketing-agency.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/landing-page-design-services.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/letterhead-stationery-design.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/link-building-services.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/linkedin-marketing-agency.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/luxury-business-card-design.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/meta-ads-agency.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/mobile-app-development.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/ppc-services.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/seo-company-pune.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/shopify-store-development.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/social-media-marketing-services.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/ui-ux-design-services.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/website-maintenance-services.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "services/wordpress-development-services.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    },
+    {
+      "file": "website-design-company-in-pune.html",
+      "issue": "Missing Top AEO Direct Answer / Executive Summary block"
+    }
+  ],
+  "negativeGEO": [
+    {
+      "file": "blog/top-digital-marketing-web-development-agencies-pune.html",
+      "issue": "Missing LocalBusiness / ProfessionalService Schema on Pune-targeted page"
+    },
+    {
+      "file": "digital-marketing-agency-in-pune.html",
+      "issue": "Missing Knowledge Graph Founder & Entity Linkage in Schema"
+    },
+    {
+      "file": "services/seo-company-pune.html",
+      "issue": "Missing LocalBusiness / ProfessionalService Schema on Pune-targeted page"
+    },
+    {
+      "file": "website-design-company-in-pune.html",
+      "issue": "Missing Knowledge Graph Founder & Entity Linkage in Schema"
+    }
+  ],
+  "keywordAlignment": [
+    {
+      "file": "about.html",
+      "slugTerm": "about",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "blog/ai-ranking-citations-knowledge-graph-optimization.html",
+      "slugTerm": "ai ranking citations knowledge graph optimization",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "blog/ai-seo-agency-generative-optimization.html",
+      "slugTerm": "ai seo agency generative optimization",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "blog/autonomous-ai-search-agents-deep-research-optimization.html",
+      "slugTerm": "autonomous ai search agents deep research optimization",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "blog/content-marketing-editorial-authority-and-information-gain.html",
+      "slugTerm": "content marketing editorial authority and information gain",
+      "inTitle": false,
+      "inDesc": true
+    },
+    {
+      "file": "blog/conversion-rate-optimization-engineering.html",
+      "slugTerm": "conversion rate optimization engineering",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "blog/cross-platform-mobile-app-engineering.html",
+      "slugTerm": "cross platform mobile app engineering",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "blog/custom-shopify-development-guide.html",
+      "slugTerm": "custom shopify development guide",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "blog/custom-website-design-frameworks.html",
+      "slugTerm": "custom website design frameworks",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "blog/enterprise-email-marketing-and-lifecycle-automation.html",
+      "slugTerm": "enterprise email marketing and lifecycle automation",
+      "inTitle": false,
+      "inDesc": true
+    },
+    {
+      "file": "blog/enterprise-logo-design-and-visual-systems.html",
+      "slugTerm": "enterprise logo design and visual systems",
+      "inTitle": false,
+      "inDesc": true
+    },
+    {
+      "file": "blog/enterprise-website-maintenance-guide.html",
+      "slugTerm": "enterprise website maintenance guide",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "blog/executive-letterhead-design-and-corporate-stationery-systems.html",
+      "slugTerm": "executive letterhead design and corporate stationery systems",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "blog/generative-engine-optimization-geo-2-0-playbook.html",
+      "slugTerm": "generative engine optimization geo 2 0 playbook",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "blog/geo-seo-agency-generative-engine-optimization.html",
+      "slugTerm": "geo seo agency generative engine optimization",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "blog/google-ads-scaling-blueprint.html",
+      "slugTerm": "google ads scaling blueprint",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "blog/google-business-profile-local-pack-guide.html",
+      "slugTerm": "google business profile local pack guide",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "blog/high-converting-landing-page-engineering.html",
+      "slugTerm": "high converting landing page engineering",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "blog/high-impact-brochure-designing-and-print-architecture.html",
+      "slugTerm": "high impact brochure designing and print architecture",
+      "inTitle": false,
+      "inDesc": true
+    },
+    {
+      "file": "blog/high-performance-wordpress-engineering.html",
+      "slugTerm": "high performance wordpress engineering",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "blog/influencer-marketing-guide.html",
+      "slugTerm": "influencer marketing guide",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "blog/linkedin-management-guide.html",
+      "slugTerm": "linkedin management guide",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "blog/luxury-business-card-design-and-tactile-print-ergonomics.html",
+      "slugTerm": "luxury business card design and tactile print ergonomics",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "blog/meta-ads-scaling-mastery.html",
+      "slugTerm": "meta ads scaling mastery",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "blog/modern-web-development-engineering.html",
+      "slugTerm": "modern web development engineering",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "blog/nextjs-15-react-19-edge-ai-architecture.html",
+      "slugTerm": "nextjs 15 react 19 edge ai architecture",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "blog/omnichannel-ecommerce-architecture-guide.html",
+      "slugTerm": "omnichannel ecommerce architecture guide",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "blog/omnichannel-sms-marketing-and-conversational-messaging.html",
+      "slugTerm": "omnichannel sms marketing and conversational messaging",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "blog/ppc-management-blueprint.html",
+      "slugTerm": "ppc management blueprint",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "blog/seo-complete-guide.html",
+      "slugTerm": "seo complete guide",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "blog/social-media-marketing-guide.html",
+      "slugTerm": "social media marketing guide",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "blog/strategic-brand-naming-architecture.html",
+      "slugTerm": "strategic brand naming architecture",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "blog/top-10-seo-companies-in-pune.html",
+      "slugTerm": "top 10 seo companies in pune",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "blog/top-digital-marketing-web-development-agencies-pune.html",
+      "slugTerm": "top digital marketing web development agencies pune",
+      "inTitle": false,
+      "inDesc": true
+    },
+    {
+      "file": "blog/whatsapp-marketing-guide.html",
+      "slugTerm": "whatsapp marketing guide",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "blog.html",
+      "slugTerm": "blog",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "case-studies/cytos.html",
+      "slugTerm": "cytos",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "case-studies/dravyafinancial.html",
+      "slugTerm": "dravyafinancial",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "case-studies/fludio.html",
+      "slugTerm": "fludio",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "case-studies/greytothegreen.html",
+      "slugTerm": "greytothegreen",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "case-studies/hcpnest.html",
+      "slugTerm": "hcpnest",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "case-studies/hiragrafix.html",
+      "slugTerm": "hiragrafix",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "case-studies/orthopedicanklefootspecialist.html",
+      "slugTerm": "orthopedicanklefootspecialist",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "case-studies/riituinstitution.html",
+      "slugTerm": "riituinstitution",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "case-studies/shetkarifoodstuff.html",
+      "slugTerm": "shetkarifoodstuff",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "case-studies/vasroventures.html",
+      "slugTerm": "vasroventures",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "case-studies.html",
+      "slugTerm": "case studies",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "contact.html",
+      "slugTerm": "contact",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "digital-marketing-agency-in-pune.html",
+      "slugTerm": "digital marketing agency in pune",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "index.html",
+      "slugTerm": "index",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "our-work/cytos.html",
+      "slugTerm": "cytos",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "our-work/dravyafinancial.html",
+      "slugTerm": "dravyafinancial",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "our-work/fludio.html",
+      "slugTerm": "fludio",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "our-work/greytothegreen.html",
+      "slugTerm": "greytothegreen",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "our-work/hcpnest.html",
+      "slugTerm": "hcpnest",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "our-work/hiragrafix.html",
+      "slugTerm": "hiragrafix",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "our-work/orthopedicanklefootspecialist.html",
+      "slugTerm": "orthopedicanklefootspecialist",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "our-work/riituinstitution.html",
+      "slugTerm": "riituinstitution",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "our-work/shetkarifoodstuff.html",
+      "slugTerm": "shetkarifoodstuff",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "our-work/vasroventures.html",
+      "slugTerm": "vasroventures",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "our-work.html",
+      "slugTerm": "our work",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "portfolio.html",
+      "slugTerm": "portfolio",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "pricing.html",
+      "slugTerm": "pricing",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "privacy-policy.html",
+      "slugTerm": "privacy policy",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/ai-ranking-citations.html",
+      "slugTerm": "ai ranking citations",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/ai-seo-services.html",
+      "slugTerm": "ai seo services",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "services/brand-naming-agency.html",
+      "slugTerm": "brand naming agency",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/brochure-design-services.html",
+      "slugTerm": "brochure design services",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "services/content-marketing-services.html",
+      "slugTerm": "content marketing services",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "services/conversion-rate-optimization-services.html",
+      "slugTerm": "conversion rate optimization services",
+      "inTitle": false,
+      "inDesc": true
+    },
+    {
+      "file": "services/corporate-logo-design.html",
+      "slugTerm": "corporate logo design",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/custom-website-development.html",
+      "slugTerm": "custom website development",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "services/ecommerce-website-development-company.html",
+      "slugTerm": "ecommerce website development company",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/geo-seo-agency.html",
+      "slugTerm": "geo seo agency",
+      "inTitle": false,
+      "inDesc": false
+    },
+    {
+      "file": "services/google-ads-agency.html",
+      "slugTerm": "google ads agency",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/google-my-business-services.html",
+      "slugTerm": "google my business services",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "services/influencer-marketing-agency.html",
+      "slugTerm": "influencer marketing agency",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/landing-page-design-services.html",
+      "slugTerm": "landing page design services",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "services/letterhead-stationery-design.html",
+      "slugTerm": "letterhead stationery design",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/link-building-services.html",
+      "slugTerm": "link building services",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "services/linkedin-marketing-agency.html",
+      "slugTerm": "linkedin marketing agency",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/luxury-business-card-design.html",
+      "slugTerm": "luxury business card design",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/meta-ads-agency.html",
+      "slugTerm": "meta ads agency",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/mobile-app-development.html",
+      "slugTerm": "mobile app development",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/ppc-services.html",
+      "slugTerm": "ppc services",
+      "inTitle": true,
+      "inDesc": false
+    },
+    {
+      "file": "services/seo-company-pune.html",
+      "slugTerm": "seo company pune",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/shopify-store-development.html",
+      "slugTerm": "shopify store development",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/social-media-marketing-services.html",
+      "slugTerm": "social media marketing services",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/ui-ux-design-services.html",
+      "slugTerm": "ui ux design services",
+      "inTitle": false,
+      "inDesc": true
+    },
+    {
+      "file": "services/website-maintenance-services.html",
+      "slugTerm": "website maintenance services",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "services/wordpress-development-services.html",
+      "slugTerm": "wordpress development services",
+      "inTitle": false,
+      "inDesc": true
+    },
+    {
+      "file": "services.html",
+      "slugTerm": "services",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "terms-and-conditions.html",
+      "slugTerm": "terms and conditions",
+      "inTitle": true,
+      "inDesc": true
+    },
+    {
+      "file": "website-design-company-in-pune.html",
+      "slugTerm": "website design company in pune",
+      "inTitle": true,
+      "inDesc": true
+    }
+  ],
+  "h1SpacingIssues": []
+}
